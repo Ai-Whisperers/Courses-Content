@@ -260,87 +260,105 @@ Combine all test files:
 
 ---
 
-## Part 4: Tool Use Pattern (45 min)
+## Part 4: Model Context Protocol (MCP) (45 min)
 
 ### Task
 
-Create an AI workflow that uses tools to gather context before testing.
+Create an AI workflow that uses the Model Context Protocol (MCP) to connect tools and data sources.
+
+### Concept
+
+MCP is a standard for connecting AI models to data and tools. Instead of ad-hoc tool definitions, we use standardized servers.
 
 ### Implementation
 
-Create `tool-use-workflow.md`:
+Create `mcp-workflow.md`:
 
 ```markdown
-# Tool-Augmented Test Generation
+# MCP-Augmented Test Generation
 
-## Available Tools
+## MCP Servers Configuration
 
-1. **file_read**: Read source code files
-2. **search**: Find related files
-3. **run_tests**: Execute existing tests
-4. **coverage**: Get coverage report
+Define the servers needed for this workflow:
 
-## Workflow
-
-### Step 1: Discover Code
-
-Tool: search
-Query: "Find all files related to payment processing"
-```
-search: "payment" type:code
-```
-
-### Step 2: Read Implementation
-
-Tool: file_read
-Files: [results from step 1]
-```
-file_read: src/services/paymentService.js
-file_read: src/models/payment.js
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./src"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_TOKEN": "..." }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/db"]
+    }
+  }
+}
 ```
 
-### Step 3: Check Existing Tests
+## Workflow Steps
 
-Tool: run_tests + coverage
+### Step 1: Explore Codebase (Filesystem MCP)
+
+Use `filesystem` tools to understand the structure:
+
+Tool: `list_directory`
+Path: `./src/services`
+
+Tool: `read_file`
+Path: `./src/services/payment.ts`
+
+### Step 2: Check Recent Changes (GitHub MCP)
+
+Use `github` tools to see what changed recently and needs testing:
+
+Tool: `get_commits`
+Repo: "owner/repo"
+Limit: 5
+
+### Step 3: Inspect Schema (Postgres MCP)
+
+Use `postgres` tools to understand the data model:
+
+Tool: `query`
+SQL: "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'payments'"
+
+### Step 4: Generate Context-Aware Tests
+
+Combine all context to generate a test:
+
+```typescript
+// Context gathered via MCP:
+// 1. File content of payment.ts
+// 2. Recent commit message: "Add support for partial refunds"
+// 3. DB Schema: payments table has 'refund_amount' column
+
+// Generated Test:
+it('should handle partial refunds correctly', async () => {
+  // ... test implementation using actual DB schema and code logic
+});
 ```
-run_tests: src/services/__tests__/
-coverage: src/services/paymentService.js
-```
 
-### Step 4: Identify Gaps
-
-Analyze coverage report to find untested code:
-- Uncovered lines
-- Uncovered branches
-- Missing error paths
-
-### Step 5: Generate Gap-Filling Tests
-
-Generate tests specifically for uncovered code:
-```
-The coverage report shows these uncovered lines:
-- Line 45-48: Error handling for expired cards
-- Line 72: Edge case for zero amount
-- Line 89-92: Retry logic
-
-Generate tests to cover these specific gaps.
-```
 ```
 
 ### Exercise
 
-1. Choose a module in your project
-2. Execute each tool step
-3. Analyze results before proceeding
-4. Generate gap-filling tests
-5. Re-run coverage to verify improvement
+1. Install the filesystem MCP server locally (if possible) or simulate the configuration
+2. Define a workflow that combines at least 2 different MCP servers
+3. Simulate the tool outputs for a specific feature in your project
+4. Generate tests based on that multi-source context
 
 ### Deliverable
 
-- Tool use workflow document
-- Tool outputs at each step
-- Gap-filling tests
-- Before/after coverage comparison
+- `mcp-config.json` definition
+- `workflow-simulation.md` showing tool calls and outputs
+- `generated-mcp-tests.ts`
+
 
 ---
 

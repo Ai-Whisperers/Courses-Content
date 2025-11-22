@@ -346,6 +346,119 @@ Provide the optimized YAML.
 
 ---
 
+## Part 5: Advanced Optimization (30 min)
+
+### Task
+
+Implement Playwright Sharding and AI-Driven Log Analysis.
+
+### 1. Playwright Sharding
+
+Sharding allows running tests in parallel across multiple machines.
+
+```yaml
+  e2e-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shardIndex: [1, 2, 3, 4]
+        shardTotal: [4]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: blob-report-${{ matrix.shardIndex }}
+          path: blob-report
+          retention-days: 1
+
+  merge-reports:
+    if: always()
+    needs: [e2e-tests]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Download blob reports from GitHub Actions Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-blob-reports
+          pattern: blob-report-*
+          merge-multiple: true
+      - name: Merge into HTML Report
+        run: npx playwright merge-reports --reporter html ./all-blob-reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: html-report
+          path: playwright-report
+          retention-days: 14
+```
+
+### 2. AI Log Analysis
+
+Use an AI CLI tool to analyze failure logs and suggest fixes.
+
+```yaml
+      - name: Analyze Failures with AI
+        if: failure()
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          # Extract failure logs
+          grep -A 20 "Error:" test-results.log > failures.txt
+          
+          # Install LLM CLI (example)
+          pip install llm
+          
+          # Analyze
+          cat failures.txt | llm "Analyze these Playwright test failures. Suggest 3 possible root causes and fixes for each." > analysis.md
+          
+          # Post to PR
+          gh pr comment ${{ github.event.pull_request.number }} --body-file analysis.md
+```
+
+### Deliverable
+
+- Workflow with AI analysis step
+
+### 3. Advanced Reporting (Allure)
+
+Integrate Allure Report for rich, historical test insights.
+
+```yaml
+      - name: Install Allure
+        run: npm install -D allure-playwright
+
+      - name: Run Tests with Allure
+        run: npx playwright test --reporter=line,allure-playwright
+
+      - name: Generate Report
+        if: always()
+        run: npx allure generate ./allure-results -o ./allure-report
+
+      - name: Upload Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+          retention-days: 20
+```
+
+### Deliverable
+
+- Workflow with sharding configuration
+- Workflow with AI analysis step
+- Workflow with Allure reporting
+
+---
+
 ## Submission
 
 ### Files

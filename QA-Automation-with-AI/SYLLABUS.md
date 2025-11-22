@@ -86,7 +86,7 @@ Upon successful completion, students will be able to:
 - Prompt Chaining for testing
 - Reflection for quality
 - RAG for test knowledge
-- Parallelization for scale
+- Model Context Protocol (MCP)
 
 ### Week 9-10: Integration & Project
 
@@ -94,12 +94,28 @@ Upon successful completion, students will be able to:
 - GitHub Actions workflows
 - Pre-commit hooks
 - Automated reporting
-- Test optimization
+- Playwright Sharding & Optimization
+- AI-Driven Log Analysis
 
 **Module 10: Final Project (8+ hours)**
 - Real-world codebase
-- Complete testing implementation
-- Documentation
+- Full test strategy
+- CI/CD implementation
+- Final presentation
+
+### Week 11-12: Advanced Topics & Infrastructure
+
+**Module 11: Infrastructure & Docker (4 hours)**
+- Docker basics for QA
+- Containerizing Playwright tests
+- Docker Compose for test environments
+- Running tests in CI containers
+
+**Module 12: Advanced Playwright & Visual AI (4 hours)**
+- Network Interception & Mocking
+- Visual Regression Testing (Playwright & AI tools)
+- Global Authentication Patterns
+- Advanced Debugging & Tracing
 - Presentation
 
 ---
@@ -175,7 +191,8 @@ Upon successful completion, students will be able to:
 - Claude Code documentation
 - Jest/Playwright documentation
 - GitHub Actions documentation
-- Course prompt library
+- GitHub Actions documentation
+- **[AI_QA_GUIDE.md](./AI_QA_GUIDE.md)** - The AI-Powered QA Handbook
 
 ---
 

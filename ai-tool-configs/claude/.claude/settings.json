@@ -41,6 +41,38 @@
             "timeout": 5000
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/conventional-commits.js",
+            "timeout": 3000
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/pre-push-security.js",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/post-commit-tests.js",
+            "timeout": 5000
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/coverage-check.js",
+            "timeout": 5000
+          }
+        ]
       }
     ],
     "UserPromptSubmit": [
