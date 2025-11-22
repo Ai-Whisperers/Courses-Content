@@ -16,7 +16,7 @@ Transform from Manual QA Engineer to AI-Augmented QA Automation Engineer in 8-12
 QA-Automation-with-AI/
 ├── README.md                    # This file
 ├── SYLLABUS.md                  # Complete course syllabus
-├── modules/                     # Course content by module
+├── modules/                     # Course content by module (Lessons, Exercises, Quizzes)
 │   ├── 01-introduction/
 │   ├── 02-context-engineering/
 │   ├── 03-private-repos/
@@ -26,9 +26,9 @@ QA-Automation-with-AI/
 │   ├── 07-validation/
 │   ├── 08-agentic-patterns/
 │   ├── 09-cicd/
-│   └── 10-final-project/
-├── exercises/                   # Hands-on labs
-├── assessments/                 # Quizzes and evaluations
+│   ├── 10-final-project/
+│   ├── 11-infrastructure-docker/
+│   └── 12-advanced-playwright/
 ├── templates/                   # Reusable templates
 ├── examples/                    # Code examples
 ├── prompts/                     # AI prompt library
@@ -56,11 +56,11 @@ Open `modules/01-introduction/README.md` and follow the instructions.
 
 ### 3. Complete Exercises
 
-Each module has hands-on exercises in the `exercises/` folder.
+Each module has a hands-on `EXERCISE.md` file (e.g., `modules/01-introduction/EXERCISE.md`).
 
 ### 4. Take Assessments
 
-Test your knowledge with quizzes in `assessments/`.
+Test your knowledge with the `QUIZ.md` file in each module folder.
 
 ### 5. Build Final Project
 
