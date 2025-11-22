@@ -1,0 +1,84 @@
+---
+description: Global project rules for AI assistance
+globs: ["**/*"]
+---
+
+# Project Rules
+
+## Code Style
+
+### TypeScript/JavaScript
+- Use async/await for all async operations
+- No `any` types - use `unknown` if needed
+- Define interfaces for all objects
+- Use explicit return types
+- Add JSDoc comments for public functions
+
+### Python
+- Use type hints for all functions
+- Google-style docstrings
+- Absolute imports only
+- No bare except clauses
+
+### Naming
+- Files: kebab-case (`user-service.ts`)
+- Classes: PascalCase (`UserService`)
+- Functions: camelCase (`createUser`)
+- Constants: UPPER_SNAKE_CASE (`MAX_RETRIES`)
+
+## Testing
+
+### Patterns
+- Follow AAA pattern: Arrange, Act, Assert
+- One test concept per test
+- Mock all external dependencies
+- Use descriptive test names
+
+### Coverage
+- Minimum 80% line coverage
+- Cover all branches
+- Test error cases
+
+### Playwright E2E
+- Use Page Object Model
+- Stable selectors (data-testid)
+- Wait for elements properly
+- Isolate tests
+
+## Error Handling
+
+- Create custom error classes
+- Include error codes
+- Never expose internal errors
+- Log with full context
+
+## Security
+
+- No secrets in code
+- Validate all input
+- Parameterized queries
+- Sanitize output
+
+## Git
+
+- Conventional commit format
+- Test before committing
+- Keep PRs focused
+- Write clear descriptions
+
+## Commands
+
+```bash
+# Test
+npm test
+npx playwright test
+
+# Lint
+npm run lint
+
+# Build
+npm run build
+```
+
+@testing.mdc
+@typescript.mdc

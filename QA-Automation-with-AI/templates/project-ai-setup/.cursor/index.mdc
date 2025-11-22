@@ -1,0 +1,77 @@
+---
+description: Core project standards and conventions
+alwaysApply: true
+---
+
+# Project Standards
+
+## Overview
+[Brief project description - update with your project details]
+
+## Tech Stack
+- **Runtime:** Node.js 20+
+- **Language:** TypeScript (strict mode)
+- **Framework:** Express 4.x
+- **Database:** PostgreSQL
+- **ORM:** Prisma
+- **Testing:** Jest, Supertest, Playwright
+
+## Coding Standards
+
+### General
+- Use async/await for asynchronous operations
+- Handle all errors explicitly (no silent catches)
+- Add JSDoc comments for all public functions
+- Use meaningful variable and function names
+
+### Naming Conventions
+- Files: kebab-case (`user-service.ts`)
+- Classes: PascalCase (`UserService`)
+- Functions: camelCase (`createUser`)
+- Constants: UPPER_SNAKE_CASE (`MAX_RETRIES`)
+- Interfaces: PascalCase with `I` prefix (`IUserData`)
+
+### TypeScript
+- Enable strict mode
+- No `any` types (use `unknown` if needed)
+- Define interfaces for all objects
+- Use type guards for runtime checks
+- Export types alongside implementations
+
+### Error Handling
+- Create custom error classes for different error types
+- Include error codes and messages
+- Log errors with full context
+- Return appropriate HTTP status codes
+
+## Testing Requirements
+- Framework: Jest with Supertest for API tests
+- Coverage target: 80% minimum
+- Pattern: AAA (Arrange, Act, Assert)
+- Test naming: `should_doThing_when_condition`
+- Mock all external dependencies
+- Reset state in beforeEach
+
+## Project Structure
+- `/src/controllers` - HTTP request handlers
+- `/src/services` - Business logic
+- `/src/models` - Database models and types
+- `/src/middleware` - Express middleware
+- `/src/utils` - Utility functions
+- `/tests/unit` - Unit tests
+- `/tests/integration` - Integration tests
+- `/tests/e2e` - End-to-end tests
+
+## Important Commands
+- `npm test` - Run all tests
+- `npm run test:coverage` - Run with coverage report
+- `npm run lint` - Run ESLint
+- `npm run build` - Build TypeScript
+- `npm run dev` - Start development server
+
+## Code Review Checklist
+- [ ] Types are properly defined
+- [ ] Error handling is complete
+- [ ] Tests are included
+- [ ] Documentation is updated
+- [ ] No security vulnerabilities

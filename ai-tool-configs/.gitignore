@@ -1,0 +1,46 @@
+# AI tool local settings (personal preferences)
+.claude/settings.local.json
+.claude/CLAUDE.local.md
+.cursor/settings.local.json
+.gemini/settings.local.json
+
+# Environment and secrets
+.env
+.env.*
+.env.local
+**/credentials.json
+**/secrets/
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Build
+dist/
+build/
+out/
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
