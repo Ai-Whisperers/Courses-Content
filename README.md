@@ -2,290 +2,378 @@
 
 ## Overview
 
-This repository contains the complete framework and materials for creating AI training courses for different professional roles. It demonstrates how to use AI tools to accelerate learning and skill development.
+Welcome to the **AI Whisperers Courses Content Repository**! This is your central hub for all professional training courses, combining traditional learning with AI-augmented development practices.
 
 ---
 
-## Repository Structure
+## 🎓 Available Courses
+
+### 1. MentorMate QA Automation Course
+
+**Location:** [`MentorMate-QA-Automation/`](./MentorMate-QA-Automation/)
+
+A comprehensive QA automation course combining traditional best practices with AI-assisted development.
+
+**Format:** 4-week Sunday class format  
+**Status:** Module 1, 11, 12 complete  
+**Focus:** Playwright, Postman, CI/CD, AI-assisted testing
+
+**What's Included:**
+- 4-week intensive curriculum
+- Complete Module 1 (QA Fundamentals & Setup)
+- Hands-on labs and exercises
+- AI integration patterns and prompts
+- Final capstone project
+- Industry-validated content with citations
+
+**Start Here:** [MentorMate-QA-Automation/GETTING-STARTED.md](./MentorMate-QA-Automation/GETTING-STARTED.md)
+
+---
+
+## 📂 Repository Structure
 
 ```
 Courses-Content/
-├── README.md                           # This file
-├── QA-Automation-with-AI/              # Complete QA course
+│
+├── MentorMate-QA-Automation/          # Combined QA automation course
 │   ├── README.md                       # Course overview
-│   ├── SYLLABUS.md                     # Course syllabus
-│   ├── COURSE-QA-TO-AUTOMATION-WITH-AI.md  # Full curriculum
-│   ├── modules/                        # Module content
-│   │   ├── 01-introduction/
-│   │   ├── 02-context-engineering/
-│   │   ├── 03-private-repos/
-│   │   └── ...
+│   ├── CURRICULUM.md                   # 4-week breakdown
+│   ├── GETTING-STARTED.md              # Quick start guide
+│   ├── INSTRUCTOR-GUIDE.md             # Detailed lesson plans
+│   ├── FINAL-PROJECT.md                # Capstone project
+│   ├── SOURCES-AND-REFERENCES.md       # Bibliography
+│   ├── modules/                        # Course modules
+│   │   ├── module-1/                   # QA Fundamentals (Complete)
+│   │   ├── module-11/                  # Advanced Strategies (Complete)
+│   │   └── module-12/                  # AI-Assisted Testing (Complete)
 │   ├── exercises/                      # Hands-on labs
-│   ├── assessments/                    # Quizzes
 │   ├── templates/                      # Reusable templates
-│   ├── examples/                       # Code examples
-│   ├── prompts/                        # Prompt library
-│   └── resources/                      # Additional materials
-├── .gitignore                          # Git ignore rules
-└── LICENSE                             # MIT License
+│   ├── resources/                      # Additional materials
+│   └── ai-integration/                 # AI-specific content
+│       ├── prompts/                    # Prompt library
+│       ├── templates/                  # CLAUDE.md, etc.
+│       └── resources/                  # AI guides
+│
+├── shared-resources/                   # Common across courses
+│   ├── example-projects/               # Reference projects
+│   │   └── gamma-automation/           # Presentation automation example
+│   ├── ai-tool-configs/                # AI tool configurations
+│   └── github-references/              # Reference repositories
+│
+├── ai-tool-configs/                    # AI coding assistants setup
+│   ├── claude/                         # Claude configuration
+│   ├── copilot/                        # GitHub Copilot setup
+│   ├── cursor/                         # Cursor IDE setup
+│   └── configs/                        # Test frameworks configs
+│
+├── github-references/                  # Curated external repos
+│   └── repos/                          # By category
+│       ├── agentic-patterns/
+│       ├── api-testing/
+│       ├── playwright-boilerplates/
+│       └── [more categories]
+│
+└── README.md                           # This file
 ```
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### For Students
 
-1. Go to `QA-Automation-with-AI/`
-2. Read `README.md` for course overview
-3. Start with `modules/01-introduction/`
-4. Complete exercises in `exercises/`
-5. Take quizzes in `assessments/`
+1. **Choose your course:**
+   - [MentorMate QA Automation](./MentorMate-QA-Automation/)
+
+2. **Follow the course structure:**
+   - Read GETTING-STARTED.md
+   - Review CURRICULUM.md
+   - Complete modules in order
+   - Build your final project
+
+3. **Get support:**
+   - Course-specific Slack channels
+   - Office hours with instructors
+   - Peer study groups
 
 ### For Instructors
 
-1. Review the complete curriculum in `COURSE-QA-TO-AUTOMATION-WITH-AI.md`
-2. Use `COURSE-CREATION-FRAMEWORK.md` to create new courses
-3. Adapt modules and exercises as needed
+1. **Review course materials:**
+   - CURRICULUM.md for complete breakdown
+   - INSTRUCTOR-GUIDE.md for detailed plans
+   - ANSWER-KEY.md in each module for grading
+
+2. **Customize as needed:**
+   - Add company-specific examples
+   - Adjust timelines
+   - Integrate internal tools
+
+3. **Deliver the course:**
+   - Follow detailed lesson plans
+   - Use provided slides and exercises
+   - Leverage AI integration materials
 
 ---
 
-## Available Courses
+## 🛠️ Tools & Technologies
 
-### QA to QA Automation with AI
+All courses use **100% free tools**:
 
-**Location**: `QA-Automation-with-AI/`
+### Core Tools
+- **Playwright** - Modern web automation
+- **Postman** - API testing
+- **GitHub Actions** - CI/CD automation
+- **VS Code** - Code editor
+- **Node.js** - JavaScript runtime
+- **Git & GitHub** - Version control
 
-A complete 10-module course transforming Manual QA Engineers into AI-Augmented Automation Engineers.
-
-**Contents**:
-- 10 detailed modules
-- Hands-on exercises
-- Code examples (Jest, Playwright)
-- Prompt library
-- Assessment quizzes
-- Cheat sheet
-- Templates
-
----
-
-## What's Included
-
-### AI Capabilities Analysis
-
-- **36 repositories analyzed** across the Ai-Whisperers organization
-- Technologies: Claude, GPT-4, Whisper, Transformers, ONNX, Polars, ChromaDB
-- **20 agentic design patterns** documented and explained
-- Production deployment patterns and cost optimization strategies
-
-### Complete QA Automation Course
-
-**10 modules covering:**
-
-1. Introduction to AI-Assisted Development
-2. Providing Effective Context to AI
-3. Accessing Private Repositories with AI
-4. Generating Complete Code Documentation
-5. Creating Test Plans with AI
-6. Implementing Tests with AI
-7. Test Validation and Quality Assurance
-8. Applying Agentic Patterns to Testing
-9. CI/CD Integration
-10. Final Project
-
-**Key topics:**
-- Claude Code setup and configuration
-- Context engineering and CLAUDE.md creation
-- GitHub CLI authentication for private repos
-- Documentation generation workflows
-- Test plan creation with prioritization
-- Unit, integration, and E2E test implementation
-- Test quality validation and coverage analysis
-- Agentic patterns: Chaining, Reflection, RAG, Parallelization
-- GitHub Actions CI/CD setup
-
-### Example Workflow
-
-Complete 8-phase workflow demonstrating:
-- Environment setup and authentication
-- Repository cloning and exploration
-- AI-assisted codebase analysis
-- Documentation generation
-- Test plan creation
-- Test implementation
-- Validation and refinement
-- Pull request creation
-
-### Course Creation Framework
-
-Templates and guidance for creating courses for:
-- Developers → AI-Augmented Developers
-- DevOps → AI-Powered DevOps
-- Data Analysts → AI-Powered Analysts
-- Technical Writers → AI-Augmented Writers
-- Security Engineers → AI-Augmented Security
+### AI Tools
+- **Claude Code** - AI coding assistant
+- **GitHub Copilot** - AI pair programming
+- **ChatGPT** - AI assistance
+- **Cursor** - AI-powered IDE
 
 ---
 
-## Key Concepts Covered
+## 📊 Course Philosophy
 
-### AI Tool Usage
-- LLM capabilities and limitations
-- Token windows and context management
-- Effective prompting strategies
-- Iterative refinement
+### Traditional + AI-Augmented
 
-### Context Engineering
-- Project-level context (CLAUDE.md)
-- Session-level context
-- Prompt-level context
-- Information structuring
+Our courses combine:
 
-### The 20 Agentic Patterns
-- **Core**: Chaining, Routing, Parallelization, Reflection, Tool Use
-- **Control**: Planning, Memory, Learning, Goal Monitoring
-- **Reliability**: Exception Handling, Human-in-the-Loop, RAG, Communication
-- **Reasoning**: Techniques, Evaluation, Guardrails, Prioritization, Discovery
+1. **Solid Fundamentals**
+   - Industry-standard practices
+   - Validated methodologies
+   - Authoritative sources
+
+2. **AI Integration**
+   - AI-assisted development
+   - Prompt engineering
+   - Agentic design patterns
+   - AI tool optimization
+
+3. **Hands-On Learning**
+   - Real-world projects
+   - Practical exercises
+   - Portfolio building
+   - Job-ready skills
+
+---
+
+## 🎯 Learning Outcomes
+
+By completing our courses, you will:
+
+✅ Master core technical skills  
+✅ Learn to leverage AI tools effectively  
+✅ Build professional portfolio projects  
+✅ Gain industry-recognized certifications  
+✅ Accelerate your career growth  
+
+---
+
+## 📚 Shared Resources
+
+### AI Tool Configurations
+[`ai-tool-configs/`](./ai-tool-configs/)
+
+Pre-configured setups for:
+- Claude Code with CLAUDE.md templates
+- GitHub Copilot agent configurations
+- Cursor IDE settings
+- Test framework configs (Jest, Playwright, pytest)
+
+### Example Projects
+[`shared-resources/example-projects/`](./shared-resources/example-projects/)
+
+Reference implementations:
+- **Gamma Automation** - Presentation creation automation
+- *More projects to come*
+
+### GitHub References
+[`github-references/`](./github-references/)
+
+Curated repositories organized by category:
+- Agentic design patterns
+- API testing examples
+- Playwright boilerplates
+- Page Object Model patterns
+- CI/CD examples
+- And more...
+
+---
+
+## 🌟 Course Features
+
+### Comprehensive Content
+- Detailed curriculum with learning objectives
+- Complete slide decks
+- Hands-on labs with step-by-step instructions
+- Code examples and templates
+- Assessments and quizzes
 
 ### Quality Assurance
-- Reviewing AI outputs
-- Validation checklists
-- Mutation testing
-- Coverage analysis
+- Content validated against industry standards
+- Proper citations and references
+- Regular updates
+- Tested with real students
+
+### Instructor Support
+- Detailed lesson plans with timing
+- Answer keys and grading rubrics
+- Troubleshooting guides
+- Feedback templates
+
+### AI Integration
+- Prompt libraries for common tasks
+- CLAUDE.md templates
+- AI tool configuration guides
+- Best practices for AI-assisted development
 
 ---
 
-## Prerequisites
+## 📖 Course Catalog
 
-### Technical Requirements
-- Windows/Mac/Linux computer
-- Git installed
-- Python 3.8+ or Node.js 18+
-- GitHub account
+### Current Courses
 
-### Software to Install
-- Claude Code: `winget install Anthropic.ClaudeCode`
-- GitHub CLI: `winget install GitHub.cli`
+| Course | Status | Duration | Level | Format |
+|--------|--------|----------|-------|--------|
+| **MentorMate QA Automation** | Active | 4 weeks | Beginner to Advanced | Sunday classes |
 
-### Knowledge Requirements
-- Basic programming concepts
-- Familiarity with command line
-- Understanding of your domain (QA, Dev, etc.)
+### Coming Soon
 
----
-
-## Getting Started
-
-### 1. Set Up Your Environment
-
-```bash
-# Install GitHub CLI
-winget install GitHub.cli
-
-# Authenticate with GitHub
-gh auth login
-
-# Install Claude Code
-winget install Anthropic.ClaudeCode
-
-# Verify installations
-gh --version
-claude --version
-```
-
-### 2. Clone This Repository
-
-```bash
-gh repo clone Ai-Whisperers/Courses-Content
-cd Courses-Content
-```
-
-### 3. Start Learning
-
-1. Open [COURSE-QA-TO-AUTOMATION-WITH-AI.md](COURSE-QA-TO-AUTOMATION-WITH-AI.md)
-2. Follow Module 1 to set up your environment
-3. Complete each module's hands-on exercises
-4. Build your final project
+| Course | Status | Target Launch |
+|--------|--------|---------------|
+| DevOps with AI | Planned | Q1 2025 |
+| Frontend Development with AI | Planned | Q2 2025 |
+| Data Engineering with AI | Planned | Q2 2025 |
 
 ---
 
-## Course Outcomes
-
-By completing the QA Automation course, you will be able to:
-
-- Set up and configure AI coding assistants
-- Provide effective context for accurate AI responses
-- Access and document private codebases
-- Generate comprehensive test plans
-- Implement automated tests using AI
-- Review and improve AI-generated code
-- Apply agentic design patterns
-- Integrate AI tools into CI/CD pipelines
-
----
-
-## Contributing
+## 🤝 Contributing
 
 ### Adding New Courses
 
-1. Fork this repository
-2. Follow [COURSE-CREATION-FRAMEWORK.md](COURSE-CREATION-FRAMEWORK.md)
-3. Create course materials in a new directory
-4. Submit a pull request
+We welcome new course contributions! See our course template:
 
-### Improving Existing Content
+1. Copy `COURSE-TEMPLATE/` structure
+2. Follow the established format
+3. Include all required components
+4. Submit for review
 
-1. Identify issues or gaps
-2. Propose improvements via issues
-3. Submit pull requests with fixes
-4. Include before/after examples
+### Improving Existing Courses
+
+Found an issue or have a suggestion?
+
+1. Open an issue describing the improvement
+2. Propose changes via pull request
+3. Include before/after examples
+4. Explain the benefit
 
 ---
 
-## Related Resources
+## 📞 Support
 
-### Ai-Whisperers Repositories
+### For Students
+- **Course Slack:** #[course-name]
+- **Office Hours:** Check course schedule
+- **Email:** training@ai-whisperers.com
 
-- [agentic-schemas](https://github.com/Ai-Whisperers/agentic-schemas) - 20 design patterns
-- [claude-portable-improving-system](https://github.com/Ai-Whisperers/claude-portable-improving-system) - Claude optimization
-- [chatbot-rag-rbac](https://github.com/Ai-Whisperers/chatbot-rag-rbac) - RAG implementation
-- [analysis-engine](https://github.com/Ai-Whisperers/analysis-engine) - Production AI system
+### For Instructors
+- **Instructor Portal:** [Link]
+- **Training Resources:** [Link]
+- **Support Email:** instructors@ai-whisperers.com
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](./LICENSE) file
+
+All course content is provided for educational purposes.
+
+---
+
+## 🎓 Certifications
+
+Upon successful course completion, receive:
+- Course-specific certification
+- LinkedIn skill badge
+- Portfolio project
+- Professional recognition
+
+---
+
+## 📈 Success Stories
+
+*[Coming soon - Alumni testimonials and career outcomes]*
+
+---
+
+## 🔗 Related Resources
+
+### AI Whisperers Organization
+- [Company Information](https://github.com/Ai-Whisperers/Company-Information)
+- [AI Whisperers Website](https://github.com/Ai-Whisperers/AI-Whisperers-Website)
 
 ### External Documentation
-
-- [Claude Code Docs](https://docs.claude.com)
-- [GitHub CLI Docs](https://cli.github.com/manual)
-- [Jest Documentation](https://jestjs.io)
 - [Playwright Documentation](https://playwright.dev)
+- [Postman Learning Center](https://learning.postman.com)
+- [GitHub Actions Documentation](https://docs.github.com/actions)
 
 ---
 
-## License
+## 📊 Repository Statistics
 
-MIT License - see LICENSE file
-
----
-
-## Contact
-
-- GitHub Issues: For questions and feedback
-- AI Whisperers: For training and consulting
+- **Courses:** 1 active, 3 planned
+- **Modules:** 15+ complete modules
+- **Exercise Labs:** 30+ hands-on labs
+- **Code Examples:** 100+ working examples
+- **AI Prompts:** 50+ tested prompts
+- **Reference Repos:** 50+ curated repositories
 
 ---
 
-*Created by AI Whisperers - Empowering professionals with AI skills*
+## 🎯 Our Mission
+
+**Empowering professionals with practical skills to succeed in the AI-augmented future.**
+
+We believe in:
+- **Quality education** accessible to all
+- **Practical skills** over theory alone
+- **AI augmentation** not replacement
+- **Continuous learning** and improvement
+- **Community support** and collaboration
 
 ---
 
-## Summary Statistics
+## 📅 Updates & Maintenance
 
-- **Course Modules**: 10 complete modules with detailed content
-- **Exercises**: 10 hands-on labs
-- **Quizzes**: 10 assessment quizzes with answer keys
-- **Code Examples**: Jest, Playwright, pytest examples
-- **Prompts**: Complete prompt library for all test types
-- **Resources**: Cheatsheet, troubleshooting guide, glossary
-- **Templates**: CLAUDE.md and other reusable templates
-- **Patterns Covered**: 20 agentic design patterns
+**Last Updated:** November 2024  
+**Version:** 2.0 (Merged and consolidated)  
+**Next Review:** January 2025  
 
-This comprehensive package provides everything needed to train QA professionals to become AI-augmented automation engineers, with a framework for extending to other roles.
+**Recent Changes:**
+- Merged MentorMate QA Automation course (Nov 2024)
+- Integrated AI-assisted development patterns
+- Added shared resources and examples
+- Reorganized for multi-course structure
+
+---
+
+## 💬 Feedback
+
+We value your feedback!
+
+- **Course Feedback:** Use in-course surveys
+- **Bug Reports:** Open GitHub issues
+- **Feature Requests:** Discussion board
+- **General Inquiries:** contact@ai-whisperers.com
+
+---
+
+**Ready to start learning?** Choose your course above and begin your journey! 🚀
+
+---
+
+*Created and maintained by AI Whisperers - Building the future of AI-augmented professionals*

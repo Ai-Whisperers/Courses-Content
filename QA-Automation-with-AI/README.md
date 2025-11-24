@@ -1,3 +1,11 @@
+# ⚠️ COURSE CONTENT HAS MOVED
+
+> **This course has been merged with MentorMate QA Automation.**  
+> **New Location:** [MentorMate-QA-Automation/](../MentorMate-QA-Automation/)  
+> **See [MOVED.md](./MOVED.md) for migration guide.**
+
+---
+
 # QA to QA Automation with AI - Complete Course
 
 ## Course Overview
