@@ -254,19 +254,37 @@ Curated repositories organized by category:
 
 ## 📖 Course Catalog
 
-### Current Courses
+### Active Courses
 
 | Course | Status | Duration | Level | Format |
 |--------|--------|----------|-------|--------|
-| **MentorMate QA Automation** | Active | 4 weeks | Beginner to Advanced | Sunday classes |
+| **QA Automation with AI** | ✅ Active | 12 modules | Beginner to Advanced | Self-paced |
+| **MentorMate QA Automation** | ✅ Active | 4 weeks | Beginner to Advanced | Sunday classes |
 
-### Coming Soon
+### Tier 1: Foundation Courses (Q1-Q2 2026)
 
-| Course | Status | Target Launch |
-|--------|--------|---------------|
-| DevOps with AI | Planned | Q1 2025 |
-| Frontend Development with AI | Planned | Q2 2025 |
-| Data Engineering with AI | Planned | Q2 2025 |
+| Course | Target | Duration | Priority |
+|--------|--------|----------|----------|
+| **Introduction to AI for Business Professionals** | Executives, Managers | 4 hours | High |
+| **AI Tools for Productivity** | All Employees | 8 hours | High |
+| **Prompt Engineering Masterclass** | Power Users | 4 hours | High |
+
+### Tier 2: Technical Courses (Q2 2026)
+
+| Course | Target | Duration | Priority |
+|--------|--------|----------|----------|
+| **AI-Assisted Software Development** | Developers | 16 hours (2 days) | High |
+| **Building AI-Powered Applications** | Developers | 24 hours (3 days) | High |
+| **QA Automation with AI (Advanced)** | QA Engineers | 16 hours (2 days) | Medium |
+
+### Tier 3: Specialized Courses (Q3 2026)
+
+| Course | Target | Duration | Priority |
+|--------|--------|----------|----------|
+| **AI for Customer Service Teams** | Support Teams | 8 hours | Medium |
+| **AI for Marketing Teams** | Marketing | 8 hours | Medium |
+| **AI for Sales Teams** | Sales Reps | 4 hours | Medium |
+| **AI Ethics and Governance** | Leadership, Compliance | 4 hours | High |
 
 ---
 
