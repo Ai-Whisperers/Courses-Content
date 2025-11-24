@@ -78,7 +78,7 @@ Use AI to generate complex, realistic test data.
 
 ### 👁️ Visual Validation Assistant
 Use AI to analyze screenshots for visual bugs (layout shifts, color issues) that code assertions might miss.
-*Note: Requires Multimodal models like GPT-4o or Gemini 1.5 Pro.*
+*Note: Requires Multimodal models like GPT-4o, Claude Sonnet 4.5, or Gemini 2.0 Flash.*
 
 ---
 
@@ -87,7 +87,7 @@ Use AI to analyze screenshots for visual bugs (layout shifts, color issues) that
 | Pitfall | Solution |
 |---------|----------|
 | **Generic Tests** | Provide specific business logic and constraints in your prompt. |
-| **Outdated Code** | Specify the library version (e.g., "Use Playwright v1.40+"). |
+| **Outdated Code** | Specify the library version (e.g., "Use Playwright v1.56+"). |
 | **Hallucinated APIs** | Verify method names against official documentation. |
 | **Security Blindness** | Explicitly ask for "Security and Negative tests". |
 

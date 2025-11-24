@@ -228,8 +228,8 @@ This is a living directory! We continuously:
 - Integrate latest AI features
 - Refine best practices
 
-**Last Updated:** November 2024  
-**Next Review:** January 2025
+**Last Updated:** November 2025  
+**Next Review:** February 2026
 
 ---
 

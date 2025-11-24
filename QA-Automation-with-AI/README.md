@@ -1,12 +1,12 @@
-# ⚠️ COURSE CONTENT HAS MOVED
+# QA to QA Automation with AI - Complete Course ⭐
 
-> **This course has been merged with MentorMate QA Automation.**  
-> **New Location:** [MentorMate-QA-Automation/](../MentorMate-QA-Automation/)  
-> **See [MOVED.md](./MOVED.md) for migration guide.**
+## PRIMARY COURSE - 12 Complete Modules
+
+> **This is the main QA automation course** with comprehensive AI-first curriculum.
+> **Alternative Format:** For a traditional 4-week intensive, see [MentorMate-QA-Automation/](../MentorMate-QA-Automation/)
+> **See:** [CORRECTION-NOTICE.md](../CORRECTION-NOTICE.md) for details about November 2025 update
 
 ---
-
-# QA to QA Automation with AI - Complete Course
 
 ## Course Overview
 

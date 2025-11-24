@@ -8,23 +8,43 @@ Welcome to the **AI Whisperers Courses Content Repository**! This is your centra
 
 ## 🎓 Available Courses
 
-### 1. MentorMate QA Automation Course
+### 1. QA Automation with AI Course (PRIMARY) ⭐
+
+**Location:** [`QA-Automation-with-AI/`](./QA-Automation-with-AI/)
+
+The comprehensive AI-first QA automation course with 12 complete modules.
+
+**Format:** Self-paced with 12 modules
+**Status:** All 12 modules complete ✅
+**Focus:** AI-first QA automation, Playwright, API testing, CI/CD
+
+**What's Included:**
+- 12 complete modules covering all QA fundamentals
+- AI integration throughout the curriculum
+- Comprehensive exercises and quizzes for each module
+- 9 professional presentation templates
+- Extensive prompts library
+- Test examples (Playwright, Jest, Pytest, API)
+- Industry-validated content with citations
+
+**Start Here:** [QA-Automation-with-AI/README.md](./QA-Automation-with-AI/README.md)
+
+### 2. MentorMate QA Automation (Alternative Format)
 
 **Location:** [`MentorMate-QA-Automation/`](./MentorMate-QA-Automation/)
 
-A comprehensive QA automation course combining traditional best practices with AI-assisted development.
+Traditional 4-week intensive format with optional AI integration.
 
-**Format:** 4-week Sunday class format  
-**Status:** Module 1, 11, 12 complete  
-**Focus:** Playwright, Postman, CI/CD, AI-assisted testing
+**Format:** 4-week Sunday class format
+**Status:** Module 1, 11, 12 complete
+**Focus:** Traditional QA with optional AI enhancement
 
 **What's Included:**
 - 4-week intensive curriculum
+- Detailed instructor guides
 - Complete Module 1 (QA Fundamentals & Setup)
-- Hands-on labs and exercises
-- AI integration patterns and prompts
-- Final capstone project
-- Industry-validated content with citations
+- Advanced modules (11 & 12)
+- Optional AI integration materials in ai-integration/
 
 **Start Here:** [MentorMate-QA-Automation/GETTING-STARTED.md](./MentorMate-QA-Automation/GETTING-STARTED.md)
 
@@ -325,12 +345,15 @@ Upon successful course completion, receive:
 
 ## 📊 Repository Statistics
 
-- **Courses:** 1 active, 3 planned
-- **Modules:** 15+ complete modules
-- **Exercise Labs:** 30+ hands-on labs
-- **Code Examples:** 100+ working examples
+- **Active Courses:** 1 primary (QA-Automation-with-AI - 12 modules), 1 alternative format (MentorMate - 3 modules)
+- **Planned Courses:** 3 (DevOps, Frontend, Data Engineering with AI)
+- **Complete Modules:** 12 modules (QA-Automation-with-AI) + 3 modules (MentorMate)
+- **AI Agent Capabilities:** 532 documented agents across 8 domains (C-Level, Compliance, Engineering, Product, Marketing, Testing, Excel)
+- **Presentation Templates:** 9 professional slide decks
+- **Exercise Labs:** 24+ hands-on labs with quizzes
 - **AI Prompts:** 50+ tested prompts
-- **Reference Repos:** 50+ curated repositories
+- **Reference Repos:** 50+ curated repositories (organized in github-references/)
+- **Course Creation Potential:** 15+ courses across all capability domains
 
 ---
 
@@ -349,12 +372,14 @@ We believe in:
 
 ## 📅 Updates & Maintenance
 
-**Last Updated:** November 2024  
-**Version:** 2.0 (Merged and consolidated)  
-**Next Review:** January 2025  
+**Last Updated:** November 2025
+**Version:** 3.0 (Corrected course focus)
+**Next Review:** January 2026
 
 **Recent Changes:**
-- Merged MentorMate QA Automation course (Nov 2024)
+- Corrected primary course: QA-Automation-with-AI (Nov 2025)
+- Updated all documentation to 2025
+- Enhanced capability documentation with 532 AI agents
 - Integrated AI-assisted development patterns
 - Added shared resources and examples
 - Reorganized for multi-course structure

@@ -336,10 +336,10 @@ Use with: `/run-tests unit`
 
 ### Model Selection
 
-Available models:
-- `sonnet` - Claude Sonnet (recommended, balanced)
-- `opus` - Claude Opus (complex reasoning)
-- `haiku` - Claude Haiku (fast, lightweight)
+Available models (as of November 2025):
+- `sonnet` - Claude Sonnet 4.5 (released Sept 2025, best coding model)
+- `opus` - Claude Opus 4.1 (released Aug 2025, complex reasoning, agentic tasks)
+- `haiku` - Claude Haiku 4.5 (released Oct 2025, fast, lightweight, cost-effective)
 
 Extended context: Append `[1m]` for 1 million tokens
 
@@ -673,9 +673,10 @@ set GEMINI_API_KEY=your-api-key
 
 ### Model Selection
 
-Available models:
-- `gemini-2-5-pro` - Best for complex reasoning
-- `gemini-2-5-flash` - Best price-performance
+Available models (as of November 2025):
+- `gemini-2-5-flash` - Latest model (2025), best overall performance
+- `gemini-2-0-flash` - Production-ready (GA Feb 2025), 1M context
+- `gemini-2-0-pro` - Experimental, strongest reasoning, 2M context
 
 ```json
 {
