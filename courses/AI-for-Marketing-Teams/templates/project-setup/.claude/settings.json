@@ -1,0 +1,90 @@
+{
+  "project": {
+    "name": "Marketing AI Project",
+    "description": "AI-assisted marketing content and campaign development"
+  },
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Write(content/**)",
+      "Write(campaigns/**)",
+      "Write(reports/**)",
+      "Bash(npm:*)",
+      "Bash(node:*)"
+    ],
+    "deny": [
+      "Write(.env*)",
+      "Write(**/credentials*)",
+      "Write(**/secrets*)",
+      "Bash(rm -rf:*)",
+      "Bash(curl:* | bash)",
+      "Bash(*password*)",
+      "Bash(*api_key*)"
+    ]
+  },
+  "context": {
+    "include": [
+      "CLAUDE.md",
+      "brand-guidelines/**",
+      "content/templates/**",
+      "campaigns/active/**"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "*.log",
+      ".env*"
+    ]
+  },
+  "workflows": {
+    "content_creation": {
+      "description": "Blog posts, social media, email content",
+      "steps": [
+        "Load brand context from CLAUDE.md",
+        "Generate initial draft",
+        "Apply REVIEW framework",
+        "Output to content/ directory"
+      ]
+    },
+    "campaign_planning": {
+      "description": "Marketing campaign development",
+      "steps": [
+        "Analyze target audience",
+        "Generate campaign concepts",
+        "Create content calendar",
+        "Output to campaigns/ directory"
+      ]
+    },
+    "seo_optimization": {
+      "description": "SEO content briefs and optimization",
+      "steps": [
+        "Keyword analysis",
+        "Generate content brief",
+        "Optimize existing content",
+        "Track recommendations"
+      ]
+    },
+    "analytics_reporting": {
+      "description": "Marketing data analysis",
+      "steps": [
+        "Import data",
+        "Generate insights",
+        "Create report narrative",
+        "Suggest optimizations"
+      ]
+    }
+  },
+  "preferences": {
+    "output_format": "markdown",
+    "default_tone": "professional",
+    "content_length": "detailed",
+    "include_examples": true,
+    "cite_sources": true
+  },
+  "quality_controls": {
+    "review_framework": "REVIEW",
+    "fact_check_reminder": true,
+    "brand_voice_check": true,
+    "plagiarism_warning": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+    // =================================================================
+    // GitHub Copilot Settings
+    // =================================================================
+    "github.copilot.enable": {
+        "*": true,
+        "javascript": true,
+        "typescript": true,
+        "typescriptreact": true,
+        "javascriptreact": true,
+        "python": true,
+        "go": true,
+        "rust": true,
+        "java": true,
+        "csharp": true,
+        "markdown": true,
+        "yaml": true,
+        "json": true,
+        "plaintext": false
+    },
+
+    // =================================================================
+    // Editor Settings for AI Suggestions
+    // =================================================================
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.preview": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+
+    // =================================================================
+    // Format Settings
+    // =================================================================
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // Language-specific formatters
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    // =================================================================
+    // Code Quality
+    // =================================================================
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+
+    // =================================================================
+    // File Exclusions (for performance and security)
+    // =================================================================
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+
+    // Exclude from search/watchers
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.git/**": true,
+        "**/dist/**": true,
+        "**/build/**": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.git": true,
+        "**/coverage": true
+    },
+
+    // =================================================================
+    // Terminal Settings
+    // =================================================================
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+
+    // =================================================================
+    // Extension Recommendations
+    // =================================================================
+    "extensions.ignoreRecommendations": false
+}

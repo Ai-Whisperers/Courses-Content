@@ -1,0 +1,191 @@
+# =================================================================
+# AI-Assisted Development Project .gitignore
+# Security-focused exclusions for AI tool usage
+# =================================================================
+
+# =================================================================
+# Environment and Secrets (CRITICAL - NEVER COMMIT)
+# =================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Secret files
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+**/secrets/
+credentials/
+**/credentials/
+.secrets
+*.secret
+
+# API keys and tokens (double protection)
+**/api-key*
+**/apikey*
+**/*token*
+**/*credential*
+
+# AWS
+.aws/
+aws-credentials
+
+# =================================================================
+# Dependencies
+# =================================================================
+node_modules/
+vendor/
+.pnp
+.pnp.js
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =================================================================
+# Build and Distribution
+# =================================================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+*.egg-info/
+*.egg
+.eggs/
+
+# =================================================================
+# IDE and Editor
+# =================================================================
+# VS Code (keep settings.json but exclude personal)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# =================================================================
+# Testing and Coverage
+# =================================================================
+coverage/
+.coverage
+htmlcov/
+.nyc_output/
+*.lcov
+.pytest_cache/
+.tox/
+.nox/
+
+# =================================================================
+# Logs and Debug
+# =================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# =================================================================
+# Operating System
+# =================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =================================================================
+# Temporary Files
+# =================================================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+
+# =================================================================
+# AI Tool Specific
+# =================================================================
+# Copilot telemetry (if any local caching)
+.copilot/
+
+# AI-generated files that shouldn't be committed
+*.ai-generated
+*.ai-draft
+
+# Large model files (if working with ML)
+*.h5
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.pb
+model/
+models/
+*.bin
+
+# =================================================================
+# Documentation Generation
+# =================================================================
+docs/_build/
+site/
+.docusaurus/
+
+# =================================================================
+# Miscellaneous
+# =================================================================
+*.local
+.cache/
+.parcel-cache/
+.turbo/
+
+# Package manager locks (choose one to keep)
+# Uncomment the ones you DON'T use:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# Pipfile.lock
+
+# =================================================================
+# Project-Specific Exclusions
+# =================================================================
+# Add your project-specific exclusions below:
+
