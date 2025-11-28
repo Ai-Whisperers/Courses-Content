@@ -58,14 +58,14 @@ This course offers a **hybrid learning path**:
 | [GETTING-STARTED.md](GETTING-STARTED.md) | Pre-course checklist and preparation |
 | [CURRICULUM.md](CURRICULUM.md) | Complete 4-week breakdown with homework |
 | [FINAL-PROJECT.md](FINAL-PROJECT.md) | Capstone project requirements |
-| [modules/module-1/](modules/module-1/) | Week 1 materials (slides, lab, exercises, quiz) |
+| [modules/01-qa-fundamentals/](modules/01-qa-fundamentals/) | Week 1 materials (slides, lab, exercises, quiz) |
 
 ### For Instructors
 
 | Document | Description |
 |----------|-------------|
 | [INSTRUCTOR-GUIDE.md](INSTRUCTOR-GUIDE.md) | Detailed minute-by-minute lesson plans |
-| [modules/module-1/ANSWER-KEY.md](modules/module-1/ANSWER-KEY.md) | Quiz answers and grading |
+| [modules/01-qa-fundamentals/ANSWER-KEY.md](modules/01-qa-fundamentals/ANSWER-KEY.md) | Quiz answers and grading |
 
 ### Reference
 

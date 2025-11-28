@@ -126,7 +126,7 @@ AI-Assisted-Software-Development/
 ├── README.md                    # This file
 ├── SYLLABUS.md                  # Detailed course syllabus
 ├── modules/
-│   ├── module-01/               # AI for Developers Overview
+│   ├── 01-ai-coding-assistants/ # AI for Developers Overview
 │   │   ├── MODULE-OVERVIEW.md
 │   │   ├── 01-SLIDES.md
 │   │   ├── 02-EXERCISES.md
@@ -134,13 +134,13 @@ AI-Assisted-Software-Development/
 │   │   ├── 04-CODE-EXAMPLES.md
 │   │   ├── 05-QUIZ.md
 │   │   └── ANSWER-KEY.md
-│   ├── module-02/               # GitHub Copilot Mastery
-│   ├── module-03/               # AI for Code Review
-│   ├── module-04/               # AI for Documentation
-│   ├── module-05/               # AI for Testing & Debugging
-│   ├── module-06/               # AI for Architecture
-│   ├── module-07/               # Security & Best Practices
-│   └── module-08/               # Capstone Project
+│   ├── 02-code-generation/      # Code Generation Best Practices
+│   ├── 03-ai-powered-testing/   # AI for Testing
+│   ├── 04-code-review-quality/  # AI for Code Review
+│   ├── 05-documentation/        # AI for Documentation
+│   ├── 06-debugging-troubleshooting/ # Debugging & Troubleshooting
+│   ├── 07-architecture-design/  # Architecture & Design
+│   └── 08-devops-integration/   # DevOps Integration
 └── presentation-templates/
     ├── README.md
     ├── MASTER-SLIDE-TEMPLATE.md
