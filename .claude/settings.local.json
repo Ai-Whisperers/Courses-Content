@@ -109,7 +109,8 @@
       "Bash(PYTHONPATH=\".:$PYTHONPATH\" celery:*)",
       "Bash(PYTHONPATH=\".:$PYTHONPATH\" timeout 300 ./venv/Scripts/python:*)",
       "Bash(nul)",
-      "Bash(PYTHONPATH=\".:$PYTHONPATH\" timeout 180 ./venv/Scripts/python:*)"
+      "Bash(PYTHONPATH=\".:$PYTHONPATH\" timeout 180 ./venv/Scripts/python:*)",
+      "Bash(xargs ls:*)"
     ],
     "deny": [
       "Read(.env)",

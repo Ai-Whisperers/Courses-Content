@@ -190,23 +190,36 @@ Before submission:
 
 ### Use Existing Courses as Templates
 
-**For traditional courses:**
-- Use `MentorMate-QA-Automation/` as a reference
+**For complete course reference:**
+- Use `courses/QA-Automation-with-AI/` as the gold standard (12 complete modules)
 
-**For AI-focused courses:**
-- Reference `ai-integration/` structure
+**For self-paced courses:**
+- Follow the structure in `courses/QA-Automation-with-AI/`
+
+**For documentation and guides:**
+- See `docs/guides/course-creation/` for step-by-step guide
+- Templates available in `docs/templates/`
 
 ### Quick Start Template
 
-We provide a minimal starter:
+1. Review the Course Creation Guide:
+   ```bash
+   # Read the comprehensive guide
+   cat docs/guides/course-creation/README.md
+   ```
 
-```bash
-cp -r COURSE-TEMPLATE/ your-course-name/
-cd your-course-name/
-# Edit README.md with your course details
-```
+2. Copy the course skeleton from templates:
+   ```bash
+   cp -r docs/templates/course-skeletons/self-paced/* courses/your-course-name/
+   cd courses/your-course-name/
+   # Edit README.md with your course details
+   ```
 
-*(Note: COURSE-TEMPLATE will be added soon)*
+3. Use QA-Automation-with-AI as a working reference:
+   ```bash
+   # Browse the complete flagship course
+   ls courses/QA-Automation-with-AI/
+   ```
 
 ---
 
@@ -231,9 +244,10 @@ By contributing, you agree that:
 
 ### Resources
 
-- **Style Guide:** See existing courses
+- **Style Guide:** See `docs/guides/course-creation/CONTENT.md`
 - **Markdown Help:** [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
-- **Course Examples:** Browse `MentorMate-QA-Automation/`
+- **Course Examples:** Browse `courses/QA-Automation-with-AI/`
+- **Quality Standards:** See `QUALITY-CONTROL-CHECKLIST.md`
 
 ---
 
@@ -362,5 +376,5 @@ Still have questions? We're here to help!
 
 ---
 
-*Last Updated: November 2024*
+*Last Updated: November 2025*
 

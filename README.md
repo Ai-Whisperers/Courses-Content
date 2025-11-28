@@ -6,16 +6,18 @@ Welcome to the **AI Whisperers Courses Content Repository**! This is your centra
 
 ---
 
-## 🎓 Available Courses
+## Available Courses
 
-### 1. QA Automation with AI Course (PRIMARY) ⭐
+### Primary Course (Production Ready)
 
-**Location:** [`QA-Automation-with-AI/`](./QA-Automation-with-AI/)
+#### QA Automation with AI Course
+
+**Location:** [`courses/QA-Automation-with-AI/`](./courses/QA-Automation-with-AI/)
 
 The comprehensive AI-first QA automation course with 12 complete modules.
 
 **Format:** Self-paced with 12 modules
-**Status:** All 12 modules complete ✅
+**Status:** All 12 modules complete
 **Focus:** AI-first QA automation, Playwright, API testing, CI/CD
 
 **What's Included:**
@@ -27,87 +29,92 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 - Test examples (Playwright, Jest, Pytest, API)
 - Industry-validated content with citations
 
-**Start Here:** [QA-Automation-with-AI/README.md](./QA-Automation-with-AI/README.md)
-
-### 2. MentorMate QA Automation (Alternative Format)
-
-**Location:** [`MentorMate-QA-Automation/`](./MentorMate-QA-Automation/)
-
-Traditional 4-week intensive format with optional AI integration.
-
-**Format:** 4-week Sunday class format
-**Status:** Module 1, 11, 12 complete
-**Focus:** Traditional QA with optional AI enhancement
-
-**What's Included:**
-- 4-week intensive curriculum
-- Detailed instructor guides
-- Complete Module 1 (QA Fundamentals & Setup)
-- Advanced modules (11 & 12)
-- Optional AI integration materials in ai-integration/
-
-**Start Here:** [MentorMate-QA-Automation/GETTING-STARTED.md](./MentorMate-QA-Automation/GETTING-STARTED.md)
+**Start Here:** [courses/QA-Automation-with-AI/README.md](./courses/QA-Automation-with-AI/README.md)
 
 ---
 
-## 📂 Repository Structure
+### Courses In Development
+
+| Course | Status | Target Audience | Duration |
+|--------|--------|-----------------|----------|
+| [Introduction to AI for Business Professionals](./courses/Introduction-to-AI-for-Business-Professionals/) | In Progress | Executives, Managers | 4 hours |
+| [AI-Assisted Software Development](./courses/AI-Assisted-Software-Development/) | In Progress | Developers | 16 hours |
+| [AI for Marketing Teams](./courses/AI-for-Marketing-Teams/) | In Progress | Marketing | 8 hours |
+| [Prompt Engineering Masterclass](./courses/Prompt-Engineering-Masterclass/) | Planning | Power Users | 4 hours |
+| [AI Tools for Productivity](./courses/AI-Tools-for-Productivity/) | Planning | All Employees | 8 hours |
+| [Building AI-Powered Applications](./courses/Building-AI-Powered-Applications/) | Planning | Developers | 24 hours |
+| [QA Automation with AI (Advanced)](./courses/QA-Automation-with-AI-Advanced/) | Planning | QA Engineers | 16 hours |
+| [AI for Customer Service Teams](./courses/AI-for-Customer-Service-Teams/) | Planning | Support Teams | 8 hours |
+| [AI for Sales Teams](./courses/AI-for-Sales-Teams/) | Planning | Sales Reps | 4 hours |
+| [AI Ethics and Governance](./courses/AI-Ethics-and-Governance/) | Planning | Leadership, Compliance | 4 hours |
+
+---
+
+## Repository Structure
 
 ```
 Courses-Content/
 │
-├── MentorMate-QA-Automation/          # Combined QA automation course
-│   ├── README.md                       # Course overview
-│   ├── CURRICULUM.md                   # 4-week breakdown
-│   ├── GETTING-STARTED.md              # Quick start guide
-│   ├── INSTRUCTOR-GUIDE.md             # Detailed lesson plans
-│   ├── FINAL-PROJECT.md                # Capstone project
-│   ├── SOURCES-AND-REFERENCES.md       # Bibliography
-│   ├── modules/                        # Course modules
-│   │   ├── module-1/                   # QA Fundamentals (Complete)
-│   │   ├── module-11/                  # Advanced Strategies (Complete)
-│   │   └── module-12/                  # AI-Assisted Testing (Complete)
-│   ├── exercises/                      # Hands-on labs
-│   ├── templates/                      # Reusable templates
-│   ├── resources/                      # Additional materials
-│   └── ai-integration/                 # AI-specific content
-│       ├── prompts/                    # Prompt library
-│       ├── templates/                  # CLAUDE.md, etc.
-│       └── resources/                  # AI guides
+├── courses/                           # All course content
+│   ├── QA-Automation-with-AI/         # COMPLETE - 12 modules
+│   ├── AI-Assisted-Software-Development/
+│   ├── AI-Ethics-and-Governance/
+│   ├── AI-for-Customer-Service-Teams/
+│   ├── AI-for-Marketing-Teams/
+│   ├── AI-for-Sales-Teams/
+│   ├── AI-Tools-for-Productivity/
+│   ├── Building-AI-Powered-Applications/
+│   ├── Introduction-to-AI-for-Business-Professionals/
+│   ├── Prompt-Engineering-Masterclass/
+│   └── QA-Automation-with-AI-Advanced/
 │
-├── shared-resources/                   # Common across courses
-│   ├── example-projects/               # Reference projects
-│   │   └── gamma-automation/           # Presentation automation example
-│   ├── ai-tool-configs/                # AI tool configurations
-│   └── github-references/              # Reference repositories
+├── docs/                              # Documentation hub
+│   ├── frameworks/                    # Strategic guides and methodologies
+│   │   ├── ASSESSMENT-FRAMEWORK.md
+│   │   ├── CAPABILITY-MATRIX.md
+│   │   ├── COURSE-CONTENT-CREATION-GUIDE.md
+│   │   ├── COURSE-TEMPLATE-MASTER.md
+│   │   └── ...
+│   ├── history/                       # Implementation records
+│   │   ├── MERGE-SUMMARY.md
+│   │   └── ...
+│   └── templates/                     # Reusable course templates
 │
-├── ai-tool-configs/                    # AI coding assistants setup
-│   ├── claude/                         # Claude configuration
-│   ├── copilot/                        # GitHub Copilot setup
-│   ├── cursor/                         # Cursor IDE setup
-│   └── configs/                        # Test frameworks configs
+├── shared-resources/                  # Common across courses
+│   ├── example-projects/              # Reference projects
+│   │   └── gamma-automation/          # Presentation automation example
+│   └── README.md
 │
-├── github-references/                  # Curated external repos
-│   └── repos/                          # By category
-│       ├── agentic-patterns/
-│       ├── api-testing/
-│       ├── playwright-boilerplates/
-│       └── [more categories]
+├── ai-tool-configs/                   # AI coding assistants setup
+│   ├── claude/                        # Claude configuration
+│   ├── copilot/                       # GitHub Copilot setup
+│   ├── cursor/                        # Cursor IDE setup
+│   └── configs/                       # Test frameworks configs
 │
-└── README.md                           # This file
+├── github-references/                 # Curated external repos
+│   └── repos/                         # By category
+│
+├── certification/                     # Certification framework
+│   ├── CERTIFICATION-GUIDELINES.md
+│   └── CERTIFICATION-TEMPLATE.md
+│
+├── prompts/                           # AI prompts library
+│
+└── README.md                          # This file
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### For Students
 
 1. **Choose your course:**
-   - [MentorMate QA Automation](./MentorMate-QA-Automation/)
+   - [QA Automation with AI](./courses/QA-Automation-with-AI/) - Complete and ready
 
 2. **Follow the course structure:**
-   - Read GETTING-STARTED.md
-   - Review CURRICULUM.md
+   - Read the course README.md
+   - Review SYLLABUS.md for curriculum overview
    - Complete modules in order
    - Build your final project
 
@@ -119,23 +126,23 @@ Courses-Content/
 ### For Instructors
 
 1. **Review course materials:**
-   - CURRICULUM.md for complete breakdown
-   - INSTRUCTOR-GUIDE.md for detailed plans
-   - ANSWER-KEY.md in each module for grading
+   - Course README.md for overview
+   - SYLLABUS.md for complete breakdown
+   - Module folders for detailed content
 
 2. **Customize as needed:**
    - Add company-specific examples
    - Adjust timelines
    - Integrate internal tools
 
-3. **Deliver the course:**
-   - Follow detailed lesson plans
-   - Use provided slides and exercises
-   - Leverage AI integration materials
+3. **Use documentation:**
+   - [Course Creation Guide](./docs/guides/course-creation/)
+   - [Assessment Guide](./docs/guides/assessment/)
+   - [Quality Control Checklist](./QUALITY-CONTROL-CHECKLIST.md)
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 All courses use **100% free tools**:
 
@@ -155,7 +162,7 @@ All courses use **100% free tools**:
 
 ---
 
-## 📊 Course Philosophy
+## Course Philosophy
 
 ### Traditional + AI-Augmented
 
@@ -180,22 +187,34 @@ Our courses combine:
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 By completing our courses, you will:
 
-✅ Master core technical skills  
-✅ Learn to leverage AI tools effectively  
-✅ Build professional portfolio projects  
-✅ Gain industry-recognized certifications  
-✅ Accelerate your career growth  
+- Master core technical skills
+- Learn to leverage AI tools effectively
+- Build professional portfolio projects
+- Gain industry-recognized certifications
+- Accelerate your career growth
 
 ---
 
-## 📚 Shared Resources
+## Documentation
 
-### AI Tool Configurations
-[`ai-tool-configs/`](./ai-tool-configs/)
+### Key Resources
+
+| Document | Description | Location |
+|----------|-------------|----------|
+| **Documentation Hub** | Central navigation for all docs | [docs/README.md](./docs/README.md) |
+| **Course Creation Guide** | End-to-end course creation | [docs/guides/course-creation/](./docs/guides/course-creation/) |
+| **Assessment Guide** | Assessment design & grading | [docs/guides/assessment/](./docs/guides/assessment/) |
+| **Quality Control Checklist** | Content quality standards | [QUALITY-CONTROL-CHECKLIST.md](./QUALITY-CONTROL-CHECKLIST.md) |
+| **Course Templates** | Reusable course templates | [docs/templates/](./docs/templates/) |
+| **Portfolio & Capabilities** | Course inventory & AI matrix | [docs/business/portfolio/](./docs/business/portfolio/) |
+
+### Shared Resources
+
+**AI Tool Configurations:** [`ai-tool-configs/`](./ai-tool-configs/)
 
 Pre-configured setups for:
 - Claude Code with CLAUDE.md templates
@@ -203,15 +222,12 @@ Pre-configured setups for:
 - Cursor IDE settings
 - Test framework configs (Jest, Playwright, pytest)
 
-### Example Projects
-[`shared-resources/example-projects/`](./shared-resources/example-projects/)
+**Example Projects:** [`shared-resources/example-projects/`](./shared-resources/example-projects/)
 
 Reference implementations:
 - **Gamma Automation** - Presentation creation automation
-- *More projects to come*
 
-### GitHub References
-[`github-references/`](./github-references/)
+**GitHub References:** [`github-references/`](./github-references/)
 
 Curated repositories organized by category:
 - Agentic design patterns
@@ -219,11 +235,10 @@ Curated repositories organized by category:
 - Playwright boilerplates
 - Page Object Model patterns
 - CI/CD examples
-- And more...
 
 ---
 
-## 🌟 Course Features
+## Course Features
 
 ### Comprehensive Content
 - Detailed curriculum with learning objectives
@@ -252,52 +267,47 @@ Curated repositories organized by category:
 
 ---
 
-## 📖 Course Catalog
+## Course Catalog
 
-### Active Courses
+### Tier 1: Foundation Courses (Highest Priority)
 
-| Course | Status | Duration | Level | Format |
-|--------|--------|----------|-------|--------|
-| **QA Automation with AI** | ✅ Active | 12 modules | Beginner to Advanced | Self-paced |
-| **MentorMate QA Automation** | ✅ Active | 4 weeks | Beginner to Advanced | Sunday classes |
+| Course | Target | Duration | Status |
+|--------|--------|----------|--------|
+| **Introduction to AI for Business Professionals** | Executives, Managers | 4 hours | In Progress |
+| **AI Tools for Productivity** | All Employees | 8 hours | Planning |
+| **Prompt Engineering Masterclass** | Power Users | 4 hours | Planning |
 
-### Tier 1: Foundation Courses (Q1-Q2 2026)
+### Tier 2: Technical Courses (Medium Priority)
 
-| Course | Target | Duration | Priority |
-|--------|--------|----------|----------|
-| **Introduction to AI for Business Professionals** | Executives, Managers | 4 hours | High |
-| **AI Tools for Productivity** | All Employees | 8 hours | High |
-| **Prompt Engineering Masterclass** | Power Users | 4 hours | High |
+| Course | Target | Duration | Status |
+|--------|--------|----------|--------|
+| **QA Automation with AI** | QA Engineers | 12 modules | Complete |
+| **AI-Assisted Software Development** | Developers | 16 hours | In Progress |
+| **Building AI-Powered Applications** | Developers | 24 hours | Planning |
+| **QA Automation with AI (Advanced)** | QA Engineers | 16 hours | Planning |
 
-### Tier 2: Technical Courses (Q2 2026)
+### Tier 3: Specialized Courses (Lower Priority)
 
-| Course | Target | Duration | Priority |
-|--------|--------|----------|----------|
-| **AI-Assisted Software Development** | Developers | 16 hours (2 days) | High |
-| **Building AI-Powered Applications** | Developers | 24 hours (3 days) | High |
-| **QA Automation with AI (Advanced)** | QA Engineers | 16 hours (2 days) | Medium |
-
-### Tier 3: Specialized Courses (Q3 2026)
-
-| Course | Target | Duration | Priority |
-|--------|--------|----------|----------|
-| **AI for Customer Service Teams** | Support Teams | 8 hours | Medium |
-| **AI for Marketing Teams** | Marketing | 8 hours | Medium |
-| **AI for Sales Teams** | Sales Reps | 4 hours | Medium |
-| **AI Ethics and Governance** | Leadership, Compliance | 4 hours | High |
+| Course | Target | Duration | Status |
+|--------|--------|----------|--------|
+| **AI for Customer Service Teams** | Support Teams | 8 hours | Planning |
+| **AI for Marketing Teams** | Marketing | 8 hours | In Progress |
+| **AI for Sales Teams** | Sales Reps | 4 hours | Planning |
+| **AI Ethics and Governance** | Leadership, Compliance | 4 hours | Planning |
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 ### Adding New Courses
 
-We welcome new course contributions! See our course template:
+We welcome new course contributions! See our documentation:
 
-1. Copy `COURSE-TEMPLATE/` structure
-2. Follow the established format
-3. Include all required components
-4. Submit for review
+1. Review [Course Creation Guide](./docs/guides/course-creation/)
+2. Use templates from [docs/templates/](./docs/templates/)
+3. Follow the established format
+4. Include all required components
+5. Submit for review
 
 ### Improving Existing Courses
 
@@ -308,9 +318,11 @@ Found an issue or have a suggestion?
 3. Include before/after examples
 4. Explain the benefit
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+
 ---
 
-## 📞 Support
+## Support
 
 ### For Students
 - **Course Slack:** #[course-name]
@@ -318,13 +330,11 @@ Found an issue or have a suggestion?
 - **Email:** training@ai-whisperers.com
 
 ### For Instructors
-- **Instructor Portal:** [Link]
-- **Training Resources:** [Link]
 - **Support Email:** instructors@ai-whisperers.com
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See [LICENSE](./LICENSE) file
 
@@ -332,7 +342,7 @@ All course content is provided for educational purposes.
 
 ---
 
-## 🎓 Certifications
+## Certifications
 
 Upon successful course completion, receive:
 - Course-specific certification
@@ -340,42 +350,25 @@ Upon successful course completion, receive:
 - Portfolio project
 - Professional recognition
 
----
-
-## 📈 Success Stories
-
-*[Coming soon - Alumni testimonials and career outcomes]*
+See [certification/](./certification/) for details.
 
 ---
 
-## 🔗 Related Resources
+## Repository Statistics
 
-### AI Whisperers Organization
-- [Company Information](https://github.com/Ai-Whisperers/Company-Information)
-- [AI Whisperers Website](https://github.com/Ai-Whisperers/AI-Whisperers-Website)
-
-### External Documentation
-- [Playwright Documentation](https://playwright.dev)
-- [Postman Learning Center](https://learning.postman.com)
-- [GitHub Actions Documentation](https://docs.github.com/actions)
-
----
-
-## 📊 Repository Statistics
-
-- **Active Courses:** 1 primary (QA-Automation-with-AI - 12 modules), 1 alternative format (MentorMate - 3 modules)
-- **Planned Courses:** 3 (DevOps, Frontend, Data Engineering with AI)
-- **Complete Modules:** 12 modules (QA-Automation-with-AI) + 3 modules (MentorMate)
-- **AI Agent Capabilities:** 532 documented agents across 8 domains (C-Level, Compliance, Engineering, Product, Marketing, Testing, Excel)
+- **Complete Courses:** 1 (QA-Automation-with-AI - 12 modules)
+- **Courses In Development:** 3
+- **Planned Courses:** 7
+- **Total Portfolio:** 11 courses
+- **AI Agent Capabilities:** 532 documented agents across 8 domains
 - **Presentation Templates:** 9 professional slide decks
 - **Exercise Labs:** 24+ hands-on labs with quizzes
 - **AI Prompts:** 50+ tested prompts
-- **Reference Repos:** 50+ curated repositories (organized in github-references/)
-- **Course Creation Potential:** 15+ courses across all capability domains
+- **Reference Repos:** 50+ curated repositories
 
 ---
 
-## 🎯 Our Mission
+## Our Mission
 
 **Empowering professionals with practical skills to succeed in the AI-augmented future.**
 
@@ -388,23 +381,35 @@ We believe in:
 
 ---
 
-## 📅 Updates & Maintenance
+## Updates & Maintenance
 
 **Last Updated:** November 2025
-**Version:** 3.0 (Corrected course focus)
+**Version:** 4.0 (Documentation reorganization)
 **Next Review:** January 2026
 
 **Recent Changes:**
-- Corrected primary course: QA-Automation-with-AI (Nov 2025)
-- Updated all documentation to 2025
-- Enhanced capability documentation with 532 AI agents
-- Integrated AI-assisted development patterns
-- Added shared resources and examples
-- Reorganized for multi-course structure
+- Reorganized courses into courses/ directory
+- Moved frameworks and history to docs/
+- Updated all documentation links
+- Enhanced course catalog with status tracking
+- Added documentation hub at docs/README.md
 
 ---
 
-## 💬 Feedback
+## Related Resources
+
+### AI Whisperers Organization
+- [Company Information](https://github.com/Ai-Whisperers/Company-Information)
+- [AI Whisperers Website](https://github.com/Ai-Whisperers/AI-Whisperers-Website)
+
+### External Documentation
+- [Playwright Documentation](https://playwright.dev)
+- [Postman Learning Center](https://learning.postman.com)
+- [GitHub Actions Documentation](https://docs.github.com/actions)
+
+---
+
+## Feedback
 
 We value your feedback!
 
@@ -415,7 +420,7 @@ We value your feedback!
 
 ---
 
-**Ready to start learning?** Choose your course above and begin your journey! 🚀
+**Ready to start learning?** Choose your course above and begin your journey!
 
 ---
 
