@@ -191,6 +191,12 @@ credentials/
 *.credentials
 
 # ============================================
+# External Reference Repositories
+# ============================================
+# Cloned repos for analysis (too large to commit)
+external-repos/
+
+# ============================================
 # Misc
 # ============================================
 .terraform/
