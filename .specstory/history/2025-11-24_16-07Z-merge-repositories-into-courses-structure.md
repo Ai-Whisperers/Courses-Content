@@ -256,7 +256,7 @@ Let me verify the current git status and confirm everything is properly finalize
 ---
 
 <tool-use data-tool-type="shell" data-tool-name="run_terminal_cmd">
-<details><summary>Tool use: **command** • Run command: git status</summary>
+<details><summary>Tool use: **run_terminal_cmd** • Run command: git status</summary>
 
 ```bash
 git status
@@ -264,13 +264,13 @@ git status
 
 ```
 On branch main
-Your branch is up to date with &#39;origin/main&#39;.
+Your branch is up to date with 'origin/main'.
 
 Untracked files:
-  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+  (use "git add &lt;file&gt;..." to include in what will be committed)
 	.specstory/history/2025-11-24_16-07Z-untitled.md
 
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 </details>
@@ -279,7 +279,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 ---
 
 <tool-use data-tool-type="shell" data-tool-name="run_terminal_cmd">
-<details><summary>Tool use: **command** • Run command: git log --oneline -5</summary>
+<details><summary>Tool use: **run_terminal_cmd** • Run command: git log --oneline -5</summary>
 
 ```bash
 git log --oneline -5
