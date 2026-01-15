@@ -22,6 +22,168 @@
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+**Desde Módulo 02 (Full-Stack Development)**:
+- ✅ **Prisma ORM**: Entiendes cómo crear modelos, migrations, y queries básicas
+  - Verificación: ¿Puedes crear un modelo `User` con campos `id`, `email`, `name`?
+- ✅ **API Routes en Next.js**: Sabes crear rutas GET/POST en `app/api/`
+  - Verificación: ¿Has creado al menos una API route que devuelve JSON?
+- ✅ **Server Actions**: Comprendes cómo funcionan y cuándo usarlas
+  - Verificación: ¿Sabes agregar `"use server"` y crear una async function?
+- ✅ **TypeScript básico**: Interfaces, types, async/await
+  - Verificación: ¿Entiendes qué es `Promise<User>` y cómo usar `await`?
+
+**Desde Módulo 01 (Next.js Foundations)**:
+- ✅ **App Router**: File-based routing, Server vs Client Components
+  - Verificación: ¿Sabes cuándo usar `"use client"` vs componente por defecto?
+- ✅ **Environment variables**: Cómo configurar y usar `.env`
+  - Verificación: ¿Has usado `process.env.VARIABLE_NAME` antes?
+
+**Conceptos Generales**:
+- ✅ **HTTP basics**: GET, POST, headers, cookies
+  - Verificación: ¿Entiendes qué son headers HTTP y para qué sirven?
+- ✅ **JSON**: Manipulación de objetos JavaScript
+  - Verificación: ¿Puedes parsear y stringify JSON?
+- ✅ **Async JavaScript**: Promises, async/await, try/catch
+  - Verificación: ¿Entiendes por qué usamos `await` con fetch()?
+
+### Software Necesario
+
+Verifica que tienes instalado (desde módulos previos):
+
+```bash
+# 1. Node.js v18+
+node --version  
+# ✅ Debe mostrar v18.0.0 o superior
+# ❌ Si no: Descarga desde nodejs.org
+
+# 2. Next.js project existente
+# (Deberías tener un proyecto de módulos 01-02)
+ls app/  
+# ✅ Debe mostrar: page.tsx, layout.tsx, etc.
+# ❌ Si no: npx create-next-app@latest
+
+# 3. Prisma instalado
+npx prisma --version
+# ✅ Debe mostrar versión 5.x
+# ❌ Si no: npm install prisma @prisma/client
+
+# 4. PostgreSQL disponible
+# Opción A: Docker local
+docker ps | grep postgres
+# ✅ Debe mostrar container corriendo
+
+# Opción B: Neon/Supabase cloud
+# Verifica que DATABASE_URL está en tu .env
+cat .env | grep DATABASE_URL
+# ✅ Debe mostrar: DATABASE_URL="postgresql://..."
+```
+
+### Cuentas Necesarias (100% Gratis)
+
+Para este módulo necesitarás crear las siguientes cuentas si aún no las tienes:
+
+#### 1. Google Cloud Console (Para OAuth Google)
+- [ ] **Ir a**: https://console.cloud.google.com
+- [ ] **Crear proyecto**: "FPUNA Auth" (o nombre de tu proyecto)
+- [ ] **Habilitar API**: Google+ API o "Google OAuth 2.0"
+- [ ] **Crear credenciales**: OAuth 2.0 Client ID
+  - Application type: Web application
+  - Authorized redirect URIs: `http://localhost:3000/api/auth/callback/google`
+- [ ] **Copiar**: Client ID y Client Secret a tu `.env`
+
+**Tiempo estimado**: 5 minutos
+
+#### 2. GitHub Developer Settings (Para OAuth GitHub)
+- [ ] **Ir a**: https://github.com/settings/developers
+- [ ] **New OAuth App**
+- [ ] **Configurar**:
+  - Application name: "FPUNA Portal"
+  - Homepage URL: `http://localhost:3000`
+  - Authorization callback URL: `http://localhost:3000/api/auth/callback/github`
+- [ ] **Copiar**: Client ID y generar Client Secret
+- [ ] **Agregar** a tu `.env`
+
+**Tiempo estimado**: 3 minutos
+
+#### 3. Upstash Redis (Opcional - Para Rate Limiting)
+- [ ] **Ir a**: https://upstash.com
+- [ ] **Crear cuenta** (GitHub login disponible)
+- [ ] **Create Database**: Redis (free tier 10,000 commands/day)
+- [ ] **Copiar**: REST URL y REST TOKEN
+- [ ] **Agregar** a `.env` (si implementas rate limiting)
+
+**Tiempo estimado**: 5 minutos  
+**Nota**: Opcional. Rate limiting se puede implementar después.
+
+### Auto-Evaluación
+
+**Responde honestamente**. Necesitas **SÍ** en las primeras 5 para continuar:
+
+1. **¿Puedes crear un nuevo modelo Prisma y correr migrations?**  
+   SÍ / NO  
+   *Si NO*: Revisa [Módulo 02, Parte 2](./02-fullstack-development.md#parte-2-prisma-orm)
+
+2. **¿Entiendes la diferencia entre Server Component y Client Component en Next.js?**  
+   SÍ / NO  
+   *Si NO*: Revisa [Módulo 01, Parte 3](./01-nextjs-foundations.md#parte-3-server-vs-client-components)
+
+3. **¿Sabes qué es una API Route en Next.js y cómo crearla?**  
+   SÍ / NO  
+   *Si NO*: Revisa [Módulo 02, Parte 3](./02-fullstack-development.md#parte-3-api-routes)
+
+4. **¿Comprendes qué es authentication vs authorization?**  
+   SÍ / NO  
+   *Si NO*: Lee la sección "¿Por Qué Auth/Authorization es Crítico?" más abajo primero
+
+5. **¿Tienes un proyecto Next.js funcionando con Prisma configurado?**  
+   SÍ / NO  
+   *Si NO*: Completa ejercicios de Módulos 01-02 primero
+
+6. **¿Ya creaste las cuentas necesarias (Google Cloud, GitHub Developer)?**  
+   SÍ / NO  
+   *Si NO*: Hazlo ahora (10 minutos totales), las necesitarás en Parte 2
+
+### Si Respondiste NO a Alguna de las Primeras 5
+
+**🛑 No continúes aún**. Este módulo asume conocimientos sólidos de los módulos previos.
+
+**Acción recomendada**:
+1. Identifica qué concepto necesitas reforzar
+2. Vuelve al módulo correspondiente (usa los links arriba)
+3. Completa el ejercicio práctico de ese módulo
+4. Regresa cuando tengas 5 SÍes
+
+**💡 ¿Por qué es importante?** Authentication es un tema complejo con implicaciones de seguridad. Sin bases sólidas en Next.js y Prisma, te frustrarás y cometerás errores críticos.
+
+### Tiempo Estimado
+
+- **Si tienes todos los prerrequisitos**: 3.5-4 horas
+- **Si necesitas repasar conceptos**: +2 horas
+- **Ejercicio práctico (Sistema Auth FPUNA)**: +4 horas extra-clase
+
+**Total recomendado**: Dedica **1-2 días** a este módulo para absorber bien los conceptos de seguridad. No lo apresures.
+
+### Checklist Final Antes de Empezar
+
+- [ ] Tengo Next.js 14 proyecto funcionando
+- [ ] Prisma instalado y `DATABASE_URL` configurado
+- [ ] Cuenta Google Cloud creada (Client ID/Secret obtenidos)
+- [ ] Cuenta GitHub Developer creada (Client ID/Secret obtenidos)
+- [ ] Entiendo Server vs Client Components
+- [ ] Sé crear API Routes
+- [ ] Sé usar Prisma para queries básicas
+- [ ] Tengo 2-4 horas disponibles sin interrupciones
+
+**Si marcaste todos ✅**: ¡Perfecto! Estás listo para comenzar. 🚀
+
+**Si falta alguno**: Completa los pendientes primero. Este módulo requiere bases sólidas.
+
+---
+
 ## 🤔 ¿Por Qué Auth/Authorization es Crítico?
 
 ### Analogía: Sistema de Seguridad Bancaria
@@ -542,6 +704,8 @@ export default function LoginPage() {
 
 ---
 
+**🎯 Transición**: Ahora que tienes NextAuth.js configurado con las bases y entiendes cómo funciona internamente, es momento de expandir las opciones de autenticación de tus usuarios. En la siguiente sección, implementaremos múltiples OAuth providers (Google y GitHub) para dar flexibilidad, además de un sistema tradicional de email/password con seguridad robusta.
+
 ## 🌐 Parte 2: OAuth Providers (50 min)
 
 ### OAuth 2.0 Flow Explicado
@@ -914,6 +1078,8 @@ graph TD
 
 ---
 
+**🎯 Transición**: Con la autenticación funcionando correctamente—los usuarios pueden registrarse e iniciar sesión—ahora necesitamos controlar **qué pueden hacer** una vez autenticados. Aquí entra la **autorización** (authorization). Implementaremos un sistema de roles (RBAC) que diferencia entre estudiantes, profesores, y administradores, cada uno con permisos específicos.
+
 ## 🔒 Parte 3: RBAC Implementation (60 min)
 
 ### Role-Based Access Control Architecture
@@ -1205,6 +1371,8 @@ export async function GET() {
 ```
 
 ---
+
+**🎯 Transición**: Tienes autenticación funcionando, autorización basada en roles implementada, y tu app distingue correctamente entre usuarios. Pero en contextos críticos como **fintech en Paraguay** (donde regulaciones del Banco Central aplican), la seguridad básica no es suficiente. Esta sección cubre prácticas de seguridad avanzadas que son **obligatorias** en aplicaciones de producción que manejan datos sensibles.
 
 ## 🛡️ Parte 4: Security Best Practices (40 min)
 
@@ -1774,6 +1942,303 @@ Antes de deploy a producción:
 3. **¿Qué nivel de security necesita tu proyecto?**
 
 **Comparte en Slack** (#web-dev-auth)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **10 preguntas** para validar tu comprensión del módulo
+- **Tiempo sugerido**: 20 minutos
+- **Respuestas** con explicaciones al final de esta sección
+- **Aprobación**: 6+ respuestas correctas (60%)
+
+---
+
+### Preguntas
+
+#### 1. NextAuth.js Fundamentals (Opción Múltiple)
+
+¿Cuál es la función principal del archivo `lib/auth.ts` en NextAuth.js v5?
+
+a) Almacenar passwords de usuarios en memoria  
+b) Configurar providers, callbacks, y opciones de sesión  
+c) Manejar el routing de autenticación automáticamente  
+d) Crear la base de datos de usuarios
+
+---
+
+#### 2. OAuth 2.0 Flow (Opción Múltiple)
+
+En el flujo OAuth con Google, ¿cuál es el orden correcto de pasos?
+
+a) User clicks login → Google auth → Callback → Create session  
+b) Create session → User clicks login → Google auth → Callback  
+c) Google auth → User clicks login → Create session → Callback  
+d) Callback → Google auth → User clicks login → Create session
+
+---
+
+#### 3. JWT vs Sessions (Opción Múltiple)
+
+¿Cuándo es preferible usar JWT en lugar de Database Sessions?
+
+a) Cuando necesitas revocar sesiones inmediatamente  
+b) Cuando tienes múltiples servidores sin estado compartido  
+c) Cuando la seguridad es la máxima prioridad absoluta  
+d) Cuando tienes muy pocos usuarios concurrentes
+
+---
+
+#### 4. RBAC Concepts (Verdadero/Falso)
+
+**Afirmación**: En un sistema RBAC, el rol del usuario debe verificarse tanto en el middleware como en los componentes del servidor.
+
+**VERDADERO / FALSO**
+
+*Explica brevemente por qué elegiste esa respuesta.*
+
+---
+
+#### 5. Security Best Practices (Opción Múltiple)
+
+Para fintech en Paraguay, ¿cuál es el session timeout recomendado por razones de seguridad según el módulo?
+
+a) 24 horas  
+b) 8 horas  
+c) 1 hora o menos  
+d) Sin timeout (session permanente)
+
+---
+
+#### 6. Code Analysis (Respuesta Corta)
+
+Observa el siguiente código:
+
+```typescript
+callbacks: {
+  async jwt({ token, user }) {
+    if (user) {
+      token.id = user.id;
+    }
+    return token;
+  },
+}
+```
+
+**Problema**: El código arriba NO incluye el `role` del usuario en el token JWT, lo que causará que `session.user.role` sea `undefined`.
+
+**Pregunta**: Escribe el código correcto que incluya el role en el token JWT.
+
+---
+
+#### 7. Rate Limiting (Opción Múltiple)
+
+¿Cuántos intentos de login fallidos se permiten antes de bloquear temporalmente a un usuario en el sistema de rate limiting mostrado en el módulo?
+
+a) 3 intentos por 5 minutos  
+b) 5 intentos por 15 minutos  
+c) 10 intentos por 30 minutos  
+d) Sin límite de intentos
+
+---
+
+#### 8. 2FA Implementation (Verdadero/Falso)
+
+**Afirmación**: El token de 2FA debe almacenarse con una fecha de expiración corta (aproximadamente 5 minutos) por razones de seguridad.
+
+**VERDADERO / FALSO**
+
+---
+
+#### 9. Troubleshooting (Opción Múltiple)
+
+Recibes el error: `redirect_uri_mismatch` al intentar usar Google OAuth.
+
+¿Cuál es la causa más probable de este error?
+
+a) El `GOOGLE_CLIENT_ID` está incorrecto en `.env`  
+b) La URL de callback no está registrada en Google Cloud Console  
+c) NextAuth.js no está instalado correctamente  
+d) El Prisma schema tiene un error en el modelo Account
+
+---
+
+#### 10. Security Scenario (Respuesta Corta)
+
+Estás construyendo una aplicación de **banking** para Paraguay que maneja transacciones financieras de clientes.
+
+**Pregunta**: Menciona **3 medidas de seguridad críticas** que DEBES implementar basándote en este módulo. Justifica cada una brevemente.
+
+---
+
+### 📋 Respuestas y Explicaciones
+
+#### 1. Correcta: **b) Configurar providers, callbacks, y opciones de sesión**
+
+**Explicación**: `lib/auth.ts` es el archivo de configuración central de NextAuth.js donde defines:
+- **Providers**: Google, GitHub, Credentials, etc.
+- **Callbacks**: `jwt()` y `session()` para customizar tokens y sesiones
+- **Opciones**: `session.strategy`, `pages`, `secret`, etc.
+
+No almacena passwords (eso es Prisma) ni maneja routing automáticamente (eso es el API route handler).
+
+---
+
+#### 2. Correcta: **a) User clicks login → Google auth → Callback → Create session**
+
+**Explicación**: El flujo OAuth correcto es:
+1. Usuario hace clic en "Login con Google"
+2. NextAuth redirige a Google para autenticación
+3. Usuario se autentica en Google
+4. Google redirige de vuelta al callback URL (`/api/auth/callback/google`)
+5. NextAuth valida el token y crea la sesión del usuario
+
+Este es el "Authorization Code Flow" estándar de OAuth 2.0.
+
+---
+
+#### 3. Correcta: **b) Cuando tienes múltiples servidores sin estado compartido**
+
+**Explicación**: JWT es **stateless** (sin estado), lo que significa:
+- No requiere lookup en base de datos para cada request
+- Funciona perfectamente en arquitecturas distribuidas (múltiples servidores)
+- Ideal para serverless (Vercel, AWS Lambda)
+- Escala horizontalmente sin problemas
+
+**Nota**: Para revocar sesiones inmediatamente, Database Sessions es mejor porque puedes eliminar el registro. Con JWT, debes esperar a que expire.
+
+---
+
+#### 4. Correcta: **VERDADERO**
+
+**Explicación**: Es **crítico** verificar el rol en ambos lugares:
+
+1. **Middleware** (`middleware.ts`): Primera línea de defensa, redirige usuarios no autorizados
+2. **Server Components**: Segunda verificación, porque:
+   - Middleware puede bypasearse (errores de configuración)
+   - Defense in depth (múltiples capas de seguridad)
+   - Server Components son donde se accede a datos sensibles
+
+Nunca confíes solo en client-side o en una sola capa de autorización.
+
+---
+
+#### 5. Correcta: **c) 1 hora o menos**
+
+**Explicación**: El módulo especifica que para **fintech**:
+- **Máximo 1 hora** de session timeout
+- **Ideal 15 minutos** para apps de alta seguridad (banking)
+- Después de inactividad, forzar re-login
+
+Esto previene que sesiones abandonadas (usuario se fue sin logout) permanezcan activas indefinidamente, exponiendo la cuenta si alguien más usa la computadora.
+
+---
+
+#### 6. Respuesta Correcta:
+
+```typescript
+callbacks: {
+  async jwt({ token, user }) {
+    if (user) {
+      token.id = user.id;
+      token.role = user.role; // ✅ Agregar esta línea
+    }
+    return token;
+  },
+}
+```
+
+**Explicación**: El callback `jwt()` se ejecuta cuando se crea el token. Debes incluir cualquier dato customizado (como `role`) en el token aquí. Luego, en el callback `session()`, pasas `token.role` a `session.user.role` para que esté disponible en el cliente.
+
+---
+
+#### 7. Correcta: **b) 5 intentos por 15 minutos**
+
+**Explicación**: El código del módulo muestra:
+```typescript
+limiter: Ratelimit.slidingWindow(5, "15 m")
+```
+
+Esto significa:
+- **5 intentos** de login permitidos
+- En una ventana de **15 minutos**
+- Si se excede, usuario bloqueado hasta que expire la ventana
+
+Esto previene **brute force attacks** donde un atacante intenta adivinar passwords.
+
+---
+
+#### 8. Correcta: **VERDADERO**
+
+**Explicación**: Códigos 2FA deben expirar **rápido** (5 minutos recomendado) porque:
+- Si un código es interceptado (man-in-the-middle), el atacante tiene poco tiempo para usarlo
+- Reduce la ventana de ataque
+- Fuerza al usuario a completar el proceso rápidamente
+
+En el módulo, el código muestra:
+```typescript
+const expires = new Date(Date.now() + 5 * 60 * 1000); // 5 minutos
+```
+
+---
+
+#### 9. Correcta: **b) La URL de callback no está registrada en Google Cloud Console**
+
+**Explicación**: El error `redirect_uri_mismatch` ocurre cuando:
+- Google intenta redirigir a `http://localhost:3000/api/auth/callback/google`
+- Pero esa URL **no está** en la lista de "Authorized redirect URIs" en tu OAuth app en Google Cloud Console
+
+**Solución**: Agregar la URL exacta (incluyendo `/api/auth/callback/google`) en Google Cloud Console → Credentials → Tu OAuth Client ID → Authorized redirect URIs.
+
+---
+
+#### 10. Ejemplo de Respuesta Completa (3 medidas):
+
+**1. Two-Factor Authentication (2FA) Obligatorio**
+- **Qué**: Código de 6 dígitos por email/SMS para transacciones > ₲5,000,000
+- **Por qué**: Aunque alguien robe password, no puede completar transacciones sin el código 2FA
+- **Cómo**: Implementar `TwoFactorToken` model y `verify2FAToken()` function del módulo
+
+**2. Rate Limiting Agresivo**
+- **Qué**: Máximo 3 intentos de login fallidos por 10 minutos
+- **Por qué**: Previene ataques de fuerza bruta donde bots intentan miles de passwords
+- **Cómo**: Usar Upstash Redis con `Ratelimit.slidingWindow(3, "10 m")`
+
+**3. Audit Logging Completo**
+- **Qué**: Registrar TODAS las transacciones y accesos a datos sensibles (quién, cuándo, qué, IP)
+- **Por qué**: Compliance con Banco Central de Paraguay, detectar actividad sospechosa, evidencia forense
+- **Cómo**: Implementar `AuditLog` model y `logAudit()` function en cada operación crítica
+
+**Otras medidas válidas**:
+- Session timeout corto (15 minutos)
+- HTTPS obligatorio en producción
+- Password requirements estrictos (12+ chars, mayúscula, número, símbolo)
+- Encriptación de datos sensibles en DB
+
+---
+
+### Criterios de Aprobación
+
+| Puntaje | Nivel | Acción Recomendada |
+|---------|-------|-------------------|
+| **9-10 correctas** | ✅ Excelente | Continúa con Módulo 04 |
+| **7-8 correctas** | ✅ Bueno | Continúa, refuerza áreas débiles |
+| **6 correctas** | ⚠️ Aprobado | Revisa preguntas falladas antes de continuar |
+| **< 6 correctas** | ❌ No aprobado | Debes revisar el módulo completo |
+
+---
+
+### Próximos Pasos
+
+✅ **Si aprobaste (6+)**: ¡Felicitaciones! Continúa con [Módulo 04 - UI/UX & Styling](./04-ui-ux-styling.md)
+
+⚠️ **Si no aprobaste**: No te desanimes. Identifica los temas donde fallaste:
+- **Preguntas 1-3 falladas**: Revisa Parte 1 y 2 (NextAuth setup, OAuth)
+- **Preguntas 4-6 falladas**: Revisa Parte 3 (RBAC implementation)
+- **Preguntas 7-10 falladas**: Revisa Parte 4 (Security best practices)
+
+Luego, intenta el quiz nuevamente. La seguridad es crítica y vale la pena dominarla.
 
 ---
 
