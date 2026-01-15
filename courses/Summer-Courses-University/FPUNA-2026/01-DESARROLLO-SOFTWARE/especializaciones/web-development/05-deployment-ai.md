@@ -78,4 +78,4 @@ Deploy Next.js applications to production on Vercel, configure environments, opt
 - [← Previous Module](../04-ui-ux-styling/README.md)
 - [→ Section 01](./content/01-vercel-deployment.md)
 - [📝 Exercise](./EXERCISE.md)
-- [🎯 Capstone Project](../../capstone/README.md)
+- [🎯 Capstone Project](../../proyecto-final/README.md)

@@ -198,7 +198,7 @@ Diseñar completamente un UAV (Unmanned Aerial Vehicle) para aplicación especí
 
 ## Rubric Details
 
-Ver: [rubric.md](./rubric.md)
+Ver: [rubrica.md](./rubrica.md)
 
 ---
 

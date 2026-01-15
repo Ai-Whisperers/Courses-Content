@@ -285,7 +285,7 @@ You'll know you've mastered this module when you can:
 
 ### Official Documentation
 - [GitHub Actions Documentation](https://docs.github.com/actions)
-- [Playwright CI Guide](https://playwright.dev/docs/ci)
+- [Playwright CI Guide](https://playwright.dev/documentacion/ci)
 - [Allure Report](https://docs.qameta.io/allure/)
 
 ### Community Resources

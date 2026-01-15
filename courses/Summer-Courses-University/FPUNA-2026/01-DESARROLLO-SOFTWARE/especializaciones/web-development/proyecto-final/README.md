@@ -186,4 +186,4 @@ model OrderItem {
 
 - [← Module 05](../modules/05-deployment-ai/README.md)
 - [← Track README](../README.md)
-- [📋 Rubric Details](./rubric.md)
+- [📋 Rubric Details](./rubrica.md)

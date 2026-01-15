@@ -15,12 +15,12 @@
 - ✅ Documentación reorganizada en `docs/`
 
 ### 2. AI-IDEAS Creados (6 archivos)
-- ✅ 01-DESARROLLO-SOFTWARE/AI-IDEAS.md (25 ideas)
-- ✅ 02-ELECTRONICS-AUTOMATION/AI-IDEAS.md (25 ideas)
-- ✅ 03-AERONAUTICAL-ENGINEERING/AI-IDEAS.md (25 ideas)
-- ✅ 04-MARKETING-COMMUNICATION/AI-IDEAS.md (25 ideas)
-- ✅ 05-RESEARCH-ACADEMIA/AI-IDEAS.md (25 ideas)
-- ✅ 06-HOSPITALITY-TOURISM/AI-IDEAS.md (25 ideas)
+- ✅ 01-DESARROLLO-SOFTWARE/IDEAS-IA.md (25 ideas)
+- ✅ 02-ELECTRONICA-AUTOMATIZACION/IDEAS-IA.md (25 ideas)
+- ✅ 03-INGENIERIA-AERONAUTICA/IDEAS-IA.md (25 ideas)
+- ✅ 04-MARKETING-COMUNICACION/IDEAS-IA.md (25 ideas)
+- ✅ 05-INVESTIGACION-ACADEMIA/IDEAS-IA.md (25 ideas)
+- ✅ 06-HOSPITALIDAD-TURISMO/IDEAS-IA.md (25 ideas)
 
 ### 3. Módulos Mejorados
 - ✅ 00-FUNDAMENTOS-PRINCIPALES/01-ai-stack-setup.md 
@@ -47,7 +47,7 @@
 ### 01-DESARROLLO-SOFTWARE (5 módulos + 2 especializaciones)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-software-architecture.md | 🔴 Incompleto | Crear contenido completo |
 | 02-design-patterns.md | 🔴 Incompleto | Crear contenido completo |
 | 03-testing-tdd.md | 🔴 Incompleto | Crear contenido completo |
@@ -56,50 +56,50 @@
 | specializations/qa-automation/* | 🟡 Revisar | 5 módulos + recursos |
 | specializations/web-development/* | 🟡 Revisar | 5 módulos + recursos |
 
-### 02-ELECTRONICS-AUTOMATION (5 módulos)
+### 02-ELECTRONICA-AUTOMATIZACION (5 módulos)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-circuit-design-ai.md | 🔴 Incompleto | Crear contenido completo |
 | 02-pcb-design.md | 🔴 Incompleto | Crear contenido completo |
 | 03-firmware-dev.md | 🔴 Incompleto | Crear contenido completo |
 | 04-industrial-automation.md | 🔴 Incompleto | Crear contenido completo |
 | 05-iot-data-viz.md | 🔴 Incompleto | Crear contenido completo |
 
-### 03-AERONAUTICAL-ENGINEERING (5 módulos)
+### 03-INGENIERIA-AERONAUTICA (5 módulos)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-cad-ai.md | 🔴 Incompleto | Crear contenido completo |
 | 02-aerodynamics-cfd.md | 🔴 Incompleto | Crear contenido completo |
 | 03-structures-materials.md | 🔴 Incompleto | Crear contenido completo |
 | 04-propulsion-systems.md | 🔴 Incompleto | Crear contenido completo |
 | 05-aircraft-design.md | 🔴 Incompleto | Crear contenido completo |
 
-### 04-MARKETING-COMMUNICATION (5 módulos)
+### 04-MARKETING-COMUNICACION (5 módulos)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-ai-content-creation.md | 🔴 Incompleto | Crear contenido completo |
 | 02-data-driven-marketing.md | 🔴 Incompleto | Crear contenido completo |
 | 03-social-media-automation.md | 🔴 Incompleto | Crear contenido completo |
-| 04-ai-design-tools.md | 🔴 Incompleto | Crear contenido completo |
+| 04-ai-design-herramientas.md | 🔴 Incompleto | Crear contenido completo |
 | 05-campaign-management.md | 🔴 Incompleto | Crear contenido completo |
 
-### 05-RESEARCH-ACADEMIA (5 módulos)
+### 05-INVESTIGACION-ACADEMIA (5 módulos)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-literature-review.md | 🔴 Incompleto | Crear contenido completo |
 | 02-research-methodology.md | 🔴 Incompleto | Crear contenido completo |
 | 03-data-analysis.md | 🔴 Incompleto | Crear contenido completo |
 | 04-academic-writing.md | 🔴 Incompleto | Crear contenido completo |
 | 05-presentation-publication.md | 🔴 Incompleto | Crear contenido completo |
 
-### 06-HOSPITALITY-TOURISM (4 módulos)
+### 06-HOSPITALIDAD-TURISMO (4 módulos)
 | Módulo | Estado | Acción Necesaria |
 |--------|--------|------------------|
-| AI-IDEAS.md | ✅ COMPLETO | N/A |
+| IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-ai-customer-service.md | 🔴 Incompleto | Crear contenido completo |
 | 02-revenue-management.md | 🔴 Incompleto | Crear contenido completo |
 | 03-digital-marketing-tourism.md | 🔴 Incompleto | Crear contenido completo |
@@ -208,13 +208,13 @@ journey
 3. Especializ. QA + Web Dev (10 módulos) - Sub-tracks de Software
 
 ### Prioridad MEDIA
-4. 02-ELECTRONICS-AUTOMATION (5 módulos)
-5. 04-MARKETING-COMMUNICATION (5 módulos)
+4. 02-ELECTRONICA-AUTOMATIZACION (5 módulos)
+5. 04-MARKETING-COMUNICACION (5 módulos)
 
 ### Prioridad BAJA (Último)
-6. 03-AERONAUTICAL-ENGINEERING (5 módulos) - Audiencia más pequeña
-7. 05-RESEARCH-ACADEMIA (5 módulos)
-8. 06-HOSPITALITY-TOURISM (4 módulos)
+6. 03-INGENIERIA-AERONAUTICA (5 módulos) - Audiencia más pequeña
+7. 05-INVESTIGACION-ACADEMIA (5 módulos)
+8. 06-HOSPITALIDAD-TURISMO (4 módulos)
 
 ---
 

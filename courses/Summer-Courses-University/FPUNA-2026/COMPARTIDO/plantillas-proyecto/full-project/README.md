@@ -178,7 +178,7 @@ model User {
 - **AWS/GCP/Azure** (Con Docker)
 - **Heroku**
 
-Ver [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) para guías específicas.
+Ver [docs/DEPLOYMENT.md](./documentacion/DEPLOYMENT.md) para guías específicas.
 
 ---
 

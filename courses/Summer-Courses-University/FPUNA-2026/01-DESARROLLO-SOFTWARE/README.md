@@ -176,7 +176,7 @@ Aprende testing automatizado profesional con Playwright, API testing, y arquitec
 **Duración**: 20 horas  
 **Incluye**: 5 módulos + proyecto capstone
 
-👉 [Ir a QA Automation →](./specializations/qa-automation/README.md)
+👉 [Ir a QA Automation →](./especializaciones/qa-automation/README.md)
 
 ---
 
@@ -188,7 +188,7 @@ Domina desarrollo web full-stack con Next.js 14, arquitectura moderna, auth/auth
 **Duración**: 20 horas  
 **Incluye**: 5 módulos + proyecto capstone
 
-👉 [Ir a Web Development →](./specializations/web-development/README.md)
+👉 [Ir a Web Development →](./especializaciones/web-development/README.md)
 
 ---
 
@@ -275,7 +275,7 @@ Reutiliza del directorio `SHARED/`:
 ```
 01-DESARROLLO-SOFTWARE/
 ├── README.md                          # Este archivo
-├── AI-IDEAS.md                        # 25 ideas prácticas con OpenCode
+├── IDEAS-IA.md                        # 25 ideas prácticas con OpenCode
 ├── 01-software-architecture.md        # Módulo 1
 ├── 02-design-patterns.md              # Módulo 2
 ├── 03-testing-tdd.md                  # Módulo 3
@@ -302,10 +302,10 @@ Reutiliza del directorio `SHARED/`:
 │       └── resources/
 ├── capstone/
 │   ├── README.md
-│   └── rubric.md
+│   └── rubrica.md
 └── resources/
-    ├── cheatsheet.md
-    ├── tools.md
+    ├── guia-rapida.md
+    ├── herramientas.md
     └── prompts.md
 ```
 

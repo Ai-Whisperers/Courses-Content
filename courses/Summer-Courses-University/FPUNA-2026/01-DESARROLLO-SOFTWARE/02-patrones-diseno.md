@@ -103,7 +103,7 @@ class ReporteService {
 
 **Generar con OpenCode**:
 ```bash
-claude "Refactoriza esta clase aplicando SRP:
+opencode "Refactoriza esta clase aplicando SRP:
 [pega clase con múltiples responsabilidades]
 
 Divide en clases especializadas, cada una con UNA responsabilidad.
@@ -201,7 +201,7 @@ notif.send('Mensaje');
 
 **Generar con OpenCode**:
 ```bash
-claude "Genera Factory pattern para pagos:
+opencode "Genera Factory pattern para pagos:
 - PaymentFactory
 - Interfaces: PaymentMethod
 - Implementations: CreditCard, Bitcoin, BankTransfer
@@ -711,7 +711,7 @@ class OrderProcessor {
 ### Refactorizar con OpenCode
 
 ```bash
-claude "Refactoriza este código aplicando patrones de diseño:
+opencode "Refactoriza este código aplicando patrones de diseño:
 
 [pega código]
 

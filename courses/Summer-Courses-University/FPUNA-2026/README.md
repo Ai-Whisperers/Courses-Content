@@ -47,23 +47,23 @@ Recursos compartidos entre todos los tracks:
 Para: Ingeniería Informática, Desarrollo de Software  
 Módulos: 5 módulos especializados
 
-#### 02-ELECTRONICS-AUTOMATION
+#### 02-ELECTRONICA-AUTOMATIZACION
 Para: Ingeniería Electrónica, Mecatrónica  
 Módulos: 5 módulos + MCPs especializados (AutoCAD, KiCad)
 
-#### 03-AERONAUTICAL-ENGINEERING
+#### 03-INGENIERIA-AERONAUTICA
 Para: Ingeniería Aeronáutica  
 Módulos: 5 módulos + MCPs especializados (CATIA, ANSYS)
 
-#### 04-MARKETING-COMMUNICATION
+#### 04-MARKETING-COMUNICACION
 Para: Marketing, Comunicación  
 Módulos: 4 módulos + herramientas de diseño y analytics
 
-#### 05-RESEARCH-ACADEMIA
+#### 05-INVESTIGACION-ACADEMIA
 Para: Investigadores, estudiantes de posgrado  
 Módulos: 5 módulos + herramientas de investigación
 
-#### 06-HOSPITALITY-TOURISM
+#### 06-HOSPITALIDAD-TURISMO
 Para: Hotelería y Turismo  
 Módulos: 4 módulos especializados
 
@@ -80,7 +80,7 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 ## Principios de Diseño
 
 ### 1. Sin Duplicación
-- Contenido compartido vive en `/SHARED/components/`
+- Contenido compartido vive en `/COMPARTIDO/components/`
 - Tracks referencian, no copian
 - Actualizar una vez beneficia a todos
 
@@ -119,7 +119,7 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 
 **Preparación**:
 1. Revisar [`00-FUNDAMENTOS-PRINCIPALES`](./00-FUNDAMENTOS-PRINCIPALES/README.md)
-2. Familiarizarse con [`SHARED/components`](./SHARED/components/)
+2. Familiarizarse con [`SHARED/components`](./COMPARTIDO/components/)
 3. Revisar el track específico que enseñarás
 
 **Durante el Curso**:
@@ -129,13 +129,13 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 ### Para Mantenedores
 
 **Actualizar Contenido Compartido**:
-1. Editar en `/SHARED/components/`
+1. Editar en `/COMPARTIDO/components/`
 2. Verificar que todos los tracks se beneficien
 3. Probar enlaces desde diferentes tracks
 
 **Agregar Nuevo Track**:
 1. Copiar estructura de track existente
-2. Referenciar componentes de `/SHARED/`
+2. Referenciar componentes de `/COMPARTIDO/`
 3. Agregar módulos especializados
 4. Documentar MCPs específicos
 
@@ -154,11 +154,11 @@ FPUNA-2026/
 │   ├── exercises/                     # Ejercicios comunes
 │   └── quizzes/                       # Evaluaciones
 ├── 01-DESARROLLO-SOFTWARE/           # Track 1
-├── 02-ELECTRONICS-AUTOMATION/         # Track 2
-├── 03-AERONAUTICAL-ENGINEERING/       # Track 3
-├── 04-MARKETING-COMMUNICATION/        # Track 4
-├── 05-RESEARCH-ACADEMIA/              # Track 5
-├── 06-HOSPITALITY-TOURISM/            # Track 6
+├── 02-ELECTRONICA-AUTOMATIZACION/         # Track 2
+├── 03-INGENIERIA-AERONAUTICA/       # Track 3
+├── 04-MARKETING-COMUNICACION/        # Track 4
+├── 05-INVESTIGACION-ACADEMIA/              # Track 5
+├── 06-HOSPITALIDAD-TURISMO/            # Track 6
 ├── 07-QA-AUTOMATION/                  # Track 7
 └── 08-WEB-DEVELOPMENT/                # Track 8
 ```

@@ -79,11 +79,11 @@ Instead of 8 separate courses with duplicated content, we have:
 
 5. **Specialized Tracks**
    - 01-DESARROLLO-SOFTWARE/
-   - 02-ELECTRONICS-AUTOMATION/
-   - 03-AERONAUTICAL-ENGINEERING/
-   - 04-MARKETING-COMMUNICATION/
-   - 05-RESEARCH-ACADEMIA/
-   - 06-HOSPITALITY-TOURISM/
+   - 02-ELECTRONICA-AUTOMATIZACION/
+   - 03-INGENIERIA-AERONAUTICA/
+   - 04-MARKETING-COMUNICACION/
+   - 05-INVESTIGACION-ACADEMIA/
+   - 06-HOSPITALIDAD-TURISMO/
    - 07-QA-AUTOMATION/ (adapt existing)
    - 08-WEB-DEVELOPMENT/ (adapt existing)
 
@@ -143,8 +143,8 @@ Tasks:
 - Specialized MCPs: CATIA, ANSYS, MATLAB
 
 **Deliverables**:
-- 02-ELECTRONICS-AUTOMATION/ complete
-- 03-AERONAUTICAL-ENGINEERING/ complete
+- 02-ELECTRONICA-AUTOMATIZACION/ complete
+- 03-INGENIERIA-AERONAUTICA/ complete
 
 ### Phase 4: Medium-Priority Tracks (Week 6)
 
@@ -161,8 +161,8 @@ Tasks:
 - Specialized MCPs: Canva, Adobe, Analytics tools
 
 **Deliverables**:
-- 05-RESEARCH-ACADEMIA/ complete
-- 04-MARKETING-COMMUNICATION/ complete
+- 05-INVESTIGACION-ACADEMIA/ complete
+- 04-MARKETING-COMUNICACION/ complete
 
 ### Phase 5: Specialized Tracks (Week 7)
 
@@ -177,7 +177,7 @@ Tasks:
 
 **Deliverables**:
 - 01-DESARROLLO-SOFTWARE/ complete
-- 06-HOSPITALITY-TOURISM/ complete
+- 06-HOSPITALIDAD-TURISMO/ complete
 
 ### Phase 6: Testing & Polish (Week 8)
 

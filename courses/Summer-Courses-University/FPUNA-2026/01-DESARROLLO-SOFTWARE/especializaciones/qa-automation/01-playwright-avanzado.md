@@ -577,9 +577,9 @@ Hemos cubierto:
 
 ## Recursos Adicionales
 
-- 📚 [Playwright Docs - Network Mocking](https://playwright.dev/docs/mock)
-- 📚 [Playwright Docs - Screenshots](https://playwright.dev/docs/screenshots)
-- 📚 [Playwright Docs - Authentication](https://playwright.dev/docs/auth)
+- 📚 [Playwright Docs - Network Mocking](https://playwright.dev/documentacion/mock)
+- 📚 [Playwright Docs - Screenshots](https://playwright.dev/documentacion/screenshots)
+- 📚 [Playwright Docs - Authentication](https://playwright.dev/documentacion/auth)
 - 🎥 [Video: Advanced Playwright Patterns](https://www.youtube.com/watch?v=...)
 
 ---

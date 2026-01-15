@@ -80,17 +80,17 @@ cat >> CLAUDE.md << EOF
 EOF
 
 # 3. GENERAR (5 min)
-claude "Implementa sistema de notificaciones según FEATURE.md"
+opencode "Implementa sistema de notificaciones según FEATURE.md"
 
 # 4. PROBAR (3 min)
 npm test
 node test-email.js
 
 # 5. REFINAR (2 min)
-claude "Mejora manejo de errores en envío de emails"
+opencode "Mejora manejo de errores en envío de emails"
 
 # 6. DOCUMENTAR (2 min)
-claude "Actualiza README con feature de notificaciones"
+opencode "Actualiza README con feature de notificaciones"
 
 # 7. COMMIT (1 min)
 git add .
@@ -126,13 +126,13 @@ sequenceDiagram
 
 ```bash
 # Paso 1: Tests primero
-claude "Genera tests para función calcularDescuento(precio, porcentaje):
+opencode "Genera tests para función calcularDescuento(precio, porcentaje):
 - Casos normales: 100 con 10% = 90
 - Edge cases: 0%, 100%, negativos
 - Validaciones: null, undefined, strings"
 
 # Paso 2: Implementar
-claude "Implementa calcularDescuento() que pase ESTOS tests:
+opencode "Implementa calcularDescuento() que pase ESTOS tests:
 [pega tests generados]"
 
 # Paso 3: Verificar
@@ -158,29 +158,29 @@ graph LR
 
 ```bash
 # Iteración 1: Funcionalidad básica
-claude "Función básica para buscar estudiantes por nombre"
+opencode "Función básica para buscar estudiantes por nombre"
 
 # Iteración 2: Mejoras
-claude "Mejora búsqueda: case-insensitive, nombre parcial"
+opencode "Mejora búsqueda: case-insensitive, nombre parcial"
 
 # Iteración 3: Validación
-claude "Agrega validación de inputs y errores"
+opencode "Agrega validación de inputs y errores"
 
 # Iteración 4: Performance
-claude "Optimiza para >10,000 estudiantes"
+opencode "Optimiza para >10,000 estudiantes"
 
 # Iteración 5: Calidad
-claude "Agrega tests y documentación JSDoc"
+opencode "Agrega tests y documentación JSDoc"
 ```
 
 ### Patrón 3: Code Review con IA
 
 ```bash
 # 1. Generar código inicial
-claude "Crea clase GestorInventario con CRUD"
+opencode "Crea clase GestorInventario con CRUD"
 
 # 2. Pedir review
-claude "Revisa este código y sugiere mejoras en:
+opencode "Revisa este código y sugiere mejoras en:
 - Performance
 - Seguridad
 - Legibilidad
@@ -193,7 +193,7 @@ Formato:
 ⚠️ MEJORAR: [lista específica]"
 
 # 3. Aplicar mejoras
-claude "Aplica estas mejoras: [sugerencias específicas]"
+opencode "Aplica estas mejoras: [sugerencias específicas]"
 
 # 4. Verificar
 npm test && npm run lint
@@ -218,7 +218,7 @@ flowchart TD
 **Template de Prompt**:
 
 ```bash
-claude "ANÁLISIS DE BUG
+opencode "ANÁLISIS DE BUG
 
 ERROR:
 TypeError: Cannot read property 'nombre' of undefined
@@ -265,24 +265,24 @@ graph TD
 
 | ❌ Malo | ✅ Bueno |
 |---------|----------|
-| `claude "Crea una app"` | `claude "[Prompt detallado]"` |
-| `claude "Crea una app"` | `claude "Mejora agregando: [específico]"` |
-| `claude "Crea una app"` | (Iteración inteligente) |
+| `opencode "Crea una app"` | `opencode "[Prompt detallado]"` |
+| `opencode "Crea una app"` | `opencode "Mejora agregando: [específico]"` |
+| `opencode "Crea una app"` | (Iteración inteligente) |
 | 😫 Frustración | 🎉 Resultado |
 
 ### Antipatrón 3: Sin Probar
 
 ```bash
 # ❌ MALO
-claude "Genera todo el proyecto completo"
+opencode "Genera todo el proyecto completo"
 # Asumir que funciona
 # Entregar sin probar
 # 💥 Desastre
 
 # ✅ BUENO
-claude "Genera componente X"
+opencode "Genera componente X"
 npm test  # Probar X
-claude "Genera componente Y"
+opencode "Genera componente Y"
 npm test  # Probar Y
 # Construcción incremental
 ```
@@ -309,11 +309,11 @@ git checkout -b feature/notificaciones
 # Actualizar CLAUDE.md con descripción
 
 # 3. TDD
-claude "Tests para sistema de notificaciones"
+opencode "Tests para sistema de notificaciones"
 npm test  # ❌ Deben fallar (no hay implementación)
 
 # 4. Implementar
-claude "Implementa notificaciones que pasen tests"
+opencode "Implementa notificaciones que pasen tests"
 npm test  # ✅ Deben pasar
 
 # 5. Integrar
@@ -321,7 +321,7 @@ npm run lint
 npm run build
 
 # 6. Documentar
-claude "Actualiza README.md con nueva feature"
+opencode "Actualiza README.md con nueva feature"
 
 # 7. Commit y PR
 git add .
@@ -337,11 +337,11 @@ gh pr create --title "Add Notifications" --body "..."
 # Escribir steps exactos
 
 # 2. Test que falle
-claude "Test que reproduzca este bug: [descripción]"
+opencode "Test que reproduzca este bug: [descripción]"
 npm test  # ❌ Debe fallar
 
 # 3. Fix
-claude "Corrige bug que causa este test falle: [test + código]"
+opencode "Corrige bug que causa este test falle: [test + código]"
 npm test  # ✅ Debe pasar
 
 # 4. Regression test
@@ -355,11 +355,11 @@ git commit -m "fix: resolve [bug description]"
 
 ```bash
 # 1. Tests de seguridad
-claude "Tests completos para [componente]"
+opencode "Tests completos para [componente]"
 npm test  # ✅ Baseline
 
 # 2. Refactor
-claude "Refactoriza aplicando:
+opencode "Refactoriza aplicando:
 - Single Responsibility
 - Funciones pequeñas
 - Eliminar duplicación

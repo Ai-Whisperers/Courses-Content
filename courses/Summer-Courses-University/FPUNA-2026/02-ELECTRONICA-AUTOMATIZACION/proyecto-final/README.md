@@ -201,7 +201,7 @@ fpuna-smart-home-[nombre]/
 
 ## Rúbrica Detallada
 
-Ver: [rubric.md](./rubric.md)
+Ver: [rubrica.md](./rubrica.md)
 
 ---
 
@@ -301,7 +301,7 @@ Proyectos similares:
 
 ## Próximos Pasos
 
-1. ✅ Revisar [rubric.md](./rubric.md)
+1. ✅ Revisar [rubrica.md](./rubrica.md)
 2. ✅ Definir features del sistema
 3. ✅ Diseñar circuito
 4. ✅ Ordenar componentes

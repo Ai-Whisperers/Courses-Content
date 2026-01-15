@@ -311,9 +311,9 @@ You'll know you've mastered this module when you can:
 ## Additional Resources
 
 ### Official Documentation
-- [Playwright Best Practices](https://playwright.dev/docs/best-practices)
-- [Playwright Fixtures Guide](https://playwright.dev/docs/test-fixtures)
-- [Playwright Page Object Models](https://playwright.dev/docs/pom)
+- [Playwright Best Practices](https://playwright.dev/documentacion/best-practices)
+- [Playwright Fixtures Guide](https://playwright.dev/documentacion/test-fixtures)
+- [Playwright Page Object Models](https://playwright.dev/documentacion/pom)
 
 ### Community Resources
 - [Playwright GitHub Discussions](https://github.com/microsoft/playwright/discussions)

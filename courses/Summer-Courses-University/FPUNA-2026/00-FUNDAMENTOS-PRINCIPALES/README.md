@@ -163,11 +163,11 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 Todos los módulos referencian componentes reutilizables:
 
 ### 📦 Componentes SHARED
-- [Guía de Instalación de OpenCode](../SHARED/opencode-installation/guide.md)
-- [Configuración de MCPs](../SHARED/mcp-configuration/README.md)
-- [Sistema de Skills](../SHARED/skills-system/README.md)
-- [Hooks y Rules](../SHARED/hooks-rules/README.md)
-- [Plantillas de Proyecto](../SHARED/project-templates/README.md)
+- [Guía de Instalación de OpenCode](../COMPARTIDO/opencode-installation/guide.md)
+- [Configuración de MCPs](../COMPARTIDO/mcp-configuration/README.md)
+- [Sistema de Skills](../COMPARTIDO/skills-system/README.md)
+- [Hooks y Rules](../COMPARTIDO/hooks-rules/README.md)
+- [Plantillas de Proyecto](../COMPARTIDO/project-templates/README.md)
 
 ### 📚 Recursos Adicionales
 - [Biblioteca de Prompts](./shared-resources/prompt-libraries/)

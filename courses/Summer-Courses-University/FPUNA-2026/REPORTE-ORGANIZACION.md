@@ -41,7 +41,7 @@ Successfully cleaned, organized, and optimized the FPUNA-2026 course content str
 FPUNA-2026/
 ├── README.md                  # Main program overview
 ├── AI-TOOLS-SETUP.md         # Setup guide
-├── TRACKS-OVERVIEW.md        # Course tracks overview
+├── RESUMEN-CARRERAS.md        # Course tracks overview
 ├── .github/                  # CI/CD workflows
 ├── docs/                     # All documentation (NEW!)
 ├── SHARED/                   # Reusable components
@@ -90,11 +90,11 @@ Tracks with additional resources (07-QA, 08-WEB):
 ├── 04-ci-cd-integration.md
 ├── 05-ia-para-qa.md
 ├── resources/                 # Track-specific resources
-│   ├── cheatsheet.md
-│   └── tools.md
+│   ├── guia-rapida.md
+│   └── herramientas.md
 └── capstone/                  # Final project
     ├── README.md
-    └── rubric.md
+    └── rubrica.md
 ```
 
 ### SHARED Structure (Optimized!)
@@ -116,14 +116,14 @@ SHARED/
 - **Structure depth**: 4 levels deep
 - **Documentation**: Scattered across root
 - **Module access**: `./modules/01-name/README.md`
-- **SHARED structure**: `./SHARED/components/folder/`
+- **SHARED structure**: `./COMPARTIDO/components/folder/`
 
 ### After Cleanup
 - **Total files**: 125 (31% reduction)
 - **Structure depth**: 3 levels deep
 - **Documentation**: Organized in `docs/`
 - **Module access**: `./01-name.md` (direct)
-- **SHARED structure**: `./SHARED/folder/`
+- **SHARED structure**: `./COMPARTIDO/folder/`
 
 ### Content Breakdown
 ```
@@ -200,7 +200,7 @@ SHARED/
 1. Copy structure from existing track (e.g., `01-DESARROLLO-SOFTWARE/`)
 2. Create flat structure: `README.md` + numbered module files
 3. Reference SHARED components (don't duplicate)
-4. Add to `TRACKS-OVERVIEW.md`
+4. Add to `RESUMEN-CARRERAS.md`
 
 ### Updating SHARED Components
 1. Edit in `SHARED/[component-name]/`

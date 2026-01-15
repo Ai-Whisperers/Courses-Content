@@ -257,7 +257,7 @@ Reutiliza del directorio `SHARED/`:
 ## Estructura del Track
 
 ```
-03-AERONAUTICAL-ENGINEERING/
+03-INGENIERIA-AERONAUTICA/
 ├── README.md (este archivo)
 ├── modules/
 │   ├── 01-cad-with-ai/
@@ -292,11 +292,11 @@ Reutiliza del directorio `SHARED/`:
 │
 ├── capstone/
 │   ├── README.md
-│   └── rubric.md
+│   └── rubrica.md
 │
 └── resources/
-    ├── cheatsheet.md
-    ├── tools.md
+    ├── guia-rapida.md
+    ├── herramientas.md
     └── prompts.md
 ```
 

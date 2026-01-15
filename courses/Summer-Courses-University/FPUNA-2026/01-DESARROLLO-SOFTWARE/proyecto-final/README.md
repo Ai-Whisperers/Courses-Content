@@ -135,7 +135,7 @@ fpuna-management-system/
 
 ## Rúbrica Detallada
 
-Ver: [rubric.md](./rubric.md)
+Ver: [rubrica.md](./rubrica.md)
 
 ---
 
@@ -203,7 +203,7 @@ Sistemas similares:
 
 ## Próximos Pasos
 
-1. ✅ Leer [rubric.md](./rubric.md)
+1. ✅ Leer [rubrica.md](./rubrica.md)
 2. ✅ Diseñar arquitectura (Módulo 01)
 3. ✅ Aplicar patterns (Módulo 02)
 4. ✅ Escribir tests primero (Módulo 03)

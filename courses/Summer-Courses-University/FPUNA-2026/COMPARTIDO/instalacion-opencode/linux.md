@@ -640,7 +640,7 @@ code .
 - **Node.js en Linux**: https://github.com/nodesource/distributions
 - **NVM**: https://github.com/nvm-sh/nvm
 - **Oh My Zsh**: https://ohmyz.sh/
-- **VS Code en Linux**: https://code.visualstudio.com/docs/setup/linux
+- **VS Code en Linux**: https://code.visualstudio.com/documentacion/setup/linux
 - **Soporte FPUNA**: soporte-ia@fpuna.edu.py
 
 ---

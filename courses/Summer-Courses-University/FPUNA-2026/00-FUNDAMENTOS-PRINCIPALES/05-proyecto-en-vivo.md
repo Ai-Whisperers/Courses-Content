@@ -355,7 +355,7 @@ Warning: #FFC107
 **Prompt que usará el instructor**:
 
 ```bash
-claude "Crea index.html para gestor de gastos con estructura semántica HTML5:
+opencode "Crea index.html para gestor de gastos con estructura semántica HTML5:
 
 ╔═══════════════════════════════════════════════════════════╗
 ║ HEADER                                                    ║
@@ -431,7 +431,7 @@ sequenceDiagram
 **Prompt completo**:
 
 ```bash
-claude "Crea app.js con arquitectura modular:
+opencode "Crea app.js con arquitectura modular:
 
 ╔═══════════════════════════════════════════════════════════╗
 ║ CLASE: Gasto                                              ║
@@ -535,7 +535,7 @@ TODO con comentarios JSDoc en español"
 **Prompt**:
 
 ```bash
-claude "Crea main.css con diseño mobile-first:
+opencode "Crea main.css con diseño mobile-first:
 
 ╔═══════════════════════════════════════════════════════════╗
 ║ VARIABLES CSS                                             ║
@@ -691,7 +691,7 @@ flowchart TD
 ### Mejora 1: Export a CSV
 
 ```bash
-claude "Agrega botón 'Exportar a CSV' que:
+opencode "Agrega botón 'Exportar a CSV' que:
 - Genere archivo CSV con todos los gastos
 - Columnas: Fecha, Categoría, Descripción, Monto
 - Formato monto: números sin formateo (para Excel)
@@ -701,7 +701,7 @@ claude "Agrega botón 'Exportar a CSV' que:
 ### Mejora 2: Dark Mode Toggle
 
 ```bash
-claude "Implementa toggle dark mode que:
+opencode "Implementa toggle dark mode que:
 - Botón en header (icono sol/luna)
 - Cambia CSS variables
 - Guarda preferencia en LocalStorage
@@ -712,7 +712,7 @@ claude "Implementa toggle dark mode que:
 ### Mejora 3: Gráfico Interactivo
 
 ```bash
-claude "Mejora el gráfico para que:
+opencode "Mejora el gráfico para que:
 - Muestre tooltip al hover con monto exacto
 - Barras tengan animación de crecimiento al cargar
 - Colores diferentes por categoría
@@ -724,7 +724,7 @@ claude "Mejora el gráfico para que:
 ## 📚 Parte 6: Documentación (5 min)
 
 ```bash
-claude "Genera README.md profesional con:
+opencode "Genera README.md profesional con:
 
 # Gestor de Gastos Personal - FPUNA
 

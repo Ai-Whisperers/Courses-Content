@@ -312,13 +312,13 @@ Este track reutiliza componentes del directorio `SHARED/`:
 │       └── EXERCISE.md
 │
 ├── resources/
-│   ├── cheatsheet.md                  # Quick reference
-│   ├── tools.md                       # Tools and setup
+│   ├── guia-rapida.md                  # Quick reference
+│   ├── herramientas.md                       # Tools and setup
 │   └── best-practices.md              # Best practices
 │
 └── capstone/
     ├── README.md                      # Proyecto integrador
-    └── rubric.md                      # Criterios de evaluación
+    └── rubrica.md                      # Criterios de evaluación
 ```
 
 ---

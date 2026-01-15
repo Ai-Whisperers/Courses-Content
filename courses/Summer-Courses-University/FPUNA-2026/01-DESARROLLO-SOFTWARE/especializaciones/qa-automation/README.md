@@ -109,13 +109,13 @@ Al completar este track, serás capaz de:
 │       └── QUIZ.md
 │
 ├── resources/
-│   ├── cheatsheet.md                  # Guía rápida de Playwright
-│   ├── tools.md                       # Herramientas y setup
+│   ├── guia-rapida.md                  # Guía rápida de Playwright
+│   ├── herramientas.md                       # Herramientas y setup
 │   └── best-practices.md              # Mejores prácticas QA
 │
 └── capstone/
     ├── README.md                      # Proyecto integrador
-    └── rubric.md                      # Criterios de evaluación
+    └── rubrica.md                      # Criterios de evaluación
 ```
 
 ---

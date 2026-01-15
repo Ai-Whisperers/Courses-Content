@@ -77,7 +77,7 @@ proyecto-capstone/
 
 ## Evaluación
 
-Ver `rubric.md` para criterios detallados.
+Ver `rubrica.md` para criterios detallados.
 
 **Puntos clave**:
 - Cobertura de tests (30%)

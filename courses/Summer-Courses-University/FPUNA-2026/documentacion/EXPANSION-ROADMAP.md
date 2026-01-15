@@ -21,11 +21,11 @@
 |-------|--------|----------|-----------|
 | **08-WEB-DEVELOPMENT** | Structure only | HIGH | 15-20h |
 | **01-DESARROLLO-SOFTWARE** | Structure only | HIGH | 15-20h |
-| **02-ELECTRONICS-AUTOMATION** | Structure only | MEDIUM | 20-25h |
-| **04-MARKETING-COMMUNICATION** | Structure only | MEDIUM | 12-15h |
-| **05-RESEARCH-ACADEMIA** | Structure only | MEDIUM | 12-15h |
-| **03-AERONAUTICAL-ENGINEERING** | Structure only | LOW | 20-25h |
-| **06-HOSPITALITY-TOURISM** | Structure only | LOW | 12-15h |
+| **02-ELECTRONICA-AUTOMATIZACION** | Structure only | MEDIUM | 20-25h |
+| **04-MARKETING-COMUNICACION** | Structure only | MEDIUM | 12-15h |
+| **05-INVESTIGACION-ACADEMIA** | Structure only | MEDIUM | 12-15h |
+| **03-INGENIERIA-AERONAUTICA** | Structure only | LOW | 20-25h |
+| **06-HOSPITALIDAD-TURISMO** | Structure only | LOW | 12-15h |
 
 ---
 
@@ -46,7 +46,7 @@ Each Track:
 │   └── 05-{topic}/
 └── capstone/
     ├── README.md
-    └── rubric.md
+    └── rubrica.md
 ```
 
 ### Quality Standards from Track 07

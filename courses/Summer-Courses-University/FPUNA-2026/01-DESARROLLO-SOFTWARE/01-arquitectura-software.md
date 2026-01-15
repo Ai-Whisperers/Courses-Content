@@ -101,7 +101,7 @@ Request   Valida     Lógica      Query SQL   Guarda
 ### Implementación con OpenCode
 
 ```bash
-claude "Genera arquitectura en capas para módulo de usuarios:
+opencode "Genera arquitectura en capas para módulo de usuarios:
 
 CAPAS:
 1. CONTROLLER (user.controller.ts)
@@ -210,7 +210,7 @@ graph LR
 ### Implementación con OpenCode
 
 ```bash
-claude "Genera estructura de microservicio 'Product Service':
+opencode "Genera estructura de microservicio 'Product Service':
 
 TECNOLOGÍAS:
 - NestJS + TypeScript
@@ -310,7 +310,7 @@ sequenceDiagram
 
 ```bash
 # REST API
-claude "Genera REST API para 'Orders' con NestJS:
+opencode "Genera REST API para 'Orders' con NestJS:
 - POST /orders (crear orden)
 - GET /orders (listar con filtros: status, date range)
 - GET /orders/:id (detalle completo)
@@ -320,7 +320,7 @@ claude "Genera REST API para 'Orders' con NestJS:
 - Rate limiting (100 req/min)"
 
 # GraphQL API
-claude "Genera GraphQL schema y resolvers para 'Orders':
+opencode "Genera GraphQL schema y resolvers para 'Orders':
 schema.graphql:
 - type Order { id, items, total, status, user }
 - Query: orders(filter, pagination)
@@ -371,7 +371,7 @@ mindmap
 ### Implementación con OpenCode
 
 ```bash
-claude "Genera event-driven system para 'Order Processing':
+opencode "Genera event-driven system para 'Order Processing':
 
 PRODUCER (Order Service):
 ```typescript
@@ -433,7 +433,7 @@ Diseñar arquitectura completa para e-commerce escalable usando OpenCode.
 
 ```bash
 # 1. Generar diagrama de arquitectura
-claude "Genera diagrama Mermaid para arquitectura microservicios e-commerce con:
+opencode "Genera diagrama Mermaid para arquitectura microservicios e-commerce con:
 - 6 servicios mencionados
 - API Gateway
 - Message Queue
@@ -442,7 +442,7 @@ claude "Genera diagrama Mermaid para arquitectura microservicios e-commerce con:
 En formato Mermaid, comentado en español"
 
 # 2. Generar estructura de proyecto
-claude "Genera estructura completa de carpetas para microservicios:
+opencode "Genera estructura completa de carpetas para microservicios:
 /ecommerce-microservices/
   /api-gateway/
   /auth-service/
@@ -454,7 +454,7 @@ claude "Genera estructura completa de carpetas para microservicios:
 Incluir package.json, tsconfig, Dockerfile en cada servicio"
 
 # 3. Implementar servicio de ejemplo
-claude "Implementa completamente Product Service con:
+opencode "Implementa completamente Product Service con:
 - NestJS + TypeScript
 - Prisma + PostgreSQL
 - Redis para cache
@@ -489,7 +489,7 @@ mindmap
 ### Aplicar con OpenCode
 
 ```bash
-claude "Refactoriza este código aplicando SOLID:
+opencode "Refactoriza este código aplicando SOLID:
 
 [pega código que viola SOLID]
 

@@ -200,7 +200,7 @@ fpuna-research-[nombre]/
 
 ## Rúbrica Detallada
 
-Ver: [rubric.md](./rubric.md)
+Ver: [rubrica.md](./rubrica.md)
 
 ---
 

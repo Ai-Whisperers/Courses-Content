@@ -156,7 +156,7 @@ fpuna-campaign-[tu-nombre]/
 
 ## Rúbrica Detallada
 
-Ver: [rubric.md](./rubric.md)
+Ver: [rubrica.md](./rubrica.md)
 
 ---
 
@@ -228,7 +228,7 @@ Campañas reales de Paraguay:
 
 ## Próximos Pasos
 
-1. ✅ Revisar [rubric.md](./rubric.md)
+1. ✅ Revisar [rubrica.md](./rubrica.md)
 2. ✅ Elegir producto
 3. ✅ Investigar mercado
 4. ✅ Crear estrategia

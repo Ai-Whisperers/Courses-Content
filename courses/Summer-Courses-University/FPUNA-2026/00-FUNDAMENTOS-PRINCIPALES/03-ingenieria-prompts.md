@@ -111,7 +111,7 @@ mindmap
 ### Plantilla Universal
 
 ```bash
-claude "[CONTEXTO] + [TAREA] + [REQUISITOS] + [FORMATO] + [RESTRICCIONES]"
+opencode "[CONTEXTO] + [TAREA] + [REQUISITOS] + [FORMATO] + [RESTRICCIONES]"
 ```
 
 ### Ejemplo Completo: De Malo a Excelente
@@ -119,7 +119,7 @@ claude "[CONTEXTO] + [TAREA] + [REQUISITOS] + [FORMATO] + [RESTRICCIONES]"
 #### ❌ Nivel 1: Terrible (No uses esto)
 
 ```bash
-claude "Crea una app"
+opencode "Crea una app"
 ```
 
 **Problemas**:
@@ -131,7 +131,7 @@ claude "Crea una app"
 #### ⚠️ Nivel 2: Malo (Mejora un poco)
 
 ```bash
-claude "Crea una app de tareas"
+opencode "Crea una app de tareas"
 ```
 
 **Problemas**:
@@ -143,7 +143,7 @@ claude "Crea una app de tareas"
 #### ✅ Nivel 3: Bueno (Empieza a ser útil)
 
 ```bash
-claude "Crea una aplicación web de lista de tareas con HTML, CSS y JavaScript. 
+opencode "Crea una aplicación web de lista de tareas con HTML, CSS y JavaScript. 
 Debe permitir agregar tareas, marcarlas como completadas y eliminarlas."
 ```
 
@@ -155,7 +155,7 @@ Debe permitir agregar tareas, marcarlas como completadas y eliminarlas."
 #### 🌟 Nivel 4: Excelente (Profesional)
 
 ```bash
-claude "Crea una aplicación web de gestión de tareas para estudiantes de FPUNA.
+opencode "Crea una aplicación web de gestión de tareas para estudiantes de FPUNA.
 
 ═══════════════════════════════════════════════════════════
 CONTEXTO:
@@ -501,7 +501,7 @@ flowchart TD
 
 ```bash
 # ❌ Un prompt gigante pidiendo TODO a la vez
-claude "Crea un sistema completo de gestión de estudiantes con backend API REST, 
+opencode "Crea un sistema completo de gestión de estudiantes con backend API REST, 
 frontend React, base de datos, autenticación, tests, documentación..."
 # Resultado: Overwhelmed, código incompleto o genérico
 ```
@@ -510,25 +510,25 @@ frontend React, base de datos, autenticación, tests, documentación..."
 
 ```bash
 # ✅ Paso 1: Base
-claude "Crea modelo de datos para Student con:
+opencode "Crea modelo de datos para Student con:
 - id, nombre, carnet, carrera, email
 - Validación de cada campo
 - Método toJSON()"
 
 # ✅ Paso 2: API
-claude "Crea API REST con Express para el modelo Student anterior.
+opencode "Crea API REST con Express para el modelo Student anterior.
 Endpoints básicos: GET, POST, PUT, DELETE"
 
 # ✅ Paso 3: Validaciones
-claude "Agrega validación con Joi a todos los endpoints.
+opencode "Agrega validación con Joi a todos los endpoints.
 Errores en español con códigos HTTP correctos"
 
 # ✅ Paso 4: Tests
-claude "Genera tests con Supertest para todos los endpoints.
+opencode "Genera tests con Supertest para todos los endpoints.
 Coverage mínimo 85%"
 
 # ✅ Paso 5: Docs
-claude "Genera documentación Swagger para la API"
+opencode "Genera documentación Swagger para la API"
 ```
 
 ### Principio 7: Iteración y Refinamiento
@@ -554,30 +554,30 @@ journey
 
 ```bash
 # Iteración 1: Básico
-claude "Crea calculadora simple con suma, resta, multiplicar, dividir"
+opencode "Crea calculadora simple con suma, resta, multiplicar, dividir"
 # Resultado: Funciones básicas
 
 # Iteración 2: Mejorar
-claude "Mejora la calculadora anterior agregando:
+opencode "Mejora la calculadora anterior agregando:
 - Validación de inputs (no permitir dividir por cero)
 - Manejo de errores con mensajes en español
 - Función para calcular porcentaje"
 # Resultado: Más robusto
 
 # Iteración 3: UI
-claude "Crea interfaz HTML/CSS para la calculadora.
+opencode "Crea interfaz HTML/CSS para la calculadora.
 Diseño: calculadora científica moderna con botones grandes"
 # Resultado: Con interfaz
 
 # Iteración 4: Features avanzadas
-claude "Agrega a la calculadora:
+opencode "Agrega a la calculadora:
 - Historial de operaciones (últimas 10)
 - Memoria (M+, M-, MR, MC)
 - Teclado numérico funcional"
 # Resultado: Calculadora completa
 
 # Iteración 5: Polish
-claude "Mejora la calculadora:
+opencode "Mejora la calculadora:
 - Animaciones suaves en botones
 - Tema oscuro/claro toggle
 - Responsive para móvil
@@ -610,7 +610,7 @@ flowchart TD
 **Ejemplo**:
 
 ```bash
-claude "Calcula el precio final de un producto con estas reglas:
+opencode "Calcula el precio final de un producto con estas reglas:
 
 DATOS:
 - Precio base: ₲100,000
@@ -666,7 +666,7 @@ graph LR
 **Ejemplo**:
 
 ```bash
-claude "Genera funciones CRUD siguiendo EXACTAMENTE este patrón:
+opencode "Genera funciones CRUD siguiendo EXACTAMENTE este patrón:
 
 ╔═══════════════════════════════════════════════════════════╗
 ║ EJEMPLO 1: CREATE                                         ║
@@ -783,7 +783,7 @@ mindmap
 **Ejemplo**:
 
 ```bash
-claude "Actúa como un profesor de programación de FPUNA con 15 años de experiencia 
+opencode "Actúa como un profesor de programación de FPUNA con 15 años de experiencia 
 enseñando a estudiantes de primer año.
 
 Un estudiante te muestra este código y pregunta: '¿Por qué no funciona?'
@@ -834,7 +834,7 @@ flowchart TD
 **Ejemplo**:
 
 ```bash
-claude "Evalúa este código y responde SOLO con una de estas opciones:
+opencode "Evalúa este código y responde SOLO con una de estas opciones:
 
 ╔═══════════════════════════════════════════════════════════╗
 ║ OPCIONES PERMITIDAS (elige UNA):                         ║
@@ -892,7 +892,7 @@ graph TD
 
 ```bash
 # Capa 1: Estructura
-claude "Crea estructura base de clase User con:
+opencode "Crea estructura base de clase User con:
 - Constructor (nombre, email, edad)
 - Método toString()
 - Método toJSON()
@@ -902,7 +902,7 @@ SOLO la estructura, sin validaciones aún."
 node test.js  # OK ✅
 
 # Capa 2: Validaciones
-claude "Agrega validaciones a la clase User:
+opencode "Agrega validaciones a la clase User:
 - Email debe tener formato válido
 - Edad entre 18 y 120
 - Nombre no vacío, máx 100 caracteres
@@ -912,7 +912,7 @@ Lanzar errores descriptivos si fallan."
 node test.js  # OK ✅
 
 # Capa 3: Métodos avanzados
-claude "Agrega a User:
+opencode "Agrega a User:
 - updateEmail(newEmail) con validación
 - celebrateBirthday() que incrementa edad
 - isAdult() que retorna boolean"
@@ -921,7 +921,7 @@ claude "Agrega a User:
 node test.js  # OK ✅
 
 # Capa 4: Persistencia
-claude "Agrega métodos para guardar/cargar desde JSON:
+opencode "Agrega métodos para guardar/cargar desde JSON:
 - save(filename) guarda en archivo
 - static load(filename) carga desde archivo"
 
@@ -1144,7 +1144,7 @@ Cuando un prompt no funciona, verifica:
 
 **Prompt que no funcionó**:
 ```bash
-claude "Optimiza esta función"
+opencode "Optimiza esta función"
 ```
 
 **Análisis**: ¿Qué falta?
@@ -1154,7 +1154,7 @@ claude "Optimiza esta función"
 
 **Prompt mejorado**:
 ```bash
-claude "Esta función procesa 50,000 productos y toma 8 segundos.
+opencode "Esta función procesa 50,000 productos y toma 8 segundos.
 Los usuarios se quejan de lentitud al filtrar.
 
 OBJETIVO: Reducir a <1 segundo
@@ -1202,7 +1202,7 @@ Antes de enviar un prompt, verifica:
 
 **Prompt Original (malo)**:
 ```bash
-claude "Crea una app de gestión"
+opencode "Crea una app de gestión"
 ```
 
 **Tu tarea**: Reescríbelo aplicando TODO lo aprendido.

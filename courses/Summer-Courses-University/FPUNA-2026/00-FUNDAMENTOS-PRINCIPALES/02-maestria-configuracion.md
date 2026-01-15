@@ -205,7 +205,7 @@ nano mcp-servers.json
 **Paso 4**: Probar
 
 ```bash
-claude "Lista todos los archivos en mi carpeta FPUNA-Proyectos"
+opencode "Lista todos los archivos en mi carpeta FPUNA-Proyectos"
 ```
 
 **Si funciona**, verás la lista de archivos. ¡Felicitaciones! 🎉
@@ -245,13 +245,13 @@ Edita tu `mcp-servers.json` para agregar Git:
 
 ```bash
 # Ver status de Git
-claude "Muéstrame el estado de Git"
+opencode "Muéstrame el estado de Git"
 
 # Ver últimos commits
-claude "Muéstrame los últimos 5 commits con sus mensajes"
+opencode "Muéstrame los últimos 5 commits con sus mensajes"
 
 # Hacer commit
-claude "Crea un commit con mensaje 'Agregué calculadora' para todos los cambios"
+opencode "Crea un commit con mensaje 'Agregué calculadora' para todos los cambios"
 ```
 
 #### 3. GitHub MCP (Repositorios en la Nube)
@@ -330,13 +330,13 @@ Actualizar `mcp-servers.json`:
 
 ```bash
 # Crear repositorio
-claude "Crea un repositorio llamado 'mi-proyecto-fpuna' en mi GitHub"
+opencode "Crea un repositorio llamado 'mi-proyecto-fpuna' en mi GitHub"
 
 # Ver issues
-claude "Muéstrame los issues abiertos de mi repo"
+opencode "Muéstrame los issues abiertos de mi repo"
 
 # Crear issue
-claude "Crea un issue titulado 'Agregar tests' en mi-proyecto-fpuna"
+opencode "Crea un issue titulado 'Agregar tests' en mi-proyecto-fpuna"
 ```
 
 ---
@@ -373,13 +373,13 @@ graph LR
 
 **Instalar**:
 ```bash
-claude skill install generate-readme
+opencode skill install generate-readme
 ```
 
 **Usar**:
 ```bash
 cd mi-proyecto
-claude skill use generate-readme
+opencode skill use generate-readme
 ```
 
 **OpenCode preguntará**:
@@ -396,12 +396,12 @@ claude skill use generate-readme
 
 **Instalar**:
 ```bash
-claude skill install generate-unit-tests
+opencode skill install generate-unit-tests
 ```
 
 **Usar**:
 ```bash
-claude skill use generate-unit-tests --file=calculadora.js
+opencode skill use generate-unit-tests --file=calculadora.js
 ```
 
 **Resultado**: Archivo `calculadora.test.js` con tests completos.
@@ -412,12 +412,12 @@ claude skill use generate-unit-tests --file=calculadora.js
 
 **Instalar**:
 ```bash
-claude skill install init-nodejs-project
+opencode skill install init-nodejs-project
 ```
 
 **Usar**:
 ```bash
-claude skill use init-nodejs-project --name=mi-app-fpuna
+opencode skill use init-nodejs-project --name=mi-app-fpuna
 ```
 
 **Crea**:
@@ -497,7 +497,7 @@ steps:
 #### Paso 3: Usar Tu Skill
 
 ```bash
-claude skill use fpuna-header \
+opencode skill use fpuna-header \
   --nombre="María González" \
   --carnet="2024001" \
   --carrera="Ingeniería Informática"
@@ -553,7 +553,7 @@ hooks:
     
     - name: add-fpuna-header
       description: Agregar encabezado FPUNA
-      command: claude skill use fpuna-header --nombre="Tu Nombre" --carnet="Tu Carnet" --carrera="Tu Carrera"
+      command: opencode skill use fpuna-header --nombre="Tu Nombre" --carnet="Tu Carnet" --carrera="Tu Carrera"
       on_fail: warn
 
   # Antes de hacer commit
@@ -572,7 +572,7 @@ hooks:
   post-install:
     - name: update-readme
       description: Actualizar lista de dependencias en README
-      command: claude "Actualiza la sección de dependencias en README.md"
+      command: opencode "Actualiza la sección de dependencias en README.md"
       on_fail: warn
 ```
 
@@ -763,7 +763,7 @@ flowchart TD
 
 **Sin Rules**:
 ```bash
-claude "Crea una función que sume dos números"
+opencode "Crea una función que sume dos números"
 ```
 
 **Podría generar**:
@@ -900,7 +900,7 @@ hooks:
       on_fail: warn
     
     - name: add-header
-      command: claude skill use fpuna-header
+      command: opencode skill use fpuna-header
       on_fail: warn
 
   pre-commit:
@@ -947,7 +947,7 @@ cd test-config-completo
 npm init -y
 
 # 2. Pedir a OpenCode que cree una aplicación
-claude "Crea una clase Calculadora con:
+opencode "Crea una clase Calculadora con:
 - Métodos: sumar, restar, multiplicar, dividir
 - Validación completa de inputs
 - Tests con Jest
@@ -1022,7 +1022,7 @@ Marca cada uno:
 #### Skills
 - [ ] ✅ Al menos 3 skills instalados
 - [ ] ✅ Skill `fpuna-header` creado y funcional
-- [ ] ✅ Puedo ejecutar skills con `claude skill use`
+- [ ] ✅ Puedo ejecutar skills con `opencode skill use`
 
 #### Hooks
 - [ ] ✅ `hooks.yaml` creado
@@ -1064,7 +1064,7 @@ npm install -g @modelcontextprotocol/server-filesystem
 # Usa https://jsonlint.com para validar tu mcp-servers.json
 
 # 4. Reiniciar OpenCode
-claude restart
+opencode restart
 ```
 
 ### Problema 2: "Hooks not executing"
@@ -1096,10 +1096,10 @@ npx prettier --write .
 **Ejemplo**:
 ```bash
 # En lugar de solo confiar en rules
-claude "Crea función de suma"
+opencode "Crea función de suma"
 
 # Ser específico en el prompt
-claude "Crea función de suma siguiendo EXACTAMENTE las reglas FPUNA:
+opencode "Crea función de suma siguiendo EXACTAMENTE las reglas FPUNA:
 - Encabezado con mi nombre
 - JSDoc completo en español  
 - Validación de inputs
@@ -1135,13 +1135,13 @@ echo $GITHUB_TOKEN       # Mac
 
 Para profundizar:
 
-- 📖 [Guía Completa de MCPs](../../SHARED/mcp-configuration/README.md)
-- 📖 [Encontrar Más MCPs](../../SHARED/mcp-configuration/finding-mcps.md)
-- 📖 [Configurar MCPs Avanzados](../../SHARED/mcp-configuration/advanced-config.md)
-- 📖 [Sistema de Skills](../../SHARED/skills-system/README.md)
-- 📖 [Crear Skills Personalizados](../../SHARED/skills-system/creating-skills.md)
-- 📖 [Hooks y Rules](../../SHARED/hooks-rules/README.md)
-- 📖 [Ejemplos de Configuración](../../SHARED/components/configuration-examples.md)
+- 📖 [Guía Completa de MCPs](../../COMPARTIDO/mcp-configuration/README.md)
+- 📖 [Encontrar Más MCPs](../../COMPARTIDO/mcp-configuration/finding-mcps.md)
+- 📖 [Configurar MCPs Avanzados](../../COMPARTIDO/mcp-configuration/advanced-config.md)
+- 📖 [Sistema de Skills](../../COMPARTIDO/skills-system/README.md)
+- 📖 [Crear Skills Personalizados](../../COMPARTIDO/skills-system/creating-skills.md)
+- 📖 [Hooks y Rules](../../COMPARTIDO/hooks-rules/README.md)
+- 📖 [Ejemplos de Configuración](../../COMPARTIDO/components/configuration-examples.md)
 
 ### Videos y Tutoriales
 
@@ -1190,7 +1190,7 @@ journey
 
 ```bash
 # Crear un proyecto que use TODA tu configuración
-claude "Crea un proyecto llamado 'conversor-guaranies' que:
+opencode "Crea un proyecto llamado 'conversor-guaranies' que:
 - Convierta USD, EUR, BRL a Guaraníes
 - Tenga funciones para cada conversión
 - Incluya tests completos

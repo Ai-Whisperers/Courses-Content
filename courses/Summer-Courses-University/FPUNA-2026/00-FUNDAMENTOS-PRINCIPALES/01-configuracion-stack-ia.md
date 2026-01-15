@@ -642,12 +642,12 @@ graph LR
 
 Para profundizar más:
 
-- 📖 [Guía Detallada de OpenCode](../../SHARED/opencode-installation/guide.md)
-- 📖 [Instalación en Windows](../../SHARED/opencode-installation/windows.md)
-- 📖 [Instalación en Mac](../../SHARED/opencode-installation/mac.md)
-- 📖 [Instalación en Linux](../../SHARED/opencode-installation/linux.md)
-- 📖 [Solución de Problemas](../../SHARED/opencode-installation/troubleshooting.md)
-- 📖 [Preguntas Frecuentes](../../SHARED/opencode-installation/FAQ.md)
+- 📖 [Guía Detallada de OpenCode](../../COMPARTIDO/opencode-installation/guide.md)
+- 📖 [Instalación en Windows](../../COMPARTIDO/opencode-installation/windows.md)
+- 📖 [Instalación en Mac](../../COMPARTIDO/opencode-installation/mac.md)
+- 📖 [Instalación en Linux](../../COMPARTIDO/opencode-installation/linux.md)
+- 📖 [Solución de Problemas](../../COMPARTIDO/opencode-installation/troubleshooting.md)
+- 📖 [Preguntas Frecuentes](../../COMPARTIDO/opencode-installation/FAQ.md)
 
 ### Soporte FPUNA
 

@@ -747,7 +747,7 @@ const obtenerLibro = (id, callback) => {
 
 - [Prisma Docs](https://www.prisma.io/docs)
 - [Express.js Guide](https://expressjs.com/es/guide/routing.html)
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
+- [Jest Documentation](https://jestjs.io/documentacion/getting-started)
 
 ## Estándares de Código
 
@@ -783,7 +783,7 @@ flowchart LR
 #### Sin Contexto (Malo)
 
 ```bash
-claude "Agrega función para prestar un libro"
+opencode "Agrega función para prestar un libro"
 ```
 
 **OpenCode NO sabe**:
@@ -800,7 +800,7 @@ claude "Agrega función para prestar un libro"
 Con `.opencode` y `CLAUDE.md` configurados:
 
 ```bash
-claude "Agrega función prestarLibro() siguiendo las reglas del proyecto"
+opencode "Agrega función prestarLibro() siguiendo las reglas del proyecto"
 ```
 
 **OpenCode SABE** (automáticamente):
@@ -912,7 +912,7 @@ journey
 4. **Pruébalo**:
    ```bash
    cd tu-proyecto
-   claude "Crea función para [algo relacionado a tu proyecto]"
+   opencode "Crea función para [algo relacionado a tu proyecto]"
    ```
    
    Observa cómo OpenCode usa el contexto automáticamente.

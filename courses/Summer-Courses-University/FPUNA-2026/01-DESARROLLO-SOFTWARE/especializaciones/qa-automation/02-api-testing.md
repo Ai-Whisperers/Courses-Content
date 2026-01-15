@@ -119,7 +119,7 @@ A lo largo del módulo trabajarás con una **API REST de E-commerce**:
 
 ## Recursos Adicionales
 
-- 📚 [Playwright API Testing Docs](https://playwright.dev/docs/api-testing)
+- 📚 [Playwright API Testing Docs](https://playwright.dev/documentacion/api-testing)
 - 📚 [Zod Documentation](https://zod.dev)
 - 🎥 Videos de referencia (próximamente)
 
