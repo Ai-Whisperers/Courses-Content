@@ -2,8 +2,71 @@
 ## FPUNA 2026 - Track QA Automation
 
 **Duración**: 4 horas  
-**Modalidad**: Teórico-práctico (30% teoría, 70% práctica)  
-**Prerrequisitos**: Módulo 01 completado
+**Modalidad**: Teórico-práctico (30% teoría, 70% práctica)
+
+---
+
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+Antes de comenzar este módulo, debes tener:
+
+- ✅ **JavaScript/TypeScript básico**
+  - Variables, funciones, arrays, objetos
+  - Async/await y Promises
+  - Arrow functions
+  - Dónde se enseña: Módulo 01, Sección 1
+  - Verificación: ¿Puedes explicar qué es una Promise?
+
+- ✅ **Conceptos HTTP**
+  - Métodos: GET, POST, PUT, DELETE
+  - Status codes: 200, 201, 404, 500
+  - Headers y body
+  - Dónde se enseña: Módulo 01, Sección 2
+  - Verificación: ¿Sabes la diferencia entre GET y POST?
+
+- ✅ **Playwright básico**
+  - Instalación y configuración
+  - Ejecución de tests simples
+  - Locators y acciones básicas
+  - Dónde se enseña: Módulo 01, Secciones 3-4
+  - Verificación: ¿Has ejecutado al menos un test de Playwright?
+
+### Software Necesario
+
+Verifica que tienes instalado:
+
+```bash
+# Node.js v18 o superior
+node --version  # Debe mostrar v18.x o superior
+
+# Playwright
+npm list @playwright/test  # Debe estar instalado
+
+# Git
+git --version
+
+# Editor de código (recomendado VS Code)
+code --version
+```
+
+### Auto-Evaluación
+
+Responde estas preguntas. Si respondes "NO" a alguna, revisa Módulo 01:
+
+1. ¿Puedes escribir una función async y usar await? **SÍ / NO**
+2. ¿Sabes qué significa un status code 404? **SÍ / NO**
+3. ¿Has ejecutado un test de Playwright anteriormente? **SÍ / NO**
+4. ¿Entiendes qué es una API REST? **SÍ / NO**
+
+**Si respondiste NO a alguna**: Revisa Módulo 01, Secciones 1-4 antes de continuar.
+
+### Archivos del Módulo Anterior
+
+No necesitas archivos específicos del Módulo 01, pero es recomendable tener:
+- Tu proyecto de Playwright configurado
+- Acceso a tu repositorio de ejercicios
 
 ---
 
@@ -389,6 +452,8 @@ test('validación incompleta', async () => {
 
 ---
 
+Ahora que dominas los fundamentos de testing de APIs con Playwright, es momento de agregar una capa adicional de robustez: validación de schemas. Esto garantizará que las respuestas no solo tengan el status code correcto, sino que también contengan exactamente los datos que esperamos.
+
 ## 🔐 Parte 2: Schema Validation con Zod (60 min)
 
 ### Concepto: Type-Safe Validation
@@ -572,6 +637,8 @@ test('API debe ser retrocompatible', async ({ request }) => {
 
 ---
 
+Con schema validation ya dominado, el siguiente paso natural es extender esta idea a nivel de arquitectura: contract testing. Esto es especialmente crítico cuando trabajas con microservicios o equipos distribuidos.
+
 ## 🤝 Parte 3: Contract Testing (45 min)
 
 ### Concepto: Consumer-Driven Contracts
@@ -701,6 +768,8 @@ test('POST /api/products cumple contrato', async ({ request }) => {
 
 ---
 
+Hemos validado funcionalidad y contratos. Pero hay una dimensión crítica que no hemos medido: ¿qué tan rápido responde nuestra API? Performance testing nos permite detectar degradaciones antes de que afecten a usuarios reales.
+
 ## ⚡ Parte 4: Performance Testing (45 min)
 
 ### Concepto: Response Time Assertions
@@ -796,6 +865,8 @@ test('Concurrent requests - medir throughput', async ({ request }) => {
 ```
 
 ---
+
+Finalmente, una técnica avanzada que te permitirá escribir tests más rápidos y estables: API mocking. Esto es especialmente útil cuando dependes de servicios externos que no controlas.
 
 ## 🎭 Parte 5: API Mocking (30 min)
 
@@ -978,6 +1049,203 @@ test('actualizar', async () => { /* usa sharedProductId */ });
 | `401 Unauthorized` | Token expirado/inválido | Renovar token en `beforeAll` |
 | `Schema validation fails` | API cambió estructura | Actualizar schema o verificar versión API |
 | `Timeout` | Request muy lento | Aumentar timeout o revisar performance |
+
+---
+
+## 📝 Evaluación de Conocimientos
+
+### Quiz del Módulo (10 preguntas)
+
+**Tiempo estimado**: 15 minutos  
+**Aprobación**: 7/10 correctas
+
+#### Preguntas de Opción Múltiple (6 preguntas - 1 punto c/u)
+
+**1. ¿Cuál es la principal ventaja de usar APIRequestContext de Playwright para testing de APIs?**
+
+a) Es más rápido que Postman  
+b) Permite testing integrado UI + API en el mismo framework  
+c) Solo funciona con APIs REST  
+d) Requiere menos código que otras herramientas
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b**
+
+APIRequestContext permite mantener tests de UI y API en el mismo framework, reutilizando configuraciones, fixtures y reportes. Esto simplifica la arquitectura de testing.
+</details>
+
+---
+
+**2. En Zod, ¿qué método usas para validar datos que podrían ser inválidos sin lanzar error?**
+
+a) `parse()`  
+b) `validate()`  
+c) `safeParse()`  
+d) `check()`
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: c**
+
+`safeParse()` retorna un objeto con `.success` (boolean) en lugar de lanzar error. Esto permite manejar validaciones fallidas sin try/catch.
+</details>
+
+---
+
+**3. ¿Qué status code debería retornar un POST exitoso que crea un nuevo recurso?**
+
+a) 200 OK  
+b) 201 Created  
+c) 204 No Content  
+d) 202 Accepted
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b**
+
+201 Created indica que el recurso fue creado exitosamente. El header `Location` debe incluir la URL del nuevo recurso.
+</details>
+
+---
+
+**4. En contract testing, ¿quién define el contrato?**
+
+a) El provider (backend)  
+b) El consumer (frontend/cliente)  
+c) Un equipo de arquitectura externo  
+d) Se define automáticamente
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b**
+
+Consumer-driven contracts: el consumidor define qué necesita, y el provider se compromete a cumplirlo. Esto asegura que el API sirve casos de uso reales.
+</details>
+
+---
+
+**5. ¿Qué tiempo de respuesta se considera aceptable para un GET request de lectura simple?**
+
+a) < 50ms  
+b) < 200ms  
+c) < 500ms  
+d) < 2000ms
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b (o c dependiendo del contexto)**
+
+**200ms es el ideal** para requests de lectura. 500ms es aceptable. Más de 1 segundo se percibe como lento. En el módulo mencionamos < 500ms como meta práctica.
+</details>
+
+---
+
+**6. ¿Cuál es el propósito principal de API mocking en tests?**
+
+a) Hacer tests más rápidos  
+b) Evitar costos de API  
+c) Aislar tests de dependencias externas  
+d) Todas las anteriores
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: d**
+
+API mocking logra múltiples objetivos: velocidad (sin network), aislamiento (sin dependencias), control (respuestas predecibles), y economía (sin consumir cuotas).
+</details>
+
+---
+
+#### Verdadero / Falso (2 preguntas - 1 punto c/u)
+
+**7. Playwright APIRequestContext requiere un navegador abierto para funcionar.**
+
+a) Verdadero  
+b) Falso
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b (Falso)**
+
+APIRequestContext es independiente del navegador. Puede hacer requests HTTP directamente sin abrir ningún navegador, lo que lo hace más rápido para tests puros de API.
+</details>
+
+---
+
+**8. En testing de APIs, validar solo el status code 200 es suficiente para considerar el test completo.**
+
+a) Verdadero  
+b) Falso
+
+<details>
+<summary>Ver respuesta</summary>
+
+**Respuesta correcta: b (Falso)**
+
+Un test completo debe validar múltiples capas: status code, headers, estructura del body, schema de datos, y lógica de negocio. Solo validar status es insuficiente.
+</details>
+
+---
+
+#### Respuesta Corta (2 preguntas - 1 punto c/u)
+
+**9. Explica con tus propias palabras: ¿Qué problema resuelve Zod en testing de APIs?**
+
+<details>
+<summary>Ver respuesta modelo</summary>
+
+**Respuesta modelo**:
+
+Zod resuelve el problema de validación en runtime. TypeScript solo valida en compile-time, pero las respuestas de API vienen en runtime. Zod permite validar que los datos realmente cumplen el schema esperado y obtener tipos seguros automáticamente.
+
+**Criterios de calificación**:
+- Menciona "runtime validation" o "validación en ejecución" (0.5 pts)
+- Explica diferencia TypeScript vs Zod (0.25 pts)  
+- Menciona type safety o tipos automáticos (0.25 pts)
+</details>
+
+---
+
+**10. Menciona 2 ventajas y 1 desventaja de mockear APIs en tests.**
+
+<details>
+<summary>Ver respuesta modelo</summary>
+
+**Respuesta modelo**:
+
+**Ventajas**:
+- Tests más rápidos (sin esperar network/servidor real)
+- Tests más estables (no dependen de servicios externos que pueden fallar)
+- Control total sobre respuestas (puedes simular errores fácilmente)
+
+**Desventaja**:
+- El mock puede divergir de la API real (riesgo de falsos positivos)
+- No detectas problemas en la integración real
+- Requiere mantenimiento cuando la API cambia
+
+**Criterios de calificación**:
+- 2 ventajas válidas (0.5 pts total, 0.25 cada una)
+- 1 desventaja válida (0.5 pts)
+</details>
+
+---
+
+### Resultados
+
+**Puntaje: _____ / 10**
+
+- **9-10 puntos**: Excelente dominio del módulo
+- **7-8 puntos**: Buen entendimiento, revisa temas específicos
+- **5-6 puntos**: Aprobado pero necesitas reforzar conceptos
+- **< 5 puntos**: Revisa el módulo completo antes de continuar
 
 ---
 
