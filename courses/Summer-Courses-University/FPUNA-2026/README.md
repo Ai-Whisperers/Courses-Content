@@ -20,7 +20,7 @@ Este programa modular enseña a estudiantes de diversas disciplinas a utilizar h
 
 ## Arquitectura del Curso
 
-### 00-CORE-FOUNDATION (Universal)
+### 00-FUNDAMENTOS-PRINCIPALES (Universal)
 **Duración**: 8 horas  
 **Para**: TODOS los estudiantes
 
@@ -43,7 +43,7 @@ Recursos compartidos entre todos los tracks:
 
 ### Tracks Especializados
 
-#### 01-SOFTWARE-DEVELOPMENT
+#### 01-DESARROLLO-SOFTWARE
 Para: Ingeniería Informática, Desarrollo de Software  
 Módulos: 5 módulos especializados
 
@@ -106,7 +106,7 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 ### Para Estudiantes
 
 **Semana 1**:
-1. Ir a [`00-CORE-FOUNDATION`](./00-CORE-FOUNDATION/README.md)
+1. Ir a [`00-FUNDAMENTOS-PRINCIPALES`](./00-FUNDAMENTOS-PRINCIPALES/README.md)
 2. Completar módulos 01-06 en orden
 3. Verificar que OpenCode funciona correctamente
 
@@ -118,7 +118,7 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 ### Para Instructores
 
 **Preparación**:
-1. Revisar [`00-CORE-FOUNDATION`](./00-CORE-FOUNDATION/README.md)
+1. Revisar [`00-FUNDAMENTOS-PRINCIPALES`](./00-FUNDAMENTOS-PRINCIPALES/README.md)
 2. Familiarizarse con [`SHARED/components`](./SHARED/components/)
 3. Revisar el track específico que enseñarás
 
@@ -146,14 +146,14 @@ Módulos: 5 módulos + Next.js, Prisma, etc.
 ```
 FPUNA-2026/
 ├── README.md                          # Este archivo
-├── 00-CORE-FOUNDATION/                # Universal (todos)
+├── 00-FUNDAMENTOS-PRINCIPALES/                # Universal (todos)
 │   ├── modules/                       # 6 módulos
 │   └── shared-resources/              # Recursos del core
 ├── SHARED/                            # Componentes reutilizables
 │   ├── components/                    # Guías compartidas
 │   ├── exercises/                     # Ejercicios comunes
 │   └── quizzes/                       # Evaluaciones
-├── 01-SOFTWARE-DEVELOPMENT/           # Track 1
+├── 01-DESARROLLO-SOFTWARE/           # Track 1
 ├── 02-ELECTRONICS-AUTOMATION/         # Track 2
 ├── 03-AERONAUTICAL-ENGINEERING/       # Track 3
 ├── 04-MARKETING-COMMUNICATION/        # Track 4
