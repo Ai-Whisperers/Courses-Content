@@ -50,13 +50,31 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 
 ---
 
-## Repository Structure
+## Repository Structure (Updated January 2026)
 
 ```
 Courses-Content/
 │
 ├── courses/                           # All course content
 │   ├── QA-Automation-with-AI/         # COMPLETE - 12 modules
+│   ├── Summer-Courses-University/     # University courses (Paraguay)
+│   │   ├── FPUNA-2026/                # NEW: Modular course architecture
+│   │   │   ├── README.md              # Implementation plan
+│   │   │   ├── SHARED/                # Reusable components (27 files)
+│   │   │   │   ├── opencode-installation/
+│   │   │   │   ├── mcp-configuration/
+│   │   │   │   ├── skills-system/
+│   │   │   │   ├── hooks-rules/
+│   │   │   │   └── project-templates/
+│   │   │   ├── 00-CORE-FOUNDATION/    # Week 1 universal curriculum (18 files)
+│   │   │   │   ├── 01-ai-stack-setup/
+│   │   │   │   ├── 02-configuration-mastery/
+│   │   │   │   ├── 03-prompt-engineering/
+│   │   │   │   ├── 04-context-engineering/
+│   │   │   │   ├── 05-live-project/
+│   │   │   │   └── 06-workflow-patterns/
+│   │   │   └── [01-08 specialized tracks pending]
+│   │   └── Cursos/                    # Course catalog and references
 │   ├── AI-Assisted-Software-Development/
 │   ├── AI-Ethics-and-Governance/
 │   ├── AI-for-Customer-Service-Teams/
@@ -66,7 +84,9 @@ Courses-Content/
 │   ├── Building-AI-Powered-Applications/
 │   ├── Introduction-to-AI-for-Business-Professionals/
 │   ├── Prompt-Engineering-Masterclass/
-│   └── QA-Automation-with-AI-Advanced/
+│   ├── Business-Professional/
+│   ├── Team-Specific/
+│   └── Technical-Development/
 │
 ├── docs/                              # Documentation hub
 │   ├── frameworks/                    # Strategic guides and methodologies
@@ -78,7 +98,22 @@ Courses-Content/
 │   ├── history/                       # Implementation records
 │   │   ├── MERGE-SUMMARY.md
 │   │   └── ...
-│   └── templates/                     # Reusable course templates
+│   ├── templates/                     # Reusable course templates
+│   └── planning/                      # Project planning documents
+│       ├── FPUNA-COURSE-STRATEGY.md
+│       ├── FPUNA-SUMMER-2026-PROJECT-PLAN.md
+│       ├── COURSE-TIMELINE-GANTT.md
+│       ├── STUDENT-INTEREST-SURVEY.md
+│       ├── CAPSTONE-*.md
+│       └── GITHUB-ORGANIZATION-SETUP.md
+│
+├── archive/                           # Historical content (reference only)
+│   └── old-modules/                   # Previous course iterations
+│       ├── QA-TRACK-MODULE-*.md (5 files)
+│       ├── WEB-TRACK-MODULE-*.md (5 files)
+│       ├── CORE-MODULE-*-DRAFT.md (6 files)
+│       ├── tier1-desarrollo-software/
+│       └── _shared/
 │
 ├── shared-resources/                  # Common across courses
 │   ├── example-projects/              # Reference projects
