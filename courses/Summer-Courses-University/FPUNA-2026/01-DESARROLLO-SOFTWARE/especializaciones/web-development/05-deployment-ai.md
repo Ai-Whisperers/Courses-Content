@@ -21,6 +21,21 @@
 
 ---
 
+## 📋 Prerrequisitos
+
+✅ **Módulos Web-01 a Web-04 COMPLETADOS** (CRÍTICO)  
+✅ **Proyecto Next.js Funcional**: Listo para deployar  
+✅ **Cuenta GitHub**: Para CI/CD  
+✅ **Cuenta Vercel**: Free tier (crear en clase)  
+
+**Checklist**:
+- [ ] Tengo app Next.js funcionando localmente
+- [ ] Mi código está en GitHub
+- [ ] Entiendo conceptos de environment variables
+- [ ] Tengo 4 horas disponibles
+
+---
+
 ## 🤔 ¿Qué es Deployment?
 
 ### Analogía: De la Cocina al Restaurante
@@ -1374,6 +1389,46 @@ git push
 3. **¿Cómo OpenCode acelera deployment workflows?**
 
 **Comparte en Slack** (#web-dev-deployment)
+
+---
+
+## 📝 Quiz de Evaluación
+
+**Total**: 10 preguntas | **Tiempo**: 20 min | **Aprobación**: 7/10
+
+**1. ¿Qué plataforma usamos para deployar Next.js en este módulo?**  
+a) AWS  
+b) Heroku  
+c) Vercel  
+d) DigitalOcean
+
+**2. Verdadero o Falso: Vercel detecta automáticamente que es un proyecto Next.js y configura el build.**
+
+**3. ¿Dónde se configuran las environment variables en Vercel?**  
+a) En el código directamente  
+b) Project Settings → Environment Variables  
+c) En un archivo .env committed a Git  
+d) No se pueden configurar
+
+**4. Menciona 2 ventajas de usar Vercel para Next.js.**
+
+**5. ¿Qué herramienta se usa para CI/CD en GitHub?**  
+a) Jenkins  
+b) GitHub Actions  
+c) CircleCI  
+d) Travis CI
+
+**Respuestas**:
+
+**1. c)** Vercel es la plataforma oficial de los creadores de Next.js.
+
+**2. Verdadero.** Vercel auto-detecta Next.js y configura todo automáticamente.
+
+**3. b)** Project Settings → Environment Variables en el dashboard de Vercel.
+
+**4. Respuesta Modelo**: "Deployment automático con cada push a GitHub, y optimizaciones específicas para Next.js (Edge functions, ISR, etc.)."
+
+**5. b)** GitHub Actions es la solución de CI/CD integrada en GitHub.
 
 ---
 

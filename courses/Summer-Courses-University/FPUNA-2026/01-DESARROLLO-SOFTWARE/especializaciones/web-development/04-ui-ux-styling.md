@@ -22,6 +22,20 @@
 
 ---
 
+## 📋 Prerrequisitos
+
+✅ **Web-01, Web-02, Web-03 Completados** (OBLIGATORIO)  
+✅ **HTML/CSS Fundamentals**: Box model, flexbox, grid  
+✅ **React Basics**: Components, props, state  
+✅ **Proyecto Next.js Existente**: Para aplicar los estilos  
+
+**Checklist**:
+- [ ] Completé módulos anteriores del track Web Dev
+- [ ] Entiendo conceptos básicos de diseño (espaciado, tipografía, color)
+- [ ] Tengo 4 horas disponibles
+
+---
+
 ## 🤔 ¿Por Qué UI/UX Importa?
 
 ### La Realidad del Mercado Paraguay
@@ -1468,6 +1482,48 @@ Antes de considerar tu UI "completo":
 ✅ **Animations** - Framer Motion para UX fluida  
 ✅ **Accessibility** - WCAG AA compliance  
 ✅ **OpenCode Integration** - Generar UI con IA
+
+---
+
+## 📝 Quiz de Evaluación
+
+**Total**: 10 preguntas | **Tiempo**: 20 min | **Aprobación**: 7/10
+
+**1. ¿Qué significa "utility-first" en Tailwind CSS?**  
+a) Usar JavaScript en lugar de CSS  
+b) Usar clases pequeñas y reutilizables para cada propiedad CSS  
+c) Escribir todo el CSS en un archivo  
+d) No usar CSS
+
+**2. Verdadero o Falso: shadcn/ui copia los componentes a tu proyecto en lugar de instalarlos como dependencia.**
+
+**3. ¿Cuál es el orden correcto de breakpoints en mobile-first design?**  
+a) xl → lg → md → sm → base  
+b) base → sm → md → lg → xl  
+c) md → sm → base → lg → xl  
+d) No importa el orden
+
+**4. ¿Qué comando instala un componente Button de shadcn/ui?**  
+a) `npm install shadcn-button`  
+b) `npx shadcn-ui add button`  
+c) `yarn add @shadcn/button`  
+d) `shadcn install button`
+
+**5. Menciona 2 beneficios de usar Tailwind CSS vs CSS tradicional.**
+
+**Respuestas**:
+
+**1. b)** Utility-first usa clases pequeñas (`p-4`, `text-lg`) para cada propiedad, en lugar de clases semánticas grandes.
+
+**2. Verdadero.** shadcn/ui copia el código a `components/ui/`, permitiendo personalización total sin dependencia external.
+
+**3. b)** Mobile-first empieza en `base` (móvil) y escala hacia `xl` (desktop).
+
+**4. b)** `npx shadcn-ui add button` descarga el componente a tu proyecto.
+
+**5. Respuesta Modelo**: "Desarrollo más rápido sin escribir CSS custom, y bundle size menor porque solo las clases usadas se incluyen en producción."
+
+---
 
 ### Próximo Paso
 
