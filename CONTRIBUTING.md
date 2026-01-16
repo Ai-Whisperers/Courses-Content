@@ -372,9 +372,118 @@ Still have questions? We're here to help!
 
 ---
 
-**Thank you for helping us create world-class educational content! 🎓**
+## Honest Expectations and Quality Standards
+
+### Our Commitment to Honesty
+
+**We value honesty over perfection.** After recent quality audits, we've established clear standards to ensure our students receive accurate course information.
+
+#### Completion Percentage Guidelines
+
+When reporting course completion:
+
+| Status | Definition | Requirements |
+|--------|------------|--------------|
+| **10-30%** | Early Draft | - Outline complete<br>- 1-2 modules drafted<br>- Structure defined |
+| **30-50%** | In Development | - Core modules drafted<br>- Some exercises included<br>- Needs significant work |
+| **50-70%** | Substantial Progress | - Most modules drafted<br>- Exercises for 50%+ modules<br>- Ready for early testing |
+| **70-85%** | Nearly Complete | - All modules drafted<br>- All exercises included<br>- Tested with 1-2 students<br>- Minor polish needed |
+| **85-95%** | Production Candidate | - All content complete<br>- Tested with 5+ students<br>- All links verified<br>- Consistent formatting |
+| **95-100%** | Production Ready | - Fully tested and validated<br>- Student feedback incorporated<br>- No TODOs or placeholders<br>- Professional quality |
+
+#### RED FLAGS (Things to Avoid)
+
+❌ **Don't inflate completion percentages**
+- Claiming "95% complete" when significant work remains
+- Counting AI-generated drafts as "complete" without human review
+- Marketing materials contradicting internal planning docs
+
+❌ **Don't submit untested content**
+- Code examples that don't run
+- Exercises without solutions
+- Links that lead to 404 errors
+
+❌ **Don't mix languages inconsistently**
+- Random switching between Spanish and English
+- File names in one language, content in another (without purpose)
+- Confusing terminology
+
+❌ **Don't skip citations**
+- Using external content without attribution
+- Copying from other courses without credit
+- Presenting AI-generated content as original work without disclosure
+
+#### GREEN FLAGS (What We Want)
+
+✅ **Honest reporting**
+- Accurate completion percentages
+- Clear notes on what needs work
+- Realistic timelines for production readiness
+
+✅ **Quality over quantity**
+- One excellent, tested module > Five untested drafts
+- Thoughtful exercises > Copy-pasted filler
+- Real examples > Generic Lorem ipsum
+
+✅ **Student-first thinking**
+- Clear learning objectives
+- Progressive difficulty
+- Practical, applicable skills
+
+✅ **Professional standards**
+- Consistent formatting
+- No placeholder text in production content
+- All links verified
+- Proper citations
+
+### Quality Checklist (Before Submitting)
+
+Before submitting a PR, verify:
+
+**Minimum (Required)**:
+- [ ] No "TODO", "TBD", "FIXME" in production content
+- [ ] All links tested and working
+- [ ] Consistent language (Spanish OR English, not mixed randomly)
+- [ ] Proper citations for external sources
+- [ ] Accurate completion percentage in PR description
+
+**Recommended**:
+- [ ] Code examples tested (copy-paste and run successfully)
+- [ ] Exercises have answer keys or rubrics
+- [ ] Content reviewed by at least one other person
+- [ ] Tested with 1-2 students or colleagues
+
+**Excellent**:
+- [ ] Tested with 5+ diverse students
+- [ ] Multiple learning modalities (text, images, exercises)
+- [ ] Real-world applications included
+- [ ] Accessibility considerations (alt text, clear headings)
+
+### Consequences of Misleading Content
+
+To maintain trust with our students and partners:
+
+- **First offense**: Warning and request to correct
+- **Second offense**: PR rejected, contributor reminded of standards
+- **Repeated offenses**: Contributor privileges may be suspended
+
+**We're not looking for perfection** - we're looking for **honesty and continuous improvement**.
 
 ---
 
-*Last Updated: November 2025*
+## Reference Documents
+
+For accurate status reporting, always check:
+
+- **[HONEST-STATUS-REPORT.md](./HONEST-STATUS-REPORT.md)** - Authoritative source of course status
+- **[QUALITY-CONTROL-CHECKLIST.md](./QUALITY-CONTROL-CHECKLIST.md)** - Detailed quality standards
+- **[docs/guides/course-creation/](./docs/guides/course-creation/)** - Course development guide
+
+---
+
+**Thank you for helping us create world-class educational content with integrity! 🎓**
+
+---
+
+*Last Updated: January 2026*
 
