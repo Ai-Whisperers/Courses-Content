@@ -56,6 +56,147 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Next.js 14 Foundations** (Fundamental - OBLIGATORIO):
+- App Router y Server Components
+- Routing y navegación
+- Data fetching básico
+- **Verificación**: ¿Completaste Módulo 01 de este track?
+- **Si NO**: Completa Módulo 01 primero - este módulo asume esos conocimientos
+
+✅ **TypeScript Intermedio** (Fundamental):
+- Tipos básicos (string, number, boolean, arrays)
+- Interfaces y tipos personalizados
+- Generics básicos: `Array<T>`, `Promise<T>`
+- Type inference (TypeScript infiere tipos)
+- **Verificación**: ¿Entiendes `interface User { name: string; age: number }`?
+
+✅ **Bases de Datos Básicas** (Recomendado):
+- Conceptos SQL: tablas, filas, columnas
+- Relaciones: one-to-many, many-to-many
+- Primary keys y foreign keys
+- **Verificación**: ¿Sabes qué es una foreign key?
+- **Si NO**: Está bien, se explica en el módulo, pero avanza despacio
+
+✅ **JavaScript Async** (Fundamental):
+- Promises y async/await
+- Try/catch para errores
+- **Verificación**: ¿Puedes explicar `await fetch()`?
+
+❌ **NO Se Requiere**:
+- Experiencia previa con ORMs (Prisma se enseña desde cero)
+- Conocimiento de tRPC (se explica completamente)
+- Experiencia con React Query (se cubre en detalle)
+- Conocimiento profundo de SQL (Prisma abstrae SQL)
+
+### Software Necesario (OBLIGATORIO - Instalar ANTES)
+
+**Desde Módulo 01 ya tienes**:
+- ✅ Node.js v18+
+- ✅ VS Code
+- ✅ Git
+
+**NUEVO para este módulo** (instalar ahora):
+
+1. **PostgreSQL (Database)**
+   
+   **Opción A: Docker** (Recomendado - más fácil):
+   ```bash
+   # Si tienes Docker instalado:
+   docker run --name postgres-fpuna -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+   ```
+   - **Ventaja**: No ensucia tu sistema, fácil de eliminar
+   - **Desventaja**: Requiere Docker instalado
+   
+   **Opción B: PostgreSQL Cloud** (Alternativa - GRATIS):
+   - **Neon.tech**: [neon.tech](https://neon.tech/) - Database PostgreSQL gratis en la nube
+   - **Supabase**: [supabase.com](https://supabase.com/) - Alternativa con UI
+   - **Ventaja**: No requiere instalación local, siempre disponible
+   - **Desventaja**: Requiere internet
+   
+   **Opción C: PostgreSQL Local** (Última opción):
+   - [postgresql.org/download](https://www.postgresql.org/download/)
+   - **Advertencia**: Instalación más compleja, configuración manual
+
+   **Recomendación**: Usa Neon.tech (cloud) - es lo más simple para empezar.
+
+2. **Prisma CLI** (Instalaremos en el módulo vía npm)
+   - NO instales globalmente, lo haremos en el proyecto
+
+3. **VS Code Extensions** (Recomendadas):
+   - Prisma (oficial) - Syntax highlighting para schema
+   - Thunder Client o REST Client - Testar API Routes
+
+### Módulos Previos Necesarios
+
+**Obligatorios**:
+- ✅ **00-CORE-FOUNDATION (Semana 1)** - OpenCode configurado
+- ✅ **Módulo 01: Next.js Foundations** - CRÍTICO, este módulo asume que dominas Next.js básico
+
+**Si NO completaste Módulo 01**: ⚠️ DETENTE - completa primero (4 horas). Este módulo construye directamente sobre conceptos de Módulo 01.
+
+### Auto-Evaluación
+
+Responde estas preguntas para verificar si estás listo:
+
+1. **¿Completaste Módulo 01 (Next.js Foundations) de este track?**  
+   SÍ / NO (si NO, completa primero)
+
+2. **¿Puedes crear un Server Component en Next.js 14?**  
+   SÍ / NO
+
+3. **¿Entiendes TypeScript interfaces básicas?**  
+   Ejemplo: `interface Post { title: string; views: number }`  
+   SÍ / NO
+
+4. **¿Sabes qué es una base de datos relacional?**  
+   SÍ / NO (si NO, Google "SQL basics" por 30 min)
+
+5. **¿Tienes acceso a PostgreSQL (local, Docker, o cloud)?**  
+   SÍ / NO (si NO, crea cuenta en Neon.tech - 5 min)
+
+**Interpretación**:
+- **5 SÍes**: ✅ Listo para comenzar
+- **4 SÍes**: ⚠️ Verifica que hayas completado Módulo 01 (#1)
+- **< 4 SÍes**: ❌ Completa Módulo 01 primero y repasa TypeScript básico
+
+**Recursos de Repaso** (si necesitas):
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) - Gratis, oficial
+- [SQL Basics in 30 min](https://www.khanacademy.org/computing/computer-programming/sql) - Khan Academy
+- [Async JavaScript](https://javascript.info/async-await) - Guía gratuita
+
+### Tiempo Estimado Total
+
+- **Setup inicial** (PostgreSQL, Prisma): 20-30 min (ANTES del módulo)
+- **Contenido teórico**: 1.5-2 horas
+- **Código y práctica**: 2-3 horas
+- **Proyecto del módulo**: 3-4 horas adicionales
+
+**Total**: 4-9 horas (depende de experiencia con databases)
+
+### Checklist Final
+
+Antes de comenzar, verifica:
+
+- [ ] He completado Módulo 01 (Next.js Foundations)
+- [ ] Tengo Node.js v18+ funcionando
+- [ ] Tengo acceso a PostgreSQL (Docker, Neon.tech, o local)
+- [ ] Entiendo TypeScript interfaces básicas
+- [ ] Entiendo async/await en JavaScript
+- [ ] Tengo 4+ horas disponibles para el módulo
+- [ ] (Opcional) Tengo Thunder Client o similar para testar APIs
+
+**Si marcaste los primeros 5**: ¡Adelante! 🚀
+
+**Si NO completaste Módulo 01**: ⚠️ **CRÍTICO** - Este módulo asume que sabes Next.js. Completa Módulo 01 primero (no es opcional).
+
+**Si NO tienes PostgreSQL**: ⚠️ DETENTE - Crea cuenta en Neon.tech (5 min, gratis). El módulo requiere una database funcional.
+
+---
+
 ## 📊 El Stack Moderno (2026)
 
 ```mermaid
@@ -497,6 +638,8 @@ OUTPUT:
 ```
 
 ---
+
+**🎯 Transición**: Ya tienes una database funcional con Prisma y sabes diseñar schemas relacionales. Pero tu frontend necesita **acceder** a esos datos de forma segura y eficiente. En aplicaciones tradicionales, crearías REST APIs manualmente, escribiendo tipos duplicados en frontend y backend, lo cual causa errores. Con **tRPC**, obtienes type-safety automática end-to-end—si cambias el backend, TypeScript te alerta inmediatamente en el frontend. En esta parte, aprenderás a crear APIs type-safe que eliminan toda una categoría de bugs.
 
 ## 🌐 Parte 2: API Routes & tRPC (70 min)
 
@@ -1804,6 +1947,106 @@ Antes de considerar tu app "production-ready":
 ### Próximo Paso
 
 **Continúa con**: [Módulo 03 - Authentication & Authorization](./03-auth-authorization.md)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas | **Tiempo**: 25 min | **Aprobación**: 7+
+
+### Preguntas
+
+**1. Prisma Schema (Múltiple Opción)**  
+¿Cuál es la sintaxis correcta para definir una relación one-to-many en Prisma?
+
+a) `posts Post[]` (en User) y `author User @relation(fields: [authorId])`  
+b) `user User` (en Post) solamente  
+c) `@relation(type: "oneToMany")`  
+d) No se pueden definir relaciones en Prisma
+
+**2. Prisma Migrations (Verdadero/Falso)**  
+"Al cambiar el schema de Prisma, debes correr `npx prisma migrate dev` para aplicar cambios a la database."  
+a) Verdadero | b) Falso
+
+**3. tRPC Type Safety (Múltiple Opción)**  
+¿Cuál es la PRINCIPAL ventaja de tRPC vs REST API tradicional?
+
+a) Más rápido en ejecución  
+b) Type-safety end-to-end sin code generation  
+c) Soporta más databases  
+d) Mejor SEO
+
+**4. React Query (Múltiple Opción)**  
+¿Para qué sirve `useQuery` de React Query?
+
+a) Crear queries SQL  
+b) Fetch y cachear datos del servidor  
+c) Validar formularios  
+d) Crear routes en Next.js
+
+**5. Prisma CRUD (Respuesta Corta)**  
+¿Qué método de Prisma usarías para obtener un usuario por ID?
+
+Opciones: `findUnique`, `findMany`, `create`, `update`
+
+**6. tRPC Mutations (Verdadero/Falso)**  
+"En tRPC, las mutations se usan para operaciones que MODIFICAN datos (create, update, delete)."  
+a) Verdadero | b) Falso
+
+**7. Zod Validation (Múltiple Opción)**  
+¿Para qué sirve Zod en el stack?
+
+a) Manejo de estado global  
+b) Validación de schemas y tipos runtime  
+c) Optimización de imágenes  
+d) Routing dinámico
+
+**8. React Hook Form (Múltiple Opción)**  
+¿Cuál hook usas para registrar un input en React Hook Form?
+
+a) `useForm()`  
+b) `register()`  
+c) `handleSubmit()`  
+d) `watch()`
+
+**9. Database Seeding (Múltiple Opción)**  
+¿Qué comando de Prisma usas para poblar la database con datos iniciales?
+
+a) `npx prisma seed`  
+b) `npx prisma db seed`  
+c) `npx prisma migrate seed`  
+d) El comando definido en package.json `prisma.seed`
+
+**10. OpenCode Full-Stack (Respuesta Corta)**  
+Menciona 2 formas en que OpenCode acelera desarrollo full-stack.
+
+---
+
+## 📋 Respuestas
+
+**1. b)** - Relación one-to-many usa `posts Post[]` en User y `author User @relation(fields: [authorId], references: [id])` en Post.
+
+**2. a) Verdadero** - `prisma migrate dev` crea y aplica migraciones.
+
+**3. b)** - tRPC provee type-safety automática sin generación de código.
+
+**4. b)** - `useQuery` fetch y cachea datos automáticamente.
+
+**5. findUnique** - `prisma.user.findUnique({ where: { id } })`
+
+**6. a) Verdadero** - Mutations para create/update/delete, queries para reads.
+
+**7. b)** - Zod valida y define schemas con type inference.
+
+**8. b)** - `register('fieldName')` registra inputs.
+
+**9. b)** - `npx prisma db seed` ejecuta script de seed.
+
+**10. Ejemplos válidos**:
+- "Generar schemas Prisma completos con relaciones"
+- "Crear tRPC routers con procedures automáticamente"
+- "Automatizar generación de forms con validación Zod"
 
 ---
 
