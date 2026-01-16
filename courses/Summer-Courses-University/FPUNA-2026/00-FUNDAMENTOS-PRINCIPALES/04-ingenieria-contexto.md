@@ -22,6 +22,41 @@ Al terminar este módulo, tendrás:
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Módulos 01-03 Completados** (OBLIGATORIO)
+- Módulo 01: OpenCode instalado
+- Módulo 02: Configuración (MCPs, Skills, Hooks, Rules)
+- Módulo 03: Ingeniería de prompts
+
+✅ **Experiencia Requerida**
+- Haber trabajado en al menos 1 proyecto con OpenCode
+- Entender la diferencia entre configuración global (.opencode/) y proyecto-específica
+
+❌ **NO Se Requiere**
+- Arquitectura de software avanzada
+- Conocimiento profundo de Markdown
+
+### Software Necesario
+
+- ✅ OpenCode funcionando
+- ✅ Editor de texto (VS Code, Notepad++, nano)
+- ✅ Proyecto existente O preparado para crear uno nuevo
+
+### Auto-Evaluación
+
+- [ ] Completé Módulos 01-03
+- [ ] Entiendo qué son Skills y MCPs
+- [ ] He usado OpenCode al menos 5 veces
+- [ ] Tengo un proyecto para practicar
+- [ ] Tengo 1 hora disponible
+
+**Si todo ✅**: ¡Adelante!
+
+---
+
 ## 🤔 ¿Qué es Ingeniería de Contexto?
 
 ### Analogía: Manual de Instrucciones
@@ -984,6 +1019,172 @@ Antes de continuar:
 3. **¿Cada cuánto actualizarías `CLAUDE.md`?**
 
 **Comparte en Slack** (#fpuna-context) - ayuda a otros con tus archivos de contexto.
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20 minutos
+- **Aprobación**: 7/10 o más
+
+---
+
+### Preguntas
+
+**1. ¿Cuál es la diferencia principal entre `.opencode` y `CLAUDE.md`?**
+a) Son exactamente lo mismo  
+b) `.opencode` son preferencias técnicas del proyecto, `CLAUDE.md` es contexto completo del proyecto  
+c) `.opencode` es para Python, `CLAUDE.md` para JavaScript  
+d) No hay diferencia, puedes usar cualquiera  
+
+**2. ¿Dónde se coloca el archivo `CLAUDE.md`?**
+a) En `~/.opencode/` (configuración global)  
+b) En la raíz del proyecto específico  
+c) En cualquier lugar  
+d) En `C:\Windows\System32\`  
+
+**3. Verdadero o Falso: El archivo `CLAUDE.md` debe actualizarse cada vez que tomas decisiones importantes en el proyecto.**
+
+**4. ¿Cuál sección NO es típicamente parte de `CLAUDE.md`?**
+a) Descripción del proyecto  
+b) Stack tecnológico  
+c) Código completo de todos los archivos  
+d) Convenciones de código  
+
+**5. ¿Qué formato usa el archivo `.opencode` para configuración?**
+a) YAML  
+b) JSON  
+c) XML  
+d) Plain text  
+
+**6. Explica en 2-3 oraciones por qué tener archivos de contexto mejora la productividad.**
+
+**7. ¿Cuál de estos debería estar en `CLAUDE.md`?**
+a) Contraseñas y API keys  
+b) Decisiones arquitectónicas y patrones de diseño usados  
+c) Números de tarjeta de crédito  
+d) Información personal sensible  
+
+**8. Verdadero o Falso: Una vez creado `CLAUDE.md`, nunca debes modificarlo.**
+
+**9. Si tu proyecto usa React con TypeScript y Tailwind, ¿dónde documentarías esta información?**
+a) En el código fuente solamente  
+b) En `CLAUDE.md` bajo "Stack Tecnológico"  
+c) No es necesario documentar  
+d) En un archivo Word separado  
+
+**10. Crea un ejemplo mínimo de `CLAUDE.md` para un proyecto de calculadora web (incluye al menos 3 secciones).**
+
+---
+
+### Respuestas
+
+**1. b) `.opencode` son preferencias técnicas del proyecto, `CLAUDE.md` es contexto completo del proyecto**
+
+`.opencode` contiene configuración técnica (formato, linter, etc.). `CLAUDE.md` contiene el contexto completo: qué hace el proyecto, arquitectura, decisiones, convenciones, historia, etc.
+
+---
+
+**2. b) En la raíz del proyecto específico**
+
+`CLAUDE.md` va en la raíz de CADA proyecto que quieras darle contexto. OpenCode lo lee automáticamente cuando trabajas en ese directorio.
+
+---
+
+**3. Verdadero**
+
+`CLAUDE.md` debe mantenerse actualizado. Cada vez que tomas decisiones importantes (cambio de arquitectura, nueva tecnología, patrón adoptado), actualiza el archivo para que OpenCode siempre tenga el contexto correcto.
+
+---
+
+**4. c) Código completo de todos los archivos**
+
+`CLAUDE.md` NO debe tener código completo de todos los archivos (eso es redundante). Debe tener: descripción, stack, arquitectura, convenciones, decisiones, y ejemplos breves si es necesario.
+
+---
+
+**5. b) JSON**
+
+El archivo `.opencode` usa formato JSON para configuración técnica del proyecto (formato, testing, linting, etc.).
+
+---
+
+**6. Respuesta Modelo:**
+
+"Los archivos de contexto permiten a OpenCode 'recordar' tu proyecto sin necesidad de explicar todo cada vez. Esto reduce iteraciones, genera código consistente automáticamente, y ahorra tiempo al no tener que repetir decisiones arquitectónicas en cada prompt."
+
+**Criterios**:
+- Menciona "memoria" o "no repetir" (0.5)
+- Menciona consistencia/calidad (0.5)
+- Menciona ahorro de tiempo (0.5)
+
+**Puntaje**: 1.5/1.5
+
+---
+
+**7. b) Decisiones arquitectónicas y patrones de diseño usados**
+
+`CLAUDE.md` debe tener información técnica del proyecto (arquitectura, patrones, stack, convenciones). NUNCA información sensible como contraseñas, API keys, o datos personales.
+
+---
+
+**8. Falso**
+
+`CLAUDE.md` es un documento VIVO que debe actualizarse constantemente. A medida que el proyecto evoluciona (nuevas decisiones, cambios de arquitectura, lecciones aprendidas), actualiza el contexto.
+
+---
+
+**9. b) En `CLAUDE.md` bajo "Stack Tecnológico"**
+
+La información del stack (React, TypeScript, Tailwind) debe estar documentada en `CLAUDE.md` bajo la sección "Stack Tecnológico" o "Tecnologías Usadas" para que OpenCode sepa exactamente qué herramientas usar.
+
+---
+
+**10. Respuesta Modelo:**
+
+```markdown
+# Calculadora Web
+
+## Descripción
+Calculadora simple que realiza operaciones básicas (suma, resta, multiplicación, división).
+
+## Stack Tecnológico
+- HTML5
+- CSS3 (sin frameworks)
+- JavaScript vanilla (sin librerías)
+
+## Arquitectura
+- Frontend estático
+- Lógica en `calculator.js`
+- Estilos en `styles.css`
+- Una sola página HTML
+
+## Convenciones
+- Nombres de funciones en camelCase
+- Validar división por cero
+- UI responsive para móviles
+```
+
+**Criterios**:
+- Incluye al menos 3 secciones (1 punto)
+- Contenido es relevante y específico (1 punto)
+
+**Puntaje**: 2/2
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación |
+|-------|--------------|
+| 9-10 | Excelente - Dominio de contexto |
+| 7-8 | Bueno - Listo para módulo 05 |
+| 5-6 | Suficiente - Revisar `.opencode` vs `CLAUDE.md` |
+| 0-4 | Insuficiente - Repasar todo el módulo |
+
+**Notas**: Preguntas 6 y 10 valen 1.5 y 2 puntos. Total: 10 puntos exactos.
 
 ---
 
