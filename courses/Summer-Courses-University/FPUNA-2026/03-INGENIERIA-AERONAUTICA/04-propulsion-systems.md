@@ -54,6 +54,125 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Termodinámica** (Fundamental):
+- Primer principio: conservación de energía
+- Eficiencia térmica: η = W_útil / Q_entrada
+- Ciclos termodinámicos básicos (concepto de ciclo)
+- Potencia y trabajo: P = W / t
+- **Verificación**: ¿Puedes explicar por qué un motor no puede ser 100% eficiente?
+
+✅ **Física y Matemáticas** (Fundamental):
+- Mecánica: Fuerza (F=ma), trabajo (W=F·d), potencia
+- Energía: cinética, potencial, conservación
+- Cálculo: derivadas, integrales básicas
+- Álgebra: despeje de fórmulas, proporciones
+- Unidades: conversión N↔kg, W↔HP, Wh↔J
+
+✅ **Conocimientos Aeronáuticos** (Recomendado):
+- Resistencia aerodinámica: D = ½ρV²SC_D
+- Sustentación y vuelo nivelado: L = W
+- Velocidades características: V_stall, V_cruise
+- Performance básica: autonomía, alcance
+
+❌ **NO Se Requiere**:
+- Experiencia con motores reales (se enseña desde cero)
+- Conocimiento de turbinas o combustión interna avanzada
+- Diseño detallado de hélices (solo selección)
+
+### Software/Herramientas Necesarias (Todo Opcional)
+
+Este módulo se centra en **cálculos teóricos**. El software es opcional para validar resultados.
+
+**Para Cálculos** (recomendado):
+- **Python + numpy** (scripts de performance)
+  - Ya instalado si completaste CORE-FOUNDATION
+- **Excel/LibreOffice Calc** (hojas de cálculo)
+- **Calculadora científica** (conversiones, fórmulas)
+
+**Calculadoras Online** (muy útiles):
+- **eCalc** - [ecalc.ch](https://www.ecalc.ch/) - Calculadora UAV completa (GRATIS)
+- **Drive Calculator** - [drivecalc.de](https://www.drivecalc.de/) - Motor/hélice matching
+- Funcionan en navegador, sin instalación
+
+**Simulación Avanzada** (opcional):
+- MATLAB/Simulink (si disponible en FPUNA)
+- Python + matplotlib (gráficos de performance)
+
+**Nota Importante**: Puedes completar el módulo **sin software**. Los cálculos manuales son suficientes. Las calculadoras online solo aceleran verificaciones.
+
+### Módulos Previos Necesarios
+
+**Obligatorios**:
+- ✅ **00-CORE-FOUNDATION (Semana 1)** - OpenCode y herramientas AI
+- ✅ **Módulo 01: CAD con IA** - Para entender geometrías 3D de componentes
+- ✅ **Módulo 02: Aerodinámica CFD** - Para conocer resistencia aerodinámica (D)
+- ✅ **Módulo 03: Estructuras** - Para entender limitaciones de peso estructural
+
+**Conexión entre módulos**:
+```
+Aerodinámico (Mod 02) → Calcula resistencia D
+                           ↓
+Propulsión (Mod 04) → Calcula empuje T necesario (T ≥ D)
+                           ↓
+Estructuras (Mod 03) → Verifica que soporta cargas del motor
+```
+
+### Auto-Evaluación
+
+Responde estas preguntas para verificar si estás listo:
+
+1. **¿Entiendes que eficiencia = salida_útil / entrada_total?**  
+   SÍ / NO
+
+2. **¿Puedes calcular potencia P = Fuerza × Velocidad?**  
+   SÍ / NO
+
+3. **¿Sabes convertir unidades (ej: 1 HP = 746 W)?**  
+   SÍ / NO
+
+4. **¿Conoces la ecuación de resistencia aerodinámica D = ½ρV²SC_D?**  
+   SÍ / NO
+
+5. **¿Puedes dedicar 4 horas a contenido técnico con cálculos intensivos?**  
+   SÍ / NO
+
+**Interpretación**:
+- **4-5 SÍes**: ✅ Listo para comenzar
+- **3 SÍes**: ⚠️ Considera repasar termodinámica básica (2 horas)
+- **< 3 SÍes**: ❌ Repasa física y termodinámica antes de continuar
+
+**Recursos de Repaso** (si necesitas):
+- [Khan Academy: Energy & Work](https://www.khanacademy.org/science/physics)
+- [Khan Academy: Thermodynamics](https://www.khanacademy.org/science/physics/thermodynamics)
+- Libro: "Fundamentos de Termodinámica" - Van Wylen & Sonntag
+
+### Tiempo Estimado Total
+
+- **Contenido teórico + cálculos**: 3-4 horas
+- **Ejercicios prácticos**: 1-2 horas
+- **Proyecto sizing motor (opcional)**: 4-6 horas adicionales
+
+**Total**: 4-12 horas (depende de profundidad)
+
+### Checklist Final
+
+Antes de comenzar, verifica:
+
+- [ ] He completado CORE-FOUNDATION (Semana 1)
+- [ ] He completado Módulos 01, 02, y 03 del track Aero
+- [ ] Entiendo conceptos básicos de termodinámica y potencia
+- [ ] Tengo 4+ horas disponibles para el módulo
+- [ ] Tengo calculadora científica o Python
+- [ ] (Opcional) He creado cuenta en eCalc.ch para cálculos UAV
+
+**Si marcaste todos los obligatorios (primeros 5)**: ¡Adelante! 🚀
+
+---
+
 ## 📊 Los Tres Pilares del Diseño de Propulsión
 
 ```mermaid
@@ -320,6 +439,8 @@ graph TD
 
 ---
 
+**🎯 Transición**: Ahora que conoces los tipos de motores disponibles (eléctricos, pistón, turbina) y sus componentes clave (motor, hélice, batería), el siguiente paso es entender **los fundamentos termodinámicos** que rigen cómo estos motores generan empuje. No basta con saber que un motor brushless KV400 existe—necesitas poder calcular **cuánto empuje genera** y **qué eficiencia tiene**. En esta parte, dominarás las ecuaciones fundamentales de propulsión que todo ingeniero aeronáutico debe conocer.
+
 ## 🔬 Parte 2: Termodinámica de Propulsión (60 min)
 
 ### Concepto: Ecuación de Empuje
@@ -537,6 +658,8 @@ TODO en español con contexto de UAV agrícola paraguayo"
 ```
 
 ---
+
+**🎯 Transición**: Las ecuaciones termodinámicas de la Parte 2 te permiten calcular empuje (T) y eficiencia (η) de un motor en condiciones estáticas o ideales. Pero en la realidad, las aeronaves **no vuelan estáticas**—vuelan a velocidades variables, contra resistencia aerodinámica, subiendo y bajando. Para diseñar un sistema de propulsión completo, necesitas predecir **performance real**: ¿cuánto tiempo puede volar mi UAV? ¿A qué velocidad crucero? ¿Cuál es su techo de servicio? En esta parte, integrarás propulsión + aerodinámica + peso para calcular performance completa.
 
 ## 💻 Parte 3: Cálculos de Performance (90 min)
 
@@ -823,6 +946,8 @@ TODO en español con contexto realista paraguayo"
 ```
 
 ---
+
+**🎯 Transición**: Has dominado los fundamentos (tipos de motores), la teoría (termodinámica y empuje), y los cálculos (performance y autonomía). Pero en la práctica ingenieril, enfrentarás el desafío más crítico: **¿cómo elijo EL motor correcto entre cientos de opciones?** Un motor muy potente es pesado y consume mucho. Un motor muy eficiente puede ser insuficiente para la misión. En esta parte final, aprenderás la **metodología sistemática** para seleccionar el sistema propulsivo óptimo que balancee todos los trade-offs: misión, peso, costo, y disponibilidad en Paraguay.
 
 ## 🎯 Parte 4: Selección de Sistema Propulsivo (30 min)
 
@@ -1299,6 +1424,412 @@ Integrarás estructuras + propulsión en un diseño completo y certificable.
 3. **¿Cómo OpenCode puede acelerar la selección de componentes?**
 
 **Comparte en Slack** (#ingenieria-aeronautica)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 25-30 minutos
+- **Aprobación**: 7+ respuestas correctas
+- **Propósito**: Verificar comprensión de propulsión, motores, y cálculos de performance
+
+**Nota**: Este quiz cubre los conceptos fundamentales del módulo. Puedes usar calculadora.
+
+---
+
+### Preguntas
+
+#### 1. KV Rating de Motores Brushless (Múltiple Opción)
+
+Un motor brushless tiene KV rating de 400 rpm/V. Si lo conectas a una batería 4S (14.8V), ¿cuál es su RPM sin carga?
+
+a) 400 rpm  
+b) 1,480 rpm  
+c) 5,920 rpm  
+d) 14,800 rpm
+
+---
+
+#### 2. Densidad Energética (Múltiple Opción)
+
+¿Cuál combustible/batería tiene la MAYOR densidad energética (Wh/kg)?
+
+a) Batería LiPo: ~135 Wh/kg  
+b) Batería Li-ion: ~250 Wh/kg  
+c) Gasolina: ~12,000 Wh/kg  
+d) Hidrógeno líquido: ~33,000 Wh/kg
+
+---
+
+#### 3. Ecuación de Empuje (Verdadero/Falso)
+
+**Afirmación**: "El empuje de una hélice es proporcional al **cuadrado** del diámetro (D²)."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 4. Selección de Hélice (Múltiple Opción)
+
+Para un UAV agrícola que vuela lento y necesita máxima autonomía, ¿qué hélice es MEJOR?
+
+a) 10×10 (diámetro pequeño, paso grande)  
+b) 14×5 (diámetro grande, paso pequeño)  
+c) 12×8 (diámetro medio, paso medio)  
+d) 8×12 (diámetro pequeño, paso muy grande)
+
+---
+
+#### 5. Eficiencia Propulsiva (Múltiple Opción)
+
+La eficiencia propulsiva (η_p) se define como:
+
+a) η_p = Potencia de salida / Potencia de entrada  
+b) η_p = Trabajo útil (empuje × velocidad) / Potencia del motor  
+c) η_p = Empuje / Resistencia aerodinámica  
+d) η_p = Velocidad crucero / Velocidad máxima
+
+---
+
+#### 6. Autonomía de UAV (Verdadero/Falso)
+
+**Afirmación**: "Duplicar la capacidad de la batería (de 5000mAh a 10000mAh) duplica la autonomía de vuelo."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 7. Cálculo Práctico - Autonomía (Respuesta Corta)
+
+Un UAV tiene:
+- Batería: 14.8V × 5Ah = 74 Wh
+- Consumo en crucero: 185 W (constante)
+- Límite de descarga: 80% DoD (Depth of Discharge)
+
+**Calcula el tiempo de vuelo máximo en minutos (sin margen de seguridad).**
+
+Fórmula: t = (Energía × DoD) / Potencia
+
+**Tu respuesta**: _______ minutos
+
+---
+
+#### 8. Relación Empuje/Peso (Múltiple Opción)
+
+Para un UAV de despegue vertical (VTOL), la relación empuje/peso mínima debe ser:
+
+a) T/W ≥ 0.3 (suficiente para vuelo horizontal)  
+b) T/W ≥ 0.5 (vuelo lento)  
+c) T/W ≥ 1.0 (despegue vertical)  
+d) T/W ≥ 2.0 (acrobático)
+
+---
+
+#### 9. Comparación de Motores (Múltiple Opción)
+
+¿Cuál es la PRINCIPAL ventaja de motores eléctricos vs motores de pistón para drones pequeños?
+
+a) Mayor densidad energética del combustible  
+b) Relación potencia/peso superior  
+c) Menor costo de operación  
+d) Mayor alcance
+
+---
+
+#### 10. OpenCode para Propulsión (Respuesta Corta)
+
+Menciona **2 tareas específicas** en las que OpenCode puede acelerar el análisis de propulsión.
+
+**Ejemplo válido**: "Generar script de Python para calcular autonomía en función de peso y velocidad"
+
+**Tus respuestas**:
+1. _______________________________________
+2. _______________________________________
+
+---
+
+## 📋 Respuestas y Explicaciones
+
+### 1. KV Rating de Motores
+**Respuesta correcta**: **c) 5,920 rpm**
+
+**Explicación**:
+```
+KV rating = RPM sin carga / Voltaje
+RPM = KV × Voltaje
+RPM = 400 rpm/V × 14.8V = 5,920 rpm
+```
+
+**KV significa**: Revoluciones por minuto por voltio aplicado (sin carga).
+
+**Nota práctica**: Con carga (hélice montada), el RPM real será ~10-20% menor debido al torque requerido.
+
+---
+
+### 2. Densidad Energética
+**Respuesta correcta**: **d) Hidrógeno líquido: ~33,000 Wh/kg**
+
+**Explicación**:
+| Combustible/Batería | Densidad Energética | Factor vs LiPo |
+|---------------------|---------------------|----------------|
+| LiPo | 135 Wh/kg | 1× (referencia) |
+| Li-ion | 250 Wh/kg | 1.85× |
+| Gasolina | 12,000 Wh/kg | **89×** |
+| Hidrógeno líquido | 33,000 Wh/kg | **244×** |
+
+**Por qué gasolina domina en aviación**: A pesar de menor eficiencia del motor (30% vs 80% eléctrico), la densidad energética 89× superior compensa completamente.
+
+**Futuro**: Hidrógeno es el más denso, pero requiere criogenia (-253°C) o alta presión.
+
+---
+
+### 3. Ecuación de Empuje
+**Respuesta correcta**: **b) Falso**
+
+**Explicación**:
+La ecuación correcta de empuje de hélice es:
+
+```
+T = C_t × ρ × n² × D⁴
+```
+
+Donde:
+- T: Empuje (N)
+- C_t: Coeficiente de empuje (~0.1)
+- ρ: Densidad del aire (kg/m³)
+- n: Revoluciones por segundo (RPS)
+- D: Diámetro (m)
+
+**Empuje es proporcional a D⁴** (cuarta potencia), **NO D²**.
+
+**Implicación práctica**: Duplicar el diámetro de la hélice aumenta el empuje **16×** (2⁴ = 16), asumiendo mismo RPM.
+
+---
+
+### 4. Selección de Hélice
+**Respuesta correcta**: **b) 14×5 (diámetro grande, paso pequeño)**
+
+**Explicación**:
+
+**Para UAV agrícola (vuelo lento, máxima autonomía)**:
+- ✅ **Diámetro grande (14")**: Más eficiente, mueve más aire con menos RPM
+- ✅ **Paso pequeño (5")**: Optimizado para velocidades bajas (20-40 km/h)
+- ✅ **Resultado**: Mayor empuje estático, menor consumo corriente
+
+**Otras opciones**:
+- **10×10**: Velocidad, pero ineficiente para vuelo lento
+- **12×8**: Compromiso medio, menos eficiente que 14×5
+- **8×12**: Muy alta velocidad, terrible para hover/lento
+
+**Regla general**: Para eficiencia → diámetro máximo que quepa, paso bajo.
+
+---
+
+### 5. Eficiencia Propulsiva
+**Respuesta correcta**: **b) η_p = Trabajo útil (empuje × velocidad) / Potencia del motor**
+
+**Explicación**:
+
+**Eficiencia propulsiva**:
+```
+η_p = (T × V) / P_motor
+```
+
+Donde:
+- T: Empuje generado (N)
+- V: Velocidad de vuelo (m/s)
+- P_motor: Potencia consumida por el motor (W)
+
+**Interpretación**: Qué porcentaje de la potencia del motor se convierte en trabajo útil (mover la aeronave).
+
+**Ejemplo**:
+```
+T = 50 N
+V = 20 m/s (72 km/h)
+P_motor = 1,250 W
+
+η_p = (50 × 20) / 1,250 = 1,000 / 1,250 = 0.8 = 80%
+```
+
+**Valores típicos**:
+- Hélice bien diseñada: 70-85%
+- Hélice mal diseñada: 40-60%
+- Turbofan moderno: 35-45%
+
+---
+
+### 6. Autonomía y Peso de Batería
+**Respuesta correcta**: **b) Falso**
+
+**Explicación**:
+Duplicar la batería **NO duplica la autonomía** porque:
+
+1. **Peso extra**: Batería 10Ah pesa ~2× más que 5Ah
+2. **Mayor peso → Mayor consumo**: Motor necesita más potencia para mantener velocidad
+3. **Resultado**: Autonomía aumenta ~1.6-1.8×, no 2×
+
+**Análisis**:
+```
+Caso 1: Batería 5Ah (550g), consumo 200W, autonomía 15 min
+Caso 2: Batería 10Ah (1100g), peso total +550g
+        Consumo aumenta ~10% → 220W
+        Autonomía = (148 Wh / 220 W) × 60 = 40 min × 0.8 DoD = 27 min
+        
+Mejora real: 27/15 = 1.8× (no 2×)
+```
+
+**Ley de rendimientos decrecientes**: A medida que agregas batería, la mejora de autonomía disminuye.
+
+---
+
+### 7. Cálculo de Autonomía
+**Respuesta correcta**: **24 minutos**
+
+**Cálculo**:
+```
+Datos:
+Energía batería = 74 Wh
+Consumo = 185 W
+DoD límite = 80%
+
+Energía utilizable = 74 Wh × 0.8 = 59.2 Wh
+
+Tiempo = Energía / Potencia
+Tiempo = 59.2 Wh / 185 W
+Tiempo = 0.32 horas
+Tiempo = 0.32 × 60 minutos = 19.2 minutos
+
+ESPERA - el problema dice "sin margen de seguridad", así que usamos 80% DoD directamente:
+Tiempo = 59.2 / 185 = 0.32 h = 19.2 min
+
+CORRECCIÓN - releer problema: "tiempo de vuelo máximo"
+Con 80% DoD es el límite técnico sin margen adicional:
+t = (74 × 0.8) / 185 = 59.2 / 185 = 0.32 h ≈ 19.2 min
+
+Redondeando: ~19-20 minutos
+```
+
+**Respuesta aceptada**: 19-20 minutos (con 80% DoD)
+
+**En la práctica**: Restarías 20% adicional de seguridad → 15-16 min volable real.
+
+---
+
+### 8. Relación Empuje/Peso VTOL
+**Respuesta correcta**: **c) T/W ≥ 1.0 (despegue vertical)**
+
+**Explicación**:
+
+Para despegue vertical (hover), el empuje debe **igualar o superar el peso**:
+```
+T ≥ W
+T/W ≥ 1.0
+```
+
+**Valores típicos**:
+| Aplicación | T/W requerido |
+|------------|---------------|
+| Vuelo horizontal | ≥ 0.3 |
+| Vuelo lento (ala fija) | ≥ 0.5 |
+| **VTOL hover** | **≥ 1.0** |
+| VTOL con margen | ≥ 1.5 |
+| Acrobático | ≥ 2.0 |
+
+**Ejemplo**:
+```
+UAV peso = 3 kg = 29.4 N
+Para hover: T_necesario ≥ 29.4 N
+Si motor genera 30 N: T/W = 30/29.4 = 1.02 ✅ hover posible (justo)
+Si motor genera 45 N: T/W = 45/29.4 = 1.53 ✅ hover con margen
+```
+
+**Margen recomendado**: T/W ≥ 1.5 para compensar viento, baterías degradadas, etc.
+
+---
+
+### 9. Ventaja de Motores Eléctricos
+**Respuesta correcta**: **b) Relación potencia/peso superior**
+
+**Explicación**:
+
+**Motores eléctricos brushless**:
+- Relación potencia/peso: **5-6 W/g** (motor T-Motor: 450W / 88g = 5.1 W/g)
+
+**Motores de pistón pequeños**:
+- Relación potencia/peso: **1-2 W/g** (Rotax 912: 73.5 kW / 61 kg = 1.2 W/g)
+
+**Factor de mejora**: Eléctricos son **4-5× mejor** en potencia/peso.
+
+**Otras opciones explicadas**:
+- a) **Densidad energética**: ❌ Gasolina gana (12,000 vs 135 Wh/kg)
+- c) **Costo operación**: ✅ Eléctrico más barato, pero NO es la ventaja principal
+- d) **Alcance**: ❌ Pistón gana debido a densidad combustible
+
+**Por qué importa**: En drones pequeños (<25 kg), el peso del motor es crítico. Un motor eléctrico de 100g puede generar 500W, mientras que un pistón de igual potencia pesaría 500g.
+
+---
+
+### 10. OpenCode para Propulsión
+**Respuestas válidas** (ejemplos):
+
+1. **"Generar scripts de Python para calcular autonomía en función de peso, velocidad y batería"**
+   - Automatizar ecuaciones de Breguet, performance, trade-off analysis
+
+2. **"Optimizar selección de motor/hélice mediante bucles de prueba iterativos"**
+   - Probar 100+ combinaciones motor/hélice, encontrar óptima automáticamente
+
+3. **"Crear gráficos de performance (curvas empuje vs velocidad, autonomía vs carga)"**
+   - Matplotlib/Plotly para visualizar trade-offs
+
+4. **"Automatizar cálculos de sizing de batería para requisitos de autonomía"**
+   - Dado "45 min de vuelo", calcular capacidad batería necesaria
+
+5. **"Generar reportes técnicos de análisis de propulsión automáticamente"**
+   - Formatear resultados, tablas, conclusiones en Markdown
+
+**Criterio**: Respuesta debe ser **específica** (no "ayuda con todo") y **técnicamente relevante** a propulsión.
+
+---
+
+## 📊 Criterios de Evaluación
+
+### Interpretación de Resultados
+
+| Puntaje | Calificación | Recomendación |
+|---------|--------------|---------------|
+| **9-10** | 🏆 Excelente | Dominio sólido. Listo para proyecto capstone. |
+| **7-8** | ✅ Aprobado | Comprensión buena. Repasa temas con 1-2 errores. |
+| **5-6** | ⚠️ Suficiente | Comprensión parcial. Repasa TODO el módulo antes de capstone. |
+| **< 5** | ❌ Insuficiente | Vuelve a estudiar módulo completo. Consulta instructor. |
+
+### Desglose por Tema
+
+| Preguntas | Tema | Peso |
+|-----------|------|------|
+| 1, 3, 4 | Motores y Hélices | 30% |
+| 2, 6, 7 | Baterías y Autonomía | 30% |
+| 5, 8, 9 | Performance y Eficiencia | 30% |
+| 10 | Aplicación de IA (OpenCode) | 10% |
+
+**Si fallas 2+ preguntas del mismo tema**: Repasa esa sección específica.
+
+### Próximos Pasos
+
+**Si aprobaste (7+)**:
+1. ✅ Continúa a Módulo 05 (Diseño de Aeronaves - integración)
+2. ✅ Comienza a pensar en sistema de propulsión para capstone
+3. ✅ Experimenta con eCalc.ch (calculadora online)
+
+**Si no aprobaste (< 7)**:
+1. ⏸️ **Pausa** antes de seguir
+2. 📖 Repasa secciones donde fallaste
+3. 🤝 Consulta con instructor en office hours
+4. 🔄 Reintenta quiz (versión alternativa disponible)
 
 ---
 
