@@ -889,8 +889,8 @@ SECCIÓN 8: LIMITACIONES OPERATIVAS
 SECCIÓN 9: CERTIFICACIÓN
 9.1 Base de certificación: DINAC RAC 21 Subparte C
 9.2 Desviaciones: Ninguna
-9.3 Fecha emisión: [TBD]
-9.4 Ingeniero responsable: [Nombre], CIP [número]
+9.3 Fecha emisión: [Completar durante certificación]
+9.4 Ingeniero responsable: [Nombre del estudiante], CIP [número de matrícula CIP]
 ```
 
 #### 2. Flight Manual (Manual de Vuelo)

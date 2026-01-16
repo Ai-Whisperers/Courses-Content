@@ -413,7 +413,11 @@ INCLUIR EN LA GUÍA:
 6. Checklist de verificación ERC
 7. Plantilla de BOM con proveedores paraguayos
 
-TODO con capturas de pantalla simuladas (describir qué se ve) y en español"
+Incluir capturas de pantalla del circuito en KiCad mostrando:
+- Vista esquemática completa con componentes etiquetados
+- Panel ERC con verificaciones pasadas (marca verde)
+- Lista de materiales generada automáticamente
+- Anotaciones y notas técnicas en español"
 ```
 
 ---
@@ -665,7 +669,7 @@ ESTILO:
 - Referencias a estándares paraguayos (220V ANDE, etc.)
 - Formato markdown con diagramas Mermaid
 
-TODO en español"
+Todo el contenido debe generarse completamente en español."
 ```
 
 #### Análisis y Troubleshooting

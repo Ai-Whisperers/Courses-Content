@@ -1259,25 +1259,107 @@ Crear test suite profesional para módulo de "Inscripciones FPUNA" usando TDD.
 ```typescript
 // enrollment.service.spec.ts
 describe('EnrollmentService', () => {
+  let enrollmentService: EnrollmentService;
+  let studentRepository: MockRepository<Student>;
+  let courseRepository: MockRepository<Course>;
+  
+  beforeEach(() => {
+    // Setup mocks
+    studentRepository = createMockRepository();
+    courseRepository = createMockRepository();
+    enrollmentService = new EnrollmentService(studentRepository, courseRepository);
+  });
+  
   describe('enrollStudent', () => {
     it('debería inscribir estudiante con prerrequisitos cumplidos', async () => {
-      // TODO: Implementar
+      // Arrange
+      const student = { id: 1, completedCourses: ['CALC1'] };
+      const course = { id: 101, prerequisites: ['CALC1'], capacity: 30, enrolled: 20 };
+      
+      studentRepository.findById.mockResolvedValue(student);
+      courseRepository.findById.mockResolvedValue(course);
+      
+      // Act
+      const result = await enrollmentService.enrollStudent(1, 101);
+      
+      // Assert
+      expect(result.success).toBe(true);
+      expect(result.enrollment).toBeDefined();
+      expect(result.enrollment.studentId).toBe(1);
+      expect(result.enrollment.courseId).toBe(101);
     });
     
     it('debería rechazar inscripción sin prerrequisitos', async () => {
-      // TODO: Implementar
+      // Arrange
+      const student = { id: 1, completedCourses: [] };
+      const course = { id: 101, prerequisites: ['CALC1'], capacity: 30, enrolled: 20 };
+      
+      studentRepository.findById.mockResolvedValue(student);
+      courseRepository.findById.mockResolvedValue(course);
+      
+      // Act & Assert
+      await expect(enrollmentService.enrollStudent(1, 101))
+        .rejects.toThrow('Prerrequisitos no cumplidos: CALC1');
     });
     
     it('debería rechazar inscripción si materia está llena', async () => {
-      // TODO: Implementar
+      // Arrange
+      const student = { id: 1, completedCourses: ['CALC1'] };
+      const course = { id: 101, prerequisites: ['CALC1'], capacity: 30, enrolled: 30 };
+      
+      studentRepository.findById.mockResolvedValue(student);
+      courseRepository.findById.mockResolvedValue(course);
+      
+      // Act & Assert
+      await expect(enrollmentService.enrollStudent(1, 101))
+        .rejects.toThrow('Cupo completo: 30/30 estudiantes');
     });
     
     it('debería rechazar inscripción con horarios solapados', async () => {
-      // TODO: Implementar
+      // Arrange
+      const student = { 
+        id: 1, 
+        completedCourses: ['CALC1'],
+        currentEnrollments: [{ schedule: 'LUN 08:00-10:00' }]
+      };
+      const course = { 
+        id: 101, 
+        prerequisites: ['CALC1'], 
+        capacity: 30, 
+        enrolled: 20,
+        schedule: 'LUN 09:00-11:00' // Solapamiento
+      };
+      
+      studentRepository.findById.mockResolvedValue(student);
+      courseRepository.findById.mockResolvedValue(course);
+      
+      // Act & Assert
+      await expect(enrollmentService.enrollStudent(1, 101))
+        .rejects.toThrow('Conflicto de horarios detectado');
     });
     
     it('debería permitir inscripción si ya aprobó prerrequisito', async () => {
-      // TODO: Implementar
+      // Arrange
+      const student = { 
+        id: 1, 
+        completedCourses: ['CALC1', 'CALC2'] // Ya aprobó más de lo necesario
+      };
+      const course = { 
+        id: 101, 
+        prerequisites: ['CALC1'], 
+        capacity: 30, 
+        enrolled: 15
+      };
+      
+      studentRepository.findById.mockResolvedValue(student);
+      courseRepository.findById.mockResolvedValue(course);
+      
+      // Act
+      const result = await enrollmentService.enrollStudent(1, 101);
+      
+      // Assert
+      expect(result.success).toBe(true);
+      expect(student.completedCourses).toContain('CALC1');
     });
   });
 });

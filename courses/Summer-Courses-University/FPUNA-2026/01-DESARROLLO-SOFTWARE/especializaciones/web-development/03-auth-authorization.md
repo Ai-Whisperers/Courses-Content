@@ -1713,17 +1713,17 @@ lib/
 ├── two-factor.ts
 └── audit.ts
 
-TODO:
-- Prisma schema completo
-- NextAuth config con 3 providers
-- Middleware con role checking
-- Server actions para register
-- Protected routes
-- Audit logging
-- 2FA flow completo
-- UI components con Tailwind
+INCLUIR:
+- Prisma schema completo con User, Account, Session, VerificationToken
+- NextAuth config con 3 providers (Google, GitHub, Credentials)
+- Middleware con role checking y protected routes
+- Server actions para register/login con validación Zod
+- Protected API routes con requireAuth()
+- Audit logging para eventos de seguridad
+- 2FA flow completo con código por email
+- UI components con Tailwind (Login, Register, Profile)
 
-TODO comentado en español, código production-ready."
+Todos los comentarios en español, código production-ready con manejo de errores."
 ```
 
 ---
@@ -1788,9 +1788,7 @@ REQUISITOS:
    - Completar login
 6. Opción enable/disable 2FA en perfil
 
-Stack: Next.js 14, NextAuth v5, Prisma, Resend.
-
-Todo funcional y production-ready."
+Todo en TypeScript con comentarios en español y manejo completo de errores."
 ```
 
 ---

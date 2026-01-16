@@ -1195,11 +1195,74 @@ COMPONENTES:
 - Queue: RabbitMQ
 - CDN para assets
 
-TODO:
-- Diagrama Mermaid C4 Level 2
-- Lista de tecnologías por servicio
-- Estrategia de escalamiento
-- Comentarios en español"
+DIAGRAMA C4 LEVEL 2:
+```mermaid
+graph TB
+    subgraph "Frontend Layer"
+        WEB[Web App<br/>React]
+        MOBILE[Mobile App<br/>React Native]
+    end
+    
+    subgraph "API Layer"
+        GW[API Gateway<br/>Kong]
+    end
+    
+    subgraph "Microservicios"
+        AUTH[Auth Service<br/>Node.js + PostgreSQL]
+        PROD[Products Service<br/>Node.js + MongoDB]
+        CART[Cart Service<br/>Node.js + Redis]
+        ORDER[Orders Service<br/>Node.js + PostgreSQL]
+        PAY[Payment Service<br/>Node.js + PostgreSQL]
+    end
+    
+    subgraph "Almacenamiento"
+        PG[(PostgreSQL<br/>Auth, Orders, Payment)]
+        MONGO[(MongoDB<br/>Products)]
+        REDIS[(Redis<br/>Cart, Cache)]
+    end
+    
+    subgraph "Mensajería"
+        QUEUE[RabbitMQ<br/>Event Bus]
+    end
+    
+    subgraph "CDN"
+        CDN[CloudFlare CDN<br/>Assets estáticos]
+    end
+    
+    WEB --> GW
+    MOBILE --> GW
+    GW --> AUTH
+    GW --> PROD
+    GW --> CART
+    GW --> ORDER
+    GW --> PAY
+    
+    AUTH --> PG
+    PROD --> MONGO
+    CART --> REDIS
+    ORDER --> PG
+    PAY --> PG
+    
+    ORDER --> QUEUE
+    PAY --> QUEUE
+    
+    WEB --> CDN
+    MOBILE --> CDN
+```
+
+TECNOLOGÍAS POR SERVICIO:
+- **Auth Service**: Node.js + NestJS + PostgreSQL + JWT
+- **Products Service**: Node.js + Express + MongoDB + Elasticsearch
+- **Cart Service**: Node.js + Express + Redis
+- **Orders Service**: Node.js + NestJS + PostgreSQL + TypeORM
+- **Payment Service**: Node.js + NestJS + PostgreSQL + Stripe API
+
+ESTRATEGIA DE ESCALAMIENTO:
+- **Horizontal Scaling**: Réplicas de cada microservicio con load balancer
+- **Database Scaling**: Read replicas para PostgreSQL, sharding para MongoDB
+- **Cache Layer**: Redis Cluster para alta disponibilidad
+- **CDN**: CloudFlare para assets globales
+- **Queue**: RabbitMQ cluster para procesamiento asíncrono"
 ```
 
 ### Documentar Decisiones Arquitectónicas

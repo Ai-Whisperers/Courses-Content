@@ -230,12 +230,13 @@ graph TD
 // 5. Moneda: PYG (Guaraníes)
 
 // Paso 2: Instalar Tag en sitio web
+// NOTA: Reemplaza "G-XXXXXXXXXX" con tu ID real de Google Analytics
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-XXXXXXXXXX'); // Reemplazar con tu ID
 </script>
 ```
 
@@ -585,6 +586,7 @@ graph LR
 
 ```html
 <!-- Código de Google Optimize -->
+<!-- NOTA: Reemplaza "OPT-XXXXXX" con tu ID real de Google Optimize -->
 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-XXXXXX"></script>
 
 <!-- Variante B - Formulario Simplificado -->
