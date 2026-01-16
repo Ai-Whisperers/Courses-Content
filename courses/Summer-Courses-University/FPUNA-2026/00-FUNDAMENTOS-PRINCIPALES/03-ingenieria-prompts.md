@@ -22,6 +22,35 @@ Al terminar este módulo, tendrás:
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Módulos Anteriores Completados** (OBLIGATORIO)
+- Módulo 01: OpenCode instalado
+- Módulo 02: Configuración básica (MCPs, Skills)
+
+✅ **Experiencia Básica**
+- Haber usado OpenCode al menos 5-10 veces
+- Haber creado al menos 1 proyecto con OpenCode
+
+❌ **NO Se Requiere**
+- Programación avanzada
+- Conocimiento de lingüística
+- Experiencia previa con IA
+
+### Checklist de Preparación
+
+- [ ] Módulos 01 y 02 completados
+- [ ] He usado OpenCode varias veces
+- [ ] Tengo ejemplos de prompts que funcionaron/no funcionaron
+- [ ] Tengo 1.5 horas dedicadas
+
+**Si todo ✅**: ¡Adelante!  
+**Si falta algo**: Completa módulos anteriores y practica un poco más.
+
+---
+
 ## 🤔 ¿Qué es Ingeniería de Prompts?
 
 ### Analogía: Dar Instrucciones
@@ -1294,6 +1323,154 @@ Antes de continuar:
 3. **¿Cómo aplicarás esto en tus proyectos de FPUNA?**
 
 **Comparte en Slack** (#fpuna-prompts) - ayuda a otros y aprende de sus prompts.
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20 minutos
+- **Aprobación**: 7/10 o más
+
+---
+
+### Preguntas
+
+**1. ¿Cuáles son los 3 componentes esenciales de un prompt efectivo?**
+a) Título, Descripción, Conclusión  
+b) Rol, Tarea, Contexto  
+c) Inicio, Medio, Fin  
+d) Pregunta, Respuesta, Feedback  
+
+**2. ¿Qué técnica es "Chain of Thought" (CoT)?**
+a) Pedir múltiples respuestas y elegir la mejor  
+b) Pedir a la IA que explique su razonamiento paso a paso  
+c) Usar ejemplos antes de la tarea  
+d) Darle un rol específico a la IA  
+
+**3. Verdadero o Falso: En Few-Shot prompting, proporcionas ejemplos ANTES de pedir la tarea.**
+
+**4. ¿Cuál de estos es el prompt MÁS específico y efectivo?**
+a) "Crea una función"  
+b) "Hazme código"  
+c) "Crea una función JavaScript llamada calcularIVA que reciba un monto, aplique 10% de IVA, retorne el total, y valide que el monto sea positivo"  
+d) "Código para calcular algo"  
+
+**5. ¿Cuál de los 7 principios se enfoca en ser CONCRETO en lugar de abstracto?**
+a) Principio de Especificidad  
+b) Principio de Contexto  
+c) Principio de Iteración  
+d) Principio de Formato  
+
+**6. Explica en 2-3 oraciones qué es "Self-Consistency" y cuándo usarla.**
+
+**7. Si un prompt no funciona bien, ¿cuál es el PRIMER paso del debugging?**
+a) Empezar de cero con un prompt completamente diferente  
+b) Culpar a la IA de ser mala  
+c) Revisar si el prompt tiene los 3 componentes esenciales (Rol, Tarea, Contexto)  
+d) Pedir ayuda inmediatamente  
+
+**8. Verdadero o Falso: El "Role Prompting" consiste en darle una identidad específica a la IA (ej: "Eres un profesor de matemáticas").**
+
+**9. ¿Qué técnica usarías para un problema complejo con múltiples soluciones posibles?**
+a) Few-Shot Learning  
+b) Tree of Thoughts (ToT)  
+c) Simple prompting  
+d) Role Prompting  
+
+**10. Escribe un prompt efectivo para pedirle a OpenCode que cree una función que convierta Guaraníes a Dólares (incluye los 3 componentes esenciales).**
+
+---
+
+### Respuestas
+
+**1. b) Rol, Tarea, Contexto**
+
+Los 3 componentes esenciales son: ROL (quién es la IA), TAREA (qué debe hacer), y CONTEXTO (información relevante para hacerlo bien). Esto aparece en el diagrama de anatomía de prompts.
+
+---
+
+**2. b) Pedir a la IA que explique su razonamiento paso a paso**
+
+Chain of Thought (CoT) es pedirle a la IA que "piense en voz alta" y muestre su razonamiento paso a paso antes de dar la respuesta final. Esto mejora resultados en tareas complejas.
+
+---
+
+**3. Verdadero**
+
+Few-Shot Learning consiste en dar ejemplos (shots) ANTES de pedir la tarea. Por ejemplo, mostrar 2-3 ejemplos de entrada/salida antes de pedir que procese un nuevo caso.
+
+---
+
+**4. c) "Crea una función JavaScript llamada calcularIVA que reciba un monto, aplique 10% de IVA, retorne el total, y valide que el monto sea positivo"**
+
+Este prompt es específico: lenguaje (JavaScript), nombre (calcularIVA), parámetros (monto), lógica (10%), retorno (total), y validación (positivo). Los otros son vagos.
+
+---
+
+**5. a) Principio de Especificidad**
+
+El Principio de Especificidad dice: "Sé específico, no abstracto." En lugar de "Hazme una función", especifica lenguaje, nombre, parámetros, lógica, y validaciones.
+
+---
+
+**6. Respuesta Modelo:**
+
+"Self-Consistency genera múltiples respuestas para el mismo prompt y elige la más común o mejor. Se usa cuando necesitas alta confiabilidad en tareas complejas donde una sola respuesta podría ser incorrecta. Es como pedir varias opiniones antes de decidir."
+
+**Criterios**:
+- Explica generación múltiple (0.5)
+- Menciona elección/consenso (0.5)
+- Indica cuándo usarla (0.5)
+
+**Puntaje**: 1.5/1.5
+
+---
+
+**7. c) Revisar si el prompt tiene los 3 componentes esenciales (Rol, Tarea, Contexto)**
+
+Según la sección de debugging, el PRIMER paso es verificar anatomía básica: ¿Tiene Rol? ¿Tarea clara? ¿Contexto suficiente? Esto resuelve el 80% de prompts malos.
+
+---
+
+**8. Verdadero**
+
+Role Prompting es exactamente eso: darle un rol/identidad específica ("Eres un experto en X", "Actúa como Y"). Esto influye en el tono, profundidad, y enfoque de las respuestas.
+
+---
+
+**9. b) Tree of Thoughts (ToT)**
+
+Tree of Thoughts explora múltiples caminos de solución, evalúa cada rama, y elige el mejor. Es ideal para problemas complejos con varias soluciones posibles (como diseño de arquitectura).
+
+---
+
+**10. Respuesta Modelo:**
+
+"**ROL**: Eres un experto en JavaScript y finanzas.  
+**TAREA**: Crea una función llamada convertirGuaraniesToDolares que reciba un monto en Guaraníes y retorne el equivalente en Dólares usando tasa de cambio de 7,200 Gs por USD.  
+**CONTEXTO**: La función debe validar que el monto sea positivo, redondear a 2 decimales, y manejar errores si el input es inválido. Incluye comentarios explicativos."
+
+**Criterios**:
+- Incluye ROL claro (0.7)
+- Incluye TAREA específica (0.7)
+- Incluye CONTEXTO relevante (0.6)
+
+**Puntaje**: 2/2 si incluye los 3 componentes de forma clara
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación |
+|-------|--------------|
+| 9-10 | Excelente - Dominio de prompt engineering |
+| 7-8 | Bueno - Listo para módulo 04 |
+| 5-6 | Suficiente - Revisar técnicas avanzadas |
+| 0-4 | Insuficiente - Repasar conceptos básicos |
+
+**Notas**: Preguntas 6 y 10 valen 1.5 y 2 puntos. Total: 10 puntos.
 
 ---
 
