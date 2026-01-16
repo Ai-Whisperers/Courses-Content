@@ -12,7 +12,7 @@ Welcome to the **AI Whisperers Courses Content Repository**! This is your centra
 
 #### QA Automation with AI Course
 
-**Location:** [`courses/QA-Automation-with-AI/`](./courses/QA-Automation-with-AI/)
+**Location:** [`courses/Technical-Development/QA-Automation-with-AI/`](./courses/Technical-Development/QA-Automation-with-AI/)
 
 The comprehensive AI-first QA automation course with 12 complete modules.
 
@@ -29,7 +29,7 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 - Test examples (Playwright, Jest, Pytest, API)
 - Industry-validated content with citations
 
-**Start Here:** [courses/QA-Automation-with-AI/README.md](./courses/QA-Automation-with-AI/README.md)
+**Start Here:** [courses/Technical-Development/QA-Automation-with-AI/README.md](./courses/Technical-Development/QA-Automation-with-AI/README.md)
 
 ---
 
