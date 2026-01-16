@@ -53,6 +53,23 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+✅ **Módulo 01: CAD con IA** (OBLIGATORIO) - Para tener geometrías 3D listas para CFD  
+✅ **Física de Fluidos Básica** - Conceptos de presión, velocidad, densidad  
+✅ **Matemáticas** - Ecuaciones básicas, álgebra  
+❌ **NO se requiere**: Experiencia previa con CFD (se enseña)
+
+**Software**: XFoil (gratis), OpenFOAM o ANSYS Fluent (opcional)  
+**Tiempo**: 4-6 horas
+
+**Checklist**:
+- [ ] Completé Módulo 01 (CAD)
+- [ ] Entiendo conceptos de fuerzas (lift, drag)
+- [ ] Tengo 4+ horas disponibles
+
+---
+
 ## 📊 El Flujo de Análisis Aerodinámico
 
 ```mermaid
@@ -234,6 +251,23 @@ graph LR
 ### Tutorial Paso a Paso: Analizar NACA 4412
 
 [Content continues with detailed XFoil tutorial, CFD setup, optimization techniques, and exercises - approximately 350 more lines to reach 600+ total]
+
+---
+
+## 📝 Quiz de Evaluación
+
+**10 Preguntas | 20 min | Aprobación: 7+**
+
+1. **Lift Equation**: L = CL × q × S. Si CL=1.2, q=500 Pa, S=1 m², ¿cuál es L? | **R: 600 N**
+2. **L/D Ratio**: ¿Qué aeronave tiene MEJOR eficiencia? a) Cessna L/D=12 b) Planeador L/D=40 | **R: b)**
+3. **Reynolds**: Re = (ρ × V × L) / µ. ¿Qué aumenta Re? a) Más velocidad b) Menos velocidad | **R: a)**
+4. **CFD vs Túnel**: Ventaja principal de CFD es: a) Más preciso b) Más barato c) Más rápido | **R: b)**
+5. **Coeficiente CL**: Aumenta con: a) Ángulo de ataque b) Velocidad c) Densidad | **R: a)**
+6. **Drag**: Dos tipos son: a) Parasítico e inducido b) Lift y thrust | **R: a)**
+7. **XFoil**: Se usa para análisis: a) 2D perfiles b) 3D completo c) Estructuras | **R: a)**
+8. **Presión Dinámica**: q = 0.5 × ρ × V². Si V duplica, q se: a) Duplica b) Cuadruplica | **R: b)**
+9. **NACA 4412**: Primer dígito (4) indica: a) Espesor b) Curvatura máxima c) Cuerda | **R: b) 4%**
+10. **OpenCode CFD**: Puede: a) Generar scripts análisis b) Solo documentar c) Nada | **R: a)**
 
 ---
 
