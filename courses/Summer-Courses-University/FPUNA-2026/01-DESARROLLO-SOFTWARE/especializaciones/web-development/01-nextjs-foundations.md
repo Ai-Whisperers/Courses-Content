@@ -60,6 +60,151 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **JavaScript Moderno (ES6+)** (Fundamental):
+- Arrow functions: `const add = (a, b) => a + b`
+- Destructuring: `const { name, age } = user`
+- Async/await para promesas
+- Array methods: map, filter, reduce
+- **Verificación**: ¿Entiendes `async/await` y promesas?
+
+✅ **React Básico** (Fundamental):
+- Components (function components)
+- JSX syntax básico
+- Props y estado (useState hook)
+- Renderizado condicional
+- **Verificación**: ¿Puedes crear un componente React básico?
+
+✅ **HTML y CSS** (Fundamental):
+- Estructura HTML semántica
+- CSS básico (selectores, flexbox, grid)
+- Responsive design concepts
+- **Verificación**: ¿Conoces la diferencia entre `<div>` y `<section>`?
+
+✅ **Node.js y npm** (Fundamental):
+- Qué es Node.js y para qué sirve
+- Instalar paquetes con npm/yarn
+- Scripts en package.json
+- **Verificación**: ¿Has usado `npm install` antes?
+
+❌ **NO Se Requiere**:
+- Experiencia previa con Next.js (se enseña desde cero)
+- TypeScript avanzado (se explica lo necesario)
+- Conocimiento de SSR/SSG (se cubre en el módulo)
+- Experiencia con frameworks backend
+
+### Software Necesario (OBLIGATORIO)
+
+**Obligatorios** (instalar ANTES del módulo):
+
+1. **Node.js v18+**
+   - **Cómo verificar**: Abre terminal y ejecuta `node --version`
+   - **Debería mostrar**: v18.x.x o superior
+   - **Si no tienes**: [nodejs.org/download](https://nodejs.org/) → Descargar LTS
+   - **Tiempo instalación**: 5-10 min
+
+2. **VS Code**
+   - **Editor recomendado** para desarrollo web
+   - **Descargar**: [code.visualstudio.com](https://code.visualstudio.com/)
+   - **Extensiones recomendadas** (instalar después):
+     - ES7+ React/Redux/React-Native snippets
+     - Tailwind CSS IntelliSense
+     - Prettier - Code formatter
+   - **Tiempo instalación**: 5-10 min
+
+3. **Git**
+   - **Para clonar repos y control de versiones**
+   - **Cómo verificar**: `git --version`
+   - **Si no tienes**: [git-scm.com/downloads](https://git-scm.com/downloads)
+   - **Tiempo instalación**: 5 min
+
+**Opcional pero Recomendado**:
+
+4. **GitHub Account**
+   - Para publicar proyectos
+   - **Crear cuenta**: [github.com/signup](https://github.com/signup) (gratis, 2 min)
+
+5. **Vercel Account**
+   - Para deployment (lo crearemos en Módulo 05)
+   - Puedes crearlo después
+
+### Módulos Previos Necesarios
+
+**Obligatorios**:
+- ✅ **00-CORE-FOUNDATION (Semana 1)** - OpenCode y herramientas AI configuradas
+- ✅ **Fundamentos de JavaScript** (si no tienes, toma curso básico primero)
+
+**NO requiere otros módulos del track** (este ES el primer módulo técnico del track Web).
+
+**Recomendado** (pero no obligatorio):
+- Curso básico de React (si nunca has visto React)
+  - Alternativa: Sección "React Crash Course" en recursos adicionales
+
+### Auto-Evaluación
+
+Responde estas preguntas para verificar si estás listo:
+
+1. **¿Puedes escribir una función arrow en JavaScript?**  
+   Ejemplo: `const double = (x) => x * 2`  
+   SÍ / NO
+
+2. **¿Sabes qué es JSX y cómo se diferencia de HTML?**  
+   SÍ / NO
+
+3. **¿Has usado `useState` en React antes?**  
+   SÍ / NO (si NO, pero conoces conceptos básicos de React, está bien)
+
+4. **¿Tienes Node.js v18+ instalado en tu PC?**  
+   Verifica con: `node --version`  
+   SÍ / NO
+
+5. **¿Puedes dedicar 4-5 horas a este módulo (incluye práctica)?**  
+   SÍ / NO
+
+**Interpretación**:
+- **4-5 SÍes**: ✅ Listo para comenzar
+- **3 SÍes**: ⚠️ Verifica que al menos tengas Node.js instalado (#4) y JavaScript básico (#1)
+- **< 3 SÍes**: ❌ Toma un curso básico de JavaScript/React primero (ver recursos de repaso)
+
+**Recursos de Repaso** (si necesitas):
+- [JavaScript.info](https://javascript.info/) - Guía completa de JS moderno (gratis)
+- [React Official Tutorial](https://react.dev/learn) - Tutorial oficial de React (gratis)
+- [FreeCodeCamp React](https://www.freecodecamp.org/learn/front-end-development-libraries/) - Curso gratuito
+- [Khan Academy: Intro to JS](https://www.khanacademy.org/computing/computer-programming) - Para principiantes absolutos
+
+### Tiempo Estimado Total
+
+- **Instalación de software** (si no tienes): 15-20 min (ANTES del módulo)
+- **Contenido teórico**: 1.5-2 horas
+- **Código y práctica**: 2-3 horas
+- **Proyecto del módulo**: 2-3 horas adicionales
+
+**Total**: 4-8 horas (depende de tu experiencia previa)
+
+### Checklist Final
+
+Antes de comenzar, verifica:
+
+- [ ] He completado CORE-FOUNDATION (Semana 1)
+- [ ] Tengo Node.js v18+ instalado (verificado con `node --version`)
+- [ ] Tengo VS Code instalado y funcionando
+- [ ] Tengo Git instalado (verificado con `git --version`)
+- [ ] Entiendo JavaScript moderno básico (ES6+)
+- [ ] Conozco React básico (components, JSX, props)
+- [ ] Tengo 4+ horas disponibles para el módulo
+- [ ] (Opcional) Tengo cuenta de GitHub creada
+
+**Si marcaste los primeros 7**: ¡Adelante! 🚀
+
+**Si NO tienes Node.js instalado**: ⚠️ DETENTE - instala primero (10 min). El módulo asume que ya tienes Node.js funcionando.
+
+**Si NO conoces React**: ⚠️ Considera tomar el "React Crash Course" de 1 hora en recursos adicionales, o avanza despacio y googlea conceptos que no entiendas.
+
+---
+
 ## 📊 Next.js vs Alternativas
 
 ```mermaid
@@ -330,6 +475,8 @@ OUTPUT:
 ```
 
 ---
+
+**🎯 Transición**: Ahora que entiendes los fundamentos de Next.js (App Router, Server vs Client Components, arquitectura básica), es momento de dominar una de las características más poderosas del framework: **el sistema de routing**. En frameworks tradicionales, configurar rutas requiere decenas de líneas de código de configuración. En Next.js, las **carpetas son rutas**—crear un archivo `app/about/page.tsx` automáticamente crea la ruta `/about`. En esta parte, aprenderás routing estático, dinámico, layouts anidados, y navegación programática.
 
 ## 🛣️ Parte 2: Routing & Navegación (60 min)
 
@@ -639,6 +786,8 @@ OUTPUT: Código completo funcional"
 
 ---
 
+**🎯 Transición**: Ya sabes crear páginas y navegar entre ellas, pero las aplicaciones web reales necesitan **mostrar datos**: productos, usuarios, posts de blog. La forma en que obtienes y renderizas esos datos determina la **velocidad** y **experiencia de usuario** de tu app. Next.js ofrece múltiples estrategias de data fetching—SSR (Server-Side Rendering), SSG (Static Site Generation), ISR (Incremental Static Regeneration)—cada una optimizada para casos de uso específicos. En esta parte, dominarás cuándo y cómo usar cada estrategia para máxima performance.
+
 ## 📡 Parte 3: Data Fetching Estrategias (60 min)
 
 ### Concepto: Rendering Modes
@@ -890,6 +1039,8 @@ OUTPUT: Implementación completa con data fetching optimizado"
 ```
 
 ---
+
+**🎯 Transición**: Tu aplicación Next.js funciona—tiene páginas, routing, y obtiene datos correctamente. Pero **funcionar no es suficiente** para producción. ¿Tu app aparece en Google? ¿Carga rápido en conexiones lentas? ¿Las imágenes están optimizadas? En esta parte final, aprenderás las optimizaciones que separan una aplicación de juguete de una **lista para producción**: SEO con Metadata API, optimización de imágenes automática, fonts performance, y cómo Next.js ya viene con estas optimizaciones integradas. Estos detalles son los que impresionan en entrevistas técnicas.
 
 ## ⚡ Parte 4: Optimización & Metadata (30 min)
 
@@ -1228,6 +1379,488 @@ npm run dev
 3. **¿Cómo OpenCode acelera el desarrollo de páginas Next.js?**
 
 **Comparte en Slack** (#web-dev-nextjs)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20-25 minutos
+- **Aprobación**: 7+ respuestas correctas
+- **Propósito**: Verificar comprensión de Next.js 14, App Router, y React Server Components
+
+**Nota**: Quiz conceptual con algunos fragmentos de código.
+
+---
+
+### Preguntas
+
+#### 1. App Router vs Pages Router (Múltiple Opción)
+
+¿Cuál es la PRINCIPAL diferencia entre App Router (Next.js 14) y Pages Router (Next.js 12)?
+
+a) App Router usa carpeta `pages/`, Pages Router usa `app/`  
+b) App Router soporta Server Components, Pages Router solo Client Components  
+c) App Router es más lento que Pages Router  
+d) No hay diferencia, son nombres diferentes para lo mismo
+
+---
+
+#### 2. Server Components (Verdadero/Falso)
+
+**Afirmación**: "Los Server Components en Next.js 14 se ejecutan en el navegador del usuario y tienen acceso a `window` y `document`."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 3. File-based Routing (Múltiple Opción)
+
+En Next.js con App Router, ¿qué archivo crea una ruta `/blog/[slug]`?
+
+a) `app/blog/[slug].tsx`  
+b) `app/blog/[slug]/page.tsx`  
+c) `pages/blog/[slug].tsx`  
+d) `app/routes/blog/[slug]/index.tsx`
+
+---
+
+#### 4. Metadata API (Múltiple Opción)
+
+¿Cuál es la forma correcta de definir metadata en Next.js 14?
+
+a) `<Head>` component de next/head  
+b) `export const metadata = { title: "..." }`  
+c) `useMetadata()` hook  
+d) Archivo `metadata.json` en cada carpeta
+
+---
+
+#### 5. Data Fetching (Múltiple Opción)
+
+¿Cuál función usarías para fetch de datos en un Server Component de Next.js 14?
+
+a) `useEffect()` con fetch  
+b) `getServerSideProps()`  
+c) `async/await` directo en el componente  
+d) `useSWR()` hook
+
+---
+
+#### 6. Client Components (Verdadero/Falso)
+
+**Afirmación**: "Para usar hooks de React como `useState` o `useEffect`, DEBES marcar el componente con `'use client'` en Next.js 14."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 7. Código Práctico - Routing (Respuesta Corta)
+
+Dado esta estructura de carpetas en Next.js 14:
+
+```
+app/
+├── page.tsx
+├── about/
+│   └── page.tsx
+└── blog/
+    ├── page.tsx
+    └── [id]/
+        └── page.tsx
+```
+
+¿Qué URL renderiza el archivo `app/blog/[id]/page.tsx` si visitas `/blog/123`?
+
+**Opciones**:
+a) Solo `/blog`  
+b) `/blog/123` (correcto)  
+c) `/blog/[id]`  
+d) Error 404
+
+---
+
+#### 8. Link Component (Múltiple Opción)
+
+¿Cuál es la ventaja de usar `<Link href="/about">` de Next.js vs `<a href="/about">`?
+
+a) No hay diferencia, son idénticos  
+b) Link hace prefetch automático y navegación client-side (SPA)  
+c) Link solo funciona en producción, `<a>` en desarrollo  
+d) Link es más lento pero más SEO-friendly
+
+---
+
+#### 9. Streaming y Suspense (Múltiple Opción)
+
+¿Para qué sirve el componente `<Suspense>` en Next.js 14?
+
+a) Suspender la ejecución del código por X segundos  
+b) Mostrar un fallback UI mientras se cargan datos asíncronos  
+c) Prevenir errores de componentes  
+d) Optimizar imágenes automáticamente
+
+---
+
+#### 10. OpenCode para Next.js (Respuesta Corta)
+
+Menciona **2 tareas específicas** en las que OpenCode puede acelerar desarrollo con Next.js.
+
+**Ejemplo válido**: "Generar componentes Server Component completos con TypeScript types"
+
+**Tus respuestas**:
+1. _______________________________________
+2. _______________________________________
+
+---
+
+## 📋 Respuestas y Explicaciones
+
+### 1. App Router vs Pages Router
+**Respuesta correcta**: **b) App Router soporta Server Components, Pages Router solo Client Components**
+
+**Explicación**:
+
+**App Router (Next.js 13/14 - nuevo)**:
+- Carpeta `app/` en la raíz
+- Soporta **React Server Components** (RSC) por defecto
+- Layouts anidados
+- Streaming y Suspense nativo
+- Mejor performance (menos JavaScript al cliente)
+
+**Pages Router (Next.js 12 - legacy)**:
+- Carpeta `pages/` en la raíz
+- Solo **Client Components** (todo se hidrata en el navegador)
+- `getServerSideProps`, `getStaticProps` para datos
+- Más simple pero menos flexible
+
+**Migración**: Puedes tener ambos coexistiendo, pero nuevos proyectos usan App Router.
+
+---
+
+### 2. Server Components
+**Respuesta correcta**: **b) Falso**
+
+**Explicación**:
+
+**Server Components**:
+- Se ejecutan **en el servidor** (Node.js)
+- **NO tienen acceso** a APIs del navegador (`window`, `document`, `localStorage`)
+- **SÍ tienen acceso** a: database, filesystem, environment variables
+- El HTML renderizado se envía al cliente (no el código JavaScript)
+
+**Client Components** (`'use client'`):
+- Se ejecutan en el navegador
+- **SÍ tienen acceso** a `window`, `document`, event listeners
+- **Necesarios para**: hooks (`useState`, `useEffect`), interactividad
+
+**Ejemplo**:
+```tsx
+// ❌ ERROR en Server Component
+export default function ServerComp() {
+  console.log(window.innerWidth); // ❌ window no existe en servidor
+}
+
+// ✅ CORRECTO en Client Component
+'use client';
+export default function ClientComp() {
+  console.log(window.innerWidth); // ✅ funciona
+}
+```
+
+---
+
+### 3. File-based Routing
+**Respuesta correcta**: **b) `app/blog/[slug]/page.tsx`**
+
+**Explicación**:
+
+**App Router file naming**:
+- `page.tsx` → Define una **ruta accesible**
+- `layout.tsx` → Define un **layout compartido**
+- `loading.tsx` → Define **loading UI**
+- `error.tsx` → Define **error boundary**
+
+**Rutas dinámicas**:
+- `[slug]` → Parámetro dinámico (cualquier valor)
+- `[...slug]` → Catch-all (múltiples segmentos)
+
+**Ejemplos**:
+```
+app/blog/[slug]/page.tsx → /blog/cualquier-valor
+app/blog/[id]/page.tsx → /blog/123
+app/shop/[...categories]/page.tsx → /shop/electronics/phones/samsung
+```
+
+**Acceso al parámetro**:
+```tsx
+export default function BlogPost({ params }: { params: { slug: string } }) {
+  return <h1>Post: {params.slug}</h1>;
+}
+```
+
+---
+
+### 4. Metadata API
+**Respuesta correcta**: **b) `export const metadata = { title: "..." }`**
+
+**Explicación**:
+
+**Next.js 14 - Metadata API**:
+```tsx
+// app/page.tsx
+export const metadata = {
+  title: 'Mi Página',
+  description: 'Descripción para SEO',
+};
+
+export default function Page() {
+  return <h1>Hola</h1>;
+}
+```
+
+**Ventajas vs `<Head>` (viejo)**:
+- Type-safe con TypeScript
+- Server-rendered (mejor SEO)
+- Merge automático con metadata de layouts
+- No necesitas importar nada
+
+**Metadata dinámica**:
+```tsx
+export async function generateMetadata({ params }) {
+  const post = await fetchPost(params.id);
+  return {
+    title: post.title,
+    description: post.excerpt,
+  };
+}
+```
+
+---
+
+### 5. Data Fetching en Server Components
+**Respuesta correcta**: **c) `async/await` directo en el componente**
+
+**Explicación**:
+
+**Server Components** permiten `async` directamente:
+```tsx
+// ✅ NUEVO (Next.js 14 - Server Component)
+export default async function Page() {
+  const data = await fetch('https://api.example.com/data');
+  const json = await data.json();
+  return <div>{json.title}</div>;
+}
+```
+
+**Ventajas**:
+- Código más simple (no necesitas `useEffect`)
+- Corre en el servidor (acceso directo a DB)
+- Datos disponibles antes de renderizar HTML
+
+**Client Components usan hooks**:
+```tsx
+// Para Client Components
+'use client';
+import { useEffect, useState } from 'react';
+
+export default function ClientPage() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch('/api/data').then(r => r.json()).then(setData);
+  }, []);
+  return <div>{data?.title}</div>;
+}
+```
+
+---
+
+### 6. Client Components y Hooks
+**Respuesta correcta**: **a) Verdadero**
+
+**Explicación**:
+
+**Server Components (por defecto)** NO pueden usar hooks:
+```tsx
+// ❌ ERROR
+export default function ServerComp() {
+  const [count, setCount] = useState(0); // ❌ hooks no disponibles
+}
+```
+
+**Client Components** (`'use client'`) SÍ pueden:
+```tsx
+// ✅ CORRECTO
+'use client';
+import { useState } from 'react';
+
+export default function ClientComp() {
+  const [count, setCount] = useState(0); // ✅ funciona
+  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+}
+```
+
+**Regla mnemotécnica**: Si necesitas interactividad (hooks, event listeners) → `'use client'`
+
+---
+
+### 7. Routing Práctico
+**Respuesta correcta**: **b) `/blog/123` (correcto)**
+
+**Explicación**:
+
+**Estructura**:
+```
+app/blog/[id]/page.tsx
+```
+
+**Matches (coincide con)**:
+- `/blog/123` ✅
+- `/blog/my-post` ✅
+- `/blog/cualquier-cosa` ✅
+
+**No matches**:
+- `/blog` ❌ (necesitarías `app/blog/page.tsx`)
+- `/blog/123/comments` ❌ (a menos que tengas `app/blog/[id]/comments/page.tsx`)
+
+**Acceso al parámetro**:
+```tsx
+export default function BlogPost({ params }: { params: { id: string } }) {
+  // params.id === "123" cuando visitas /blog/123
+  return <h1>Post ID: {params.id}</h1>;
+}
+```
+
+---
+
+### 8. Link Component
+**Respuesta correcta**: **b) Link hace prefetch automático y navegación client-side (SPA)**
+
+**Explicación**:
+
+**`<Link>` de Next.js**:
+- **Prefetch automático**: Cuando el Link entra en viewport, Next.js precarga la página
+- **Client-side navigation**: No recarga página completa (SPA behavior)
+- **Code splitting**: Solo carga JavaScript necesario
+
+**`<a>` HTML tradicional**:
+- **Recarga completa** de página (pierde estado de React)
+- **Sin prefetch**
+- **Más lento** (descarga todo de nuevo)
+
+**Ejemplo**:
+```tsx
+import Link from 'next/link';
+
+// ✅ RECOMENDADO
+<Link href="/about">About</Link>
+
+// ❌ NO RECOMENDADO (pierde ventajas de Next.js)
+<a href="/about">About</a>
+```
+
+**Excepción**: Usa `<a>` solo para links externos (`href="https://google.com"`).
+
+---
+
+### 9. Streaming y Suspense
+**Respuesta correcta**: **b) Mostrar un fallback UI mientras se cargan datos asíncronos**
+
+**Explicación**:
+
+**`<Suspense>` permite streaming** de contenido:
+```tsx
+import { Suspense } from 'react';
+
+export default function Page() {
+  return (
+    <div>
+      <h1>Mi Página</h1>
+      <Suspense fallback={<p>Cargando datos...</p>}>
+        <AsyncDataComponent />
+      </Suspense>
+    </div>
+  );
+}
+
+async function AsyncDataComponent() {
+  const data = await fetchData(); // puede tardar 2 segundos
+  return <div>{data}</div>;
+}
+```
+
+**Qué pasa**:
+1. Usuario ve `<h1>` y "Cargando datos..." **inmediatamente**
+2. Servidor sigue procesando `fetchData()`
+3. Cuando termina, **streami** el HTML real al cliente
+4. Navegador reemplaza el fallback con datos reales
+
+**Ventaja**: Primera pintura rápida (good UX) sin bloquear renderizado.
+
+---
+
+### 10. OpenCode para Next.js
+**Respuestas válidas** (ejemplos):
+
+1. **"Generar componentes Server Component completos con TypeScript types"**
+   - OpenCode puede crear archivos `page.tsx` con estructura completa
+
+2. **"Automatizar creación de rutas con layouts y loading states"**
+   - Crear `app/blog/page.tsx`, `layout.tsx`, `loading.tsx` de una vez
+
+3. **"Generar código de data fetching con Prisma ORM"**
+   - Queries a DB directamente en Server Components
+
+4. **"Crear API Routes con validación Zod automáticamente"**
+   - `app/api/users/route.ts` con manejo de errores
+
+5. **"Refactorizar Client Components a Server Components cuando sea posible"**
+   - Analizar código y sugerir conversiones para mejor performance
+
+**Criterio**: Respuesta debe ser **específica** a Next.js y **técnicamente válida**.
+
+---
+
+## 📊 Criterios de Evaluación
+
+### Interpretación de Resultados
+
+| Puntaje | Calificación | Recomendación |
+|---------|--------------|---------------|
+| **9-10** | 🏆 Excelente | Dominio sólido de Next.js 14. Listo para Módulo 02. |
+| **7-8** | ✅ Aprobado | Comprensión buena. Practica creando componentes antes de continuar. |
+| **5-6** | ⚠️ Suficiente | Comprensión parcial. Repasa conceptos de Server Components. |
+| **< 5** | ❌ Insuficiente | Vuelve a estudiar módulo. Consulta con instructor. |
+
+### Desglose por Tema
+
+| Preguntas | Tema | Peso |
+|-----------|------|------|
+| 1, 2, 6 | Server vs Client Components | 30% |
+| 3, 7, 8 | Routing y Navigation | 30% |
+| 4, 5 | Metadata y Data Fetching | 20% |
+| 9 | Streaming (avanzado) | 10% |
+| 10 | Aplicación de IA (OpenCode) | 10% |
+
+**Si fallas 2+ preguntas del mismo tema**: Repasa esa sección específica del módulo.
+
+### Próximos Pasos
+
+**Si aprobaste (7+)**:
+1. ✅ Continúa a Módulo 02 (Full-Stack Development)
+2. ✅ Practica creando 2-3 páginas adicionales en Next.js
+3. ✅ Explora Next.js docs oficiales (profundiza conceptos)
+
+**Si no aprobaste (< 7)**:
+1. ⏸️ **Pausa** antes de seguir
+2. 📖 Repasa secciones donde fallaste
+3. 💻 Crea un proyecto simple: blog con 3 páginas
+4. 🤝 Consulta con instructor en office hours
+5. 🔄 Reintenta quiz
 
 ---
 
