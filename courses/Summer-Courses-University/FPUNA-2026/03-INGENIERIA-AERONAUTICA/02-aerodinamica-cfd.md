@@ -250,7 +250,1196 @@ graph LR
 
 ### Tutorial Paso a Paso: Analizar NACA 4412
 
-[Content continues with detailed XFoil tutorial, CFD setup, optimization techniques, and exercises - approximately 350 more lines to reach 600+ total]
+**Objetivo**: Obtener la polar (CL vs α) del perfil NACA 4412 a Re = 500,000
+
+#### Paso 1: Iniciar XFoil
+
+```bash
+$ xfoil
+```
+
+#### Paso 2: Cargar o Crear Perfil
+
+```bash
+# Opción A: Cargar desde archivo .dat
+XFOIL c> LOAD naca4412.dat
+
+# Opción B: Generar perfil NACA
+XFOIL c> NACA 4412
+
+# Verificar geometría
+XFOIL c> GDES
+```
+
+**Comandos útiles en GDES**:
+- `PLOT` - Visualizar perfil
+- `MODI` - Suavizar coordenadas (útil para archivos externos)
+- `EXEC` - Volver al menú principal
+
+#### Paso 3: Configurar Panel (Opcional pero Recomendado)
+
+```bash
+XFOIL c> PPAR
+.PANE c> N 200           # 200 paneles (default: 160)
+.PANE c>                 # Enter para aplicar
+```
+
+**Más paneles = Mayor resolución, pero más lento**
+
+#### Paso 4: Entrar a Modo Operación
+
+```bash
+XFOIL c> OPER
+```
+
+#### Paso 5: Activar Análisis Viscoso
+
+```bash
+# Definir número de Reynolds
+.OPERv c> VISC 500000
+
+# Activar cálculo viscoso
+.OPERv c> V 1
+
+# Opcional: Definir Mach number
+.OPERv c> MACH 0.0       # Incompresible
+```
+
+**Nota**: Re = 500,000 es típico para UAVs pequeños y modelos RC.
+
+#### Paso 6: Analizar Ángulos de Ataque
+
+**Opción A: Análisis individual**
+```bash
+.OPERv c> ALFA 5         # Calcular α=5°
+.OPERv c> ALFA 8         # Calcular α=8°
+```
+
+**Opción B: Secuencia automática** (Recomendado)
+```bash
+.OPERv c> ASEQ -4 16 2   # Desde -4° hasta 16° en pasos de 2°
+```
+
+**Lo que sucede**:
+- XFoil calcula cada punto iterativamente
+- Muestra CL, CD, CM, CDP, CM en pantalla
+- Si no converge en un ángulo, intenta el siguiente
+
+#### Paso 7: Acumular y Guardar Datos
+
+```bash
+# Activar acumulación de polar
+.OPERv c> PACC
+ Enter polar save filename OR  <return> for no file
+naca4412_Re500k.txt
+ Enter polar dump filename OR  <return> for no file
+<Enter>
+
+# Los datos se guardan automáticamente después de cada ALFA o ASEQ
+```
+
+**Formato del archivo generado**:
+```
+ alpha    CL       CD      CDp     CM     Top_Xtr  Bot_Xtr
+------ -------- -------- ------- -------- -------- --------
+ -4.00  -0.0523  0.01207  0.00588  -0.0243  1.0000   0.5691
+ -2.00   0.1689  0.00938  0.00326  -0.0381  1.0000   0.5234
+  0.00   0.3895  0.00799  0.00192  -0.0518  1.0000   0.4897
+  2.00   0.6098  0.00726  0.00124  -0.0654  1.0000   0.4678
+...
+```
+
+#### Paso 8: Visualizar Resultados
+
+**Graficar polar**:
+```bash
+.OPERv c> VPLO           # Plot viscous
+```
+
+**Ver distribución de presión**:
+```bash
+.OPERv c> CPX            # Cp vs x/c
+```
+
+**Ver capa límite**:
+```bash
+.OPERv c> BL             # Boundary layer parameters
+```
+
+#### Paso 9: Guardar Distribución de Presión (Opcional)
+
+```bash
+# Para un ángulo específico
+.OPERv c> ALFA 6
+.OPERv c> CPWR naca4412_cp_a6.dat
+```
+
+#### Paso 10: Salir
+
+```bash
+.OPERv c> QUIT
+XFOIL c> QUIT
+```
+
+### Interpretación de Resultados
+
+**Columnas del archivo polar**:
+- **alpha**: Ángulo de ataque [°]
+- **CL**: Coeficiente de sustentación
+- **CD**: Coeficiente de resistencia (total = perfil + inducido)
+- **CDp**: Drag de perfil (sin inducido)
+- **CM**: Coeficiente de momento (respecto a 0.25c)
+- **Top_Xtr**: Transición laminar-turbulento (superficie superior)
+- **Bot_Xtr**: Transición laminar-turbulento (superficie inferior)
+
+**Ejemplo de análisis**:
+```
+α = 6° → CL = 1.05, CD = 0.0095
+→ L/D = 1.05 / 0.0095 = 110.5 (muy eficiente!)
+
+α = 12° → CL = 1.45, CD = 0.0180
+→ L/D = 1.45 / 0.0180 = 80.6 (aún bueno)
+
+α > 14° → Stall (pérdida de sustentación)
+```
+
+### Troubleshooting XFoil
+
+**Problema 1**: "VISCAL:  Convergence failed"
+- **Causa**: Flujo separado o muy cercano a stall
+- **Solución**: Reducir el paso en ASEQ o analizar manualmente ángulos problemáticos
+
+**Problema 2**: Resultados físicamente incorrectos
+- **Causa**: Pocos paneles o geometría mal definida
+- **Solución**: Usar PPAR para aumentar paneles (N 200-300)
+
+**Problema 3**: "MRCHDU: Sonic point encountered"
+- **Causa**: Mach number muy alto (flujo compresible)
+- **Solución**: Reducir Mach o usar métodos para flujo transónico
+
+---
+
+## 🌐 Parte 3: CFD 3D - ANSYS Fluent (90 min)
+
+### Concepto: De 2D a 3D Real
+
+**XFoil** analiza perfil infinitamente largo (2D) → **No captura**:
+- ❌ Efectos de punta de ala (wing tip vortices)
+- ❌ Drag inducido real (solo estimado)
+- ❌ Flujo tridimensional complejo
+
+**CFD 3D** simula el ala completa → **Captura**:
+- ✅ Vórtices de punta de ala
+- ✅ Distribución de sustentación spanwise
+- ✅ Interacción fuselaje-ala
+- ✅ Efectos de flaps, slats, winglets
+
+### Workflow ANSYS Fluent: Ala de UAV
+
+**Duración estimada**: 2-3 horas (primera vez)
+
+#### Fase 1: Geometría y Dominio (30 min)
+
+**1.1 Importar Geometría CAD**
+
+Archivo: `uav_wing.step` (del Módulo 01 - CAD)
+
+```
+Fluent Meshing:
+File → Import → Geometry
+Formato: STEP, IGES, Parasolid
+```
+
+**1.2 Crear Dominio Fluido (Enclosure)**
+
+Dimensiones recomendadas:
+```
+Inlet:  15 × cuerda delante del ala
+Outlet: 25 × cuerda detrás del ala
+Sides:  10 × envergadura a cada lado
+Top:    10 × cuerda arriba
+Bottom: 10 × cuerda abajo (si no hay suelo)
+```
+
+**Analogía**: Como meter el ala en un túnel de viento gigante - necesitas espacio para que el aire se desarrolle.
+
+**1.3 Nombrar Superficies**
+
+- `wing_surface` - Superficie del ala
+- `inlet` - Entrada de aire
+- `outlet` - Salida
+- `sides` - Paredes laterales (symmetry)
+- `top`, `bottom` - Paredes superior/inferior
+
+#### Fase 2: Generación de Malla (45 min)
+
+**2.1 Configuración de Malla Base**
+
+```
+Meshing → Watertight Geometry Workflow
+Add Local Sizing:
+- On wing_surface: Element size = 0.01 m
+- In wake region: Element size = 0.05 m
+```
+
+**2.2 Boundary Layer (CRÍTICO)**
+
+```
+Add Boundary Layers:
+- First Layer Thickness: 0.0001 m (y+ ≈ 30-100)
+- Growth Rate: 1.2
+- Number of Layers: 15-20
+- Apply to: wing_surface
+```
+
+**Cálculo de y+** (primer capa):
+```
+y+ = (y × u_τ × ρ) / μ
+
+Para y+ ≈ 50:
+y ≈ 0.0001 m (0.1 mm)
+```
+
+**2.3 Generar Malla**
+
+```
+Generate Mesh:
+- Method: Poly-Hexcore
+- Target cell count: 2-5 millones (compromiso precisión/tiempo)
+```
+
+**Tiempo de generación**: 10-30 min dependiendo de complejidad
+
+**2.4 Verificar Calidad**
+
+```
+Mesh Quality:
+- Orthogonality: > 0.3 (mejor > 0.5)
+- Skewness: < 0.85 (mejor < 0.7)
+- Aspect Ratio: < 500 (en boundary layer puede ser mayor)
+```
+
+#### Fase 3: Configuración Física (30 min)
+
+**3.1 Configuración General**
+
+```
+Setup → General:
+- Type: Pressure-based
+- Time: Steady
+- Gravity: -9.81 m/s² en eje Y (si relevante)
+```
+
+**3.2 Modelo de Turbulencia**
+
+```
+Setup → Models → Viscous:
+- Model: k-omega (2 eqn)
+- k-omega Options: SST
+- Wall Treatment: Enhanced Wall Treatment
+```
+
+**Por qué k-ω SST**:
+- ✅ Mejor para flujos con gradiente adverso de presión
+- ✅ Predice separación de flujo mejor que k-ε
+- ✅ Recomendado por NASA para aerodinámica externa
+
+**3.3 Materiales**
+
+```
+Setup → Materials → Fluid:
+- Air (default)
+- Density: 1.225 kg/m³
+- Viscosity: 1.7894e-05 kg/(m·s)
+```
+
+**3.4 Condiciones de Contorno**
+
+| Superficie | Tipo | Valores |
+|------------|------|---------|
+| **inlet** | Velocity Inlet | V = 15 m/s (54 km/h)<br/>Turbulent Intensity = 5%<br/>Turbulent Viscosity Ratio = 10 |
+| **outlet** | Pressure Outlet | Gauge Pressure = 0 Pa<br/>Backflow Turbulent Intensity = 5% |
+| **wing_surface** | Wall | No-slip, Stationary Wall |
+| **sides** | Symmetry | (Mirror plane) |
+| **top, bottom** | Symmetry | (o Velocity Inlet si prefieres) |
+
+**Turbulent Intensity** = Fluctuación de velocidad / Velocidad media
+- Túnel de viento de baja turbulencia: 1-3%
+- Flujo atmosférico: 5-10%
+
+#### Fase 4: Solución (15 min configuración + 1-3 horas cálculo)
+
+**4.1 Métodos de Solución**
+
+```
+Solution → Methods:
+- Scheme: Coupled (más rápido) o SIMPLE
+- Gradient: Least Squares Cell Based
+- Pressure: Second Order
+- Momentum: Second Order Upwind
+- Turbulent Kinetic Energy: Second Order Upwind
+- Specific Dissipation Rate: Second Order Upwind
+```
+
+**4.2 Monitores de Convergencia**
+
+```
+Solution → Monitors → Residuals:
+- Continuity, x-velocity, y-velocity, z-velocity: 1e-4
+- k, omega: 1e-4
+```
+
+**Agregar monitores de fuerzas**:
+```
+Monitors → Force:
+- Lift: Direction = (0, 1, 0) en eje Y
+- Drag: Direction = (1, 0, 0) en eje X
+- Apply to: wing_surface
+- Report Type: Coefficient (CL, CD)
+```
+
+**Valores de referencia**:
+```
+Reference Values:
+- Area: 0.5 m² (área alar)
+- Length: 0.25 m (cuerda media)
+- Velocity: 15 m/s
+- Density: 1.225 kg/m³
+```
+
+**4.3 Inicialización**
+
+```
+Solution → Initialization:
+- Method: Hybrid Initialization
+Initialize
+```
+
+**4.4 Ejecutar Cálculo**
+
+```
+Run Calculation:
+- Number of Iterations: 500-1000
+- Run
+```
+
+**Tiempo de cálculo**: 1-3 horas (depende de CPU)
+
+**Monitoreo durante ejecución**:
+- Residuals cayendo y < 1e-4
+- CL, CD estabilizándose (variación < 0.1% últimas 50 iter)
+- No hay divergencia (residuals explotando)
+
+#### Fase 5: Post-Procesamiento (30 min)
+
+**5.1 Contornos de Presión**
+
+```
+Results → Graphics → Contours:
+- Contours of: Pressure (Static Pressure)
+- On: wing_surface
+- Filled, Node Values
+Display
+```
+
+**Guardar imagen**: File → Export → Save Image
+
+**5.2 Contornos de Velocidad**
+
+```
+Contours of: Velocity Magnitude
+On: Plane XY (a mitad de envergadura)
+Display
+```
+
+**5.3 Pathlines (Líneas de corriente)**
+
+```
+Results → Graphics → Pathlines:
+- Release from: inlet
+- Style: Lines
+- Color by: Velocity Magnitude
+Display
+```
+
+**5.4 Reportes de Fuerzas**
+
+```
+Results → Reports → Forces:
+- Wall Zones: wing_surface
+- Direction: (0, 1, 0) para Lift
+- Print → Note CL value
+
+Cambiar Direction: (1, 0, 0) para Drag
+- Print → Note CD value
+```
+
+**5.5 Distribución de Presión Spanwise**
+
+```
+Results → Plots → XY Plot:
+- Y Axis Function: Pressure
+- X Axis: z-coordinate (spanwise)
+- Surface: wing_surface
+Display
+```
+
+### Comparación XFoil vs CFD
+
+**Ejecuta mismo caso** (α=6°, Re=500k) en ambos:
+
+| Métrica | XFoil (2D) | CFD 3D (Fluent) | Diferencia |
+|---------|------------|------------------|------------|
+| **CL** | 1.05 | 0.95 | -9.5% (esperado) |
+| **CD** | 0.0095 | 0.0145 | +52% (drag inducido 3D) |
+| **L/D** | 110.5 | 65.5 | 3D más realista |
+
+**Conclusión**: CFD 3D da valores más realistas porque captura efectos tridimensionales.
+
+---
+
+## 🔧 Parte 4: OpenFOAM - Alternativa Open Source (60 min)
+
+### Por Qué OpenFOAM
+
+**Ventajas**:
+- ✅ Gratis y open-source (GNU GPL)
+- ✅ Altamente personalizable (código C++)
+- ✅ Usado en investigación y industria
+- ✅ Gran comunidad (foros, tutoriales)
+
+**Desventajas**:
+- ❌ Curva de aprendizaje empinada
+- ❌ Sin GUI (configuración por archivos de texto)
+- ❌ Documentación dispersa
+
+**Ideal para**: Estudiantes que quieren entender CFD en profundidad y no depender de licencias comerciales.
+
+### Tutorial: Perfil NACA 0012 con simpleFoam
+
+#### Configuración del Caso
+
+**Directorio de trabajo**:
+```bash
+$ mkdir -p ~/OpenFOAM/run/airfoilNACA0012
+$ cd ~/OpenFOAM/run/airfoilNACA0012
+```
+
+**Estructura requerida**:
+```
+airfoilNACA0012/
+├── 0/               # Condiciones iniciales y de contorno
+│   ├── U            # Velocidad
+│   ├── p            # Presión
+│   └── nut          # Viscosidad turbulenta
+├── constant/
+│   ├── transportProperties
+│   ├── turbulenceProperties
+│   └── polyMesh/    # (generada con blockMesh o snappyHexMesh)
+├── system/
+│   ├── controlDict
+│   ├── fvSchemes
+│   └── fvSolution
+└── Allrun          # Script para ejecutar todo
+```
+
+#### Paso 1: Condiciones de Contorno (`0/` directory)
+
+**Archivo: `0/U`** (Velocidad)
+```cpp
+dimensions      [0 1 -1 0 0 0 0];  // m/s
+
+internalField   uniform (15 0 0);   // V = 15 m/s en eje X
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (15 0 0);
+    }
+    
+    outlet
+    {
+        type            zeroGradient;
+    }
+    
+    airfoil
+    {
+        type            noSlip;
+    }
+    
+    sides
+    {
+        type            symmetryPlane;
+    }
+    
+    frontAndBack
+    {
+        type            empty;   // Para caso 2D
+    }
+}
+```
+
+**Archivo: `0/p`** (Presión)
+```cpp
+dimensions      [0 2 -2 0 0 0 0];  // m²/s² (presión cinemática p/ρ)
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type            zeroGradient;
+    }
+    
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    
+    airfoil
+    {
+        type            zeroGradient;
+    }
+    
+    sides
+    {
+        type            symmetryPlane;
+    }
+    
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+```
+
+**Archivo: `0/nut`** (Viscosidad turbulenta)
+```cpp
+dimensions      [0 2 -1 0 0 0 0];  // m²/s
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    
+    outlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    
+    airfoil
+    {
+        type            nutkWallFunction;
+        value           uniform 0;
+    }
+    
+    sides
+    {
+        type            symmetryPlane;
+    }
+    
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+```
+
+#### Paso 2: Propiedades Físicas
+
+**Archivo: `constant/transportProperties`**
+```cpp
+transportModel  Newtonian;
+
+nu              1.5e-05;  // Viscosidad cinemática del aire [m²/s]
+```
+
+**Archivo: `constant/turbulenceProperties`**
+```cpp
+simulationType  RAS;  // Reynolds-Averaged Simulation
+
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+}
+```
+
+#### Paso 3: Control de Simulación
+
+**Archivo: `system/controlDict`**
+```cpp
+application     simpleFoam;
+
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         500;        // 500 iteraciones
+
+deltaT          1;
+
+writeControl    timeStep;
+writeInterval   100;
+
+writeFormat     ascii;
+writePrecision  6;
+writeCompression off;
+
+timeFormat      general;
+timePrecision   6;
+
+runTimeModifiable true;
+```
+
+#### Paso 4: Esquemas Numéricos
+
+**Archivo: `system/fvSchemes`**
+```cpp
+ddtSchemes
+{
+    default         steadyState;
+}
+
+gradSchemes
+{
+    default         Gauss linear;
+}
+
+divSchemes
+{
+    default         none;
+    div(phi,U)      bounded Gauss linearUpwind grad(U);
+    div(phi,k)      bounded Gauss upwind;
+    div(phi,omega)  bounded Gauss upwind;
+    div((nuEff*dev2(T(grad(U))))) Gauss linear;
+}
+
+laplacianSchemes
+{
+    default         Gauss linear corrected;
+}
+
+interpolationSchemes
+{
+    default         linear;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+```
+
+#### Paso 5: Configuración del Solver
+
+**Archivo: `system/fvSolution`**
+```cpp
+solvers
+{
+    p
+    {
+        solver          GAMG;
+        tolerance       1e-06;
+        relTol          0.01;
+        smoother        GaussSeidel;
+    }
+    
+    "(U|k|omega)"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-05;
+        relTol          0.1;
+    }
+}
+
+SIMPLE
+{
+    nNonOrthogonalCorrectors 0;
+    consistent      yes;
+    
+    residualControl
+    {
+        p               1e-5;
+        U               1e-5;
+        "(k|omega)"     1e-5;
+    }
+}
+
+relaxationFactors
+{
+    equations
+    {
+        U               0.9;
+        k               0.7;
+        omega           0.7;
+    }
+}
+```
+
+#### Paso 6: Generar Malla
+
+**Opción A: Usar gmsh + gmshToFoam**
+```bash
+# Crear malla en gmsh (GUI o script)
+gmsh -3 airfoil.geo -o airfoil.msh
+
+# Convertir a formato OpenFOAM
+gmshToFoam airfoil.msh
+
+# Verificar malla
+checkMesh
+```
+
+**Opción B: Usar caso tutorial pre-existente**
+```bash
+# Copiar caso de ejemplo
+cp -r $FOAM_TUTORIALS/incompressible/simpleFoam/airFoil2D .
+cd airFoil2D
+```
+
+#### Paso 7: Ejecutar Simulación
+
+```bash
+# Verificar setup
+checkMesh
+
+# Ejecutar solver
+simpleFoam > log.simpleFoam 2>&1 &
+
+# Monitorear convergencia
+tail -f log.simpleFoam
+
+# O usar utilidad de monitoreo
+foamMonitor log.simpleFoam
+```
+
+#### Paso 8: Post-Procesamiento
+
+**Con ParaView (GUI)**:
+```bash
+# Generar archivo para ParaView
+touch airfoilNACA0012.foam
+
+# Abrir ParaView
+paraview airfoilNACA0012.foam
+```
+
+**Calcular fuerzas**:
+```bash
+# Agregar función de post-procesamiento
+postProcess -func 'forceCoeffs(patch=airfoil, CofR=(0.25 0 0), liftDir=(0 1 0), dragDir=(1 0 0), pitchAxis=(0 0 1), magUInf=15, rhoInf=1.225, lRef=1, Aref=1)'
+```
+
+**Extraer distribución de presión**:
+```bash
+# Sample data on airfoil surface
+postProcess -func 'sample(points=airfoil_surface)'
+```
+
+### Comparación ANSYS Fluent vs OpenFOAM
+
+| Aspecto | ANSYS Fluent | OpenFOAM |
+|---------|--------------|----------|
+| **Setup** | GUI point-and-click | Editar archivos de texto |
+| **Curva de aprendizaje** | Moderada | Empinada |
+| **Costo** | Licencia cara | Gratis |
+| **Flexibilidad** | Limitada a GUI | Total (código abierto) |
+| **Documentación** | Excelente (oficial) | Dispersa (comunidad) |
+| **Tiempo de setup** | 30-60 min | 1-2 horas (primera vez) |
+| **Soporte** | Soporte técnico incluido | Foros comunitarios |
+
+**Recomendación**:
+- **Industria/proyectos rápidos**: ANSYS Fluent
+- **Investigación/aprendizaje profundo**: OpenFOAM
+
+---
+
+## 🎯 Parte 5: Optimización Aerodinámica con IA (45 min)
+
+### Concepto: Design Iteration Loop
+
+**Workflow tradicional**:
+```
+Diseñar → Simular → Analizar → Modificar manualmente → Repetir
+(Días o semanas por iteración)
+```
+
+**Workflow con IA**:
+```
+Definir objetivos → IA genera variantes → Simula en paralelo → Selecciona óptimo
+(Horas por iteración)
+```
+
+### Caso de Uso: Optimizar NACA 4-Series para Máximo L/D
+
+**Objetivo**: Encontrar el mejor perfil NACA 4-series para UAV (Re=500k, V=15m/s)
+
+**Variables de diseño**:
+- Curvatura máxima (primer dígito): 0-9%
+- Posición de curvatura (segundo dígito): 20-50%
+- Espesor máximo (últimos dos dígitos): 10-18%
+
+**Ejemplo**: NACA **4**412 → 4% curvatura, en 40% de cuerda, 12% espesor
+
+### Implementación con OpenCode
+
+```bash
+opencode "Crea un script Python que optimice un perfil NACA para máximo L/D.
+
+REQUISITOS:
+1. Usar librería 'subprocess' para ejecutar XFoil automáticamente
+2. Probar combinaciones de NACA 4-series:
+   - Curvatura: 2%, 4%, 6%
+   - Posición: 30%, 40%, 50%
+   - Espesor: 12%, 15%, 18%
+3. Para cada combinación:
+   - Generar archivo .dat del perfil
+   - Ejecutar XFoil con Re=500,000, α=6°
+   - Extraer CL, CD, calcular L/D
+4. Guardar resultados en CSV:
+   - Columnas: NACA code, CL, CD, L/D
+5. Encontrar perfil con máximo L/D
+6. Graficar: L/D vs combinaciones (matplotlib)
+
+CONDICIONES DE OPERACIÓN:
+- Re = 500,000
+- Mach = 0 (incompresible)
+- α = 6° (crucero típico UAV)
+
+OUTPUT:
+- Script Python ejecutable
+- Comentarios explicando cada paso
+- Manejo de errores (si XFoil no converge)
+- Gráfica final mostrando ganador
+
+CONTEXTO:
+Esto automatiza lo que tomaría días manualmente, probando 27 variantes en ~30 minutos"
+```
+
+**Resultado esperado**:
+```python
+import subprocess
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Lista de perfiles a probar
+curvatures = [2, 4, 6]
+positions = [3, 4, 5]  # Posición en décimas (30%, 40%, 50%)
+thicknesses = [12, 15, 18]
+
+results = []
+
+for m in curvatures:
+    for p in positions:
+        for t in thicknesses:
+            naca_code = f"{m}{p}{t:02d}"
+            
+            # Ejecutar XFoil (código simplificado)
+            cl, cd = run_xfoil(naca_code, re=500000, alpha=6)
+            
+            if cl and cd:  # Si convergió
+                l_d = cl / cd
+                results.append({
+                    'NACA': naca_code,
+                    'CL': cl,
+                    'CD': cd,
+                    'L/D': l_d
+                })
+
+# Encontrar mejor
+df = pd.DataFrame(results)
+best = df.loc[df['L/D'].idxmax()]
+print(f"Mejor perfil: NACA {best['NACA']} con L/D = {best['L/D']:.2f}")
+
+# Graficar
+df.plot(x='NACA', y='L/D', kind='bar', title='Optimización de Perfil NACA')
+plt.tight_layout()
+plt.savefig('optimization_results.png')
+```
+
+### Técnicas Avanzadas de Optimización
+
+#### 1. Gradient-Based Optimization
+
+**Concepto**: Usar gradientes (∂L/D / ∂parámetro) para encontrar óptimo localmente
+
+**Herramientas**:
+- **DAKOTA** (Sandia National Labs) - Framework de optimización
+- **PyOptSparse** - Python wrapper para múltiples optimizadores
+- **SU2** - Código CFD con adjoint optimization
+
+**Ventaja**: Converge rápido (pocas iteraciones)  
+**Desventaja**: Puede quedar atrapado en óptimo local
+
+#### 2. Genetic Algorithms (Algoritmos Genéticos)
+
+**Concepto**: Simula evolución natural - "sobreviven" los mejores diseños
+
+**Workflow**:
+```
+1. Generar población inicial (20-50 diseños aleatorios)
+2. Evaluar fitness de cada uno (simular CFD)
+3. Seleccionar mejores (top 20%)
+4. "Cruzar" y "mutar" para crear nueva generación
+5. Repetir hasta convergencia
+```
+
+**Herramientas**:
+- **DEAP** (Python) - Distributed Evolutionary Algorithms
+- **PyGMO** - Parallel Global Multiobjective Optimizer
+- **Platypus** - Multiobjective optimization in Python
+
+**Ventaja**: Explora espacio de diseño globalmente  
+**Desventaja**: Requiere muchas evaluaciones (costoso en CFD 3D)
+
+#### 3. Surrogate Models (Modelos Sustitutos)
+
+**Problema**: CFD 3D toma horas → imposible evaluar 1000 diseños
+
+**Solución**: Entrenar modelo ML que "aproxima" CFD en segundos
+
+**Workflow**:
+```
+1. Ejecutar CFD en 50-100 diseños estratégicamente seleccionados (Latin Hypercube Sampling)
+2. Entrenar modelo ML (Random Forest, Neural Network, Kriging)
+3. Usar modelo ML para evaluar 10,000 diseños en minutos
+4. Seleccionar top 5 candidatos
+5. Validar con CFD real
+```
+
+**Herramientas**:
+- **scikit-learn** (Python) - ML models
+- **SMT** (Surrogate Modeling Toolbox) - Specialized for optimization
+- **TensorFlow/PyTorch** - Neural networks para casos complejos
+
+**Ejemplo de uso**:
+```python
+from sklearn.ensemble import RandomForestRegressor
+import numpy as np
+
+# Datos de entrenamiento (50 diseños CFD)
+X_train = np.array([...])  # Parámetros: [curvatura, posición, espesor, ángulo]
+y_train = np.array([...])  # L/D de CFD
+
+# Entrenar modelo sustituto
+model = RandomForestRegressor(n_estimators=100)
+model.fit(X_train, y_train)
+
+# Evaluar 10,000 diseños nuevos en segundos
+X_test = generate_designs(n=10000)
+y_pred = model.predict(X_test)
+
+# Seleccionar mejor
+best_idx = np.argmax(y_pred)
+best_design = X_test[best_idx]
+```
+
+### Caso Práctico: Optimización de Winglet
+
+**Contexto**: Agregar winglet al UAV para reducir drag inducido
+
+**Parámetros a optimizar**:
+- Altura del winglet (h): 5-15 cm
+- Ángulo de cant (θ): 15-60°
+- Taper ratio (λ): 0.3-0.8
+
+**Objetivo**: Minimizar CD total manteniendo CL constante
+
+**Prompt para OpenCode**:
+```bash
+opencode "Genera código Python para optimización de winglet usando NSGA-II (multi-objetivo).
+
+OBJETIVOS:
+- Minimizar CD (resistencia aerodinámica)
+- Maximizar L/D (eficiencia)
+
+PARÁMETROS DE DISEÑO:
+- Altura winglet: 50-150 mm (continuo)
+- Ángulo cant: 15-60° (continuo)
+- Taper ratio: 0.3-0.8 (continuo)
+
+RESTRICCIONES:
+- CL >= 0.8 (necesario para vuelo)
+- Altura < 200 mm (limitación mecánica)
+
+IMPLEMENTACIÓN:
+1. Usar librería 'platypus' para NSGA-II
+2. Función objetivo llama a CFD (o modelo sustituto)
+3. 50 generaciones con población de 30
+4. Plotear Pareto front (trade-off CD vs L/D)
+5. Recomendar diseño balanceado
+
+FORMATO:
+- Código completo ejecutable
+- Comentarios detallados
+- Ejemplo de cómo integrar con CFD o modelo ML
+- Gráficas de convergencia y Pareto front"
+```
+
+### Visualización de Resultados con IA
+
+**Problema**: Archivos CFD (VTK, Ensight) son difíciles de interpretar
+
+**Solución**: Usar IA para generar visualizaciones automáticas
+
+**Prompt ejemplo**:
+```bash
+opencode "Crea script Python que:
+
+1. Lee archivo .vtk de CFD (presión y velocidad)
+2. Genera automáticamente:
+   - Contorno de presión en superficie del ala
+   - Streamlines (líneas de corriente)
+   - Gráfica de distribución de Cp vs x/c
+   - Comparación con caso baseline
+3. Guarda todas las figuras en PDF report
+4. Usa matplotlib y mayavi para 3D
+
+REQUISITOS:
+- Leer VTK con 'pyvista'
+- Interpolación de datos a línea de cuerda para Cp
+- Layout profesional para reporte
+- Anotaciones automáticas (indicar Cp_min, separación de flujo si existe)"
+```
+
+---
+
+## 🏋️ Ejercicios Prácticos
+
+### Ejercicio 1: XFoil Básico (30 min)
+
+**Objetivo**: Dominar workflow de XFoil
+
+**Tareas**:
+1. Analizar perfil **NACA 2412** a Re = 200,000
+2. Generar polar de α = -5° a 15° (paso 2°)
+3. Identificar:
+   - CL_max (máxima sustentación)
+   - α_stall (ángulo de pérdida)
+   - CL óptimo para máximo L/D
+4. Graficar:
+   - CL vs α
+   - CD vs CL (drag polar)
+   - L/D vs α
+
+**Entregables**:
+- Archivo polar guardado (.txt)
+- Gráficas generadas (matplotlib)
+- Tabla resumen con métricas clave
+
+**Rúbrica** (10 pts):
+- Polar generado correctamente (3 pts)
+- Identificación correcta de CL_max, α_stall (3 pts)
+- Gráficas profesionales con labels (2 pts)
+- Análisis e interpretación (2 pts)
+
+### Ejercicio 2: Comparación de Perfiles (45 min)
+
+**Objetivo**: Entender cómo diseño afecta performance
+
+**Tareas**:
+1. Analizar 3 perfiles a Re = 500,000:
+   - **NACA 0012** (simétrico, sin curvatura)
+   - **NACA 2412** (curvatura baja)
+   - **NACA 4412** (curvatura alta)
+2. Para cada uno, obtener CL, CD a α = 0°, 4°, 8°
+3. Calcular L/D para cada caso
+4. Comparar y explicar diferencias
+
+**Preguntas de análisis**:
+- ¿Cuál genera más lift a α=0°? ¿Por qué?
+- ¿Cuál tiene mejor L/D? ¿En qué condiciones?
+- ¿Cuál recomendarías para un planeador? ¿Para un UAV acrobático?
+
+**Entregables**:
+- Tabla comparativa (3 perfiles × 3 ángulos = 9 casos)
+- Gráfica: L/D vs α para los 3 perfiles superpuestos
+- Reporte de análisis (1 página)
+
+**Rúbrica** (15 pts):
+- Datos correctos y completos (5 pts)
+- Gráfica comparativa clara (3 pts)
+- Análisis técnico sólido (5 pts)
+- Recomendaciones justificadas (2 pts)
+
+### Ejercicio 3: CFD en ANSYS Fluent (2-3 horas)
+
+**Objetivo**: Setup completo de CFD 3D
+
+**Tareas**:
+1. Importar geometría de ala (del Módulo 01 CAD)
+2. Crear dominio fluido apropiado
+3. Generar malla con boundary layers (y+ ~ 50)
+4. Configurar:
+   - k-ω SST turbulence
+   - Velocity inlet: 15 m/s
+   - α = 6° (rotar geometría o usar componentes de velocidad)
+5. Ejecutar hasta convergencia (residuals < 1e-4, forces estables)
+6. Post-procesar:
+   - Contorno de presión
+   - Pathlines
+   - Calcular CL, CD
+
+**Validación**:
+- Comparar CL, CD con XFoil 2D (debe haber diferencia por efectos 3D)
+- Explicar por qué CD es mayor en 3D
+
+**Entregables**:
+- Screenshots de setup (mesh quality, boundary conditions)
+- Gráficas de convergencia (residuals, CL vs iterations)
+- Visualizaciones (presión, velocidad)
+- Reporte comparativo XFoil vs CFD
+
+**Rúbrica** (20 pts):
+- Setup correcto (BC, models) (6 pts)
+- Calidad de malla (y+, aspect ratio) (4 pts)
+- Convergencia alcanzada (3 pts)
+- Post-procesamiento completo (4 pts)
+- Análisis comparativo (3 pts)
+
+### Ejercicio 4: Optimización Automatizada (Desafío - 3 horas)
+
+**Objetivo**: Automatizar optimización de diseño
+
+**Tareas**:
+1. Escribir script Python que:
+   - Varíe NACA 4-series sistemáticamente
+   - Ejecute XFoil para cada variante
+   - Registre CL, CD, L/D
+2. Objetivo: Maximizar L/D a α = 6°, Re = 500,000
+3. Probar mínimo 20 combinaciones
+4. Identificar diseño óptimo
+5. Validar óptimo con análisis manual XFoil
+
+**Extras (bonus)**:
+- Usar algoritmo genético (DEAP)
+- Graficar convergencia del algoritmo
+- Comparar con optimización manual
+
+**Entregables**:
+- Código Python documentado
+- CSV con todos los casos evaluados
+- Gráfica de optimización (L/D vs iteraciones)
+- Reporte final con perfil óptimo
+
+**Rúbrica** (25 pts):
+- Código funcional y documentado (8 pts)
+- Algoritmo de optimización implementado (7 pts)
+- Análisis de resultados (5 pts)
+- Documentación clara (3 pts)
+- Extras (2 pts bonus)
 
 ---
 
