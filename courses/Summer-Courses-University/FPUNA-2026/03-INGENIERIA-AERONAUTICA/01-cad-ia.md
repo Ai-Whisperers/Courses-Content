@@ -53,6 +53,139 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Dibujo Técnico Básico** (Fundamental):
+- Vistas ortogonales: planta, alzado, perfil
+- Acotación y dimensionamiento
+- Escalas y tolerancias básicas
+- Lectura de planos 2D
+- **Verificación**: ¿Puedes interpretar vistas ortogonales de una pieza simple?
+
+✅ **Visualización Espacial 3D** (Fundamental):
+- Capacidad de imaginar objetos 3D desde vistas 2D
+- Entender rotaciones y orientaciones espaciales
+- Coordenadas cartesianas (X, Y, Z)
+- **Práctica**: Imaginar cómo se ve un cubo desde diferentes ángulos
+
+✅ **Matemáticas Básicas** (Recomendado):
+- Geometría: círculos, ángulos, tangencias
+- Trigonometría básica (seno, coseno para ángulos)
+- Conversión de unidades (mm ↔ cm ↔ m)
+
+✅ **Computación Básica** (Fundamental):
+- Manejo de archivos (guardar, abrir, exportar)
+- Navegación de interfaces gráficas
+- Instalación de software
+
+❌ **NO Se Requiere**:
+- Experiencia previa con software CAD (se enseña desde cero)
+- Conocimiento avanzado de geometría descriptiva
+- Programación (aunque ayuda para scripts)
+
+### Software Necesario (OBLIGATORIO)
+
+Este módulo requiere instalar **al menos uno** de estos programas CAD:
+
+**Opción 1: Fusion 360** (Recomendado):
+- **Costo**: GRATIS para estudiantes (3 años)
+- **Requisitos PC**: Windows 10+, 8GB RAM, GPU dedicada (recomendado)
+- **Instalación**:
+  1. Crear cuenta en [Autodesk Education](https://www.autodesk.com/education/home)
+  2. Verificar email con dominio .edu (FPUNA)
+  3. Descargar e instalar Fusion 360
+  4. Tiempo: ~30 min (descarga 2GB)
+- **Por qué**: Industria estándar, integra CAD+CAM+FEA, intuitivo
+
+**Opción 2: FreeCAD** (Open Source):
+- **Costo**: GRATIS (open-source)
+- **Requisitos PC**: Windows/Linux/Mac, 4GB RAM
+- **Instalación**: [freecadweb.org](https://freecadweb.org) → descargar → instalar (10 min)
+- **Por qué**: Sin restricciones, funciona en PCs antiguas
+- **Advertencia**: Menos intuitivo, curva de aprendizaje más empinada
+
+**Opción 3: OnShape** (CAD en la Nube):
+- **Costo**: GRATIS para estudiantes
+- **Requisitos PC**: Solo navegador + internet
+- **Instalación**: [onshape.com/education](https://onshape.com/education) → crear cuenta
+- **Por qué**: No requiere instalación, funciona en cualquier PC
+- **Advertencia**: Requiere internet constante
+
+**Para este módulo, usaremos Fusion 360** en los ejemplos, pero los conceptos aplican a cualquier CAD.
+
+### Módulos Previos Necesarios
+
+**Obligatorios**:
+- ✅ **00-CORE-FOUNDATION (Semana 1)** - OpenCode y herramientas AI configuradas
+
+**NO requiere módulos técnicos previos** (este ES el primer módulo técnico del track Aero).
+
+**Conexión con módulos siguientes**:
+```
+CAD (Mod 01) → Crea geometrías 3D
+                    ↓
+Aerodinámica (Mod 02) → Analiza esas geometrías con CFD
+                    ↓
+Estructuras (Mod 03) → Valida resistencia con FEA
+```
+
+### Auto-Evaluación
+
+Responde estas preguntas para verificar si estás listo:
+
+1. **¿Puedes imaginar cómo se ve un objeto 3D desde diferentes ángulos?**  
+   SÍ / NO
+
+2. **¿Entiendes qué es una vista en planta, alzado y perfil?**  
+   SÍ / NO
+
+3. **¿Tienes acceso a una PC con 8GB+ RAM (o puedes usar OnShape en la nube)?**  
+   SÍ / NO
+
+4. **¿Puedes dedicar 30 min ANTES del módulo para instalar Fusion 360?**  
+   SÍ / NO
+
+5. **¿Tienes 4-5 horas para aprender CAD con práctica intensiva?**  
+   SÍ / NO
+
+**Interpretación**:
+- **4-5 SÍes**: ✅ Listo para comenzar
+- **3 SÍes**: ⚠️ Verifica que al menos tengas software instalado (#3 o #4)
+- **< 3 SÍes**: ❌ Repasa dibujo técnico básico (Khan Academy tiene videos)
+
+**Recursos de Repaso** (si necesitas):
+- [Khan Academy: Geometry](https://www.khanacademy.org/math/geometry)
+- [YouTube: Technical Drawing Basics](https://www.youtube.com/results?search_query=technical+drawing+basics)
+- Libro: "Dibujo Técnico" - Giesecke (disponible en biblioteca FPUNA)
+
+### Tiempo Estimado Total
+
+- **Instalación software**: 30-60 min (ANTES del módulo)
+- **Contenido teórico**: 1.5-2 horas
+- **Práctica guiada**: 2-3 horas
+- **Proyecto personal**: 4-6 horas adicionales (opcional)
+
+**Total**: 4-12 horas (depende de práctica)
+
+### Checklist Final
+
+Antes de comenzar, verifica:
+
+- [ ] He completado CORE-FOUNDATION (Semana 1)
+- [ ] Tengo Fusion 360, FreeCAD, u OnShape instalado/configurado
+- [ ] He abierto el software al menos una vez (verifica que funciona)
+- [ ] Entiendo conceptos básicos de dibujo técnico
+- [ ] Tengo 4+ horas disponibles para el módulo
+- [ ] (Opcional) He visto algún tutorial de introducción a CAD en YouTube
+
+**Si marcaste los primeros 5**: ¡Adelante! 🚀
+
+**Si no tienes software instalado**: ⚠️ DETENTE - instala primero (30-60 min). El módulo asume que ya tienes el software funcionando.
+
+---
+
 ## 📊 El Flujo de Diseño CAD Aeronáutico
 
 ```mermaid
@@ -235,6 +368,8 @@ Origen: Típicamente en nariz o CG (centro de gravedad)
 - Planos de sección transversal perpendiculares a X
 
 ---
+
+**🎯 Transición**: Ahora que dominas los conceptos fundamentales de CAD (sketch, extrude, revolve, constraints), es momento de aplicarlos en **software profesional real** usado por la industria aeronáutica. En la Parte 1 aprendiste QUÉ operaciones existen; en esta parte aprenderás CÓMO ejecutarlas en Fusion 360 y CATIA, las herramientas que usarás en tu carrera profesional. Modelarás componentes aeronáuticos reales: perfiles NACA, fuselajes, y alas completas.
 
 ## 🔬 Parte 2: CATIA/Fusion 360 - Modelado Aeronáutico (90 min)
 
@@ -445,6 +580,8 @@ Todo en español con contexto de UAV agrícola paraguayo"
 
 ---
 
+**🎯 Transición**: Has modelado piezas individuales (perfiles alares, fuselajes, costillas), pero una aeronave NO es una sola pieza—es un **ensamblaje** de cientos o miles de componentes que deben encajar perfectamente. Un ala está compuesta de larguero + costillas + revestimiento + herrajes, y todos deben alinearse con tolerancias milimétricas. En esta parte, aprenderás a integrar múltiples piezas en ensamblajes complejos usando mates/constraints, la habilidad esencial para proyectos aeronáuticos reales.
+
 ## 🌐 Parte 3: Ensamblajes y Constraints (60 min)
 
 ### Concepto: Integrar Múltiples Piezas
@@ -582,6 +719,8 @@ Todo en español con contexto de diseño aeronáutico"
 ```
 
 ---
+
+**🎯 Transición**: Dominas CAD manualmente—puedes modelar piezas, crear ensamblajes, generar planos. Pero en proyectos aeronáuticos reales, te enfrentarás a tareas **repetitivas y tediosas**: crear 50 variantes de un perfil alar, documentar cada pieza, generar reportes de masa. Aquí es donde **OpenCode se convierte en tu superpoder**: puede automatizar tareas que te tomarían días en minutos, generar código CAD automáticamente, y hasta optimizar diseños iterativamente. En esta parte final, aprenderás a acelerar tu flujo de trabajo CAD 10× con IA.
 
 ## 💻 Parte 4: OpenCode para Diseño CAD (30 min)
 
@@ -1070,6 +1209,375 @@ Llevarás tus diseños CAD a simulación aerodinámica para optimizar performanc
 3. **¿Cómo OpenCode puede ayudarte a aprender CATIA más rápido?**
 
 **Comparte en Slack** (#ingenieria-aeronautica)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20-25 minutos
+- **Aprobación**: 7+ respuestas correctas
+- **Propósito**: Verificar comprensión de CAD, modelado 3D, y diseño aeronáutico
+
+**Nota**: Quiz conceptual - no requiere software abierto.
+
+---
+
+### Preguntas
+
+#### 1. Operaciones CAD Básicas (Múltiple Opción)
+
+¿Cuál operación CAD usarías para crear un fuselaje cilíndrico a partir de un círculo 2D?
+
+a) Extrude  
+b) Revolve  
+c) Loft  
+d) Sweep
+
+---
+
+#### 2. Diseño Paramétrico (Verdadero/Falso)
+
+**Afirmación**: "En diseño paramétrico, cambiar una variable (ej: longitud del ala) actualiza automáticamente todas las geometrías dependientes."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 3. Planos de Referencia (Múltiple Opción)
+
+En CAD 3D, los planos de referencia principales son:
+
+a) XY, XZ, YZ  
+b) Planta, Alzado, Perfil  
+c) Top, Front, Right  
+d) Todas las anteriores son correctas (diferentes nombres para lo mismo)
+
+---
+
+#### 4. Restricciones de Sketch (Múltiple Opción)
+
+¿Cuál restricción usarías para garantizar que dos líneas en un sketch permanezcan perpendiculares?
+
+a) Coincident (coincidente)  
+b) Parallel (paralela)  
+c) Perpendicular  
+d) Tangent (tangente)
+
+---
+
+#### 5. Ensamblajes (Múltiple Opción)
+
+En un ensamblaje de un ala con fuselaje, ¿cuál mate/constraint es más apropiado para unirlos?
+
+a) Fixed (fijo) - no permite movimiento  
+b) Revolute (revolución) - permite rotación en un eje  
+c) Planar (planar) - superficies coplanares  
+d) Cylindrical (cilíndrico) - rotación + deslizamiento
+
+---
+
+#### 6. Tolerancias (Verdadero/Falso)
+
+**Afirmación**: "En fabricación aeronáutica, las tolerancias son generalmente MÁS ESTRICTAS que en fabricación automotriz."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 7. Modelado de Perfil Alar (Respuesta Corta)
+
+Un perfil alar NACA 2412 significa:
+- Primer dígito (2): _______ máxima = ___ % de la cuerda
+- Segundo dígito (4): Posición = ___ % de la cuerda
+- Últimos dos dígitos (12): _______ máximo = ___ % de la cuerda
+
+Completa los espacios:
+1. Primer dígito: **Curvatura / Camber / Flecha** (elige una)
+2. Último par: **Espesor / Grosor / Thickness** (elige una)
+
+---
+
+#### 8. Exportación CAD (Múltiple Opción)
+
+Para exportar un modelo CAD a software de análisis CFD (como ANSYS Fluent), el formato más común es:
+
+a) .dwg (AutoCAD)  
+b) .stl (malla de triángulos)  
+c) .step (geometría precisa)  
+d) .pdf (planos 2D)
+
+---
+
+#### 9. Features vs Bodies (Múltiple Opción)
+
+¿Cuál afirmación es CORRECTA sobre features (operaciones) en CAD?
+
+a) Features son irreversibles una vez creados  
+b) Features se ejecutan en orden secuencial (feature tree)  
+c) Features solo pueden ser extrusiones  
+d) Features no afectan dimensiones paramétricas
+
+---
+
+#### 10. OpenCode para CAD (Respuesta Corta)
+
+Menciona **2 tareas específicas** en las que OpenCode puede ayudar en diseño CAD aeronáutico.
+
+**Ejemplo válido**: "Generar scripts de Fusion 360 API para crear perfiles NACA automáticamente"
+
+**Tus respuestas**:
+1. _______________________________________
+2. _______________________________________
+
+---
+
+## 📋 Respuestas y Explicaciones
+
+### 1. Operaciones CAD para Fuselaje
+**Respuesta correcta**: **b) Revolve**
+
+**Explicación**:
+- **Revolve**: Gira un perfil 2D alrededor de un eje → perfecto para fuselajes cilíndricos
+- **Extrude**: Empuja un perfil 2D linealmente → para alas, vigas
+- **Loft**: Interpola entre múltiples perfiles → para formas complejas (nose cone)
+- **Sweep**: Sigue un perfil a lo largo de una trayectoria → para tubos curvos
+
+**Ejemplo fuselaje**:
+```
+1. Sketch: Círculo de radio 600mm en plano YZ
+2. Revolve: Girar 360° alrededor del eje Z
+3. Resultado: Cilindro (fuselaje básico)
+```
+
+---
+
+### 2. Diseño Paramétrico
+**Respuesta correcta**: **a) Verdadero**
+
+**Explicación**:
+El diseño paramétrico es la característica clave de CAD moderno:
+
+**Ejemplo**:
+```
+Variable: ala_longitud = 3000 mm
+
+Geometrías dependientes:
+- Envergadura = 2 × ala_longitud = 6000 mm
+- Costillas separadas cada 300 mm → cantidad = ala_longitud / 300 = 10 costillas
+- Larguero longitud = ala_longitud - 100 mm (margen) = 2900 mm
+
+Cambio: ala_longitud = 3500 mm
+→ TODO se actualiza automáticamente:
+  - Envergadura = 7000 mm
+  - Costillas = 12
+  - Larguero = 3400 mm
+```
+
+**Ventaja**: Diseño iterativo rápido. Puedes probar 10 variantes en minutos.
+
+---
+
+### 3. Planos de Referencia
+**Respuesta correcta**: **d) Todas las anteriores son correctas (diferentes nombres para lo mismo)**
+
+**Explicación**:
+
+| Matemático | Dibujo Técnico | CAD (inglés) | Descripción |
+|------------|----------------|--------------|-------------|
+| XY | Planta | Top | Vista desde arriba |
+| XZ | Alzado | Front | Vista frontal |
+| YZ | Perfil | Right | Vista lateral derecha |
+
+**Son el mismo concepto** con diferente nomenclatura según contexto.
+
+**En Fusion 360**: Los planos se llaman "Top", "Front", "Right"  
+**En dibujo técnico tradicional**: Planta, Alzado, Perfil
+
+---
+
+### 4. Restricciones de Sketch
+**Respuesta correcta**: **c) Perpendicular**
+
+**Explicación**:
+
+**Restricciones comunes en CAD**:
+- **Perpendicular**: Fuerza ángulo de 90° entre dos líneas
+- **Parallel**: Líneas siempre paralelas
+- **Coincident**: Puntos unidos (no pueden separarse)
+- **Tangent**: Curva es tangente a línea (sin esquinas)
+
+**Ejemplo práctico**:
+```
+Diseño de costilla de ala:
+- Línea vertical (larguer  o) ⊥ Línea horizontal (borde ataque)
+- Restricción Perpendicular garantiza 90° siempre
+- Si cambias ángulo de ataque, el ángulo interno se mantiene
+```
+
+---
+
+### 5. Ensamblajes - Mate Ala-Fuselaje
+**Respuesta correcta**: **a) Fixed (fijo) - no permite movimiento**
+
+**Explicación**:
+
+En aeronáutica, ala y fuselaje están **fijamente unidos** (no articulados):
+- **Fixed Mate**: Superficie del ala coincide con superficie del fuselaje, sin movimiento relativo
+- **Revolute**: Para alerones, flaps (que SÍ giran)
+- **Planar**: Útil para paneles deslizantes
+- **Cylindrical**: Para ejes que rotan (tren de aterrizaje retráctil)
+
+**Excepción**: En drones plegables, las alas pueden tener un mate Revolute para plegarse.
+
+---
+
+### 6. Tolerancias Aeronáuticas
+**Respuesta correcta**: **a) Verdadero**
+
+**Explicación**:
+
+**Aeronáutica**:
+- Tolerancias típicas: ±0.1 mm (piezas críticas)
+- Razón: Seguridad de vuelo, certificación estricta (FAA/EASA)
+- Ejemplo: Pasador de bisagra de alerón debe ajustar perfectamente
+
+**Automotriz**:
+- Tolerancias típicas: ±0.5 mm (carrocería)
+- Razón: Seguridad importante pero menos crítica que vuelo
+
+**Excepción**: Piezas estructurales aeroespaciales (cohetes) tienen tolerancias aún más estrictas: ±0.01 mm.
+
+---
+
+### 7. Modelado de Perfil NACA 2412
+**Respuesta correcta**:
+
+**NACA 2412**:
+- **Primer dígito (2)**: **Curvatura/Camber** máxima = **2% de la cuerda**
+- **Segundo dígito (4)**: Posición de curvatura máxima = **40% de la cuerda** (desde borde de ataque)
+- **Últimos dos dígitos (12)**: **Espesor** máximo = **12% de la cuerda**
+
+**Interpretación**:
+```
+Si cuerda = 1000 mm:
+- Curvatura máxima: 20 mm (2%) a 400 mm (40%) del borde de ataque
+- Espesor máximo: 120 mm (12%) aproximadamente a 300 mm del borde
+```
+
+**NACA 0012** (simétrico): Primer dígito = 0 → sin curvatura (simétrico).
+
+---
+
+### 8. Exportación CAD para CFD
+**Respuesta correcta**: **c) .step (geometría precisa)**
+
+**Explicación**:
+
+| Formato | Tipo | Uso en CFD | Precisión |
+|---------|------|------------|-----------|
+| **.step** | Geometría NURBS | ✅ IDEAL | Exacta (curvas precisas) |
+| **.stl** | Malla de triángulos | ⚠️ Posible | Aproximada (facetada) |
+| **.dwg** | 2D/3D AutoCAD | ❌ No recomendado | Variable |
+| **.pdf** | Documento | ❌ No (solo visualización) | N/A |
+
+**Por qué .step es mejor**:
+- ANSYS puede importar geometría exacta (no aproximada)
+- Permite generar mesh de mejor calidad
+- Interoperabilidad entre diferentes software
+
+**Nota**: .stl funciona para impresión 3D, pero en CFD la facetización puede causar problemas en análisis de flujo.
+
+---
+
+### 9. Features (Operaciones CAD)
+**Respuesta correcta**: **b) Features se ejecutan en orden secuencial (feature tree)**
+
+**Explicación**:
+
+**Feature Tree** (árbol de operaciones):
+```
+Part1
+├── Sketch1
+├── Extrude1 ← depende de Sketch1
+├── Fillet1 ← depende de Extrude1
+├── Pattern1 ← depende de Fillet1
+└── Hole1 ← depende de Pattern1
+```
+
+**Características clave**:
+- **Orden importa**: No puedes hacer Fillet antes de Extrude
+- **Reversibles**: Puedes borrar/editar features (no son permanentes)
+- **Tipos variados**: Extrude, revolve, fillet, etc. (no solo extrusiones)
+- **Afectan parámetros**: Features usan dimensiones paramétricas
+
+**Ejemplo práctico**:
+Si borras Extrude1, todos los features posteriores (Fillet1, Pattern1, Hole1) se rompen porque dependen de él.
+
+---
+
+### 10. OpenCode para CAD Aeronáutico
+**Respuestas válidas** (ejemplos):
+
+1. **"Generar scripts de Fusion 360 API para crear perfiles NACA automáticamente"**
+   - Python script que calcula coordenadas NACA y crea sketch
+
+2. **"Automatizar generación de planos técnicos (dimensiones, vistas) desde modelo 3D"**
+   - Script para crear vistas ortogonales con acotación automática
+
+3. **"Optimizar parámetros de diseño iterativamente (ej: espesor ala mínimo)"**
+   - Bucle que prueba diferentes espesores, exporta a FEA, evalúa factor de seguridad
+
+4. **"Documentar decisiones de diseño en Markdown automáticamente"**
+   - Generar reporte: "Ala de 3m elegida porque cumple ratio sustentación/peso > 4"
+
+5. **"Convertir entre formatos CAD (STEP, IGES, STL) con scripts batch"**
+   - Procesar 50 piezas automáticamente para exportación
+
+**Criterio**: Respuesta debe ser **específica** (no "ayuda con diseño") y **técnicamente relevante** a CAD.
+
+---
+
+## 📊 Criterios de Evaluación
+
+### Interpretación de Resultados
+
+| Puntaje | Calificación | Recomendación |
+|---------|--------------|---------------|
+| **9-10** | 🏆 Excelente | Dominio sólido de CAD. Listo para Módulo 02. |
+| **7-8** | ✅ Aprobado | Comprensión buena. Practica en Fusion 360 antes de continuar. |
+| **5-6** | ⚠️ Suficiente | Comprensión parcial. Repasa conceptos y practica modelado. |
+| **< 5** | ❌ Insuficiente | Vuelve a estudiar módulo. Consulta instructor. |
+
+### Desglose por Tema
+
+| Preguntas | Tema | Peso |
+|-----------|------|------|
+| 1, 4, 9 | Operaciones CAD Básicas | 30% |
+| 2, 6 | Diseño Paramétrico y Tolerancias | 20% |
+| 3, 5, 8 | Ensamblajes y Exportación | 30% |
+| 7 | Aplicación Aeronáutica (NACA) | 10% |
+| 10 | Aplicación de IA (OpenCode) | 10% |
+
+**Si fallas 2+ preguntas del mismo tema**: Repasa esa sección específica.
+
+### Próximos Pasos
+
+**Si aprobaste (7+)**:
+1. ✅ Continúa a Módulo 02 (Aerodinámica & CFD)
+2. ✅ Practica modelando piezas adicionales en Fusion 360
+3. ✅ Explora tutoriales de perfiles NACA en YouTube
+
+**Si no aprobaste (< 7)**:
+1. ⏸️ **Pausa** antes de seguir
+2. 📖 Repasa conceptos CAD básicos
+3. 💻 Practica en Fusion 360: crea 3-5 piezas simples
+4. 🤝 Consulta con instructor en office hours
+5. 🔄 Reintenta quiz
 
 ---
 
