@@ -921,4 +921,4 @@ Cada draft es mejor que el anterior. La IA puede acelerar la revisión, pero VOS
 
 **¿Preguntas?** Consulta con tu instructor o en Slack #research-academia-2026
 
-**Próximo módulo:** [05 - Presentación y Publicación](./05-presentation-publication.md)
+**Próximo módulo:** [05 - Presentación y Publicación](./05-presentacion-publicacion.md)

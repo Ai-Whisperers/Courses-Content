@@ -23,16 +23,16 @@
 ### QA Automation Specialization
 | Module | Before | After | Added | Status |
 |--------|--------|-------|-------|--------|
-| 03-test-architecture.md | 346 | 1,430 | +1,084 | ✅ COMPLETE |
-| 04-ci-cd-integration.md | 320 | 1,969 | +1,649 | ✅ COMPLETE |
+| 03-arquitectura-pruebas.md | 346 | 1,430 | +1,084 | ✅ COMPLETE |
+| 04-integracion-ci-cd.md | 320 | 1,969 | +1,649 | ✅ COMPLETE |
 
 ### Web Development Specialization  
 | Module | Before | After | Added | Status |
 |--------|--------|-------|-------|--------|
-| 01-nextjs-foundations.md | 84 | 1,261 | +1,177 | ✅ COMPLETE |
-| 02-fullstack-development.md | 107 | 1,834 | +1,727 | ✅ COMPLETE |
-| 03-auth-authorization.md | 74 | 1,808 | +1,734 | ✅ COMPLETE |
-| 04-ui-ux-styling.md | 79 | 1,521 | +1,442 | ✅ COMPLETE |
+| 01-fundamentos-nextjs.md | 84 | 1,261 | +1,177 | ✅ COMPLETE |
+| 02-desarrollo-fullstack.md | 107 | 1,834 | +1,727 | ✅ COMPLETE |
+| 03-autenticacion-autorizacion.md | 74 | 1,808 | +1,734 | ✅ COMPLETE |
+| 04-diseno-ui-ux.md | 79 | 1,521 | +1,442 | ✅ COMPLETE |
 
 **Total lines added**: 8,813 lines (not counting pre-existing modules)
 

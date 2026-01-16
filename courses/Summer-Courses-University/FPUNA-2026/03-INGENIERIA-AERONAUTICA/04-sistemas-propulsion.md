@@ -1411,7 +1411,7 @@ Antes de finalizar diseño:
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 05 - Diseño de Aeronaves](./05-aircraft-design.md)
+**Continúa con**: [Módulo 05 - Diseño de Aeronaves](./05-diseno-aeronaves.md)
 
 Integrarás estructuras + propulsión en un diseño completo y certificable.
 

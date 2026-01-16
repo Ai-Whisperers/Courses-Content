@@ -69,13 +69,13 @@
 
 | ID | Archivo | Actual | Meta | Contenido Requerido | Estado |
 |----|---------|--------|------|---------------------|--------|
-| F2-001 | `03-testing-tdd.md` | 28 | 500+ | Testing, TDD, Jest/Vitest, Pytest | ⏳ Pendiente |
+| F2-001 | `03-pruebas-tdd.md` | 28 | 500+ | Testing, TDD, Jest/Vitest, Pytest | ⏳ Pendiente |
 | F2-002 | `04-codigo-limpio.md` | 28 | 500+ | Clean Code, Refactoring, Code Smells | ⏳ Pendiente |
 | F2-003 | `05-diseno-sistemas.md` | 28 | 500+ | System Design, Escalabilidad, Trade-offs | ⏳ Pendiente |
 
 #### Contenido Detallado Requerido
 
-**F2-001: Testing & TDD** (03-testing-tdd.md)
+**F2-001: Testing & TDD** (03-pruebas-tdd.md)
 - ✅ Fundamentos de Testing (unitario, integración, E2E)
 - ✅ Metodología TDD (Red-Green-Refactor)
 - ✅ Frameworks: Jest (JS), Pytest (Python)
@@ -223,9 +223,9 @@
 |----|---------|--------|------|---------------------|--------|
 | F4-001 | `01-cad-ia.md` | 23 | 500+ | SolidWorks, CATIA, Fusion 360 con IA | ⏳ Pendiente |
 | F4-002 | `02-aerodinamica-cfd.md` | 23 | 500+ | CFD, ANSYS, OpenFOAM, análisis aerodinámico | ⏳ Pendiente |
-| F4-003 | `03-structures-materials.md` | 23 | 500+ | Análisis estructural, materiales aerospace | ⏳ Pendiente |
-| F4-004 | `04-propulsion-systems.md` | 23 | 500+ | Motores jet, turbinas, cálculos de performance | ⏳ Pendiente |
-| F4-005 | `05-aircraft-design.md` | 23 | 500+ | Diseño conceptual, trade studies, certificación | ⏳ Pendiente |
+| F4-003 | `03-estructuras-materiales.md` | 23 | 500+ | Análisis estructural, materiales aerospace | ⏳ Pendiente |
+| F4-004 | `04-sistemas-propulsion.md` | 23 | 500+ | Motores jet, turbinas, cálculos de performance | ⏳ Pendiente |
+| F4-005 | `05-diseno-aeronaves.md` | 23 | 500+ | Diseño conceptual, trade studies, certificación | ⏳ Pendiente |
 
 #### Contenido Detallado por Módulo
 
@@ -399,10 +399,10 @@
 | ID | Archivo | Actual | Meta | Contenido Requerido | Estado |
 |----|---------|--------|------|---------------------|--------|
 | F6-001 | `01-revision-literatura.md` | 21 | 500+ | Búsqueda, análisis, síntesis con IA | ⏳ Pendiente |
-| F6-002 | `02-research-methodology.md` | 15 | 500+ | Diseño de estudios, métodos, validez | ⏳ Pendiente |
-| F6-003 | `03-data-analysis.md` | 21 | 500+ | Estadística, Python, R con IA | ⏳ Pendiente |
-| F6-004 | `04-academic-writing.md` | 22 | 500+ | Papers, tesis, citaciones con IA | ⏳ Pendiente |
-| F6-005 | `05-presentation-publication.md` | 15 | 500+ | Presentaciones, conferences, publicar | ⏳ Pendiente |
+| F6-002 | `02-metodologia-investigacion.md` | 15 | 500+ | Diseño de estudios, métodos, validez | ⏳ Pendiente |
+| F6-003 | `03-analisis-datos.md` | 21 | 500+ | Estadística, Python, R con IA | ⏳ Pendiente |
+| F6-004 | `04-redaccion-academica.md` | 22 | 500+ | Papers, tesis, citaciones con IA | ⏳ Pendiente |
+| F6-005 | `05-presentacion-publicacion.md` | 15 | 500+ | Presentaciones, conferences, publicar | ⏳ Pendiente |
 
 #### Contenido Detallado por Módulo
 
@@ -577,9 +577,9 @@
 | ID | Archivo | Actual | Meta | Estado |
 |----|---------|--------|------|--------|
 | F8A-001 | `01-playwright-avanzado.md` | 587 | ✅ OK | ✅ Completo |
-| F8A-002 | `02-api-testing.md` | 134 | 450+ | ⏳ Expandir |
-| F8A-003 | `03-test-architecture.md` | 346 | 500+ | ⏳ Expandir |
-| F8A-004 | `04-ci-cd-integration.md` | 320 | 500+ | ⏳ Expandir |
+| F8A-002 | `02-pruebas-api.md` | 134 | 450+ | ⏳ Expandir |
+| F8A-003 | `03-arquitectura-pruebas.md` | 346 | 500+ | ⏳ Expandir |
+| F8A-004 | `04-integracion-ci-cd.md` | 320 | 500+ | ⏳ Expandir |
 | F8A-005 | `05-ia-para-qa.md` | 149 | 450+ | ⏳ Expandir |
 
 **Contenido Adicional Requerido (QA)**:
@@ -592,11 +592,11 @@
 
 | ID | Archivo | Actual | Meta | Estado |
 |----|---------|--------|------|--------|
-| F8B-001 | `01-nextjs-foundations.md` | 84 | 500+ | ⏳ Expandir |
-| F8B-002 | `02-fullstack-development.md` | 107 | 500+ | ⏳ Expandir |
-| F8B-003 | `03-auth-authorization.md` | 74 | 500+ | ⏳ Expandir |
-| F8B-004 | `04-ui-ux-styling.md` | 79 | 500+ | ⏳ Expandir |
-| F8B-005 | `05-deployment-ai.md` | 81 | 500+ | ⏳ Expandir |
+| F8B-001 | `01-fundamentos-nextjs.md` | 84 | 500+ | ⏳ Expandir |
+| F8B-002 | `02-desarrollo-fullstack.md` | 107 | 500+ | ⏳ Expandir |
+| F8B-003 | `03-autenticacion-autorizacion.md` | 74 | 500+ | ⏳ Expandir |
+| F8B-004 | `04-diseno-ui-ux.md` | 79 | 500+ | ⏳ Expandir |
+| F8B-005 | `05-despliegue-ia.md` | 81 | 500+ | ⏳ Expandir |
 
 **Contenido Adicional Requerido (Web Dev)**:
 - F8B-001: Next.js 14 App Router, Server Components, RSC

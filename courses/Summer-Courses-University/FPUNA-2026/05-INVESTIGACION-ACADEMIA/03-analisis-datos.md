@@ -1069,4 +1069,4 @@ Pero SIEMPRE vos sos el responsable de:
 
 **¿Preguntas?** Consulta con tu instructor o en Slack #research-academia-2026
 
-**Próximo módulo:** [04 - Redacción Académica con IA](./04-academic-writing.md)
+**Próximo módulo:** [04 - Redacción Académica con IA](./04-redaccion-academica.md)

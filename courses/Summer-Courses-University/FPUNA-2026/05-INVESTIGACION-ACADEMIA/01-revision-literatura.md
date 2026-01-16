@@ -1141,4 +1141,4 @@ Pero SIEMPRE vos sos el detective que interpreta las pistas, evalúa la evidenci
 
 **¿Preguntas?** Consulta con tu instructor o en el Slack #research-academia-2026
 
-**Próximo módulo:** [02 - Metodología de Investigación](./02-research-methodology.md)
+**Próximo módulo:** [02 - Metodología de Investigación](./02-metodologia-investigacion.md)

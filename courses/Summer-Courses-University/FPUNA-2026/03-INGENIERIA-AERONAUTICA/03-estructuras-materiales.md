@@ -1440,7 +1440,7 @@ Antes de aprobar un diseño estructural:
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 04 - Sistemas de Propulsión](./04-propulsion-systems.md)
+**Continúa con**: [Módulo 04 - Sistemas de Propulsión](./04-sistemas-propulsion.md)
 
 Llevarás tus estructuras diseñadas y las integrarás con sistemas de propulsión para analizar performance completo.
 

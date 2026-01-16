@@ -1946,7 +1946,7 @@ Antes de considerar tu app "production-ready":
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 03 - Authentication & Authorization](./03-auth-authorization.md)
+**Continúa con**: [Módulo 03 - Authentication & Authorization](./03-autenticacion-autorizacion.md)
 
 ---
 

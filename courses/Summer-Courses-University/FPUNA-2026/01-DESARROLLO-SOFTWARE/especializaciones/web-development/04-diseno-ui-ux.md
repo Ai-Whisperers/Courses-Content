@@ -1527,7 +1527,7 @@ d) `shadcn install button`
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 05 - Deployment & AI Acceleration](./05-deployment-ai.md)
+**Continúa con**: [Módulo 05 - Deployment & AI Acceleration](./05-despliegue-ia.md)
 
 ---
 

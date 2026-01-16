@@ -50,7 +50,7 @@
 | IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-software-architecture.md | 🔴 Incompleto | Crear contenido completo |
 | 02-design-patterns.md | 🔴 Incompleto | Crear contenido completo |
-| 03-testing-tdd.md | 🔴 Incompleto | Crear contenido completo |
+| 03-pruebas-tdd.md | 🔴 Incompleto | Crear contenido completo |
 | 04-clean-code.md | 🔴 Incompleto | Crear contenido completo |
 | 05-system-design.md | 🔴 Incompleto | Crear contenido completo |
 | specializations/qa-automation/* | 🟡 Revisar | 5 módulos + recursos |
@@ -72,9 +72,9 @@
 | IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-cad-ai.md | 🔴 Incompleto | Crear contenido completo |
 | 02-aerodynamics-cfd.md | 🔴 Incompleto | Crear contenido completo |
-| 03-structures-materials.md | 🔴 Incompleto | Crear contenido completo |
-| 04-propulsion-systems.md | 🔴 Incompleto | Crear contenido completo |
-| 05-aircraft-design.md | 🔴 Incompleto | Crear contenido completo |
+| 03-estructuras-materiales.md | 🔴 Incompleto | Crear contenido completo |
+| 04-sistemas-propulsion.md | 🔴 Incompleto | Crear contenido completo |
+| 05-diseno-aeronaves.md | 🔴 Incompleto | Crear contenido completo |
 
 ### 04-MARKETING-COMUNICACION (5 módulos)
 | Módulo | Estado | Acción Necesaria |
@@ -91,10 +91,10 @@
 |--------|--------|------------------|
 | IDEAS-IA.md | ✅ COMPLETO | N/A |
 | 01-literature-review.md | 🔴 Incompleto | Crear contenido completo |
-| 02-research-methodology.md | 🔴 Incompleto | Crear contenido completo |
-| 03-data-analysis.md | 🔴 Incompleto | Crear contenido completo |
-| 04-academic-writing.md | 🔴 Incompleto | Crear contenido completo |
-| 05-presentation-publication.md | 🔴 Incompleto | Crear contenido completo |
+| 02-metodologia-investigacion.md | 🔴 Incompleto | Crear contenido completo |
+| 03-analisis-datos.md | 🔴 Incompleto | Crear contenido completo |
+| 04-redaccion-academica.md | 🔴 Incompleto | Crear contenido completo |
+| 05-presentacion-publicacion.md | 🔴 Incompleto | Crear contenido completo |
 
 ### 06-HOSPITALIDAD-TURISMO (4 módulos)
 | Módulo | Estado | Acción Necesaria |

@@ -152,7 +152,7 @@
 ✅ **All 5 core modules done**:
 - 01-arquitectura-software.md (580 lines)
 - 02-patrones-diseno.md (795 lines)  
-- 03-testing-tdd.md (1,570 lines) ⭐ NEW
+- 03-pruebas-tdd.md (1,570 lines) ⭐ NEW
 - 04-codigo-limpio.md (1,914 lines) ⭐ NEW
 - 05-diseno-sistemas.md (1,369 lines) ⭐ NEW
 

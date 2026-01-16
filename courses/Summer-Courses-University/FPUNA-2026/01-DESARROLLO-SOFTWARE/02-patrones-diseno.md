@@ -787,7 +787,7 @@ Cuando escribas código, pregúntate:
 ✅ **DI** - Dependency Injection  
 ✅ **OpenCode** - Generar y refactorizar con patrones
 
-**Continúa con**: [Módulo 03 - Testing & TDD](./03-testing-tdd.md)
+**Continúa con**: [Módulo 03 - Testing & TDD](./03-pruebas-tdd.md)
 
 ---
 

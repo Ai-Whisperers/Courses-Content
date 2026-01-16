@@ -1368,7 +1368,7 @@ npm run dev
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 02 - Full-Stack Development](./02-fullstack-development.md)
+**Continúa con**: [Módulo 02 - Full-Stack Development](./02-desarrollo-fullstack.md)
 
 ---
 

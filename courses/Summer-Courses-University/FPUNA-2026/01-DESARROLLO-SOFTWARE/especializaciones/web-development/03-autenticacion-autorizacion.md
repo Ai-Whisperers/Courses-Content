@@ -125,15 +125,15 @@ Para este módulo necesitarás crear las siguientes cuentas si aún no las tiene
 
 1. **¿Puedes crear un nuevo modelo Prisma y correr migrations?**  
    SÍ / NO  
-   *Si NO*: Revisa [Módulo 02, Parte 2](./02-fullstack-development.md#parte-2-prisma-orm)
+   *Si NO*: Revisa [Módulo 02, Parte 2](./02-desarrollo-fullstack.md#parte-2-prisma-orm)
 
 2. **¿Entiendes la diferencia entre Server Component y Client Component en Next.js?**  
    SÍ / NO  
-   *Si NO*: Revisa [Módulo 01, Parte 3](./01-nextjs-foundations.md#parte-3-server-vs-client-components)
+   *Si NO*: Revisa [Módulo 01, Parte 3](./01-fundamentos-nextjs.md#parte-3-server-vs-client-components)
 
 3. **¿Sabes qué es una API Route en Next.js y cómo crearla?**  
    SÍ / NO  
-   *Si NO*: Revisa [Módulo 02, Parte 3](./02-fullstack-development.md#parte-3-api-routes)
+   *Si NO*: Revisa [Módulo 02, Parte 3](./02-desarrollo-fullstack.md#parte-3-api-routes)
 
 4. **¿Comprendes qué es authentication vs authorization?**  
    SÍ / NO  
@@ -1929,7 +1929,7 @@ Antes de deploy a producción:
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 04 - UI/UX & Styling](./04-ui-ux-styling.md)
+**Continúa con**: [Módulo 04 - UI/UX & Styling](./04-diseno-ui-ux.md)
 
 ---
 
@@ -2229,7 +2229,7 @@ const expires = new Date(Date.now() + 5 * 60 * 1000); // 5 minutos
 
 ### Próximos Pasos
 
-✅ **Si aprobaste (6+)**: ¡Felicitaciones! Continúa con [Módulo 04 - UI/UX & Styling](./04-ui-ux-styling.md)
+✅ **Si aprobaste (6+)**: ¡Felicitaciones! Continúa con [Módulo 04 - UI/UX & Styling](./04-diseno-ui-ux.md)
 
 ⚠️ **Si no aprobaste**: No te desanimes. Identifica los temas donde fallaste:
 - **Preguntas 1-3 falladas**: Revisa Parte 1 y 2 (NextAuth setup, OAuth)

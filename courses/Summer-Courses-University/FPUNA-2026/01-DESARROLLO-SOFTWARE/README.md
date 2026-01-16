@@ -278,26 +278,26 @@ Reutiliza del directorio `SHARED/`:
 ├── IDEAS-IA.md                        # 25 ideas prácticas con OpenCode
 ├── 01-software-architecture.md        # Módulo 1
 ├── 02-design-patterns.md              # Módulo 2
-├── 03-testing-tdd.md                  # Módulo 3
+├── 03-pruebas-tdd.md                  # Módulo 3
 ├── 04-clean-code.md                   # Módulo 4
 ├── 05-system-design.md                # Módulo 5
 ├── specializations/                   # Especializaciones opcionales
 │   ├── qa-automation/                 # QA track completo
 │   │   ├── README.md
 │   │   ├── 01-playwright-avanzado.md
-│   │   ├── 02-api-testing.md
-│   │   ├── 03-test-architecture.md
-│   │   ├── 04-ci-cd-integration.md
+│   │   ├── 02-pruebas-api.md
+│   │   ├── 03-arquitectura-pruebas.md
+│   │   ├── 04-integracion-ci-cd.md
 │   │   ├── 05-ia-para-qa.md
 │   │   ├── capstone/
 │   │   └── resources/
 │   └── web-development/               # Web dev track completo
 │       ├── README.md
-│       ├── 01-nextjs-foundations.md
-│       ├── 02-fullstack-development.md
-│       ├── 03-auth-authorization.md
-│       ├── 04-ui-ux-styling.md
-│       ├── 05-deployment-ai.md
+│       ├── 01-fundamentos-nextjs.md
+│       ├── 02-desarrollo-fullstack.md
+│       ├── 03-autenticacion-autorizacion.md
+│       ├── 04-diseno-ui-ux.md
+│       ├── 05-despliegue-ia.md
 │       ├── capstone/
 │       └── resources/
 ├── capstone/

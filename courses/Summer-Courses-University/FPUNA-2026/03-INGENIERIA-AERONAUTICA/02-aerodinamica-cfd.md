@@ -1472,7 +1472,7 @@ REQUISITOS:
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 03 - Estructuras y Materiales](./03-structures-materials.md)
+**Continúa con**: [Módulo 03 - Estructuras y Materiales](./03-estructuras-materiales.md)
 
 ---
 

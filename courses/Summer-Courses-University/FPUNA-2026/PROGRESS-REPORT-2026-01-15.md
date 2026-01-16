@@ -31,7 +31,7 @@
 **Time**: 45 minutes (via specialized agent)
 
 **Deliverable**: 
-- File: `01-DESARROLLO-SOFTWARE/03-testing-tdd.md`
+- File: `01-DESARROLLO-SOFTWARE/03-pruebas-tdd.md`
 - **1,570 lines** of high-quality content (3x the minimum!)
 
 **Features**:
@@ -96,7 +96,7 @@
 **Modules**: 3/5
 - ✅ 01-arquitectura-software.md (580 lines)
 - ✅ 02-patrones-diseno.md (795 lines)
-- ✅ 03-testing-tdd.md (1,570 lines) ⭐ NEW
+- ✅ 03-pruebas-tdd.md (1,570 lines) ⭐ NEW
 - 🔴 04-codigo-limpio.md (28 lines) - NEXT
 - 🔴 05-diseno-sistemas.md (28 lines)
 

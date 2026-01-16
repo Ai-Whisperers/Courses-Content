@@ -75,7 +75,7 @@ Each track now has a clean, flat structure:
 ├── README.md                  # Track overview
 ├── 01-software-architecture.md
 ├── 02-design-patterns.md
-├── 03-testing-tdd.md
+├── 03-pruebas-tdd.md
 ├── 04-clean-code.md
 └── 05-system-design.md
 ```
@@ -85,9 +85,9 @@ Tracks with additional resources (07-QA, 08-WEB):
 07-QA-AUTOMATION/
 ├── README.md
 ├── 01-playwright-avanzado.md
-├── 02-api-testing.md
-├── 03-test-architecture.md
-├── 04-ci-cd-integration.md
+├── 02-pruebas-api.md
+├── 03-arquitectura-pruebas.md
+├── 04-integracion-ci-cd.md
 ├── 05-ia-para-qa.md
 ├── resources/                 # Track-specific resources
 │   ├── guia-rapida.md

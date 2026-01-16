@@ -1262,7 +1262,7 @@ Zod resuelve el problema de validación en runtime. TypeScript solo valida en co
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 03 - Arquitectura de Tests](./03-test-architecture.md)
+**Continúa con**: [Módulo 03 - Arquitectura de Tests](./03-arquitectura-pruebas.md)
 
 ---
 

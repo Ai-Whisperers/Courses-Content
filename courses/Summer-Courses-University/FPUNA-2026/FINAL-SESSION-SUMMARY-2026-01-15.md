@@ -29,7 +29,7 @@
 |--------|-------|----------|--------|
 | 01-arquitectura-software.md | 580 | 8 | ✅ Pre-existing |
 | 02-patrones-diseno.md | 795 | 6 | ✅ Pre-existing |
-| 03-testing-tdd.md | **1,570** | **10** | ✅ **NEW** |
+| 03-pruebas-tdd.md | **1,570** | **10** | ✅ **NEW** |
 | 04-codigo-limpio.md | **1,914** | **8** | ✅ **NEW** |
 | 05-diseno-sistemas.md | **1,369** | **20** | ✅ **NEW** |
 

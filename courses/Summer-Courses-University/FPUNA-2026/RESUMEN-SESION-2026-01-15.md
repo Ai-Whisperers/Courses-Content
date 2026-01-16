@@ -150,7 +150,7 @@ FPUNA-2026/
 ├── 01-DESARROLLO-SOFTWARE/             🟡 40% completo
 │   ├── 01-arquitectura-software.md     ✅
 │   ├── 02-patrones-diseno.md           ✅
-│   ├── 03-testing-tdd.md               ⏳ Pendiente (28 líneas)
+│   ├── 03-pruebas-tdd.md               ⏳ Pendiente (28 líneas)
 │   ├── 04-codigo-limpio.md             ⏳ Pendiente (28 líneas)
 │   ├── 05-diseno-sistemas.md           ⏳ Pendiente (28 líneas)
 │   ├── especializaciones/
@@ -203,7 +203,7 @@ FPUNA-2026/
 
 | Módulo | Líneas Actuales | Meta | Contenido |
 |--------|----------------|------|-----------|
-| `03-testing-tdd.md` | 28 | 500+ | Testing, TDD, Jest/Pytest |
+| `03-pruebas-tdd.md` | 28 | 500+ | Testing, TDD, Jest/Pytest |
 | `04-codigo-limpio.md` | 28 | 500+ | Clean Code, Refactoring |
 | `05-diseno-sistemas.md` | 28 | 500+ | System Design, Escalabilidad |
 
@@ -345,7 +345,7 @@ El curso ahora tiene **100% coherencia lingüística**:
 ## 📌 Notas para Próxima Sesión
 
 ### Prioridad 1 (CRÍTICO)
-- [ ] Completar `03-testing-tdd.md`
+- [ ] Completar `03-pruebas-tdd.md`
 - [ ] Completar `04-codigo-limpio.md`
 - [ ] Completar `05-diseno-sistemas.md`
 

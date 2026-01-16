@@ -33,7 +33,7 @@ Completar el curso FPUNA-2026 de "Desarrollo Aumentado con IA" para su lanzamien
 
 ### 🟡 En Progreso (23%)
 - **Software Development**: 3/5 módulos restantes
-  - 🔴 03-testing-tdd.md (28 líneas → necesita 500+)
+  - 🔴 03-pruebas-tdd.md (28 líneas → necesita 500+)
   - 🔴 04-codigo-limpio.md (28 líneas → necesita 500+)
   - 🔴 05-diseno-sistemas.md (28 líneas → necesita 500+)
 

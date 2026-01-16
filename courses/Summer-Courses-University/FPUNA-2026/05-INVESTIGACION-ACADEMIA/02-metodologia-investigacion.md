@@ -1393,4 +1393,4 @@ Pero SIEMPRE vos sos el responsable de:
 
 **¿Preguntas?** Consulta con tu instructor o en Slack #research-academia-2026
 
-**Próximo módulo:** [03 - Análisis de Datos y Visualización](./03-data-analysis.md)
+**Próximo módulo:** [03 - Análisis de Datos y Visualización](./03-analisis-datos.md)
