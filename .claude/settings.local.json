@@ -226,5 +226,10 @@
         ]
       }
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "playwright",
+    "document-analyzer"
+  ],
+  "enableAllProjectMcpServers": true
 }
