@@ -22,6 +22,52 @@ Al terminar este módulo, tendrás:
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Módulo 01 Completado** (OBLIGATORIO)
+- OpenCode instalado y funcionando
+- Oh My OpenCode instalado
+- API Key configurada
+
+✅ **Habilidades Básicas**
+- Abrir y editar archivos de texto
+- Navegar carpetas en tu computadora
+- Copiar y pegar texto
+
+❌ **NO Se Requiere**
+- Programación avanzada
+- Conocimiento de YAML/JSON
+- Experiencia previa con configuración
+
+### Software Necesario
+
+Ya lo tienes del Módulo 01:
+- ✅ OpenCode CLI funcionando
+- ✅ Oh My OpenCode instalado
+- ✅ Editor de texto (VS Code, Notepad++, o similar)
+
+### Auto-Evaluación
+
+Responde SÍ/NO:
+1. ¿Completaste el Módulo 01 satisfactoriamente?
+2. ¿Puedes ejecutar `opencode --version` sin errores?
+3. ¿Sabes cómo abrir y editar archivos de texto?
+4. ¿Tienes 2 horas dedicadas sin interrupciones?
+
+**Si respondiste SÍ a todo**: ¡Estás listo! Continúa.  
+**Si algún NO**: Completa Módulo 01 primero.
+
+### Checklist Final
+
+- [ ] Módulo 01 completado
+- [ ] OpenCode funciona (`opencode --version` responde)
+- [ ] Editor de texto instalado
+- [ ] Tengo 2 horas disponibles
+
+---
+
 ## 🤔 Concepto Central: Los 4 Pilares de Configuración
 
 ### Analogía: Configurar una Cafetería
@@ -1158,6 +1204,154 @@ Para profundizar:
 - 📧 **Email**: soporte-core@fpuna.edu.py
 - 🕐 **Horario de consulta**: Lunes-Viernes 14:00-16:00
 - 👥 **Asistentes**: Disponibles durante clase
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20 minutos
+- **Aprobación**: 7/10 o más
+- **Tipo**: Opción múltiple, verdadero/falso, respuesta corta
+
+---
+
+### Preguntas
+
+**1. ¿Cuáles son los 4 pilares de configuración de OpenCode?**
+a) Instalación, Configuración, Uso, Desinstalación  
+b) MCPs, Skills, Hooks, Rules  
+c) GitHub, GitLab, Bitbucket, Azure  
+d) Node, Python, Ruby, Go  
+
+**2. ¿Qué son los MCPs (Model Context Protocol)?**
+a) Errores de programación  
+b) Conexiones que permiten a OpenCode hablar con otras herramientas (Git, archivos, etc.)  
+c) Lenguajes de programación  
+d) Comandos de terminal  
+
+**3. Verdadero o Falso: Los Skills son plantillas pre-hechas para tareas comunes.**
+
+**4. ¿Dónde se guardan las configuraciones de OpenCode?**
+a) En `C:\Windows\System32\`  
+b) En la carpeta `~/.opencode/`  
+c) En Google Drive  
+d) En la nube de Anthropic  
+
+**5. ¿Qué hace un Hook de tipo "PreToolUse"?**
+a) Se ejecuta ANTES de que la IA use una herramienta  
+b) Se ejecuta DESPUÉS de usar una herramienta  
+c) Instala herramientas nuevas  
+d) Elimina archivos  
+
+**6. Explica en 2-3 oraciones la diferencia entre un Skill y un MCP.**
+
+**7. ¿Cuál archivo contiene las reglas automáticas de comportamiento?**
+a) `config.json`  
+b) `mcp-servers.json`  
+c) `rules.yaml`  
+d) `package.json`  
+
+**8. Verdadero o Falso: Las Rules pueden aplicarse solo a archivos específicos usando patrones como "**/*.py".**
+
+**9. Si tu MCP de Git no funciona, ¿cuál es el PRIMER lugar donde verificar?**
+a) Reinstalar Windows  
+b) Verificar el archivo `mcp-servers.json` y que Git esté instalado  
+c) Llamar a soporte técnico de Microsoft  
+d) Borrar todo y empezar de nuevo  
+
+**10. Menciona 2 ejemplos de tareas que podrías automatizar usando Hooks (respuesta abierta).**
+
+---
+
+### Respuestas
+
+**1. b) MCPs, Skills, Hooks, Rules**
+
+Los 4 pilares de configuración son: MCPs (conexiones externas), Skills (plantillas), Hooks (automatización), y Rules (reglas de comportamiento). Es la base del diagrama de la "cafetería".
+
+---
+
+**2. b) Conexiones que permiten a OpenCode hablar con otras herramientas (Git, archivos, etc.)**
+
+MCPs (Model Context Protocol) son como "enchufes" que conectan OpenCode con otras aplicaciones: Git para código, sistemas de archivos, bases de datos, etc. Permiten que la IA interactúe con el mundo exterior.
+
+---
+
+**3. Verdadero**
+
+Skills son exactamente eso: plantillas o "recetas" pre-hechas para tareas comunes (crear APIs, tests, documentación, etc.). Se instalan en `~/.opencode/skills/` y se invocan con comandos slash.
+
+---
+
+**4. b) En la carpeta `~/.opencode/`**
+
+Todas las configuraciones de OpenCode viven en `~/.opencode/` (en Windows: `C:\Users\TuUsuario\.opencode\`). Ahí están `config.json`, `mcp-servers.json`, `skills/`, `hooks.yaml`, y `rules.yaml`.
+
+---
+
+**5. a) Se ejecuta ANTES de que la IA use una herramienta**
+
+Un Hook de tipo "PreToolUse" es un evento que se dispara ANTES de que OpenCode ejecute una herramienta. Por ejemplo, puede verificar permisos antes de editar archivos sensibles.
+
+---
+
+**6. Respuesta Modelo:**
+
+"Un Skill es una plantilla pre-hecha para generar código o proyectos completos (como recetas). Un MCP es una conexión que permite a OpenCode interactuar con herramientas externas (como Git o bases de datos). Skills generan contenido, MCPs habilitan conexiones."
+
+**Criterios**:
+- Diferencia Skills = plantillas/generación (0.5 puntos)
+- Diferencia MCPs = conexiones/interacción (0.5 puntos)
+- Claridad en la explicación (0.5 puntos)
+
+**Puntaje**: 1.5/1.5
+
+---
+
+**7. c) `rules.yaml`**
+
+El archivo `rules.yaml` contiene las reglas automáticas de comportamiento que OpenCode aplica según el contexto (tipo de archivo, ubicación, etc.).
+
+---
+
+**8. Verdadero**
+
+Las Rules pueden usar patrones glob como `**/*.py` (todos los archivos Python), `src/**/*.ts` (TypeScript en src), etc. Esto permite aplicar reglas solo a archivos específicos.
+
+---
+
+**9. b) Verificar el archivo `mcp-servers.json` y que Git esté instalado**
+
+Cuando un MCP no funciona, primero verifica: (1) que el MCP esté correctamente configurado en `mcp-servers.json`, (2) que la herramienta externa (Git) esté instalada y accesible desde terminal. Luego reinicia OpenCode.
+
+---
+
+**10. Respuesta Modelo (ejemplos válidos):**
+
+- "Agregar automáticamente encabezados con copyright a nuevos archivos y formatear código antes de commits"
+- "Ejecutar tests automáticamente después de crear funciones nuevas y generar documentación"
+- "Validar que no haya secretos en el código antes de guardar y mantener un log de cambios"
+
+**Criterios**:
+- Menciona 2 automatizaciones distintas (1 punto)
+- Son realistas y útiles (1 punto)
+
+**Puntaje**: 2/2
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación | Interpretación |
+|-------|--------------|----------------|
+| 9-10 | Excelente | Configuración dominada, listo para workflows avanzados |
+| 7-8 | Bueno | Comprensión sólida de los 4 pilares |
+| 5-6 | Suficiente | Revisar MCPs y Hooks |
+| 0-4 | Insuficiente | Repasar todo el módulo con ejercicios prácticos |
+
+**Notas**: Preguntas 6 y 10 valen 1.5 y 2 puntos respectivamente. Total: 10 puntos exactos.
 
 ---
 
