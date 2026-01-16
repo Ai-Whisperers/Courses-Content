@@ -32,6 +32,146 @@ En Paraguay, marcas como **Tigo**, **Personal** y **Visión Banco** toman decisi
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Marketing Digital Básico**:
+- Conceptos de marketing digital (no es necesario ser experto)
+- Entiendes qué es una "conversión" y un "embudo de ventas"
+- Has usado redes sociales para promocionar algo (aunque sea informal)
+- **Verificación**: ¿Sabes qué significa "tasa de conversión"? (conversiones / visitantes)
+
+✅ **Computación Básica**:
+- Sabes copiar/pegar código
+- Puedes seguir instrucciones paso a paso
+- Tienes acceso a una computadora (no tablet/celular para trabajo práctico)
+- **Verificación**: ¿Te sientes cómodo siguiendo tutoriales en video o texto?
+
+❌ **NO SE REQUIERE**:
+- Programación previa
+- Experiencia con analytics
+- Conocimiento de estadística avanzada
+- Diseño gráfico
+
+### Software y Cuentas Necesarias (100% GRATIS)
+
+Antes de empezar, necesitarás crear estas cuentas:
+
+#### 1. Google Analytics 4 (Obligatorio)
+- [ ] **Cuenta Google** existente o nueva
+- [ ] **Propiedad GA4** creada
+  - **Paso 1**: Ir a https://analytics.google.com
+  - **Paso 2**: Crear cuenta > Crear propiedad
+  - **Paso 3**: Configurar:
+    - Nombre: "Práctica FPUNA 2026"
+    - Zona horaria: GMT-4 (Paraguay)
+    - Moneda: PYG (Guaraníes)
+
+**Tiempo**: 10 minutos  
+**Costo**: Gratis (hasta 10M eventos/mes)
+
+#### 2. Google Data Studio / Looker Studio (Obligatorio)
+- [ ] Misma cuenta Google que Analytics
+- [ ] Ir a: https://datastudio.google.com
+- [ ] Explorar templates disponibles (familiarízate 5 min)
+
+**Tiempo**: 5 minutos  
+**Costo**: 100% gratis, sin límites
+
+#### 3. Sitio Web para Practicar (Requerido)
+
+Necesitas un sitio web donde instalar GA4 para practicar.
+
+**Opción A - Tienes sitio web propio**: ✅ Usarás ese  
+**Opción B - No tienes**: Crea uno gratis con:
+- **Google Sites** (más fácil): sites.google.com
+- **Wix** (plan gratis): wix.com
+- **WordPress.com** (plan gratis): wordpress.com
+
+**Tiempo**: 15-30 minutos para crear sitio básico  
+**Costo**: Gratis
+
+**💡 Tip**: Si solo quieres aprender sin sitio real, puedes usar la [Demo Account de GA4](https://support.google.com/analytics/answer/6367342) que Google provee.
+
+#### 4. Google Optimize (Opcional - Para A/B Testing Parte 3)
+- [ ] Ir a: https://optimize.google.com
+- [ ] Conectar con tu cuenta GA4
+- [ ] Crear contenedor de experimento
+
+**Tiempo**: 10 minutos  
+**Costo**: Gratis  
+**Nota**: Opcional. Puedes hacer Parte 3 conceptualmente sin implementar.
+
+### Verificación de Software
+
+Si vas a usar Python para análisis avanzado (OPCIONAL):
+
+```bash
+# Verificar Python instalado (opcional)
+python --version  # Debe ser 3.8 o superior
+
+# Instalar librerías necesarias (opcional)
+pip install pandas scipy prophet matplotlib
+```
+
+**⚠️ Nota importante**: Python es OPCIONAL. Puedes completar todo el módulo usando solo herramientas web (GA4, Data Studio, Google Optimize). Python solo se usa para análisis avanzado al final.
+
+### Auto-Evaluación
+
+Responde SÍ/NO (necesitas al menos 3 de 4 SÍes para continuar cómodamente):
+
+1. **¿Entiendes qué es un KPI (indicador clave de desempeño)?**  
+   SÍ / NO  
+   *Ejemplo*: Tasa de conversión, ingresos mensuales, costo por lead
+
+2. **¿Tienes cuenta Google y acceso para crear Google Analytics?**  
+   SÍ / NO  
+   *Si NO*: Crea una ahora en gmail.com (5 minutos)
+
+3. **¿Tienes sitio web O estás dispuesto a crear uno gratis para practicar?**  
+   SÍ / NO  
+   *Si NO*: Usa Google Sites (15 min setup) o Demo Account de GA4
+
+4. **¿Estás dispuesto a experimentar con código (copiar/pegar)?**  
+   SÍ / NO  
+   *Si NO*: Está bien, el módulo incluye muchas opciones no-code también
+
+### Si Respondiste NO a 2+ Preguntas
+
+**🛑 No te preocupes**. Acción recomendada:
+
+1. **Si no entiendes KPIs**: Lee "Módulo 01: AI-Powered Content Creation" primero (intro a marketing digital)
+2. **Si no tienes cuenta Google**: Crea una ahora (gmail.com, 5 min)
+3. **Si no tienes sitio web**: Opciones:
+   - Usa Google Sites (15 min para crear)
+   - Usa Demo Account de GA4 (solo lectura, pero funcional)
+4. **Si temes al código**: El 80% del módulo es visual (no-code). Las partes de código son opcionales.
+
+### Tiempo Estimado
+
+- **Con prerrequisitos listos**: 4 horas (módulo completo)
+- **Con setup necesario (GA4, sitio web, etc.)**: +1 hora
+- **Proyecto final (dashboard ejecutivo)**: +3 horas extra-clase
+
+**Total recomendado**: Dedica **2-3 días** a este módulo para absorber y practicar conceptos.
+
+### Checklist Final Antes de Empezar
+
+- [ ] Cuenta Google creada
+- [ ] Google Analytics 4 property configurada (o Demo Account lista)
+- [ ] Sitio web listo (propio, demo, o creado en Google Sites)
+- [ ] Google Data Studio explorado brevemente
+- [ ] 4 horas disponibles en tu agenda
+- [ ] Laptop/desktop disponible (no celular para trabajo práctico)
+- [ ] Actitud experimental (vas a aprender haciendo)
+
+**Si marcaste todos ✅**: ¡Estás 100% listo para dominar data-driven marketing! 🚀
+
+**Si falta alguno**: Invierte 30-60 minutos en completar setup. Vale la pena—estas herramientas son estándar de industria y 100% gratuitas.
+
+---
+
 ## 📊 Flujo de Trabajo Data-Driven
 
 ```mermaid
@@ -241,6 +381,8 @@ Incluye:
 
 ---
 
+**🎯 Transición**: Ahora que dominas Google Analytics 4 y sabes qué métricas importan, el siguiente paso es entender **quiénes** son tus usuarios. No todos los visitantes son iguales—algunos están listos para comprar, otros solo exploran. La segmentación te permite agrupar usuarios con características similares para personalizar tu marketing y multiplicar resultados.
+
 ## 👥 Parte 2: Segmentación de Audiencias (60 minutos)
 
 ### 2.1 ¿Qué es Segmentación?
@@ -393,6 +535,8 @@ Contexto: Paraguay, e-commerce de electrónica, target 18-55 años
 ```
 
 ---
+
+**🎯 Transición**: Tienes datos (GA4), entiendes a tus audiencias (segmentación), pero ¿cómo sabes qué cambios realmente funcionan? Aquí entra el A/B testing—el método científico del marketing. En lugar de adivinar, probarás hipótesis con experimentos controlados para tomar decisiones basadas en evidencia estadística.
 
 ## 🧪 Parte 3: A/B Testing y Experimentación (90 minutos)
 
@@ -604,6 +748,8 @@ ANALYTICS: Google Analytics 4
 
 ---
 
+**🎯 Transición**: Has recolectado datos, segmentado audiencias, y optimizado con A/B tests. Pero comunicar estos insights a tu jefe o cliente de forma clara es crítico. Los dashboards automatizados transforman datos complejos en visualizaciones accionables que cualquiera puede entender de un vistazo.
+
 ## 📊 Parte 4: Reportes y Dashboards Automatizados (30 minutos)
 
 ### 4.1 Google Data Studio (Looker Studio)
@@ -722,6 +868,304 @@ Verifica que puedes hacer lo siguiente sin ayuda:
 
 ---
 
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **10 preguntas** para validar tu comprensión del módulo
+- **Tiempo sugerido**: 25 minutos
+- **Respuestas** con explicaciones detalladas al final
+- **Aprobación**: 6+ correctas (60%)
+
+---
+
+### Preguntas
+
+#### 1. Google Analytics 4 Basics (Opción Múltiple)
+
+¿Cuál es la principal diferencia entre Universal Analytics (versión antigua) y Google Analytics 4?
+
+a) UA es gratis, GA4 es de pago  
+b) UA se basa en sesiones/pageviews, GA4 en eventos/parámetros  
+c) UA soporta apps móviles, GA4 solo web  
+d) GA4 no tiene integración con Google Ads
+
+---
+
+#### 2. KPIs Interpretation (Opción Múltiple)
+
+Para un e-commerce en Paraguay, tienes estos datos:
+- 1,000 visitantes
+- 25 conversiones (compras)
+- Ingresos: ₲5,000,000
+
+¿Cuál es la tasa de conversión?
+
+a) 2.5%  
+b) 25%  
+c) 0.25%  
+d) 250%
+
+---
+
+#### 3. Segmentation (Opción Múltiple)
+
+¿Cuál de estos es un ejemplo de segmentación COMPORTAMENTAL?
+
+a) Usuarios de 25-34 años en Asunción  
+b) Usuarios que visitaron 3+ veces sin comprar  
+c) Usuarios que usan iPhone  
+d) Usuarios con interés en deportes
+
+---
+
+#### 4. A/B Testing Fundamentals (Verdadero/Falso)
+
+**Afirmación**: En un A/B test, puedes cambiar múltiples variables simultáneamente (ej: color del botón Y texto del título) para obtener resultados más rápido.
+
+**VERDADERO / FALSO**
+
+---
+
+#### 5. Statistical Significance (Opción Múltiple)
+
+Realizaste un A/B test con estos resultados:
+- Versión A: 50 conversiones de 1,000 visitas (5%)
+- Versión B: 65 conversiones de 1,000 visitas (6.5%)
+- P-value: 0.08
+
+¿Qué debes hacer?
+
+a) Implementar B inmediatamente - es 30% mejor  
+b) Continuar el test - no hay significancia estadística aún  
+c) Descartar B - no funciona  
+d) Probar una versión C diferente
+
+---
+
+#### 6. Code Analysis (Respuesta Corta)
+
+```javascript
+gtag('event', 'purchase_intent', {
+  'event_category': 'E-commerce',
+  'event_label': 'Botón Comprar',
+  'value': 350000
+});
+```
+
+**Pregunta**: ¿Qué hace este código? Explica cuándo se debería ejecutar.
+
+---
+
+#### 7. Dashboard Metrics (Opción Múltiple)
+
+Para un dashboard ejecutivo mensual, ¿cuál de estas métricas es MENOS importante para un e-commerce?
+
+a) Tasa de conversión  
+b) Ingresos totales  
+c) Número de páginas del sitio  
+d) Fuentes de tráfico más rentables
+
+---
+
+#### 8. Customer Journey (Verdadero/Falso)
+
+**Afirmación**: En el customer journey mapping, identificar "puntos de dolor" (pain points) ayuda a priorizar qué optimizar primero en el embudo de conversión.
+
+**VERDADERO / FALSO**
+
+---
+
+#### 9. Real-World Scenario (Opción Múltiple)
+
+Tu cliente (e-commerce Paraguay) tiene estos datos:
+- Bounce rate: 75%
+- Tiempo promedio en sitio: 0:45 segundos
+- Conversión: 0.8%
+
+¿Cuál es el problema más probable?
+
+a) Precios muy altos  
+b) Tráfico de baja calidad o landing page irrelevante  
+c) Falta de productos  
+d) Envío muy caro
+
+---
+
+#### 10. OpenCode Automation (Respuesta Corta)
+
+Menciona **2 tareas** de marketing analytics que puedes automatizar con OpenCode según el módulo.
+
+---
+
+### 📋 Respuestas y Explicaciones
+
+#### 1. Correcta: **b) UA se basa en sesiones/pageviews, GA4 en eventos/parámetros**
+
+**Explicación**: La diferencia fundamental es el modelo de datos:
+- **Universal Analytics**: Tracking basado en sesiones y pageviews (visitas a páginas)
+- **Google Analytics 4**: Todo es un evento (page_view, click, scroll, etc.) con parámetros customizables
+
+GA4 también integra web + app, tiene ML predictivo, y exploración flexible. Ambos son gratuitos hasta cierto volumen.
+
+---
+
+#### 2. Correcta: **a) 2.5%**
+
+**Explicación**: 
+```
+Tasa de conversión = (Conversiones / Visitantes) × 100
+= (25 / 1,000) × 100
+= 2.5%
+```
+
+Esto está dentro del rango saludable para e-commerce en Paraguay (2-4% según el módulo). Si tuvieras 0.25%, sería preocupante. 25% sería extraordinario (casi imposible).
+
+---
+
+#### 3. Correcta: **b) Usuarios que visitaron 3+ veces sin comprar**
+
+**Explicación**:
+- **a)** = Demográfica (edad, ubicación)
+- **b)** = Comportamental ✅ (acciones en el sitio)
+- **c)** = Tecnográfica (dispositivo)
+- **d)** = Psicográfica (intereses)
+
+**Comportamental** = lo que HACEN, no quiénes SON o qué dispositivo usan.
+
+---
+
+#### 4. Correcta: **FALSO**
+
+**Explicación**: Regla de oro del A/B testing: **cambiar UNA variable a la vez**.
+
+Si cambias color Y texto, y B gana, no sabes QUÉ causó la mejora:
+- ¿Solo el color?
+- ¿Solo el texto?
+- ¿La combinación?
+
+Esto invalida el experimento. Tests secuenciales (primero color, luego texto) son correctos.
+
+---
+
+#### 5. Correcta: **b) Continuar el test - no hay significancia estadística aún**
+
+**Explicación**: 
+- **P-value 0.08 > 0.05** (umbral estándar)
+- Hay 8% probabilidad de que la diferencia sea por azar
+- Necesitas **p < 0.05** (95% confianza) para declarar ganador
+- **Solución**: Continuar test hasta alcanzar más visitas/conversiones
+
+**Error común**: Implementar B solo porque "es 30% mejor" sin significancia estadística = decisión prematura.
+
+---
+
+#### 6. Respuesta Completa:
+
+**Qué hace**: Este código envía un evento customizado llamado `purchase_intent` a Google Analytics 4 con:
+- **Categoría**: E-commerce
+- **Etiqueta**: Botón Comprar
+- **Valor**: ₲350,000 (precio del producto)
+
+**Cuándo ejecutar**: Cuando el usuario hace clic en el botón "Comprar" (antes de completar la compra real). 
+
+**Por qué es útil**: Mide la **intención de compra**, no la compra confirmada. Si muchos `purchase_intent` pero pocas compras reales, significa hay problema en el proceso de checkout (abandono de carrito).
+
+---
+
+#### 7. Correcta: **c) Número de páginas del sitio**
+
+**Explicación**: 
+- **a, b, d** = Métricas de negocio críticas que impactan ROI
+- **c** = Métrica operativa/técnica, no ayuda a decisiones de marketing
+
+Dashboard ejecutivo debe enfocarse en KPIs accionables:
+- Tasa de conversión → saber si optimizar
+- Ingresos → medir crecimiento
+- Fuentes rentables → decidir presupuesto
+
+**Número de páginas** es información interna sin impacto en estrategia.
+
+---
+
+#### 8. Correcta: **VERDADERO**
+
+**Explicación**: Customer journey mapping identifica:
+- ✅ **Puntos de dolor** (pain points) - donde usuarios se frustran/abandonan
+- ✅ **Momentos de alegría** (delight) - lo que funciona bien
+
+**Priorizar puntos de dolor** da mayor ROI que optimizar lo que ya funciona.
+
+**Ejemplo del módulo**:
+- Pain point: "Costos de envío sorpresivos" → 18% abandono
+- Solución: Mostrar "Envío gratis desde ₲200K"
+- Resultado: +15% conversión
+
+---
+
+#### 9. Correcta: **b) Tráfico de baja calidad o landing page irrelevante**
+
+**Explicación**: Los síntomas indican problema INMEDIATO:
+- **Bounce rate 75%** = muy alto (saludable 40-60%)
+- **0:45 segundos** = ni leen nada
+- **0.8% conversión** = terrible (esperado 2-4%)
+
+Usuarios se van INMEDIATAMENTE sin explorar → NO es problema de precio/envío (esos los ven después).
+
+**Causas probables**:
+- Anuncios engañosos (prometen algo diferente)
+- Landing page no coincide con expectativa del anuncio
+- Tráfico bot o irrelevante
+- Sitio muy lento (frustración)
+
+**Solución**: Auditar fuentes de tráfico y revisar relevancia de landing page.
+
+---
+
+#### 10. Ejemplo de Respuesta Completa (2 tareas):
+
+**Tarea 1: Análisis Automático de Datos GA4**
+- Exportar CSV mensual de GA4
+- Pedirle a OpenCode: análisis estadístico, identificar patrones, dar 3 recomendaciones
+- Output: Insights accionables + proyecciones de ingresos
+
+**Tarea 2: Reportes Semanales Automatizados**
+- Script Python que se conecta a GA4 API cada lunes
+- Extrae métricas clave (usuarios, conversión, ingresos)
+- Genera PDF profesional + email HTML + actualiza Google Sheet
+- Envía automáticamente a stakeholders
+
+**Otras válidas**: 
+- Segmentación con clustering (identificar 4-5 segmentos naturales)
+- Setup completo de A/B test (HTML + tracking + cálculo significancia)
+- Forecasting con Prophet (predecir ventas próximos 30 días)
+
+---
+
+### Criterios de Aprobación
+
+| Puntaje | Nivel | Acción Recomendada |
+|---------|-------|-------------------|
+| **9-10 correctas** | ✅ Excelente | Continúa con Módulo 03 |
+| **7-8 correctas** | ✅ Bueno | Continúa, refuerza áreas débiles |
+| **6 correctas** | ⚠️ Aprobado | Revisa preguntas falladas antes de continuar |
+| **< 6 correctas** | ❌ No aprobado | Debes revisar el módulo completo |
+
+---
+
+### Próximos Pasos
+
+✅ **Si aprobaste (6+)**: ¡Felicitaciones! Continúa con **Módulo 03 - Automatización de Redes Sociales**
+
+⚠️ **Si no aprobaste**: No te desanimes. Identifica los temas donde fallaste:
+- **Preguntas 1-2**: Revisa Parte 1 (Google Analytics 4, KPIs)
+- **Preguntas 3-4**: Revisa Parte 2 (Segmentación, customer journey)  
+- **Preguntas 5-9**: Revisa Parte 3 (A/B testing, significancia estadística)
+- **Pregunta 10**: Revisa los prompts de OpenCode en cada sección del módulo
+
+Luego, intenta el quiz nuevamente. Data-driven marketing es una habilidad crítica que vale la pena dominar.
+
+---
+
 ## 📚 Recursos Recomendados
 
 ### Herramientas Gratuitas
@@ -835,8 +1279,13 @@ Donde:
 
 **Con OpenCode (Python + Prophet)**:
 
+**Instalación necesaria**:
+```bash
+pip install pandas prophet matplotlib
+```
+
 ```python
-from fbprophet import Prophet
+from prophet import Prophet  # Nota: librería actualizada (antes era fbprophet)
 import pandas as pd
 
 # Cargar datos históricos
