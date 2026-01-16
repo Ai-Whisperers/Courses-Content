@@ -22,6 +22,44 @@ En esta sesión, el instructor creará:
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Módulos 01-04 COMPLETADOS** (CRÍTICO)
+- Módulo 01: OpenCode instalado
+- Módulo 02: MCPs, Skills, Hooks configurados
+- Módulo 03: Ingeniería de prompts
+- Módulo 04: Ingeniería de contexto (CLAUDE.md)
+
+✅ **Preparación Mental**
+- Mentalidad de observación activa (tomar notas)
+- Preguntas preparadas para Q&A
+- Disposición a ver código en tiempo real
+
+❌ **NO Se Requiere**
+- Experiencia previa en desarrollo
+- Saber programar antes del demo
+- Entender todo el código al instante
+
+### Durante el Demo
+
+**Qué Traer**:
+- 📓 Cuaderno o laptop para notas
+- ❓ Lista de preguntas preparadas
+- 👀 Atención completa (sin distracciones)
+
+### Auto-Evaluación
+
+- [ ] Completé Módulos 01-04
+- [ ] Entiendo conceptos de prompts y contexto
+- [ ] Tengo 1.5 horas sin interrupciones
+- [ ] Estoy listo para observar activamente
+
+**Si todo ✅**: ¡Disfruta el demo!
+
+---
+
 ## 🤔 ¿Por Qué Este Módulo es Importante?
 
 ### Analogía: Aprender a Cocinar
@@ -953,6 +991,154 @@ Después del demo, verifica que entendiste:
 🚀 **Itera y mejora** - Primera versión → refinamiento  
 🚀 **Context matters** - Buenos archivos = mejor código  
 🚀 **Debug es normal** - Parte del desarrollo, no fracaso
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 15-20 minutos
+- **Aprobación**: 7/10 o más
+- **Tipo**: Basado en observaciones del demo
+
+---
+
+### Preguntas
+
+**1. ¿Cuál fue el PRIMER paso del instructor antes de escribir código?**
+a) Instalar Node.js  
+b) Planificar el proyecto y escribir requisitos  
+c) Empezar a programar inmediatamente  
+d) Crear el repositorio de GitHub  
+
+**2. ¿Para qué sirve el archivo `CLAUDE.md` que el instructor creó?**
+a) Para subir a producción  
+b) Para darle contexto del proyecto a OpenCode  
+c) Para documentación de usuario final  
+d) No es necesario, es opcional  
+
+**3. Verdadero o Falso: El instructor obtuvo código perfecto al primer intento sin necesidad de iterar.**
+
+**4. ¿Qué técnica usó el instructor para crear la app?**
+a) Generó TODO el código de una vez  
+b) Dividió en tareas pequeñas y fue paso a paso  
+c) Copió código de StackOverflow  
+d) Programó manualmente sin usar IA  
+
+**5. Cuando hubo un error, ¿qué hizo el instructor PRIMERO?**
+a) Reiniciar la computadora  
+b) Culpar a OpenCode  
+c) Revisar DevTools/console para entender el error  
+d) Empezar de nuevo desde cero  
+
+**6. Explica en 2-3 oraciones por qué el instructor usó prompts detallados en lugar de vagos.**
+
+**7. ¿Qué tecnologías usó el instructor para el proyecto?**
+a) React, TypeScript, MongoDB  
+b) HTML, CSS, JavaScript vanilla, LocalStorage  
+c) Python, Flask, PostgreSQL  
+d) PHP, MySQL, jQuery  
+
+**8. Verdadero o Falso: El instructor dijo que usar vanilla JavaScript en lugar de frameworks es porque los frameworks no sirven.**
+
+**9. ¿Cuánto tiempo le tomaría a un desarrollador junior hacer el mismo proyecto SIN IA según el instructor?**
+a) 30 minutos  
+b) 1.5 horas (igual que con IA)  
+c) 6-8 horas  
+d) 3 semanas  
+
+**10. Menciona 2 lecciones clave que aprendiste observando el demo en vivo.**
+
+---
+
+### Respuestas
+
+**1. b) Planificar el proyecto y escribir requisitos**
+
+El instructor PRIMERO planificó: definió qué hace la app, qué features tiene, qué tecnologías usar. Planificación antes de código es clave para no perderse a mitad del proyecto.
+
+---
+
+**2. b) Para darle contexto del proyecto a OpenCode**
+
+`CLAUDE.md` contiene el contexto completo del proyecto: descripción, stack, arquitectura, decisiones. OpenCode lo lee automáticamente y genera código consistente sin necesidad de explicar todo cada vez.
+
+---
+
+**3. Falso**
+
+El instructor tuvo que iterar y corregir varias veces. La IA NO genera código perfecto al primer intento - es normal tener que revisar, ajustar, y mejorar. Eso es parte del desarrollo.
+
+---
+
+**4. b) Dividió en tareas pequeñas y fue paso a paso**
+
+El instructor aplicó "divide y conquista": primero estructura HTML, luego estilos CSS, luego funciones JavaScript una a una, luego LocalStorage, etc. No todo de golpe.
+
+---
+
+**5. c) Revisar DevTools/console para entender el error**
+
+Cuando algo falló, el instructor abrió DevTools, miró la console para ver el error exacto, entendió QUÉ estaba mal, y LUEGO pidió a OpenCode que lo corrigiera con contexto específico.
+
+---
+
+**6. Respuesta Modelo:**
+
+"El instructor usó prompts detallados porque OpenCode necesita contexto específico para generar código correcto. Prompts vagos como 'crea una función' producen resultados genéricos, mientras que prompts con nombre de función, parámetros, lógica, y validaciones producen código exactamente como lo necesitas."
+
+**Criterios**:
+- Menciona necesidad de especificidad/contexto (0.5)
+- Contrasta vago vs detallado (0.5)
+- Explica resultado/beneficio (0.5)
+
+**Puntaje**: 1.5/1.5
+
+---
+
+**7. b) HTML, CSS, JavaScript vanilla, LocalStorage**
+
+El instructor usó tecnologías web fundamentales SIN frameworks: HTML para estructura, CSS para estilos, JavaScript vanilla para lógica, y LocalStorage para persistencia. Simple pero poderoso.
+
+---
+
+**8. Falso**
+
+El instructor explicó que usó vanilla JavaScript para enseñar los FUNDAMENTOS primero. Los frameworks (React, Vue, etc.) son útiles, pero es mejor dominar las bases antes de usarlos. "Frameworks vienen después."
+
+---
+
+**9. c) 6-8 horas**
+
+El instructor mencionó que un desarrollador junior tardaría 6-8 horas en hacer la misma app sin IA. Con OpenCode: 90 minutos. Eso demuestra el poder de IA bien usada (no es magia, pero acelera mucho).
+
+---
+
+**10. Respuesta Modelo (ejemplos válidos):**
+
+- "Aprendí que planificar antes de codear es crítico, y que iterar/corregir es normal, no fracaso"
+- "Vi la importancia de dividir proyectos grandes en pasos pequeños y usar DevTools para debugging efectivo"
+- "Entendí que los prompts detallados producen mejor código y que el contexto (CLAUDE.md) ahorra tiempo"
+
+**Criterios**:
+- Menciona 2 lecciones distintas (1 punto)
+- Son lecciones legítimas del demo (1 punto)
+
+**Puntaje**: 2/2
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación |
+|-------|--------------|
+| 9-10 | Excelente - Captaste el workflow completo |
+| 7-8 | Bueno - Entiendes el proceso |
+| 5-6 | Suficiente - Revisa grabación del demo |
+| 0-4 | Insuficiente - Vuelve a ver el demo con atención |
+
+**Notas**: Preguntas 6 y 10 valen 1.5 y 2 puntos. Total: 10 puntos exactos.
 
 ---
 
