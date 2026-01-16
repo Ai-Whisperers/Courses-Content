@@ -54,6 +54,119 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Mecánica de Materiales** (Fundamental):
+- Esfuerzo (σ), deformación (ε), y Ley de Hooke
+- Diagramas de momento flector y cortante
+- Concepto de factor de seguridad
+- Esfuerzo de fluencia (σy) y resistencia última (σu)
+- **Verificación**: ¿Puedes calcular σ = F/A y ε = ΔL/L?
+
+✅ **Física y Matemáticas** (Fundamental):
+- Estática: suma de fuerzas, momentos, equilibrio
+- Cálculo: derivadas e integrales básicas
+- Álgebra lineal: vectores, matrices
+- Trigonometría: seno, coseno, tangente
+
+✅ **Conocimientos Aeronáuticos Básicos** (Recomendado):
+- Fuerzas en vuelo: sustentación, peso, empuje, arrastre
+- Partes de una aeronave: fuselaje, alas, empenaje
+- Factor de carga (n): relación entre sustentación y peso
+- Envolvente de vuelo básico
+
+❌ **NO Se Requiere**:
+- Experiencia con software FEA (se enseña desde cero)
+- Conocimiento avanzado de materiales compuestos
+- Licencia de piloto o experiencia en vuelo
+
+### Software Necesario (Todo Opcional)
+
+Este módulo incluye ejemplos de software profesional, pero **NO es obligatorio instalar**. Puedes completar el módulo con conocimientos teóricos.
+
+**Para FEA (Finite Element Analysis)** - Elige uno:
+- **ANSYS Workbench** (versión estudiante - gratis)
+  - [Descargar](https://www.ansys.com/academic/students)
+  - Registro con email .edu
+- **Fusion 360** (incluye FEA - gratis para estudiantes)
+  - [Descargar](https://www.autodesk.com/education/home)
+  - FEA integrado, más intuitivo
+- **CalculiX** (open source - gratis)
+  - [Descargar](http://www.calculix.de/)
+  - Linux/WSL recomendado
+
+**Para Cálculos y Análisis**:
+- **Python + numpy/scipy** (scripts de análisis)
+  - Ya instalado si completaste CORE-FOUNDATION
+- **Excel/LibreOffice Calc** (cálculos básicos)
+- **MATLAB** (opcional, si disponible en FPUNA)
+
+**Nota Importante**: Puedes completar el módulo sin software. Los conceptos estructurales son independientes de las herramientas. El software solo acelera cálculos repetitivos.
+
+### Módulos Previos Necesarios
+
+**Obligatorios**:
+- ✅ **00-CORE-FOUNDATION (Semana 1)** - OpenCode y herramientas AI
+- ✅ **Módulo 01: CAD con IA** - Para entender geometrías 3D de aeronaves
+- ✅ **Módulo 02: Aerodinámica CFD** - Para conocer cargas aerodinámicas que actúan sobre estructuras
+
+**Opcional pero Recomendado**:
+- Curso de Mecánica de Materiales (pregrado)
+
+### Auto-Evaluación
+
+Responde estas preguntas para verificar si estás listo:
+
+1. **¿Puedes calcular esfuerzo (σ = F/A) y deformación (ε = ΔL/L)?**  
+   SÍ / NO
+
+2. **¿Entiendes el diagrama de momento flector de una viga simple?**  
+   SÍ / NO
+
+3. **¿Sabes qué es factor de seguridad (FS) y por qué se usa en diseño?**  
+   SÍ / NO
+
+4. **¿Conoces las 4 fuerzas básicas en vuelo (sustentación, peso, empuje, arrastre)?**  
+   SÍ / NO
+
+5. **¿Puedes dedicar 4-5 horas a contenido técnico denso?**  
+   SÍ / NO
+
+**Interpretación**:
+- **4-5 SÍes**: ✅ Listo para comenzar
+- **3 SÍes**: ⚠️ Considera repasar mecánica de materiales (2-3 horas)
+- **< 3 SÍes**: ❌ Repasa fundamentos antes de continuar
+
+**Recursos de Repaso** (si necesitas):
+- [Khan Academy: Stress & Strain](https://www.khanacademy.org/science/physics)
+- [MIT OCW: Mechanics of Materials](https://ocw.mit.edu/)
+- Libro: "Mecánica de Materiales" - Beer & Johnston
+
+### Tiempo Estimado Total
+
+- **Contenido teórico**: 3-4 horas
+- **Ejercicios prácticos**: 1-2 horas
+- **Proyecto FEA (opcional)**: 4-6 horas adicionales
+
+**Total**: 4-12 horas (depende de profundidad)
+
+### Checklist Final
+
+Antes de comenzar, verifica:
+
+- [ ] He completado CORE-FOUNDATION (Semana 1)
+- [ ] He completado Módulos 01 y 02 del track Aero
+- [ ] Entiendo conceptos básicos de mecánica de materiales
+- [ ] Tengo 4+ horas disponibles para el módulo
+- [ ] (Opcional) He instalado software FEA
+- [ ] Tengo calculadora o Python para cálculos
+
+**Si marcaste todos los obligatorios (primeros 4)**: ¡Adelante! 🚀
+
+---
+
 ## 📊 El Triángulo del Diseño Estructural
 
 ```mermaid
@@ -307,6 +420,8 @@ mindmap
 
 ---
 
+**🎯 Transición**: Ahora que conoces los materiales aeroespaciales disponibles (aluminio, titanio, composites) y sus propiedades clave (σ/ρ, resistencia, rigidez), el siguiente paso crítico es entender **cómo calcular los esfuerzos** que actuarán sobre esos materiales en vuelo. Saber que el aluminio 7075-T6 resiste 572 MPa no sirve si no puedes determinar si tu estructura experimentará 50 MPa o 600 MPa. En esta parte, aprenderás a calcular esfuerzos bajo diferentes tipos de carga aeronáutica.
+
 ## 🔬 Parte 2: Análisis de Esfuerzos (60 min)
 
 ### Concepto: Cargas en Estructuras Aeronáuticas
@@ -524,6 +639,8 @@ TODO en español con explicaciones para estudiante de ingeniería"
 ```
 
 ---
+
+**🎯 Transición**: Los cálculos manuales de esfuerzos (Parte 2) funcionan bien para geometrías simples (vigas, cilindros), pero las estructuras aeronáuticas reales son **complejas**: largueros con agujeros de alivio, costillas con nervaduras, uniones remachadas, geometrías curvas. Para estas estructuras, los cálculos analíticos son imposibles o extremadamente imprecisos. Aquí entra el **Análisis por Elementos Finitos (FEA)**: el método computacional que permite simular estructuras arbitrariamente complejas con precisión profesional. En esta parte, aprenderás a usar FEA para validar tus diseños.
 
 ## 💻 Parte 3: Análisis FEA con ANSYS (90 min)
 
@@ -796,6 +913,8 @@ TODO en español para estudiantes FPUNA"
 
 ---
 
+**🎯 Transición**: Hasta ahora, has aprendido a **verificar** que una estructura es segura (materiales adecuados, esfuerzos calculados, FEA validado). Pero la ingeniería aeronáutica no se trata solo de seguridad—se trata de **eficiencia extrema**. ¿Tu estructura puede ser un 20% más liviana sin perder resistencia? ¿Existe una geometría mejor que no se te ocurrió? Aquí entra la **optimización estructural**: técnicas matemáticas y de IA que encuentran el diseño óptimo automáticamente. En esta parte, verás cómo la optimización topológica y el diseño generativo pueden revolucionar tu flujo de trabajo.
+
 ## 🎯 Parte 4: Optimización Estructural (30 min)
 
 ### Concepto: Diseño Óptimo
@@ -1003,6 +1122,8 @@ Contexto: Ala de UAV para agricultura en Paraguay, fabricación con CNC router"
 ```
 
 ---
+
+**🎯 Transición**: Las técnicas que has dominado hasta ahora (selección de materiales, cálculo de esfuerzos, FEA, optimización) cubren el **90% de los problemas estructurales** que encontrarás. Pero la ingeniería aeronáutica tiene desafíos únicos que requieren atención especial: el **pandeo** (colapso súbito bajo compresión), la **fatiga** (fallas tras miles de ciclos de carga), y las **uniones** (donde las piezas se conectan, creando concentraciones de esfuerzo). En esta parte final, aprenderás a manejar estos casos especiales que separan un diseño promedio de uno profesional.
 
 ## 🔧 Parte 5: Casos Especiales (30 min)
 
@@ -1332,6 +1453,316 @@ Llevarás tus estructuras diseñadas y las integrarás con sistemas de propulsi�
 3. **¿Cómo OpenCode puede ayudarte a aprender FEA más rápido?**
 
 **Comparte en Slack** (#ingenieria-aeronautica)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 25-30 minutos
+- **Aprobación**: 7+ respuestas correctas
+- **Propósito**: Verificar comprensión de estructuras aeronáuticas, materiales, y FEA
+
+**Nota**: Este quiz cubre los conceptos fundamentales del módulo. Puedes usar calculadora.
+
+---
+
+### Preguntas
+
+#### 1. Relación Resistencia-Peso (Múltiple Opción)
+
+¿Cuál material tiene la MEJOR relación resistencia-peso (σ/ρ) para aplicaciones aeronáuticas?
+
+a) Acero estructural (σ/ρ = 0.064)  
+b) Aluminio 7075-T6 (σ/ρ = 0.204)  
+c) Titanio Ti-6Al-4V (σ/ρ = 0.214)  
+d) Fibra de carbono (σ/ρ = 2.187)
+
+---
+
+#### 2. Factor de Seguridad (Múltiple Opción)
+
+En aviación civil (FAA/EASA), el factor de seguridad mínimo para estructuras primarias es:
+
+a) FS = 1.0 (sin margen)  
+b) FS = 1.5 (certificación aeronáutica)  
+c) FS = 3.0 (como construcción civil)  
+d) FS = 5.0 (máxima seguridad)
+
+---
+
+#### 3. Análisis FEA - Conceptual (Verdadero/Falso)
+
+**Afirmación**: "Un mesh más fino en FEA SIEMPRE produce resultados más precisos sin inconvenientes."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 4. Tipos de Esfuerzo (Múltiple Opción)
+
+Un larguero de ala bajo carga de sustentación experimenta principalmente:
+
+a) Esfuerzo de tensión puro  
+b) Esfuerzo de compresión puro  
+c) Esfuerzo de flexión (combinado tensión-compresión)  
+d) Esfuerzo cortante puro
+
+---
+
+#### 5. Criterio de Falla (Múltiple Opción)
+
+Para materiales dúctiles (como aluminio aeronáutico), el criterio de falla más usado es:
+
+a) Criterio de Esfuerzo Máximo (σmax < σy)  
+b) Criterio de von Mises (σvm < σy)  
+c) Criterio de Mohr-Coulomb  
+d) Criterio de Rankine
+
+---
+
+#### 6. Pandeo (Buckling) (Verdadero/Falso)
+
+**Afirmación**: "El pandeo SOLO ocurre en elementos bajo compresión, no en tensión."
+
+a) Verdadero  
+b) Falso
+
+---
+
+#### 7. Cálculo Práctico - Esfuerzo (Respuesta Corta)
+
+Una costilla de ala soporta una carga de 5000 N distribuida en un área de 200 cm² (0.02 m²).
+
+**Calcula el esfuerzo (σ) en MPa.**
+
+Fórmula: σ = F/A
+
+**Tu respuesta**: _______ MPa
+
+---
+
+#### 8. Materiales Compuestos (Múltiple Opción)
+
+¿Cuál es la PRINCIPAL ventaja de fibra de carbono vs aluminio en aviación?
+
+a) Mucho más barato  
+b) Más fácil de reparar  
+c) Relación resistencia-peso superior  
+d) Mejor resistencia a corrosión
+
+---
+
+#### 9. Normativas Aeronáuticas (Múltiple Opción)
+
+¿Qué normativa regula la aeronavegabilidad en Paraguay?
+
+a) FAA Part 25 (USA)  
+b) EASA CS-25 (Europa)  
+c) DINAC RAC 21 (Paraguay, basado en FAA)  
+d) ISO 9001 (calidad genérica)
+
+---
+
+#### 10. OpenCode para Estructuras (Respuesta Corta)
+
+Menciona **2 formas específicas** en que OpenCode puede acelerar el análisis estructural aeronáutico.
+
+**Ejemplo válido**: "Generar scripts de Python para calcular factores de seguridad automáticamente"
+
+**Tus respuestas**:
+1. _______________________________________
+2. _______________________________________
+
+---
+
+## 📋 Respuestas y Explicaciones
+
+### 1. Relación Resistencia-Peso
+**Respuesta correcta**: **d) Fibra de carbono (σ/ρ = 2.187)**
+
+**Explicación**: La fibra de carbono tiene la relación resistencia-peso más alta (2.187), aproximadamente **10x mejor** que el aluminio (0.204). Por eso es preferida en aeronaves modernas (Boeing 787, Airbus A350) donde el peso es crítico.
+
+**Comparación**:
+- Acero: 0.064 (muy pesado)
+- Aluminio: 0.204 (estándar histórico)
+- Titanio: 0.214 (ligeramente mejor que Al, pero caro)
+- Carbono: 2.187 (campeón indiscutible)
+
+---
+
+### 2. Factor de Seguridad
+**Respuesta correcta**: **b) FS = 1.5 (certificación aeronáutica)**
+
+**Explicación**: La aviación usa FS = 1.5 (FAA/EASA) porque:
+- Diseño basado en análisis riguroso (no solo empírico)
+- Control estricto de fabricación y materiales
+- Inspecciones periódicas obligatorias
+- Cada gramo cuenta (peso = combustible = costo)
+
+Construcción civil usa FS = 3-5 porque tiene más incertidumbres y no se inspecciona constantemente.
+
+---
+
+### 3. Análisis FEA - Mesh Fino
+**Respuesta correcta**: **b) Falso**
+
+**Explicación**: Un mesh más fino:
+- ✅ **Sí** aumenta precisión (más elementos = más detalle)
+- ❌ **Pero** aumenta tiempo de cálculo exponencialmente
+- ❌ **Pero** aumenta uso de memoria (puede colapsar PC)
+- ❌ **Pero** puede introducir errores numéricos (ill-conditioning)
+
+**Balance óptimo**: Mesh fino en zonas críticas (concentración de esfuerzos), mesh grueso en zonas simples.
+
+---
+
+### 4. Tipos de Esfuerzo en Larguero
+**Respuesta correcta**: **c) Esfuerzo de flexión (combinado tensión-compresión)**
+
+**Explicación**: Un larguero bajo sustentación actúa como viga en flexión:
+- **Parte superior**: compresión (fibras acortadas)
+- **Parte inferior**: tensión (fibras alargadas)
+- **Eje neutro**: sin esfuerzo
+
+Esto es flexión pura, no tensión o compresión uniforme.
+
+---
+
+### 5. Criterio de Falla para Dúctiles
+**Respuesta correcta**: **b) Criterio de von Mises (σvm < σy)**
+
+**Explicación**: Para materiales dúctiles (aluminio, acero):
+- **von Mises** es el estándar industrial
+- Considera estado triaxial de esfuerzos
+- Predice falla por plasticidad (inicio de deformación permanente)
+
+**Fórmula**:
+```
+σvm = √(σx² - σxσy + σy² + 3τxy²) < σy
+```
+
+Criterio de Esfuerzo Máximo es más conservador pero menos preciso.
+
+---
+
+### 6. Pandeo (Buckling)
+**Respuesta correcta**: **a) Verdadero**
+
+**Explicación**: El pandeo es un fenómeno de **inestabilidad bajo compresión**:
+- Elementos esbeltos bajo compresión pueden fallar súbitamente (colapso lateral)
+- Carga crítica de Euler: Pcr = π²EI / L²
+- **NO ocurre en tensión** (tensión estabiliza la estructura)
+
+**Ejemplos aero**:
+- Paneles de fuselaje bajo presurización negativa
+- Montantes de tren de aterrizaje bajo carga de aterrizaje
+
+---
+
+### 7. Cálculo de Esfuerzo
+**Respuesta correcta**: **0.25 MPa**
+
+**Cálculo**:
+```
+Datos:
+F = 5000 N
+A = 200 cm² = 0.02 m²
+
+σ = F/A = 5000 N / 0.02 m² = 250,000 Pa = 0.25 MPa
+```
+
+**Conversión clave**: 1 MPa = 1,000,000 Pa
+
+**Interpretación**: 0.25 MPa es un esfuerzo MUY bajo (aluminio falla a ~500 MPa). Esta costilla está segura con FS >> 1000.
+
+---
+
+### 8. Ventaja Principal de Fibra de Carbono
+**Respuesta correcta**: **c) Relación resistencia-peso superior**
+
+**Explicación**:
+- **Resistencia-peso**: 10x mejor que aluminio (ventaja clave)
+- **Costo**: ❌ Mucho MÁS caro (~$30/kg vs $3/kg)
+- **Reparabilidad**: ❌ Más difícil (requiere autoclaves, técnicas especiales)
+- **Corrosión**: ✅ Mejor, pero no es la razón principal de uso
+
+**Trade-off**: Vale la pena en aviación comercial (ahorro combustible > costo inicial), pero no en aviación general pequeña.
+
+---
+
+### 9. Normativa en Paraguay
+**Respuesta correcta**: **c) DINAC RAC 21 (Paraguay, basado en FAA)**
+
+**Explicación**:
+- **DINAC** (Dirección Nacional de Aviación Civil) es la autoridad aeronáutica paraguaya
+- **RAC 21** (Reglamento Aeronáutico Civil 21): Certificación de productos aeronáuticos
+- Basado en FAA (USA) pero adaptado al contexto paraguayo
+- Requisitos similares a FAA Part 21, Part 25, etc.
+
+**En la práctica**: Para certificación internacional, aeronaves deben cumplir FAA O EASA además de DINAC.
+
+---
+
+### 10. OpenCode para Estructuras
+**Respuestas válidas** (ejemplo):
+
+1. **"Generar scripts de Python para calcular factores de seguridad automáticamente"**
+   - OpenCode puede escribir código para calcular FS en múltiples puntos de una estructura
+
+2. **"Automatizar generación de meshes en software FEA"**
+   - Scripts para crear meshes adaptativos, refinar zonas críticas
+
+3. **"Crear documentación técnica (informes FEA) automáticamente"**
+   - Formatear resultados, generar tablas, insertar imágenes
+
+4. **"Optimizar geometrías iterativamente (diseño generativo)"**
+   - Bucles de optimización: cambiar parámetro → FEA → evaluar → repetir
+
+5. **"Validar cálculos manuales con código Python"**
+   - Verificar fórmulas, detectar errores
+
+**Criterio**: Respuesta debe ser **específica** (no "ayuda con todo") y **técnicamente válida**.
+
+---
+
+## 📊 Criterios de Evaluación
+
+### Interpretación de Resultados
+
+| Puntaje | Calificación | Recomendación |
+|---------|--------------|---------------|
+| **9-10** | 🏆 Excelente | Dominio sólido. Listo para proyecto capstone. |
+| **7-8** | ✅ Aprobado | Comprensión buena. Repasa temas con 1-2 errores. |
+| **5-6** | ⚠️ Suficiente | Comprensión parcial. Repasa TODO el módulo antes de capstone. |
+| **< 5** | ❌ Insuficiente | Vuelve a estudiar módulo completo. Consulta instructor. |
+
+### Desglose por Tema
+
+| Preguntas | Tema | Peso |
+|-----------|------|------|
+| 1, 8 | Materiales Aeroespaciales | 20% |
+| 2, 6, 9 | Diseño Estructural y Normativas | 30% |
+| 3, 4, 5, 7 | Análisis FEA y Esfuerzos | 40% |
+| 10 | Aplicación de IA (OpenCode) | 10% |
+
+**Si fallas 2+ preguntas del mismo tema**: Repasa esa sección específica.
+
+### Próximos Pasos
+
+**Si aprobaste (7+)**:
+1. ✅ Continúa a Módulo 04 (Sistemas de Propulsión)
+2. ✅ Comienza a pensar en proyecto capstone
+3. ✅ Practica con software FEA (opcional pero recomendado)
+
+**Si no aprobaste (< 7)**:
+1. ⏸️ **Pausa** antes de seguir
+2. 📖 Repasa secciones donde fallaste
+3. 🤝 Consulta con instructor en office hours
+4. 🔄 Reintenta quiz (versión alternativa disponible)
 
 ---
 
