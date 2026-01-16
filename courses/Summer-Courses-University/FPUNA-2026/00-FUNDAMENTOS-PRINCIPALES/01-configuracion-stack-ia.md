@@ -667,6 +667,159 @@ Para profundizar más:
 
 ---
 
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 15-20 minutos
+- **Aprobación**: 7/10 o más
+- **Tipo**: Opción múltiple, verdadero/falso, respuesta corta
+
+---
+
+### Preguntas
+
+**1. ¿Cuál es el orden CORRECTO para instalar el stack de IA?**
+a) Oh My OpenCode → Node.js → OpenCode → API Key  
+b) Node.js → OpenCode → API Key → Oh My OpenCode  
+c) API Key → OpenCode → Node.js → Oh My OpenCode  
+d) OpenCode → Oh My OpenCode → Node.js → API Key  
+
+**2. ¿Qué es OpenCode?**
+a) Un navegador web  
+b) Un asistente de IA que ayuda con código y tareas  
+c) Una red social  
+d) Un sistema operativo  
+
+**3. Verdadero o Falso: Oh My OpenCode (OMO) funciona SIN necesidad de instalar OpenCode primero.**
+
+**4. ¿Dónde obtienes tu API Key de Claude?**
+a) En la página de OpenCode  
+b) En https://console.anthropic.com  
+c) No necesitas API Key  
+d) Se genera automáticamente al instalar  
+
+**5. ¿Cuál comando verifica si Node.js está instalado correctamente?**
+a) `npm --version`  
+b) `node check`  
+c) `node --version`  
+d) `opencode verify`  
+
+**6. Describe en 2-3 oraciones qué "superpoderes" le da Oh My OpenCode a OpenCode básico.**
+
+**7. ¿Cuál de estos NO es un requisito para instalar el stack de IA?**
+a) Tener computadora con Windows/Mac/Linux  
+b) Tener conexión a internet  
+c) Tener título universitario  
+d) Tener email válido  
+
+**8. Verdadero o Falso: Si OpenCode no responde, el PRIMER paso de troubleshooting es verificar la API Key.**
+
+**9. ¿Cuál es la diferencia entre OpenCode y Claude AI?**
+a) Son exactamente lo mismo  
+b) OpenCode es la aplicación en tu computadora, Claude AI es el "cerebro" en la nube  
+c) Claude AI es más viejo  
+d) OpenCode solo funciona en Windows  
+
+**10. Menciona 2 formas en las que podrías usar OpenCode en tu vida diaria/carrera (respuesta abierta).**
+
+---
+
+### Respuestas
+
+**1. b) Node.js → OpenCode → API Key → Oh My OpenCode**
+
+Este es el orden lógico de instalación: primero necesitas Node.js (base), luego instalas OpenCode, lo configuras con tu API Key para que funcione, y finalmente agregas Oh My OpenCode para superpoderes.
+
+---
+
+**2. b) Un asistente de IA que ayuda con código y tareas**
+
+OpenCode es tu asistente personal de inteligencia artificial que puede ayudarte con código, explicaciones, tareas repetitivas, y mucho más. No es un navegador, red social, ni sistema operativo.
+
+---
+
+**3. Falso**
+
+Oh My OpenCode es una EXTENSIÓN de OpenCode. Necesitas tener OpenCode instalado PRIMERO, y luego agregas OMO para darle funcionalidades adicionales (skills, hooks, MCPs).
+
+---
+
+**4. b) En https://console.anthropic.com**
+
+La API Key de Claude se obtiene creando una cuenta en Anthropic Console (https://console.anthropic.com), la empresa detrás de Claude AI.
+
+---
+
+**5. c) `node --version`**
+
+El comando `node --version` (o `node -v`) muestra la versión de Node.js instalada. Si responde con algo como "v18.x.x", está instalado correctamente.
+
+---
+
+**6. Respuesta Modelo:**
+
+"Oh My OpenCode le da a OpenCode capacidades de especialización (Skills), conexiones con otras aplicaciones (MCPs), automatización de tareas (Hooks), y plantillas pre-hechas para tareas comunes. Es como convertir un asistente genérico en un experto personalizado para tu trabajo específico."
+
+**Criterios de evaluación:**
+- Menciona Skills/especialización (0.5 puntos)
+- Menciona MCPs/conexiones (0.5 puntos)
+- Menciona Hooks/automatización o plantillas (0.5 puntos)
+
+**Puntaje**: 1.5/1.5 si incluye al menos 2 de los 3 elementos
+
+---
+
+**7. c) Tener título universitario**
+
+NO necesitas título universitario para instalar o usar IA. Solo necesitas: computadora, internet, email válido, y 2 horas de tiempo. El conocimiento técnico no es requisito.
+
+---
+
+**8. Verdadero**
+
+Según la sección de troubleshooting, si OpenCode no responde, el PRIMER paso es verificar que tu API Key esté configurada correctamente en `~/.opencode/config.json`. Es el problema más común.
+
+---
+
+**9. b) OpenCode es la aplicación en tu computadora, Claude AI es el "cerebro" en la nube**
+
+OpenCode es la interfaz (CLI) que instalas localmente. Claude AI es el modelo de inteligencia artificial en los servidores de Anthropic que hace el "pensamiento pesado". OpenCode se conecta a Claude AI vía API.
+
+---
+
+**10. Respuesta Modelo (ejemplos válidos):**
+
+- "Escribir reportes para mi trabajo y crear análisis de datos para proyectos universitarios"
+- "Aprender programación para mi carrera y automatizar tareas repetitivas"
+- "Crear contenido de marketing y diseñar campañas publicitarias"
+- "Ayudarme con investigación académica y escribir papers"
+- "Resolver problemas de código y aprender nuevas tecnologías"
+
+**Criterios de evaluación:**
+- Menciona 2 usos distintos (1 punto)
+- Son realistas y relacionados a su contexto (1 punto)
+
+**Puntaje**: 2/2 si menciona 2 usos válidos y específicos
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación | Interpretación |
+|-------|--------------|----------------|
+| 9-10 | Excelente | Instalación dominada, listo para Módulo 02 |
+| 7-8 | Bueno | Comprensión sólida, puede continuar |
+| 5-6 | Suficiente | Revisar conceptos de OMO y API Key |
+| 0-4 | Insuficiente | Repetir instalación y leer módulo completo |
+
+**Notas sobre puntuación**:
+- Preguntas 6 y 10 son abiertas: valen 1.5 y 2 puntos respectivamente
+- Las demás valen 1 punto cada una
+- Total ajustado: 10 puntos exactos
+
+---
+
 ## 🎯 Próximos Pasos
 
 ```mermaid
