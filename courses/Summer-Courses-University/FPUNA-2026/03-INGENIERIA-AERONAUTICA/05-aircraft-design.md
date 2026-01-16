@@ -54,6 +54,66 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Todos los Módulos Previos del Track Aero** (OBLIGATORIO):
+- ✅ Módulo 01: CAD con IA (geometrías 3D)
+- ✅ Módulo 02: Aerodinámica CFD (resistencia, sustentación)
+- ✅ Módulo 03: Estructuras & Materiales (FEA, factores seguridad)
+- ✅ Módulo 04: Sistemas de Propulsión (empuje, autonomía)
+- **Verificación**: ¿Completaste los 4 módulos previos?
+- **Si NO**: ⚠️ Este módulo INTEGRA todos los anteriores - completa primero
+
+✅ **Metodología de Diseño Básica** (Recomendado):
+- Proceso iterativo de diseño
+- Análisis de requerimientos
+- Trade-off analysis conceptual
+- **Si NO conoces**: Se explica en el módulo, pero será más denso
+
+✅ **Cálculos de Ingeniería** (Fundamental):
+- Ecuaciones básicas (resistencia, empuje, peso)
+- Análisis dimensional
+- Regla de tres y proporciones
+- **Verificación**: ¿Puedes calcular ratio L/D si L=500N y D=50N?
+
+❌ **NO Se Requiere**:
+- Experiencia real diseñando aeronaves
+- Conocimiento profundo de certificación (se introduce básicamente)
+- Software de diseño avanzado (usamos conceptos, no herramientas específicas)
+
+### Software Necesario
+
+**Desde módulos previos ya tienes**:
+- ✅ CAD (Fusion 360 o FreeCAD)
+- ✅ OpenCode configurado
+- ✅ Python (opcional para cálculos)
+
+**NUEVO (opcional)**:
+- Calculadora científica o Excel/LibreOffice (para estimaciones de peso)
+- No se requiere software adicional especializado
+
+### Tiempo Estimado
+
+- **Contenido teórico**: 2-3 horas
+- **Ejercicios integración**: 1-2 horas
+- **Proyecto capstone** (si aplica): 20-30 horas adicionales
+
+**Total módulo**: 4-6 horas
+
+### Checklist Final
+
+- [ ] Completé Módulos 01, 02, 03, 04 del track Aero
+- [ ] Entiendo conceptos de CAD, CFD, FEA, y propulsión
+- [ ] Tengo 4+ horas disponibles
+- [ ] Estoy listo para integrar conocimientos en diseño completo
+
+**Si marcaste todos**: ¡Adelante! 🚀  
+**Si NO completaste módulos previos**: ⚠️ Completa primero - este módulo asume esos conocimientos.
+
+---
+
 ## 📊 Las Fases del Diseño Aeronáutico
 
 ```mermaid
@@ -1384,6 +1444,90 @@ Integrarás TODOS los módulos (CAD, Aerodinámica, Estructuras, Propulsión, Di
 3. **¿Cómo OpenCode puede acelerar el ciclo de diseño?**
 
 **Comparte en Slack** (#ingenieria-aeronautica)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+**Total**: 10 preguntas | **Tiempo**: 25 min | **Aprobación**: 7+
+
+### Preguntas
+
+**1. Fases de Diseño (Múltiple Opción)**  
+¿En qué fase del diseño se define la configuración aerodinámica básica (ala alta/baja, cantidad motores)?
+
+a) Diseño preliminar | b) Diseño conceptual | c) Diseño detallado | d) Certificación
+
+**2. Ecuación de Breguet (Verdadero/Falso)**  
+"La ecuación de Breguet relaciona alcance con eficiencia aerodinámica (L/D), eficiencia propulsiva, y peso."
+
+a) Verdadero | b) Falso
+
+**3. Trade-off Weight-Performance (Múltiple Opción)**  
+Si aumentas el espesor del ala para mayor resistencia estructural, ¿qué efecto NEGATIVO ocurre?
+
+a) Mejor sustentación | b) Mayor peso y resistencia aerodinámica | c) Menor costo | d) Mayor alcance
+
+**4. Estimación de Pesos (Múltiple Opción)**  
+¿Qué método se usa en fase conceptual para estimar peso vacío de una aeronave?
+
+a) Pesarla directamente | b) Métodos históricos/estadísticos | c) FEA completo | d) No se puede estimar
+
+**5. Certificación (Respuesta Corta)**  
+¿Qué organismo regula la certificación de aeronaves en Paraguay?
+
+Opciones: FAA, EASA, DINAC, ANAC
+
+**6. Configuración Aeronave (Múltiple Opción)**  
+Para un UAV de larga autonomía (8+ horas), ¿qué configuración alar es MÁS eficiente?
+
+a) Ala delta | b) Ala alta aspect ratio | c) Ala baja swept | d) Sin alas (multirotor)
+
+**7. Factor de Carga (Verdadero/Falso)**  
+"El factor de carga (n) es la relación entre sustentación y peso, y afecta el diseño estructural."
+
+a) Verdadero | b) Falso
+
+**8. Integración Sistemas (Múltiple Opción)**  
+¿Qué subsistemas debes integrar en un diseño completo?
+
+a) Solo estructura y motor | b) Estructura, propulsión, aviónica, control | c) Solo CAD 3D | d) Solo software
+
+**9. Diagrama V-n (Múltiple Opción)**  
+¿Para qué sirve el diagrama V-n (velocidad-factor de carga)?
+
+a) Definir envolvente de vuelo segura | b) Calcular consumo combustible | c) Diseñar hélices | d) Estimar costo
+
+**10. OpenCode para Diseño Integral (Respuesta Corta)**  
+Menciona 2 formas en que OpenCode acelera diseño integral de aeronaves.
+
+---
+
+## 📋 Respuestas
+
+**1. b)** - Diseño conceptual define configuración básica de requerimientos.
+
+**2. a) Verdadero** - Breguet: R = (V/c) × (L/D) × ln(W0/W1)
+
+**3. b)** - Mayor espesor → más peso y más resistencia (drag), reduciendo performance.
+
+**4. b)** - Métodos estadísticos basados en aeronaves similares (ej: Raymer, Roskam).
+
+**5. DINAC** - Dirección Nacional de Aviación Civil (Paraguay).
+
+**6. b)** - Ala alta aspect ratio maximiza L/D (eficiencia aerodinámica).
+
+**7. a) Verdadero** - n = L/W. En maniobras n > 1, estructura debe soportar.
+
+**8. b)** - Diseño integral requiere todos subsistemas integrados.
+
+**9. a)** - V-n define límites operacionales seguros (velocidad vs factor carga).
+
+**10. Ejemplos**:
+- "Automatizar cálculos de peso y balance iterativamente"
+- "Generar reportes de análisis trade-off con gráficos"
+- "Crear documentación técnica completa automáticamente"
 
 ---
 
