@@ -25,6 +25,148 @@ Una metodología mal diseñada es como un edificio con cimientos débiles: puede
 
 ---
 
+## 📋 Prerrequisitos
+
+### Conocimientos Requeridos
+
+✅ **Estadística Básica** (Fundamental):
+- Conceptos de media, mediana, desviación estándar
+- Distribución normal
+- Pruebas de hipótesis (concepto general)
+- Correlación vs causación
+- **Verificación**: ¿Entiendes qué significa "p-value < 0.05"?
+
+✅ **Metodología Científica Básica** (Recomendado):
+- Método científico (observación, hipótesis, experimentación)
+- Variables independientes vs dependientes
+- Concepto de grupo control
+- **Verificación**: ¿Sabes qué es una variable confundente?
+
+✅ **Lectura Académica** (Fundamental):
+- Has leído al menos 3-5 papers académicos
+- Entiendes estructura IMRaD (Introducción, Metodología, Resultados, Discusión)
+- Familiaridad con terminología de investigación
+- **Verificación**: ¿Puedes explicar qué es "validez interna"?
+
+✅ **Redacción Académica** (Recomendado):
+- Escritura formal en español
+- Capacidad de argumentar con evidencia
+- Citar fuentes apropiadamente
+- **Verificación**: ¿Has escrito algún reporte de laboratorio o ensayo académico?
+
+❌ **NO Se Requiere**:
+- Programación (Python/R son opcionales)
+- Conocimiento avanzado de estadística inferencial
+- Experiencia previa en investigación
+- Publicaciones
+
+### Módulos Previos Necesarios
+
+**Obligatorio**:
+- ✅ **Módulo 01: Literature Review** - Debes saber buscar y leer literatura científica antes de diseñar metodología
+
+**Muy Recomendado**:
+- Conceptos de Core Foundation (Semana 1) sobre uso de OpenCode
+
+### Software y Herramientas (Opcionales)
+
+Este módulo es principalmente **conceptual** y no requiere software específico. Sin embargo, para los ejercicios opcionales:
+
+**Para Análisis de Confiabilidad (Ejercicio 3)**:
+```bash
+# Python (opcional)
+python --version  # 3.8+
+pip install pandas scipy numpy
+
+# Alternativa: JASP (gratuito, interfaz gráfica)
+# Descargar de: jasp-stats.org
+```
+
+**Para Cálculo de Tamaño Muestral (Ejercicio 1)**:
+- **G*Power** (gratis): https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower
+- **Alternativa web**: https://www.stat.ubc.ca/~rollin/stats/ssize/
+
+**Nota**: Puedes completar el módulo sin instalar nada. Los conceptos son independientes del software.
+
+### Auto-Evaluación
+
+Responde **SÍ/NO** (necesitas al menos 3 SÍes para continuar):
+
+1. **¿Entiendes conceptos estadísticos básicos** (media, desviación estándar, correlación)?  
+   SÍ / NO  
+   *Si NO*: Repasa estadística descriptiva básica (1-2 horas)
+
+2. **¿Has leído al menos 3 papers académicos completos** en tu campo?  
+   SÍ / NO  
+   *Si NO*: Lee papers de Módulo 01 primero
+
+3. **¿Comprendes la diferencia entre experimental y observacional**?  
+   SÍ / NO  
+   *Si NO*: Revisa introducción a método científico (Wikipedia es suficiente)
+
+4. **¿Estás trabajando en un proyecto de investigación o tesis**?  
+   SÍ / NO  
+   *Si NO*: Está bien, puedes aplicar a proyectos futuros
+
+5. **¿Tienes 4 horas disponibles para contenido conceptual denso**?  
+   SÍ / NO  
+   *Si NO*: Divide el módulo en 2 sesiones de 2 horas
+
+### Si Respondiste NO a 2+ de las Primeras 3 Preguntas
+
+**Acción Recomendada**:
+
+1. **Estadística básica** (si NO a pregunta 1):
+   - Khan Academy: "Statistics & Probability" (gratis, español)
+   - Tiempo: 3-5 horas para lo esencial
+   - URL: https://es.khanacademy.org/math/statistics-probability
+
+2. **Lectura académica** (si NO a pregunta 2):
+   - Completa Módulo 01: Literature Review primero
+   - Lee 3-5 papers en tu área de interés
+   - Familiarízate con estructura de papers
+
+3. **Método científico** (si NO a pregunta 3):
+   - Lectura rápida: "Scientific Method" en Wikipedia (30 min)
+   - Video: CrashCourse "The Scientific Method" (YouTube, 10 min)
+
+### Nivel del Módulo
+
+Este módulo es de nivel **intermedio-avanzado** diseñado para:
+- Estudiantes de maestría iniciando tesis
+- Estudiantes de pregrado en proyectos de investigación
+- Investigadores junior sin formación formal en metodología
+- Profesionales considerando estudios de posgrado
+
+**NO es para**:
+- Principiantes absolutos en investigación
+- Personas sin interés en rigor metodológico
+- Quienes buscan "tips rápidos" sin fundamentos
+
+### Tiempo Estimado
+
+- **Contenido teórico**: 3 horas (lectura + diagramas)
+- **Ejercicios prácticos**: 1-4 horas (4 ejercicios opcionales)
+- **Proyecto aplicado** (diseño metodológico propio): 6-10 horas extra-clase
+
+**Total recomendado**: Dedica **2-3 días** a este módulo para internalizar conceptos profundos.
+
+### Checklist Final
+
+- [ ] Entiendo estadística básica (media, SD, p-value)
+- [ ] He leído papers académicos (estructura IMRaD familiar)
+- [ ] Comprendo diferencia experimental vs observacional
+- [ ] Tengo proyecto de investigación en mente (o en curso)
+- [ ] 4 horas disponibles para contenido denso
+- [ ] Laptop para tomar notas (no requiere software especial)
+- [ ] Actitud crítica y de pensamiento riguroso
+
+**Si marcaste 5+ ✅**: ¡Estás listo para diseño metodológico riguroso! 🔬
+
+**Si marcaste < 5**: Invierte 2-4 horas en reforzar prerrequisitos. Metodología de investigación requiere bases sólidas.
+
+---
+
 ## Parte 1: Fundamentos de Diseño de Investigación
 
 ### 1.1 Tipos de Investigación
@@ -995,6 +1137,151 @@ OUTPUT:
 - [ ] Limitaciones de validez externa reconocidas
 - [ ] Validez de constructo considerada (operacionalización apropiada)
 - [ ] Triangulación de métodos (si posible)
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **10 preguntas** sobre metodología de investigación
+- **Tiempo**: 30 minutos
+- **Aprobación**: 6+ correctas (60%)
+
+---
+
+### Preguntas
+
+**1. Pregunta FINER (Opción Múltiple)**
+
+¿Cuál de estas es una pregunta de investigación que cumple criterio FINER?
+
+a) ¿Cómo afecta la tecnología a los estudiantes?  
+b) ¿El uso de IA generativa mejora comprensión de programación en estudiantes FPUNA 2026?  
+c) ¿Es buena la educación con IA?  
+d) ¿Qué piensan los estudiantes sobre ChatGPT?
+
+**2. Diseño Experimental (Verdadero/Falso)**
+
+**Afirmación**: La principal ventaja del diseño experimental verdadero sobre el cuasi-experimental es la asignación aleatoria de participantes.
+
+VERDADERO / FALSO
+
+**3. Hipótesis (Opción Múltiple)**
+
+Tu hipótesis nula (H0) es: "No hay diferencia en comprensión entre usuarios y no usuarios de IA."
+
+¿Cuál es una H alternativa DIRECCIONAL apropiada?
+
+a) Hay diferencia entre los grupos  
+b) Usuarios de IA tienen menor comprensión que no usuarios  
+c) Los grupos son diferentes estadísticamente  
+d) El uso de IA afecta la comprensión
+
+**4. Tamaño Muestral (Respuesta Corta)**
+
+Necesitas comparar 2 grupos. Usaste G*Power con effect size d=0.5, α=0.05, poder=0.80 y obtuviste n=64 por grupo. Tu attrition esperado es 20%.
+
+**Pregunta**: ¿Cuántos participantes debes reclutar INICIALMENTE? Justifica.
+
+**5. Validez Interna (Opción Múltiple)**
+
+¿Cuál de estos amenaza la validez INTERNA de un estudio?
+
+a) Muestra no representativa de la población  
+b) Grupos difieren en conocimiento previo antes de la intervención  
+c) Contexto de laboratorio muy artificial  
+d) Resultados no generalizables a otras universidades
+
+**6. Confiabilidad (Opción Múltiple)**
+
+Calculaste Alpha de Cronbach para tu cuestionario y obtuviste α=0.55.
+
+¿Qué debes hacer?
+
+a) Publicar - es suficiente  
+b) Revisar ítems problemáticos y mejorar instrumento  
+c) Ignorar y continuar con el estudio  
+d) Cambiar a otro método de medición completamente
+
+**7. Ética (Verdadero/Falso)**
+
+**Afirmación**: Puedes iniciar recolección de datos para tu tesis mientras esperas aprobación del Comité de Ética, siempre que el riesgo sea mínimo.
+
+VERDADERO / FALSO
+
+**8. Operacionalización (Respuesta Corta)**
+
+Variable conceptual: "Engagement estudiantil"
+
+**Pregunta**: Propone 2 indicadores medibles y específica cómo los medirías.
+
+**9. Muestreo (Opción Múltiple)**
+
+Tu estudio es con estudiantes FPUNA pero solo reclutaste voluntarios de tu sección porque es la única accesible.
+
+¿Qué tipo de muestreo es y cuál es la principal limitación?
+
+a) Aleatorio simple - baja validez interna  
+b) Estratificado - sesgo de selección  
+c) Por conveniencia - baja validez externa/generalización  
+d) Sistemático - error de muestreo alto
+
+**10. Causación (Opción Múltiple)**
+
+Encontraste correlación r=0.70 entre horas de uso de IA y calificaciones finales en tu estudio correlacional.
+
+¿Cuál es la conclusión MÁS apropiada?
+
+a) El uso de IA causa mejores calificaciones  
+b) Hay asociación fuerte pero no podemos inferir causalidad  
+c) Mejores estudiantes usan más IA  
+d) La correlación prueba que IA es efectiva
+
+---
+
+### Respuestas
+
+**1. Correcta: b**  
+FINER = Feasible (sí, FPUNA accesible), Interesting (tema actual), Novel (poco estudiado en Paraguay), Ethical (no invasivo), Relevant (política educativa). Las otras son vagas.
+
+**2. Correcta: VERDADERO**  
+Asignación aleatoria controla variables extrañas y permite inferencias causales. Es la diferencia clave vs cuasi-experimental.
+
+**3. Correcta: b**  
+Hipótesis direccional especifica dirección del efecto (mayor/menor). "a" es no-direccional, "c" y "d" son vagas.
+
+**4. Respuesta: 160 participantes**  
+n=64 por grupo = 128 total. Con 20% attrition: 128 / 0.80 = 160. Debes reclutar 80 por grupo inicialmente.
+
+**5. Correcta: b**  
+Validez interna = ¿el tratamiento causó el efecto? Si grupos difieren ANTES, no puedes saber si el tratamiento funcionó. "a" y "c" afectan validez externa.
+
+**6. Correcta: b**  
+α=0.55 es "pobre" (ver tabla módulo). Debes identificar ítems con baja correlación ítem-total y revisarlos/eliminarlos.
+
+**7. Correcta: FALSO**  
+NUNCA iniciar sin aprobación ética. Es violación grave. Esperar aprobación es OBLIGATORIO sin excepciones.
+
+**8. Ejemplo de respuesta**:
+- Indicador 1: Tiempo en plataforma (minutos/semana) - medido por logs del sistema
+- Indicador 2: Participación en foros (# posts/semana) - conteo automatizado
+
+**9. Correcta: c**  
+Muestreo por conveniencia (participantes accesibles). Limitación: no representativo de todos los estudiantes FPUNA → baja validez externa.
+
+**10. Correcta: b**  
+En estudios correlacionales NO puedes inferir causalidad. Puede haber tercera variable (ej: motivación) que afecte ambas. "a" es error común.
+
+---
+
+### Criterios
+
+| Puntaje | Nivel | Acción |
+|---------|-------|--------|
+| 9-10 | ✅ Excelente | Continuar Módulo 03 |
+| 7-8 | ✅ Bueno | Continuar, revisar áreas débiles |
+| 6 | ⚠️ Aprobado | Repasar secciones falladas |
+| < 6 | ❌ Repasar | Revisar módulo completo |
 
 ---
 
