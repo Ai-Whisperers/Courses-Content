@@ -44,6 +44,26 @@ mindmap
 
 ---
 
+## 📋 Prerrequisitos
+
+✅ **Módulos 01-05 Completados** (OBLIGATORIO)
+- Módulo 01: OpenCode instalado
+- Módulo 02: Configuración dominada
+- Módulo 03: Ingeniería de prompts
+- Módulo 04: Ingeniería de contexto
+- Módulo 05: Proyecto en vivo visto
+
+✅ **Experiencia Básica**: Haber usado OpenCode al menos 2-3 horas
+
+**Tiempo**: 1 hora
+
+**Checklist**:
+- [ ] Completé Módulos 01-05
+- [ ] OpenCode funcionando
+- [ ] Hice al menos un proyecto pequeño
+
+---
+
 ## 🚀 Parte 1: Workflow Básico (15 min)
 
 ### Patrón Universal: Feature Development
@@ -436,6 +456,152 @@ mindmap
 4. Copiar sin entender
 5. Contexto obsoleto
 6. Regenerar todo en lugar de iterar
+
+---
+
+## 📝 Quiz de Evaluación
+
+### Instrucciones
+- **Total**: 10 preguntas
+- **Tiempo estimado**: 20 minutos
+- **Aprobación**: 7/10 o más
+- **Tipo**: Opción múltiple, verdadero/falso, respuesta corta
+
+---
+
+### Preguntas
+
+**1. ¿Cuál es el orden correcto del workflow básico de desarrollo con IA?**
+a) Generar → Planificar → Probar → Documentar  
+b) Planificar → Contexto → Generar → Probar → Refinar → Documentar → Commit  
+c) Probar → Generar → Commit → Documentar  
+d) Contexto → Generar → Commit  
+
+**2. En TDD (Test-Driven Development), ¿qué se hace PRIMERO?**
+a) Escribir el código  
+b) Escribir los tests  
+c) Documentar  
+d) Hacer commit  
+
+**3. Verdadero o Falso: El refinamiento iterativo busca perfección inmediata en lugar de mejoras incrementales.**
+
+**4. ¿Cuál de estos es un ANTIPATRÓN?**
+a) Escribir tests primero  
+b) Commits pequeños y frecuentes  
+c) Copiar código sin entender qué hace  
+d) Pedir code review a la IA  
+
+**5. ¿Qué debe incluir un prompt para debugging efectivo? (Selecciona 3)**
+a) El error exacto con stack trace  
+b) Solo decir "no funciona"  
+c) El código relevante  
+d) El contexto de cuándo ocurre  
+e) Un emoji triste  
+
+**6. Describe en 2-3 oraciones qué es un "workflow pattern" y por qué es útil.**
+
+**7. En el patrón de refinamiento iterativo, ¿cuál es el orden recomendado?**
+a) Básico → Tests → Validación → Optimización → Docs  
+b) Optimización → Básico → Tests → Docs  
+c) Tests → Básico → Docs → Optimización  
+d) Docs → Básico → Tests → Validación  
+
+**8. Verdadero o Falso: Es mejor hacer commits gigantes al final del día que commits pequeños frecuentes.**
+
+**9. ¿Cuál es el workflow correcto para un bug fix?**
+a) Fix directo → Commit → Esperar que funcione  
+b) Reproducir → Test que falle → Fix → Test pasa → Regression test → Commit  
+c) Commit → Fix → Test  
+d) Test → Commit → Fix  
+
+**10. En el checklist de workflow profesional, ¿qué debes verificar ANTES de hacer commit? (Selecciona 3)**
+a) Todos los tests pasan  
+b) Lint sin errores  
+c) Está lloviendo afuera  
+d) Documentación actualizada  
+e) Tu café está caliente  
+
+---
+
+### Respuestas
+
+**1. b) Planificar → Contexto → Generar → Probar → Refinar → Documentar → Commit**
+
+Este es el workflow universal mostrado en el diagrama de flujo. Siempre empieza con planificación, luego contexto, generación, pruebas, refinamiento, documentación, y finalmente commit.
+
+---
+
+**2. b) Escribir los tests**
+
+En TDD, SIEMPRE escribes los tests PRIMERO. Los tests fallan (porque no hay código), luego implementas el código que hace pasar los tests. Este patrón garantiza cobertura.
+
+---
+
+**3. Falso**
+
+El refinamiento iterativo busca MEJORAS INCREMENTALES, no perfección inmediata. Empiezas con versión básica (V1) y mejoras paso a paso (V2, V3, V4, V5).
+
+---
+
+**4. c) Copiar código sin entender qué hace**
+
+Este es el antipatrón "Copiar Sin Entender". Los otros son BUENAS prácticas: TDD, commits pequeños, y code review con IA son workflows recomendados.
+
+---
+
+**5. a) El error exacto con stack trace, c) El código relevante, d) El contexto de cuándo ocurre**
+
+Un prompt de debugging efectivo necesita: el ERROR completo, el CÓDIGO relevante, y el CONTEXTO de cuándo/por qué ocurre. Decir "no funciona" sin detalles es inútil.
+
+---
+
+**6. Respuesta Modelo:**
+
+"Un workflow pattern es una 'receta probada' para una tarea específica de desarrollo. Es útil porque proporciona pasos probados que llevan a resultados predecibles, evitando improvisación y errores comunes. Es como seguir una receta de cocina en lugar de improvisar."
+
+**Criterios de evaluación:**
+- Define como "receta/pasos probados" (0.5 puntos)
+- Menciona "resultados predecibles/consistentes" (0.5 puntos)
+- Explica utilidad (evitar errores, eficiencia) (0.5 puntos)
+
+**Puntaje**: 1.5/1.5 si incluye los 3 elementos
+
+---
+
+**7. a) Básico → Tests → Validación → Optimización → Docs**
+
+Como muestra el diagrama V1→V5: primero funcionalidad básica, luego tests, validación de inputs, optimización de performance, y finalmente documentación completa.
+
+---
+
+**8. Falso**
+
+Commits pequeños y frecuentes son MEJORES. Commits gigantes son difíciles de revisar, difíciles de revertir si algo falla, y no documentan el progreso incremental.
+
+---
+
+**9. b) Reproducir → Test que falle → Fix → Test pasa → Regression test → Commit**
+
+El workflow sistemático de debugging: primero REPRODUCES el bug, escribes un TEST que FALLE, corriges el código, verificas que el test PASE, ejecutas regression tests (asegurar que no rompiste nada más), y finalmente commit.
+
+---
+
+**10. a) Todos los tests pasan, b) Lint sin errores, d) Documentación actualizada**
+
+Antes de commit siempre verifica: tests pasan ✅, lint limpio ✅, docs actualizados ✅. El clima y tu café no afectan la calidad del código 😄.
+
+---
+
+### Criterios de Evaluación
+
+| Rango | Calificación | Interpretación |
+|-------|--------------|----------------|
+| 9-10 | Excelente | Dominio completo de workflows |
+| 7-8 | Bueno | Comprensión sólida, práctica recomendada |
+| 5-6 | Suficiente | Revisar antipatrones y TDD |
+| 0-4 | Insuficiente | Repasar todo el módulo |
+
+**Nota sobre pregunta 6**: Vale 1.5 puntos (respuesta abierta). Las demás valen 1 punto cada una, ajustado para total de 10 puntos.
 
 ---
 
