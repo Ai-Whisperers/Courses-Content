@@ -33,6 +33,38 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 
 ---
 
+#### Prompt Engineering Masterclass
+
+**Location:** [`courses/Business-Professional/Prompt-Engineering-Masterclass/`](./courses/Business-Professional/Prompt-Engineering-Masterclass/)
+
+Master advanced prompt engineering techniques to unlock the full potential of ChatGPT, Claude, and other LLMs.
+
+**Format:** Self-paced with 6 modules  
+**Status:** ✅ Production Ready  
+**Target:** AI power users, developers, content creators, analysts  
+**Duration:** 16-20 hours (3-4 weeks, part-time)
+
+**What's Included:**
+- 6 complete modules (How LLMs Work, Prompt Structure, Advanced Patterns, System Prompts, Debugging, Libraries)
+- 6 hands-on exercises with comprehensive solution guides
+- 6 quizzes with complete answer keys
+- Final project: Build your personal prompt library (with rubric + examples)
+- 50+ ready-to-use prompt templates
+- Resources and templates directories
+- **Total: 30+ files, ~20,600 lines of content**
+
+**Key Learning Outcomes:**
+- Understand LLM mechanics (tokens, temperature, context windows)
+- Master CRAFT framework for prompt structure
+- Apply advanced patterns (few-shot, chain-of-thought, ReAct, Tree-of-Thought)
+- Design system prompts and AI personas
+- Debug and iterate prompts systematically
+- Build and maintain professional prompt libraries
+
+**Start Here:** [courses/Business-Professional/Prompt-Engineering-Masterclass/README.md](./courses/Business-Professional/Prompt-Engineering-Masterclass/README.md)
+
+---
+
 ### FPUNA 2026 Summer Course (In Development) 🚧
 
 #### AI-Augmented Development Program
@@ -81,7 +113,6 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 | [Introduction to AI for Business Professionals](./courses/Introduction-to-AI-for-Business-Professionals/) | In Progress | Executives, Managers | 4 hours |
 | [AI-Assisted Software Development](./courses/AI-Assisted-Software-Development/) | In Progress | Developers | 16 hours |
 | [AI for Marketing Teams](./courses/AI-for-Marketing-Teams/) | In Progress | Marketing | 8 hours |
-| [Prompt Engineering Masterclass](./courses/Prompt-Engineering-Masterclass/) | Planning | Power Users | 4 hours |
 | [AI Tools for Productivity](./courses/AI-Tools-for-Productivity/) | Planning | All Employees | 8 hours |
 | [Building AI-Powered Applications](./courses/Building-AI-Powered-Applications/) | Planning | Developers | 24 hours |
 | [QA Automation with AI (Advanced)](./courses/QA-Automation-with-AI-Advanced/) | Planning | QA Engineers | 16 hours |
@@ -349,15 +380,15 @@ Curated repositories organized by category:
 
 | Course | Target | Duration | Status |
 |--------|--------|----------|--------|
+| **Prompt Engineering Masterclass** | Power Users | 16-20 hours | ✅ Production Ready |
 | **Introduction to AI for Business Professionals** | Executives, Managers | 4 hours | In Progress |
 | **AI Tools for Productivity** | All Employees | 8 hours | Planning |
-| **Prompt Engineering Masterclass** | Power Users | 4 hours | Planning |
 
 ### Tier 2: Technical Courses (Medium Priority)
 
 | Course | Target | Duration | Status |
 |--------|--------|----------|--------|
-| **QA Automation with AI** | QA Engineers | 12 modules | Complete |
+| **QA Automation with AI** | QA Engineers | 40-50 hours | ✅ Production Ready |
 | **AI-Assisted Software Development** | Developers | 16 hours | In Progress |
 | **Building AI-Powered Applications** | Developers | 24 hours | Planning |
 | **QA Automation with AI (Advanced)** | QA Engineers | 16 hours | Planning |
@@ -459,10 +490,10 @@ See [certification/](./certification/) for details.
 - ✅ Created honest status reporting standards
 
 ### Development Pipeline
-- **Production Ready:** 1 course (QA Automation)
+- **Production Ready:** 2 courses (QA Automation, Prompt Engineering Masterclass)
 - **In Active Development:** 1 course (FPUNA 2026)
-- **Planning Stage:** 10 courses (various completion levels)
-- **Total Portfolio:** 13 courses (1 complete, 12 in various stages)
+- **Planning Stage:** 9 courses (various completion levels)
+- **Total Portfolio:** 13 courses (2 production-ready, 11 in development)
 
 ### Resources
 - **AI Agent Capabilities:** 532 documented agents across 8 domains
@@ -492,7 +523,13 @@ We believe in:
 **Version:** 6.0 (Quality Crisis Resolution - Honesty First)  
 **Next Review:** February 2026
 
-**Recent Changes (January 15-16, 2026):**
+**Recent Changes (January 16, 2026):**
+- 🎓 **NEW PRODUCTION COURSE:** Prompt Engineering Masterclass (6 modules, 20,600+ lines) - 2nd production-ready course
+- ✅ **Complete Instructor Materials:** 6 solution guides, 6 quizzes with answer keys, final project package
+- ✅ **Repository Statistics Updated:** 2 production-ready courses (was 1)
+- 📊 **Course Catalog Reorganized:** Moved Prompt Engineering from "Planning" to "Production Ready"
+
+**Changes (January 15-16, 2026):**
 - 🎯 **Quality Crisis Resolution:** Addressed "brutal critique" findings systematically
 - ✅ **Honest Status Reporting:** Created [HONEST-STATUS-REPORT.md](./HONEST-STATUS-REPORT.md) - FPUNA 30-40% complete (not 95%)
 - ✅ **Placeholder Content Fixed:** Implemented 17 TODO placeholders across 6 critical modules
