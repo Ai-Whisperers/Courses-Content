@@ -13,15 +13,24 @@ Necesitamos dos piezas clave de software: tu entorno de trabajo (IDE) y tu copil
 
 Usaremos Antigravity en lugar de VS Code por sus capacidades nativas de IA.
 
-- 🔗 **Descargar**: [antigravity.google](https://antigravity.google/) (Sitio Oficial)
-- 📥 Instala y abre la aplicación.
+1.  🔗 **Descargar**: Ve a [antigravity.google](https://antigravity.google/) y descarga la versión para tu sistema.
+2.  📥 **Instalar**: Ejecuta el instalador y sigue los pasos (Siguiente > Siguiente > Instalar).
+3.  🔑 **Login**:
+    - Abre Antigravity.
+    - Busca el botón **"Sign In"** (usualmente arriba a la derecha).
+    - Inicia sesión con tu **cuenta de Google**.
 
 ### 2. Instala OpenCode (Tu Copiloto IA)
 
 Esta es la inteligencia que configurará todo lo demás.
 
-- 🔗 **Descargar**: [opencode.ai](https://opencode.ai/) (Sitio Oficial)
-- 📥 Instala y asegúrate de iniciar sesión.
+1.  🔗 **Descargar**: Ve a [opencode.ai](https://opencode.ai/).
+2.  📥 **Instalar**: Descarga e instala la aplicación de escritorio.
+3.  🔑 **Login**:
+    - Abre OpenCode.
+    - Si es la primera vez, te pedirá crear cuenta o iniciar sesión.
+    - Usa tu correo personal o universitario.
+    - **Importante**: Asegúrate de que veas el chat "listo para escribir" antes de seguir.
 
 ---
 
@@ -32,9 +41,10 @@ Ahora usaremos **OpenCode** para instalar "Oh My OpenCode" (OMO) y configurar tu
 ### Instrucciones:
 
 1.  Abre la aplicación **OpenCode**.
-2.  Ve al chat principal.
-3.  **Copia y pega** el siguiente bloque de texto EXACTAMENTE como está.
-4.  Presiona **Enter** y sigue las instrucciones que te dé la IA.
+2.  **Verificación**: Asegúrate de ver tu foto de perfil o iniciales en la esquina (indicando que estás logueado).
+3.  Ve al chat principal.
+4.  **Copia y pega** el siguiente bloque de texto EXACTAMENTE como está.
+5.  Presiona **Enter** y sigue las instrucciones que te dé la IA.
 
 ### 📋 Copia esto en OpenCode:
 
