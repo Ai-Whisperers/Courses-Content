@@ -13,14 +13,14 @@ Necesitamos dos piezas clave de software: tu entorno de trabajo (IDE) y tu copil
 
 Usaremos Antigravity en lugar de VS Code por sus capacidades nativas de IA.
 
-- 🔗 **Descargar**: [antigravity.dev/download](https://antigravity.dev) (Simulado)
+- 🔗 **Descargar**: [antigravity.google](https://antigravity.google/) (Sitio Oficial)
 - 📥 Instala y abre la aplicación.
 
 ### 2. Instala OpenCode (Tu Copiloto IA)
 
 Esta es la inteligencia que configurará todo lo demás.
 
-- 🔗 **Descargar**: [opencode.dev/download](https://opencode.dev) (Simulado)
+- 🔗 **Descargar**: [opencode.ai](https://opencode.ai/) (Sitio Oficial)
 - 📥 Instala y asegúrate de iniciar sesión.
 
 ---
@@ -140,7 +140,7 @@ No tienes permisos para instalar en carpetas del sistema.
 
 No instalaste Node.js o no reiniciaste la terminal.
 
-- **Solución**: Instala Node.js v18+ desde [nodejs.org](https://nodejs.org) y reinicia tu computadora.
+- **Solución**: Instala Node.js v18 (LTS) desde [nodejs.org](https://nodejs.org/en/download/) y reinicia tu computadora.
 
 ---
 
