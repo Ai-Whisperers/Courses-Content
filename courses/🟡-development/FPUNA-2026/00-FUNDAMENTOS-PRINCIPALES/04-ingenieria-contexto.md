@@ -65,22 +65,34 @@ Imagina contratar a alguien nuevo en tu empresa:
 
 ```mermaid
 graph TB
-    subgraph "SIN Manual de Instrucciones"
-        A1[Nuevo empleado] --> B1[Pregunta TODO]
-        B1 --> C1[¿Qué colores usamos?<br/>¿Qué formato de docs?<br/>¿Qué tecnologías?]
-        C1 --> D1[Tú explicas<br/>lo mismo<br/>cada vez]
-        D1 --> E1[Productividad baja]
+    subgraph without["❌ SIN Manual de Instrucciones"]
+        A1["👤<br/>Nuevo<br/>empleado"] --> B1["❓<br/>Pregunta<br/>TODO"]
+        B1 --> C1["🤔<br/>¿Qué colores usamos?<br/>¿Qué formato de docs?<br/>¿Qué tecnologías?<br/>¿Qué reglas seguimos?"]
+        C1 --> D1["😫<br/>Tú explicas<br/>lo mismo<br/>cada vez"]
+        D1 --> E1["📉<br/>Productividad<br/>BAJA<br/>Tiempo perdido"]
     end
     
-    subgraph "CON Manual de Instrucciones"
-        A2[Nuevo empleado] --> B2[Lee el manual]
-        B2 --> C2[Conoce colores<br/>formatos<br/>tecnologías<br/>reglas]
-        C2 --> D2[Trabaja solo]
-        D2 --> E2[Productividad alta]
+    subgraph with["✅ CON Manual de Instrucciones"]
+        A2["👤<br/>Nuevo<br/>empleado"] --> B2["📖<br/>Lee el<br/>manual"]
+        B2 --> C2["✅<br/>Conoce:<br/>- Colores<br/>- Formatos<br/>- Tecnologías<br/>- Reglas"]
+        C2 --> D2["🚀<br/>Trabaja<br/>autónomamente"]
+        D2 --> E2["📈<br/>Productividad<br/>ALTA<br/>Trabajo fluido"]
     end
     
-    style E1 fill:#FFB6C1
-    style E2 fill:#90EE90
+    style without fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
+    style with fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    
+    style A1 fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style B1 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style D1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style E1 fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    
+    style A2 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style B2 fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style C2 fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style D2 fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style E2 fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 **Ingeniería de Contexto** = Crear el "manual de instrucciones" para OpenCode sobre TU proyecto específico.
@@ -91,24 +103,33 @@ graph TB
 
 ```mermaid
 sequenceDiagram
+    autonumber
     participant U as 👤 Tú
     participant OC as 🤖 OpenCode
     
-    Note over U,OC: Sin Contexto (cada vez)
+    rect rgb(255, 230, 230)
+    Note over U,OC: ❌ SIN CONTEXTO (cada vez repites)
     U->>OC: Crea función X con estilo Y
-    OC->>U: [Código genérico]
+    OC->>U: ⚠️ [Código genérico, no sabe nada]
     U->>OC: No, usa tecnología Z
-    OC->>U: [Código con Z]
+    OC->>U: ⚠️ [Código con Z, pero falta más]
     U->>OC: Documentación en español
-    OC->>U: [Actualizado]
+    OC->>U: ⚠️ [Actualizado, casi...]
     U->>OC: Agregá validaciones
-    OC->>U: [Actualizado]
-    Note over U,OC: 4 iteraciones 😫
+    OC->>U: 😫 [Finalmente listo]
+    Note over U,OC: 😫 4 ITERACIONES - Tiempo perdido
+    end
     
-    Note over U,OC: Con Contexto (una vez)
+    rect rgb(230, 249, 230)
+    Note over U,OC: ✅ CON CONTEXTO (una sola vez)
     U->>OC: Crea función X
-    OC->>U: [Código perfecto con<br/>tecnología Z, estilo Y,<br/>docs en español,<br/>validaciones incluidas]
-    Note over U,OC: 1 iteración 🎉
+    Note right of OC: Lee .opencode<br/>Lee CLAUDE.md<br/>Sabe TODO
+    OC->>U: ✅ [Código PERFECTO:<br/>- Tecnología Z<br/>- Estilo Y<br/>- Docs en español<br/>- Validaciones incluidas]
+    Note over U,OC: 🎉 1 ITERACIÓN - Productividad 4x
+    end
+    
+    style U fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style OC fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
 ```
 
 ---
@@ -117,18 +138,26 @@ sequenceDiagram
 
 ```mermaid
 mindmap
-  root((Contexto<br/>del Proyecto))
-    .opencode
-      Configuración técnica
-      Tecnologías usadas
-      Estilo de código
-      Convenciones
-    CLAUDE.md
-      Descripción proyecto
-      Arquitectura
-      Reglas de negocio
-      Estado actual
-      Decisiones importantes
+  root(("🎯<br/>Contexto<br/>del Proyecto<br/>Completo"))
+    ("📄<br/>.opencode<br/>Configuración Técnica")
+      ["⚙️<br/>Tecnologías<br/>usadas"]
+      ["🎨<br/>Estilo de<br/>código"]
+      ["📏<br/>Convenciones<br/>de nombres"]
+      ["🔧<br/>Herramientas<br/>y versiones"]
+    ("📘<br/>CLAUDE.md<br/>Contexto del Proyecto")
+      ["📖<br/>Descripción<br/>del proyecto"]
+      ["🏗️<br/>Arquitectura<br/>y estructura"]
+      ["💼<br/>Reglas de<br/>negocio"]
+      ["📊<br/>Estado<br/>actual"]
+      ["🧠<br/>Decisiones<br/>importantes"]
+    ("📚<br/>README.md<br/>Documentación")
+      ["👥<br/>Para<br/>usuarios"]
+      ["📥<br/>Instalación"]
+      ["🚀<br/>Uso<br/>rápido"]
+    ("🏛️<br/>ARCHITECTURE.md<br/>Diseño Técnico")
+      ["🗂️<br/>Estructura<br/>de archivos"]
+      ["🔄<br/>Flujos de<br/>datos"]
+      ["🎯<br/>Patrones<br/>usados"]
 ```
 
 ---
@@ -157,17 +186,30 @@ mi-proyecto-fpuna/
 
 ```mermaid
 graph TD
-    A[.opencode] --> B[project:<br/>Info básica]
-    A --> C[tech_stack:<br/>Tecnologías]
-    A --> D[code_standards:<br/>Estilo código]
-    A --> E[conventions:<br/>Convenciones]
-    A --> F[ignored:<br/>Archivos a ignorar]
+    A["📄<br/>.opencode<br/>Archivo de Configuración"] --> B["1️⃣<br/>project:<br/>Información Básica"]
+    A --> C["2️⃣<br/>tech_stack:<br/>Tecnologías Usadas"]
+    A --> D["3️⃣<br/>code_standards:<br/>Estándares de Código"]
+    A --> E["4️⃣<br/>conventions:<br/>Convenciones"]
+    A --> F["5️⃣<br/>ignored:<br/>Archivos a Ignorar"]
     
-    B --> B1[nombre<br/>descripción<br/>versión]
-    C --> C1[backend<br/>frontend<br/>database]
-    D --> D1[lenguaje<br/>estilo<br/>longitud línea]
-    E --> E1[nombres variables<br/>formato archivos<br/>documentación]
-    F --> F1[node_modules<br/>dist<br/>.env]
+    B --> B1["📝<br/>- Nombre del proyecto<br/>- Descripción breve<br/>- Versión actual"]
+    C --> C1["⚙️<br/>- Backend: Node.js<br/>- Frontend: React<br/>- DB: PostgreSQL"]
+    D --> D1["🎨<br/>- Lenguaje: español<br/>- Estilo: ESLint<br/>- Max línea: 100 chars"]
+    E --> E1["📏<br/>- Variables en camelCase<br/>- Archivos en kebab-case<br/>- JSDoc en funciones"]
+    F --> F1["🚫<br/>- node_modules/<br/>- dist/<br/>- .env"]
+    
+    style A fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+    style B fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style C fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style D fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#333
+    style E fill:#9B59B6,stroke:#7D3C98,stroke-width:3px,color:#fff
+    style F fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    
+    style B1 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style C1 fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style D1 fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style E1 fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style F1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
 ```
 
 ### Ejemplo Básico
@@ -388,20 +430,26 @@ code .opencode       # VS Code
 **Definición**: Es la "memoria del proyecto" - un archivo que OpenCode lee para entender el contexto completo: qué estás haciendo, por qué, qué problemas tienes, qué decisiones tomaste.
 
 ```mermaid
-graph LR
-    A[CLAUDE.md] --> B[Historia del<br/>Proyecto]
-    A --> C[Decisiones<br/>Importantes]
-    A --> D[Problemas<br/>Conocidos]
-    A --> E[Estado<br/>Actual]
-    A --> F[Reglas de<br/>Negocio]
+graph TB
+    A["📘<br/>CLAUDE.md<br/>Memoria del Proyecto"] --> B["1️⃣<br/>📖 Historia<br/>del Proyecto"]
+    A --> C["2️⃣<br/>🧠 Decisiones<br/>Importantes"]
+    A --> D["3️⃣<br/>🐛 Problemas<br/>Conocidos"]
+    A --> E["4️⃣<br/>📊 Estado<br/>Actual"]
+    A --> F["5️⃣<br/>💼 Reglas de<br/>Negocio"]
     
-    B --> G[OpenCode entiende<br/>tu proyecto<br/>completamente]
+    B --> G["✨<br/>OpenCode<br/>ENTIENDE<br/>tu proyecto<br/>completamente"]
     C --> G
     D --> G
     E --> G
     F --> G
     
-    style G fill:#90EE90
+    style A fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+    style B fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style C fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#333
+    style D fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style E fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style F fill:#9B59B6,stroke:#7D3C98,stroke-width:3px,color:#fff
+    style G fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ### Ubicación
@@ -802,15 +850,27 @@ const obtenerLibro = (id, callback) => {
 ### El Poder del Contexto
 
 ```mermaid
-flowchart LR
-    A[Prompt sin contexto] --> B[OpenCode adivina]
-    B --> C[Resultado genérico<br/>50% útil]
+flowchart TB
+    subgraph without["❌ Sin Contexto - Adivinando"]
+        A["❓<br/>Prompt<br/>Vago"] --> B["🤔<br/>OpenCode<br/>ADIVINA<br/>todo"]
+        B --> C["⚠️<br/>Resultado<br/>GENÉRICO<br/>50% útil"]
+    end
     
-    D[Prompt con contexto] --> E[OpenCode sabe exacto]
-    E --> F[Resultado perfecto<br/>95% útil]
+    subgraph with["✅ Con Contexto - Preciso"]
+        D["🎯<br/>Prompt<br/>Simple"] --> E["✨<br/>OpenCode<br/>SABE<br/>todo"]
+        E --> F["🎉<br/>Resultado<br/>PERFECTO<br/>95% útil"]
+    end
     
-    style C fill:#FFB6C1
-    style F fill:#90EE90
+    style without fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
+    style with fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    
+    style A fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    
+    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style E fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 ### Comparación Práctica
@@ -855,20 +915,25 @@ opencode "Agrega función prestarLibro() siguiendo las reglas del proyecto"
 
 ```mermaid
 journey
-    title Ciclo de Vida de CLAUDE.md
-    section Inicio Proyecto
-      Crear CLAUDE.md inicial: 5: Tú
-    section Durante Desarrollo
-      Completar feature: 4: Tú
-      Actualizar estado: 5: Tú
-      Tomar decisión importante: 3: Tú
-      Documentar decisión: 5: Tú
-    section Encontrar Bug
-      Resolver bug: 3: Tú
-      Agregar a problemas conocidos: 5: Tú
-    section Fin Semana
-      Revisar CLAUDE.md: 4: Tú
-      Actualizar progreso: 5: Tú
+    title 🔄 Ciclo de Vida de CLAUDE.md - Mantén Actualizado
+    section 🚀 Inicio Proyecto
+      Crear CLAUDE.md inicial: 5: 👤 Tú
+      Definir objetivos y stack: 5: 👤 Tú
+    section 💻 Durante Desarrollo
+      Completar feature: 4: 👤 Tú
+      ✅ Actualizar estado actual: 5: 👤 Tú
+      Tomar decisión técnica importante: 3: 👤 Tú
+      📝 Documentar decisión y razones: 5: 👤 Tú
+      Agregar nuevas funcionalidades: 4: 👤 Tú
+      ✅ Documentar cambios: 5: 👤 Tú
+    section 🐛 Encontrar Bug
+      Resolver bug crítico: 3: 👤 Tú
+      📋 Agregar a problemas conocidos: 5: 👤 Tú
+      Documentar workaround: 4: 👤 Tú
+    section 📅 Fin de Semana
+      🔍 Revisar CLAUDE.md completo: 4: 👤 Tú
+      📊 Actualizar progreso semanal: 5: 👤 Tú
+      🎯 Planificar próxima semana: 4: 👤 Tú
 ```
 
 ### ✅ Buenas Prácticas
@@ -957,21 +1022,28 @@ journey
 ## 📊 Resumen Visual
 
 ```mermaid
-graph TD
-    A[Tu Proyecto] --> B[Crear .opencode]
-    A --> C[Crear CLAUDE.md]
+graph TB
+    A["🎯<br/>Tu Proyecto<br/>Necesita Contexto"] --> B["1️⃣<br/>Crear<br/>.opencode"]
+    A --> C["2️⃣<br/>Crear<br/>CLAUDE.md"]
     
-    B --> D[Configuración Técnica]
-    C --> E[Memoria del Proyecto]
+    B --> D["⚙️<br/>Configuración<br/>Técnica<br/>- Stack<br/>- Convenciones<br/>- Estándares"]
+    C --> E["📖<br/>Memoria del<br/>Proyecto<br/>- Historia<br/>- Decisiones<br/>- Estado"]
     
-    D --> F[OpenCode lee<br/>automáticamente]
+    D --> F["✨<br/>OpenCode lee<br/>automáticamente<br/>ambos archivos"]
     E --> F
     
-    F --> G[Genera código<br/>perfectamente alineado]
+    F --> G["🎯<br/>Genera código<br/>PERFECTAMENTE<br/>alineado a tu<br/>proyecto"]
     
-    G --> H[🎉 Productividad 3x]
+    G --> H["🚀<br/>RESULTADO:<br/>Productividad 3x<br/>Código consistente<br/>Menos iteraciones"]
     
-    style H fill:#90EE90
+    style A fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+    style B fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style C fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style D fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style E fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style F fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style G fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style H fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ---
@@ -991,21 +1063,33 @@ Has completado el Módulo 04. Ahora OpenCode tiene "memoria" de tu proyecto.
 ### El Antes y Después
 
 ```mermaid
-graph LR
-    subgraph Antes
-        A1[Cada prompt<br/>explicar todo] --> B1[Muchas iteraciones]
-        B1 --> C1[Código inconsistente]
-        C1 --> D1[Productividad baja]
+graph TB
+    subgraph before["❌ ANTES - Sin Contexto"]
+        direction TB
+        A1["😫<br/>Cada prompt<br/>explicar TODO<br/>de nuevo"] --> B1["🔄<br/>Muchas<br/>iteraciones<br/>correcciones"]
+        B1 --> C1["🎲<br/>Código<br/>inconsistente<br/>diferentes estilos"]
+        C1 --> D1["📉<br/>Productividad<br/>BAJA<br/>Frustración alta"]
     end
     
-    subgraph Después
-        A2[Prompt simple] --> B2[1 iteración]
-        B2 --> C2[Código perfecto]
-        C2 --> D2[Productividad alta]
+    subgraph after["✅ DESPUÉS - Con Contexto"]
+        direction TB
+        A2["🎯<br/>Prompt<br/>simple<br/>directo"] --> B2["⚡<br/>1 sola<br/>iteración<br/>primera vez bien"]
+        B2 --> C2["✨<br/>Código<br/>PERFECTO<br/>consistente"]
+        C2 --> D2["🚀<br/>Productividad<br/>ALTA<br/>Trabajo fluido"]
     end
     
-    style D1 fill:#FFB6C1
-    style D2 fill:#90EE90
+    style before fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
+    style after fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    
+    style A1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style B1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style C1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style D1 fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    
+    style A2 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style B2 fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style C2 fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style D2 fill:#50C878,stroke:#27AE60,stroke-width:3px,color:#fff
 ```
 
 ---
