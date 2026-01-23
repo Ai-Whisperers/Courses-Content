@@ -379,14 +379,18 @@ Código actual:
 
 ```mermaid
 graph TB
-    A[Sin Ejemplos] --> B[OpenCode interpreta<br/>a su manera]
-    B --> C[Resultado puede variar]
+    A["❌<br/>Sin<br/>Ejemplos"] --> B["🤷<br/>OpenCode<br/>interpreta<br/>a su manera"]
+    B --> C["⚠️<br/>Resultado<br/>puede variar"]
     
-    D[Con Ejemplos] --> E[OpenCode ve<br/>patrón exacto]
-    E --> F[Resultado consistente]
+    D["✅<br/>Con<br/>Ejemplos"] --> E["🎯<br/>OpenCode ve<br/>patrón exacto"]
+    E --> F["✨<br/>Resultado<br/>consistente"]
     
-    style C fill:#FFF4B6
-    style F fill:#90EE90
+    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -427,23 +431,23 @@ Aplica misma lógica a este array:
 
 ```mermaid
 mindmap
-  root((Restricciones))
-    Técnicas
-      Sin librerías externas
-      Máximo X líneas
-      Complejidad O(n log n)
-    Estilo
-      Nombres en español
-      Comentarios obligatorios
-      JSDoc completo
-    Funcionales
-      Sin modificar entrada
-      Thread-safe
-      Manejo de errores
-    Negocio
-      Solo datos públicos
-      Cumplir regulaciones
-      Performance <1s
+  root(("🔒<br/>Restricciones<br/>Importantes"))
+    ("⚙️ Técnicas")
+      "🚫 Sin librerías<br/>externas"
+      "📏 Máximo X<br/>líneas"
+      "📊 Complejidad<br/>O(n log n)"
+    ("🎨 Estilo")
+      "🌐 Nombres en<br/>español"
+      "💬 Comentarios<br/>obligatorios"
+      "📝 JSDoc<br/>completo"
+    ("🔧 Funcionales")
+      "🔐 Sin modificar<br/>entrada"
+      "🔀 Thread<br/>safe"
+      "⚠️ Manejo de<br/>errores"
+    ("💼 Negocio")
+      "🌍 Solo datos<br/>públicos"
+      "⚖️ Cumplir<br/>regulaciones"
+      "⚡ Performance<br/><1s"
 ```
 
 **Ejemplo**:
@@ -480,14 +484,18 @@ PRUEBAS:
 
 ```mermaid
 graph LR
-    A[Sin especificar formato] --> B[OpenCode elige<br/>su formato]
-    B --> C[Tienes que<br/>reformatear]
+    A["❌<br/>Sin<br/>formato"] --> B["🤖<br/>OpenCode<br/>elige"]
+    B --> C["🔄<br/>Reformatear<br/>manual"]
     
-    D[Formato específico] --> E[OpenCode entrega<br/>en tu formato]
-    E --> F[Listo para usar]
+    D["✅<br/>Formato<br/>específico"] --> E["🎯<br/>OpenCode<br/>entrega exacto"]
+    E --> F["🎉<br/>Listo<br/>usar"]
     
-    style C fill:#FFB6C1
-    style F fill:#90EE90
+    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -527,22 +535,28 @@ Datos a procesar:
 
 ```mermaid
 flowchart TD
-    A[Tarea Compleja:<br/>Sistema Completo] --> B{Dividir}
+    A["🐘<br/>Tarea Compleja<br/>Sistema Completo"] --> B{"✂️<br/>Dividir"}
     
-    B --> C[Paso 1:<br/>Estructura Base]
-    B --> D[Paso 2:<br/>Funcionalidades Core]
-    B --> E[Paso 3:<br/>Validaciones]
-    B --> F[Paso 4:<br/>Tests]
-    B --> G[Paso 5:<br/>Documentación]
+    B --> C["1️⃣<br/>Estructura<br/>Base"]
+    B --> D["2️⃣<br/>Funciones<br/>Core"]
+    B --> E["3️⃣<br/>Validaciones"]
+    B --> F["4️⃣<br/>Tests<br/>Completos"]
+    B --> G["5️⃣<br/>Docs<br/>README"]
     
-    C --> H[✅ Completo]
+    C --> H["✅<br/>Sistema<br/>Completo"]
     D --> H
     E --> H
     F --> H
     G --> H
     
-    style A fill:#FFB6C1
-    style H fill:#90EE90
+    style A fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style B fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style C fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style D fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style F fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style G fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style H fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo - Mal enfoque**:
@@ -583,19 +597,19 @@ opencode "Genera documentación Swagger para la API"
 
 ```mermaid
 journey
-    title Refinamiento Iterativo
-    section Primera Iteración
-      Prompt básico: 3: Tú
-      Resultado parcial: 3: OpenCode
-    section Segunda Iteración
-      Agregar detalles: 4: Tú
-      Resultado mejorado: 4: OpenCode
-    section Tercera Iteración
-      Refinar casos edge: 5: Tú
-      Resultado casi perfecto: 5: OpenCode
-    section Cuarta Iteración
-      Pulir detalles finales: 5: Tú
-      Resultado perfecto: 5: OpenCode
+    title 🔄 Refinamiento Iterativo - El Camino a la Perfección
+    section 1️⃣ Primera Iteración
+      Prompt básico: 3: 👤 Tú
+      Resultado parcial (30%): 3: 🤖 OpenCode
+    section 2️⃣ Segunda Iteración
+      Agregar detalles y validaciones: 4: 👤 Tú
+      Resultado mejorado (60%): 4: 🤖 OpenCode
+    section 3️⃣ Tercera Iteración
+      Refinar casos edge y errores: 5: 👤 Tú
+      Resultado casi perfecto (85%): 5: 🤖 OpenCode
+    section 4️⃣ Cuarta Iteración
+      Pulir detalles finales y docs: 5: 👤 Tú
+      Resultado perfecto (100%): 5: 🎉 Perfecto
 ```
 
 **Ejemplo práctico**:
@@ -645,14 +659,20 @@ opencode "Mejora la calculadora:
 
 ```mermaid
 flowchart TD
-    A[Problema] --> B[OpenCode piensa<br/>en voz alta]
-    B --> C[Paso 1: Analizar]
-    C --> D[Paso 2: Planificar]
-    D --> E[Paso 3: Ejecutar]
-    E --> F[Paso 4: Verificar]
-    F --> G[Solución con<br/>razonamiento claro]
+    A["❓<br/>Problema<br/>Complejo"] --> B["💭<br/>OpenCode<br/>piensa en<br/>voz alta"]
+    B --> C["1️⃣<br/>Analizar<br/>datos"]
+    C --> D["2️⃣<br/>Planificar<br/>solución"]
+    D --> E["3️⃣<br/>Ejecutar<br/>paso a paso"]
+    E --> F["4️⃣<br/>Verificar<br/>resultado"]
+    F --> G["✅<br/>Solución<br/>con lógica<br/>clara"]
     
-    style G fill:#90EE90
+    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
+    style C fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style D fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style F fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style G fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
