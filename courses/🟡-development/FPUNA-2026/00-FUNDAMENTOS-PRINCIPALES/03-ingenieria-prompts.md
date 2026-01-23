@@ -58,21 +58,27 @@ Al terminar este módulo, tendrás:
 Imagina que contratas a alguien muy inteligente pero que no conoce tu contexto:
 
 ```mermaid
-graph LR
-    subgraph "Instrucción Vaga"
-        A1[Tú: 'Hazme un café'] --> B1[Empleado: '¿Qué tipo?<br/>¿Cuánto azúcar?<br/>¿Con leche?']
-        B1 --> C1[Muchas idas y vueltas]
-        C1 --> D1[Café medio correcto]
+graph TB
+    subgraph Vague["❌ Instrucción Vaga"]
+        direction LR
+        A1["👤<br/>Hazme<br/>un café"] --> B1["❓<br/>¿Qué tipo?<br/>¿Azúcar?<br/>¿Leche?"]
+        B1 --> C1["🔄<br/>Muchas<br/>preguntas"]
+        C1 --> D1["☕<br/>Café<br/>mediocre"]
     end
     
-    subgraph "Instrucción Clara"
-        A2[Tú: 'Cappuccino grande,<br/>2 azúcares,<br/>leche descremada,<br/>temperatura media'] --> B2[Empleado: Sabe<br/>exactamente<br/>qué hacer]
-        B2 --> C2[Directo al resultado]
-        C2 --> D2[Café perfecto]
+    subgraph Clear["✅ Instrucción Clara"]
+        direction LR
+        A2["👤<br/>Cappuccino<br/>grande, 2 azúcares<br/>leche descremada"] --> B2["✨<br/>Sabe exacto<br/>qué hacer"]
+        B2 --> C2["⚡<br/>Directo al<br/>resultado"]
+        C2 --> D2["☕<br/>Café<br/>perfecto"]
     end
     
-    style D1 fill:#FFB6C1
-    style D2 fill:#90EE90
+    style Vague fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
+    style Clear fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    style D1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style D2 fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style A1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style A2 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
 ```
 
 **Prompt Engineering** = Aprender a dar instrucciones claras a OpenCode
@@ -83,27 +89,32 @@ graph LR
 
 ```mermaid
 flowchart TD
-    Start[Tu Necesidad] --> Level1{Nivel 1:<br/>Vago}
-    Level1 --> Bad[❌ 'Crea una app']
+    Start["🎯<br/>Tu<br/>Necesidad"] --> Level1{"📉<br/>Nivel 1<br/>Vago"}
+    Level1 --> Bad["❌<br/>'Crea<br/>una app'"]
     
-    Start --> Level2{Nivel 2:<br/>Básico}
-    Level2 --> OK[⚠️ 'Crea una app de tareas']
+    Start --> Level2{"📊<br/>Nivel 2<br/>Básico"}
+    Level2 --> OK["⚠️<br/>'App de<br/>tareas'"]
     
-    Start --> Level3{Nivel 3:<br/>Detallado}
-    Level3 --> Good[✅ 'Crea app de tareas<br/>con HTML/CSS/JS<br/>que permita agregar,<br/>marcar completadas<br/>y eliminar']
+    Start --> Level3{"📈<br/>Nivel 3<br/>Detallado"}
+    Level3 --> Good["✅<br/>HTML/CSS/JS<br/>+ funciones<br/>específicas"]
     
-    Start --> Level4{Nivel 4:<br/>Profesional}
-    Level4 --> Great[🌟 'Crea app de tareas<br/>con stack específico,<br/>funcionalidades exactas,<br/>requisitos de UI,<br/>validaciones,<br/>formato de entrega']
+    Start --> Level4{"🎓<br/>Nivel 4<br/>Profesional"}
+    Level4 --> Great["🌟<br/>Stack completo<br/>UI/UX definida<br/>Validaciones<br/>Formato entrega"]
     
-    Bad --> ResultBad[Resultado impredecible]
-    OK --> ResultOK[Resultado genérico]
-    Good --> ResultGood[Resultado útil]
-    Great --> ResultGreat[Resultado perfecto]
+    Bad --> ResultBad["💔<br/>Resultado<br/>impredecible"]
+    OK --> ResultOK["🤷<br/>Resultado<br/>genérico"]
+    Good --> ResultGood["👍<br/>Resultado<br/>útil"]
+    Great --> ResultGreat["🎉<br/>Resultado<br/>perfecto"]
     
-    style ResultBad fill:#FFB6C1
-    style ResultOK fill:#FFF4B6
-    style ResultGood fill:#B6E1FF
-    style ResultGreat fill:#90EE90
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style Level1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Level2 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style Level3 fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style Level4 fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style ResultBad fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style ResultOK fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style ResultGood fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style ResultGreat fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 ---
@@ -114,27 +125,27 @@ flowchart TD
 
 ```mermaid
 mindmap
-  root((Prompt<br/>Perfecto))
-    1. CONTEXTO
-      Situación actual
-      Problema a resolver
-      Restricciones
-    2. TAREA
-      Qué debe hacer
-      Objetivo específico
-      Alcance definido
-    3. REQUISITOS
-      Funcionalidades
-      Tecnologías
-      Validaciones
-    4. FORMATO
-      Estructura esperada
-      Archivos a generar
-      Estilo de código
-    5. EJEMPLOS
-      Input de ejemplo
-      Output esperado
-      Casos edge
+  root(("🎯<br/>Prompt<br/>Perfecto"))
+    ("1️⃣ CONTEXTO<br/>🌍")
+      "📍 Situación<br/>actual"
+      "❓ Problema a<br/>resolver"
+      "⚠️ Restricciones<br/>y límites"
+    ("2️⃣ TAREA<br/>🎯")
+      "✅ Qué debe<br/>hacer"
+      "🎯 Objetivo<br/>específico"
+      "📏 Alcance<br/>definido"
+    ("3️⃣ REQUISITOS<br/>⚙️")
+      "🔧 Funcionalidades<br/>exactas"
+      "💻 Tecnologías<br/>a usar"
+      "✔️ Validaciones<br/>necesarias"
+    ("4️⃣ FORMATO<br/>📋")
+      "🏗️ Estructura<br/>esperada"
+      "📁 Archivos a<br/>generar"
+      "🎨 Estilo de<br/>código"
+    ("5️⃣ EJEMPLOS<br/>💡")
+      "📥 Input de<br/>ejemplo"
+      "📤 Output<br/>esperado"
+      "🔍 Casos<br/>edge"
 ```
 
 ### Plantilla Universal
@@ -283,14 +294,18 @@ ENTREGABLES:
 
 ```mermaid
 flowchart LR
-    A[Prompt Vago] --> B[OpenCode Adivina]
-    B --> C[Resultado: 50% útil]
+    A["❓<br/>Prompt<br/>Vago"] --> B["🤔<br/>OpenCode<br/>adivina"]
+    B --> C["💔<br/>50%<br/>útil"]
     
-    D[Prompt Específico] --> E[OpenCode Sabe Exactamente]
-    E --> F[Resultado: 95% útil]
+    D["✅<br/>Prompt<br/>Específico"] --> E["🎯<br/>OpenCode<br/>sabe exacto"]
+    E --> F["🎉<br/>95%<br/>útil"]
     
-    style C fill:#FFB6C1
-    style F fill:#90EE90
+    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplos**:
@@ -318,16 +333,20 @@ flowchart LR
 
 ```mermaid
 sequenceDiagram
-    participant U as 👤 Tú
-    participant OC as 🤖 OpenCode
+    participant U as 👤<br/>Tú
+    participant OC as 🤖<br/>OpenCode
     
-    Note over U,OC: SIN CONTEXTO
-    U->>OC: Optimiza este código
-    OC->>U: ¿Optimizar para qué?<br/>¿Velocidad? ¿Memoria?<br/>¿Legibilidad?
+    rect rgb(255, 107, 107, 0.1)
+        Note over U,OC: ❌ SIN CONTEXTO
+        U->>+OC: Optimiza este código
+        OC-->>-U: ❓ ¿Para qué?<br/>¿Velocidad?<br/>¿Memoria?<br/>¿Legibilidad?
+    end
     
-    Note over U,OC: CON CONTEXTO
-    U->>OC: Este código procesa 100K estudiantes<br/>y toma 8 segundos.<br/>El cuello de botella es el bucle anidado.<br/>Optimiza para velocidad (<2 segundos)
-    OC->>U: [Solución exacta<br/>usando Map y Set<br/>en lugar de arrays]
+    rect rgb(80, 200, 120, 0.1)
+        Note over U,OC: ✅ CON CONTEXTO
+        U->>+OC: 📊 100K estudiantes<br/>⏱️ toma 8seg<br/>🎯 reducir a <2seg<br/>🔍 problema: loop anidado
+        OC-->>-U: 🎉 Solución exacta<br/>usando Map y Set<br/>en lugar de arrays
+    end
 ```
 
 **Ejemplo**:
