@@ -255,7 +255,7 @@ This index is updated as new audits are completed. Last update: 2026-01-15
 - [FINAL-REPORT.md](./FINAL-REPORT.md) - Complete project documentation
 - [MID-POINT-REPORT.md](./MID-POINT-REPORT.md) - 50% milestone summary
 - [../README.md](../README.md) - Main repository README
-- [../courses/Summer-Courses-University/FPUNA-2026/README.md](../courses/Summer-Courses-University/FPUNA-2026/README.md) - Course overview
+- [../courses/🟡-development/FPUNA-2026/README.md](../courses/🟡-development/FPUNA-2026/README.md) - Course overview
 
 ---
 

@@ -22,7 +22,7 @@ This report corrects significant discrepancies between marketing claims and actu
 ### ✅ Production Ready (1 Course)
 
 #### 1. QA Automation with AI
-- **Location**: `courses/Technical-Development/QA-Automation-with-AI/`
+- **Location**: `courses/🟢-production/QA-Automation-with-AI/`
 - **Status**: ✅ **ACTUALLY COMPLETE**
 - **Modules**: 12/12 complete with exercises and quizzes
 - **Quality**: High - well-structured, tested content
@@ -34,7 +34,7 @@ This report corrects significant discrepancies between marketing claims and actu
 ### 🚧 In Active Development (1 Course)
 
 #### 2. FPUNA 2026 - AI-Augmented Development
-- **Location**: `courses/Summer-Courses-University/FPUNA-2026/`
+- **Location**: `courses/🟡-development/FPUNA-2026/`
 - **Previous Claim**: "95% Complete (19/20 modules)"
 - **Actual Status**: ~30-40% complete
 - **Evidence**: Internal planning doc (`PLAN-MAESTRO-TAREAS.md`) shows 22% (8/45 modules)
@@ -68,7 +68,7 @@ This report corrects significant discrepancies between marketing claims and actu
 These courses were labeled "Planning" but actually have substantial content:
 
 #### 3. Prompt Engineering Masterclass
-- **Location**: `courses/Business-Professional/Prompt-Engineering-Masterclass/`
+- **Location**: `courses/🟢-production/Prompt-Engineering-Masterclass/`
 - **Claimed Status**: "Planning"
 - **Actual Status**: ~60% complete
 - **Modules**: 6 modules with 500-600 lines each
@@ -76,14 +76,14 @@ These courses were labeled "Planning" but actually have substantial content:
 - **Verdict**: **UNDERSOLD** - Could be production-ready with 1-2 weeks work
 
 #### 4. AI Tools for Productivity
-- **Location**: `courses/Business-Professional/AI-Tools-for-Productivity/`
+- **Location**: `courses/🔵-beta/AI-Tools-for-Productivity/`
 - **Claimed Status**: "Planning"
 - **Actual Status**: ~40% complete
 - **Modules**: Scaffolding exists, some content
 - **Verdict**: More complete than advertised
 
 #### 5. Building AI-Powered Applications
-- **Location**: `courses/Technical-Development/Building-AI-Powered-Applications/`
+- **Location**: `courses/🔵-beta/Building-AI-Powered-Applications/`
 - **Claimed Status**: "Planning"
 - **Actual Status**: ~50% complete
 - **Modules**: 36 module files exist

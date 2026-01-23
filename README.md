@@ -6,13 +6,26 @@ Welcome to the **AI Whisperers Courses Content Repository**! This is your centra
 
 ---
 
+## 📚 Browse by Status
+
+**NEW:** All courses are now organized by development status for easy navigation!
+
+- 🟢 [**Production Ready**](./courses/INDEX.md#-production-ready-2-courses) - Fully tested, ready for students (2 courses)
+- 🟡 [**In Development**](./courses/INDEX.md#-in-development-1-course) - Active work, 30-50% complete (1 course)
+- 🔵 [**Beta**](./courses/INDEX.md#-beta-3-courses) - 60%+ complete, needs testing (3 courses)
+- ⚪ [**Planning**](./courses/INDEX.md#-planning-9-courses) - Early stage, <50% complete (9 courses)
+
+👉 **[View Complete Course Index](./courses/INDEX.md)** for full details, filters, and browse by audience
+
+---
+
 ## Available Courses
 
 ### Primary Course (Production Ready)
 
 #### QA Automation with AI Course
 
-**Location:** [`courses/Technical-Development/QA-Automation-with-AI/`](./courses/Technical-Development/QA-Automation-with-AI/)
+**Location:** [`courses/🟢-production/QA-Automation-with-AI/`](./courses/🟢-production/QA-Automation-with-AI/)
 
 The comprehensive AI-first QA automation course with 12 complete modules.
 
@@ -29,13 +42,13 @@ The comprehensive AI-first QA automation course with 12 complete modules.
 - Test examples (Playwright, Jest, Pytest, API)
 - Industry-validated content with citations
 
-**Start Here:** [courses/Technical-Development/QA-Automation-with-AI/README.md](./courses/Technical-Development/QA-Automation-with-AI/README.md)
+**Start Here:** [courses/🟢-production/QA-Automation-with-AI/README.md](./courses/🟢-production/QA-Automation-with-AI/README.md)
 
 ---
 
 #### Prompt Engineering Masterclass
 
-**Location:** [`courses/Business-Professional/Prompt-Engineering-Masterclass/`](./courses/Business-Professional/Prompt-Engineering-Masterclass/)
+**Location:** [`courses/🟢-production/Prompt-Engineering-Masterclass/`](./courses/🟢-production/Prompt-Engineering-Masterclass/)
 
 Master advanced prompt engineering techniques to unlock the full potential of ChatGPT, Claude, and other LLMs.
 
@@ -61,7 +74,7 @@ Master advanced prompt engineering techniques to unlock the full potential of Ch
 - Debug and iterate prompts systematically
 - Build and maintain professional prompt libraries
 
-**Start Here:** [courses/Business-Professional/Prompt-Engineering-Masterclass/README.md](./courses/Business-Professional/Prompt-Engineering-Masterclass/README.md)
+**Start Here:** [courses/🟢-production/Prompt-Engineering-Masterclass/README.md](./courses/🟢-production/Prompt-Engineering-Masterclass/README.md)
 
 ---
 
@@ -69,7 +82,7 @@ Master advanced prompt engineering techniques to unlock the full potential of Ch
 
 #### AI-Augmented Development Program
 
-**Location:** [`courses/Summer-Courses-University/FPUNA-2026/`](./courses/Summer-Courses-University/FPUNA-2026/)
+**Location:** [`courses/🟡-development/FPUNA-2026/`](./courses/🟡-development/FPUNA-2026/)
 
 **Status:** ~30-40% Complete - Active Development  
 **Target:** Universidad Nacional de Asunción (Paraguay) - Summer 2026  
@@ -99,26 +112,31 @@ Master advanced prompt engineering techniques to unlock the full potential of Ch
 
 **Documentation:**
 - [📊 Honest Status Report](./HONEST-STATUS-REPORT.md) - **READ THIS FIRST** for accurate status
-- [📋 Master Plan](./courses/Summer-Courses-University/FPUNA-2026/PLAN-MAESTRO-TAREAS.md) - Detailed task tracking
 - [📈 Previous Reports](./AUDIT-REPORTS/) - Historical context (NOTE: Contains optimistic estimates)
 
-**Start Here:** [courses/Summer-Courses-University/FPUNA-2026/README.md](./courses/Summer-Courses-University/FPUNA-2026/README.md)
+**Start Here:** [courses/🟡-development/FPUNA-2026/README.md](./courses/🟡-development/FPUNA-2026/README.md)
 
 ---
 
 ### Courses In Development
 
-| Course | Status | Target Audience | Duration |
-|--------|--------|-----------------|----------|
-| [Introduction to AI for Business Professionals](./courses/Introduction-to-AI-for-Business-Professionals/) | In Progress | Executives, Managers | 4 hours |
-| [AI-Assisted Software Development](./courses/AI-Assisted-Software-Development/) | In Progress | Developers | 16 hours |
-| [AI for Marketing Teams](./courses/AI-for-Marketing-Teams/) | In Progress | Marketing | 8 hours |
-| [AI Tools for Productivity](./courses/AI-Tools-for-Productivity/) | Planning | All Employees | 8 hours |
-| [Building AI-Powered Applications](./courses/Building-AI-Powered-Applications/) | Planning | Developers | 24 hours |
-| [QA Automation with AI (Advanced)](./courses/QA-Automation-with-AI-Advanced/) | Planning | QA Engineers | 16 hours |
-| [AI for Customer Service Teams](./courses/AI-for-Customer-Service-Teams/) | Planning | Support Teams | 8 hours |
-| [AI for Sales Teams](./courses/AI-for-Sales-Teams/) | Planning | Sales Reps | 4 hours |
-| [AI Ethics and Governance](./courses/AI-Ethics-and-Governance/) | Planning | Leadership, Compliance | 4 hours |
+For detailed course catalog with all courses in development, see **[courses/INDEX.md](./courses/INDEX.md)**.
+
+**Summary:**
+- **🟡 In Development:** 1 course (FPUNA 2026) ~40% complete
+- **🔵 Beta:** 3 courses 60%+ complete, needs testing
+- **⚪ Planning:** 9 courses in early stages
+
+Key courses in pipeline:
+- Introduction to AI for Business Professionals (Planning)
+- AI-Assisted Software Development (Planning)
+- AI for Marketing Teams (Planning)
+- AI Tools for Productivity (Planning)
+- Building AI-Powered Applications (Planning)
+- QA Automation with AI (Advanced) (Planning)
+- AI for Customer Service Teams (Planning)
+- AI for Sales Teams (Planning)
+- AI Ethics and Governance (Planning)
 
 ---
 
@@ -217,7 +235,8 @@ Courses-Content/
 ### For Students
 
 1. **Choose your course:**
-   - [QA Automation with AI](./courses/QA-Automation-with-AI/) - Complete and ready
+   - [QA Automation with AI](./courses/🟢-production/QA-Automation-with-AI/) - Complete and ready
+   - [Prompt Engineering Masterclass](./courses/🟢-production/Prompt-Engineering-Masterclass/) - Complete and ready
 
 2. **Follow the course structure:**
    - Read the course README.md
@@ -245,7 +264,7 @@ Courses-Content/
 3. **Use documentation:**
    - [Course Creation Guide](./docs/guides/course-creation/)
    - [Assessment Guide](./docs/guides/assessment/)
-   - [Quality Control Checklist](./QUALITY-CONTROL-CHECKLIST.md)
+   - [Quality Control Guide](./docs/guides/QUALITY-CONTROL.md)
 
 ---
 
@@ -315,13 +334,13 @@ By completing our courses, you will:
 | **Documentation Hub** | Central navigation for all docs | [docs/README.md](./docs/README.md) |
 | **Course Creation Guide** | End-to-end course creation | [docs/guides/course-creation/](./docs/guides/course-creation/) |
 | **Assessment Guide** | Assessment design & grading | [docs/guides/assessment/](./docs/guides/assessment/) |
-| **Quality Control Checklist** | Content quality standards | [QUALITY-CONTROL-CHECKLIST.md](./QUALITY-CONTROL-CHECKLIST.md) |
+| **Quality Control Guide** | Content quality standards | [docs/guides/QUALITY-CONTROL.md](./docs/guides/QUALITY-CONTROL.md) |
 | **Course Templates** | Reusable course templates | [docs/templates/](./docs/templates/) |
 | **Portfolio & Capabilities** | Course inventory & AI matrix | [docs/business/portfolio/](./docs/business/portfolio/) |
 
 ### Shared Resources
 
-**AI Tool Configurations:** [`ai-tool-configs/`](./ai-tool-configs/)
+**AI Tool Configurations:** [`_shared/configs/`](./_shared/configs/)
 
 Pre-configured setups for:
 - Claude Code with CLAUDE.md templates
@@ -329,19 +348,13 @@ Pre-configured setups for:
 - Cursor IDE settings
 - Test framework configs (Jest, Playwright, pytest)
 
-**Example Projects:** [`shared-resources/example-projects/`](./shared-resources/example-projects/)
+**Example Projects:** [`_shared/examples/`](./_shared/examples/)
 
-Reference implementations:
-- **Gamma Automation** - Presentation creation automation
+Reference implementations available in course directories.
 
-**GitHub References:** [`github-references/`](./github-references/)
+**Shared Templates:** [`_shared/templates/`](./_shared/templates/)
 
-Curated repositories organized by category:
-- Agentic design patterns
-- API testing examples
-- Playwright boilerplates
-- Page Object Model patterns
-- CI/CD examples
+New course templates and scaffolding.
 
 ---
 

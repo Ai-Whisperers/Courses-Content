@@ -476,7 +476,7 @@ To maintain trust with our students and partners:
 For accurate status reporting, always check:
 
 - **[HONEST-STATUS-REPORT.md](./HONEST-STATUS-REPORT.md)** - Authoritative source of course status
-- **[QUALITY-CONTROL-CHECKLIST.md](./QUALITY-CONTROL-CHECKLIST.md)** - Detailed quality standards
+- **[docs/guides/QUALITY-CONTROL.md](./docs/guides/QUALITY-CONTROL.md)** - Detailed quality standards
 - **[docs/guides/course-creation/](./docs/guides/course-creation/)** - Course development guide
 
 ---

@@ -1,5 +1,9 @@
 # FPUNA Summer 2026 - AI-Augmented Development Program
 
+**Status:** 🟡 In Development (~40% Complete) | ⚠️ Not Yet Student Tested | 📦 6/45 Modules | 🎯 Target: Q2 2026
+
+---
+
 ## Modular Course Architecture
 
 **Universidad**: Facultad Politécnica - Universidad Nacional de Asunción (FPUNA)  
