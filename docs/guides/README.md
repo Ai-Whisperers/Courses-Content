@@ -17,6 +17,7 @@
 | Guide | Description | Audience |
 |-------|-------------|----------|
 | **[Documentation Consolidation Plan](./DOCUMENTATION-CONSOLIDATION-PLAN.md)** | 4-week plan for organizing and consolidating documentation | Maintainers, contributors |
+| **[Documentation Style Guide](./DOCUMENTATION-STYLE-GUIDE.md)** | Markdown conventions, file naming, metadata standards, and formatting rules | All contributors |
 | **[Quality Control](./QUALITY-CONTROL.md)** | Content quality standards and review checklist | All contributors |
 
 ### 🚀 Deployment & Infrastructure
@@ -258,9 +259,9 @@ Add to archive with note:
 
 | Metric | Count |
 |--------|-------|
-| **Total Guides** | 5 |
+| **Total Guides** | 6 |
 | **Planning & Analysis** | 1 |
-| **Documentation** | 2 |
+| **Documentation** | 3 |
 | **Infrastructure** | 2 |
 | **Subdirectories** | 2 |
 | **Last Updated** | 2026-01-24 |
