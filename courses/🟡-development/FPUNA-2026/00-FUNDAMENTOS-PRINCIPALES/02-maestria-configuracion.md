@@ -200,14 +200,20 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    Start[🎯 Instalar Filesystem MCP] --> Open[Abrir PowerShell/Terminal]
-    Open --> Install[Escribir comando npm install]
-    Install --> Wait[Esperar 1-2 minutos]
-    Wait --> Config[Crear archivo de configuración]
-    Config --> Test[Probar que funciona]
-    Test --> Success[✅ ¡Listo para usar!]
+    Start["🎯<br/>Instalar<br/>Filesystem MCP"] --> Open["💻<br/>Abrir<br/>Terminal"]
+    Open --> Install["📦<br/>npm install<br/>-g"]
+    Install --> Wait["⏳<br/>Esperar<br/>1-2 min"]
+    Wait --> Config["⚙️<br/>Crear<br/>mcp-servers.json"]
+    Config --> Test["🧪<br/>Probar<br/>conexión"]
+    Test --> Success["✅<br/>¡Listo!<br/>Funciona"]
     
-    style Start fill:#e1f5ff
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style Open fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style Install fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style Wait fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Config fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style Test fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style Success fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
     style Success fill:#90EE90
 ```
 
@@ -834,14 +840,19 @@ rules:
 
 ```mermaid
 flowchart TD
-    A[Tú pides algo a OpenCode] --> B[OpenCode lee tus Rules]
-    B --> C[OpenCode genera código]
-    C --> D{¿Cumple<br/>las Rules?}
-    D -->|No| E[OpenCode ajusta<br/>automáticamente]
+    A["👤<br/>Tú pides a<br/>OpenCode"] --> B["📜<br/>Lee tus<br/>Rules"]
+    B --> C["⚙️<br/>Genera<br/>código"]
+    C --> D{"✅<br/>¿Cumple<br/>Rules?"}
+    D -->|"❌ No"| E["🔧<br/>Ajusta<br/>auto"]
     E --> D
-    D -->|Sí| F[✅ Te muestra<br/>el código]
+    D -->|"✅ Sí"| F["🎉<br/>Código<br/>perfecto"]
     
-    style F fill:#90EE90
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
+    style C fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#fff
+    style D fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 ### Ejemplo: Ver Rules en Acción
@@ -913,34 +924,39 @@ module.exports = { sumar };
 
 ```mermaid
 graph TB
-    subgraph "Tu OpenCode Configurado"
-        User[👤 Tú das comandos]
+    subgraph Setup["🎯 Tu OpenCode Profesional"]
+        direction TB
+        User["👤<br/>Tú<br/>comandos"] --> OC["🤖<br/>OpenCode<br/>Core"]
         
-        User --> OC[🤖 OpenCode]
+        OC --> MCPs["🔌<br/>MCPs<br/>Conexiones"]
+        OC --> Skills["📦<br/>Skills<br/>Plantillas"]
+        OC --> Rules["📜<br/>Rules<br/>Reglas"]
+        OC --> Hooks["⚡<br/>Hooks<br/>Auto"]
         
-        OC --> MCPs[🔌 MCPs]
-        OC --> Skills[📦 Skills]
-        OC --> Rules[📜 Rules]
-        OC --> Hooks[⚡ Hooks]
+        MCPs --> FS["📁<br/>Files"]
+        MCPs --> Git["🔧<br/>Git"]
+        MCPs --> GH["🐙<br/>GitHub"]
         
-        MCPs --> FS[📁 Filesystem]
-        MCPs --> Git[🔧 Git]
-        MCPs --> GH[🐙 GitHub]
+        Skills --> README["📄<br/>README"]
+        Skills --> Tests["🧪<br/>Tests"]
+        Skills --> FPUNA["🎓<br/>Header"]
         
-        Skills --> README[📄 Generate README]
-        Skills --> Tests[🧪 Generate Tests]
-        Skills --> FPUNA[🎓 FPUNA Header]
+        Rules --> Style["✍️<br/>Style"]
+        Rules --> Docs["📚<br/>Docs"]
+        Rules --> Security["🔒<br/>Secure"]
         
-        Rules --> Style[✍️ Code Style]
-        Rules --> Docs[📚 Documentation]
-        Rules --> Security[🔒 Security]
-        
-        Hooks --> Format[💅 Auto Format]
-        Hooks --> TestRun[✅ Auto Test]
-        Hooks --> Deploy[🚀 Auto Deploy]
+        Hooks --> Format["💅<br/>Format"]
+        Hooks --> TestRun["✅<br/>Test"]
+        Hooks --> Deploy["🚀<br/>Deploy"]
     end
     
-    style OC fill:#90EE90
+    style Setup fill:#E3F2FD,stroke:#2196F3,stroke-width:3px
+    style User fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style OC fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style MCPs fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style Skills fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style Rules fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style Hooks fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
 ```
 
 ### Archivo de Configuración Completo para Estudiante FPUNA
@@ -1006,21 +1022,22 @@ hooks:
 
 ```mermaid
 journey
-    title Workflow Completo de Desarrollo
-    section Crear Proyecto
-      Pedir a OpenCode crear proyecto: 5: Tú
-      OpenCode crea estructura: 5: OpenCode
-      Hook: Formatear código: 5: Automático
-      Hook: Agregar encabezado FPUNA: 5: Automático
-    section Desarrollar
-      Pedir funciones: 4: Tú
-      OpenCode genera con Rules: 5: OpenCode
-      Código ya formateado y documentado: 5: Automático
-    section Commit
-      Hacer git add y commit: 4: Tú
-      Hook: Ejecutar tests: 4: Automático
-      Hook: Verificar lint: 4: Automático
-      Commit exitoso: 5: Sistema
+    title 🎯 Workflow Completo de Desarrollo con OpenCode
+    section 1️⃣ Crear Proyecto
+      Solicitar proyecto a OpenCode: 5: 👤 Tú
+      Crear estructura de archivos: 5: 🤖 OpenCode
+      Hook: Formatear código auto: 5: ⚡ Auto
+      Hook: Agregar header FPUNA: 5: ⚡ Auto
+    section 2️⃣ Desarrollar Features
+      Pedir nuevas funciones: 5: 👤 Tú
+      Generar código con Rules: 5: 🤖 OpenCode
+      Código formateado y documentado: 5: ⚡ Auto
+      Validación y tests incluidos: 5: ⚡ Auto
+    section 3️⃣ Commit & Push
+      Ejecutar git add y commit: 4: 👤 Tú
+      Hook: Correr tests automático: 4: ⚡ Auto
+      Hook: Verificar lint y estilo: 4: ⚡ Auto
+      Commit exitoso y pusheado: 5: ✅ Listo
 ```
 
 **Comando de prueba completo**:
@@ -1398,16 +1415,17 @@ Cuando un MCP no funciona, primero verifica: (1) que el MCP esté correctamente 
 
 ```mermaid
 journey
-    title Tu Progreso en el Curso
-    section Completado
-      Módulo 01 Instalación: 5: Completado
-      Módulo 02 Configuración: 5: Completado
-    section Siguiente
-      Módulo 03 Prompt Engineering: 3: Por hacer
-      Módulo 04 Context Engineering: 3: Por hacer
-    section Futuro
-      Módulo 05 Live Project: 3: Por hacer
-      Módulo 06 Workflow Patterns: 3: Por hacer
+    title 🎓 Tu Progreso en el Curso FPUNA
+    section ✅ Completado
+      Módulo 01: Instalación Stack: 5: ✅ Done
+      Módulo 02: Configuración Mastery: 5: ✅ Done
+    section ▶️ Siguiente Paso
+      Módulo 03: Prompt Engineering: 4: 🎯 Next
+      Módulo 04: Context Engineering: 3: 📋 Queue
+    section 🔮 Por Venir
+      Módulo 05: Live Project Demo: 3: 🚀 Soon
+      Módulo 06: Workflow Patterns: 3: 🎨 Later
+      Especialización por Carrera: 2: 🎓 Final
 ```
 
 **Ahora que dominaste la configuración**:
