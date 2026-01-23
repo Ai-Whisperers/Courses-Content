@@ -829,23 +829,23 @@ y estructura de código."
 
 ```mermaid
 mindmap
-  root((Roles))
-    Profesor
-      Explica didácticamente
-      Usa analogías
-      Paciencia
-    Senior Dev
-      Best practices
-      Patrones de diseño
-      Código limpio
-    Code Reviewer
-      Crítico constructivo
-      Busca bugs
-      Mejoras de performance
-    Documentador
-      Claridad
-      Ejemplos
-      Referencias
+  root(("🎭<br/>Roles<br/>para IA"))
+    ("👨‍🏫 Profesor")
+      "📚 Explica<br/>didáctico"
+      "💡 Usa<br/>analogías"
+      "😊 Paciente<br/>alentador"
+    ("👨‍💻 Senior Dev")
+      "⭐ Best<br/>practices"
+      "🏗️ Patrones<br/>diseño"
+      "✨ Código<br/>limpio"
+    ("🔍 Code Reviewer")
+      "🎯 Crítico<br/>constructivo"
+      "🐛 Busca<br/>bugs"
+      "⚡ Mejoras<br/>performance"
+    ("📝 Documentador")
+      "💎 Claridad<br/>total"
+      "💡 Ejemplos<br/>prácticos"
+      "🔗 Referencias<br/>útiles"
 ```
 
 **Ejemplo**:
@@ -889,14 +889,18 @@ Tono: Amigable, alentador, educativo. Usa 'vos' (estilo paraguayo)."
 
 ```mermaid
 flowchart TD
-    A[Sin restricciones] --> B[OpenCode da<br/>respuesta larga<br/>y detallada]
-    B --> C[Tienes que<br/>extraer lo que<br/>necesitas]
+    A["❌<br/>Sin<br/>restricciones"] --> B["📜<br/>Respuesta<br/>larga y<br/>detallada"]
+    B --> C["✂️<br/>Extraer<br/>lo que<br/>necesitas"]
     
-    D[Con restricciones] --> E[OpenCode da<br/>respuesta en<br/>formato exacto]
-    E --> F[Listo para<br/>procesar]
+    D["✅<br/>Con<br/>restricciones"] --> E["🎯<br/>Respuesta<br/>formato<br/>exacto"]
+    E --> F["🎉<br/>Listo<br/>para<br/>usar"]
     
-    style C fill:#FFF4B6
-    style F fill:#90EE90
+    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style C fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -937,23 +941,31 @@ ACCIÓN INMEDIATA: [Qué hacer primero]"
 
 ```mermaid
 graph TD
-    A[Capa 1:<br/>Estructura Base] --> B{¿Funciona?}
-    B -->|Sí| C[Capa 2:<br/>Lógica Core]
-    B -->|No| A
+    A["1️⃣<br/>Estructura<br/>Base"] --> B{"✅<br/>¿OK?"}
+    B -->|"✅ Sí"| C["2️⃣<br/>Lógica<br/>Core"]
+    B -->|"❌ No"| A
     
-    C --> D{¿Funciona?}
-    D -->|Sí| E[Capa 3:<br/>Validaciones]
-    D -->|No| C
+    C --> D{"✅<br/>¿OK?"}
+    D -->|"✅ Sí"| E["3️⃣<br/>Validaciones<br/>Robustas"]
+    D -->|"❌ No"| C
     
-    E --> F{¿Funciona?}
-    F -->|Sí| G[Capa 4:<br/>Mejoras UI/UX]
-    F -->|No| E
+    E --> F{"✅<br/>¿OK?"}
+    F -->|"✅ Sí"| G["4️⃣<br/>UI/UX<br/>Polish"]
+    F -->|"❌ No"| E
     
-    G --> H{¿Funciona?}
-    H -->|Sí| I[✅ Producto Final]
-    H -->|No| G
+    G --> H{"✅<br/>¿OK?"}
+    H -->|"✅ Sí"| I["🎉<br/>Producto<br/>Final"]
+    H -->|"❌ No"| G
     
-    style I fill:#90EE90
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style C fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style G fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style I fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style B fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style D fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style F fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style H fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
 ```
 
 **Ejemplo**:
@@ -1173,27 +1185,37 @@ OPTIMIZA Y EXPLICA:
 
 ```mermaid
 flowchart TD
-    Start[Resultado<br/>No Satisfactorio] --> Q1{¿Fue<br/>específico<br/>suficiente?}
+    Start["😞<br/>Resultado<br/>No Bueno"] --> Q1{"❓<br/>¿Específico<br/>suficiente?"}
     
-    Q1 -->|No| Fix1[Agregar más<br/>detalles específicos]
-    Q1 -->|Sí| Q2{¿Proporcionó<br/>contexto?}
+    Q1 -->|"❌ No"| Fix1["📝<br/>Agregar<br/>detalles"]
+    Q1 -->|"✅ Sí"| Q2{"❓<br/>¿Con<br/>contexto?"}
     
-    Q2 -->|No| Fix2[Agregar contexto<br/>relevante]
-    Q2 -->|Sí| Q3{¿Incluyó<br/>ejemplos?}
+    Q2 -->|"❌ No"| Fix2["🌍<br/>Agregar<br/>contexto"]
+    Q2 -->|"✅ Sí"| Q3{"❓<br/>¿Con<br/>ejemplos?"}
     
-    Q3 -->|No| Fix3[Mostrar ejemplos<br/>del resultado deseado]
-    Q3 -->|Sí| Q4{¿Es tarea<br/>muy compleja?}
+    Q3 -->|"❌ No"| Fix3["💡<br/>Mostrar<br/>ejemplos"]
+    Q3 -->|"✅ Sí"| Q4{"❓<br/>¿Muy<br/>complejo?"}
     
-    Q4 -->|Sí| Fix4[Dividir en<br/>pasos más pequeños]
-    Q4 -->|No| Fix5[Usar técnica<br/>Few-Shot o Role]
+    Q4 -->|"✅ Sí"| Fix4["✂️<br/>Dividir<br/>pasos"]
+    Q4 -->|"❌ No"| Fix5["🎭<br/>Few-Shot<br/>o Role"]
     
-    Fix1 --> Retry[Reintentar]
+    Fix1 --> Retry["🔄<br/>Reintentar"]
     Fix2 --> Retry
     Fix3 --> Retry
     Fix4 --> Retry
     Fix5 --> Retry
     
-    style Retry fill:#90EE90
+    style Start fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style Q1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Q2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Q3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Q4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Fix1 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style Fix2 fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style Fix3 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style Fix4 fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    style Fix5 fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style Retry fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 ### Checklist de Debugging
@@ -1292,29 +1314,41 @@ opencode "Crea una app de gestión"
 
 ```mermaid
 mindmap
-  root((Prompt<br/>Engineering))
-    Anatomía
-      Contexto
-      Tarea
-      Requisitos
-      Formato
-      Restricciones
-    Principios
-      Especificidad
-      Contexto
-      Ejemplos
-      División
-      Iteración
-    Técnicas
-      Chain of Thought
-      Few-Shot
-      Role Prompting
-      Constrained
-      Incremental
-    Práctica
-      Biblioteca
-      Debugging
-      Mejora continua
+  root(("🎯<br/>Prompt<br/>Engineering<br/>Mastery"))
+    ("📋<br/>Anatomía<br/>del Prompt")
+      ["🌍<br/>Contexto<br/>situacional"]
+      ["🎯<br/>Tarea<br/>específica"]
+      ["⚙️<br/>Requisitos<br/>técnicos"]
+      ["📝<br/>Formato<br/>deseado"]
+      ["🔒<br/>Restricciones<br/>y límites"]
+    ("💡<br/>7 Principios<br/>Clave")
+      ["🎯<br/>Especificidad<br/>máxima"]
+      ["🌍<br/>Contexto<br/>completo"]
+      ["💡<br/>Ejemplos<br/>concretos"]
+      ["✂️<br/>División<br/>de tareas"]
+      ["🔄<br/>Iteración<br/>continua"]
+      ["📐<br/>Estructura<br/>clara"]
+      ["🎨<br/>Formato<br/>definido"]
+    ("🚀<br/>Técnicas<br/>Avanzadas")
+      ["💭<br/>Chain of<br/>Thought"]
+      ["📚<br/>Few-Shot<br/>Learning"]
+      ["🎭<br/>Role<br/>Prompting"]
+      ["🔒<br/>Constrained<br/>Generation"]
+      ["📈<br/>Incremental<br/>Building"]
+    ("🛠️<br/>Práctica<br/>Continua")
+      ["📚<br/>Biblioteca<br/>personal"]
+      ["🐛<br/>Debugging<br/>sistemático"]
+      ["📈<br/>Mejora<br/>continua"]
+      ["🔄<br/>Refinamiento<br/>iterativo"]
+
+%% Styling
+classDef rootStyle fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+classDef anatomyStyle fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+classDef principlesStyle fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+classDef techniquesStyle fill:#F39C12,stroke:#C87F0A,stroke-width:3px,color:#333
+classDef practiceStyle fill:#9B59B6,stroke:#7D3C98,stroke-width:3px,color:#fff
+
+class root rootStyle
 ```
 
 ---
@@ -1334,21 +1368,52 @@ Has completado el Módulo 03. Ahora dominas el arte de comunicarte con OpenCode.
 ### El Poder que Ahora Tienes
 
 ```mermaid
-graph LR
-    A[Antes:<br/>Prompts vagos] --> B[Después:<br/>Prompts profesionales]
+graph TB
+    subgraph before["❌ ANTES: Prompts Vagos"]
+        A["😕<br/>Resultados imprecisos<br/>No sabes qué obtendrás"]
+        B["🔄<br/>Múltiples iteraciones<br/>Pérdida de tiempo"]
+        C["🐛<br/>Código con errores<br/>Requiere muchos fixes"]
+    end
     
-    B --> C[🎯 Resultados precisos]
-    B --> D[⚡ Menos iteraciones]
-    B --> E[💎 Código de calidad]
-    B --> F[⏱️ Ahorro de tiempo]
+    subgraph transformation["⚡ TRANSFORMACIÓN"]
+        T["🎓<br/>Dominio de Prompt Engineering<br/>Aplicar 7 principios + 5 técnicas"]
+    end
     
-    C --> G[🚀 10x Productividad]
+    subgraph after["✅ DESPUÉS: Prompts Profesionales"]
+        D["🎯<br/>Resultados precisos<br/>Primera vez bien"]
+        E["⚡<br/>Una sola iteración<br/>Máxima eficiencia"]
+        F["💎<br/>Código de calidad<br/>Listo para producción"]
+    end
+    
+    subgraph result["🚀 RESULTADO FINAL"]
+        G["🚀<br/>10x Productividad<br/>Trabajo profesional en minutos"]
+    end
+    
+    A --> T
+    B --> T
+    C --> T
+    
+    T --> D
+    T --> E
+    T --> F
+    
     D --> G
     E --> G
     F --> G
     
-    style A fill:#FFB6C1
-    style G fill:#90EE90
+    style before fill:#FF6B6B,stroke:#C0392B,stroke-width:3px,color:#fff
+    style transformation fill:#FFD93D,stroke:#F39C12,stroke-width:4px,color:#333
+    style after fill:#50C878,stroke:#27AE60,stroke-width:3px,color:#fff
+    style result fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+    
+    style A fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
+    style B fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
+    style C fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
+    style T fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
+    style D fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
+    style E fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
+    style F fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
+    style G fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
 ```
 
 ---
