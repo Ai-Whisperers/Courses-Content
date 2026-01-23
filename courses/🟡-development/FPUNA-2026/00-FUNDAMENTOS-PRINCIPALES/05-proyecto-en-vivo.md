@@ -65,16 +65,19 @@ En esta sesión, el instructor creará:
 ### Analogía: Aprender a Cocinar
 
 ```mermaid
-graph LR
-    A[Leer recetas<br/>Módulos 1-4] --> B[Ver a chef<br/>cocinar<br/>Módulo 5]
-    B --> C[Cocinar tú mismo<br/>Proyectos propios]
+graph TB
+    A["📚<br/>Leer recetas<br/>Módulos 1-4<br/>Teoría"] --> B["👨‍🍳<br/>Ver a chef<br/>cocinar en vivo<br/>Módulo 5"]
+    B --> C["🍳<br/>Cocinar<br/>tú mismo<br/>Proyectos propios"]
     
-    A -.No es suficiente.-> D[No sabes cómo<br/>empezar]
-    B --> E[Entiendes el<br/>proceso completo]
+    A -.❌ Solo teoría no basta.-> D["😕<br/>No sabes<br/>cómo empezar<br/>Paralizado"]
+    B --> E["✅<br/>Entiendes<br/>proceso completo<br/>Confianza"]
     E --> C
     
-    style D fill:#FFB6C1
-    style E fill:#90EE90
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style C fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style D fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style E fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 **Una cosa es leer sobre desarrollo con IA, otra es VERLO en acción.**
@@ -89,24 +92,27 @@ Una aplicación web para que estudiantes de FPUNA gestionen sus gastos mensuales
 
 ```mermaid
 mindmap
-  root((Gestor de<br/>Gastos))
-    Agregar Gastos
-      Monto en Guaraníes
-      Categoría
-      Descripción
-      Fecha automática
-    Visualizar
-      Lista completa
-      Filtrar por categoría
-      Tabla ordenable
-    Análisis
-      Total por categoría
-      Gráfico de barras
-      Resumen mensual
-    Persistencia
-      LocalStorage
-      No requiere servidor
-      Funciona offline
+  root(("💰<br/>Gestor de<br/>Gastos<br/>Personales"))
+    ("➕<br/>Agregar<br/>Gastos")
+      ["💵<br/>Monto en<br/>Guaraníes"]
+      ["🏷️<br/>Categoría<br/>(alimentos, transporte, etc.)"]
+      ["📝<br/>Descripción<br/>opcional"]
+      ["📅<br/>Fecha<br/>automática"]
+    ("👁️<br/>Visualizar<br/>Gastos")
+      ["📋<br/>Lista<br/>completa"]
+      ["🔍<br/>Filtrar por<br/>categoría"]
+      ["📊<br/>Tabla<br/>ordenable"]
+      ["🎨<br/>Responsive<br/>design"]
+    ("📈<br/>Análisis<br/>y Reportes")
+      ["💹<br/>Total por<br/>categoría"]
+      ["📊<br/>Gráfico de<br/>barras"]
+      ["📅<br/>Resumen<br/>mensual"]
+      ["📉<br/>Tendencias"]
+    ("💾<br/>Persistencia<br/>de Datos")
+      ["💽<br/>LocalStorage<br/>del navegador"]
+      ["🌐<br/>No requiere<br/>servidor"]
+      ["✈️<br/>Funciona<br/>offline"]
+      ["📥<br/>Export<br/>a CSV"]
 ```
 
 ### Features Completas
@@ -126,22 +132,33 @@ mindmap
 
 ```mermaid
 flowchart TD
-    Start[💡 Idea:<br/>App de Gastos] --> Plan[📋 Planificación<br/>5 min]
-    Plan --> Setup[⚙️ Setup Proyecto<br/>5 min]
-    Setup --> Context[📝 Archivos de Contexto<br/>5 min]
-    Context --> Gen1[🎨 Generar HTML<br/>10 min]
-    Gen1 --> Gen2[⚙️ Generar JavaScript<br/>15 min]
-    Gen2 --> Gen3[💅 Generar CSS<br/>10 min]
-    Gen3 --> Test[🧪 Probar App<br/>10 min]
-    Test --> Debug{¿Bugs?}
-    Debug -->|Sí| Fix[🔧 Corregir<br/>10 min]
-    Debug -->|No| Improve[✨ Mejoras<br/>15 min]
+    Start["💡<br/>Idea:<br/>App de Gastos<br/>Personales"] --> Plan["📋<br/>Planificación<br/>⏱️ 5 min"]
+    Plan --> Setup["⚙️<br/>Setup Proyecto<br/>⏱️ 5 min"]
+    Setup --> Context["📝<br/>Archivos de<br/>Contexto<br/>⏱️ 5 min"]
+    Context --> Gen1["🎨<br/>Generar HTML<br/>Estructura<br/>⏱️ 10 min"]
+    Gen1 --> Gen2["⚙️<br/>Generar JS<br/>Lógica<br/>⏱️ 15 min"]
+    Gen2 --> Gen3["💅<br/>Generar CSS<br/>Estilos<br/>⏱️ 10 min"]
+    Gen3 --> Test["🧪<br/>Probar App<br/>Testing<br/>⏱️ 10 min"]
+    Test --> Debug{"❓<br/>¿Hay<br/>Bugs?"}
+    Debug -->|"✅ No"| Improve["✨<br/>Mejoras<br/>Features extra<br/>⏱️ 15 min"]
+    Debug -->|"❌ Sí"| Fix["🔧<br/>Corregir<br/>Debug<br/>⏱️ 10 min"]
     Fix --> Test
-    Improve --> Doc[📚 Documentación<br/>5 min]
-    Doc --> Final[🎉 App Completa]
+    Improve --> Doc["📚<br/>Documentación<br/>README<br/>⏱️ 5 min"]
+    Doc --> Final["🎉<br/>App Completa<br/>Lista para usar"]
     
-    style Start fill:#e1f5ff
-    style Final fill:#90EE90
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style Plan fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Setup fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Context fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Gen1 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style Gen2 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style Gen3 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style Test fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style Debug fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
+    style Fix fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Improve fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style Doc fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style Final fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ---
@@ -152,21 +169,35 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
+    autonumber
     participant I as 👨‍🏫 Instructor
     participant T as 💻 Terminal
     participant VS as 📝 VS Code
     
+    rect rgb(230, 249, 230)
+    Note over I,T: 📦 Crear Proyecto
     I->>T: mkdir gestor-gastos-fpuna
     I->>T: cd gestor-gastos-fpuna
     I->>T: npm init -y
-    Note over I,T: Proyecto Node inicializado
+    Note right of T: ✅ package.json creado<br/>Proyecto Node listo
+    end
     
+    rect rgb(230, 240, 255)
+    Note over I,T: 📁 Estructura de Carpetas
     I->>T: mkdir src tests docs
-    I->>VS: code .
-    Note over I,VS: VS Code abierto
+    I->>T: mkdir src/components src/utils src/styles
+    Note right of T: ✅ Carpetas creadas
+    end
     
-    I->>VS: Crear estructura de carpetas
-    Note over VS: src/{components,utils,styles}<br/>tests/<br/>docs/
+    rect rgb(255, 245, 230)
+    Note over I,VS: 🚀 Abrir Editor
+    I->>VS: code .
+    Note right of VS: ✅ VS Code abierto<br/>Proyecto visible<br/>Listo para código
+    end
+    
+    style I fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style T fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style VS fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 ### Estructura que se Creará
@@ -451,17 +482,37 @@ IMPORTANTE:
 
 ```mermaid
 sequenceDiagram
+    autonumber
     participant I as 👨‍🏫 Instructor
     participant OC as 🤖 OpenCode
     participant File as 📄 index.html
+    participant Browser as 🌐 Navegador
     
-    I->>OC: Envía prompt detallado
-    Note over OC: Genera HTML<br/>semántico completo
-    OC->>File: Crea archivo
-    I->>File: Abre en navegador
-    Note over I,File: Verifica estructura
-    I->>OC: "Agrega meta tags OG"
-    OC->>File: Actualiza
+    rect rgb(230, 249, 230)
+    Note over I,OC: 📝 Generación de HTML
+    I->>OC: Envía prompt detallado<br/>(estructura completa)
+    Note right of OC: Lee .opencode<br/>Lee CLAUDE.md<br/>Genera código
+    OC->>File: ✅ Crea index.html<br/>semántico completo
+    end
+    
+    rect rgb(230, 240, 255)
+    Note over I,Browser: 🔍 Verificación
+    I->>Browser: Abre archivo en navegador
+    Browser->>I: Muestra estructura visual
+    Note right of I: ✅ Revisa:<br/>- Header correcto<br/>- Form presente<br/>- Tabla visible<br/>- Footer OK
+    end
+    
+    rect rgb(255, 245, 230)
+    Note over I,OC: ✨ Refinamiento
+    I->>OC: "Agrega meta tags Open Graph"
+    OC->>File: 📝 Actualiza HTML
+    Note right of File: ✅ Meta tags agregados<br/>Listo para compartir
+    end
+    
+    style I fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style OC fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style File fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style Browser fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#333
 ```
 
 ### 3.2 JavaScript Logic (15 min)
@@ -685,32 +736,46 @@ TODO bien comentado y organizado por secciones"
 
 ```mermaid
 flowchart TD
-    A[Abrir index.html] --> B{¿Se ve<br/>correctamente?}
-    B -->|No| C[Ajustar CSS]
+    A["🌐<br/>Abrir<br/>index.html"] --> B{"👁️<br/>¿Se ve<br/>correctamente?"}
+    B -->|"❌ No"| C["🎨<br/>Ajustar<br/>CSS"]
     C --> A
-    B -->|Sí| D[Probar agregar gasto]
+    B -->|"✅ Sí"| D["➕<br/>Probar<br/>agregar gasto"]
     
-    D --> E{¿Funciona?}
-    E -->|No| F[Debug en Console]
-    F --> G[Corregir JavaScript]
+    D --> E{"✅<br/>¿Funciona?"}
+    E -->|"❌ No"| F["🔍<br/>Debug en<br/>Console"]
+    F --> G["🔧<br/>Corregir<br/>JavaScript"]
     G --> D
-    E -->|Sí| H[Probar eliminar]
+    E -->|"✅ Sí"| H["🗑️<br/>Probar<br/>eliminar"]
     
-    H --> I{¿Funciona?}
-    I -->|No| F
-    I -->|Sí| J[Probar filtros]
+    H --> I{"✅<br/>¿Funciona?"}
+    I -->|"❌ No"| F
+    I -->|"✅ Sí"| J["🔍<br/>Probar<br/>filtros"]
     
-    J --> K{¿Funciona?}
-    K -->|No| F
-    K -->|Sí| L[Probar LocalStorage]
+    J --> K{"✅<br/>¿Funciona?"}
+    K -->|"❌ No"| F
+    K -->|"✅ Sí"| L["💾<br/>Probar<br/>LocalStorage"]
     
-    L --> M{¿Persiste datos?}
-    M -->|No| F
-    M -->|Sí| N[Probar responsive]
+    L --> M{"✅<br/>¿Persiste<br/>datos?"}
+    M -->|"❌ No"| F
+    M -->|"✅ Sí"| N["📱<br/>Probar<br/>responsive"]
     
-    N --> O[✅ App funcional]
+    N --> O["🎉<br/>App<br/>100%<br/>funcional"]
     
-    style O fill:#90EE90
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
+    style C fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style D fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style E fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style F fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style G fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
+    style H fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style I fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style J fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style K fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style L fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style M fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
+    style N fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style O fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ### Bugs Comunes que Verás (y Cómo se Resuelven)
