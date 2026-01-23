@@ -2,6 +2,10 @@
 
 > Reusable templates for creating professional AI training courses
 
+**Purpose:** Accelerate course development with battle-tested templates  
+**Audience:** Course creators, instructors, content developers  
+**Last Updated:** January 24, 2026
+
 ## Quick Navigation
 
 | Template | Purpose | Time Savings |
@@ -12,6 +16,9 @@
 | [Supporting Materials](supporting-materials/) | Prompts, resources, presentations | 2-4 hours |
 | [Quick Start Guides](quick-start/) | Step-by-step course creation guides | N/A |
 | [AI Integration](ai-integration/) | .claude, .cursor, .gemini configs | 30 min |
+| [Course Checklist](COURSE-CHECKLIST-TEMPLATE.md) | Course-level quality checklist | 15 min |
+| [Module Checklist](MODULE-CHECKLIST-TEMPLATE.md) | Module-level quality checklist | 10 min |
+| [Course Structure](COURSE-STRUCTURE-TEMPLATE.md) | Comprehensive course structure guide | 30 min |
 
 ---
 
@@ -105,10 +112,31 @@ All templates follow these standards:
 
 ## Related Documentation
 
-- [Course Content Creation Guide](../frameworks/COURSE-CONTENT-CREATION-GUIDE.md)
-- [Course Template Master](../frameworks/COURSE-TEMPLATE-MASTER.md)
-- [Assessment Framework](../frameworks/ASSESSMENT-FRAMEWORK.md)
-- [Course Preparation Checklist](../frameworks/COURSE-PREPARATION-CHECKLIST.md)
+### In This Repository
+- **[Course Creation Guide](../guides/course-creation/)** - Complete workflow
+- **[Assessment Guide](../guides/assessment/)** - Design and grading
+- **[Quality Control](../guides/QUALITY-CONTROL.md)** - Standards and review
+- **[Documentation Hub](../README.md)** - Main navigation
+
+### External Resources
+- [Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/) - Learning objectives
+- [Backward Design](https://cft.vanderbilt.edu/guides-sub-pages/understanding-by-design/) - Course design
+- [Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/) - WCAG standards
+
+---
+
+## Statistics
+
+| Metric | Count |
+|--------|-------|
+| **Template Categories** | 9 |
+| **Course Skeletons** | 2 (self-paced, instructor-led) |
+| **Module Templates** | 2 formats × 7 templates each = 14 |
+| **Assessment Templates** | 2 (capstone brief, rubric) |
+| **Supporting Materials** | 4 (prompts, cheatsheets, glossaries) |
+| **AI Integration Configs** | 3 (Claude, Cursor, Gemini) |
+| **Checklists** | 2 (course, module) |
+| **Total Templates** | 35+ |
 
 ---
 
@@ -116,4 +144,10 @@ All templates follow these standards:
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1 | January 2026 | Added metadata, stats, updated links |
 | 1.0 | November 2025 | Initial template library |
+
+---
+
+**Maintained By:** Course Development Team  
+**Next Review:** February 2026

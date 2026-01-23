@@ -1,5 +1,10 @@
 # Documentation Consolidation Plan
 
+**Purpose:** 4-week plan to audit and consolidate scattered documentation  
+**Audience:** Maintainers, contributors, documentation team  
+**Status:** Active (Week 3 in progress)  
+**Last Updated:** January 24, 2026
+
 Audit and consolidate scattered documentation across the repository.
 
 ---

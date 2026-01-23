@@ -636,7 +636,9 @@ callbacks: {
 
 ### Próximos Pasos
 
-Si aprobaste (6+), continúa con [Módulo 04 - UI/UX & Styling](./04-ui-ux-styling.md).
+Si aprobaste (6+), continúa con Módulo 04 - UI/UX & Styling.
+
+**Note (2026-01-24):** This module has been moved to the status-based course structure. See: `courses/🟡-development/FPUNA-2026/01-DESARROLLO-SOFTWARE/especializaciones/web-development/04-diseno-ui-ux.md`
 
 Si no, identifica los temas donde fallaste y repasa esas secciones.
 ```

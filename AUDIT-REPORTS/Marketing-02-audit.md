@@ -791,7 +791,9 @@ Esto NO es problema de precio/envío porque los usuarios se van INMEDIATAMENTE s
 
 ### Próximos Pasos
 
-✅ **Aprobado (6+)**: Continúa con [Módulo 03 - Social Media Automation](./03-social-media-automation.md)
+✅ **Aprobado (6+)**: Continúa con Módulo 03 - Social Media Automation
+
+**Note (2026-01-24):** This module has been moved to the status-based course structure. See: `courses/🟡-development/FPUNA-2026/04-MARKETING-COMUNICACION/03-social-media-automation.md`
 
 ⚠️ **No aprobado**: 
 - **Preguntas 1-3**: Revisa Parte 1 (GA4, KPIs)
