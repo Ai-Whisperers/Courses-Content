@@ -65,19 +65,20 @@ En esta sesión, el instructor creará:
 ### Analogía: Aprender a Cocinar
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    A["📚<br/>Leer recetas<br/>Módulos 1-4<br/>Teoría"] --> B["👨‍🍳<br/>Ver a chef<br/>cocinar en vivo<br/>Módulo 5"]
+    A["Leer recetas<br/>Módulos 1-4<br/>Teoría"] --> B["👨‍🍳<br/>Ver a chef<br/>cocinar en vivo<br/>Módulo 5"]
     B --> C["🍳<br/>Cocinar<br/>tú mismo<br/>Proyectos propios"]
     
-    A -.❌ Solo teoría no basta.-> D["😕<br/>No sabes<br/>cómo empezar<br/>Paralizado"]
-    B --> E["✅<br/>Entiendes<br/>proceso completo<br/>Confianza"]
+    A -.Solo teoría no basta.-> D["No sabes<br/>cómo empezar<br/>Paralizado"]
+    B --> E["Entiendes<br/>proceso completo<br/>Confianza"]
     E --> C
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
-    style C fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
-    style D fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style E fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style C fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
+    style D fill:#FF6B6B,stroke:#7f0000,stroke-width:3px,color:#fff
+    style E fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
 ```
 
 **Una cosa es leer sobre desarrollo con IA, otra es VERLO en acción.**
@@ -91,26 +92,27 @@ graph TB
 Una aplicación web para que estudiantes de FPUNA gestionen sus gastos mensuales.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root(("💰<br/>Gestor de<br/>Gastos<br/>Personales"))
     ("➕<br/>Agregar<br/>Gastos")
       ["💵<br/>Monto en<br/>Guaraníes"]
       ["🏷️<br/>Categoría<br/>(alimentos, transporte, etc.)"]
-      ["📝<br/>Descripción<br/>opcional"]
+      ["Descripción<br/>opcional"]
       ["📅<br/>Fecha<br/>automática"]
     ("👁️<br/>Visualizar<br/>Gastos")
       ["📋<br/>Lista<br/>completa"]
-      ["🔍<br/>Filtrar por<br/>categoría"]
-      ["📊<br/>Tabla<br/>ordenable"]
-      ["🎨<br/>Responsive<br/>design"]
-    ("📈<br/>Análisis<br/>y Reportes")
+      ["Filtrar por<br/>categoría"]
+      ["Tabla<br/>ordenable"]
+      ["Responsive<br/>design"]
+    ("Análisis<br/>y Reportes")
       ["💹<br/>Total por<br/>categoría"]
-      ["📊<br/>Gráfico de<br/>barras"]
+      ["Gráfico de<br/>barras"]
       ["📅<br/>Resumen<br/>mensual"]
-      ["📉<br/>Tendencias"]
+      ["Tendencias"]
     ("💾<br/>Persistencia<br/>de Datos")
       ["💽<br/>LocalStorage<br/>del navegador"]
-      ["🌐<br/>No requiere<br/>servidor"]
+      ["No requiere<br/>servidor"]
       ["✈️<br/>Funciona<br/>offline"]
       ["📥<br/>Export<br/>a CSV"]
 ```
@@ -131,34 +133,35 @@ mindmap
 ## 📊 Workflow Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["💡<br/>Idea:<br/>App de Gastos<br/>Personales"] --> Plan["📋<br/>Planificación<br/>⏱️ 5 min"]
-    Plan --> Setup["⚙️<br/>Setup Proyecto<br/>⏱️ 5 min"]
-    Setup --> Context["📝<br/>Archivos de<br/>Contexto<br/>⏱️ 5 min"]
-    Context --> Gen1["🎨<br/>Generar HTML<br/>Estructura<br/>⏱️ 10 min"]
-    Gen1 --> Gen2["⚙️<br/>Generar JS<br/>Lógica<br/>⏱️ 15 min"]
+    Start["Idea:<br/>App de Gastos<br/>Personales"] --> Plan["📋<br/>Planificación<br/>⏱️ 5 min"]
+    Plan --> Setup["Setup Proyecto<br/>⏱️ 5 min"]
+    Setup --> Context["Archivos de<br/>Contexto<br/>⏱️ 5 min"]
+    Context --> Gen1["Generar HTML<br/>Estructura<br/>⏱️ 10 min"]
+    Gen1 --> Gen2["Generar JS<br/>Lógica<br/>⏱️ 15 min"]
     Gen2 --> Gen3["💅<br/>Generar CSS<br/>Estilos<br/>⏱️ 10 min"]
-    Gen3 --> Test["🧪<br/>Probar App<br/>Testing<br/>⏱️ 10 min"]
-    Test --> Debug{"❓<br/>¿Hay<br/>Bugs?"}
-    Debug -->|"✅ No"| Improve["✨<br/>Mejoras<br/>Features extra<br/>⏱️ 15 min"]
-    Debug -->|"❌ Sí"| Fix["🔧<br/>Corregir<br/>Debug<br/>⏱️ 10 min"]
+    Gen3 --> Test["Probar App<br/>Testing<br/>⏱️ 10 min"]
+    Test --> Debug{"¿Hay<br/>Bugs?"}
+    Debug -->|"No"| Improve["Mejoras<br/>Features extra<br/>⏱️ 15 min"]
+    Debug -->|"Sí"| Fix["Corregir<br/>Debug<br/>⏱️ 10 min"]
     Fix --> Test
-    Improve --> Doc["📚<br/>Documentación<br/>README<br/>⏱️ 5 min"]
-    Doc --> Final["🎉<br/>App Completa<br/>Lista para usar"]
+    Improve --> Doc["Documentación<br/>README<br/>⏱️ 5 min"]
+    Doc --> Final["App Completa<br/>Lista para usar"]
     
-    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style Plan fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style Setup fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style Context fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style Gen1 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
-    style Gen2 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
-    style Gen3 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
-    style Test fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style Debug fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
-    style Fix fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Improve fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
-    style Doc fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style Final fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
+    style Start fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style Plan fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Setup fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Context fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style Gen1 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Gen2 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Gen3 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Test fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Debug fill:#e65100,stroke:#e65100,stroke-width:3px,color:#333
+    style Fix fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Improve fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style Doc fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style Final fill:#1b5e20,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ---
@@ -168,10 +171,11 @@ flowchart TD
 ### Paso a Paso que Verás
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     autonumber
     participant I as 👨‍🏫 Instructor
-    participant T as 💻 Terminal
+    participant T as Terminal
     participant VS as 📝 VS Code
     
     rect rgb(230, 249, 230)
@@ -179,25 +183,25 @@ sequenceDiagram
     I->>T: mkdir gestor-gastos-fpuna
     I->>T: cd gestor-gastos-fpuna
     I->>T: npm init -y
-    Note right of T: ✅ package.json creado<br/>Proyecto Node listo
+    Note right of T: package.json creado<br/>Proyecto Node listo
     end
     
     rect rgb(230, 240, 255)
     Note over I,T: 📁 Estructura de Carpetas
     I->>T: mkdir src tests docs
     I->>T: mkdir src/components src/utils src/styles
-    Note right of T: ✅ Carpetas creadas
+    Note right of T: Carpetas creadas
     end
     
     rect rgb(255, 245, 230)
-    Note over I,VS: 🚀 Abrir Editor
+    Note over I,VS: Abrir Editor
     I->>VS: code .
-    Note right of VS: ✅ VS Code abierto<br/>Proyecto visible<br/>Listo para código
+    Note right of VS: VS Code abierto<br/>Proyecto visible<br/>Listo para código
     end
     
-    style I fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style T fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
-    style VS fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style I fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style T fill:#4a148c,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style VS fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
 ```
 
 ### Estructura que se Creará
@@ -481,38 +485,39 @@ IMPORTANTE:
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     autonumber
     participant I as 👨‍🏫 Instructor
-    participant OC as 🤖 OpenCode
+    participant OC as OpenCode
     participant File as 📄 index.html
-    participant Browser as 🌐 Navegador
+    participant Browser as Navegador
     
     rect rgb(230, 249, 230)
     Note over I,OC: 📝 Generación de HTML
     I->>OC: Envía prompt detallado<br/>(estructura completa)
     Note right of OC: Lee .opencode<br/>Lee CLAUDE.md<br/>Genera código
-    OC->>File: ✅ Crea index.html<br/>semántico completo
+    OC->>File: Crea index.html<br/>semántico completo
     end
     
     rect rgb(230, 240, 255)
     Note over I,Browser: 🔍 Verificación
     I->>Browser: Abre archivo en navegador
     Browser->>I: Muestra estructura visual
-    Note right of I: ✅ Revisa:<br/>- Header correcto<br/>- Form presente<br/>- Tabla visible<br/>- Footer OK
+    Note right of I: Revisa:<br/>- Header correcto<br/>- Form presente<br/>- Tabla visible<br/>- Footer OK
     end
     
     rect rgb(255, 245, 230)
-    Note over I,OC: ✨ Refinamiento
+    Note over I,OC: Refinamiento
     I->>OC: "Agrega meta tags Open Graph"
     OC->>File: 📝 Actualiza HTML
-    Note right of File: ✅ Meta tags agregados<br/>Listo para compartir
+    Note right of File: Meta tags agregados<br/>Listo para compartir
     end
     
-    style I fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style OC fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
-    style File fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
-    style Browser fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#333
+    style I fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style OC fill:#4a148c,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style File fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
+    style Browser fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
 ```
 
 ### 3.2 JavaScript Logic (15 min)
@@ -735,47 +740,48 @@ TODO bien comentado y organizado por secciones"
 ### Proceso de Testing en Vivo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    A["🌐<br/>Abrir<br/>index.html"] --> B{"👁️<br/>¿Se ve<br/>correctamente?"}
-    B -->|"❌ No"| C["🎨<br/>Ajustar<br/>CSS"]
+    A["Abrir<br/>index.html"] --> B{"👁️<br/>¿Se ve<br/>correctamente?"}
+    B -->|"No"| C["Ajustar<br/>CSS"]
     C --> A
-    B -->|"✅ Sí"| D["➕<br/>Probar<br/>agregar gasto"]
+    B -->|"Sí"| D["➕<br/>Probar<br/>agregar gasto"]
     
-    D --> E{"✅<br/>¿Funciona?"}
-    E -->|"❌ No"| F["🔍<br/>Debug en<br/>Console"]
-    F --> G["🔧<br/>Corregir<br/>JavaScript"]
+    D --> E{"¿Funciona?"}
+    E -->|"No"| F["Debug en<br/>Console"]
+    F --> G["Corregir<br/>JavaScript"]
     G --> D
-    E -->|"✅ Sí"| H["🗑️<br/>Probar<br/>eliminar"]
+    E -->|"Sí"| H["🗑️<br/>Probar<br/>eliminar"]
     
-    H --> I{"✅<br/>¿Funciona?"}
-    I -->|"❌ No"| F
-    I -->|"✅ Sí"| J["🔍<br/>Probar<br/>filtros"]
+    H --> I{"¿Funciona?"}
+    I -->|"No"| F
+    I -->|"Sí"| J["Probar<br/>filtros"]
     
-    J --> K{"✅<br/>¿Funciona?"}
-    K -->|"❌ No"| F
-    K -->|"✅ Sí"| L["💾<br/>Probar<br/>LocalStorage"]
+    J --> K{"¿Funciona?"}
+    K -->|"No"| F
+    K -->|"Sí"| L["💾<br/>Probar<br/>LocalStorage"]
     
-    L --> M{"✅<br/>¿Persiste<br/>datos?"}
-    M -->|"❌ No"| F
-    M -->|"✅ Sí"| N["📱<br/>Probar<br/>responsive"]
+    L --> M{"¿Persiste<br/>datos?"}
+    M -->|"No"| F
+    M -->|"Sí"| N["📱<br/>Probar<br/>responsive"]
     
-    N --> O["🎉<br/>App<br/>100%<br/>funcional"]
+    N --> O["App<br/>100%<br/>funcional"]
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
-    style C fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
-    style D fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style E fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
-    style F fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style G fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#333
-    style H fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style I fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
-    style J fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style K fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
-    style L fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style M fill:#FFD93D,stroke:#F39C12,stroke-width:2px,color:#333
-    style N fill:#7B68EE,stroke:#5A4DB8,stroke-width:2px,color:#fff
-    style O fill:#50C878,stroke:#27AE60,stroke-width:4px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#e65100,stroke-width:3px,color:#333
+    style C fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style D fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style E fill:#e65100,stroke:#e65100,stroke-width:2px,color:#333
+    style F fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style G fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style H fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style I fill:#e65100,stroke:#e65100,stroke-width:2px,color:#333
+    style J fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style K fill:#e65100,stroke:#e65100,stroke-width:2px,color:#333
+    style L fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style M fill:#e65100,stroke:#e65100,stroke-width:2px,color:#333
+    style N fill:#4a148c,stroke:#5A4DB8,stroke-width:2px,color:#fff
+    style O fill:#1b5e20,stroke:#27AE60,stroke-width:4px,color:#fff
 ```
 
 ### Bugs Comunes que Verás (y Cómo se Resuelven)
@@ -885,6 +891,7 @@ MIT - Uso educativo
 ### 1. Workflow Iterativo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Prompt] --> B[Código generado]
     B --> C[Probar]
@@ -893,7 +900,7 @@ graph LR
     E --> B
     D -->|Sí| F[Siguiente feature]
     
-    style F fill:#90EE90
+    style F fill:#1b5e20
 ```
 
 **Lección**: Desarrollo con IA es iterativo - no esperes perfección al primer intento.
@@ -901,6 +908,7 @@ graph LR
 ### 2. Contexto es Crucial
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Contexto<br/>Reduce<br/>Iteraciones))
     .opencode
@@ -932,6 +940,7 @@ mindmap
 ### 4. Divide y Conquistarás
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Tarea Grande:<br/>App Completa] --> B[Dividir en Pasos]
     B --> C[HTML primero]
@@ -939,7 +948,7 @@ flowchart TD
     B --> E[CSS al final]
     B --> F[Mejoras iterativas]
     
-    C --> G[✅ Completo<br/>y Funcional]
+    C --> G[Completo<br/>y Funcional]
     D --> G
     E --> G
     F --> G

@@ -25,6 +25,7 @@
 ### Analogía: Sistema de Transporte de Asunción
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((System Design))
     Ciudad
@@ -57,17 +58,18 @@ mindmap
 ## 📊 Fundamentos de Escalabilidad
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[Tu App] --> Q{¿Cómo escalar?}
     
     Q --> A[Vertical<br/>Servidor más potente]
     Q --> B[Horizontal<br/>Más servidores]
     
-    A --> A1[✅ Simple<br/>❌ Límite físico<br/>❌ Costoso<br/>❌ Single point of failure]
-    B --> B1[✅ Infinito<br/>✅ Alta disponibilidad<br/>❌ Más complejo<br/>⚠️ Necesitas LB]
+    A --> A1[Simple<br/>Límite físico<br/>Costoso<br/>Single point of failure]
+    B --> B1[Infinito<br/>Alta disponibilidad<br/>Más complejo<br/>⚠️ Necesitas LB]
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#1b5e20
 ```
 
 ### Escalabilidad Vertical vs Horizontal
@@ -84,21 +86,22 @@ graph TD
 **Ejemplo Real: FPUNA Matrícula Online**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Escalabilidad Vertical"
         A[Servidor 8GB RAM] --> B[Servidor 16GB RAM] --> C[Servidor 64GB RAM]
-        C --> D[❌ Límite alcanzado]
+        C --> D[Límite alcanzado]
     end
     
     subgraph "Escalabilidad Horizontal"
         E[Load Balancer] --> F1[Servidor 1<br/>8GB RAM]
         E --> F2[Servidor 2<br/>8GB RAM]
         E --> F3[Servidor 3<br/>8GB RAM]
-        E --> F4[Servidor N<br/>✅ Agregar más]
+        E --> F4[Servidor N<br/>Agregar más]
     end
     
-    style C fill:#FFE1E1
-    style F4 fill:#E1FFE1
+    style C fill:#b71c1c
+    style F4 fill:#1b5e20
 ```
 
 ---
@@ -108,16 +111,17 @@ graph LR
 ### Concepto: Componentes Clave de un Sistema Escalable
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Sistema Escalable Completo"
-        U[👤 Usuario] --> CDN[🌐 CDN<br/>Contenido estático]
+        U[Usuario] --> CDN[CDN<br/>Contenido estático]
         U --> LB[⚖️ Load Balancer]
         
         LB --> S1[🖥️ Server 1]
         LB --> S2[🖥️ Server 2]
         LB --> S3[🖥️ Server 3]
         
-        S1 --> Cache[🚀 Cache<br/>Redis]
+        S1 --> Cache[Cache<br/>Redis]
         S2 --> Cache
         S3 --> Cache
         
@@ -129,10 +133,10 @@ graph TB
         DB1 --> DB3[(📖 DB Replica 2)]
     end
     
-    style CDN fill:#E1F5FF
+    style CDN fill:#0d47a1
     style LB fill:#FFD700
-    style Cache fill:#E1FFE1
-    style DB1 fill:#FFE1F5
+    style Cache fill:#1b5e20
+    style DB1 fill:#4a148c
 ```
 
 ### 1. Load Balancer: El Distribuidor de Tareas
@@ -142,6 +146,7 @@ graph TB
 **Algoritmos de Load Balancing**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Algoritmos LB"
         A[Round Robin<br/>Turno rotativo]
@@ -150,10 +155,10 @@ graph LR
         D[Weighted<br/>Servers con capacidad diferente]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 **Ejemplo: Sistema de Inscripciones FPUNA**
@@ -196,9 +201,10 @@ server {
 **Tipos de Cache**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Niveles de Cache"
-        A[🌐 CDN Cache<br/>Imágenes, CSS, JS<br/>TTL: días/semanas]
+        A[CDN Cache<br/>Imágenes, CSS, JS<br/>TTL: días/semanas]
         B[🔥 Application Cache<br/>API responses<br/>TTL: minutos/horas]
         C[💾 Database Cache<br/>Query results<br/>TTL: segundos/minutos]
         D[🗄️ Database<br/>Fuente de verdad]
@@ -208,15 +214,16 @@ graph TD
         C --> D
     end
     
-    style A fill:#E1F5FF
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#1b5e20
+    style C fill:#e65100
+    style D fill:#4a148c
 ```
 
 **Estrategias de Caching**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant C as Cliente
     participant A as App Server
@@ -292,6 +299,7 @@ export class UserService {
 **Analogía**: Como tener kioscos de Coca-Cola en cada barrio de Asunción vs una fábrica centralizada.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "CDN Global"
         O[🌍 Origin Server<br/>Paraguay]
@@ -300,19 +308,19 @@ graph TB
         CDN2[📍 CDN Miami<br/>Edge Server]
         CDN3[📍 CDN Madrid<br/>Edge Server]
         
-        U1[👤 Usuario Brasil] --> CDN1
-        U2[👤 Usuario USA] --> CDN2
-        U3[👤 Usuario España] --> CDN3
+        U1[Usuario Brasil] --> CDN1
+        U2[Usuario USA] --> CDN2
+        U3[Usuario España] --> CDN3
         
         CDN1 -.Sync.-> O
         CDN2 -.Sync.-> O
         CDN3 -.Sync.-> O
     end
     
-    style O fill:#FFE1E1
-    style CDN1 fill:#E1FFE1
-    style CDN2 fill:#E1FFE1
-    style CDN3 fill:#E1FFE1
+    style O fill:#b71c1c
+    style CDN1 fill:#1b5e20
+    style CDN2 fill:#1b5e20
+    style CDN3 fill:#1b5e20
 ```
 
 **Qué servir desde CDN**:
@@ -328,6 +336,7 @@ graph TB
 **Analogía**: Como dividir biblioteca FPUNA por facultades - Ingeniería en piso 1, Medicina en piso 2.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Database Sharding"
         LB[🔀 App Server]
@@ -339,10 +348,10 @@ graph TD
     end
     
     style LB fill:#FFD700
-    style S1 fill:#E1FFE1
-    style S2 fill:#E1F5FF
-    style S3 fill:#FFF4E1
-    style S4 fill:#FFE1F5
+    style S1 fill:#1b5e20
+    style S2 fill:#0d47a1
+    style S3 fill:#e65100
+    style S4 fill:#4a148c
 ```
 
 **Estrategias de Sharding**:
@@ -395,15 +404,16 @@ export class ShardingService {
 **Problema: Joins entre shards**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Problema: Query Cross-Shard"
         A[User 523<br/>Shard 1] -.JOIN.-> B[Posts User 523<br/>Shard 3]
         
-        C[❌ JOIN ineficiente<br/>Requiere red]
+        C[JOIN ineficiente<br/>Requiere red]
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
     style C fill:#FFD700
 ```
 
@@ -418,10 +428,11 @@ graph LR
 **Analogía**: Como sistema de turnos en banco - tomas ticket, esperas tu número.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Message Queue System"
-        P1[📧 Producer 1<br/>Order Service] --> Q[📮 Queue<br/>RabbitMQ/Kafka]
-        P2[📧 Producer 2<br/>User Service] --> Q
+        P1[Producer 1<br/>Order Service] --> Q[📮 Queue<br/>RabbitMQ/Kafka]
+        P2[Producer 2<br/>User Service] --> Q
         
         Q --> C1[👷 Consumer 1<br/>Email Service]
         Q --> C2[👷 Consumer 2<br/>SMS Service]
@@ -429,11 +440,11 @@ graph LR
     end
     
     style Q fill:#FFD700
-    style P1 fill:#E1F5FF
-    style P2 fill:#E1F5FF
-    style C1 fill:#E1FFE1
-    style C2 fill:#E1FFE1
-    style C3 fill:#E1FFE1
+    style P1 fill:#0d47a1
+    style P2 fill:#0d47a1
+    style C1 fill:#1b5e20
+    style C2 fill:#1b5e20
+    style C3 fill:#1b5e20
 ```
 
 **Ventajas**:
@@ -505,6 +516,7 @@ export class SMSService {
 ### CAP Theorem: El Trilema de Sistemas Distribuidos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "CAP Theorem - Elegir 2 de 3"
         C[Consistency<br/>Todos leen dato actualizado]
@@ -520,14 +532,15 @@ graph TD
     CP[CP System<br/>MongoDB, HBase<br/>Consistente pero puede no responder]
     AP[AP System<br/>Cassandra, DynamoDB<br/>Disponible pero eventualmente consistente]
     
-    style C fill:#E1FFE1
-    style A fill:#FFF4E1
-    style P fill:#FFE1F5
+    style C fill:#1b5e20
+    style A fill:#e65100
+    style P fill:#4a148c
 ```
 
 **Ejemplo Práctico: Sistema de "Likes" en Red Social**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant U1 as Usuario Paraguay
     participant S1 as Server LATAM
@@ -539,7 +552,7 @@ sequenceDiagram
     U1->>S1: Like post 123
     S1->>S1: likes: 5 → 6 (local)
     
-    Note over S1,S2: ❌ Red cae
+    Note over S1,S2: Red cae
     
     U2->>S2: Like post 123
     S2->>S2: likes: 5 → 6 (local)
@@ -549,7 +562,7 @@ sequenceDiagram
     S1->>S2: Sync likes
     S2->>S1: Sync likes
     
-    Note over S1,S2: Resolver conflicto:<br/>6 (S1) vs 6 (S2)<br/>✅ Resultado: 7 likes
+    Note over S1,S2: Resolver conflicto:<br/>6 (S1) vs 6 (S2)<br/>Resultado: 7 likes
 ```
 
 **Trade-offs**:
@@ -565,18 +578,19 @@ sequenceDiagram
 **Analogía**: Como límite de velocidad en Autopista Ñu Guasu - protege el sistema.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Rate Limiting"
-        U[👤 Usuario] --> RL[🚦 Rate Limiter]
+        U[Usuario] --> RL[🚦 Rate Limiter]
         
         RL --> A{Límite?}
-        A -->|Dentro del límite| OK[✅ Procesar Request]
-        A -->|Excede límite| ERR[❌ 429 Too Many Requests]
+        A -->|Dentro del límite| OK[Procesar Request]
+        A -->|Excede límite| ERR[429 Too Many Requests]
     end
     
     style RL fill:#FFD700
-    style OK fill:#E1FFE1
-    style ERR fill:#FFE1E1
+    style OK fill:#1b5e20
+    style ERR fill:#b71c1c
 ```
 
 **Algoritmos**:
@@ -635,11 +649,12 @@ export class RateLimiterMiddleware implements NestMiddleware {
 **Concepto**: Separar operaciones de lectura (Query) y escritura (Command).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "CQRS Pattern"
-        C[👤 Cliente]
+        C[Cliente]
         
-        C --> W[✍️ Write API<br/>Commands]
+        C --> W[Write API<br/>Commands]
         C --> R[👁️ Read API<br/>Queries]
         
         W --> DB1[(🗄️ Write DB<br/>PostgreSQL<br/>Normalizado)]
@@ -648,9 +663,9 @@ graph TB
         DB1 -.Sync.-> DB3[(📖 Read DB 2<br/>Elasticsearch<br/>Búsqueda)]
     end
     
-    style W fill:#FFE1E1
-    style R fill:#E1FFE1
-    style DB1 fill:#FFF4E1
+    style W fill:#b71c1c
+    style R fill:#1b5e20
+    style DB1 fill:#e65100
 ```
 
 **Ventajas**:
@@ -747,6 +762,7 @@ export class ProductQueryService {
 **Concepto**: Guardar eventos en vez de estado actual.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Event Sourcing"
         E1[Event: Order Created] --> ES[(Event Store)]
@@ -758,8 +774,8 @@ graph LR
     end
     
     style ES fill:#FFD700
-    style P fill:#E1F5FF
-    style S fill:#E1FFE1
+    style P fill:#0d47a1
+    style S fill:#1b5e20
 ```
 
 **Ventajas**:
@@ -905,20 +921,21 @@ console.log(pastAccount.getBalance()); // Gs. 1,500,000
 **Arquitectura Propuesta**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Twitter-like System"
-        U[👤 Usuario] --> CDN[🌐 CDN<br/>Assets estáticos]
+        U[Usuario] --> CDN[CDN<br/>Assets estáticos]
         U --> LB[⚖️ Load Balancer]
         
         LB --> API1[API Server 1]
         LB --> API2[API Server 2]
         LB --> API3[API Server N]
         
-        API1 --> Cache[🚀 Redis Cache<br/>Timelines]
+        API1 --> Cache[Redis Cache<br/>Timelines]
         
         API1 --> TweetDB[(📝 Tweet Service<br/>Cassandra<br/>Sharded)]
         
-        API1 --> UserDB[(👤 User Service<br/>PostgreSQL<br/>Master-Slave)]
+        API1 --> UserDB[(User Service<br/>PostgreSQL<br/>Master-Slave)]
         
         API1 --> Q[📮 Message Queue]
         Q --> Worker1[👷 Timeline Worker]
@@ -928,8 +945,8 @@ graph TB
     end
     
     style LB fill:#FFD700
-    style Cache fill:#E1FFE1
-    style TweetDB fill:#FFF4E1
+    style Cache fill:#1b5e20
+    style TweetDB fill:#e65100
 ```
 
 **Estrategias Clave**:
@@ -959,22 +976,23 @@ graph TB
 **Arquitectura**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "URL Shortener"
-        U[👤 Usuario] --> LB[⚖️ Load Balancer]
+        U[Usuario] --> LB[⚖️ Load Balancer]
         
         LB --> API[API Servers]
         
-        API --> Cache[🚀 Redis<br/>Hot URLs]
+        API --> Cache[Redis<br/>Hot URLs]
         API --> DB[(🗄️ PostgreSQL<br/>URL Mappings)]
         
         API --> MQ[📮 Queue]
-        MQ --> Analytics[📊 Analytics Service]
-        Analytics --> DWH[(📈 Data Warehouse)]
+        MQ --> Analytics[Analytics Service]
+        Analytics --> DWH[(Data Warehouse)]
     end
     
-    style Cache fill:#E1FFE1
-    style DB fill:#FFF4E1
+    style Cache fill:#1b5e20
+    style DB fill:#e65100
 ```
 
 **Desafíos**:
@@ -1071,25 +1089,26 @@ export class UrlRedirectController {
 **Arquitectura**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Chat System"
-        U1[👤 Usuario 1] -.WebSocket.-> Gateway[🚪 Gateway]
-        U2[👤 Usuario 2] -.WebSocket.-> Gateway
+        U1[Usuario 1] -.WebSocket.-> Gateway[🚪 Gateway]
+        U2[Usuario 2] -.WebSocket.-> Gateway
         
-        Gateway --> Chat[💬 Chat Service]
+        Gateway --> Chat[Chat Service]
         
         Chat --> MsgDB[(💾 Message DB<br/>Cassandra<br/>Partitioned by conversationId)]
         
         Chat --> Queue[📮 Queue]
         Queue --> Push[🔔 Push Service]
-        Queue --> Storage[☁️ Media Storage<br/>S3]
+        Queue --> Storage[Media Storage<br/>S3]
         
         Chat --> Presence[🟢 Presence Service<br/>Redis<br/>Online status]
     end
     
     style Gateway fill:#FFD700
-    style Chat fill:#E1F5FF
-    style MsgDB fill:#FFF4E1
+    style Chat fill:#0d47a1
+    style MsgDB fill:#e65100
 ```
 
 **Componentes**:
@@ -1103,6 +1122,7 @@ graph TB
 **Flujo de Mensaje**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant U1 as Usuario 1
     participant WS as WebSocket Gateway
@@ -1114,14 +1134,14 @@ sequenceDiagram
     WS->>CS: Process Message
     CS->>DB: Store Message (async)
     CS->>WS: Message Stored
-    WS->>U1: ✅ Sent (1 checkmark)
+    WS->>U1: Sent (1 checkmark)
     
     WS->>U2: Deliver Message (WebSocket)
     U2->>WS: ACK Received
-    WS->>U1: ✅✅ Delivered (2 checkmarks)
+    WS->>U1: ✅Delivered (2 checkmarks)
     
     U2->>WS: Read Message
-    WS->>U1: ✅✅ Read (blue checkmarks)
+    WS->>U1: ✅Read (blue checkmarks)
 ```
 
 ---
@@ -1197,6 +1217,7 @@ COMPONENTES:
 
 DIAGRAMA C4 LEVEL 2:
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Frontend Layer"
         WEB[Web App<br/>React]

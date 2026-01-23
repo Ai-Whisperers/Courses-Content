@@ -25,6 +25,7 @@
 ### Analogía: Casa Ordenada vs Casa Desordenada
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Clean Code))
     Casa Ordenada
@@ -54,6 +55,7 @@ mindmap
 ### El Costo del Código Sucio
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[Código Sucio] --> A[Difícil Mantener]
     A --> B[Más Bugs]
@@ -62,7 +64,7 @@ graph TD
     D --> E[Cliente Insatisfecho]
     E --> F[Proyecto Fracasa]
     
-    style Start fill:#FFE1E1
+    style Start fill:#b71c1c
     style F fill:#FF0000,color:#FFF
 ```
 
@@ -71,12 +73,13 @@ graph TD
 ## 📊 Los Principios de Clean Code
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Clean Code Principles"
         A[📝 Nombres<br/>Descriptivos]
-        B[⚡ Funciones<br/>Pequeñas]
-        C[💬 Comentarios<br/>Innecesarios]
-        D[🎯 Una Responsabilidad<br/>Por Función]
+        B[Funciones<br/>Pequeñas]
+        C[Comentarios<br/>Innecesarios]
+        D[Una Responsabilidad<br/>Por Función]
         E[🧹 DRY<br/>Don't Repeat Yourself]
         
         A --> B
@@ -85,10 +88,10 @@ graph LR
         D --> E
     end
     
-    style A fill:#E1F5FF
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#1b5e20
+    style C fill:#e65100
+    style D fill:#4a148c
     style E fill:#E1E1FF
 ```
 
@@ -101,19 +104,20 @@ graph LR
 **Analogía**: Como letreros claros en las calles de Asunción - te dicen exactamente a dónde vas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Naming Guidelines"
         A[🚫 Nombres Malos<br/>d, temp, x1]
-        B[✅ Nombres Buenos<br/>daysSinceCreation, tempCelsius, userIndex]
-        C[🎯 Regla<br/>El nombre debe explicar por qué existe]
+        B[Nombres Buenos<br/>daysSinceCreation, tempCelsius, userIndex]
+        C[Regla<br/>El nombre debe explicar por qué existe]
         
         A --> C
         B --> C
     end
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style C fill:#e65100
 ```
 
 ### Ejemplo Real: Sistema de Usuarios FPUNA
@@ -246,9 +250,10 @@ const GUARANI_TO_USD_RATE = 0.00014; // 1 Gs = 0.00014 USD
 **Regla de oro**: Una función debe hacer **UNA** cosa y hacerla bien.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Function Size"
-        A[🎯 Ideal<br/>5-10 líneas]
+        A[Ideal<br/>5-10 líneas]
         B[⚠️ Acceptable<br/>10-20 líneas]
         C[🚫 Demasiado<br/>20+ líneas]
         
@@ -256,9 +261,9 @@ graph LR
         B --> C
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#b71c1c
 ```
 
 #### ❌ Función Grande (Hace Muchas Cosas)
@@ -554,6 +559,7 @@ async syncProducts(productIds: number[]): Promise<void> {
 **Analogía**: Como cuando tu casa huele raro - algo está mal aunque no sepas qué exactamente.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Code Smells))
     Bloaters
@@ -1143,22 +1149,23 @@ class UserService {
 **Analogía**: Como renovar una casa - mejoras el interior sin cambiar la estructura externa.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Refactoring Safety Net"
-        A[🧪 Tests<br/>Antes]
+        A[Tests<br/>Antes]
         B[🔨 Refactor<br/>Código]
-        C[✅ Tests<br/>Pasan]
-        D[🎉 Deploy<br/>Seguro]
+        C[Tests<br/>Pasan]
+        D[Deploy<br/>Seguro]
         
         A --> B
         B --> C
         C --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#0d47a1
 ```
 
 ### Técnica 1: Extract Method
@@ -1445,6 +1452,7 @@ OUTPUT:
 ### Checklist de Code Review
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Code Review))
     Nombres

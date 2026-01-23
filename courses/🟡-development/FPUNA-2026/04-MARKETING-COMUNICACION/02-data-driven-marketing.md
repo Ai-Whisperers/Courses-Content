@@ -175,6 +175,7 @@ Responde SÍ/NO (necesitas al menos 3 de 4 SÍes para continuar cómodamente):
 ## 📊 Flujo de Trabajo Data-Driven
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Objetivos de Negocio] --> B[Definir KPIs Críticos]
     B --> C[Implementar Tracking]
@@ -265,6 +266,7 @@ document.getElementById('contact-form').addEventListener('submit', function() {
 ### 1.3 KPIs Esenciales para Marketing
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((KPIs Marketing))
     Adquisición
@@ -304,9 +306,10 @@ mindmap
 **Dashboard para E-commerce Paraguayo**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Dashboard E-commerce"
-        A[📊 Tráfico Diario]
+        A[Tráfico Diario]
         B[💰 Ingresos]
         C[🛒 Conversiones]
         D[📍 Origen de Usuarios]
@@ -395,6 +398,7 @@ Incluye:
 ### 2.2 Tipos de Segmentación
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Segmentación Marketing"
         A[Demográfica<br/>Edad, género, ubicación]
@@ -476,6 +480,7 @@ if (daysSinceLastVisit > 30 && totalPurchases > 0) {
 **Ejemplo: E-commerce Paraguay**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
     title Customer Journey - Compra Online
     section Descubrimiento
@@ -546,6 +551,7 @@ Contexto: Paraguay, e-commerce de electrónica, target 18-55 años
 **Definición**: Comparar dos versiones (A vs B) para determinar cuál funciona mejor.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Tráfico Total] --> B[50% ve Versión A]
     A --> C[50% ve Versión B]
@@ -628,6 +634,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 ### 3.3 Tipos de Tests A/B
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((A/B Tests))
     Landing Pages
@@ -761,6 +768,7 @@ ANALYTICS: Google Analytics 4
 **Dashboard Mensual para Cliente**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Fuentes de Datos] --> B[Google Analytics 4]
     A --> C[Google Ads]
@@ -772,9 +780,9 @@ graph TD
     D --> F
     E --> F
     
-    F --> G[📊 Tráfico]
+    F --> G[Tráfico]
     F --> H[💰 Ingresos]
-    F --> I[📈 Conversiones]
+    F --> I[Conversiones]
     F --> J[💸 ROAS]
     
     style F fill:#e8f5e9

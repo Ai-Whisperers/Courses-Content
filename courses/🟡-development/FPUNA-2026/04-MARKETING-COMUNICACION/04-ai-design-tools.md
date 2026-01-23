@@ -37,6 +37,7 @@ En Paraguay, agencias como **Tabú** y **Factoría** cobran ₲500K-2M por dise�
 ## 📊 Flujo de Diseño con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Brief Creativo] --> B{¿Qué Crear?}
     B -->|Imagen| C[Midjourney/DALL-E]
@@ -70,6 +71,7 @@ graph TD
 **Ventajas vs Stock Photos / Diseñadores:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((IA para Imágenes))
     Costo
@@ -266,6 +268,7 @@ GENERA:
 **Canva** = Photoshop simplificado + plantillas infinitas + IA integrada
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Canva Gratis] --> B[25K+ Plantillas]
     A --> C[IA Integrada]

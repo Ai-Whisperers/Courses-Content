@@ -33,6 +33,7 @@ El revenue management es el arte y la ciencia de vender **la habitación correct
 ### 1.1 Los Pilares del Revenue Management
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Revenue<br/>Management))
     Demanda
@@ -60,6 +61,7 @@ mindmap
 ### 1.2 Métricas Clave
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Métricas de Revenue] --> B[Ocupación]
     A --> C[ADR]
@@ -86,6 +88,7 @@ graph TD
 **¿Por qué RevPAR es la métrica rey?**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Escenario A] --> A1["Ocupación: 100%<br/>ADR: $70<br/>RevPAR: $70"]
     B[Escenario B] --> B1["Ocupación: 70%<br/>ADR: $100<br/>RevPAR: $70"]
@@ -99,6 +102,7 @@ El escenario C es mejor: misma ocupación alta + mejor tarifa = más ingresos to
 ### 1.3 La Curva de Demanda Hotelera
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 xychart-beta
     title "Demanda vs Precio - Hotel Típico"
     x-axis ["$50", "$75", "$100", "$125", "$150", "$175", "$200"]
@@ -119,6 +123,7 @@ xychart-beta
 ### 1.4 Calendario de Demanda Paraguay
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 gantt
     title Estacionalidad Turismo Paraguay 2026
     dateFormat  YYYY-MM-DD
@@ -155,6 +160,7 @@ gantt
 ### 2.1 Datos para el Forecasting
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Fuentes de Datos] --> B[Internos]
     A --> C[Externos]
@@ -238,6 +244,7 @@ flowchart TD
 ### 2.3 Modelo de Pick-up
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 xychart-beta
     title "Curva de Pick-up - Reservas vs Días Anticipación"
     x-axis "Días antes" [90, 75, 60, 45, 30, 21, 14, 7, 3, 1, 0]
@@ -297,6 +304,7 @@ ACCIONES RECOMENDADAS:
 ### 3.1 Factores del Pricing Dinámico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Precio Final] --> B[Factores Internos]
     A --> C[Factores Externos]
@@ -386,6 +394,7 @@ Genera la matriz completa con precios sugeridos que:
 ### 3.3 Reglas de Pricing Automatizado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Trigger:<br/>Nueva reserva<br/>o cancelación] --> B{Ocupación<br/>actual?}
 
@@ -440,6 +449,7 @@ flowchart TD
 ### 4.1 Oportunidades de Revenue Adicional
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 pie title Distribución de Ingresos - Hotel Full Service
     "Habitaciones" : 55
     "Alimentos y Bebidas" : 25
@@ -532,6 +542,7 @@ Hay una Suite con jacuzzi disponible esta noche.
 ### 4.4 Cross-selling de Servicios
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Huésped] --> B{Perfil}
 
@@ -576,6 +587,7 @@ flowchart TD
 ### 5.1 Monitoreo de Competencia
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Fuentes de<br/>Datos Competencia] --> B[Booking.com]
     A --> C[Expedia]

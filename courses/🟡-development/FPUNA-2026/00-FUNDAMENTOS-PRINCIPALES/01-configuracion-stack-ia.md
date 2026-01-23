@@ -35,15 +35,16 @@ Imagina que contratas a un asistente muy inteligente que:
 Eso es **OpenCode** - pero en lugar de ser una persona, es un programa de computadora.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    A["👤<br/>Tú"] -->|"💬 Pregunta"| B["🤖<br/>OpenCode"]
-    B -->|"✨ Respuesta"| A
-    B -->|"🔌 Conecta"| C["☁️<br/>Zen AI"]
-    C -->|"🧠 Procesa"| B
+    A["Usuario"] -->|"Pregunta"| B["OpenCode"]
+    B -->|"Respuesta"| A
+    B -->|"Conecta con"| C["Claude AI"]
+    C -->|"Procesa"| B
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style C fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style C fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
 ```
 
 ### ¿Y Oh My OpenCode?
@@ -55,19 +56,20 @@ Si OpenCode es tu asistente, **Oh My OpenCode** es como darle superpoderes:
 - 🔧 **Herramientas extra**: Conexiones con otras aplicaciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    A["🤖<br/>OpenCode<br/>Básico"] -->|"⚡ Instalar OMO"| B["🚀<br/>OpenCode con<br/>Superpoderes"]
-    B --> C["👨‍💻<br/>Experto<br/>Programación"]
-    B --> D["📊<br/>Experto<br/>Datos"]
-    B --> E["✍️<br/>Experto<br/>Escritura"]
-    B --> F["🧪<br/>Experto<br/>Testing"]
+    A["OpenCode Básico"] -->|"Instalar Oh My OpenCode"| B["OpenCode con<br>Superpoderes"]
+    B --> C["Experto en<br>Programación"]
+    B --> D["Experto en<br>Análisis de Datos"]
+    B --> E["Experto en<br>Escritura"]
+    B --> F["Experto en<br>Testing"]
     
-    style A fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style B fill:#4ECDC4,stroke:#3BA39C,stroke-width:4px,color:#fff
-    style C fill:#95E1D3,stroke:#6FB8AC,stroke-width:2px,color:#333
-    style D fill:#F38181,stroke:#C96666,stroke-width:2px,color:#fff
-    style E fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style F fill:#A8E6CF,stroke:#7FC4A0,stroke-width:2px,color:#333
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#0d47a1,stroke:#01579b,stroke-width:4px,color:#fff
+    style C fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style D fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -77,30 +79,31 @@ graph TD
 ### ¿Qué Necesitas?
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["🎯<br/>Comenzar"] --> Check1{"💻<br/>¿Tienes<br/>computadora?"}
-    Check1 -->|"✅ Sí"| Check2{"🌐<br/>¿Tienes<br/>internet?"}
-    Check1 -->|"❌ No"| Stop1["❌<br/>Necesitas<br/>computadora"]
+    Start["Comenzar"] --> Check1{"¿Tienes computadora?"}
+    Check1 -->|"Sí"| Check2{"¿Tienes internet?"}
+    Check1 -->|"No"| Stop1["Necesitas computadora"]
     
-    Check2 -->|"✅ Sí"| Check3{"📧<br/>¿Email<br/>válido?"}
-    Check2 -->|"❌ No"| Stop2["❌<br/>Necesitas<br/>internet"]
+    Check2 -->|"Sí"| Check3{"¿Tienes email válido?"}
+    Check2 -->|"No"| Stop2["Necesitas internet"]
     
-    Check3 -->|"✅ Sí"| Check4{"⏰<br/>¿2 horas<br/>libres?"}
-    Check3 -->|"❌ No"| Stop3["❌<br/>Crea email<br/>válido"]
+    Check3 -->|"Sí"| Check4{"¿Tienes 2 horas libres?"}
+    Check3 -->|"No"| Stop3["Crea email válido"]
     
-    Check4 -->|"✅ Sí"| Ready["🎉<br/>¡Listo para<br/>comenzar!"]
-    Check4 -->|"❌ No"| Stop4["❌<br/>Agenda<br/>2 horas"]
+    Check4 -->|"Sí"| Ready["Listo para comenzar"]
+    Check4 -->|"No"| Stop4["Agenda 2 horas"]
     
-    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style Ready fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style Stop1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Stop2 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Stop3 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Stop4 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Check1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Start fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style Ready fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style Stop1 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Stop2 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Stop3 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Stop4 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Check1 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Check2 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Check3 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Check4 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
 ```
 
 **Checklist Rápida**:
@@ -123,10 +126,11 @@ flowchart TD
 ### Paso 1: Descargar Node.js
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     autonumber
-    participant U as 👤<br/>Tú
-    participant W as 🌐<br/>Navegador
+    participant U as Tú
+    participant W as Navegador
     participant N as 📦<br/>Node.js
     
     U->>+W: Abrir nodejs.org
@@ -134,12 +138,12 @@ sequenceDiagram
     N-->>-W: Detectar sistema (Windows/Mac)
     W-->>-U: Mostrar botón "Descargar"
     U->>+W: Click descargar
-    W-->>-U: ✅ Archivo descargado
+    W-->>-U: Archivo descargado
     
     Note over U,N: ⏱️ Tiempo: 2-5 minutos
     
     rect rgb(80, 200, 120, 0.2)
-        Note right of N: ✨ Descarga exitosa
+        Note right of N: Descarga exitosa
     end
 ```
 
@@ -227,8 +231,9 @@ v18.19.0
 - Es MÁS poderoso porque puede crear archivos, leer tu código, y mucho más
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    subgraph Slow["❌ SIN OpenCode - 6 Pasos"]
+    subgraph Slow["SIN OpenCode - 6 Pasos"]
         direction TB
         A1["1️⃣ Abrir<br/>navegador"] --> A2["2️⃣ Ir a<br/>ChatGPT"]
         A2 --> A3["3️⃣ Copiar<br/>pregunta"]
@@ -237,17 +242,17 @@ graph TB
         A5 --> A6["6️⃣ Pegar en<br/>archivo"]
     end
     
-    subgraph Fast["✅ CON OpenCode - 1 Paso"]
+    subgraph Fast["CON OpenCode - 1 Paso"]
         direction TB
-        B1["1️⃣ Escribir<br/>comando"] --> B2["🤖 OpenCode<br/>hace TODO"] --> B3["🎉<br/>¡Listo!"]
+        B1["1️⃣ Escribir<br/>comando"] --> B2["OpenCode<br/>hace TODO"] --> B3["¡Listo!"]
     end
     
-    style Slow fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
-    style Fast fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    style Slow fill:#b71c1c,stroke:#FF6B6B,stroke-width:3px
+    style Fast fill:#1b5e20,stroke:#1b5e20,stroke-width:3px
     style A1 fill:#FFCCCB,stroke:#FF6B6B,stroke-width:2px
     style A6 fill:#FFCCCB,stroke:#FF6B6B,stroke-width:2px
-    style B1 fill:#C8E6C9,stroke:#50C878,stroke-width:2px
-    style B3 fill:#A5D6A7,stroke:#3A9B5C,stroke-width:3px,color:#fff
+    style B1 fill:#C8E6C9,stroke:#1b5e20,stroke-width:2px
+    style B3 fill:#A5D6A7,stroke:#0d3d0f,stroke-width:3px,color:#fff
 ```
 
 ### Paso 1: Instalar OpenCode
@@ -283,18 +288,19 @@ added 50 packages in 2m
 **Analogía**: OpenCode necesita conectarse a un modelo de IA. Usaremos **Zen**, que es completamente GRATUITO.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
-    title 🎯 Configurar OpenCode con Zen
+    title Configurar OpenCode con Zen
     section 1️⃣ Configuración Inicial
-      Ejecutar opencode configure: 5: 👤 Tú
-      Seleccionar Zen como provider: 5: 👤 Tú
-      Confirmar y guardar config: 4: 👤 Tú
+      Ejecutar opencode configure: 5: Tú
+      Seleccionar Zen como provider: 5: Tú
+      Confirmar y guardar config: 4: Tú
     section 2️⃣ Verificación
-      Ejecutar opencode status: 4: 👤 Tú
-      Ver "Connected" en pantalla: 5: 👤 Tú
+      Ejecutar opencode status: 4: Tú
+      Ver "Connected" en pantalla: 5: Tú
     section 3️⃣ Primera Prueba
-      Ejecutar opencode test: 4: 👤 Tú
-      ¡Recibir respuesta de IA!: 5: 🎉 Éxito
+      Ejecutar opencode test: 4: Tú
+      ¡Recibir respuesta de IA!: 5: Éxito
 ```
 
 **Pasos Detallados**:
@@ -394,28 +400,29 @@ con lo que necesites. ¿En qué puedo asistirte hoy?
 **OpenCode básico** es genial, pero **Oh My OpenCode** le agrega:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("🚀<br/>Oh My<br/>OpenCode<br/>🎯"))
+  root(("Oh My<br/>OpenCode<br/>🎯"))
     ("👥 Agentes<br/>Especializados")
       "🎨 Frontend<br/>Developer"
       "⚙️ Backend<br/>Developer"
-      "📊 Data<br/>Scientist"
-      "✍️ Content<br/>Writer"
+      "Data<br/>Scientist"
+      "Content<br/>Writer"
     ("📦 Skills<br/>Pre-configurados")
       "🏗️ Crear<br/>proyectos"
-      "🧪 Generar<br/>tests"
+      "Generar<br/>tests"
       "📝 Escribir<br/>docs"
       "🔍 Code<br/>review"
     ("📋 Plantillas<br/>Listas")
       "⚛️ React<br/>App"
-      "🔌 API<br/>REST"
-      "📈 Admin<br/>Dashboard"
+      "API<br/>REST"
+      "Admin<br/>Dashboard"
       "💾 Database<br/>Schema"
-    ("⚡ Automatización<br/>Avanzada")
+    ("Automatización<br/>Avanzada")
       "🪝 Hooks"
       "📜 Rules"
       "🔄 Workflows"
-      "🎯 MCP<br/>Servers"
+      "MCP<br/>Servers"
 ```
 
 ### Instalación Simple
@@ -458,15 +465,16 @@ Este comando:
 **Proyecto**: Una calculadora simple que suma, resta, multiplica y divide.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
-    A["💭<br/>Tú describes<br/>lo que quieres"] --> B["🧠<br/>OpenCode<br/>analiza"]
-    B --> C["⚙️<br/>OpenCode<br/>genera código"]
-    C --> D["🎉<br/>¡Calculadora<br/>funcionando!"]
+    A["Tú describes<br/>lo que quieres"] --> B["OpenCode<br/>analiza"]
+    B --> C["OpenCode<br/>genera código"]
+    C --> D["¡Calculadora<br/>funcionando!"]
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style C fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style D fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style C fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
+    style D fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 ### Paso 1: Crear Carpeta del Proyecto
@@ -552,22 +560,23 @@ node prueba.js
 ## ✅ Verificación Final: ¿Todo Funciona?
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["🎯<br/>Verificación<br/>Final"] --> Check1{"📦<br/>Node.js<br/>instalado?"}
-    Check1 -->|"✅ Sí"| Check2{"🤖<br/>OpenCode<br/>funciona?"}
-    Check1 -->|"❌ No"| Fix1["🔧<br/>Reinstalar<br/>Node.js"]
+    Start["Verificación<br/>Final"] --> Check1{"📦<br/>Node.js<br/>instalado?"}
+    Check1 -->|"Sí"| Check2{"OpenCode<br/>funciona?"}
+    Check1 -->|"No"| Fix1["Reinstalar<br/>Node.js"]
     
-    Check2 -->|"✅ Sí"| Check3{"🔌<br/>Conectado<br/>con Zen?"}
-    Check2 -->|"❌ No"| Fix2["🔧<br/>Reinstalar<br/>OpenCode"]
+    Check2 -->|"Sí"| Check3{"Conectado<br/>con Zen?"}
+    Check2 -->|"No"| Fix2["Reinstalar<br/>OpenCode"]
     
-    Check3 -->|"✅ Sí"| Check4{"🚀<br/>OMO<br/>instalado?"}
-    Check3 -->|"❌ No"| Fix3["🔧<br/>Configurar<br/>con Zen"]
+    Check3 -->|"Sí"| Check4{"OMO<br/>instalado?"}
+    Check3 -->|"No"| Fix3["Configurar<br/>con Zen"]
     
-    Check4 -->|"✅ Sí"| Check5{"🎨<br/>Proyecto<br/>creado?"}
-    Check4 -->|"❌ No"| Fix4["🔧<br/>Instalar<br/>OMO"]
+    Check4 -->|"Sí"| Check5{"Proyecto<br/>creado?"}
+    Check4 -->|"No"| Fix4["Instalar<br/>OMO"]
     
-    Check5 -->|"✅ Sí"| Success["🎉<br/>¡TODO<br/>LISTO!"]
-    Check5 -->|"❌ No"| Fix5["🔧<br/>Crear<br/>proyecto"]
+    Check5 -->|"Sí"| Success["¡TODO<br/>LISTO!"]
+    Check5 -->|"No"| Fix5["Crear<br/>proyecto"]
     
     Fix1 -.-> Check1
     Fix2 -.-> Check2
@@ -575,18 +584,18 @@ flowchart TD
     Fix4 -.-> Check4
     Fix5 -.-> Check5
     
-    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style Success fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style Fix1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Fix2 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Fix3 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Fix4 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Fix5 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Check1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Check5 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Start fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style Success fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style Fix1 fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Fix2 fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Fix3 fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Fix4 fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Fix5 fill:#FF6B6B,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Check1 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Check2 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Check3 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Check4 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Check5 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
 ```
 
 ### Checklist Final
@@ -641,6 +650,7 @@ opencode chat "Tu pregunta aquí. RESPONDE EN ESPAÑOL."
 **¡Tranquilo/a!** Es normal. Aquí un resumen:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph Navegacion["📂 Navegación"]
         A["cd"] -->|"Cambiar<br/>carpeta"| B["📁 Mover entre<br/>directorios"]
@@ -655,7 +665,7 @@ graph TB
     end
     
     subgraph Ejecutar["▶️ Ejecutar"]
-        G["node"] -->|"Correr<br/>código"| H["🚀 Ejecutar<br/>programa"]
+        G["node"] -->|"Correr<br/>código"| H["Ejecutar<br/>programa"]
     end
     
     style Navegacion fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
@@ -663,10 +673,10 @@ graph TB
     style Crear fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
     style Ejecutar fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style C fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style E fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
-    style G fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style C fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style E fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style G fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
 ```
 
 **Comandos básicos**:
@@ -865,6 +875,7 @@ OpenCode es la interfaz (CLI) que instalas localmente. Zen es el modelo de intel
 ## 🎯 Próximos Pasos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
     title Tu Camino de Aprendizaje
     section Módulo 01
@@ -891,24 +902,25 @@ journey
 ## 📊 Resumen Visual
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    A["🎯<br/>Comenzaste"] --> B["📦<br/>Instalaste<br/>Node.js"]
-    B --> C["🤖<br/>Instalaste<br/>OpenCode"]
-    C --> D["🔌<br/>Configurado<br/>con Zen<br/>✨ GRATIS"]
-    D --> E["🚀<br/>Instalaste<br/>OMO"]
-    E --> F["🎨<br/>Creaste<br/>primer<br/>proyecto"]
-    F --> G["✅<br/>¡LISTO!"]
+    A["Comenzaste"] --> B["📦<br/>Instalaste<br/>Node.js"]
+    B --> C["Instalaste<br/>OpenCode"]
+    C --> D["Configurado<br/>con Zen<br/>GRATIS"]
+    D --> E["Instalaste<br/>OMO"]
+    E --> F["Creaste<br/>primer<br/>proyecto"]
+    F --> G["¡LISTO!"]
     
     G --> H["📖<br/>Módulo 02<br/>▶️"]
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style C fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style D fill:#E74C3C,stroke:#C0392B,stroke-width:3px,color:#fff
-    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style F fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style G fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style H fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style C fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style D fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style E fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style G fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style H fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
 ```
 
 ---

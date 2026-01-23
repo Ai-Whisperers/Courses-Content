@@ -33,6 +33,7 @@ En Paraguay, agencias como **Tabú** o **Factoría Creativa** están incorporand
 ## 📊 Flujo de Trabajo de Creación con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Brief de Cliente] --> B[Investigación de Marca]
     B --> C[Definir Tono y Audiencia]
@@ -67,6 +68,7 @@ En Paraguay, el marketing digital está creciendo explosivamente:
 ### 1.2 Tipos de Contenido que Puedes Crear con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Contenido con IA))
     Redes Sociales
@@ -140,6 +142,7 @@ Audiencia: Millennials y Gen Z paraguayos
 ### 2.1 Framework de Contenido Estratégico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Objetivos de Negocio] --> B[KPIs de Contenido]
     B --> C[Pilares de Contenido]
@@ -239,6 +242,7 @@ Diferenciador: [KEY SELLING POINT]
 ### 2.4 SEO y Contenido con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Keyword Research] --> B[Intención de Búsqueda]
     B --> C[Brief SEO]
@@ -287,6 +291,7 @@ Incluir: estadísticas Paraguay, ejemplos locales, llamados a la acción
 ### 3.1 Sistema de Producción de Contenido
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Brief de Cliente] --> B[Template de Prompt]
     B --> C[Generación Masiva IA]
@@ -376,6 +381,7 @@ Variables:
 ### 3.4 Batch Processing: 30 Posts en 30 Minutos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Lista de Temas] --> B[Prompt Master]
     B --> C[IA: 30 Variaciones]
@@ -458,6 +464,7 @@ Usa esta estructura:
 Para el lanzamiento de "Banco Digital Paraguay" (fintech local), crea:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Lanzamiento Fintech] --> B[Post LinkedIn Corporativo]
     A --> C[Carrusel Instagram Educativo]

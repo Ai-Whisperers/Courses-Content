@@ -343,6 +343,7 @@ Ready to build professional test architectures? Let's begin!
 **Analogía**: Como tener un manual de instrucciones para cada sección de tu casa.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin Page Objects"
         A1[Test 1] --> UI[UI Directo]
@@ -351,7 +352,7 @@ graph TD
         A4[Test 4] --> UI
         
         UI --> Change[UI Cambia]
-        Change --> Break[❌ 4 tests rotos]
+        Change --> Break[4 tests rotos]
     end
     
     subgraph "Con Page Objects"
@@ -362,11 +363,11 @@ graph TD
         
         PO --> UI2[UI Directo]
         UI2 --> Change2[UI Cambia]
-        Change2 --> Fix[✅ Actualizar 1 archivo]
+        Change2 --> Fix[Actualizar 1 archivo]
     end
     
-    style Break fill:#FFE1E1
-    style Fix fill:#E1FFE1
+    style Break fill:#b71c1c
+    style Fix fill:#1b5e20
 ```
 
 ### Ejemplo Real: Sistema de Inscripciones FPUNA
@@ -729,6 +730,7 @@ OUTPUT: GradesPage.ts completo"
 ### Concepto: Compartir Setup entre Tests
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sin Fixtures"
         T1[Test 1] --> Setup1[Setup DB<br/>Login<br/>Create data]
@@ -742,10 +744,10 @@ graph LR
         F --> T6[Test 3]
     end
     
-    style Setup1 fill:#FFE1E1
-    style Setup2 fill:#FFE1E1
-    style Setup3 fill:#FFE1E1
-    style F fill:#E1FFE1
+    style Setup1 fill:#b71c1c
+    style Setup2 fill:#b71c1c
+    style Setup3 fill:#b71c1c
+    style F fill:#1b5e20
 ```
 
 ### Custom Fixtures en Playwright

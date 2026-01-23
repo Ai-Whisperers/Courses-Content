@@ -25,6 +25,7 @@
 ### Analogía: Arquitectura Digital de Aviones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((CAD Aeronáutico))
     Arquitectura
@@ -189,12 +190,13 @@ Antes de comenzar, verifica:
 ## 📊 El Flujo de Diseño CAD Aeronáutico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[📋 Requerimientos] --> Q{¿Qué diseñar?}
     
     Q --> A[📐 Sketch 2D<br/>Perfiles y geometrías]
     Q --> B[🔧 Modelado 3D<br/>Extrusiones, revoluciones]
-    Q --> C[📊 Parámetros<br/>Variables de diseño]
+    Q --> C[Parámetros<br/>Variables de diseño]
     
     A --> D[🔗 Ensamblajes<br/>Integrar componentes]
     B --> D
@@ -204,10 +206,10 @@ graph TD
     E -->|No| A
     E -->|Sí| F[📄 Planos + Export<br/>Fabricación y análisis]
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
     style F fill:#FFD700
 ```
 
@@ -222,6 +224,7 @@ graph TD
 **Analogía**: Como esculpir una pieza - empiezas con arcilla (sketch) y vas formando volúmenes (features).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Proceso de Modelado"
         A[📐 Sketch<br/>Perfil 2D en plano]
@@ -235,15 +238,16 @@ graph LR
         C --> D
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#4a148c
 ```
 
 ### Operaciones Básicas de CAD
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Features Fundamentales"
         R[Sketch<br/>🖊️ Dibujo 2D<br/>Base del modelo]
@@ -257,11 +261,11 @@ graph TD
         IC[Pattern<br/>🔁 Repetir<br/>Arrays y simetrías]
     end
     
-    style R fill:#FFE1E1
-    style C fill:#E1FFE1
-    style L fill:#E1F5FF
-    style D fill:#FFF4E1
-    style T fill:#FFE1F5
+    style R fill:#b71c1c
+    style C fill:#1b5e20
+    style L fill:#0d47a1
+    style D fill:#e65100
+    style T fill:#4a148c
     style IC fill:#E1E1FF
 ```
 
@@ -327,6 +331,7 @@ Output en español con contexto de diseño aeronáutico paraguayo"
 ### Reglas de Diseño CAD Aeronáutico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Reglas de Oro))
     Precisión
@@ -379,22 +384,23 @@ Origen: Típicamente en nariz o CG (centro de gravedad)
 **Fusion 360** = Alternativa accesible y potente (gratuita para estudiantes)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Workflow CAD Aeronáutico"
         A[📐 Part Design<br/>Componentes individuales]
         B[🔗 Assembly<br/>Integración]
         C[📄 Drawing<br/>Planos 2D]
-        D[📊 Simulation<br/>Export FEA/CFD]
+        D[Simulation<br/>Export FEA/CFD]
         
         A --> B
         B --> C
         B --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ### Tutorial Paso a Paso: Fuselaje de UAV
@@ -589,18 +595,19 @@ Todo en español con contexto de UAV agrícola paraguayo"
 **Ensamblaje** = Reunir componentes individuales con relaciones espaciales definidas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Tipos de Constraints"
         A[🔒 Fixed<br/>Componente fijo en origen]
         B[🔗 Mate<br/>Caras coincidentes]
-        C[⚡ Align<br/>Ejes alineados]
-        D[🎯 Insert<br/>Cilindro en agujero]
+        C[Align<br/>Ejes alineados]
+        D[Insert<br/>Cilindro en agujero]
     end
     
-    style A fill:#FFE1F5
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
-    style D fill:#E1F5FF
+    style A fill:#4a148c
+    style B fill:#1b5e20
+    style C fill:#e65100
+    style D fill:#0d47a1
 ```
 
 ### Tutorial: Ensamblar UAV Completo
@@ -727,6 +734,7 @@ Todo en español con contexto de diseño aeronáutico"
 ### Casos de Uso de IA en Diseño Aeronáutico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para CAD))
     Generación de Geometrías
@@ -875,11 +883,12 @@ Contexto: Presentación a DINAC para certificación experimental"
 ### Integración con Workflow de Diseño
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant E as 👤 Ingeniero
-    participant O as 🤖 OpenCode
+    participant E as Ingeniero
+    participant O as OpenCode
     participant C as 📐 CAD (Fusion 360)
-    participant A as 📊 Análisis (CFD/FEA)
+    participant A as Análisis (CFD/FEA)
     
     E->>O: "Genera coordenadas NACA 4412"
     O->>E: Script Python con puntos
@@ -1003,23 +1012,24 @@ Todo en español con contexto de construcción amateur"
 ### Problemas Comunes y Soluciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Errores Frecuentes"
-        A[❌ Sketch no cierra<br/>Perfil abierto]
-        B[❌ Feature falla<br/>Geometría inválida]
-        C[❌ Ensamblaje sobre-restringido<br/>Constraints conflictivos]
-        D[❌ Modelo muy pesado<br/>Rendimiento lento]
+        A[Sketch no cierra<br/>Perfil abierto]
+        B[Feature falla<br/>Geometría inválida]
+        C[Ensamblaje sobre-restringido<br/>Constraints conflictivos]
+        D[Modelo muy pesado<br/>Rendimiento lento]
     end
     
-    A --> A1[✅ Verificar endpoints<br/>Usar Coincident]
-    B --> B1[✅ Simplificar geometría<br/>Revisar tangencias]
-    C --> C1[✅ Eliminar redundantes<br/>Usar Pattern para simetría]
-    D --> D1[✅ Reducir detalles<br/>Usar LOD - Level of Detail]
+    A --> A1[Verificar endpoints<br/>Usar Coincident]
+    B --> B1[Simplificar geometría<br/>Revisar tangencias]
+    C --> C1[Eliminar redundantes<br/>Usar Pattern para simetría]
+    D --> D1[Reducir detalles<br/>Usar LOD - Level of Detail]
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
 ```
 
 #### Caso 1: Loft Falla Entre Perfiles

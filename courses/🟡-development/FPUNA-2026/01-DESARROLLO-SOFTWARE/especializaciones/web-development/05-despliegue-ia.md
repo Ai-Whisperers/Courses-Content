@@ -41,6 +41,7 @@
 ### Analogía: De la Cocina al Restaurante
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Deployment))
     Cocina tu casa
@@ -72,9 +73,10 @@ mindmap
 ## 📊 Arquitectura de Deployment Moderno
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Developer Machine"
-        A[💻 Local Dev<br/>localhost:3000]
+        A[Local Dev<br/>localhost:3000]
     end
     
     subgraph "GitHub"
@@ -84,8 +86,8 @@ graph LR
     
     subgraph "Vercel"
         D[🔨 Build<br/>next build]
-        E[🧪 Preview Deploy<br/>preview-xyz.vercel.app]
-        F[🚀 Production<br/>tuapp.com]
+        E[Preview Deploy<br/>preview-xyz.vercel.app]
+        F[Production<br/>tuapp.com]
     end
     
     A -->|git push| B
@@ -95,38 +97,39 @@ graph LR
     C -->|merge to main| D
     D -->|deploy prod| F
     
-    style A fill:#E1F5FF
-    style B fill:#FFE1F5
-    style D fill:#FFF4E1
-    style E fill:#E1FFE1
-    style F fill:#FFE1E1
+    style A fill:#0d47a1
+    style B fill:#4a148c
+    style D fill:#e65100
+    style E fill:#1b5e20
+    style F fill:#b71c1c
 ```
 
 ### Los 3 Ambientes Esenciales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Development"
-        A[👨‍💻 Local<br/>Tu máquina]
+        A[Local<br/>Tu máquina]
         A1[localhost:3000<br/>Hot reload<br/>Debug mode]
     end
     
     subgraph "Staging"
-        B[🧪 Preview<br/>Cada PR]
+        B[Preview<br/>Cada PR]
         B1[preview-abc123.vercel.app<br/>Test en ambiente real<br/>QA testing]
     end
     
     subgraph "Production"
-        C[🌐 Live<br/>Usuarios reales]
+        C[Live<br/>Usuarios reales]
         C1[tuapp.com<br/>Optimizado<br/>Monitoreado]
     end
     
     A --> B
     B --> C
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#b71c1c
 ```
 
 ---
@@ -138,10 +141,11 @@ graph TD
 **Analogía**: Como AirBnB vs hotel propio - alguien más maneja la infraestructura.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant D as 👨‍💻 Developer
+    participant D as Developer
     participant G as 📦 GitHub
-    participant V as ☁️ Vercel
+    participant V as Vercel
     participant U as 👥 Users
     
     D->>G: git push origin main
@@ -149,7 +153,7 @@ sequenceDiagram
     V->>V: npm install
     V->>V: next build
     V->>V: Deploy to CDN
-    V->>G: ✅ Deployment success
+    V->>G: Deployment success
     U->>V: Visit tuapp.com
     V->>U: Serve from edge
     
@@ -187,13 +191,14 @@ sequenceDiagram
 **Proceso de deployment**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Setup en Vercel Dashboard"
         A[🔐 Login con GitHub]
         B[➕ New Project]
         C[🔍 Import Repository]
         D[⚙️ Configure Build]
-        E[🚀 Deploy]
+        E[Deploy]
         
         A --> B
         B --> C
@@ -201,8 +206,8 @@ graph LR
         D --> E
     end
     
-    style A fill:#E1F5FF
-    style E fill:#E1FFE1
+    style A fill:#0d47a1
+    style E fill:#1b5e20
 ```
 
 **Configuración build en Vercel**:
@@ -244,6 +249,7 @@ NEXTAUTH_SECRET=""
 **Configurar en Vercel**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Vercel Dashboard] --> B[Project Settings]
     B --> C[Environment Variables]
@@ -254,8 +260,8 @@ graph TD
     
     E --> H[Agregar variables:<br/>DATABASE_URL<br/>STRIPE_SECRET_KEY<br/>NEXTAUTH_SECRET]
     
-    style C fill:#FFF4E1
-    style H fill:#E1FFE1
+    style C fill:#e65100
+    style H fill:#1b5e20
 ```
 
 **Tipos de variables por ambiente**:
@@ -281,24 +287,25 @@ module.exports = {
 **Concepto**: Cada Pull Request tiene su propio deployment.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Feature Branch Workflow"
         A[🌿 git checkout -b feature/login]
-        B[💻 Develop feature]
+        B[Develop feature]
         C[📤 git push origin feature/login]
         D[🔀 Create PR]
-        E[🧪 Vercel auto-deploy preview]
+        E[Vercel auto-deploy preview]
         F[👀 Review preview URL]
-        G[✅ Merge to main]
-        H[🚀 Auto-deploy production]
+        G[Merge to main]
+        H[Auto-deploy production]
         
         A --> B --> C --> D
         D --> E --> F
         F --> G --> H
     end
     
-    style E fill:#FFF4E1
-    style H fill:#FFE1E1
+    style E fill:#e65100
+    style H fill:#b71c1c
 ```
 
 **Ventajas de Preview Deployments**:
@@ -384,18 +391,19 @@ Deployment completed in 67s
 **Configuración de dominio propio**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Domain Setup"
         A[🛒 Comprar dominio<br/>fpuna-store.com]
         B[⚙️ Vercel: Add domain]
         C[🔧 DNS Configuration]
-        D[✅ SSL Certificate]
-        E[🌐 Live!]
+        D[SSL Certificate]
+        E[Live!]
         
         A --> B --> C --> D --> E
     end
     
-    style E fill:#E1FFE1
+    style E fill:#1b5e20
 ```
 
 **DNS Records requeridos**:
@@ -463,6 +471,7 @@ Todo en español con ejemplos específicos de FPUNA"
 **Analogía**: Como un container de shipping - tu app + todas sus dependencies en un paquete.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin Docker"
         A[😓 Funciona en mi máquina<br/>Node 18, PostgreSQL 15]
@@ -471,14 +480,14 @@ graph TD
     
     subgraph "Con Docker"
         C[📦 Container<br/>Node 18 + PostgreSQL 15<br/>Todo incluido]
-        D[✅ Funciona igual<br/>En cualquier servidor]
+        D[Funciona igual<br/>En cualquier servidor]
     end
     
     A -.->|Problema| B
     C --> D
     
-    style A fill:#FFE1E1
-    style C fill:#E1FFE1
+    style A fill:#b71c1c
+    style C fill:#1b5e20
 ```
 
 ### Dockerfile para Next.js
@@ -766,23 +775,24 @@ Todo con comentarios en español"
 **Analogía**: Como línea de producción automatizada - cada cambio pasa por checks automáticos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "CI/CD Pipeline"
-        A[📝 Code Push] --> B[🧪 Run Tests]
+        A[📝 Code Push] --> B[Run Tests]
         B --> C[🔍 Lint Code]
         C --> D[🏗️ Build App]
         D --> E[🐳 Build Docker Image]
-        E --> F[🚀 Deploy]
-        F --> G[✅ Health Check]
+        E --> F[Deploy]
+        F --> G[Health Check]
         
-        B -.->|❌ Fail| H[🚫 Block Deployment]
-        C -.->|❌ Fail| H
-        D -.->|❌ Fail| H
+        B -.->|Fail| H[🚫 Block Deployment]
+        C -.->|Fail| H
+        D -.->|Fail| H
     end
     
-    style A fill:#E1F5FF
-    style G fill:#E1FFE1
-    style H fill:#FFE1E1
+    style A fill:#0d47a1
+    style G fill:#1b5e20
+    style H fill:#b71c1c
 ```
 
 ### GitHub Actions Workflow para Next.js
@@ -974,6 +984,7 @@ jobs:
 ### Secrets Management en GitHub
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[GitHub Repository] --> B[Settings]
     B --> C[Secrets and variables]
@@ -985,8 +996,8 @@ graph TD
     F --> H[VERCEL_TOKEN<br/>DOCKERHUB_TOKEN<br/>DATABASE_URL]
     G --> I[Production<br/>Staging<br/>Development]
     
-    style C fill:#FFF4E1
-    style H fill:#E1FFE1
+    style C fill:#e65100
+    style H fill:#1b5e20
 ```
 
 ### Implementación con OpenCode
@@ -1063,16 +1074,17 @@ export default function RootLayout({
 **Core Web Vitals targets**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Core Web Vitals"
-        A[⚡ LCP<br/>Largest Contentful Paint<br/>Target: < 2.5s]
-        B[🎯 FID<br/>First Input Delay<br/>Target: < 100ms]
+        A[LCP<br/>Largest Contentful Paint<br/>Target: < 2.5s]
+        B[FID<br/>First Input Delay<br/>Target: < 100ms]
         C[📏 CLS<br/>Cumulative Layout Shift<br/>Target: < 0.1]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1FFE1
-    style C fill:#E1FFE1
+    style A fill:#1b5e20
+    style B fill:#1b5e20
+    style C fill:#1b5e20
 ```
 
 **Optimizaciones Next.js**:

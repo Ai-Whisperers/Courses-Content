@@ -31,6 +31,7 @@ Eso es exactamente lo que la IA permite hacer en hospitalidad. No reemplaza el t
 ### 1.1 El Ciclo del Huésped
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Descubrimiento] --> B[Reserva]
     B --> C[Pre-llegada]
@@ -67,6 +68,7 @@ graph LR
 ### 1.2 Tipos de Consultas en Hospitalidad
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 pie title Distribución de Consultas (Hotel Típico)
     "Información general" : 35
     "Reservas y disponibilidad" : 25
@@ -86,6 +88,7 @@ pie title Distribución de Consultas (Hotel Típico)
 ### 1.3 Contexto Paraguay: El Turismo que Viene
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Turismo<br/>Paraguay))
     Eco-turismo
@@ -119,6 +122,7 @@ mindmap
 ### 2.1 Arquitectura de un Chatbot Hotelero
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Huésped] --> B{Canal}
     B --> C[WhatsApp]
@@ -227,6 +231,7 @@ Genera una respuesta que:
 ### 2.4 Manejo de Quejas con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Queja recibida] --> B{Análisis de<br/>sentimiento}
 
@@ -282,6 +287,7 @@ y ha estado esperando 2 horas por mantenimiento.
 ### 2.5 Integración con WhatsApp Business
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant H as Huésped
     participant WA as WhatsApp Business
@@ -303,7 +309,7 @@ sequenceDiagram
     API->>PMS: Crear reserva
     PMS->>API: Confirmación
     API->>WA: Confirmación
-    WA->>H: "✅ Reservado: Masaje relajante<br/>Hoy 14:00, Spa nivel -1<br/>Llegar 10 min antes"
+    WA->>H: "Reservado: Masaje relajante<br/>Hoy 14:00, Spa nivel -1<br/>Llegar 10 min antes"
 ```
 
 **Configuración básica WhatsApp Business API:**
@@ -355,6 +361,7 @@ def procesar_mensaje_whatsapp(mensaje, numero_huesped):
 ### 3.1 Segmentación de Huéspedes con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Datos del Huésped] --> B[Análisis IA]
 
@@ -467,6 +474,7 @@ El huésped hizo checkout ayer. Genera mensaje de despedida que:
 ### 4.1 Procesamiento de Reviews
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Reviews entrantes] --> B[Fuentes]
 
@@ -691,6 +699,7 @@ Genera email de bienvenida personalizado.
 ### 5.3 Flujo de Trabajo Diario
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Inicio del día<br/>8:00] --> B[Revisar mensajes<br/>nocturnos]
 

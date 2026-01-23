@@ -94,10 +94,11 @@ Al finalizar este módulo, serás capaz de:
 - **Testing API** = Verificar cada pieza, cada conexión, cada ensamblaje
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Stack Moderno"
-        A[🌐 Frontend<br/>React/Angular]
-        B[🔌 API REST<br/>Capa crítica]
+        A[Frontend<br/>React/Angular]
+        B[API REST<br/>Capa crítica]
         C[💾 Base de Datos<br/>PostgreSQL]
         D[🔐 Auth Service]
         E[💳 Payment API]
@@ -108,7 +109,7 @@ graph LR
         B --> E
     end
     
-    style B fill:#FFE1E1,stroke:#333,stroke-width:4px
+    style B fill:#b71c1c,stroke:#333,stroke-width:4px
 ```
 
 **La API es el punto crítico** - Si falla, toda la app falla.
@@ -136,9 +137,10 @@ graph LR
 - El mozo lleva pedidos (requests) y trae platos (responses)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant C as 🧑 Cliente (Test)
-    participant A as 🔌 API REST
+    participant A as API REST
     participant D as 💾 Database
     
     C->>A: GET /api/products
@@ -152,20 +154,21 @@ sequenceDiagram
 ### HTTP Methods Básicos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "CRUD Operations"
         A[📖 GET<br/>Leer datos]
-        B[✍️ POST<br/>Crear recurso]
+        B[POST<br/>Crear recurso]
         C[🔄 PUT<br/>Actualizar completo]
         D[🗑️ DELETE<br/>Eliminar recurso]
         E[🔧 PATCH<br/>Actualizar parcial]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#FFE1E1
-    style E fill:#FFE1F5
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#b71c1c
+    style E fill:#4a148c
 ```
 
 | Método | Propósito | Ejemplo FPUNA |
@@ -393,13 +396,14 @@ test.describe('CRUD Completo de Productos', () => {
 ### Validación de Responses
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Capas de Validación"
-        A[✅ Status Code<br/>200, 201, 404, etc]
-        B[✅ Headers<br/>Content-Type, CORS]
-        C[✅ Body Structure<br/>JSON válido]
-        D[✅ Schema<br/>Tipos y campos]
-        E[✅ Business Logic<br/>Reglas de negocio]
+        A[Status Code<br/>200, 201, 404, etc]
+        B[Headers<br/>Content-Type, CORS]
+        C[Body Structure<br/>JSON válido]
+        D[Schema<br/>Tipos y campos]
+        E[Business Logic<br/>Reglas de negocio]
     end
     
     A --> B
@@ -407,8 +411,8 @@ graph TD
     C --> D
     D --> E
     
-    style A fill:#E1FFE1
-    style E fill:#FFE1E1
+    style A fill:#1b5e20
+    style E fill:#b71c1c
 ```
 
 **Patrones Comunes**:
@@ -648,17 +652,18 @@ Con schema validation ya dominado, el siguiente paso natural es extender esta id
 - **Provider** (Backend/Microservicio B): "Me comprometo a proveer esos campos"
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Contract Testing"
         A[📱 Consumer<br/>Frontend]
         B[📄 Contract<br/>API Spec]
-        C[🔌 Provider<br/>Backend]
+        C[Provider<br/>Backend]
         
         A -->|Define expectativas| B
         C -->|Cumple contrato| B
     end
     
-    style B fill:#FFE1E1,stroke:#333,stroke-width:4px
+    style B fill:#b71c1c,stroke:#333,stroke-width:4px
 ```
 
 ### OpenAPI/Swagger Integration
@@ -775,6 +780,7 @@ Hemos validado funcionalidad y contratos. Pero hay una dimensión crítica que n
 ### Concepto: Response Time Assertions
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Performance Metrics"
         A[⏱️ Response Time<br/>< 200ms ideal]
@@ -783,8 +789,8 @@ graph TD
         D[🐌 Bottlenecks<br/>Endpoints lentos]
     end
     
-    style A fill:#E1FFE1
-    style D fill:#FFE1E1
+    style A fill:#1b5e20
+    style D fill:#b71c1c
 ```
 
 ### Medir Tiempos de Respuesta
@@ -873,10 +879,11 @@ Finalmente, una técnica avanzada que te permitirá escribir tests más rápidos
 ### Concepto: Aislar Tests
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant T as 🧪 Test
+    participant T as Test
     participant M as 🎭 Mock Server
-    participant A as 🔌 API Real
+    participant A as API Real
     
     T->>M: Request (interceptado)
     M->>T: Response controlada

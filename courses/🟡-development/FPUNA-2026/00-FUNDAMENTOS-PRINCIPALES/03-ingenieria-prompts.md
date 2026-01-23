@@ -58,27 +58,28 @@ Al terminar este módulo, tendrás:
 Imagina que contratas a alguien muy inteligente pero que no conoce tu contexto:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    subgraph Vague["❌ Instrucción Vaga"]
+    subgraph Vague["Instrucción Vaga"]
         direction LR
-        A1["👤<br/>Hazme<br/>un café"] --> B1["❓<br/>¿Qué tipo?<br/>¿Azúcar?<br/>¿Leche?"]
-        B1 --> C1["🔄<br/>Muchas<br/>preguntas"]
-        C1 --> D1["☕<br/>Café<br/>mediocre"]
+        A1["Usuario: Hazme café"] --> B1["Preguntas necesarias"]
+        B1 --> C1["Proceso con idas y vueltas"]
+        C1 --> D1["Resultado mediocre"]
     end
     
-    subgraph Clear["✅ Instrucción Clara"]
+    subgraph Clear["Instrucción Clara"]
         direction LR
-        A2["👤<br/>Cappuccino<br/>grande, 2 azúcares<br/>leche descremada"] --> B2["✨<br/>Sabe exacto<br/>qué hacer"]
-        B2 --> C2["⚡<br/>Directo al<br/>resultado"]
-        C2 --> D2["☕<br/>Café<br/>perfecto"]
+        A2["Usuario: Cappuccino grande,<br>2 azúcares, leche descremada"] --> B2["Instrucciones exactas"]
+        B2 --> C2["Ejecución directa"]
+        C2 --> D2["Resultado perfecto"]
     end
     
-    style Vague fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
-    style Clear fill:#E5F9E5,stroke:#50C878,stroke-width:3px
-    style D1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style D2 fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
-    style A1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style A2 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style Vague fill:#ffebee,stroke:#b71c1c,stroke-width:3px
+    style Clear fill:#e8f5e9,stroke:#1b5e20,stroke-width:3px
+    style D1 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style D2 fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
+    style A1 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style A2 fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
 ```
 
 **Prompt Engineering** = Aprender a dar instrucciones claras a OpenCode
@@ -88,33 +89,34 @@ graph TB
 ## 📊 Los Niveles de Claridad
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["🎯<br/>Tu<br/>Necesidad"] --> Level1{"📉<br/>Nivel 1<br/>Vago"}
-    Level1 --> Bad["❌<br/>'Crea<br/>una app'"]
+    Start["Tu Necesidad"] --> Level1{"Nivel 1: Vago"}
+    Level1 --> Bad["Crea una app"]
     
-    Start --> Level2{"📊<br/>Nivel 2<br/>Básico"}
-    Level2 --> OK["⚠️<br/>'App de<br/>tareas'"]
+    Start --> Level2{"Nivel 2: Básico"}
+    Level2 --> OK["App de tareas"]
     
-    Start --> Level3{"📈<br/>Nivel 3<br/>Detallado"}
-    Level3 --> Good["✅<br/>HTML/CSS/JS<br/>+ funciones<br/>específicas"]
+    Start --> Level3{"Nivel 3: Detallado"}
+    Level3 --> Good["HTML/CSS/JS +<br>funciones específicas"]
     
-    Start --> Level4{"🎓<br/>Nivel 4<br/>Profesional"}
-    Level4 --> Great["🌟<br/>Stack completo<br/>UI/UX definida<br/>Validaciones<br/>Formato entrega"]
+    Start --> Level4{"Nivel 4: Profesional"}
+    Level4 --> Great["Stack completo + UI/UX<br>+ validaciones + formato"]
     
-    Bad --> ResultBad["💔<br/>Resultado<br/>impredecible"]
-    OK --> ResultOK["🤷<br/>Resultado<br/>genérico"]
-    Good --> ResultGood["👍<br/>Resultado<br/>útil"]
-    Great --> ResultGreat["🎉<br/>Resultado<br/>perfecto"]
+    Bad --> ResultBad["Resultado impredecible"]
+    OK --> ResultOK["Resultado genérico"]
+    Good --> ResultGood["Resultado útil"]
+    Great --> ResultGreat["Resultado perfecto"]
     
-    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style Level1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
-    style Level2 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style Level3 fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style Level4 fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style ResultBad fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style ResultOK fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style ResultGood fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style ResultGreat fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style Start fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style Level1 fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Level2 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Level3 fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style Level4 fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style ResultBad fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style ResultOK fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style ResultGood fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style ResultGreat fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 ---
@@ -124,28 +126,29 @@ flowchart TD
 ### Los 5 Componentes Esenciales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("🎯<br/>Prompt<br/>Perfecto"))
-    ("1️⃣ CONTEXTO<br/>🌍")
-      "📍 Situación<br/>actual"
-      "❓ Problema a<br/>resolver"
-      "⚠️ Restricciones<br/>y límites"
-    ("2️⃣ TAREA<br/>🎯")
-      "✅ Qué debe<br/>hacer"
-      "🎯 Objetivo<br/>específico"
-      "📏 Alcance<br/>definido"
-    ("3️⃣ REQUISITOS<br/>⚙️")
-      "🔧 Funcionalidades<br/>exactas"
-      "💻 Tecnologías<br/>a usar"
-      "✔️ Validaciones<br/>necesarias"
-    ("4️⃣ FORMATO<br/>📋")
-      "🏗️ Estructura<br/>esperada"
-      "📁 Archivos a<br/>generar"
-      "🎨 Estilo de<br/>código"
-    ("5️⃣ EJEMPLOS<br/>💡")
-      "📥 Input de<br/>ejemplo"
-      "📤 Output<br/>esperado"
-      "🔍 Casos<br/>edge"
+  root(("Prompt<br>Perfecto"))
+    ("1. CONTEXTO")
+      "Situación actual"
+      "Problema a resolver"
+      "Restricciones y límites"
+    ("2. TAREA")
+      "Qué debe hacer"
+      "Objetivo específico"
+      "Alcance definido"
+    ("3. REQUISITOS")
+      "Funcionalidades exactas"
+      "Tecnologías a usar"
+      "Validaciones necesarias"
+    ("4. FORMATO")
+      "Estructura esperada"
+      "Archivos a generar"
+      "Estilo de código"
+    ("5. EJEMPLOS")
+      "Input de ejemplo"
+      "Output esperado"
+      "Casos edge"
 ```
 
 ### Plantilla Universal
@@ -293,19 +296,20 @@ ENTREGABLES:
 ### Principio 1: Especificidad Mata Ambigüedad
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
-    A["❓<br/>Prompt<br/>Vago"] --> B["🤔<br/>OpenCode<br/>adivina"]
-    B --> C["💔<br/>50%<br/>útil"]
+    A["Prompt Vago"] --> B["OpenCode adivina<br>lo que necesitas"]
+    B --> C["50% útil"]
     
-    D["✅<br/>Prompt<br/>Específico"] --> E["🎯<br/>OpenCode<br/>sabe exacto"]
-    E --> F["🎉<br/>95%<br/>útil"]
+    D["Prompt Específico"] --> E["OpenCode sabe<br>exactamente qué hacer"]
+    E --> F["95% útil"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style C fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style C fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style D fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplos**:
@@ -332,20 +336,21 @@ flowchart LR
 **Analogía**: Es como explicar un chiste - sin contexto, no se entiende.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant U as 👤<br/>Tú
-    participant OC as 🤖<br/>OpenCode
+    participant U as Usuario
+    participant OC as OpenCode
     
-    rect rgb(255, 107, 107, 0.1)
-        Note over U,OC: ❌ SIN CONTEXTO
+    rect rgb(255, 235, 238)
+        Note over U,OC: SIN CONTEXTO
         U->>+OC: Optimiza este código
-        OC-->>-U: ❓ ¿Para qué?<br/>¿Velocidad?<br/>¿Memoria?<br/>¿Legibilidad?
+        OC-->>-U: ¿Para qué? ¿Velocidad?<br>¿Memoria? ¿Legibilidad?
     end
     
-    rect rgb(80, 200, 120, 0.1)
-        Note over U,OC: ✅ CON CONTEXTO
-        U->>+OC: 📊 100K estudiantes<br/>⏱️ toma 8seg<br/>🎯 reducir a <2seg<br/>🔍 problema: loop anidado
-        OC-->>-U: 🎉 Solución exacta<br/>usando Map y Set<br/>en lugar de arrays
+    rect rgb(232, 245, 233)
+        Note over U,OC: CON CONTEXTO
+        U->>+OC: Contexto: 100K estudiantes, toma 8seg,<br>objetivo: <2seg, problema: loop anidado
+        OC-->>-U: Solución: usar Map y Set<br>en lugar de arrays
     end
 ```
 
@@ -378,19 +383,20 @@ Código actual:
 ### Principio 3: Ejemplos Valen Más que Palabras
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    A["❌<br/>Sin<br/>Ejemplos"] --> B["🤷<br/>OpenCode<br/>interpreta<br/>a su manera"]
-    B --> C["⚠️<br/>Resultado<br/>puede variar"]
+    A["Sin Ejemplos"] --> B["OpenCode interpreta<br>a su manera"]
+    B --> C["Resultado variable"]
     
-    D["✅<br/>Con<br/>Ejemplos"] --> E["🎯<br/>OpenCode ve<br/>patrón exacto"]
-    E --> F["✨<br/>Resultado<br/>consistente"]
+    D["Con Ejemplos"] --> E["OpenCode ve<br>patrón exacto"]
+    E --> F["Resultado consistente"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style C fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style C fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style D fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -430,24 +436,25 @@ Aplica misma lógica a este array:
 ### Principio 4: Restricciones Claras = Código Limpio
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("🔒<br/>Restricciones<br/>Importantes"))
-    ("⚙️ Técnicas")
-      "🚫 Sin librerías<br/>externas"
-      "📏 Máximo X<br/>líneas"
-      "📊 Complejidad<br/>O(n log n)"
-    ("🎨 Estilo")
-      "🌐 Nombres en<br/>español"
-      "💬 Comentarios<br/>obligatorios"
-      "📝 JSDoc<br/>completo"
-    ("🔧 Funcionales")
-      "🔐 Sin modificar<br/>entrada"
-      "🔀 Thread<br/>safe"
-      "⚠️ Manejo de<br/>errores"
-    ("💼 Negocio")
-      "🌍 Solo datos<br/>públicos"
-      "⚖️ Cumplir<br/>regulaciones"
-      "⚡ Performance<br/><1s"
+  root(("Restricciones<br>Importantes"))
+    ("Técnicas")
+      "Sin librerías externas"
+      "Máximo X líneas"
+      "Complejidad O(n log n)"
+    ("Estilo")
+      "Nombres en español"
+      "Comentarios obligatorios"
+      "JSDoc completo"
+    ("Funcionales")
+      "Sin modificar entrada"
+      "Thread safe"
+      "Manejo de errores"
+    ("Negocio")
+      "Solo datos públicos"
+      "Cumplir regulaciones"
+      "Performance < 1s"
 ```
 
 **Ejemplo**:
@@ -483,19 +490,20 @@ PRUEBAS:
 ### Principio 5: Formato de Salida Específico
 
 ```mermaid
-graph LR
-    A["❌<br/>Sin<br/>formato"] --> B["🤖<br/>OpenCode<br/>elige"]
-    B --> C["🔄<br/>Reformatear<br/>manual"]
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+flowchart LR
+    A["Sin formato"] --> B["OpenCode elige"]
+    B --> C["Reformatear manual"]
     
-    D["✅<br/>Formato<br/>específico"] --> E["🎯<br/>OpenCode<br/>entrega exacto"]
-    E --> F["🎉<br/>Listo<br/>usar"]
+    D["Formato específico"] --> E["OpenCode entrega<br>formato exacto"]
+    E --> F["Listo para usar"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style C fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style C fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style D fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -534,29 +542,30 @@ Datos a procesar:
 **Analogía**: Como comer un elefante - un bocado a la vez.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    A["🐘<br/>Tarea Compleja<br/>Sistema Completo"] --> B{"✂️<br/>Dividir"}
+    A["Tarea Compleja:<br>Sistema Completo"] --> B{"Dividir en pasos"}
     
-    B --> C["1️⃣<br/>Estructura<br/>Base"]
-    B --> D["2️⃣<br/>Funciones<br/>Core"]
-    B --> E["3️⃣<br/>Validaciones"]
-    B --> F["4️⃣<br/>Tests<br/>Completos"]
-    B --> G["5️⃣<br/>Docs<br/>README"]
+    B --> C["1. Estructura Base"]
+    B --> D["2. Funciones Core"]
+    B --> E["3. Validaciones"]
+    B --> F["4. Tests Completos"]
+    B --> G["5. Documentación"]
     
-    C --> H["✅<br/>Sistema<br/>Completo"]
+    C --> H["Sistema Completo"]
     D --> H
     E --> H
     F --> H
     G --> H
     
-    style A fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style B fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style C fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style D fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style F fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style G fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style H fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style C fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style D fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style E fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style F fill:#424242,stroke:#212121,stroke-width:2px,color:#fff
+    style G fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style H fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo - Mal enfoque**:
@@ -596,20 +605,21 @@ opencode "Genera documentación Swagger para la API"
 ### Principio 7: Iteración y Refinamiento
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
     title 🔄 Refinamiento Iterativo - El Camino a la Perfección
     section 1️⃣ Primera Iteración
-      Prompt básico: 3: 👤 Tú
-      Resultado parcial (30%): 3: 🤖 OpenCode
+      Prompt básico: 3: Tú
+      Resultado parcial (30%): 3: OpenCode
     section 2️⃣ Segunda Iteración
-      Agregar detalles y validaciones: 4: 👤 Tú
-      Resultado mejorado (60%): 4: 🤖 OpenCode
+      Agregar detalles y validaciones: 4: Tú
+      Resultado mejorado (60%): 4: OpenCode
     section 3️⃣ Tercera Iteración
-      Refinar casos edge y errores: 5: 👤 Tú
-      Resultado casi perfecto (85%): 5: 🤖 OpenCode
+      Refinar casos edge y errores: 5: Tú
+      Resultado casi perfecto (85%): 5: OpenCode
     section 4️⃣ Cuarta Iteración
-      Pulir detalles finales y docs: 5: 👤 Tú
-      Resultado perfecto (100%): 5: 🎉 Perfecto
+      Pulir detalles finales y docs: 5: Tú
+      Resultado perfecto (100%): 5: Perfecto
 ```
 
 **Ejemplo práctico**:
@@ -658,21 +668,22 @@ opencode "Mejora la calculadora:
 **Cuándo usar**: Problemas lógicos, cálculos, decisiones complejas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    A["❓<br/>Problema<br/>Complejo"] --> B["💭<br/>OpenCode<br/>piensa en<br/>voz alta"]
-    B --> C["1️⃣<br/>Analizar<br/>datos"]
-    C --> D["2️⃣<br/>Planificar<br/>solución"]
-    D --> E["3️⃣<br/>Ejecutar<br/>paso a paso"]
-    E --> F["4️⃣<br/>Verificar<br/>resultado"]
-    F --> G["✅<br/>Solución<br/>con lógica<br/>clara"]
+    A["Problema Complejo"] --> B["OpenCode piensa<br>en voz alta"]
+    B --> C["1. Analizar datos"]
+    C --> D["2. Planificar solución"]
+    D --> E["3. Ejecutar paso a paso"]
+    E --> F["4. Verificar resultado"]
+    F --> G["Solución con<br>lógica clara"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style C fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style D fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style F fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style G fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style C fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style D fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style F fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style G fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -722,13 +733,18 @@ que implemente exactamente esta lógica con comentarios explicando cada paso."
 **Cuándo usar**: Cuando necesitas un formato o estilo muy específico.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    A[Ejemplo 1:<br/>Patrón A] --> D[OpenCode aprende<br/>el patrón]
-    B[Ejemplo 2:<br/>Patrón A] --> D
-    C[Ejemplo 3:<br/>Patrón A] --> D
-    D --> E[Genera código<br/>siguiendo patrón A]
+    A[Ejemplo 1] --> D[OpenCode aprende<br>el patrón]
+    B[Ejemplo 2] --> D
+    C[Ejemplo 3] --> D
+    D --> E[Genera código<br>siguiendo patrón]
     
-    style E fill:#90EE90
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style B fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style C fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style D fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style E fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
 ```
 
 **Ejemplo**:
@@ -828,24 +844,25 @@ y estructura de código."
 **¿Qué es?**: Hacer que OpenCode "actúe como" un experto específico.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("🎭<br/>Roles<br/>para IA"))
-    ("👨‍🏫 Profesor")
-      "📚 Explica<br/>didáctico"
-      "💡 Usa<br/>analogías"
-      "😊 Paciente<br/>alentador"
-    ("👨‍💻 Senior Dev")
-      "⭐ Best<br/>practices"
-      "🏗️ Patrones<br/>diseño"
-      "✨ Código<br/>limpio"
-    ("🔍 Code Reviewer")
-      "🎯 Crítico<br/>constructivo"
-      "🐛 Busca<br/>bugs"
-      "⚡ Mejoras<br/>performance"
-    ("📝 Documentador")
-      "💎 Claridad<br/>total"
-      "💡 Ejemplos<br/>prácticos"
-      "🔗 Referencias<br/>útiles"
+  root(("Roles<br>para IA"))
+    ("Profesor")
+      "Explica didáctico"
+      "Usa analogías"
+      "Paciente y alentador"
+    ("Senior Developer")
+      "Best practices"
+      "Patrones de diseño"
+      "Código limpio"
+    ("Code Reviewer")
+      "Crítico constructivo"
+      "Busca bugs"
+      "Mejoras de performance"
+    ("Documentador")
+      "Claridad total"
+      "Ejemplos prácticos"
+      "Referencias útiles"
 ```
 
 **Ejemplo**:
@@ -888,19 +905,20 @@ Tono: Amigable, alentador, educativo. Usa 'vos' (estilo paraguayo)."
 **¿Qué es?**: Limitar explícitamente las opciones de respuesta.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    A["❌<br/>Sin<br/>restricciones"] --> B["📜<br/>Respuesta<br/>larga y<br/>detallada"]
-    B --> C["✂️<br/>Extraer<br/>lo que<br/>necesitas"]
+    A["Sin restricciones"] --> B["Respuesta larga<br>y detallada"]
+    B --> C["Extraer información<br>manualmente"]
     
-    D["✅<br/>Con<br/>restricciones"] --> E["🎯<br/>Respuesta<br/>formato<br/>exacto"]
-    E --> F["🎉<br/>Listo<br/>para<br/>usar"]
+    D["Con restricciones"] --> E["Respuesta en<br>formato exacto"]
+    E --> F["Listo para usar"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style C fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style D fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style E fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style C fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style D fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style E fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 **Ejemplo**:
@@ -940,32 +958,33 @@ ACCIÓN INMEDIATA: [Qué hacer primero]"
 **Concepto**: Construir en capas, validando cada capa antes de continuar.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    A["1️⃣<br/>Estructura<br/>Base"] --> B{"✅<br/>¿OK?"}
-    B -->|"✅ Sí"| C["2️⃣<br/>Lógica<br/>Core"]
-    B -->|"❌ No"| A
+    A["1. Estructura Base"] --> B{"¿Funciona?"}
+    B -->|"Sí"| C["2. Lógica Core"]
+    B -->|"No"| A
     
-    C --> D{"✅<br/>¿OK?"}
-    D -->|"✅ Sí"| E["3️⃣<br/>Validaciones<br/>Robustas"]
-    D -->|"❌ No"| C
+    C --> D{"¿Funciona?"}
+    D -->|"Sí"| E["3. Validaciones"]
+    D -->|"No"| C
     
-    E --> F{"✅<br/>¿OK?"}
-    F -->|"✅ Sí"| G["4️⃣<br/>UI/UX<br/>Polish"]
-    F -->|"❌ No"| E
+    E --> F{"¿Funciona?"}
+    F -->|"Sí"| G["4. UI/UX Polish"]
+    F -->|"No"| E
     
-    G --> H{"✅<br/>¿OK?"}
-    H -->|"✅ Sí"| I["🎉<br/>Producto<br/>Final"]
-    H -->|"❌ No"| G
+    G --> H{"¿Funciona?"}
+    H -->|"Sí"| I["Producto Final"]
+    H -->|"No"| G
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style C fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style G fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style I fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style B fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style D fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style F fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style H fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style C fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style E fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style G fill:#424242,stroke:#212121,stroke-width:2px,color:#fff
+    style I fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style B fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style D fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style F fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style H fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
 ```
 
 **Ejemplo**:
@@ -1184,38 +1203,39 @@ OPTIMIZA Y EXPLICA:
 ### Cuando el Resultado No es el Esperado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["😞<br/>Resultado<br/>No Bueno"] --> Q1{"❓<br/>¿Específico<br/>suficiente?"}
+    Start["Resultado no satisfactorio"] --> Q1{"¿Es específico?"}
     
-    Q1 -->|"❌ No"| Fix1["📝<br/>Agregar<br/>detalles"]
-    Q1 -->|"✅ Sí"| Q2{"❓<br/>¿Con<br/>contexto?"}
+    Q1 -->|"No"| Fix1["Agregar detalles"]
+    Q1 -->|"Sí"| Q2{"¿Tiene contexto?"}
     
-    Q2 -->|"❌ No"| Fix2["🌍<br/>Agregar<br/>contexto"]
-    Q2 -->|"✅ Sí"| Q3{"❓<br/>¿Con<br/>ejemplos?"}
+    Q2 -->|"No"| Fix2["Agregar contexto"]
+    Q2 -->|"Sí"| Q3{"¿Tiene ejemplos?"}
     
-    Q3 -->|"❌ No"| Fix3["💡<br/>Mostrar<br/>ejemplos"]
-    Q3 -->|"✅ Sí"| Q4{"❓<br/>¿Muy<br/>complejo?"}
+    Q3 -->|"No"| Fix3["Mostrar ejemplos"]
+    Q3 -->|"Sí"| Q4{"¿Es muy complejo?"}
     
-    Q4 -->|"✅ Sí"| Fix4["✂️<br/>Dividir<br/>pasos"]
-    Q4 -->|"❌ No"| Fix5["🎭<br/>Few-Shot<br/>o Role"]
+    Q4 -->|"Sí"| Fix4["Dividir en pasos"]
+    Q4 -->|"No"| Fix5["Usar Few-Shot o Role"]
     
-    Fix1 --> Retry["🔄<br/>Reintentar"]
+    Fix1 --> Retry["Reintentar"]
     Fix2 --> Retry
     Fix3 --> Retry
     Fix4 --> Retry
     Fix5 --> Retry
     
-    style Start fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style Q1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Q2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Q3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Q4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Fix1 fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style Fix2 fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style Fix3 fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style Fix4 fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style Fix5 fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style Retry fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style Start fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    style Q1 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Q2 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Q3 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Q4 fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Fix1 fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style Fix2 fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Fix3 fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
+    style Fix4 fill:#424242,stroke:#212121,stroke-width:2px,color:#fff
+    style Fix5 fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style Retry fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 ### Checklist de Debugging
@@ -1313,42 +1333,34 @@ opencode "Crea una app de gestión"
 ## 📊 Resumen Visual
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("🎯<br/>Prompt<br/>Engineering<br/>Mastery"))
-    ("📋<br/>Anatomía<br/>del Prompt")
-      ["🌍<br/>Contexto<br/>situacional"]
-      ["🎯<br/>Tarea<br/>específica"]
-      ["⚙️<br/>Requisitos<br/>técnicos"]
-      ["📝<br/>Formato<br/>deseado"]
-      ["🔒<br/>Restricciones<br/>y límites"]
-    ("💡<br/>7 Principios<br/>Clave")
-      ["🎯<br/>Especificidad<br/>máxima"]
-      ["🌍<br/>Contexto<br/>completo"]
-      ["💡<br/>Ejemplos<br/>concretos"]
-      ["✂️<br/>División<br/>de tareas"]
-      ["🔄<br/>Iteración<br/>continua"]
-      ["📐<br/>Estructura<br/>clara"]
-      ["🎨<br/>Formato<br/>definido"]
-    ("🚀<br/>Técnicas<br/>Avanzadas")
-      ["💭<br/>Chain of<br/>Thought"]
-      ["📚<br/>Few-Shot<br/>Learning"]
-      ["🎭<br/>Role<br/>Prompting"]
-      ["🔒<br/>Constrained<br/>Generation"]
-      ["📈<br/>Incremental<br/>Building"]
-    ("🛠️<br/>Práctica<br/>Continua")
-      ["📚<br/>Biblioteca<br/>personal"]
-      ["🐛<br/>Debugging<br/>sistemático"]
-      ["📈<br/>Mejora<br/>continua"]
-      ["🔄<br/>Refinamiento<br/>iterativo"]
-
-%% Styling
-classDef rootStyle fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
-classDef anatomyStyle fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-classDef principlesStyle fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
-classDef techniquesStyle fill:#F39C12,stroke:#C87F0A,stroke-width:3px,color:#333
-classDef practiceStyle fill:#9B59B6,stroke:#7D3C98,stroke-width:3px,color:#fff
-
-class root rootStyle
+  root(("Prompt<br>Engineering<br>Mastery"))
+    ("Anatomía del Prompt")
+      ["Contexto situacional"]
+      ["Tarea específica"]
+      ["Requisitos técnicos"]
+      ["Formato deseado"]
+      ["Restricciones y límites"]
+    ("7 Principios Clave")
+      ["Especificidad máxima"]
+      ["Contexto completo"]
+      ["Ejemplos concretos"]
+      ["División de tareas"]
+      ["Iteración continua"]
+      ["Estructura clara"]
+      ["Formato definido"]
+    ("Técnicas Avanzadas")
+      ["Chain of Thought"]
+      ["Few-Shot Learning"]
+      ["Role Prompting"]
+      ["Constrained Generation"]
+      ["Incremental Building"]
+    ("Práctica Continua")
+      ["Biblioteca personal"]
+      ["Debugging sistemático"]
+      ["Mejora continua"]
+      ["Refinamiento iterativo"]
 ```
 
 ---
@@ -1368,25 +1380,26 @@ Has completado el Módulo 03. Ahora dominas el arte de comunicarte con OpenCode.
 ### El Poder que Ahora Tienes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    subgraph before["❌ ANTES: Prompts Vagos"]
-        A["😕<br/>Resultados imprecisos<br/>No sabes qué obtendrás"]
-        B["🔄<br/>Múltiples iteraciones<br/>Pérdida de tiempo"]
-        C["🐛<br/>Código con errores<br/>Requiere muchos fixes"]
+    subgraph before["ANTES: Prompts Vagos"]
+        A["Resultados imprecisos"]
+        B["Múltiples iteraciones"]
+        C["Código con errores"]
     end
     
-    subgraph transformation["⚡ TRANSFORMACIÓN"]
-        T["🎓<br/>Dominio de Prompt Engineering<br/>Aplicar 7 principios + 5 técnicas"]
+    subgraph transformation["TRANSFORMACIÓN"]
+        T["Dominio de Prompt Engineering<br>7 principios + 5 técnicas"]
     end
     
-    subgraph after["✅ DESPUÉS: Prompts Profesionales"]
-        D["🎯<br/>Resultados precisos<br/>Primera vez bien"]
-        E["⚡<br/>Una sola iteración<br/>Máxima eficiencia"]
-        F["💎<br/>Código de calidad<br/>Listo para producción"]
+    subgraph after["DESPUÉS: Prompts Profesionales"]
+        D["Resultados precisos"]
+        E["Una sola iteración"]
+        F["Código de calidad"]
     end
     
-    subgraph result["🚀 RESULTADO FINAL"]
-        G["🚀<br/>10x Productividad<br/>Trabajo profesional en minutos"]
+    subgraph result["RESULTADO FINAL"]
+        G["10x Productividad"]
     end
     
     A --> T
@@ -1401,19 +1414,19 @@ graph TB
     E --> G
     F --> G
     
-    style before fill:#FF6B6B,stroke:#C0392B,stroke-width:3px,color:#fff
-    style transformation fill:#FFD93D,stroke:#F39C12,stroke-width:4px,color:#333
-    style after fill:#50C878,stroke:#27AE60,stroke-width:3px,color:#fff
-    style result fill:#7B68EE,stroke:#5A4DB8,stroke-width:4px,color:#fff
+    style before fill:#ffebee,stroke:#b71c1c,stroke-width:3px
+    style transformation fill:#fff3e0,stroke:#e65100,stroke-width:4px
+    style after fill:#e8f5e9,stroke:#1b5e20,stroke-width:3px
+    style result fill:#ede7f6,stroke:#4a148c,stroke-width:4px
     
-    style A fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
-    style B fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
-    style C fill:#FF6B6B,stroke:#C0392B,stroke-width:2px,color:#fff
-    style T fill:#FFD93D,stroke:#F39C12,stroke-width:3px,color:#333
-    style D fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
-    style E fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#27AE60,stroke-width:2px,color:#fff
-    style G fill:#7B68EE,stroke:#5A4DB8,stroke-width:3px,color:#fff
+    style A fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style B fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style C fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style T fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style D fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style E fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style G fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
 ```
 
 ---

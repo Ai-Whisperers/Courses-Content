@@ -26,6 +26,7 @@
 ### Analogía: Arquitectura de un Edificio Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Diseño Aeronave))
     Arquitecto Edificio
@@ -117,6 +118,7 @@ mindmap
 ## 📊 Las Fases del Diseño Aeronáutico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[📋 Requerimientos] --> A[💡 Diseño Conceptual<br/>Configuración general]
     
@@ -134,12 +136,12 @@ graph TD
     
     F -->|Sí| H[📜 Certificación<br/>FAA/EASA/DINAC]
     
-    H --> I[🚀 Producción]
+    H --> I[Producción]
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#1b5e20
     style E fill:#E1E1FF
     style H fill:#FFD700
 ```
@@ -155,21 +157,22 @@ graph TD
 **Método QFD (Quality Function Deployment)**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "De Voz del Cliente a Specs Técnicas"
         A[🗣️ Cliente dice:<br/>"Necesito monitorear<br/>cultivos fácilmente"]
         
         A --> B[📝 Requerimientos<br/>funcionales]
         
-        B --> C[📊 Especificaciones<br/>técnicas medibles]
+        B --> C[Especificaciones<br/>técnicas medibles]
         
-        C --> D[🎯 Targets de diseño]
+        C --> D[Targets de diseño]
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#1b5e20
 ```
 
 **Ejemplo: UAV Agrícola Paraguay**
@@ -213,6 +216,7 @@ TRADUCCIÓN A REQUERIMIENTOS:
 **Opciones de configuración**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Configuraciones UAV"
         A[🛩️ Ala fija<br/>Eficiente, largo alcance]
@@ -225,10 +229,10 @@ graph TD
         C --> G[Tilt-rotor, tail-sitter<br/>Transición]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#b71c1c
 ```
 
 **Matriz de decisión**:
@@ -319,12 +323,13 @@ Dimensiones principales:
 **Método de fracciones**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Desglose de Peso"
         A[⚖️ Peso Total<br/>3.5 kg]
         
         A --> B[🛩️ Estructura<br/>25% = 0.88 kg]
-        A --> C[⚡ Propulsión<br/>15% = 0.52 kg]
+        A --> C[Propulsión<br/>15% = 0.52 kg]
         A --> D[🔋 Batería<br/>23% = 0.80 kg]
         A --> E[📡 Aviónica<br/>12% = 0.42 kg]
         A --> F[📷 Payload<br/>20% = 0.70 kg]
@@ -336,9 +341,9 @@ graph TD
     end
     
     style A fill:#FFD700
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#1b5e20
 ```
 
 **Detalle estructura**:
@@ -439,23 +444,24 @@ TODO en español con contexto Paraguay (materiales disponibles, clima, regulacio
 **Centro de Gravedad (CG)**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Balance de Aeronave"
         A[📍 Centro Gravedad CG<br/>Punto balance peso]
-        B[🎯 Centro Aerodinámico CA<br/>Punto presión ala]
+        B[Centro Aerodinámico CA<br/>Punto presión ala]
         C[⚖️ Margen Estático<br/>SM = distancia]
         
         A --> D{CG vs CA?}
         B --> D
         
-        D -->|CG adelante CA| E[✅ Estable<br/>Pitch down si perturba]
-        D -->|CG atrás CA| F[❌ Inestable<br/>Diverge]
+        D -->|CG adelante CA| E[Estable<br/>Pitch down si perturba]
+        D -->|CG atrás CA| F[Inestable<br/>Diverge]
         
         E --> G[SM típico: 5-15% MAC]
     end
     
-    style E fill:#E1FFE1
-    style F fill:#FFE1E1
+    style E fill:#1b5e20
+    style F fill:#b71c1c
     style G fill:#FFD700
 ```
 
@@ -507,6 +513,7 @@ Margen estático típico: 5-15% MAC
 **Gráfico de CG vs peso**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Envelope de CG"
         A[⬜ CG Límite Forward<br/>5% MAC]
@@ -520,13 +527,13 @@ graph TD
         D --> E[Con payload: 13% MAC]
         D --> F[Sin payload: 8% MAC]
         
-        E --> G[✅ Dentro envelope]
+        E --> G[Dentro envelope]
         F --> G
     end
     
-    style A fill:#E1F5FF
-    style B fill:#E1FFE1
-    style C fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#1b5e20
+    style C fill:#4a148c
     style G fill:#FFD700
 ```
 
@@ -588,6 +595,7 @@ Con contribución fuselaje y V-tail, esperamos ~0.002/deg ✅
 ### Sizing de Superficies de Control
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Superficies<br/>Control))
     Alabeo Roll
@@ -734,6 +742,7 @@ TODO en español para proyecto FPUNA"
 ### Concepto: Certificación Aeronáutica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Proceso de Certificación"
         A[📋 Basis of Certification<br/>¿Qué reglas aplicar?]
@@ -751,9 +760,9 @@ graph LR
         A --> H[DINAC RAC 21<br/>Paraguay]
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#4a148c
     style D fill:#FFD700
 ```
 
@@ -800,6 +809,7 @@ PROCESO REGISTRO (Cat 2):
 **Documentación Técnica Mínima**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Paquete Técnico))
     Diseño
@@ -1091,24 +1101,25 @@ Permite visualizar:
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Design Space Exploration"
-        A[📊 Variables de diseño<br/>Peso, velocidad, batería]
+        A[Variables de diseño<br/>Peso, velocidad, batería]
         
         A --> B[🔍 Generar matriz<br/>combinaciones]
         
         B --> C[⚙️ Evaluar cada punto<br/>Performance, costo]
         
-        C --> D[📈 Carpet plot<br/>Visualizar trade-offs]
+        C --> D[Carpet plot<br/>Visualizar trade-offs]
         
-        D --> E[🎯 Pareto front<br/>Soluciones óptimas]
+        D --> E[Pareto front<br/>Soluciones óptimas]
         
-        E --> F[✅ Selección final<br/>Balance objetivos]
+        E --> F[Selección final<br/>Balance objetivos]
     end
     
-    style A fill:#E1F5FF
-    style D fill:#FFF4E1
-    style E fill:#E1FFE1
+    style A fill:#0d47a1
+    style D fill:#e65100
+    style E fill:#1b5e20
     style F fill:#FFD700
 ```
 
@@ -1149,6 +1160,7 @@ Resultado: Configuración E es óptima
 **Frente de Pareto**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Pareto Front"
         A[📍 Config C<br/>Barato, liviano<br/>Baja autonomía]
@@ -1160,13 +1172,13 @@ graph LR
         B --> C
         C --> D
         
-        E[❌ Otras configs<br/>Dominadas]
+        E[Otras configs<br/>Dominadas]
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#0d47a1
     style E fill:#E1E1E1
 ```
 

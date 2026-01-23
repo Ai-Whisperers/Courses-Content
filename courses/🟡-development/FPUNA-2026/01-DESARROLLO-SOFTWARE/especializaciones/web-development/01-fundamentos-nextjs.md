@@ -26,6 +26,7 @@
 ### Analogía: Framework Todo-en-Uno
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Next.js))
     Restaurant Todo Incluido
@@ -208,18 +209,19 @@ Antes de comenzar, verifica:
 ## 📊 Next.js vs Alternativas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Comparación de Frameworks"
-        A[Create React App<br/>❌ Setup manual<br/>❌ No SSR<br/>❌ No routing built-in]
-        B[Gatsby<br/>✅ SSG excelente<br/>❌ Build lento<br/>❌ No SSR]
-        C[Next.js<br/>✅ SSR + SSG + ISR<br/>✅ Routing automático<br/>✅ Backend integrado<br/>✅ Performance óptima]
-        D[Remix<br/>✅ Buen routing<br/>⚠️ Menos ecosistema<br/>⚠️ Menos adopción]
+        A[Create React App<br/>Setup manual<br/>No SSR<br/>No routing built-in]
+        B[Gatsby<br/>SSG excelente<br/>Build lento<br/>No SSR]
+        C[Next.js<br/>SSR + SSG + ISR<br/>Routing automático<br/>Backend integrado<br/>Performance óptima]
+        D[Remix<br/>Buen routing<br/>⚠️ Menos ecosistema<br/>⚠️ Menos adopción]
     end
     
-    style C fill:#E1FFE1
-    style B fill:#FFF4E1
-    style A fill:#FFE1E1
-    style D fill:#E1F5FF
+    style C fill:#1b5e20
+    style B fill:#e65100
+    style A fill:#b71c1c
+    style D fill:#0d47a1
 ```
 
 ### ¿Por Qué Next.js Gana?
@@ -247,25 +249,26 @@ graph TD
 **Analogía**: Sistema de carpetas = URLs automáticas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "App Router - File System = URLs"
         A[📁 app/<br/>page.tsx]
-        B[🌐 localhost:3000/]
+        B[localhost:3000/]
         
         C[📁 app/about/<br/>page.tsx]
-        D[🌐 localhost:3000/about]
+        D[localhost:3000/about]
         
         E[📁 app/blog/[id]/<br/>page.tsx]
-        F[🌐 localhost:3000/blog/123]
+        F[localhost:3000/blog/123]
         
         A --> B
         C --> D
         E --> F
     end
     
-    style A fill:#E1F5FF
-    style C fill:#E1FFE1
-    style E fill:#FFF4E1
+    style A fill:#0d47a1
+    style C fill:#1b5e20
+    style E fill:#e65100
 ```
 
 **App Router** = Cada carpeta en `/app` se convierte automáticamente en una ruta URL. No más configuración manual de routing.
@@ -314,24 +317,25 @@ fpuna-blog/
 **Concepto crítico**: Next.js 14 introduce Server Components (por defecto).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Server Components vs Client Components"
         A[🖥️ Server Components<br/>Default en Next.js 14]
-        B[💻 Client Components<br/>Necesitan 'use client']
+        B[Client Components<br/>Necesitan 'use client']
         
-        A --> A1[✅ Acceso directo a DB]
-        A --> A2[✅ Seguridad alta]
-        A --> A3[✅ Bundle JS pequeño]
-        A --> A4[❌ No hooks: useState, useEffect]
+        A --> A1[Acceso directo a DB]
+        A --> A2[Seguridad alta]
+        A --> A3[Bundle JS pequeño]
+        A --> A4[No hooks: useState, useEffect]
         
-        B --> B1[✅ Interactividad]
-        B --> B2[✅ Hooks de React]
-        B --> B3[✅ Event handlers]
-        B --> B4[❌ No acceso directo a DB]
+        B --> B1[Interactividad]
+        B --> B2[Hooks de React]
+        B --> B3[Event handlers]
+        B --> B4[No acceso directo a DB]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1F5
+    style A fill:#1b5e20
+    style B fill:#4a148c
 ```
 
 #### Ejemplo: Server Component (Default)
@@ -485,22 +489,23 @@ OUTPUT:
 **Analogía**: Carpetas = URLs, sin configuración.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "File-based Routing Examples"
-        A[app/page.tsx] --> A1[🌐 /]
+        A[app/page.tsx] --> A1[/]
         
-        B[app/about/page.tsx] --> B1[🌐 /about]
+        B[app/about/page.tsx] --> B1[/about]
         
-        C[app/blog/page.tsx] --> C1[🌐 /blog]
+        C[app/blog/page.tsx] --> C1[/blog]
         
-        D["app/blog/[id]/page.tsx"] --> D1["🌐 /blog/:id<br/>(dynamic)"]
+        D["app/blog/[id]/page.tsx"] --> D1["/blog/:id<br/>(dynamic)"]
         
-        E["app/blog/[category]/[slug]/page.tsx"] --> E1["🌐 /blog/:category/:slug<br/>(nested dynamic)"]
+        E["app/blog/[category]/[slug]/page.tsx"] --> E1["/blog/:category/:slug<br/>(nested dynamic)"]
     end
     
-    style A fill:#E1FFE1
-    style D fill:#FFF4E1
-    style E fill:#FFE1F5
+    style A fill:#1b5e20
+    style D fill:#e65100
+    style E fill:#4a148c
 ```
 
 ### Rutas Dinámicas
@@ -656,6 +661,7 @@ export default function SearchForm() {
 **Concepto**: `layout.tsx` = wrapper compartido para rutas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Layout Hierarchy"
         A[app/layout.tsx<br/>Root Layout]
@@ -668,10 +674,10 @@ graph TD
         B --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#E1F5FF
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#0d47a1
+    style D fill:#0d47a1
 ```
 
 #### Root Layout (Obligatorio)
@@ -793,6 +799,7 @@ OUTPUT: Código completo funcional"
 ### Concepto: Rendering Modes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Next.js Rendering Strategies"
         A[SSR<br/>Server-Side Rendering]
@@ -800,16 +807,16 @@ graph TD
         C[ISR<br/>Incremental Static Regeneration]
         D[CSR<br/>Client-Side Rendering]
         
-        A --> A1[✅ Datos siempre frescos<br/>✅ SEO excelente<br/>❌ Más lento]
-        B --> B1[✅ Súper rápido<br/>✅ SEO excelente<br/>❌ Datos estáticos]
-        C --> C1[✅ Balance perfecto<br/>✅ Revalidación automática<br/>✅ Best of both worlds]
-        D --> D1[✅ Interactivo<br/>❌ SEO malo<br/>❌ Loading states]
+        A --> A1[Datos siempre frescos<br/>SEO excelente<br/>Más lento]
+        B --> B1[Súper rápido<br/>SEO excelente<br/>Datos estáticos]
+        C --> C1[Balance perfecto<br/>Revalidación automática<br/>Best of both worlds]
+        D --> D1[Interactivo<br/>SEO malo<br/>Loading states]
     end
     
-    style C fill:#E1FFE1
-    style A fill:#FFF4E1
-    style B fill:#E1F5FF
-    style D fill:#FFE1E1
+    style C fill:#1b5e20
+    style A fill:#e65100
+    style B fill:#0d47a1
+    style D fill:#b71c1c
 ```
 
 ### SSR (Server-Side Rendering) - Default

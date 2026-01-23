@@ -25,6 +25,7 @@
 ### Analogía: Plano de una Ciudad Eléctrica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Diseño de PCB))
     Ciudad
@@ -58,14 +59,15 @@ mindmap
 ## 📊 El Flujo de Diseño de PCB
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    Start[⚡ Esquemático Aprobado] --> Q{¿Listo para PCB?}
+    Start[Esquemático Aprobado] --> Q{¿Listo para PCB?}
     
     Q --> A[📐 Component Placement<br/>Ubicación estratégica]
     Q --> B[📏 Design Rules<br/>Configurar fabricante]
     Q --> C[🎨 Board Outline<br/>Forma y tamaño]
     
-    A --> D[🔌 Routing<br/>Conexiones de cobre]
+    A --> D[Routing<br/>Conexiones de cobre]
     B --> D
     C --> D
     
@@ -75,10 +77,10 @@ graph TD
     
     F --> G[📄 Gerber Files<br/>Fabricación]
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
     style G fill:#FFD700
 ```
 
@@ -93,6 +95,7 @@ graph TD
 **Analogía**: Como un edificio de varios pisos - cada piso tiene cableado, pero también hay conexiones verticales (ascensores/escaleras).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Capas de una PCB (2 capas típica)"
         A[🔴 Top Layer - Copper<br/>Componentes + pistas]
@@ -109,12 +112,12 @@ graph TD
         E --> F
     end
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#1b5e20
     style C fill:#F5F5F5
-    style D fill:#FFF4E1
-    style E fill:#E1F5FF
-    style F fill:#E1FFE1
+    style D fill:#e65100
+    style E fill:#0d47a1
+    style F fill:#1b5e20
 ```
 
 ### Capas de PCB Explicadas
@@ -155,6 +158,7 @@ Expone solo pads donde se suelda
 ### Tipos de PCB por Capas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "1 Capa"
         A[Top Copper<br/>Componentes THT<br/>Prototipos simples]
@@ -172,10 +176,10 @@ graph LR
         D[Multicapa<br/>Impedancia controlada<br/>Profesional]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#4a148c
 ```
 
 **Decisión de capas**:
@@ -252,17 +256,18 @@ Implementación en KiCAD: Copper pour (zona de cobre)
 
 **Thermal Relief (Alivio Térmico)**:
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin Thermal Relief"
-        A[Pad conectado<br/>directo a plane] --> B[❌ Difícil soldar<br/>Plane absorbe calor]
+        A[Pad conectado<br/>directo a plane] --> B[Difícil soldar<br/>Plane absorbe calor]
     end
     
     subgraph "Con Thermal Relief"
-        C[Pad con<br/>4 spoke connections] --> D[✅ Fácil soldar<br/>Calor controlado]
+        C[Pad con<br/>4 spoke connections] --> D[Fácil soldar<br/>Calor controlado]
     end
     
-    style B fill:#FFE1E1
-    style D fill:#E1FFE1
+    style B fill:#b71c1c
+    style D fill:#1b5e20
 ```
 
 **Cuándo usar**:
@@ -277,6 +282,7 @@ graph TD
 
 **KiCAD Workflow**:
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant S as 📐 Schematic
     participant N as 📋 Netlist
@@ -407,6 +413,7 @@ View → 3D Viewer → Ver que board se renderiza correctamente
 
 **Principios de placement**:
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Component Placement))
     Funcionalidad
@@ -656,6 +663,7 @@ DRC limpio = Listo para fabricación ✓
 ### Concepto: De Diseño a PCB Física
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Diseño"
         A[🖥️ KiCAD PCB<br/>Diseño completo]
@@ -669,13 +677,13 @@ graph LR
     
     subgraph "Fabricación"
         E[🏭 JLCPCB/PCBWay<br/>Upload archivos]
-        F[✅ Review<br/>Verificación]
-        G[🚀 Producción<br/>7-10 días]
+        F[Review<br/>Verificación]
+        G[Producción<br/>7-10 días]
     end
     
     subgraph "Paraguay"
         H[📦 Envío<br/>15-20 días]
-        I[🎉 PCBs en mano]
+        I[PCBs en mano]
     end
     
     A --> B
@@ -689,8 +697,8 @@ graph LR
     G --> H
     H --> I
     
-    style A fill:#E1FFE1
-    style E fill:#FFF4E1
+    style A fill:#1b5e20
+    style E fill:#e65100
     style I fill:#FFD700
 ```
 
@@ -983,6 +991,7 @@ Para proyectos estudiantiles:
 ### Casos de Uso de IA en Diseño PCB
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para PCB))
     Cálculos
@@ -1210,9 +1219,10 @@ Todo en español técnico profesional"
 ### Integración con Workflow de PCB
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant E as 👤 Diseñador
-    participant O as 🤖 OpenCode
+    participant E as Diseñador
+    participant O as OpenCode
     participant K as 🖨️ KiCAD
     participant F as 🏭 Fabricante
     
@@ -1538,23 +1548,24 @@ Formato profesional, listo para GitHub repo"
 ### Problemas Comunes y Soluciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Errores Frecuentes"
-        A[❌ DRC errors<br/>no se resuelven]
-        B[❌ Components no caben<br/>en board]
-        C[❌ Routing imposible<br/>muy congestionado]
-        D[❌ Gerbers incorrectos<br/>fabricante rechaza]
+        A[DRC errors<br/>no se resuelven]
+        B[Components no caben<br/>en board]
+        C[Routing imposible<br/>muy congestionado]
+        D[Gerbers incorrectos<br/>fabricante rechaza]
     end
     
-    A --> A1[✅ Revisar Design Rules<br/>Ajustar a fabricante]
-    B --> B1[✅ Replantear layout<br/>Aumentar board size]
-    C --> C1[✅ Usar más vías<br/>Considerar 4 capas]
-    D --> D1[✅ Validar en GerbView<br/>Regenerar correctamente]
+    A --> A1[Revisar Design Rules<br/>Ajustar a fabricante]
+    B --> B1[Replantear layout<br/>Aumentar board size]
+    C --> C1[Usar más vías<br/>Considerar 4 capas]
+    D --> D1[Validar en GerbView<br/>Regenerar correctamente]
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
 ```
 
 #### Caso 1: Ground Plane con Islas Aisladas

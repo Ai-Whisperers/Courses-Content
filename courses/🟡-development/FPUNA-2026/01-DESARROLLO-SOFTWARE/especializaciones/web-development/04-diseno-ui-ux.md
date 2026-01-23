@@ -41,6 +41,7 @@
 ### La Realidad del Mercado Paraguay
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((UI/UX en PY))
     Empresas Locales
@@ -64,19 +65,20 @@ mindmap
 ### Comparación: Antes vs Después UI/UX
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sin UI/UX Skills"
-        A1[❌ Diseño genérico]
-        A2[❌ No responsive]
-        A3[❌ Accesibilidad pobre]
-        A4[❌ Sin animaciones]
+        A1[Diseño genérico]
+        A2[No responsive]
+        A3[Accesibilidad pobre]
+        A4[Sin animaciones]
     end
     
     subgraph "Con UI/UX Skills"
-        B1[✅ Diseño profesional]
-        B2[✅ Mobile-first]
-        B3[✅ WCAG compliant]
-        B4[✅ Interacciones fluidas]
+        B1[Diseño profesional]
+        B2[Mobile-first]
+        B3[WCAG compliant]
+        B4[Interacciones fluidas]
     end
     
     A1 -.upgrade.-> B1
@@ -84,14 +86,14 @@ graph LR
     A3 -.upgrade.-> B3
     A4 -.upgrade.-> B4
     
-    style A1 fill:#FFE1E1
-    style A2 fill:#FFE1E1
-    style A3 fill:#FFE1E1
-    style A4 fill:#FFE1E1
-    style B1 fill:#E1FFE1
-    style B2 fill:#E1FFE1
-    style B3 fill:#E1FFE1
-    style B4 fill:#E1FFE1
+    style A1 fill:#b71c1c
+    style A2 fill:#b71c1c
+    style A3 fill:#b71c1c
+    style A4 fill:#b71c1c
+    style B1 fill:#1b5e20
+    style B2 fill:#1b5e20
+    style B3 fill:#1b5e20
+    style B4 fill:#1b5e20
 ```
 
 ---
@@ -103,6 +105,7 @@ graph LR
 **Analogía**: Como LEGO - bloques pequeños que combinas para crear estructuras complejas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Traditional CSS"
         A[📝 Escribir clase custom]
@@ -116,18 +119,18 @@ graph TD
     end
     
     subgraph "Tailwind CSS"
-        E[🎯 Usar utility classes]
-        F[✅ Listo]
+        E[Usar utility classes]
+        F[Listo]
         
         E --> F
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
-    style E fill:#E1FFE1
-    style F fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
+    style E fill:#1b5e20
+    style F fill:#1b5e20
 ```
 
 ### Ejemplo Real: Card de Producto FPUNA Store
@@ -278,23 +281,24 @@ export default config;
 ### Responsive Design con Tailwind
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Breakpoints"
         A[📱 Default<br/>< 640px]
         B[📱 sm<br/>640px+]
         C[📱 md<br/>768px+]
-        D[💻 lg<br/>1024px+]
+        D[lg<br/>1024px+]
         E[🖥️ xl<br/>1280px+]
         F[🖥️ 2xl<br/>1536px+]
         
         A --> B --> C --> D --> E --> F
     end
     
-    style A fill:#FFE1F5
-    style B fill:#E1FFE1
-    style C fill:#E1F5FF
-    style D fill:#FFF4E1
-    style E fill:#FFE1E1
+    style A fill:#4a148c
+    style B fill:#1b5e20
+    style C fill:#0d47a1
+    style D fill:#e65100
+    style E fill:#b71c1c
     style F fill:#E1E1FF
 ```
 
@@ -386,6 +390,7 @@ graph LR
 ### Dark Mode Implementation
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant U as Usuario
     participant B as Button Toggle
@@ -469,6 +474,7 @@ export function ThemeToggle() {
 **Analogía**: Como un kit de herramientas profesional - cada herramienta (componente) es de calidad y funciona perfectamente junta.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin shadcn/ui"
         A1[⏱️ 2 horas crear Button]
@@ -482,18 +488,18 @@ graph TD
     end
     
     subgraph "Con shadcn/ui"
-        B1[⚡ 30 seg instalar Button]
-        B2[⚡ 30 seg instalar Dialog]
-        B3[⚡ 30 seg instalar Form]
-        B4[⚡ Total: 90 segundos]
+        B1[30 seg instalar Button]
+        B2[30 seg instalar Dialog]
+        B3[30 seg instalar Form]
+        B4[Total: 90 segundos]
         
         B1 --> B4
         B2 --> B4
         B3 --> B4
     end
     
-    style A4 fill:#FFE1E1
-    style B4 fill:#E1FFE1
+    style A4 fill:#b71c1c
+    style B4 fill:#1b5e20
 ```
 
 ### Instalación shadcn/ui
@@ -696,26 +702,27 @@ export function EnrollmentForm() {
 ### Componentes Más Usados
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "shadcn/ui Components"
         A[🔘 Button]
         B[📝 Form + Input]
-        C[💬 Dialog/Modal]
+        C[Dialog/Modal]
         D[🃏 Card]
         E[🔔 Toast]
         F[📋 Table]
-        G[🎯 Select/Dropdown]
+        G[Select/Dropdown]
         H[🎚️ Slider]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#4a148c
     style E fill:#E1E1FF
-    style F fill:#FFE1E1
-    style G fill:#E1FFE1
-    style H fill:#FFF4E1
+    style F fill:#b71c1c
+    style G fill:#1b5e20
+    style H fill:#e65100
 ```
 
 ### Dialog/Modal Example
@@ -780,6 +787,7 @@ export function DeleteConfirmDialog({
 **Analogía**: Como el sonido de un clic en tu teclado - feedback que hace la experiencia satisfactoria.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sin Animaciones"
         A1[Click] --> A2[Cambio instantáneo]
@@ -791,8 +799,8 @@ graph LR
         B2 --> B3[😊 Satisfactorio]
     end
     
-    style A3 fill:#FFE1E1
-    style B3 fill:#E1FFE1
+    style A3 fill:#b71c1c
+    style B3 fill:#1b5e20
 ```
 
 ### Animaciones CSS con Tailwind
@@ -1006,6 +1014,7 @@ export function SkeletonCard() {
 **Analogía**: Como rampas en edificios - permiten que TODOS puedan usar tu app.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Accessibility))
     Usuarios con Discapacidad
@@ -1027,11 +1036,12 @@ mindmap
 ### Principios WCAG
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "WCAG Principles (POUR)"
         A[👁️ Perceivable<br/>Pueden percibir contenido]
         B[🎮 Operable<br/>Pueden usar interfaz]
-        C[🧠 Understandable<br/>Pueden entender]
+        C[Understandable<br/>Pueden entender]
         D[💪 Robust<br/>Compatible con AT]
         
         A --> B
@@ -1039,10 +1049,10 @@ graph TD
         C --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#4a148c
 ```
 
 ### Semantic HTML
@@ -1266,22 +1276,23 @@ Diseñar y construir el portal estudiantil de FPUNA con:
 ### Wireframe
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Portal FPUNA Layout"
-        A[🎓 Header<br/>Logo + Nav + Theme Toggle]
-        B[📊 Dashboard Cards<br/>Grid 3 cols]
+        A[Header<br/>Logo + Nav + Theme Toggle]
+        B[Dashboard Cards<br/>Grid 3 cols]
         C[📝 Materias Table<br/>Responsive]
-        D[👤 Profile Sidebar<br/>Hidden mobile]
+        D[Profile Sidebar<br/>Hidden mobile]
         
         A --> B
         B --> C
         A --> D
     end
     
-    style A fill:#E1F5FF
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#1b5e20
+    style C fill:#e65100
+    style D fill:#4a148c
 ```
 
 ### Implementación con OpenCode
@@ -1348,6 +1359,7 @@ OUTPUT:
 ### Marcas Locales para Inspiración
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Design PY))
     Colores Bandera

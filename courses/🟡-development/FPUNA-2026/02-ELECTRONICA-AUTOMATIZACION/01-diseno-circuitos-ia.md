@@ -25,6 +25,7 @@
 ### Analogía: Planos de una Casa Eléctrica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Diseño de Circuitos))
     Construcción de Casa
@@ -56,11 +57,12 @@ mindmap
 ## 📊 El Flujo de Diseño Electrónico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[📋 Requerimientos] --> Q{¿Qué diseñar?}
     
-    Q --> A[⚡ Esquemático<br/>Conexiones lógicas]
-    Q --> B[🔌 Selección Componentes<br/>Datasheet research]
+    Q --> A[Esquemático<br/>Conexiones lógicas]
+    Q --> B[Selección Componentes<br/>Datasheet research]
     Q --> C[📐 Cálculos<br/>Leyes de Ohm, Kirchhoff]
     
     A --> D[🔬 Simulación<br/>Verificar funcionamiento]
@@ -71,10 +73,10 @@ graph TD
     E -->|No| A
     E -->|Sí| F[📄 BOM + Docs<br/>Fabricar prototipo]
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
     style F fill:#FFD700
 ```
 
@@ -89,27 +91,29 @@ graph TD
 **Analogía**: Como escribir una receta antes de cocinar - defines ingredientes y pasos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Proceso de Diseño"
-        A[🎯 Especificación<br/>Vin=12V, Vout=5V, I=1A]
-        B[🧠 Diseño Conceptual<br/>Regulador lineal LM7805]
-        C[⚡ Esquemático<br/>Circuito completo]
-        D[📊 Análisis<br/>Disipación, eficiencia]
+        A[Especificación<br/>Vin=12V, Vout=5V, I=1A]
+        B[Diseño Conceptual<br/>Regulador lineal LM7805]
+        C[Esquemático<br/>Circuito completo]
+        D[Análisis<br/>Disipación, eficiencia]
         
         A --> B
         B --> C
         C --> D
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#FFE1F5
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#4a148c
 ```
 
 ### Símbolos Esquemáticos Básicos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Componentes Pasivos"
         R[Resistencia<br/>🔲─────🔲<br/>Limita corriente]
@@ -123,11 +127,11 @@ graph TD
         IC[IC<br/>□□□<br/>Circuito integrado]
     end
     
-    style R fill:#FFE1E1
-    style C fill:#E1FFE1
-    style L fill:#E1F5FF
-    style D fill:#FFF4E1
-    style T fill:#FFE1F5
+    style R fill:#b71c1c
+    style C fill:#1b5e20
+    style L fill:#0d47a1
+    style D fill:#e65100
+    style T fill:#4a148c
     style IC fill:#E1E1FF
 ```
 
@@ -191,6 +195,7 @@ OUTPUT:
 ### Reglas de Diseño Fundamentales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Reglas de Oro))
     Claridad
@@ -243,11 +248,12 @@ Vout = 12V × 7.5k / (10k + 7.5k) = 5.14V ≈ 5V ✓
 **KiCAD** = El "AutoCAD de la electrónica" - Software profesional, gratuito y open-source.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Workflow KiCAD"
         A[📝 Schematic Editor<br/>Eeschema]
         B[📦 Symbol Libraries<br/>Componentes]
-        C[✅ Electrical Rules<br/>Check - ERC]
+        C[Electrical Rules<br/>Check - ERC]
         D[📄 Netlist/BOM<br/>Export]
         
         A --> B
@@ -255,10 +261,10 @@ graph LR
         C --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ### Tutorial Paso a Paso: Circuito de Sensor de Temperatura
@@ -348,12 +354,13 @@ Resultado:
 ### Gestión de Bibliotecas de Componentes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Bibliotecas KiCAD"
         A[📚 Oficiales<br/>Incluidas en instalación]
-        B[🌐 Comunitarias<br/>GitHub kicad-library]
+        B[Comunitarias<br/>GitHub kicad-library]
         C[🏭 Fabricantes<br/>Microchip, STM, etc.]
-        D[👤 Personalizadas<br/>Crear propias]
+        D[Personalizadas<br/>Crear propias]
     end
     
     A --> E[Symbol + Footprint]
@@ -361,10 +368,10 @@ graph TD
     C --> E
     D --> E
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 **Agregar biblioteca personalizada**:
@@ -429,18 +436,19 @@ Incluir capturas de pantalla del circuito en KiCad mostrando:
 **EasyEDA** = KiCAD en el navegador - Colaborativo, rápido, integrado con fabricantes PCB.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Ventajas EasyEDA"
-        A[☁️ Cloud-based<br/>Sin instalación]
+        A[Cloud-based<br/>Sin instalación]
         B[🤝 Colaborativo<br/>Share con equipo]
         C[🏭 Integrado JLCPCB<br/>Fabricación directa]
         D[📚 Biblioteca Enorme<br/>LCSC components]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ### Herramientas de Simulación Online
@@ -562,6 +570,7 @@ INCLUIR:
 ### Casos de Uso de IA en Diseño de Circuitos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para Electrónica))
     Selección de Componentes
@@ -705,9 +714,10 @@ Contexto: Proyecto de estudiante de Electrónica FPUNA"
 ### Integración con Workflow de Diseño
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant E as 👤 Ingeniero
-    participant O as 🤖 OpenCode
+    participant E as Ingeniero
+    participant O as OpenCode
     participant K as 📐 KiCAD
     participant S as 🔬 Simulador
     
@@ -826,23 +836,24 @@ Probar en **Falstad** o **Multisim Live**:
 ### Problemas Comunes y Soluciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Errores Frecuentes"
-        A[❌ Circuito no funciona<br/>después de soldar]
-        B[❌ Componente se calienta<br/>excesivamente]
-        C[❌ Valores medidos<br/>no coinciden con diseño]
-        D[❌ Ruido o inestabilidad<br/>en salida]
+        A[Circuito no funciona<br/>después de soldar]
+        B[Componente se calienta<br/>excesivamente]
+        C[Valores medidos<br/>no coinciden con diseño]
+        D[Ruido o inestabilidad<br/>en salida]
     end
     
-    A --> A1[✅ Verificar conexiones<br/>vs esquemático]
-    B --> B1[✅ Calcular disipación<br/>Añadir disipador]
-    C --> C1[✅ Revisar tolerancias<br/>Recalcular con reales]
-    D --> D1[✅ Agregar desacoplos<br/>Mejorar layout]
+    A --> A1[Verificar conexiones<br/>vs esquemático]
+    B --> B1[Calcular disipación<br/>Añadir disipador]
+    C --> C1[Revisar tolerancias<br/>Recalcular con reales]
+    D --> D1[Agregar desacoplos<br/>Mejorar layout]
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
 ```
 
 #### Caso 1: Regulador LM7805 se Calienta Mucho

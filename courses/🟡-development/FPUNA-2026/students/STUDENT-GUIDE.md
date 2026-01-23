@@ -228,6 +228,7 @@ Dependiendo de tu track, necesitarás software adicional:
 ### Ruta Estándar (Recomendada para 90% de estudiantes)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Semana 1: Core Foundation] --> B{¿Qué track eliges?}
     B --> C[Web Development]

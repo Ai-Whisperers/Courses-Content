@@ -25,6 +25,7 @@
 ### Analogía: Control de Calidad en una Fábrica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Testing))
     Fábrica
@@ -56,6 +57,7 @@ mindmap
 ## 📊 Los 3 Niveles de Testing
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[Tu Aplicación] --> Q{¿Qué probar?}
     
@@ -63,18 +65,19 @@ graph TD
     Q --> B[Integration Tests<br/>Módulos conectados]
     Q --> C[E2E Tests<br/>Flujo completo]
     
-    A --> A1[✅ Rápidos<br/>✅ Muchos<br/>❌ No detectan bugs integración]
-    B --> B1[✅ Detectan problemas conexión<br/>⚠️ Más lentos<br/>❌ Setup complejo]
-    C --> C1[✅ Simulan usuario real<br/>❌ Lentos<br/>❌ Frágiles]
+    A --> A1[Rápidos<br/>Muchos<br/>No detectan bugs integración]
+    B --> B1[Detectan problemas conexión<br/>⚠️ Más lentos<br/>Setup complejo]
+    C --> C1[Simulan usuario real<br/>Lentos<br/>Frágiles]
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#b71c1c
 ```
 
 ### Pirámide de Testing
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Testing Pyramid"
         A[🔺 E2E Tests<br/>10% - Lentos pero valiosos]
@@ -85,9 +88,9 @@ graph TD
         B --> C
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#e65100
+    style C fill:#1b5e20
 ```
 
 **Regla de oro**: Más unit tests, menos E2E tests. Los unit tests son rápidos, confiables y baratos.
@@ -101,19 +104,20 @@ graph TD
 **Analogía**: Como probar cada ingrediente antes de cocinar un plato.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Unit Test Workflow"
         A[📝 Arrange<br/>Preparar datos]
-        B[⚡ Act<br/>Ejecutar función]
-        C[✅ Assert<br/>Verificar resultado]
+        B[Act<br/>Ejecutar función]
+        C[Assert<br/>Verificar resultado]
         
         A --> B
         B --> C
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#1b5e20
 ```
 
 ### Ejemplo Real: Sistema de Usuarios FPUNA
@@ -263,8 +267,9 @@ TODO con Jest + TypeScript"
 **Concepto**: Probar cómo funcionan los componentes juntos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant T as 🧪 Test
+    participant T as Test
     participant C as 🎮 Controller
     participant S as 💼 Service
     participant D as 🗄️ Test Database
@@ -346,12 +351,13 @@ describe('UserController (Integration)', () => {
 **Concepto**: Simular usuario real navegando la app.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "E2E Test Flow"
-        A[🌐 Abrir navegador]
+        A[Abrir navegador]
         B[🔐 Login]
         C[📝 Crear usuario]
-        D[✅ Verificar UI]
+        D[Verificar UI]
         E[🗑️ Eliminar usuario]
         
         A --> B
@@ -360,10 +366,10 @@ graph LR
         D --> E
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFE1F5
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#4a148c
+    style C fill:#e65100
+    style D fill:#1b5e20
     style E fill:#E1E1FF
 ```
 
@@ -420,6 +426,7 @@ test.describe('Gestión de Usuarios FPUNA', () => {
 **Analogía**: Como escribir el examen antes de estudiar - sabes exactamente qué aprender.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "TDD Cycle - Red-Green-Refactor"
         A[🔴 RED<br/>Escribir test que falla]
@@ -431,14 +438,15 @@ graph LR
         C --> A
     end
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style C fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style C fill:#0d47a1
 ```
 
 ### Ventajas de TDD
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((TDD Benefits))
     Código Limpio
@@ -721,20 +729,21 @@ OUTPUT:
 **Analogía**: Como actores dobles en películas - parecen reales pero son controlados.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Test Doubles"
         A[🎭 Dummy<br/>Objeto placeholder]
-        B[🤖 Stub<br/>Respuestas predefinidas]
+        B[Stub<br/>Respuestas predefinidas]
         C[🎬 Mock<br/>Verificar interacciones]
         D[🕵️ Spy<br/>Observar llamadas]
         E[🏭 Fake<br/>Implementación simple]
     end
     
     style A fill:#E1E1FF
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
-    style D fill:#FFE1F5
-    style E fill:#E1F5FF
+    style B fill:#1b5e20
+    style C fill:#e65100
+    style D fill:#4a148c
+    style E fill:#0d47a1
 ```
 
 ### Cuándo Usar Cada Uno
@@ -1055,23 +1064,25 @@ OUTPUT:
 ### Concepto: Test Coverage
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Coverage Metrics"
         A[📄 Lines<br/>% líneas ejecutadas]
         B[🌿 Branches<br/>% if/else cubiertos]
-        C[⚡ Functions<br/>% funciones llamadas]
+        C[Functions<br/>% funciones llamadas]
         D[📝 Statements<br/>% statements ejecutados]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ### ¿Cuánto Coverage Necesitas?
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Coverage))
     Industry Standards
@@ -1214,20 +1225,21 @@ it('debería tener estos campos exactos', () => {
 ### Estrategias de Coverage
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Coverage Strategy"
-        A[🎯 Critical Path<br/>100% coverage]
+        A[Critical Path<br/>100% coverage]
         B[💼 Business Logic<br/>90%+ coverage]
-        C[🔌 Controllers<br/>80%+ coverage]
+        C[Controllers<br/>80%+ coverage]
         D[📄 DTOs/Entities<br/>Skip]
         
         A --> B
         B --> C
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#e65100
+    style C fill:#1b5e20
     style D fill:#E1E1E1
 ```
 

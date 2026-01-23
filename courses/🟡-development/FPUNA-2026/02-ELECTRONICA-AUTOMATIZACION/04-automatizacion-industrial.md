@@ -25,6 +25,7 @@
 ### Analogía: El Cerebro que Nunca Duerme
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Automatización Industrial))
     Operador Humano
@@ -63,12 +64,13 @@ mindmap
 ## 📊 La Pirámide de Automatización Industrial
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Niveles de Automatización"
-        L4[📊 Nivel 4: ERP/MES<br/>Gestión empresarial]
-        L3[💻 Nivel 3: SCADA/HMI<br/>Supervisión y control]
+        L4[Nivel 4: ERP/MES<br/>Gestión empresarial]
+        L3[Nivel 3: SCADA/HMI<br/>Supervisión y control]
         L2[🔧 Nivel 2: PLC/DCS<br/>Control de proceso]
-        L1[⚡ Nivel 1: I/O<br/>Sensores y actuadores]
+        L1[Nivel 1: I/O<br/>Sensores y actuadores]
         L0[🏭 Nivel 0: Proceso<br/>Máquinas físicas]
     end
     
@@ -77,11 +79,11 @@ graph TB
     L2 --> L1
     L1 --> L0
     
-    style L0 fill:#FFE1E1
-    style L1 fill:#FFF4E1
+    style L0 fill:#b71c1c
+    style L1 fill:#e65100
     style L2 fill:#FFD700
-    style L3 fill:#E1F5FF
-    style L4 fill:#E1FFE1
+    style L3 fill:#0d47a1
+    style L4 fill:#1b5e20
 ```
 
 **Nuestro foco**: Niveles 1-3 (Sensores → PLC → SCADA)
@@ -95,14 +97,15 @@ graph TB
 **PLC (Programmable Logic Controller)** = Computadora industrial robusta diseñada para control en tiempo real.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "PLC Arquitectura"
-        CPU[🧠 CPU<br/>Ejecuta programa]
+        CPU[CPU<br/>Ejecuta programa]
         MEM[💾 Memoria<br/>Ladder logic]
         DI[📥 Digital Input<br/>Pulsadores, límites]
         DO[📤 Digital Output<br/>Relés, válvulas]
-        AI[📊 Analog Input<br/>4-20mA, PT100]
-        AO[📈 Analog Output<br/>Control VFD]
+        AI[Analog Input<br/>4-20mA, PT100]
+        AO[Analog Output<br/>Control VFD]
         COM[📡 Comunicación<br/>Modbus, Ethernet]
         
         CPU --> MEM
@@ -114,10 +117,10 @@ graph LR
     end
     
     style CPU fill:#FFD700
-    style DI fill:#E1FFE1
-    style DO fill:#FFE1E1
-    style AI fill:#E1F5FF
-    style AO fill:#FFF4E1
+    style DI fill:#1b5e20
+    style DO fill:#b71c1c
+    style AI fill:#0d47a1
+    style AO fill:#e65100
 ```
 
 **Comparación: Arduino vs PLC Industrial**
@@ -140,10 +143,11 @@ graph LR
 ### Ciclo de Escaneo del PLC
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant PLC as 🔄 PLC CPU
     participant IN as 📥 Inputs
-    participant LOGIC as 🧠 Logic
+    participant LOGIC as Logic
     participant OUT as 📤 Outputs
     
     loop Cada scan cycle (típico: 10-50ms)
@@ -166,6 +170,7 @@ sequenceDiagram
 ### Sensores Industriales Comunes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Sensores Industriales))
     Digitales
@@ -214,11 +219,12 @@ Presión = 0 + (10 - 0) × 0.5 = 5 bar ✓
 ### Actuadores Industriales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Actuadores Comunes"
-        A[🔌 Contactores<br/>Control motores AC]
+        A[Contactores<br/>Control motores AC]
         B[🚰 Electroválvulas<br/>Control fluidos]
-        C[⚡ VFD<br/>Velocidad variable AC]
+        C[VFD<br/>Velocidad variable AC]
         D[🔧 Servomotores<br/>Posicionamiento preciso]
         E[🔴 Indicadores<br/>Luces piloto, alarmas]
     end
@@ -229,10 +235,10 @@ graph TD
     D --> D1[Control posición<br/>Encoders integrados]
     E --> E1[Visualización estado<br/>Torre de luces]
     
-    style A fill:#FFE1E1
-    style B fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#0d47a1
     style C fill:#FFD700
-    style D fill:#E1FFE1
+    style D fill:#1b5e20
 ```
 
 **Ejemplo real: Arranque de motor trifásico con contactor**
@@ -264,6 +270,7 @@ Lógica ladder (simplificada):
 **Ladder Logic** = Diagrama de escalera basado en lógica de relés tradicional.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Elementos Ladder Básicos"
         A[┤├ Contacto NA<br/>Normally Open]
@@ -273,11 +280,11 @@ graph LR
         E[CTU Counter<br/>Up Counter]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
     style C fill:#FFD700
-    style D fill:#E1F5FF
-    style E fill:#FFF4E1
+    style D fill:#0d47a1
+    style E fill:#e65100
 ```
 
 ### Ejemplo 1: Circuito Marcha/Paro Simple
@@ -516,6 +523,7 @@ Todo production-ready para proyecto FPUNA"
 **SCADA (Supervisory Control And Data Acquisition)** = Sistema de software que monitorea y controla procesos industriales desde una interfaz gráfica.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Arquitectura SCADA"
         HMI[🖥️ HMI/SCADA<br/>Interfaz gráfica]
@@ -524,7 +532,7 @@ graph TB
         PLC1[🔧 PLC 1<br/>Área 1]
         PLC2[🔧 PLC 2<br/>Área 2]
         PLC3[🔧 PLC 3<br/>Área 3]
-        SENSORS[⚡ Sensores/Actuadores]
+        SENSORS[Sensores/Actuadores]
     end
     
     HMI <--> OPC
@@ -537,9 +545,9 @@ graph TB
     PLC3 <--> SENSORS
     
     style HMI fill:#FFD700
-    style DB fill:#E1F5FF
-    style OPC fill:#FFF4E1
-    style PLC1 fill:#E1FFE1
+    style DB fill:#0d47a1
+    style OPC fill:#e65100
+    style PLC1 fill:#1b5e20
 ```
 
 **Funciones principales del SCADA**:
@@ -552,6 +560,7 @@ graph TB
 ### Elementos de una Pantalla HMI
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Pantalla SCADA))
     Sinóptico
@@ -615,6 +624,7 @@ mindmap
 ### Protocolos Industriales Comunes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Protocolos de Comunicación"
         A[Modbus RTU<br/>Serial RS-485]
@@ -624,15 +634,15 @@ graph TD
         E[EtherNet/IP<br/>Rockwell, CIP]
     end
     
-    A --> A1[✅ Simple, económico<br/>❌ Lento 9600-115200 baud]
-    B --> B1[✅ Ethernet estándar<br/>✅ Alta velocidad]
-    C --> C1[✅ Tiempo real<br/>❌ Costoso, ecosistema Siemens]
-    D --> D1[✅ Interoperabilidad<br/>✅ Seguridad integrada]
-    E --> E1[✅ Muy usado en USA<br/>❌ Menos común en Paraguay]
+    A --> A1[Simple, económico<br/>Lento 9600-115200 baud]
+    B --> B1[Ethernet estándar<br/>Alta velocidad]
+    C --> C1[Tiempo real<br/>Costoso, ecosistema Siemens]
+    D --> D1[Interoperabilidad<br/>Seguridad integrada]
+    E --> E1[Muy usado en USA<br/>Menos común en Paraguay]
     
-    style A fill:#FFF4E1
+    style A fill:#e65100
     style B fill:#FFD700
-    style D fill:#E1FFE1
+    style D fill:#1b5e20
 ```
 
 #### Modbus RTU: El Protocolo Universal
@@ -795,6 +805,7 @@ TODO en español, production-ready para embotelladora real en Paraguay"
 ### Casos de Uso de IA en Automatización Industrial
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para Automatización))
     Generación de Código
@@ -1003,9 +1014,10 @@ TODO en español, enfocado en acción concreta para planta paraguaya"
 ### Integración con Workflow de Automatización
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant I as 👤 Ingeniero
-    participant O as 🤖 OpenCode
+    participant I as Ingeniero
+    participant O as OpenCode
     participant PLC as 🔧 PLC
     participant SCADA as 🖥️ SCADA
     

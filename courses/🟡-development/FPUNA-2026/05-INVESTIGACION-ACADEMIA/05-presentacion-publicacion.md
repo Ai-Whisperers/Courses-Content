@@ -35,6 +35,7 @@ OpenCode es tu diseñador gráfico que crea slides profesionales y automatiza fo
 ### 1.1 Tipos de Presentaciones Académicas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Presentaciones<br/>Académicas] --> B[Oral Presentation<br/>15-20 min]
     A --> C[Poster Presentation<br/>Interactivo]
@@ -53,6 +54,7 @@ graph TD
 ### 1.2 Estructura de Presentación Oral (15 minutos)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 gantt
     title Distribución de Tiempo - Presentación 15 min
     dateFormat mm:ss
@@ -75,6 +77,7 @@ gantt
 **Principios de Diseño**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Slides<br/>Efectivas))
     Simplicidad
@@ -147,6 +150,7 @@ Fuente: Roboto 36pt título, 24pt autores
 **Slide de Metodología**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[84 Estudiantes<br/>FPUNA] --> B[Asignación<br/>Cuasi-experimental]
     B --> C[Grupo Exp.<br/>n=42<br/>ChatGPT]
@@ -232,6 +236,7 @@ OUTPUT:
 ### 2.1 Técnicas de Presentación
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Presentación<br/>Efectiva))
     Voz
@@ -294,6 +299,7 @@ estudiantes en dos grupos durante 4 semanas..."
 ### 2.3 Manejo de Preguntas Difíciles
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Pregunta del<br/>Público] --> B{¿Entiendo<br/>la pregunta?}
     
@@ -331,6 +337,7 @@ flowchart TD
 **Dimensiones Estándar**: 90 cm (ancho) × 120 cm (alto)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Poster<br/>Científico] --> B[Título + Autores<br/>20% superior]
     B --> C[Introducción<br/>15% izquierda]
@@ -442,6 +449,7 @@ pero requiere integración pedagógica cuidadosa, no adopción indiscriminada.
 ### 4.1 Selección de Journal Apropiado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[¿Dónde publicar?] --> B{Evaluar Journal}
     
@@ -486,6 +494,7 @@ flowchart TD
 ### 4.2 Proceso de Submission
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant A as Autor
     participant J as Journal System
@@ -583,6 +592,7 @@ ORCID: 0000-0002-1234-5678
 ### 4.4 Responder a Revisores
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Recibir Revisiones] --> B[Leer TODAS<br/>sin reaccionar]
     B --> C[Esperar 24 horas<br/>procesar emocionalmente]
@@ -682,6 +692,7 @@ Juan Pérez y co-autores
 ### 5.1 ORCID: Identificador de Investigador
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[ORCID iD<br/>0000-0002-1234-5678] --> B[Perfil Único<br/>Global]
     
@@ -738,16 +749,17 @@ graph LR
 ### 5.3 ResearchGate y Academia.edu
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Plataformas<br/>Académicas] --> B[ResearchGate]
     A --> C[Academia.edu]
     A --> D[Mendeley]
     
-    B --> B1[✅ Networking científico<br/>✅ Q&A con expertos<br/>✅ Stats de papers<br/>⚠️ Algunos journals prohíben]
+    B --> B1[Networking científico<br/>Q&A con expertos<br/>Stats de papers<br/>⚠️ Algunos journals prohíben]
     
-    C --> C1[✅ Fácil compartir<br/>✅ Analytics tráfico<br/>❌ Menos científico]
+    C --> C1[Fácil compartir<br/>Analytics tráfico<br/>Menos científico]
     
-    D --> D1[✅ Gestión referencias<br/>✅ Perfil investigador<br/>❌ Menos usado]
+    D --> D1[Gestión referencias<br/>Perfil investigador<br/>Menos usado]
     
     style B fill:#4CAF50
 ```

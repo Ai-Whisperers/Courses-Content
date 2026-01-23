@@ -75,9 +75,10 @@ Responde SÍ/NO:
 Imagina que abres una cafetería y necesitas configurarla:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
-  root(("☕<br/>Tu Cafetería<br/>Perfecta"))
-    ("🔌 Conexiones<br/>MCPs")
+  root(("Tu Cafetería<br/>Perfecta"))
+    ("Conexiones<br/>MCPs")
       "🚚 Proveedor<br/>de café"
       "💳 Banco para<br/>pagos"
       "🛵 Servicio de<br/>delivery"
@@ -90,8 +91,8 @@ mindmap
       "🔥 Calentar<br/>taza"
       "🥛 Leche<br/>fresca"
       "🎨 Decorar<br/>espuma"
-    ("⚡ Automatización<br/>Hooks")
-      "⏰ Abrir a<br/>las 6am"
+    ("Automatización<br/>Hooks")
+      "Abrir a<br/>las 6am"
       "🧹 Limpiar<br/>al cerrar"
       "📦 Hacer<br/>inventario"
 ```
@@ -110,33 +111,34 @@ mindmap
 ## 📋 Arquitectura de Configuración
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    subgraph PC["💻 Tu Computadora"]
+    subgraph PC["Tu Computadora"]
         direction TB
         Home["🏠<br/>Carpeta<br/>Personal"] --> OpenCodeDir["📁<br/>.opencode/"]
         
-        OpenCodeDir --> Config["⚙️<br/>config.json"]
-        OpenCodeDir --> MCP["🔌<br/>mcp-servers.json"]
+        OpenCodeDir --> Config["config.json"]
+        OpenCodeDir --> MCP["mcp-servers.json"]
         OpenCodeDir --> Skills["📦<br/>skills/"]
-        OpenCodeDir --> Hooks["⚡<br/>hooks.yaml"]
-        OpenCodeDir --> Rules["📜<br/>rules.yaml"]
+        OpenCodeDir --> Hooks["hooks.yaml"]
+        OpenCodeDir --> Rules["rules.yaml"]
         
-        Config -."🔧 Config<br/>general".-> OC["🤖<br/>OpenCode"]
-        MCP -."🌐 Conexiones<br/>externas".-> OC
+        Config -."🔧 Config<br/>general".-> OC["OpenCode"]
+        MCP -."Conexiones<br/>externas".-> OC
         Skills -."📋 Plantillas<br/>listas".-> OC
         Hooks -."⚙️ Auto<br/>mación".-> OC
-        Rules -."🎯 Reglas<br/>código".-> OC
+        Rules -."Reglas<br/>código".-> OC
     end
     
     style PC fill:#E3F2FD,stroke:#2196F3,stroke-width:3px
-    style OpenCodeDir fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style OC fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style Config fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style MCP fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style Skills fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style Hooks fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style Rules fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style Home fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style OpenCodeDir fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style OC fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style Config fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style MCP fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Skills fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Hooks fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style Rules fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Home fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
 ```
 
 ### ¿Dónde Está Todo?
@@ -168,23 +170,24 @@ graph TB
 **Analogía Simple**: Un MCP es como un "traductor" que permite a OpenCode hablar con otras aplicaciones.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     autonumber
-    participant U as 👤<br/>Tú
-    participant OC as 🤖<br/>OpenCode
-    participant MCP as 🔌<br/>MCP
+    participant U as Tú
+    participant OC as OpenCode
+    participant MCP as MCP
     participant Tool as 🛠️<br/>Git/Files
 
-    U->>+OC: 💬 "Muestra mis commits"
+    U->>+OC: "Muestra mis commits"
     Note over OC: 🤔 Necesito Git
     OC->>+MCP: 📡 Solicitar datos Git
     MCP->>+Tool: 🔄 git log --oneline
-    Tool-->>-MCP: ✅ Lista de commits
+    Tool-->>-MCP: Lista de commits
     MCP-->>-OC: 📦 Datos procesados
-    OC-->>-U: 🎯 "Tus últimos commits..."
+    OC-->>-U: "Tus últimos commits..."
     
     rect rgb(80, 200, 120, 0.1)
-        Note over U,Tool: ✨ Comunicación transparente via MCP
+        Note over U,Tool: Comunicación transparente via MCP
     end
 ```
 
@@ -199,22 +202,23 @@ sequenceDiagram
 ##### Instalación Paso a Paso
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start["🎯<br/>Instalar<br/>Filesystem MCP"] --> Open["💻<br/>Abrir<br/>Terminal"]
+    Start["Instalar<br/>Filesystem MCP"] --> Open["Abrir<br/>Terminal"]
     Open --> Install["📦<br/>npm install<br/>-g"]
     Install --> Wait["⏳<br/>Esperar<br/>1-2 min"]
-    Wait --> Config["⚙️<br/>Crear<br/>mcp-servers.json"]
-    Config --> Test["🧪<br/>Probar<br/>conexión"]
-    Test --> Success["✅<br/>¡Listo!<br/>Funciona"]
+    Wait --> Config["Crear<br/>mcp-servers.json"]
+    Config --> Test["Probar<br/>conexión"]
+    Test --> Success["¡Listo!<br/>Funciona"]
     
-    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style Open fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style Install fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
-    style Wait fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
-    style Config fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style Test fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
-    style Success fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style Success fill:#90EE90
+    style Start fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style Open fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Install fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
+    style Wait fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#333
+    style Config fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Test fill:#1b5e20,stroke:#0d3d0f,stroke-width:2px,color:#fff
+    style Success fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style Success fill:#1b5e20
 ```
 
 **Paso 1**: Abrir PowerShell o Terminal
@@ -330,22 +334,23 @@ opencode "Crea un commit con mensaje 'Agregué calculadora' para todos los cambi
 ##### Prerequisito: Token de GitHub
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
     title 🔑 Obtener Token de GitHub
     section 1️⃣ Acceso
-      Abrir github.com: 5: 👤 Tú
-      Iniciar sesión: 5: 👤 Tú
+      Abrir github.com: 5: Tú
+      Iniciar sesión: 5: Tú
     section 2️⃣ Configuración
-      Ir a Settings: 5: 👤 Tú
-      Developer Settings > Tokens: 4: 👤 Tú
-      Generate New Token (classic): 4: 👤 Tú
-      Seleccionar permisos: 3: 👤 Tú
+      Ir a Settings: 5: Tú
+      Developer Settings > Tokens: 4: Tú
+      Generate New Token (classic): 4: Tú
+      Seleccionar permisos: 3: Tú
     section 3️⃣ Finalizar
-      Generar token: 4: 👤 Tú
-      Copiar token (solo se ve 1 vez): 5: 👤 Tú
-      Guardar en variable de entorno: 4: 👤 Tú
+      Generar token: 4: Tú
+      Copiar token (solo se ve 1 vez): 5: Tú
+      Guardar en variable de entorno: 4: Tú
     section 4️⃣ Verificar
-      Probar conexión con GitHub: 5: ✅ Listo
+      Probar conexión con GitHub: 5: Listo
 ```
 
 **Pasos detallados**:
@@ -419,15 +424,16 @@ opencode "Crea un issue titulado 'Agregar tests' en mi-proyecto-fpuna"
 **Skill** = Una "receta" o "plantilla" que automatiza una tarea común.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    A["🔄<br/>Tarea<br/>repetitiva"] --> B["📦<br/>Crear<br/>Skill"]
-    B --> C["⚡<br/>1 Comando"]
-    C --> D["✅<br/>¡Listo!<br/>Auto"]
+    A["Tarea<br/>repetitiva"] --> B["📦<br/>Crear<br/>Skill"]
+    B --> C["1 Comando"]
+    C --> D["¡Listo!<br/>Auto"]
     
-    style A fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style C fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#fff
-    style D fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
+    style B fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style C fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style D fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 ### Analogía: Recetas de Cocina
@@ -587,27 +593,28 @@ opencode skill use fpuna-header \
 **Hook** = Una acción que se ejecuta **automáticamente** cuando algo sucede.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     autonumber
-    participant U as 👤<br/>Tú
-    participant OC as 🤖<br/>OpenCode
-    participant Hook as ⚡<br/>Hook
-    participant Action as 🔧<br/>Acción
+    participant U as Tú
+    participant OC as OpenCode
+    participant Hook as Hook
+    participant Action as Acción
     
-    U->>+OC: 💬 "Genera código"
+    U->>+OC: "Genera código"
     OC->>OC: 🔨 Crear código
-    OC-->>U: ✅ Código creado
+    OC-->>U: Código creado
     
     rect rgb(255, 217, 61, 0.1)
         Note over Hook: 👀 Detecta evento
         Hook->>+Action: ▶️ Ejecutar formateo
         Action->>Action: 🎨 Formatear código
-        Action-->>-Hook: ✅ Completado
+        Action-->>-Hook: Completado
     end
     
-    Hook-->>-U: 🎉 ¡Listo y formateado!
+    Hook-->>-U: ¡Listo y formateado!
     
-    Note over U,Action: ✨ Todo automático - sin intervención manual
+    Note over U,Action: Todo automático - sin intervención manual
 ```
 
 ### Analogía: Alarmas y Rutinas
@@ -661,22 +668,23 @@ hooks:
 ### Opciones de `on_fail`
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Hook["⚡<br/>Hook ejecuta<br/>acción"] --> Check{"❓<br/>¿Falló?"}
-    Check -->|"✅ No"| Success["✅<br/>Continuar<br/>normal"]
-    Check -->|"❌ Sí"| OnFail{"⚙️<br/>on_fail<br/>config"}
+    Hook["Hook ejecuta<br/>acción"] --> Check{"¿Falló?"}
+    Check -->|"No"| Success["Continuar<br/>normal"]
+    Check -->|"Sí"| OnFail{"on_fail<br/>config"}
     
     OnFail -->|"abort"| Stop["🛑<br/>STOP<br/>Mostrar error"]
-    OnFail -->|"warn"| Warn["⚠️<br/>Advertencia<br/>Continuar"]
+    OnFail -->|"warn"| Warn["Advertencia<br/>Continuar"]
     OnFail -->|"ignore"| Ignore["🤐<br/>Ignorar<br/>Continuar"]
     
-    style Hook fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style Check fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style Success fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
-    style Stop fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
-    style Warn fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#fff
+    style Hook fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style Check fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
+    style Success fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
+    style Stop fill:#FF6B6B,stroke:#7f0000,stroke-width:3px,color:#fff
+    style Warn fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
     style Ignore fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
-    style OnFail fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style OnFail fill:#0d47a1,stroke:#01579b,stroke-width:2px,color:#fff
 ```
 
 - **`abort`**: Detener TODO si falla (usa para tests críticos)
@@ -688,23 +696,24 @@ flowchart TD
 **Escenario**: Creas un proyecto para FPUNA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
-    A["1️⃣<br/>Generar<br/>código"] --> B["⚡<br/>Hook:<br/>Formatear"]
-    B --> C["⚡<br/>Hook:<br/>Header FPUNA"]
-    C --> D["2️⃣<br/>Hacer<br/>commit"]
-    D --> E["⚡<br/>Hook:<br/>Run tests"]
-    E --> F{"❓<br/>Tests<br/>OK?"}
-    F -->|"✅ Sí"| G["🎉<br/>Commit<br/>exitoso"]
-    F -->|"❌ No"| H["🛑<br/>Commit<br/>bloqueado"]
+    A["Generar<br/>código"] --> B["Hook:<br/>Formatear"]
+    B --> C["Hook:<br/>Header FPUNA"]
+    C --> D["Hacer<br/>commit"]
+    D --> E["Hook:<br/>Run tests"]
+    E --> F{"Tests<br/>OK?"}
+    F -->|"Sí"| G["Commit<br/>exitoso"]
+    F -->|"No"| H["🛑<br/>Commit<br/>bloqueado"]
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style C fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style D fill:#1ABC9C,stroke:#16A085,stroke-width:3px,color:#fff
-    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style F fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style G fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style H fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style C fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style D fill:#1b5e20,stroke:#0d3d0f,stroke-width:3px,color:#fff
+    style E fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style F fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
+    style G fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style H fill:#FF6B6B,stroke:#7f0000,stroke-width:3px,color:#fff
 ```
 
 **Sin hooks**: Harías cada paso manualmente (6 comandos).  
@@ -719,6 +728,7 @@ flowchart LR
 **Rules** = Reglas que OpenCode **siempre** sigue al generar código.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Rules))
     Estilo de Código
@@ -839,20 +849,21 @@ rules:
 ### Cómo Funcionan las Rules
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    A["👤<br/>Tú pides a<br/>OpenCode"] --> B["📜<br/>Lee tus<br/>Rules"]
-    B --> C["⚙️<br/>Genera<br/>código"]
-    C --> D{"✅<br/>¿Cumple<br/>Rules?"}
-    D -->|"❌ No"| E["🔧<br/>Ajusta<br/>auto"]
+    A["Tú pides a<br/>OpenCode"] --> B["Lee tus<br/>Rules"]
+    B --> C["Genera<br/>código"]
+    C --> D{"¿Cumple<br/>Rules?"}
+    D -->|"No"| E["Ajusta<br/>auto"]
     E --> D
-    D -->|"✅ Sí"| F["🎉<br/>Código<br/>perfecto"]
+    D -->|"Sí"| F["Código<br/>perfecto"]
     
-    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
-    style C fill:#F39C12,stroke:#D68910,stroke-width:3px,color:#fff
-    style D fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
-    style E fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style F fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style A fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style B fill:#4a148c,stroke:#38006b,stroke-width:3px,color:#fff
+    style C fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#fff
+    style D fill:#e65100,stroke:#bf360c,stroke-width:3px,color:#333
+    style E fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style F fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
 ```
 
 ### Ejemplo: Ver Rules en Acción
@@ -923,40 +934,41 @@ module.exports = { sumar };
 ### Todo Junto: Tu Setup Profesional
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    subgraph Setup["🎯 Tu OpenCode Profesional"]
+    subgraph Setup["Tu OpenCode Profesional"]
         direction TB
-        User["👤<br/>Tú<br/>comandos"] --> OC["🤖<br/>OpenCode<br/>Core"]
+        User["Tú<br/>comandos"] --> OC["OpenCode<br/>Core"]
         
-        OC --> MCPs["🔌<br/>MCPs<br/>Conexiones"]
+        OC --> MCPs["MCPs<br/>Conexiones"]
         OC --> Skills["📦<br/>Skills<br/>Plantillas"]
-        OC --> Rules["📜<br/>Rules<br/>Reglas"]
-        OC --> Hooks["⚡<br/>Hooks<br/>Auto"]
+        OC --> Rules["Rules<br/>Reglas"]
+        OC --> Hooks["Hooks<br/>Auto"]
         
         MCPs --> FS["📁<br/>Files"]
-        MCPs --> Git["🔧<br/>Git"]
+        MCPs --> Git["Git"]
         MCPs --> GH["🐙<br/>GitHub"]
         
         Skills --> README["📄<br/>README"]
-        Skills --> Tests["🧪<br/>Tests"]
-        Skills --> FPUNA["🎓<br/>Header"]
+        Skills --> Tests["Tests"]
+        Skills --> FPUNA["Header"]
         
-        Rules --> Style["✍️<br/>Style"]
-        Rules --> Docs["📚<br/>Docs"]
-        Rules --> Security["🔒<br/>Secure"]
+        Rules --> Style["Style"]
+        Rules --> Docs["Docs"]
+        Rules --> Security["Secure"]
         
         Hooks --> Format["💅<br/>Format"]
-        Hooks --> TestRun["✅<br/>Test"]
-        Hooks --> Deploy["🚀<br/>Deploy"]
+        Hooks --> TestRun["Test"]
+        Hooks --> Deploy["Deploy"]
     end
     
     style Setup fill:#E3F2FD,stroke:#2196F3,stroke-width:3px
-    style User fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
-    style OC fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
-    style MCPs fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
-    style Skills fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
-    style Rules fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
-    style Hooks fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style User fill:#0d47a1,stroke:#01579b,stroke-width:3px,color:#fff
+    style OC fill:#1b5e20,stroke:#0d3d0f,stroke-width:4px,color:#fff
+    style MCPs fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Skills fill:#b71c1c,stroke:#7f0000,stroke-width:2px,color:#fff
+    style Rules fill:#4a148c,stroke:#38006b,stroke-width:2px,color:#fff
+    style Hooks fill:#e65100,stroke:#bf360c,stroke-width:2px,color:#fff
 ```
 
 ### Archivo de Configuración Completo para Estudiante FPUNA
@@ -1021,23 +1033,24 @@ hooks:
 ### Probar Setup Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
-    title 🎯 Workflow Completo de Desarrollo con OpenCode
+    title Workflow Completo de Desarrollo con OpenCode
     section 1️⃣ Crear Proyecto
-      Solicitar proyecto a OpenCode: 5: 👤 Tú
-      Crear estructura de archivos: 5: 🤖 OpenCode
-      Hook: Formatear código auto: 5: ⚡ Auto
-      Hook: Agregar header FPUNA: 5: ⚡ Auto
+      Solicitar proyecto a OpenCode: 5: Tú
+      Crear estructura de archivos: 5: OpenCode
+      Hook: Formatear código auto: 5: Auto
+      Hook: Agregar header FPUNA: 5: Auto
     section 2️⃣ Desarrollar Features
-      Pedir nuevas funciones: 5: 👤 Tú
-      Generar código con Rules: 5: 🤖 OpenCode
-      Código formateado y documentado: 5: ⚡ Auto
-      Validación y tests incluidos: 5: ⚡ Auto
+      Pedir nuevas funciones: 5: Tú
+      Generar código con Rules: 5: OpenCode
+      Código formateado y documentado: 5: Auto
+      Validación y tests incluidos: 5: Auto
     section 3️⃣ Commit & Push
-      Ejecutar git add y commit: 4: 👤 Tú
-      Hook: Correr tests automático: 4: ⚡ Auto
-      Hook: Verificar lint y estilo: 4: ⚡ Auto
-      Commit exitoso y pusheado: 5: ✅ Listo
+      Ejecutar git add y commit: 4: Tú
+      Hook: Correr tests automático: 4: Auto
+      Hook: Verificar lint y estilo: 4: Auto
+      Commit exitoso y pusheado: 5: Listo
 ```
 
 **Comando de prueba completo**:
@@ -1079,8 +1092,9 @@ git commit -m "Proyecto inicial con OpenCode configurado"
 ## ✅ Verificación Final
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
-    Start[🎯 Verificación<br/>de Configuración] --> C1{MCPs<br/>instalados?}
+    Start[Verificación<br/>de Configuración] --> C1{MCPs<br/>instalados?}
     
     C1 -->|✅| C2{Skills<br/>instalados?}
     C1 -->|❌| F1[Reinstalar MCPs]
@@ -1098,16 +1112,16 @@ flowchart TD
     C4 -->|❌| F4[Crear rules.yaml]
     F4 --> C4
     
-    C5 -->|✅| Success[🎉 ¡CONFIGURACIÓN<br/>COMPLETA!]
+    C5 -->|✅| Success[¡CONFIGURACIÓN<br/>COMPLETA!]
     C5 -->|❌| F5[Revisar errores<br/>en logs]
     F5 --> C5
     
-    style Success fill:#90EE90
-    style F1 fill:#FFB6C1
-    style F2 fill:#FFB6C1
-    style F3 fill:#FFB6C1
-    style F4 fill:#FFB6C1
-    style F5 fill:#FFB6C1
+    style Success fill:#1b5e20
+    style F1 fill:#b71c1c
+    style F2 fill:#b71c1c
+    style F3 fill:#b71c1c
+    style F4 fill:#b71c1c
+    style F5 fill:#b71c1c
 ```
 
 ### Checklist de Verificación
@@ -1414,18 +1428,19 @@ Cuando un MCP no funciona, primero verifica: (1) que el MCP esté correctamente 
 ## 🎯 Próximos Pasos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
-    title 🎓 Tu Progreso en el Curso FPUNA
-    section ✅ Completado
-      Módulo 01: Instalación Stack: 5: ✅ Done
-      Módulo 02: Configuración Mastery: 5: ✅ Done
+    title Tu Progreso en el Curso FPUNA
+    section Completado
+      Módulo 01: Instalación Stack: 5: Done
+      Módulo 02: Configuración Mastery: 5: Done
     section ▶️ Siguiente Paso
-      Módulo 03: Prompt Engineering: 4: 🎯 Next
+      Módulo 03: Prompt Engineering: 4: Next
       Módulo 04: Context Engineering: 3: 📋 Queue
     section 🔮 Por Venir
-      Módulo 05: Live Project Demo: 3: 🚀 Soon
+      Módulo 05: Live Project Demo: 3: Soon
       Módulo 06: Workflow Patterns: 3: 🎨 Later
-      Especialización por Carrera: 2: 🎓 Final
+      Especialización por Carrera: 2: Final
 ```
 
 **Ahora que dominaste la configuración**:
@@ -1473,21 +1488,22 @@ Has completado el Módulo 02. Ahora tu OpenCode está configurado como un **prof
 ### El Poder que Ahora Tienes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Antes: Trabajo Manual] --> B[Después: Superpoderes]
     
-    B --> C[⚡ Automatización]
+    B --> C[Automatización]
     B --> D[📦 Plantillas Listas]
-    B --> E[🔌 Conexiones Externas]
+    B --> E[Conexiones Externas]
     B --> F[📜 Reglas Automáticas]
     
-    C --> G[🚀 10x Más Rápido]
+    C --> G[10x Más Rápido]
     D --> G
     E --> G
     F --> G
     
     style A fill:#ffe1e1
-    style G fill:#90EE90
+    style G fill:#1b5e20
 ```
 
 **No estás usando IA como el resto.** Tienes un setup **profesional y personalizado** que pocos conocen.

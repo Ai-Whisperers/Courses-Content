@@ -172,6 +172,7 @@ Este módulo es de nivel **intermedio-avanzado** diseñado para:
 ### 1.1 Tipos de Investigación
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Investigación] --> B[Por Objetivo]
     A --> C[Por Diseño]
@@ -200,6 +201,7 @@ graph TD
 ### 1.2 Proceso de Diseño Metodológico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Pregunta de<br/>Investigación] --> B{¿Qué quiero<br/>saber?}
     
@@ -223,6 +225,7 @@ flowchart TD
 ### 1.3 Pregunta de Investigación FINER
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Pregunta<br/>FINER))
     F: Feasible
@@ -264,6 +267,7 @@ mindmap
 ### 1.4 Operacionalización de Variables
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Variable Conceptual<br/>Abstracta] --> B[Definición<br/>Operacional]
     B --> C[Indicadores<br/>Medibles]
@@ -289,6 +293,7 @@ flowchart LR
 ### 1.5 Hipótesis: Tipos y Formulación
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Hipótesis] --> B[Nula H0]
     A --> C[Alterna Ha]
@@ -320,6 +325,7 @@ graph TD
 ### 2.1 Diseño Experimental Verdadero
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Población] --> B[Muestra N=60]
     B --> C[Asignación<br/>ALEATORIA]
@@ -358,6 +364,7 @@ flowchart TD
 ### 2.2 Diseño Cuasi-Experimental
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant G1 as Grupo 1<br/>(Sección A - mañana)
     participant G2 as Grupo 2<br/>(Sección B - tarde)
@@ -398,13 +405,14 @@ ANCOVA (Análisis de Covarianza)
 **Estudios Correlacionales**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Variable 1:<br/>Horas de uso IA] -.Correlación.-> B[Variable 2:<br/>Comprensión conceptual]
     
     A -.¿?.- C[Variable 3:<br/>Motivación intrínseca]
     B -.¿?.- C
     
-    style C fill:#FFE1E1
+    style C fill:#b71c1c
     
     Note[Correlación ≠ Causación<br/>Podría haber tercera variable]
 ```
@@ -421,6 +429,7 @@ graph LR
 ### 2.4 Comparación de Diseños
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A{¿Puedo asignar<br/>aleatoriamente?} -->|Sí| B[Experimental<br/>Verdadero]
     A -->|No| C{¿Puedo manipular<br/>la variable?}
@@ -444,6 +453,7 @@ graph TD
 ### 3.1 Tipos de Muestreo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Muestreo))
     Probabilístico
@@ -479,6 +489,7 @@ mindmap
 **Para Comparación de Medias (t-test)**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Parámetros] --> B[Effect Size d]
     A --> C[Nivel α 0.05]
@@ -543,6 +554,7 @@ Crear sección de Metodología en formato APA con esto."
 ### 3.3 Muestreo en Paraguay: Consideraciones Prácticas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Población Objetivo<br/>Estudiantes Ing. Informática<br/>FPUNA] --> B{¿Marco muestral<br/>disponible?}
     
@@ -560,8 +572,8 @@ graph TD
     J --> K[Limitación:<br/>Baja validez externa]
     
     style H fill:#4CAF50
-    style I fill:#FFE1E1
-    style K fill:#FFE1E1
+    style I fill:#b71c1c
+    style K fill:#b71c1c
 ```
 
 **Realidad en FPUNA**:
@@ -576,6 +588,7 @@ graph TD
 ### 4.1 Tipos de Validez
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Validez))
     Interna
@@ -624,6 +637,7 @@ mindmap
 ### 4.2 Confiabilidad de Instrumentos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Instrumento:<br/>Cuestionario 20 ítems] --> B[Análisis de<br/>Confiabilidad]
     
@@ -710,6 +724,7 @@ OUTPUT:
 ### 4.3 Estrategias para Maximizar Validez
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Amenazas a<br/>Validez] --> B[Historia]
     A --> C[Selección]
@@ -752,6 +767,7 @@ graph LR
 ### 5.1 Principios Éticos Fundamentales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Ética en<br/>Investigación))
     Respeto por las Personas
@@ -784,6 +800,7 @@ mindmap
 **Elementos Obligatorios**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Consentimiento<br/>Informado] --> B[Propósito del<br/>estudio]
     A --> C[Procedimientos<br/>detallados]
@@ -862,6 +879,7 @@ Firma del Participante     Fecha         Firma del Investigador
 ### 5.3 Aprobación del Comité de Ética
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant I as Investigador
     participant CE as Comité Ética<br/>FPUNA

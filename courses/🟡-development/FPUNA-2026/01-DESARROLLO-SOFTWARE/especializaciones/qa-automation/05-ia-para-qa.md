@@ -31,20 +31,21 @@ Al finalizar este módulo, serás capaz de:
 - **QA con IA** = Usar sierra eléctrica (rápido, preciso, menos esfuerzo)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sin IA"
         A1[📝 Escribir test<br/>20 min] --> A2[🐛 Debug<br/>15 min]
         A2 --> A3[🔄 Refactor<br/>10 min]
-        A3 --> A4[✅ 1 test<br/>45 min total]
+        A3 --> A4[1 test<br/>45 min total]
     end
     
     subgraph "Con IA"
-        B1[🤖 Generar test<br/>2 min] --> B2[🔍 Review<br/>3 min]
-        B2 --> B3[✅ 1 test<br/>5 min total]
+        B1[Generar test<br/>2 min] --> B2[🔍 Review<br/>3 min]
+        B2 --> B3[1 test<br/>5 min total]
     end
     
-    style A4 fill:#FFE1E1
-    style B3 fill:#E1FFE1
+    style A4 fill:#b71c1c
+    style B3 fill:#1b5e20
 ```
 
 **Resultado**: De 45 min → 5 min = **9x más rápido**

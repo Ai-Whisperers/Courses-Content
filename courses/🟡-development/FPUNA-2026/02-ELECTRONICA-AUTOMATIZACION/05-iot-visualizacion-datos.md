@@ -25,6 +25,7 @@
 ### Analogía: La Red Nerviosa de Dispositivos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Internet of Things))
     Sistema Nervioso Humano
@@ -62,11 +63,12 @@ mindmap
 ## 📊 La Arquitectura IoT de 3 Capas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Capa 1: Percepción Edge"
         A[🌡️ Sensores<br/>DHT22, BMP280]
         B[⚙️ Microcontrolador<br/>ESP32, Arduino]
-        C[🔌 Actuadores<br/>Relés, motores]
+        C[Actuadores<br/>Relés, motores]
         
         A --> B
         B --> C
@@ -83,10 +85,10 @@ graph TB
     end
     
     subgraph "Capa 3: Aplicación Cloud"
-        G[☁️ Broker MQTT<br/>Mosquitto, AWS]
+        G[Broker MQTT<br/>Mosquitto, AWS]
         H[💾 Base de Datos<br/>InfluxDB, TimescaleDB]
-        I[📊 Visualización<br/>Grafana, Dash]
-        J[🤖 Analytics<br/>ML, Alertas]
+        I[Visualización<br/>Grafana, Dash]
+        J[Analytics<br/>ML, Alertas]
         
         F --> G
         G --> H
@@ -94,12 +96,12 @@ graph TB
         H --> J
     end
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style D fill:#E1F5FF
-    style E fill:#FFF4E1
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style D fill:#0d47a1
+    style E fill:#e65100
     style G fill:#FFD700
-    style H fill:#FFE1F5
+    style H fill:#4a148c
     style I fill:#E1E1FF
     style J fill:#FFD700
 ```
@@ -119,6 +121,7 @@ graph TB
 4. **Escalabilidad** - Soportar miles de dispositivos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Comparativa de Protocolos IoT"
         A[HTTP/REST<br/>Heavy, simple]
@@ -142,11 +145,12 @@ graph LR
 **MQTT (Message Queue Telemetry Transport)** = Protocolo pub/sub diseñado para redes inestables y dispositivos limitados.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant S as 📡 ESP32 Sensor
     participant B as 🔁 Broker MQTT<br/>Mosquitto
-    participant D1 as 📊 Dashboard
-    participant D2 as 🤖 Analytics
+    participant D1 as Dashboard
+    participant D2 as Analytics
     
     Note over S,D2: 1. Conexión
     S->>B: CONNECT clientID, user, pass
@@ -195,6 +199,7 @@ Ejemplos Paraguay:
 ### Calidad de Servicio (QoS)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "QoS 0: At Most Once"
         A1[Sensor] -->|Fire and forget| B1[Broker]
@@ -213,9 +218,9 @@ graph TD
         B3 -->|PUBCOMP| A3
     end
     
-    style A1 fill:#FFE1E1
-    style A2 fill:#FFF4E1
-    style A3 fill:#E1FFE1
+    style A1 fill:#b71c1c
+    style A2 fill:#e65100
+    style A3 fill:#1b5e20
 ```
 
 **Cuándo usar cada QoS**:
@@ -275,6 +280,7 @@ if (httpCode == 200) {
 ### Concepto: Cloud Platforms = Backend Listo para Usar
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin Cloud Platform"
         A1[Configurar servidor] --> B1[Base de datos]
@@ -289,7 +295,7 @@ graph TD
     end
     
     style A2 fill:#FFD700
-    style B2 fill:#E1FFE1
+    style B2 fill:#1b5e20
 ```
 
 ### ThingSpeak: La Más Simple (Ideal para Aprender)
@@ -297,10 +303,11 @@ graph TD
 **ThingSpeak** = Plataforma MATLAB-based para IoT, gratis hasta 3M mensajes/año.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    A[📡 ESP32] -->|HTTP POST| B[☁️ ThingSpeak Channel]
-    B --> C[📊 Gráfico automático]
-    B --> D[📈 MATLAB Analysis]
+    A[📡 ESP32] -->|HTTP POST| B[ThingSpeak Channel]
+    B --> C[Gráfico automático]
+    B --> D[MATLAB Analysis]
     B --> E[🔔 ThingAlert]
     B --> F[⬇️ Export CSV]
     
@@ -439,9 +446,10 @@ Crear alerta si temperatura > 30°C:
 **Ubidots** = Plataforma enterprise-grade, usada en industria y AgTech.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Ventajas Ubidots"
-        A[📊 Dashboards customizables]
+        A[Dashboards customizables]
         B[🔔 Alertas SMS/Email/Webhook]
         C[📱 White-label apps]
         D[🔗 API avanzada]
@@ -449,7 +457,7 @@ graph TB
         F[👥 Multi-usuario]
     end
     
-    style A fill:#E1FFE1
+    style A fill:#1b5e20
     style B fill:#FFD700
     style E fill:#FFD700
 ```
@@ -549,13 +557,14 @@ void loop() {
 **AWS IoT Core** = Infraestructura masiva, usado por empresas grandes.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
-    A[📡 Millones de Dispositivos] --> B[☁️ AWS IoT Core<br/>MQTT Broker]
+    A[📡 Millones de Dispositivos] --> B[AWS IoT Core<br/>MQTT Broker]
     B --> C[📜 IoT Rules Engine]
-    C --> D[⚡ Lambda Functions]
+    C --> D[Lambda Functions]
     C --> E[💾 DynamoDB]
-    C --> F[📧 SNS Notifications]
-    E --> G[📊 QuickSight Dashboard]
+    C --> F[SNS Notifications]
+    E --> G[QuickSight Dashboard]
     
     style B fill:#FF9900
     style C fill:#FFD700
@@ -590,16 +599,17 @@ graph TB
 **Grafana** = Open-source platform para visualización de time-series data, usado por Netflix, Uber, Tesla.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Data Sources"
-        A[📊 InfluxDB]
+        A[InfluxDB]
         B[💾 PostgreSQL]
         C[🔥 Prometheus]
-        D[☁️ Elasticsearch]
+        D[Elasticsearch]
     end
     
     subgraph "Grafana"
-        E[📊 Panels<br/>Gráficos]
+        E[Panels<br/>Gráficos]
         F[📋 Dashboards<br/>Múltiples paneles]
         G[🔔 Alerts<br/>Umbrales]
         H[👥 Teams<br/>Colaboración]
@@ -614,7 +624,7 @@ graph LR
     F --> G
     
     style E fill:#FFD700
-    style F fill:#E1FFE1
+    style F fill:#1b5e20
 ```
 
 ### InfluxDB: Base de Datos para Time-Series
@@ -640,12 +650,13 @@ Measurement: temperatura
 #### Arquitectura del Sistema
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant E as 📡 ESP32
     participant M as 🔁 Mosquitto<br/>MQTT Broker
     participant T as 🐍 Telegraf<br/>Data collector
     participant I as 💾 InfluxDB<br/>Time-series DB
-    participant G as 📊 Grafana<br/>Dashboard
+    participant G as Grafana<br/>Dashboard
     
     E->>M: PUBLISH fpuna/temp 28.5
     M->>T: Subscribe & receive
@@ -845,6 +856,7 @@ void loop() {
 ### Tipos de Visualizaciones en Grafana
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Grafana Panels))
     Time Series
@@ -897,6 +909,7 @@ mindmap
 ### Casos de Uso de IA en IoT
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para IoT))
     Generación de Código
@@ -1178,23 +1191,24 @@ Incluir cálculo de autonomía de batería esperada"
 ### Problemas Comunes y Soluciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Errores Frecuentes"
-        A[❌ Datos no llegan<br/>a dashboard]
-        B[❌ Conexión MQTT<br/>intermitente]
-        C[❌ InfluxDB no<br/>guarda datos]
-        D[❌ Grafana no<br/>muestra gráficos]
+        A[Datos no llegan<br/>a dashboard]
+        B[Conexión MQTT<br/>intermitente]
+        C[InfluxDB no<br/>guarda datos]
+        D[Grafana no<br/>muestra gráficos]
     end
     
-    A --> A1[✅ Verificar conectividad<br/>Revisar broker logs]
-    B --> B1[✅ Keep-alive, LWT<br/>Reconnect logic]
-    C --> C1[✅ Telegraf config<br/>Bucket permissions]
-    D --> D1[✅ Query syntax Flux<br/>Time range correcto]
+    A --> A1[Verificar conectividad<br/>Revisar broker logs]
+    B --> B1[Keep-alive, LWT<br/>Reconnect logic]
+    C --> C1[Telegraf config<br/>Bucket permissions]
+    D --> D1[Query syntax Flux<br/>Time range correcto]
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
 ```
 
 ---

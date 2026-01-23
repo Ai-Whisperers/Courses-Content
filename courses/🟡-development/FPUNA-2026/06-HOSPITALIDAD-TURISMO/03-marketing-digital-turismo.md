@@ -33,6 +33,7 @@ La IA es tu amplificador de historias: puede ayudarte a crear más contenido, pe
 ### 1.1 El Embudo del Viajero Digital
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[SOÑAR<br/>Inspiración] --> B[PLANIFICAR<br/>Investigación]
     B --> C[RESERVAR<br/>Conversión]
@@ -40,15 +41,15 @@ graph TD
     D --> E[COMPARTIR<br/>Advocacy]
     E --> A
 
-    A --> A1["📱 Instagram, TikTok, Pinterest<br/>🎯 Contenido inspiracional<br/>💡 Despertar el deseo de viajar"]
+    A --> A1["📱 Instagram, TikTok, Pinterest<br/>Contenido inspiracional<br/>💡 Despertar el deseo de viajar"]
 
-    B --> B1["🔍 Google, Blogs, Reviews<br/>🎯 Contenido informativo<br/>💡 Responder preguntas"]
+    B --> B1["🔍 Google, Blogs, Reviews<br/>Contenido informativo<br/>💡 Responder preguntas"]
 
-    C --> C1["💻 Sitio web, OTAs, Email<br/>🎯 CTA claros, ofertas<br/>💡 Facilitar la compra"]
+    C --> C1["Sitio web, OTAs, Email<br/>CTA claros, ofertas<br/>💡 Facilitar la compra"]
 
-    D --> D1["📍 WhatsApp, App hotel<br/>🎯 Servicio excepcional<br/>💡 Crear momentos WOW"]
+    D --> D1["📍 WhatsApp, App hotel<br/>Servicio excepcional<br/>💡 Crear momentos WOW"]
 
-    E --> E1["⭐ Reviews, UGC, Social<br/>🎯 Facilitar compartir<br/>💡 Convertir en embajadores"]
+    E --> E1["⭐ Reviews, UGC, Social<br/>Facilitar compartir<br/>💡 Convertir en embajadores"]
 
     style A fill:#FF69B4
     style C fill:#4CAF50
@@ -70,6 +71,7 @@ graph TD
 ### 1.3 El Viajero Paraguayo y Regional
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 pie title Origen de Turistas en Paraguay (2024)
     "Argentina" : 45
     "Brasil" : 25
@@ -94,6 +96,7 @@ pie title Origen de Turistas en Paraguay (2024)
 ### 2.1 Framework para Contenido Turístico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Contenido<br/>Turístico))
     Inspiracional
@@ -243,6 +246,7 @@ Eventos relevantes: Día de la Raza (12), Halloween (31)
 ### 2.4 Respuestas a Comentarios y DMs
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Comentario/DM] --> B{Tipo}
 
@@ -288,6 +292,7 @@ flowchart TD
 ### 3.1 Keywords Turísticas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Keywords Turísticas] --> B[Informacionales]
     A --> C[Navegacionales]
@@ -388,6 +393,7 @@ Abril-octubre (otoño/invierno) tiene clima más agradable...
 **Optimización del perfil:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 checklist
     title Google Business - Checklist Optimización
     Información completa (nombre, dirección, teléfono) :done
@@ -408,6 +414,7 @@ checklist
 ### 4.1 Tipos de Emails Turísticos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Email Marketing<br/>Hotelero] --> B[Transaccionales]
     A --> C[Promocionales]
@@ -427,6 +434,7 @@ graph TD
 ### 4.2 Secuencia de Email Automatizada
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant H as Huésped
     participant E as Email System
@@ -575,6 +583,7 @@ después del checkout.
 ### 5.1 Plataformas y Usos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Publicidad Turística] --> B[Meta Ads<br/>FB + IG]
     A --> C[Google Ads]

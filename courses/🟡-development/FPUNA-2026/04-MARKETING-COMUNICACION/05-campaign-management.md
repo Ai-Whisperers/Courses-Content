@@ -36,6 +36,7 @@ En Paraguay, campañas profesionales de marcas como **Tigo**, **Personal** y **B
 ## 📊 Flujo Completo de Campaña
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Objetivos de Negocio] --> B[Definir KPIs]
     B --> C[Investigación de Audiencia]
@@ -68,6 +69,7 @@ graph TD
 **Modelo profesional para planear campañas:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((SOSTAC))
     Situation
@@ -161,6 +163,7 @@ MENSAJE QUE RESUENA:
 **Matriz de Canales:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Paid Media"
         A1[Google Ads]
@@ -412,6 +415,7 @@ Genera tabla con distribución recomendada + justificación
 **Componentes Esenciales:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Dashboard de Campaña"
         A[Inversión Total]

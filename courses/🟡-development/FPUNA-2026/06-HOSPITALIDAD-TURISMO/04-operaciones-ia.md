@@ -31,6 +31,7 @@ La IA es como darle al director la capacidad de escuchar cada instrumento indivi
 ### 1.1 Los Departamentos Operativos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Operaciones<br/>Hoteleras] --> B[Front Office]
     A --> C[Housekeeping]
@@ -67,6 +68,7 @@ graph TD
 ### 1.3 El Flujo del Día Operativo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 gantt
     title Día Operativo - Hotel 100 habitaciones
     dateFormat HH:mm
@@ -108,6 +110,7 @@ gantt
 ### 2.1 Sistema de Asignación con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Inicio del Día] --> B[PMS: Estado<br/>habitaciones]
 
@@ -315,6 +318,7 @@ _________________________________________________
 ### 2.4 Predicción de Carga de Trabajo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 xychart-beta
     title "Predicción Carga Housekeeping - Próximos 7 Días"
     x-axis ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
@@ -345,6 +349,7 @@ xychart-beta
 ### 3.1 De Correctivo a Predictivo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Mantenimiento<br/>Reactivo] --> B[Mantenimiento<br/>Preventivo] --> C[Mantenimiento<br/>Predictivo]
 
@@ -363,6 +368,7 @@ graph LR
 ### 3.2 Datos para Predicción
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Fuentes de Datos] --> B[Sensores IoT]
     A --> C[Historial<br/>reparaciones]
@@ -556,6 +562,7 @@ Hab 503 | Daño por agua      | Retorno: 22/10
 ### 4.1 Inventarios Críticos en Hotelería
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Inventarios<br/>Hotel))
     Operativos
@@ -582,6 +589,7 @@ mindmap
 ### 4.2 Sistema de Reposición Automática
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Consumo diario<br/>registrado] --> B[Sistema<br/>inventario]
 
@@ -697,6 +705,7 @@ Subir stock mínimo de 500 a 700 durante temporada alta.
 ### 4.4 Control de Blancos (Lencería)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Ciclo de Blancos] --> B[Habitación]
     B --> C[Recolección]
@@ -720,6 +729,7 @@ graph TD
 ### 5.1 Flujos de Trabajo Automatizados
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     subgraph "Trigger: Check-in completado"
         A[Huésped hace<br/>check-in] --> B[PMS registra]
@@ -774,6 +784,7 @@ flowchart TD
 **Workflow automatizado:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant H as Huésped
     participant App as App/Tablet

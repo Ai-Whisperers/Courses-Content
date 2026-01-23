@@ -25,6 +25,7 @@
 ### Analogía: El Cerebro del Dispositivo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Firmware))
     Cerebro Humano
@@ -62,23 +63,24 @@ mindmap
 ## 📊 El Stack de Desarrollo Embebido
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Hardware"
         A[⚙️ Microcontrolador<br/>ATmega328, ESP32]
-        B[🔌 Periféricos<br/>GPIO, ADC, UART, I2C]
+        B[Periféricos<br/>GPIO, ADC, UART, I2C]
         C[🔋 Alimentación<br/>3.3V o 5V]
     end
     
     subgraph "Firmware"
         D[📝 Código C/C++<br/>setup, loop]
         E[📚 Bibliotecas<br/>Wire, SPI, WiFi]
-        F[⚡ Interrupciones<br/>Eventos asíncronos]
+        F[Interrupciones<br/>Eventos asíncronos]
     end
     
     subgraph "Desarrollo"
         G[🛠️ Arduino IDE<br/>Fácil, rápido]
         H[🏗️ PlatformIO<br/>Profesional]
-        I[🤖 OpenCode<br/>Asistente IA]
+        I[OpenCode<br/>Asistente IA]
     end
     
     A --> D
@@ -90,11 +92,11 @@ graph TB
     I --> D
     I --> E
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style D fill:#E1F5FF
-    style E fill:#FFF4E1
-    style G fill:#FFE1F5
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style D fill:#0d47a1
+    style E fill:#e65100
+    style G fill:#4a148c
     style H fill:#E1E1FF
     style I fill:#FFD700
 ```
@@ -110,16 +112,17 @@ graph TB
 **Microcontrolador (MCU)** = CPU + RAM + Flash + Periféricos en un solo chip.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Microcontrolador"
-        CPU[🧠 CPU<br/>8/16/32-bit]
+        CPU[CPU<br/>8/16/32-bit]
         FLASH[💾 Flash<br/>Código programa]
         RAM[🗂️ RAM<br/>Variables]
         GPIO[📍 GPIO<br/>Pines I/O]
-        ADC[📊 ADC<br/>Analógico→Digital]
+        ADC[ADC<br/>Analógico→Digital]
         UART[📡 UART<br/>Serial]
         I2C[🔗 I2C<br/>Bus 2-wire]
-        SPI[⚡ SPI<br/>Bus rápido]
+        SPI[SPI<br/>Bus rápido]
         
         CPU --> FLASH
         CPU --> RAM
@@ -131,10 +134,10 @@ graph LR
     end
     
     style CPU fill:#FFD700
-    style FLASH fill:#E1FFE1
-    style RAM fill:#FFE1E1
-    style GPIO fill:#E1F5FF
-    style ADC fill:#FFF4E1
+    style FLASH fill:#1b5e20
+    style RAM fill:#b71c1c
+    style GPIO fill:#0d47a1
+    style ADC fill:#e65100
 ```
 
 **Comparación común**:
@@ -222,6 +225,7 @@ void loop() {
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 stateDiagram-v2
     [*] --> IDLE
     IDLE --> READING_SENSOR: Timer expired
@@ -239,6 +243,7 @@ stateDiagram-v2
 **GPIO (General Purpose Input/Output)** = Pines programables que pueden leer o escribir señales digitales.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "GPIO como Salida"
         A[digitalWrite(pin, HIGH)] --> B[Pin = 5V/3.3V]
@@ -251,10 +256,10 @@ graph TD
         F -->|Conectado a GND| H[Retorna LOW]
     end
     
-    style B fill:#E1FFE1
-    style D fill:#FFE1E1
-    style G fill:#E1FFE1
-    style H fill:#FFE1E1
+    style B fill:#1b5e20
+    style D fill:#b71c1c
+    style G fill:#1b5e20
+    style H fill:#b71c1c
 ```
 
 **Ejemplo real: Leer pulsador, controlar relé**
@@ -288,16 +293,17 @@ void loop() {
 **ADC (Analog-to-Digital Converter)** = Convierte voltaje analógico (0-5V) a número digital (0-1023).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    A[🌡️ Sensor Analógico<br/>0-5V variable] --> B[📊 ADC<br/>10-bit]
-    B --> C[💻 Valor Digital<br/>0-1023]
+    A[🌡️ Sensor Analógico<br/>0-5V variable] --> B[ADC<br/>10-bit]
+    B --> C[Valor Digital<br/>0-1023]
     
     D[Ejemplo: 2.5V] --> E[ADC lee]
     E --> F[Valor: 512<br/>2.5V / 5V × 1023]
     
-    style A fill:#FFF4E1
-    style B fill:#E1F5FF
-    style C fill:#E1FFE1
+    style A fill:#e65100
+    style B fill:#0d47a1
+    style C fill:#1b5e20
 ```
 
 **Resolución ADC**:
@@ -343,6 +349,7 @@ void loop() {
 **PWM (Pulse Width Modulation)** = Simular voltaje variable prendiendo/apagando rápido.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "PWM Duty Cycle"
         A[0% = 0V promedio<br/>Siempre OFF]
@@ -352,9 +359,9 @@ graph TD
         E[100% = 5V<br/>Siempre ON]
     end
     
-    style A fill:#FFE1E1
-    style C fill:#FFF4E1
-    style E fill:#E1FFE1
+    style A fill:#b71c1c
+    style C fill:#e65100
+    style E fill:#1b5e20
 ```
 
 **Aplicaciones**:
@@ -393,9 +400,10 @@ void loop() {
 **Interrupción** = Pausa la ejecución del `loop()` cuando ocurre un evento (flanco de señal, timer).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant Main as 🔁 loop()
-    participant ISR as ⚡ Interrupción
+    participant ISR as Interrupción
     participant Event as 🔔 Evento Externo
     
     Main->>Main: Ejecutando código normal
@@ -453,22 +461,23 @@ void loop() {
 ### Concepto: Arduino vs PlatformIO
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Arduino IDE"
-        A[✅ Fácil para principiantes]
-        B[✅ Muchos ejemplos]
-        C[❌ IDE básico]
-        D[❌ Gestión de libs manual]
+        A[Fácil para principiantes]
+        B[Muchos ejemplos]
+        C[IDE básico]
+        D[Gestión de libs manual]
     end
     
     subgraph "PlatformIO"
-        E[✅ Profesional - VS Code]
-        F[✅ Gestión automática de deps]
-        G[✅ Múltiples boards]
-        H[✅ Debugging avanzado]
+        E[Profesional - VS Code]
+        F[Gestión automática de deps]
+        G[Múltiples boards]
+        H[Debugging avanzado]
     end
     
-    style A fill:#E1FFE1
+    style A fill:#1b5e20
     style E fill:#FFD700
     style F fill:#FFD700
     style G fill:#FFD700
@@ -698,6 +707,7 @@ Guardado en SD ✓
 ### Librerías Esenciales para Firmware
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Bibliotecas Arduino))
     Sensores
@@ -787,21 +797,22 @@ Todo en español para proyecto FPUNA"
 **ESP32** = Microcontrolador de 32-bit con WiFi, Bluetooth, dual-core, y más GPIO.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Ventajas ESP32"
         A[📶 WiFi 802.11 b/g/n<br/>Conectividad integrada]
         B[📱 Bluetooth Classic + BLE<br/>IoT y wearables]
-        C[🚀 Dual-core 240MHz<br/>Multitarea real]
+        C[Dual-core 240MHz<br/>Multitarea real]
         D[💾 4MB Flash + 520KB RAM<br/>Más espacio]
         E[🔋 Deep Sleep<br/>10µA en sleep mode]
-        F[📊 ADC 12-bit<br/>Mayor precisión]
+        F[ADC 12-bit<br/>Mayor precisión]
     end
     
     style A fill:#FFD700
     style B fill:#FFD700
-    style C fill:#E1FFE1
-    style D fill:#E1F5FF
-    style E fill:#FFF4E1
+    style C fill:#1b5e20
+    style D fill:#0d47a1
+    style E fill:#e65100
 ```
 
 **Casos de uso en Paraguay**:
@@ -874,10 +885,11 @@ Signal strength (RSSI): -52 dBm
 **MQTT** = Message Queue Telemetry Transport - Protocolo pub/sub para IoT.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant S as 📡 ESP32 Sensor
     participant B as 🔁 Broker MQTT<br/>(test.mosquitto.org)
-    participant C as 💻 Cliente<br/>(Node-RED, App)
+    participant C as Cliente<br/>(Node-RED, App)
     
     S->>B: CONNECT
     B->>S: CONNACK
@@ -1175,6 +1187,7 @@ void loop() {
 ### Casos de Uso de IA en Firmware
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((OpenCode para Firmware))
     Generación de Código
@@ -1352,11 +1365,12 @@ Sensor de campo alimentado por batería 18650 + panel solar pequeño (5V 100mA)"
 ### Integración con Workflow de Desarrollo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant D as 👤 Developer
-    participant O as 🤖 OpenCode
+    participant D as Developer
+    participant O as OpenCode
     participant P as 🏗️ PlatformIO
-    participant H as ⚡ Hardware
+    participant H as Hardware
     
     D->>O: "Genera driver para sensor XYZ"
     O->>D: Código base generado
@@ -1412,6 +1426,7 @@ Desarrollar firmware completo para controlador de riego automatizado con ESP32.
 ### Diseño del Sistema
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 stateDiagram-v2
     [*] --> SLEEPING
     SLEEPING --> WAKING: Timer expired
@@ -1523,23 +1538,24 @@ TODO en español, código production-ready para FPUNA"
 ### Problemas Comunes y Soluciones
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Errores Frecuentes"
-        A[❌ Código compila pero<br/>no sube al MCU]
-        B[❌ Serial monitor<br/>muestra basura]
-        C[❌ Sensor siempre<br/>lee mismo valor]
-        D[❌ ESP32 se resetea<br/>aleatoriamente]
+        A[Código compila pero<br/>no sube al MCU]
+        B[Serial monitor<br/>muestra basura]
+        C[Sensor siempre<br/>lee mismo valor]
+        D[ESP32 se resetea<br/>aleatoriamente]
     end
     
-    A --> A1[✅ Verificar puerto COM<br/>Drivers CH340/CP2102]
-    B --> B1[✅ Baudrate incorrecto<br/>Match con Serial.begin]
-    C --> C1[✅ Pin mal configurado<br/>pinMode o conexión]
-    D --> D1[✅ Watchdog o<br/>Stack overflow]
+    A --> A1[Verificar puerto COM<br/>Drivers CH340/CP2102]
+    B --> B1[Baudrate incorrecto<br/>Match con Serial.begin]
+    C --> C1[Pin mal configurado<br/>pinMode o conexión]
+    D --> D1[Watchdog o<br/>Stack overflow]
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style C fill:#b71c1c
+    style D fill:#b71c1c
 ```
 
 #### Caso 1: ESP32 No Entra en Modo de Programación

@@ -189,6 +189,7 @@ Para este módulo necesitarás crear las siguientes cuentas si aún no las tiene
 ### Analogía: Sistema de Seguridad Bancaria
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Security))
     Banco Físico
@@ -219,6 +220,7 @@ mindmap
 ### Estadísticas de Seguridad Web
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Common Security Breaches"
         A[🔓 Weak Authentication<br/>40% de ataques]
@@ -227,10 +229,10 @@ graph TD
         D[🕵️ Session Hijacking<br/>15% de incidentes]
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ---
@@ -240,9 +242,10 @@ graph TD
 ### Authentication Flow Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant U as 👤 Usuario
-    participant F as 🌐 Frontend
+    participant U as Usuario
+    participant F as Frontend
     participant A as 🔐 Auth Server
     participant D as 🗄️ Database
     
@@ -261,6 +264,7 @@ sequenceDiagram
 ### Authorization Levels
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "RBAC Hierarchy"
         A[👑 Super Admin<br/>Full access]
@@ -275,22 +279,23 @@ graph TD
         D --> E
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#0d47a1
     style E fill:#E1E1E1
 ```
 
 ### JWT vs Session Strategy
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "JWT Strategy"
         A1[🔐 Login] --> B1[📝 Generate JWT]
         B1 --> C1[💾 Store client-side]
         C1 --> D1[📤 Send with requests]
-        D1 --> E1[✅ Validate signature]
+        D1 --> E1[Validate signature]
     end
     
     subgraph "Session Strategy"
@@ -300,8 +305,8 @@ graph LR
         D2 --> E2[🔍 Lookup in DB]
     end
     
-    style A1 fill:#E1FFE1
-    style A2 fill:#E1F5FF
+    style A1 fill:#1b5e20
+    style A2 fill:#0d47a1
 ```
 
 **Comparación**:
@@ -711,9 +716,10 @@ export default function LoginPage() {
 ### OAuth 2.0 Flow Explicado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant U as 👤 Usuario
-    participant C as 🌐 Tu App
+    participant U as Usuario
+    participant C as Tu App
     participant O as 🔐 OAuth Provider<br/>(Google/GitHub)
     participant A as 🔒 Auth Server
     participant D as 🗄️ Database
@@ -1056,24 +1062,25 @@ export default function RegisterPage() {
 ### Password Security Best Practices
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Password Requirements - FPUNA Standard"
         A[📏 Longitud mínima: 8 caracteres]
         B[🔤 Al menos 1 mayúscula]
         C[🔡 Al menos 1 minúscula]
         D[🔢 Al menos 1 número]
-        E[🎯 Al menos 1 símbolo especial]
+        E[Al menos 1 símbolo especial]
         F[🚫 No usar passwords comunes]
         G[⏱️ Expiración: 90 días opcional]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1FFE1
-    style C fill:#E1FFE1
-    style D fill:#FFF4E1
-    style E fill:#FFF4E1
-    style F fill:#FFE1E1
-    style G fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#1b5e20
+    style C fill:#1b5e20
+    style D fill:#e65100
+    style E fill:#e65100
+    style F fill:#b71c1c
+    style G fill:#0d47a1
 ```
 
 ---
@@ -1085,9 +1092,10 @@ graph TD
 ### Role-Based Access Control Architecture
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "RBAC System"
-        U[👤 User] --> R[🎭 Role]
+        U[User] --> R[🎭 Role]
         R --> P[🔑 Permissions]
         
         R1[👑 admin] --> P1[users:read]
@@ -1101,9 +1109,9 @@ graph TD
         R3[👁️ viewer] --> P7[content:read]
     end
     
-    style R1 fill:#FFE1E1
-    style R2 fill:#FFF4E1
-    style R3 fill:#E1F5FF
+    style R1 fill:#b71c1c
+    style R2 fill:#e65100
+    style R3 fill:#0d47a1
 ```
 
 ### Implementar Roles en Schema
@@ -1379,6 +1387,7 @@ export async function GET() {
 ### Seguridad para Fintech en Paraguay
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Security))
     Compliance

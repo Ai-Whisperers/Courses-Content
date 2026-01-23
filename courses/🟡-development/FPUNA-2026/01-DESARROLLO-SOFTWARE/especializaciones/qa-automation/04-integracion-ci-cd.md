@@ -29,16 +29,17 @@
 ### El Problema del Testing Manual
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Testing Manual - El Caos"
-        A[👨‍💻 Developer commit]
+        A[Developer commit]
         B{¿Recuerda ejecutar tests?}
-        C[❌ Olvidó ejecutar]
-        D[✅ Ejecuta local]
+        C[Olvidó ejecutar]
+        D[Ejecuta local]
         E{¿Ambiente diferente?}
-        F[❌ Tests pasan local<br/>Fallan en producción]
-        G[✅ Tests pasan]
-        H[🚀 Deploy]
+        F[Tests pasan local<br/>Fallan en producción]
+        G[Tests pasan]
+        H[Deploy]
         I[💥 Bug en producción]
         
         A --> B
@@ -53,9 +54,9 @@ graph TD
         H --> I
     end
     
-    style C fill:#FFE1E1
-    style F fill:#FFE1E1
-    style I fill:#FFE1E1
+    style C fill:#b71c1c
+    style F fill:#b71c1c
+    style I fill:#b71c1c
 ```
 
 **Realidad en Paraguay** (empresas locales):
@@ -66,15 +67,16 @@ graph TD
 ### La Solución: CI/CD Automatizado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "CI/CD - Automatizado"
-        A[👨‍💻 Developer commit]
-        B[🤖 GitHub Actions<br/>Auto trigger]
-        C[🧪 Tests ejecutan<br/>Ambiente consistente]
+        A[Developer commit]
+        B[GitHub Actions<br/>Auto trigger]
+        C[Tests ejecutan<br/>Ambiente consistente]
         D{¿Tests pasan?}
-        E[✅ Merge permitido]
-        F[❌ Bloquea merge]
-        G[📧 Notifica al dev]
+        E[Merge permitido]
+        F[Bloquea merge]
+        G[Notifica al dev]
         H[🔧 Desarrollador arregla]
         
         A --> B
@@ -87,8 +89,8 @@ graph LR
         H --> B
     end
     
-    style E fill:#E1FFE1
-    style F fill:#FFE1E1
+    style E fill:#1b5e20
+    style F fill:#b71c1c
 ```
 
 ### Impacto Real en Producción
@@ -113,27 +115,28 @@ graph LR
 ### Comparación de Plataformas CI/CD
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((CI/CD Options))
     GitHub Actions
-      ✅ Gratis para repos públicos
-      ✅ 2000 min/mes gratis privados
-      ✅ Integración nativa GitHub
-      ✅ Marketplace 10,000+ actions
-      ✅ FPUNA usa esto
+      Gratis para repos públicos
+      2000 min/mes gratis privados
+      Integración nativa GitHub
+      Marketplace 10,000+ actions
+      FPUNA usa esto
     Jenkins
-      ✅ Open source
-      ❌ Setup complejo
-      ❌ Requiere servidor
-      ❌ Mantenimiento costoso
+      Open source
+      Setup complejo
+      Requiere servidor
+      Mantenimiento costoso
     GitLab CI
-      ✅ Integrado con GitLab
-      ❌ Menos acciones disponibles
-      ❌ FPUNA no usa
+      Integrado con GitLab
+      Menos acciones disponibles
+      FPUNA no usa
     Circle CI
-      ✅ Rápido
-      ❌ Costoso
-      ❌ 6,000 min/mes gratis
+      Rápido
+      Costoso
+      6,000 min/mes gratis
 ```
 
 **Para FPUNA**: GitHub Actions es ideal porque:
@@ -147,6 +150,7 @@ mindmap
 ## 📊 Arquitectura de CI/CD para Testing
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "GitHub Repository"
         A[📝 Code Push/PR]
@@ -155,21 +159,21 @@ graph TB
     subgraph "GitHub Actions Runner"
         B[🔧 Setup Environment<br/>Node, Browsers]
         C[📦 Install Dependencies<br/>npm ci]
-        D[🧪 Run Tests<br/>Parallel Shards]
-        E[📊 Generate Reports<br/>Allure, HTML]
+        D[Run Tests<br/>Parallel Shards]
+        E[Generate Reports<br/>Allure, HTML]
         F[📤 Upload Artifacts<br/>Videos, Screenshots]
     end
     
     subgraph "Notifications"
-        G[📧 Email Team]
-        H[💬 Slack Channel]
+        G[Email Team]
+        H[Slack Channel]
         I[🔔 Discord Webhook]
     end
     
     subgraph "Quality Gates"
         J{¿Tests pasan?}
-        K[✅ Approve Merge]
-        L[❌ Block Merge]
+        K[Approve Merge]
+        L[Block Merge]
     end
     
     A --> B
@@ -184,8 +188,8 @@ graph TB
     J --> H
     J --> I
     
-    style K fill:#E1FFE1
-    style L fill:#FFE1E1
+    style K fill:#1b5e20
+    style L fill:#b71c1c
 ```
 
 ---
@@ -197,6 +201,7 @@ graph TB
 **Analogía**: Como un robot asistente que ejecuta tareas automáticamente cada vez que haces cambios en tu código.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((GitHub Actions))
     Workflow
@@ -295,6 +300,7 @@ git push origin main
 3. Click en workflow para ver logs
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant D as Developer
     participant G as GitHub
@@ -364,18 +370,19 @@ jobs:
 **Resultado**: 3 jobs en paralelo (Chromium, Firefox, Safari/WebKit)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Trigger Workflow] --> B[Chromium Job]
     A --> C[Firefox Job]
     A --> D[WebKit Job]
     
-    B --> E[✅ Results]
+    B --> E[Results]
     C --> E
     D --> E
     
-    style B fill:#E1FFE1
-    style C fill:#E1FFE1
-    style D fill:#E1FFE1
+    style B fill:#1b5e20
+    style C fill:#1b5e20
+    style D fill:#1b5e20
 ```
 
 ### Variables de Entorno y Secrets
@@ -426,14 +433,15 @@ jobs:
    - `TEST_USER_PASSWORD`: password de prueba
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[GitHub Secrets] -->|Encrypted| B[Workflow]
     B --> C[Environment Variables]
     C --> D[Playwright Tests]
     D --> E[Acceso seguro a recursos]
     
-    style A fill:#FFE1E1
-    style E fill:#E1FFE1
+    style A fill:#b71c1c
+    style E fill:#1b5e20
 ```
 
 ---
@@ -445,6 +453,7 @@ graph TD
 **Analogía**: Como dividir una pizza en 4 partes para que 4 personas coman más rápido.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Sin Sharding - Lento"
         A[100 tests] --> B[1 máquina]
@@ -462,8 +471,8 @@ graph TD
         H --> I
     end
     
-    style C fill:#FFE1E1
-    style I fill:#E1FFE1
+    style C fill:#b71c1c
+    style I fill:#1b5e20
 ```
 
 ### Implementación de Sharding en GitHub Actions
@@ -622,27 +631,28 @@ jobs:
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Workflow Trigger] --> B[💨 Smoke Tests]
-    B -->|✅ Pasa| C[🔄 Regression Tests]
-    B -->|❌ Falla| D[🛑 Stop Pipeline]
+    B -->|Pasa| C[🔄 Regression Tests]
+    B -->|Falla| D[🛑 Stop Pipeline]
     
     C --> E[Shard 1]
     C --> F[Shard 2]
     C --> G[Shard 3]
     C --> H[Shard 4]
     
-    A --> I[🔌 API Tests<br/>En paralelo]
+    A --> I[API Tests<br/>En paralelo]
     
-    E --> J[✅ Merge Results]
+    E --> J[Merge Results]
     F --> J
     G --> J
     H --> J
     I --> J
     
-    style B fill:#FFF4E1
-    style D fill:#FFE1E1
-    style J fill:#E1FFE1
+    style B fill:#e65100
+    style D fill:#b71c1c
+    style J fill:#1b5e20
 ```
 
 ---
@@ -652,6 +662,7 @@ graph TD
 ### Tipos de Reportes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Test Reports))
     HTML Report
@@ -829,19 +840,20 @@ jobs:
 **Ejemplo de Allure Report**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Allure Features"
-        A[📊 Overview]
-        B[📈 Trends]
-        C[🧪 Suites]
-        D[📉 Graphs]
+        A[Overview]
+        B[Trends]
+        C[Suites]
+        D[Graphs]
         E[⏱️ Timeline]
         F[🏷️ Categories]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#0d47a1
 ```
 
 ---
@@ -965,6 +977,7 @@ jobs:
 ### Problemas Comunes en CI
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((CI Failures))
     Timing Issues
@@ -1125,11 +1138,12 @@ export default defineConfig({
 ### ¿Por Qué Docker para Tests?
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sin Docker"
-        A[💻 Local] -->|Diferente| B[🤖 CI]
-        B -->|Diferente| C[☁️ Staging]
-        C -->|Diferente| D[🚀 Production]
+        A[Local] -->|Diferente| B[CI]
+        B -->|Diferente| C[Staging]
+        C -->|Diferente| D[Production]
     end
     
     subgraph "Con Docker"
@@ -1137,9 +1151,9 @@ graph LR
         F --> G[💯 Reproducible]
     end
     
-    style A fill:#FFE1E1
-    style B fill:#FFE1E1
-    style G fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#b71c1c
+    style G fill:#1b5e20
 ```
 
 ### Dockerfile para Playwright Tests
@@ -1303,6 +1317,7 @@ jobs:
 - macOS: USD 0.08/minuto
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[1000 tests] --> B{Estrategia}
     
@@ -1312,8 +1327,8 @@ graph TD
     B -->|Optimizado| E[5 min × 10 runs/día<br/>= 50 min/día]
     E --> F[💰 USD 12/mes<br/>75% ahorro]
     
-    style D fill:#FFE1E1
-    style F fill:#E1FFE1
+    style D fill:#b71c1c
+    style F fill:#1b5e20
 ```
 
 ### Estrategias de Optimización
@@ -1433,20 +1448,21 @@ jobs:
 **Analogía**: Como un guardia de seguridad que no deja pasar código malo.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Developer crea PR] --> B{Quality Gate 1<br/>Tests pasan?}
-    B -->|No| C[❌ Block Merge]
+    B -->|No| C[Block Merge]
     B -->|Yes| D{Quality Gate 2<br/>Coverage > 80%?}
     D -->|No| C
     D -->|Yes| E{Quality Gate 3<br/>No vulnerabilidades?}
     E -->|No| C
-    E -->|Yes| F[✅ Approve Merge]
+    E -->|Yes| F[Approve Merge]
     
     C --> G[Developer arregla]
     G --> A
     
-    style C fill:#FFE1E1
-    style F fill:#E1FFE1
+    style C fill:#b71c1c
+    style F fill:#1b5e20
 ```
 
 ### Configurar Branch Protection en GitHub

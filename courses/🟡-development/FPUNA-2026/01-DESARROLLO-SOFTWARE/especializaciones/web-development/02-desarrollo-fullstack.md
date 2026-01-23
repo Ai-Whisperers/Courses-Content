@@ -26,6 +26,7 @@
 ### Analogía: Restaurant Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Full-Stack))
     Restaurant Frontend
@@ -200,6 +201,7 @@ Antes de comenzar, verifica:
 ## 📊 El Stack Moderno (2026)
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Frontend Layer"
         A[⚛️ React Components<br/>Next.js 14]
@@ -209,11 +211,11 @@ graph TD
     
     subgraph "Data Layer"
         D[🔄 React Query<br/>Client state]
-        E[🌐 tRPC Client<br/>Type-safe calls]
+        E[tRPC Client<br/>Type-safe calls]
     end
     
     subgraph "Backend Layer"
-        F[🔌 tRPC Router<br/>API endpoints]
+        F[tRPC Router<br/>API endpoints]
         G[💼 Business Logic<br/>Services]
         H[🗃️ Prisma Client<br/>ORM]
     end
@@ -254,8 +256,9 @@ graph TD
 **Analogía**: Como un traductor entre tu código TypeScript y la base de datos SQL.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant D as 💻 Developer
+    participant D as Developer
     participant P as 🔧 Prisma
     participant DB as 🗄️ PostgreSQL
     
@@ -320,6 +323,7 @@ DATABASE_URL="postgresql://username:password@ep-cool-name.us-east-2.aws.neon.tec
 **Caso de uso**: Tienda online para productos universitarios (libros, notebooks, merchandising).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 erDiagram
     User ||--o{ Order : "places"
     User {
@@ -683,6 +687,7 @@ console.log(products[0].nombe); // ❌ TypeScript error!
 ### Arquitectura tRPC + Next.js
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Client (Browser)"
         A[🖥️ React Component]
@@ -691,8 +696,8 @@ graph TD
     end
     
     subgraph "Server (Next.js)"
-        D[🌐 API Route Handler<br/>/api/trpc/[trpc]]
-        E[🔌 tRPC Router]
+        D[API Route Handler<br/>/api/trpc/[trpc]]
+        E[tRPC Router]
         F[🔒 Middlewares<br/>Auth, logging]
         G[💼 Procedures<br/>Query/Mutation]
         H[🗃️ Prisma Client]
@@ -1113,6 +1118,7 @@ OUTPUT:
 ### Concepto: Server State vs Client State
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((State Types))
     Client State
@@ -1318,11 +1324,12 @@ const [queryClient] = useState(
 **Flujo de validación completo**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant U as 👤 Usuario
+    participant U as Usuario
     participant F as 📝 Form (RHF)
-    participant Z as ✅ Zod Schema
-    participant T as 🌐 tRPC
+    participant Z as Zod Schema
+    participant T as tRPC
     participant P as 🗃️ Prisma
     
     U->>F: Llena formulario
@@ -1332,7 +1339,7 @@ sequenceDiagram
         Z->>F: Retorna errores
         F->>U: Muestra errores inline
     else Validación OK
-        Z->>F: ✅ Data válida
+        Z->>F: Data válida
         F->>T: mutation.mutate(data)
         T->>Z: Re-valida server-side
         
@@ -1344,7 +1351,7 @@ sequenceDiagram
             Z->>P: Guarda en DB
             P->>T: Retorna datos
             T->>F: onSuccess callback
-            F->>U: ✅ Éxito + reset form
+            F->>U: Éxito + reset form
         end
     end
     
@@ -1560,9 +1567,10 @@ function ProductFormComplete() {
 **Flow de manejo de errores**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Error Handling Pipeline"
-        A[❌ Error Ocurre]
+        A[Error Ocurre]
         B{Dónde?}
         
         B -->|Validación Zod| C[🔴 ZodError]
@@ -1584,10 +1592,10 @@ graph TD
         J -->|Network| N[Retry button]
     end
     
-    style C fill:#FFE1E1
-    style D fill:#FFE1E1
-    style E fill:#FFE1E1
-    style K fill:#E1FFE1
+    style C fill:#b71c1c
+    style D fill:#b71c1c
+    style E fill:#b71c1c
+    style K fill:#1b5e20
 ```
 
 **Ejemplo completo de error handling**:
@@ -1813,12 +1821,13 @@ opencode "Genera AdminDashboard con:
 **Stack completo desplegado en producción**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Production Environment"
         subgraph "Vercel (Frontend + API)"
-            A[🌐 Next.js App<br/>Vercel Edge Network]
-            B[⚡ API Routes<br/>Serverless Functions]
-            C[🔌 tRPC Handlers<br/>Lambda Functions]
+            A[Next.js App<br/>Vercel Edge Network]
+            B[API Routes<br/>Serverless Functions]
+            C[tRPC Handlers<br/>Lambda Functions]
         end
         
         subgraph "Neon (Database)"
@@ -1827,8 +1836,8 @@ graph TD
         end
         
         subgraph "External Services"
-            F[📧 Email Service<br/>Resend/SendGrid]
-            G[📊 Analytics<br/>Vercel Analytics]
+            F[Email Service<br/>Resend/SendGrid]
+            G[Analytics<br/>Vercel Analytics]
             H[🔐 Auth Provider<br/>NextAuth]
         end
         
@@ -1843,7 +1852,7 @@ graph TD
     end
     
     subgraph "Development"
-        I[💻 Local Dev<br/>localhost:3000]
+        I[Local Dev<br/>localhost:3000]
         J[🗄️ Local PostgreSQL<br/>Docker]
         I --> J
     end
@@ -1851,7 +1860,7 @@ graph TD
     style A fill:#61DAFB
     style D fill:#336791
     style E fill:#336791
-    style I fill:#FFF4E1
+    style I fill:#e65100
 ```
 
 **Deployment checklist**:

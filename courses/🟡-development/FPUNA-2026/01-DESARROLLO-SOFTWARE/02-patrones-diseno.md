@@ -26,6 +26,7 @@
 ### Analogía: Recetas de Cocina
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Patrones de<br/>Diseño))
     Como Recetas
@@ -51,6 +52,7 @@ mindmap
 ### Los 5 Pilares del Buen Diseño
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     SOLID[SOLID Principles] --> S[S: Single Responsibility]
     SOLID --> O[O: Open/Closed]
@@ -64,11 +66,11 @@ graph TD
     I --> I1[Interfaces específicas,<br/>no genéricas]
     D --> D1[Depender de abstracciones]
     
-    style S fill:#FFE1E1
-    style O fill:#E1FFE1
-    style L fill:#E1F5FF
-    style I fill:#FFF4E1
-    style D fill:#FFE1F5
+    style S fill:#b71c1c
+    style O fill:#1b5e20
+    style L fill:#0d47a1
+    style I fill:#e65100
+    style D fill:#4a148c
 ```
 
 ### 1. Single Responsibility Principle (SRP)
@@ -157,6 +159,7 @@ class DescuentoSenior implements EstrategiaDescuento {
 **Problema**: Crear objetos sin exponer lógica de creación.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 classDiagram
     class NotificationFactory {
         +create(type: string) Notification
@@ -314,6 +317,7 @@ const usuario = new UsuarioBuilder()
 **Problema**: Hacer que dos interfaces incompatibles trabajen juntas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 classDiagram
     class Cliente {
         +request()
@@ -465,6 +469,7 @@ await facade.registerUser({ nombre: 'Juan', email: '...' });
 **Problema**: Notificar a múltiples objetos cuando algo cambia.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 classDiagram
     class Subject {
         -observers: Observer[]
@@ -597,13 +602,14 @@ calculator.calculate(5, 100); // Costo express
 ### Concepto: Invertir el Control
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Sin DI:<br/>Clase crea<br/>dependencias] --> B[Acoplado<br/>Difícil testear]
     
     C[Con DI:<br/>Inyectar<br/>dependencias] --> D[Desacoplado<br/>Fácil testear]
     
-    style B fill:#FFB6C1
-    style D fill:#90EE90
+    style B fill:#b71c1c
+    style D fill:#1b5e20
 ```
 
 **Ejemplo**:

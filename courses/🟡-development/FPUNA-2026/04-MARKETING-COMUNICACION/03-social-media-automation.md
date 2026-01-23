@@ -36,6 +36,7 @@ En Paraguay, marcas como **Tigo**, **Personal** y **Stock** publican 20-50 posts
 ## 📊 Flujo de Automatización Completo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Estrategia de Contenido] --> B[Generar Contenido con IA]
     B --> C[Calendario Editorial]
@@ -65,6 +66,7 @@ graph TD
 **Beneficios Clave:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Automatización))
     Eficiencia
@@ -244,6 +246,7 @@ TODO en español, listo para copiar a Buffer
 - 💰 **Ahorran** 30% en costos de atención al cliente
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Con Chatbot"
         A1[Cliente pregunta] --> B1[Chatbot responde<br/>inmediatamente]
@@ -284,6 +287,7 @@ graph LR
 **Flujo del Chatbot:**
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Usuario: Hola] --> B[Bot: Hola 👋 Soy Moda Bot]
     B --> C{¿Qué necesitas?}
@@ -481,6 +485,7 @@ TODO en español, contexto Paraguay
 - Analizar estrategias de competencia
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Social Listening))
     Monitorear

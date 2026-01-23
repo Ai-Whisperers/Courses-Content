@@ -24,6 +24,7 @@
 ### Analogía: Recetas de Cocina
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Patrones de<br/>Workflow))
     Como Recetas
@@ -69,20 +70,21 @@ mindmap
 ### Patrón Universal: Feature Development
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     Start[💡 Nueva Feature] --> Plan[📋 Planificar]
     Plan --> Context[📝 Actualizar Contexto]
     Context --> Generate[🎨 Generar Código]
-    Generate --> Test[🧪 Probar]
+    Generate --> Test[Probar]
     Test --> Works{¿Funciona?}
     Works -->|No| Debug[🔧 Debug]
     Debug --> Generate
-    Works -->|Sí| Refine[✨ Refinar]
+    Works -->|Sí| Refine[Refinar]
     Refine --> Doc[📚 Documentar]
     Doc --> Commit[💾 Commit]
-    Commit --> Done[✅ Completo]
+    Commit --> Done[Completo]
     
-    style Done fill:#90EE90
+    style Done fill:#1b5e20
 ```
 
 ### Ejemplo Práctico
@@ -127,19 +129,20 @@ git push
 **Concepto**: Tests PRIMERO, código DESPUÉS.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant D as 👨‍💻 Developer
-    participant AI as 🤖 OpenCode
-    participant T as 🧪 Tests
+    participant D as Developer
+    participant AI as OpenCode
+    participant T as Tests
     
     D->>AI: Genera tests para calcularDescuento()
     AI->>T: Tests creados
-    T->>D: ❌ Tests fallan (no hay código)
+    T->>D: Tests fallan (no hay código)
     
     D->>AI: Implementa función que pase estos tests
     AI->>D: Código generado
     D->>T: Ejecuta tests
-    T->>D: ✅ Todos pasan
+    T->>D: Todos pasan
 ```
 
 **Ejemplo**:
@@ -164,14 +167,15 @@ npm test  # ✅ Deben pasar todos
 **Concepto**: Mejora incremental en lugar de perfección inmediata.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     V1[V1: Básico] --> V2[V2: + Validación]
     V2 --> V3[V3: + Tests]
     V3 --> V4[V4: + Optimización]
     V4 --> V5[V5: + Docs]
     
-    style V1 fill:#FFE1E1
-    style V5 fill:#90EE90
+    style V1 fill:#b71c1c
+    style V5 fill:#1b5e20
 ```
 
 **Ejemplo**:
@@ -222,17 +226,18 @@ npm test && npm run lint
 ### Patrón 4: Debugging Sistemático
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[🐛 Bug Detectado] --> B[📝 Reproducir]
     B --> C[🔍 Aislar Problema]
-    C --> D[🤖 Analizar con IA]
+    C --> D[Analizar con IA]
     D --> E[🔧 Probar Solución]
     E --> F{¿Resuelto?}
     F -->|No| D
     F -->|Sí| G[🛡️ Prevenir Recurrencia]
-    G --> H[✅ Completo]
+    G --> H[Completo]
     
-    style H fill:#90EE90
+    style H fill:#1b5e20
 ```
 
 **Template de Prompt**:
@@ -266,19 +271,20 @@ NECESITO:
 ### Antipatrón 1: Copiar Sin Entender
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    A[❌ MALO] --> B[Pedir código]
+    A[MALO] --> B[Pedir código]
     B --> C[Copiar sin leer]
     C --> D[Pegar y ejecutar]
     D --> E[No sé qué hace]
     
-    F[✅ BUENO] --> G[Pedir código + explicación]
+    F[BUENO] --> G[Pedir código + explicación]
     G --> H[Leer y entender]
     H --> I[Hacer preguntas]
     I --> J[LUEGO usar]
     
-    style E fill:#FFB6C1
-    style J fill:#90EE90
+    style E fill:#b71c1c
+    style J fill:#1b5e20
 ```
 
 ### Antipatrón 2: Prompts Vagos Repetidos
@@ -428,6 +434,7 @@ git commit -m "refactor: improve [componente]"
 ### ✅ HACER
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Best<br/>Practices))
     Commits
@@ -608,6 +615,7 @@ Antes de commit siempre verifica: tests pasan ✅, lint limpio ✅, docs actuali
 ## 🎉 ¡Completaste Core Foundation!
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
     title Tu Progreso en FPUNA Verano 2026
     section Semana 1

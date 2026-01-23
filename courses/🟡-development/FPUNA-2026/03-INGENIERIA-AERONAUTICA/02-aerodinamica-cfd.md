@@ -25,6 +25,7 @@
 ### Analogía: Túnel de Viento Digital
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((CFD))
     Túnel de Viento Físico
@@ -73,6 +74,7 @@ mindmap
 ## 📊 El Flujo de Análisis Aerodinámico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[📐 Geometría CAD] --> Q{¿Qué analizar?}
     
@@ -80,19 +82,19 @@ graph TD
     Q --> B[✈️ Ala 3D<br/>CFD completo]
     Q --> C[🚁 Aeronave Completa<br/>CFD avanzado]
     
-    A --> D[📊 Post-procesamiento<br/>CL, CD, gráficas]
+    A --> D[Post-procesamiento<br/>CL, CD, gráficas]
     B --> D
     C --> D
     
     D --> E{¿Satisfactorio?}
     E -->|No| F[🔧 Modificar geometría]
     F --> Start
-    E -->|Sí| G[✅ Diseño validado]
+    E -->|Sí| G[Diseño validado]
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
     style G fill:#FFD700
 ```
 
@@ -107,6 +109,7 @@ graph TD
 **Analogía**: Como un auto en movimiento - hay resistencia del aire (drag) y si tiene spoiler, genera fuerza hacia abajo (downforce). En aviones, esa fuerza va hacia arriba (lift).
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Fuerzas en Vuelo"
         A[⬆️ Lift - L<br/>Sustentación]
@@ -118,10 +121,10 @@ graph TD
         B -.equilibrio horizontal.- D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1E1
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#b71c1c
+    style D fill:#0d47a1
 ```
 
 ### Ecuaciones Fundamentales
@@ -230,22 +233,23 @@ Todo en español con contexto de UAV agrícola paraguayo"
 - Usado en industria para diseño preliminar
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Workflow XFoil"
         A[📐 Coordenadas Airfoil<br/>Archivo .dat]
         B[⚙️ Configurar Re, Mach<br/>Parámetros de vuelo]
         C[▶️ Ejecutar análisis<br/>OPER → ALFA sequence]
-        D[📊 Resultados<br/>CL, CD, CM vs α]
+        D[Resultados<br/>CL, CD, CM vs α]
         
         A --> B
         B --> C
         C --> D
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1F5FF
+    style A fill:#1b5e20
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#0d47a1
 ```
 
 ### Tutorial Paso a Paso: Analizar NACA 4412

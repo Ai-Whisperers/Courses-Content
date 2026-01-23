@@ -25,6 +25,7 @@
 ### Analogía: Construir un Edificio
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Arquitectura))
     Edificio
@@ -46,6 +47,7 @@ mindmap
 ## 📊 Los 3 Estilos Principales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     Start[Tu Aplicación] --> Q{¿Qué arquitectura?}
     
@@ -53,13 +55,13 @@ graph TD
     Q --> B[Microservicios<br/>Apps independientes]
     Q --> C[Event-Driven<br/>Comunicación asíncrona]
     
-    A --> A1[✅ Simple<br/>❌ Difícil escalar]
-    B --> B1[✅ Escala bien<br/>❌ Más complejo]
-    C --> C1[✅ Desacoplado<br/>❌ Debugging difícil]
+    A --> A1[Simple<br/>Difícil escalar]
+    B --> B1[Escala bien<br/>Más complejo]
+    C --> C1[Desacoplado<br/>Debugging difícil]
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style C fill:#E1F5FF
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style C fill:#0d47a1
 ```
 
 ---
@@ -71,9 +73,10 @@ graph TD
 **Analogía**: Como un edificio con pisos específicos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Arquitectura en Capas"
-        A[🌐 Presentation Layer<br/>Controllers/UI]
+        A[Presentation Layer<br/>Controllers/UI]
         B[💼 Business Logic Layer<br/>Services]
         C[💾 Data Access Layer<br/>Repositories]
         D[🗄️ Database Layer<br/>PostgreSQL/MongoDB]
@@ -83,10 +86,10 @@ graph TD
         C --> D
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#1b5e20
 ```
 
 ### Ejemplo: Sistema de Usuarios
@@ -150,6 +153,7 @@ INCLUIR:
 ### Concepto: Apps Independientes
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TB
     subgraph "Arquitectura Monolítica"
         M[Una App Grande<br/>Users + Products + Orders<br/>Una Base de Datos]
@@ -166,10 +170,10 @@ graph TB
         D --> C
     end
     
-    style M fill:#FFB6C1
-    style A fill:#90EE90
-    style B fill:#90EE90
-    style C fill:#90EE90
+    style M fill:#b71c1c
+    style A fill:#1b5e20
+    style B fill:#1b5e20
+    style C fill:#1b5e20
     style D fill:#FFD700
 ```
 
@@ -187,23 +191,24 @@ graph TB
 ### Ejemplo Real: E-Commerce
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
-    U[👤 Usuario] --> G[🚪 API Gateway]
+    U[Usuario] --> G[🚪 API Gateway]
     
     G --> A[🔐 Auth Service<br/>Login/Register]
     G --> B[📦 Product Service<br/>Catálogo]
     G --> C[🛒 Cart Service<br/>Carrito]
     G --> D[💳 Payment Service<br/>Pagos]
-    G --> E[📧 Notification Service<br/>Emails]
+    G --> E[Notification Service<br/>Emails]
     
     C -.Event: Order Created.-> D
     D -.Event: Payment Done.-> E
     
     style G fill:#FFD700
-    style A fill:#E1F5FF
-    style B fill:#E1FFE1
-    style C fill:#FFE1F5
-    style D fill:#FFF4E1
+    style A fill:#0d47a1
+    style B fill:#1b5e20
+    style C fill:#4a148c
+    style D fill:#e65100
     style E fill:#E1E1FF
 ```
 
@@ -261,9 +266,10 @@ TODO con TypeScript estricto y comentarios en español"
 ### REST: Multiple Endpoints
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant C as 👤 Cliente
-    participant A as 🔌 API REST
+    participant C as Cliente
+    participant A as API REST
     participant D as 🗄️ Database
     
     C->>A: GET /users/123
@@ -282,9 +288,10 @@ sequenceDiagram
 ### GraphQL: Single Endpoint
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant C as 👤 Cliente
-    participant G as 🔌 GraphQL
+    participant C as Cliente
+    participant G as GraphQL
     participant D as 🗄️ Database
     
     C->>G: POST /graphql<br/>{user(id:123){name, posts{title}}}
@@ -336,15 +343,16 @@ Comentarios en español"
 ### Concepto: Comunicación Asíncrona
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Order Service] -->|Event: Order Created| B[Message Queue<br/>RabbitMQ/Kafka]
     B --> C[Email Service]
     B --> D[Inventory Service]
     B --> E[Analytics Service]
     
-    C -.Envía email.-> U[👤 Usuario]
+    C -.Envía email.-> U[Usuario]
     D -.Reduce stock.-> DB[(Database)]
-    E -.Registra métrica.-> M[📊 Metrics]
+    E -.Registra métrica.-> M[Metrics]
     
     style B fill:#FFD700
 ```
@@ -352,6 +360,7 @@ graph LR
 ### Ventajas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Event-Driven))
     Desacoplamiento
@@ -471,6 +480,7 @@ Código completo con comentarios en español"
 ### Los 5 Principios
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((SOLID))
     S: Single Responsibility

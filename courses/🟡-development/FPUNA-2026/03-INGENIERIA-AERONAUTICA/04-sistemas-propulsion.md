@@ -26,6 +26,7 @@
 ### Analogía: El Motor de un Auto, pero en 3D
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Propulsión))
     Auto
@@ -176,26 +177,27 @@ Antes de comenzar, verifica:
 ## 📊 Los Tres Pilares del Diseño de Propulsión
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    Start[🎯 Misión] --> Q{¿Optimizar qué?}
+    Start[Misión] --> Q{¿Optimizar qué?}
     
     Q --> A[🔋 Autonomía<br/>Máximo tiempo de vuelo]
-    Q --> B[⚡ Potencia<br/>Velocidad y maniobrabilidad]
+    Q --> B[Potencia<br/>Velocidad y maniobrabilidad]
     Q --> C[⚖️ Peso<br/>Payload máximo]
     
     A --> D[⚠️ Conflicto:<br/>No puedes tener los 3]
     B --> D
     C --> D
     
-    D --> E[✅ Solución: Trade-off analysis]
+    D --> E[Solución: Trade-off analysis]
     
     E --> F[📐 Herramientas:<br/>Cálculos + Simulación]
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
-    style C fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
+    style C fill:#e65100
     style D fill:#FFD700
-    style F fill:#E1F5FF
+    style F fill:#0d47a1
 ```
 
 **Ecuación fundamental**: **Autonomía ∝ (Eficiencia × Energía) / Potencia requerida**
@@ -207,13 +209,14 @@ graph TD
 ### Panorama General
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Motores Aeronáuticos"
         A[🛩️ Pistón<br/>Aviación general]
         B[🌀 Turbohélice<br/>Transporte regional]
         C[✈️ Turbofan<br/>Aviación comercial]
-        D[🚀 Turbojet<br/>Militar, supersónico]
-        E[⚡ Eléctrico<br/>Drones, UAVs]
+        D[Turbojet<br/>Militar, supersónico]
+        E[Eléctrico<br/>Drones, UAVs]
         
         A --> F[< 500 HP<br/>100-200 km/h]
         B --> G[500-3000 HP<br/>300-500 km/h]
@@ -222,10 +225,10 @@ graph LR
         E --> J[< 10 kW<br/>30-100 km/h]
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#E1FFE1
-    style D fill:#FFE1E1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#1b5e20
+    style D fill:#b71c1c
     style E fill:#FFD700
 ```
 
@@ -234,11 +237,12 @@ graph LR
 **Componentes del sistema**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Sistema de Propulsión Eléctrico"
         A[🔋 Batería<br/>LiPo 4S 5000mAh]
         B[🎛️ ESC<br/>Electronic Speed Controller]
-        C[⚡ Motor Brushless<br/>BLDC]
+        C[Motor Brushless<br/>BLDC]
         D[🌀 Hélice<br/>Propeller]
         E[📡 Control<br/>PWM signal]
         
@@ -249,10 +253,10 @@ graph LR
         D -->|Thrust| F[✈️]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#e65100
     style C fill:#FFD700
-    style D fill:#E1F5FF
+    style D fill:#0d47a1
 ```
 
 #### Motor Brushless (BLDC)
@@ -314,19 +318,20 @@ Para nuestro UAV 3 kg: 14.1/29.4 = 0.48 ✅ borderline
 **Trade-off hélice**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Diámetro vs Paso"
         A[📏 Diámetro grande<br/>D=13-15"]
         B[📐 Paso grande<br/>P=8-10"]
         
-        A --> C[✅ Más eficiente<br/>✅ Más empuje<br/>❌ Más lento]
-        B --> D[✅ Más velocidad<br/>❌ Menos eficiente<br/>❌ Más corriente]
+        A --> C[Más eficiente<br/>Más empuje<br/>Más lento]
+        B --> D[Más velocidad<br/>Menos eficiente<br/>Más corriente]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
-    style C fill:#E1F5FF
-    style D fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
+    style C fill:#0d47a1
+    style D fill:#e65100
 ```
 
 **Para UAV agrícola (vuelo lento)**: **13×6 o 14×5** (diámetro grande, paso bajo)
@@ -334,6 +339,7 @@ graph LR
 #### Baterías LiPo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Batería LiPo))
     Especificaciones
@@ -421,20 +427,21 @@ Principio: Ciclo Brayton (compresión → combustión → expansión)
 **Comparación visual**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Comparación Motores"
-        A[⚡ Eléctrico<br/>5 W/g<br/>Efic 80%<br/>Silencioso]
+        A[Eléctrico<br/>5 W/g<br/>Efic 80%<br/>Silencioso]
         B[🛩️ Pistón<br/>1.2 kW/kg<br/>Efic 30%<br/>Ruidoso]
         C[✈️ Turbofan<br/>57 N/kg<br/>Efic 35%<br/>Muy ruidoso]
         
-        A --> D[✅ Drones pequeños<br/>< 25 kg]
-        B --> E[✅ Aviación general<br/>500-2000 kg]
-        C --> F[✅ Comercial<br/>> 50,000 kg]
+        A --> D[Drones pequeños<br/>< 25 kg]
+        B --> E[Aviación general<br/>500-2000 kg]
+        C --> F[Comercial<br/>> 50,000 kg]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#0d47a1
+    style C fill:#e65100
 ```
 
 ---
@@ -448,10 +455,11 @@ graph TD
 **Fundamento**: 2ª Ley de Newton aplicada a flujo másico de aire.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Principio de Reacción"
         A[🌬️ Aire en reposo<br/>V₀ = 0]
-        B[⚡ Motor acelera aire<br/>Δm/Δt]
+        B[Motor acelera aire<br/>Δm/Δt]
         C[💨 Aire sale rápido<br/>V_e]
         D[← F_reacción<br/>EMPUJE]
         
@@ -460,10 +468,10 @@ graph LR
         C --> D
     end
     
-    style A fill:#E1F5FF
+    style A fill:#0d47a1
     style B fill:#FFD700
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style C fill:#e65100
+    style D fill:#1b5e20
 ```
 
 **Ecuación general de empuje**:
@@ -512,12 +520,13 @@ Si V_e = 25 m/s y V_0 = 15 m/s:
 **Interpretación**: 75% de la potencia del motor se convierte en empuje útil, 25% se "desperdicia" en acelerar el aire.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Flujo de Potencia"
         A[🔋 Batería<br/>250W]
-        B[⚡ Motor 90%<br/>225W mecánica]
+        B[Motor 90%<br/>225W mecánica]
         C[🌀 Hélice 75%<br/>169W empuje]
-        D[🎯 Vuelo útil<br/>169W]
+        D[Vuelo útil<br/>169W]
         
         A --> B
         B -->|25W calor| E[💨]
@@ -528,9 +537,9 @@ graph TD
     
     A -->|Pérdidas totales| G[81W = 32%]
     
-    style A fill:#E1FFE1
+    style A fill:#1b5e20
     style D fill:#FFD700
-    style G fill:#FFE1E1
+    style G fill:#b71c1c
 ```
 
 **Eficiencia total**: η_total = η_motor × η_prop = 0.90 × 0.75 = 0.675 = **67.5%**
@@ -569,6 +578,7 @@ P_real = P_ideal / η_prop = 114.5 / 0.75 = 152.7 W ✅
 **Para contexto (aviación comercial)**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Ciclo Brayton Ideal"
         A[1️⃣ Admisión<br/>p₀, T₀]
@@ -583,9 +593,9 @@ graph LR
         D --> E
     end
     
-    style B fill:#E1F5FF
-    style C fill:#FFE1E1
-    style D fill:#FFF4E1
+    style B fill:#0d47a1
+    style C fill:#b71c1c
+    style D fill:#e65100
 ```
 
 **Eficiencia térmica**:
@@ -668,6 +678,7 @@ TODO en español con contexto de UAV agrícola paraguayo"
 **Equilibrio de fuerzas en vuelo horizontal**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Fuerzas en Vuelo Nivelado"
         A[⬆️ Sustentación L<br/>Ala genera]
@@ -681,10 +692,10 @@ graph TD
         E[✈️ Vuelo equilibrado<br/>Velocidad constante]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
-    style C fill:#E1F5FF
-    style D fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
+    style C fill:#0d47a1
+    style D fill:#e65100
     style E fill:#FFD700
 ```
 
@@ -773,6 +784,7 @@ V_max ≈ 28 m/s ≈ 101 km/h
 ### Tasa de Trepada
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Performance Vertical"
         A[⬆️ Exceso de empuje<br/>T - D]
@@ -786,8 +798,8 @@ graph TD
         D --> E[Óptimo en V_y<br/>Máximo R/C]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
     style D fill:#FFD700
 ```
 
@@ -867,26 +879,27 @@ Opciones:
 **Análisis de trade-offs**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Trade-off Autonomía"
-        A[🎯 Meta: 45 min]
+        A[Meta: 45 min]
         
         A --> B[Opción 1:<br/>Batería 3×]
         A --> C[Opción 2:<br/>Reducir velocidad]
         A --> D[Opción 3:<br/>Mejor aerodinámica]
         
-        B --> E[✅ 45 min<br/>❌ Peso +1.1kg<br/>💰 +USD 150]
-        C --> F[✅ 35 min<br/>✅ Sin costo<br/>❌ Menos área cubierta]
-        D --> G[✅ 25 min<br/>⚠️ Difícil optimizar<br/>💰 +USD 50 CFD]
+        B --> E[45 min<br/>Peso +1.1kg<br/>💰 +USD 150]
+        C --> F[35 min<br/>Sin costo<br/>Menos área cubierta]
+        D --> G[25 min<br/>⚠️ Difícil optimizar<br/>💰 +USD 50 CFD]
         
         E --> H[💡 Combinación:<br/>Batería 2× + velocidad -2m/s<br/>→ 45 min ✅]
     end
     
     style A fill:#FFD700
-    style B fill:#FFE1E1
-    style C fill:#FFF4E1
-    style D fill:#E1F5FF
-    style H fill:#E1FFE1
+    style B fill:#b71c1c
+    style C fill:#e65100
+    style D fill:#0d47a1
+    style H fill:#1b5e20
 ```
 
 ### Implementación con OpenCode
@@ -954,12 +967,13 @@ TODO en español con contexto realista paraguayo"
 ### Metodología de Selección
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Proceso de Selección"
         A[📋 Requerimientos misión]
         
         A --> B{Tipo plataforma?}
-        B -->|< 25 kg| C[⚡ Eléctrico]
+        B -->|< 25 kg| C[Eléctrico]
         B -->|25-500 kg| D[🛩️ Pistón]
         B -->|> 500 kg| E[🌀 Turbohélice]
         
@@ -974,9 +988,9 @@ graph TD
         E --> L[Turbina PT6 o similares]
     end
     
-    style C fill:#E1FFE1
-    style D fill:#E1F5FF
-    style E fill:#FFF4E1
+    style C fill:#1b5e20
+    style D fill:#0d47a1
+    style E fill:#e65100
     style G fill:#FFD700
 ```
 
@@ -1000,6 +1014,7 @@ graph TD
 ### Casos de Uso por Sector
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Aplicaciones PY))
     Agricultura
@@ -1183,12 +1198,13 @@ Priorizar por probabilidad y facilidad de fix"
 
 **Causas**:
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Fuentes de Vibración"
         A[🌀 Hélice desbalanceada<br/>Más común]
-        B[⚡ Motor dañado<br/>Rodamientos]
+        B[Motor dañado<br/>Rodamientos]
         C[📐 Montaje incorrecto<br/>Tornillos flojos]
-        D[🎯 Resonancia<br/>Frecuencia natural estructura]
+        D[Resonancia<br/>Frecuencia natural estructura]
         
         A --> E[Frecuencia: RPM/60]
         B --> F[Frecuencia: variable]
@@ -1196,7 +1212,7 @@ graph TD
         D --> H[Específica a velocidad]
     end
     
-    style A fill:#FFE1E1
+    style A fill:#b71c1c
     style E fill:#FFD700
 ```
 

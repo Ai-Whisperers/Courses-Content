@@ -26,6 +26,7 @@
 ### Analogía: El Esqueleto de una Aeronave
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Estructuras Aero))
     Edificio
@@ -170,8 +171,9 @@ Antes de comenzar, verifica:
 ## 📊 El Triángulo del Diseño Estructural
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    Start[🎯 Requerimiento] --> Q{¿Optimizar qué?}
+    Start[Requerimiento] --> Q{¿Optimizar qué?}
     
     Q --> A[💪 Resistencia<br/>Aguantar cargas máximas]
     Q --> B[⚖️ Peso<br/>Mínimo posible]
@@ -181,15 +183,15 @@ graph TD
     B --> D
     C --> D
     
-    D --> E[✅ Solución: Optimización<br/>Balance óptimo]
+    D --> E[Solución: Optimización<br/>Balance óptimo]
     
     E --> F[🔧 Herramientas:<br/>FEA + IA + Materials]
     
-    style A fill:#FFE1E1
-    style B fill:#E1FFE1
-    style C fill:#FFF4E1
+    style A fill:#b71c1c
+    style B fill:#1b5e20
+    style C fill:#e65100
     style D fill:#FFD700
-    style F fill:#E1F5FF
+    style F fill:#0d47a1
 ```
 
 **Trade-off fundamental**: No puedes maximizar los tres simultáneamente. El ingeniero debe encontrar el punto óptimo según la misión.
@@ -203,10 +205,11 @@ graph TD
 **Analogía**: Como elegir material para construir un puente - quieres el más fuerte que pese menos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Comparación de Materiales"
         A[🔩 Acero<br/>σ=500 MPa<br/>ρ=7850 kg/m³<br/>σ/ρ=0.064]
-        B[⚡ Aluminio 7075-T6<br/>σ=572 MPa<br/>ρ=2810 kg/m³<br/>σ/ρ=0.204]
+        B[Aluminio 7075-T6<br/>σ=572 MPa<br/>ρ=2810 kg/m³<br/>σ/ρ=0.204]
         C[🌟 Titanio Ti-6Al-4V<br/>σ=950 MPa<br/>ρ=4430 kg/m³<br/>σ/ρ=0.214]
         D[💎 Fibra Carbono<br/>σ=3500 MPa<br/>ρ=1600 kg/m³<br/>σ/ρ=2.187]
     end
@@ -216,9 +219,9 @@ graph LR
     C --> D
     
     style A fill:#E1E1E1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#1b5e20
 ```
 
 **Métrica clave**: **Resistencia específica** = σ/ρ (esfuerzo de fluencia / densidad)
@@ -281,10 +284,11 @@ Costo: ~10× más caro que aluminio
 ### Materiales Compuestos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Composite = Fibra + Matrix"
         A[🧵 Fibras<br/>Soportan carga]
-        B[🧪 Matriz<br/>Distribuye esfuerzos]
+        B[Matriz<br/>Distribuye esfuerzos]
         
         A --> C[💎 Carbon Fiber<br/>E=230 GPa<br/>σ=3500 MPa]
         A --> D[🔶 Glass Fiber<br/>E=70 GPa<br/>σ=2400 MPa]
@@ -297,8 +301,8 @@ graph TD
         F --> H
     end
     
-    style C fill:#E1FFE1
-    style F fill:#E1F5FF
+    style C fill:#1b5e20
+    style F fill:#0d47a1
     style H fill:#FFD700
 ```
 
@@ -328,10 +332,11 @@ Desventajas:
 ### Selección de Material con OpenCode
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
-    participant I as 👤 Ingeniero
-    participant O as 🤖 OpenCode
-    participant D as 📊 Database
+    participant I as Ingeniero
+    participant O as OpenCode
+    participant D as Database
     
     I->>O: "Necesito material para larguero de ala UAV:<br/>- Carga: 20 kg<br/>- Envergadura: 2m<br/>- Presupuesto: limitado"
     O->>D: Query materiales candidatos
@@ -393,6 +398,7 @@ Todo en español con contexto de construcción UAV en Paraguay"
 ### Propiedades Mecánicas Clave
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Propiedades<br/>Mecánicas))
     Resistencia
@@ -429,27 +435,28 @@ mindmap
 **Analogía**: Como las fuerzas que actúan sobre una viga de un puente cuando pasa un camión pesado.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Tipos de Cargas en Aeronaves"
-        A[📊 CARGAS]
+        A[CARGAS]
         
         A --> B[🌬️ Aerodinámicas<br/>Sustentación, arrastre]
         A --> C[⚖️ Inerciales<br/>Peso, aceleraciones]
         A --> D[🔥 Térmicas<br/>Expansión diferencial]
-        A --> E[🎯 Concentradas<br/>Motor, tren aterrizaje]
+        A --> E[Concentradas<br/>Motor, tren aterrizaje]
         
         B --> F[🔄 Variables en vuelo]
         C --> F
         D --> F
         E --> F
         
-        F --> G[📈 Caso crítico<br/>Envelope de vuelo]
+        F --> G[Caso crítico<br/>Envelope de vuelo]
     end
     
-    style B fill:#E1F5FF
-    style C fill:#FFE1E1
-    style D fill:#FFF4E1
-    style E fill:#FFE1F5
+    style B fill:#0d47a1
+    style C fill:#b71c1c
+    style D fill:#e65100
+    style E fill:#4a148c
     style G fill:#FFD700
 ```
 
@@ -458,9 +465,10 @@ graph TD
 **Herramienta fundamental**: Define los límites operativos de la aeronave.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Diagrama V-n Simplificado"
-        A[📊 Gráfico V-n]
+        A[Gráfico V-n]
         
         A --> B[Eje X: Velocidad V m/s]
         A --> C[Eje Y: Factor de carga n]
@@ -474,9 +482,9 @@ graph LR
         B --> I[V_d: Velocidad máxima]
     end
     
-    style D fill:#E1FFE1
-    style E fill:#FFE1E1
-    style F fill:#E1F5FF
+    style D fill:#1b5e20
+    style E fill:#b71c1c
+    style F fill:#0d47a1
     style I fill:#FFD700
 ```
 
@@ -551,9 +559,10 @@ Esfuerzo cortante máximo (eje neutro):
 ### Factor de Seguridad
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Cálculo de Factor de Seguridad"
-        A[📊 Material:<br/>Aluminio 7075-T6<br/>σy = 503 MPa]
+        A[Material:<br/>Aluminio 7075-T6<br/>σy = 503 MPa]
         B[🔧 Esfuerzo calculado:<br/>σmax = 55.9 MPa]
         
         A --> C[Factor de Seguridad:<br/>FS = σy / σmax]
@@ -562,17 +571,17 @@ graph TD
         C --> D[FS = 503 / 55.9<br/>FS = 9.0]
         
         D --> E{¿Cumple?}
-        E -->|FS ≥ 1.5| F[✅ OK para vuelo]
-        E -->|FS < 1.5| G[❌ Redesign needed]
+        E -->|FS ≥ 1.5| F[OK para vuelo]
+        E -->|FS < 1.5| G[Redesign needed]
         
         F --> H[💡 Sobre-diseñado<br/>Puede reducirse peso]
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFE1E1
-    style D fill:#E1FFE1
-    style F fill:#E1FFE1
-    style H fill:#FFF4E1
+    style A fill:#0d47a1
+    style B fill:#b71c1c
+    style D fill:#1b5e20
+    style F fill:#1b5e20
+    style H fill:#e65100
 ```
 
 **Interpretación**:
@@ -649,13 +658,14 @@ TODO en español con explicaciones para estudiante de ingeniería"
 **Analogía**: Como dividir un mapa grande en cuadrículas pequeñas para analizar cada zona detalladamente.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Workflow FEA"
         A[📐 Geometría CAD<br/>STEP/IGES]
         B[🔲 Mesh<br/>Dividir en elementos]
         C[⚙️ Condiciones<br/>Cargas + restricciones]
         D[🔬 Solver<br/>Ecuaciones FEA]
-        E[📊 Post-proceso<br/>Visualización]
+        E[Post-proceso<br/>Visualización]
         
         A --> B
         B --> C
@@ -664,13 +674,13 @@ graph LR
         
         E --> F{¿Converge?}
         F -->|No| B
-        F -->|Sí| G[✅ Resultado validado]
+        F -->|Sí| G[Resultado validado]
     end
     
-    style A fill:#E1F5FF
-    style B fill:#FFF4E1
-    style C fill:#FFE1F5
-    style D fill:#E1FFE1
+    style A fill:#0d47a1
+    style B fill:#e65100
+    style C fill:#4a148c
+    style D fill:#1b5e20
     style E fill:#E1E1FF
     style G fill:#FFD700
 ```
@@ -708,6 +718,7 @@ Geometry → Material Assignment:
 #### Paso 3: Mesh Generation
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Estrategia de Mesh"
         A[🔲 Tipo de Elemento]
@@ -720,12 +731,12 @@ graph TD
         
         D --> E[Refinamiento local:<br/>0.5mm en empotramiento]
         
-        E --> F[✅ Mesh adaptativo<br/>Verificar calidad]
+        E --> F[Mesh adaptativo<br/>Verificar calidad]
     end
     
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#1b5e20
     style E fill:#FFD700
 ```
 
@@ -794,6 +805,7 @@ Solve → Run
 **Resultados a extraer**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Resultados FEA))
     Esfuerzos
@@ -848,22 +860,23 @@ Convergencia: Diferencia < 1% entre últimos dos → OK
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Convergencia de Mesh"
-        A[📊 Mesh size vs σ_max]
+        A[Mesh size vs σ_max]
         
         A --> B[4mm: 115 MPa<br/>Δ=4.5%]
         B --> C[2mm: 110 MPa<br/>Δ=0.9%]
         C --> D[1mm: 109 MPa<br/>Δ=0.2%]
-        D --> E[0.5mm: 109.2 MPa<br/>✅ Converged]
+        D --> E[0.5mm: 109.2 MPa<br/>Converged]
         
         E --> F[Usar mesh 1-2mm<br/>Balance precisión/tiempo]
     end
     
-    style B fill:#FFE1E1
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
-    style E fill:#E1FFE1
+    style B fill:#b71c1c
+    style C fill:#e65100
+    style D fill:#1b5e20
+    style E fill:#1b5e20
     style F fill:#FFD700
 ```
 
@@ -922,9 +935,10 @@ TODO en español para estudiantes FPUNA"
 **Objetivo**: Minimizar peso manteniendo resistencia y rigidez requeridas.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Optimización Multi-Objetivo"
-        A[🎯 Función Objetivo:<br/>Minimizar Peso]
+        A[Función Objetivo:<br/>Minimizar Peso]
         B[🚫 Restricciones]
         
         A --> C[min: W = ρ × V]
@@ -940,12 +954,12 @@ graph LR
         F --> H
         G --> H
         
-        H --> I[✅ Diseño óptimo]
+        H --> I[Diseño óptimo]
     end
     
-    style A fill:#E1FFE1
-    style B fill:#FFE1E1
-    style H fill:#FFF4E1
+    style A fill:#1b5e20
+    style B fill:#b71c1c
+    style H fill:#e65100
     style I fill:#FFD700
 ```
 
@@ -988,12 +1002,13 @@ Resultado típico: 30-50% reducción de peso
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Topología Optimizada"
         A[📦 Bloque sólido inicial<br/>Peso: 84g]
         B[🔬 Algoritmo remueve material<br/>Áreas de bajo esfuerzo]
         C[🦴 Geometría orgánica<br/>Material solo donde necesario]
-        D[✅ Peso final: 45g<br/>Ahorro: 46%]
+        D[Peso final: 45g<br/>Ahorro: 46%]
         
         A --> B
         B --> C
@@ -1003,10 +1018,10 @@ graph TD
     end
     
     style A fill:#E1E1E1
-    style B fill:#FFF4E1
-    style C fill:#E1F5FF
-    style D fill:#E1FFE1
-    style E fill:#FFE1E1
+    style B fill:#e65100
+    style C fill:#0d47a1
+    style D fill:#1b5e20
+    style E fill:#b71c1c
 ```
 
 #### 3. Secciones Eficientes
@@ -1061,22 +1076,23 @@ Resultado FEA:
 ```
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     subgraph "Lightening Holes"
         A[Costilla sólida<br/>150g]
         B[Costilla con agujeros<br/>85g]
         C[🔍 FEA verifica<br/>esfuerzos OK]
-        D[✅ 43% más liviana<br/>Mantiene resistencia]
+        D[43% más liviana<br/>Mantiene resistencia]
         
         A --> B
         B --> C
         C --> D
     end
     
-    style A fill:#FFE1E1
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
+    style A fill:#b71c1c
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#1b5e20
 ```
 
 ### Implementación con OpenCode
@@ -1132,9 +1148,10 @@ Contexto: Ala de UAV para agricultura en Paraguay, fabricación con CNC router"
 **Problema**: Las estructuras aeronáuticas sufren cargas cíclicas (despegue/aterrizaje, ráfagas) que pueden causar fallas por fatiga incluso a esfuerzos bajos.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     subgraph "Curva S-N (Wöhler)"
-        A[📊 Esfuerzo S vs Ciclos N]
+        A[Esfuerzo S vs Ciclos N]
         
         A --> B[Alto esfuerzo<br/>Pocos ciclos<br/>10³-10⁴]
         A --> C[Medio esfuerzo<br/>10⁴-10⁶]
@@ -1143,10 +1160,10 @@ graph LR
         D --> E[Aluminio: ~0.3×σu<br/>Acero: ~0.5×σu]
     end
     
-    style B fill:#FFE1E1
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
-    style E fill:#E1F5FF
+    style B fill:#b71c1c
+    style C fill:#e65100
+    style D fill:#1b5e20
+    style E fill:#0d47a1
 ```
 
 **Vida útil estimada**:
@@ -1203,6 +1220,7 @@ FS_pandeo = 7,896/500 = 15.8 ✅ muy seguro
 **Tipos comunes en estructuras aeronáuticas**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Uniones))
     Mecánicas

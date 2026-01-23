@@ -29,6 +29,7 @@ La revisión de literatura es exactamente eso: investigar qué se sabe, qué no 
 ### 1.1 Tipos de Revisiones de Literatura
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Revisión de Literatura] --> B[Narrativa]
     A --> C[Sistemática]
@@ -49,6 +50,7 @@ graph TD
 ### 1.2 El Proceso PRISMA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Identificación] --> A1[Búsqueda en bases<br/>de datos]
     A --> A2[Otras fuentes]
@@ -78,6 +80,7 @@ flowchart TD
 ### 1.3 Estrategia de Búsqueda con Operadores Booleanos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[AND] --> A1[Reduce resultados<br/>Más específico]
     B[OR] --> B1[Aumenta resultados<br/>Más amplio]
@@ -107,6 +110,7 @@ NOT
 ### 1.4 Bases de Datos Académicas para Paraguay
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Bases de<br/>Datos))
     Multidisciplinarias
@@ -137,6 +141,7 @@ mindmap
 ### 1.5 Workflow de Búsqueda Sistemática
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant I as Investigador
     participant DB as Bases de datos
@@ -167,6 +172,7 @@ sequenceDiagram
 ### 2.1 Comparación de Herramientas
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Herramientas] --> B[Zotero]
     A --> C[Mendeley]
@@ -209,6 +215,7 @@ graph TD
 ### 2.3 Workflow con Zotero + OpenCode
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Paper en<br/>navegador] --> B[Click Connector<br/>1 segundo]
     B --> C[Zotero: metadata<br/>+ PDF descargado]
@@ -262,6 +269,7 @@ claude
 ### 2.5 Matriz de Análisis Sistemático
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Papers recolectados<br/>N=100+] --> B{Screening<br/>títulos + abstracts}
     B -->|Relevante| C[Lectura completa<br/>N=40]
@@ -294,6 +302,7 @@ graph TD
 ### 3.1 Estrategia de Lectura en 3 Niveles
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Paper completo] --> B[Nivel 1:<br/>Abstract +<br/>Conclusiones<br/>5 min]
     B --> C{Relevante?}
@@ -326,6 +335,7 @@ Sé conciso y objetivo.
 ### 3.2 Identificación de Patrones Temáticos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[30 papers<br/>analizados] --> B[Análisis temático<br/>con OpenCode]
     
@@ -366,6 +376,7 @@ Finalmente, dame 3 recomendaciones específicas y concretas para llenar gaps imp
 ### 3.3 Análisis Cronológico de Tendencias
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 gantt
     title Evolución de Investigación en IA Educativa (2018-2024)
     dateFormat YYYY
@@ -389,6 +400,7 @@ gantt
 ### 3.4 Síntesis Narrativa vs Meta-análisis
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Síntesis de<br/>Evidencia] --> B[Síntesis Narrativa]
     A --> C[Meta-análisis]
@@ -413,6 +425,7 @@ graph TD
 ### 3.5 Construcción de Marco Teórico
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Revisión literatura<br/>completada] --> B[Identificar teorías<br/>y modelos existentes]
     B --> C[Evaluar aplicabilidad<br/>a tu contexto]
@@ -445,6 +458,7 @@ flowchart TD
 ### 4.1 Research Rabbit: Mapeo Visual
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Seed Papers<br/>3-5 clave] --> B[Research Rabbit<br/>Algoritmo ML]
     B --> C[Similar papers<br/>automático]
@@ -480,6 +494,7 @@ graph TD
 ### 4.2 Connected Papers: Visualización de Literatura
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Paper A<br/>2018] --> B[Paper B<br/>2019]
     A --> C[Paper C<br/>2020]
@@ -509,6 +524,7 @@ graph LR
 ### 4.3 Elicit: AI Research Assistant
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Elicit AI))
     Búsqueda semántica
@@ -548,6 +564,7 @@ Elicit busca papers relevantes, extrae claims específicos, y genera tabla compa
 ### 4.4 Scite: Smart Citations
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Paper citado] --> B{Scite analiza<br/>CONTEXTO de citas}
     
@@ -578,6 +595,7 @@ flowchart TD
 ### 4.5 Workflow Completo Automatizado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant GS as Google Scholar
     participant RR as Research Rabbit
@@ -1017,6 +1035,7 @@ Dame 3 mejoras CONCRETAS con ejemplos de cómo reescribir secciones específicas
 ### Revistas Científicas Nacionales
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Revistas<br/>Paraguayas] --> B[Indexadas]
     
@@ -1077,6 +1096,7 @@ graph TD
 ### Salarios Investigación en Paraguay
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A[Carrera<br/>Académica] --> B[Asistente<br/>Investigación]
     B --> C[Investigador<br/>Junior]

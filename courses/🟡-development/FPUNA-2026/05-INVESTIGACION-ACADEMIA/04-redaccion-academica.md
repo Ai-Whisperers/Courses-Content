@@ -35,6 +35,7 @@ La IA es tu asistente de arquitectura que sugiere frases, mejora claridad, verif
 ### 1.1 El Formato IMRaD
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Paper Científico] --> B[I - Introduction]
     A --> C[M - Methods]
@@ -46,10 +47,10 @@ flowchart TD
     D --> D1[Hallazgos<br/>Tablas/Figuras<br/>Estadística]
     E --> E1[Interpretación<br/>Limitaciones<br/>Conclusiones]
     
-    style B fill:#E1F5FF
-    style C fill:#FFF4E1
-    style D fill:#E1FFE1
-    style E fill:#FFE1F5
+    style B fill:#0d47a1
+    style C fill:#e65100
+    style D fill:#1b5e20
+    style E fill:#4a148c
 ```
 
 **Orden de Escritura Recomendado**:
@@ -63,6 +64,7 @@ flowchart TD
 ### 1.2 Introducción: Estructura de Embudo
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[AMPLIO<br/>Contexto general<br/>Por qué el tema importa] --> B[MÁS ESPECÍFICO<br/>Estado del arte<br/>Qué se sabe]
     B --> C[GAP<br/>Qué NO se sabe<br/>Problema identificado]
@@ -117,6 +119,7 @@ pero también mayor dependencia de la herramienta.
 **Regla de Oro**: Otro investigador debería poder replicar tu estudio exactamente leyendo solo esta sección.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Métodos))
     Participantes
@@ -174,6 +177,7 @@ china; en nuestro piloto paraguayo, α = 0.79.
 ### 1.4 Resultados: Solo los Hechos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Resultados] --> B[Descriptivos<br/>M, SD, rangos]
     B --> C[Verificación<br/>Supuestos]
@@ -182,7 +186,7 @@ flowchart LR
     
     Note1[SIN interpretación<br/>Guardar para Discussion]
     
-    style A fill:#E1FFE1
+    style A fill:#1b5e20
 ```
 
 **Qué INCLUIR en Resultados**:
@@ -223,6 +227,7 @@ de Cohen (1988).
 ### 1.5 Discusión: Interpretar y Contextualizar
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Discusión] --> B[Resumen Hallazgos<br/>1 párrafo]
     B --> C[Interpretación<br/>¿Por qué estos resultados?]
@@ -232,7 +237,7 @@ graph TD
     F --> G[Direcciones Futuras<br/>¿Qué investigar próximo?]
     G --> H[Conclusión<br/>1 párrafo final fuerte]
     
-    style A fill:#FFE1F5
+    style A fill:#4a148c
 ```
 
 **Ejemplo de Limitaciones (Crítico para Credibilidad)**:
@@ -263,6 +268,7 @@ esta limitación.
 ### 2.1 Características de Escritura Científica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Escritura<br/>Científica))
     Claridad
@@ -302,6 +308,7 @@ mindmap
 **Cuándo Usar Cada Una**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph LR
     A{¿Qué enfatizar?} --> B[Acción/Agente<br/>VOZ ACTIVA]
     A --> C[Objeto/Procedimiento<br/>VOZ PASIVA]
@@ -309,8 +316,8 @@ graph LR
     B --> B1["Los investigadores<br/>analizaron los datos<br/>con SPSS 28"]
     C --> C1["Los datos fueron<br/>analizados con SPSS 28"]
     
-    style B1 fill:#E1FFE1
-    style C1 fill:#E1F5FF
+    style B1 fill:#1b5e20
+    style C1 fill:#0d47a1
 ```
 
 **Ejemplos Contextuales**:
@@ -356,6 +363,7 @@ este estudio investiga el impacto de ChatGPT en la comprensión conceptual.
 ### 3.1 Formatos de Citación
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Formato de<br/>Citación] --> B[APA 7<br/>Ciencias Sociales]
     A --> C[IEEE<br/>Ingeniería]
@@ -440,6 +448,7 @@ UNESCO. (2023, Septiembre 7). Guidance for generative AI in education and
 ### 3.4 Workflow con Zotero
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 sequenceDiagram
     participant B as Navegador
     participant Z as Zotero
@@ -473,6 +482,7 @@ sequenceDiagram
 ### 4.1 Workflow de Escritura con IA
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Borrador Inicial<br/>TU escritura] --> B[Revisión con IA<br/>Claude/ChatGPT]
     
@@ -497,8 +507,8 @@ flowchart TD
     
     L --> M[Repetir hasta<br/>satisfacción]
     
-    style A fill:#FFE1E1
-    style L fill:#E1FFE1
+    style A fill:#b71c1c
+    style L fill:#1b5e20
 ```
 
 ### 4.2 Prompts Efectivos para Revisar Escritura
@@ -562,6 +572,7 @@ Provee versión condensada que mantenga todos los puntos clave.
 ### 4.3 Uso Ético de IA en Escritura Académica
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Uso Ético<br/>de IA))
     PERMITIDO
@@ -601,17 +612,18 @@ asistencia de edición similar a software de corrección gramatical avanzado.
 ### 5.1 LaTeX vs Word
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A{¿Qué herramienta<br/>usar?} --> B{¿Campo?}
     
     B -->|STEM<br/>Ecuaciones complejas| C[LaTeX<br/>Overleaf]
     B -->|Ciencias Sociales<br/>Humanidades| D[Word<br/>+ Zotero]
     
-    C --> C1[Ventajas:<br/>✅ Formato profesional<br/>✅ Ecuaciones perfectas<br/>✅ Referencias automáticas]
-    C --> C2[Desventajas:<br/>❌ Curva aprendizaje<br/>❌ Colaboración limitada]
+    C --> C1[Ventajas:<br/>Formato profesional<br/>Ecuaciones perfectas<br/>Referencias automáticas]
+    C --> C2[Desventajas:<br/>Curva aprendizaje<br/>Colaboración limitada]
     
-    D --> D1[Ventajas:<br/>✅ Familiar<br/>✅ Track changes<br/>✅ Comentarios]
-    D --> D2[Desventajas:<br/>❌ Formato inconsistente<br/>❌ Problemas con figuras grandes]
+    D --> D1[Ventajas:<br/>Familiar<br/>Track changes<br/>Comentarios]
+    D --> D2[Desventajas:<br/>Formato inconsistente<br/>Problemas con figuras grandes]
     
     style C fill:#4CAF50
     style D fill:#2196F3
@@ -679,6 +691,7 @@ La inteligencia artificial (IA) generativa está transformando...
 **Workflow de Revisión en Capas**:
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Borrador] --> B[Zotero<br/>Citas correctas]
     B --> C[Grammarly<br/>Gramática básica]

@@ -36,6 +36,7 @@ El análisis de datos de investigación es exactamente igual. OpenCode es tu asi
 ### 1.1 Niveles de Medición
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
     A[Escalas de<br/>Medición] --> B[Nominal]
     A --> C[Ordinal]
@@ -68,6 +69,7 @@ graph TD
 ### 1.2 Estadística Descriptiva
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Descriptiva))
     Tendencia Central
@@ -161,6 +163,7 @@ else:
 ### 1.3 Supuestos de Tests Estadísticos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[¿Qué test usar?] --> B{Datos<br/>normales?}
     
@@ -303,6 +306,7 @@ print(f"{test_usado}, t({len(grupo_exp)+len(grupo_ctrl)-2}) = {t_stat:.2f}, p = 
 ### 2.1 Principios de Visualización Efectiva
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 mindmap
   root((Visualización<br/>Efectiva))
     Claridad
@@ -330,6 +334,7 @@ mindmap
 ### 2.2 Elegir el Gráfico Apropiado
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[¿Qué quiero<br/>mostrar?] --> B{Relación}
     A --> C{Comparación}
@@ -557,6 +562,7 @@ plt.show()
 ### 3.1 Jupyter Notebooks para Análisis Reproducible
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart LR
     A[Datos Crudos<br/>CSV/Excel] --> B[Jupyter Notebook]
     
@@ -718,6 +724,7 @@ OUTPUT:
 ### 4.1 Clustering para Identificar Grupos
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 flowchart TD
     A[Datos: N=84<br/>Múltiples variables] --> B[Estandarizar<br/>Variables]
     
