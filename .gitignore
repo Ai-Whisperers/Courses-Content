@@ -195,6 +195,27 @@ credentials/
 # ============================================
 # Cloned repos for analysis (too large to commit)
 external-repos/
+github-references/repos/
+
+# ============================================
+# Additional Tool Caches
+# ============================================
+.ruff_cache/
+.specstory/
+
+# ============================================
+# Local Configurations (Never Commit)
+# ============================================
+*.local.md
+*.local.json
+**/CLAUDE.local.md
+**/.claude/*.local.*
+
+# ============================================
+# Test Reports in Reference Repos
+# ============================================
+**/newman/*.html
+**/test-reports/
 
 # ============================================
 # Misc
