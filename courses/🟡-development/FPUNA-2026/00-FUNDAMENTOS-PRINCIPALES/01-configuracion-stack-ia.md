@@ -36,14 +36,14 @@ Eso es **OpenCode** - pero en lugar de ser una persona, es un programa de comput
 
 ```mermaid
 graph LR
-    A[👤 Tú] -->|Pides ayuda| B[🤖 OpenCode]
-    B -->|Te responde| A
-    B -->|Usa internet| C[☁️ Claude AI]
-    C -->|Piensa y responde| B
+    A["👤<br/>Tú"] -->|"💬 Pregunta"| B["🤖<br/>OpenCode"]
+    B -->|"✨ Respuesta"| A
+    B -->|"🔌 Conecta"| C["☁️<br/>Zen AI"]
+    C -->|"🧠 Procesa"| B
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
+    style C fill:#50C878,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 ### ¿Y Oh My OpenCode?
@@ -56,18 +56,18 @@ Si OpenCode es tu asistente, **Oh My OpenCode** es como darle superpoderes:
 
 ```mermaid
 graph TD
-    A[🤖 OpenCode Básico] -->|Instalar OMO| B[🚀 OpenCode con Superpoderes]
-    B --> C[👨‍💻 Experto en Programación]
-    B --> D[📊 Experto en Datos]
-    B --> E[✍️ Experto en Escribir]
-    B --> F[🧪 Experto en Pruebas]
+    A["🤖<br/>OpenCode<br/>Básico"] -->|"⚡ Instalar OMO"| B["🚀<br/>OpenCode con<br/>Superpoderes"]
+    B --> C["👨‍💻<br/>Experto<br/>Programación"]
+    B --> D["📊<br/>Experto<br/>Datos"]
+    B --> E["✍️<br/>Experto<br/>Escritura"]
+    B --> F["🧪<br/>Experto<br/>Testing"]
     
-    style A fill:#ffe1e1
-    style B fill:#e1ffe1
-    style C fill:#e1f5ff
-    style D fill:#f5e1ff
-    style E fill:#fff4e1
-    style F fill:#e1fff4
+    style A fill:#FF6B6B,stroke:#CC5555,stroke-width:3px,color:#fff
+    style B fill:#4ECDC4,stroke:#3BA39C,stroke-width:4px,color:#fff
+    style C fill:#95E1D3,stroke:#6FB8AC,stroke-width:2px,color:#333
+    style D fill:#F38181,stroke:#C96666,stroke-width:2px,color:#fff
+    style E fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style F fill:#A8E6CF,stroke:#7FC4A0,stroke-width:2px,color:#333
 ```
 
 ---
@@ -78,24 +78,29 @@ graph TD
 
 ```mermaid
 flowchart TD
-    Start[🎯 Comenzar] --> Check1{¿Tienes<br/>computadora?}
-    Check1 -->|Sí| Check2{¿Tienes<br/>internet?}
-    Check1 -->|No| Stop1[❌ Necesitas una<br/>computadora]
+    Start["🎯<br/>Comenzar"] --> Check1{"💻<br/>¿Tienes<br/>computadora?"}
+    Check1 -->|"✅ Sí"| Check2{"🌐<br/>¿Tienes<br/>internet?"}
+    Check1 -->|"❌ No"| Stop1["❌<br/>Necesitas<br/>computadora"]
     
-    Check2 -->|Sí| Check3{¿Puedes crear<br/>cuenta email?}
-    Check2 -->|No| Stop2[❌ Necesitas<br/>internet]
+    Check2 -->|"✅ Sí"| Check3{"📧<br/>¿Email<br/>válido?"}
+    Check2 -->|"❌ No"| Stop2["❌<br/>Necesitas<br/>internet"]
     
-    Check3 -->|Sí| Check4{¿Tienes 2<br/>horas libres?}
-    Check3 -->|No| Stop3[❌ Necesitas email<br/>válido]
+    Check3 -->|"✅ Sí"| Check4{"⏰<br/>¿2 horas<br/>libres?"}
+    Check3 -->|"❌ No"| Stop3["❌<br/>Crea email<br/>válido"]
     
-    Check4 -->|Sí| Ready[✅ ¡Estás listo<br/>para comenzar!]
-    Check4 -->|No| Stop4[❌ Agenda 2 horas<br/>sin interrupciones]
+    Check4 -->|"✅ Sí"| Ready["🎉<br/>¡Listo para<br/>comenzar!"]
+    Check4 -->|"❌ No"| Stop4["❌<br/>Agenda<br/>2 horas"]
     
-    style Ready fill:#90EE90
-    style Stop1 fill:#FFB6C1
-    style Stop2 fill:#FFB6C1
-    style Stop3 fill:#FFB6C1
-    style Stop4 fill:#FFB6C1
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style Ready fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style Stop1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Stop2 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Stop3 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Stop4 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Check1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
 ```
 
 **Checklist Rápida**:
@@ -119,18 +124,23 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant U as 👤 Tú
-    participant W as 🌐 Navegador Web
-    participant N as 📦 Node.js
+    autonumber
+    participant U as 👤<br/>Tú
+    participant W as 🌐<br/>Navegador
+    participant N as 📦<br/>Node.js
     
-    U->>W: 1. Abrir nodejs.org
-    W->>N: 2. Mostrar página de descarga
-    N->>W: 3. Detectar tu sistema (Windows/Mac)
-    W->>U: 4. Mostrar botón "Descargcar"
-    U->>W: 5. Click en descargar
-    W->>U: 6. Archivo descargado
+    U->>+W: Abrir nodejs.org
+    W->>+N: Solicitar página
+    N-->>-W: Detectar sistema (Windows/Mac)
+    W-->>-U: Mostrar botón "Descargar"
+    U->>+W: Click descargar
+    W-->>-U: ✅ Archivo descargado
     
     Note over U,N: ⏱️ Tiempo: 2-5 minutos
+    
+    rect rgb(80, 200, 120, 0.2)
+        Note right of N: ✨ Descarga exitosa
+    end
 ```
 
 **Instrucciones Paso a Paso**:
@@ -218,40 +228,43 @@ v18.19.0
 
 ```mermaid
 graph TB
-    subgraph "SIN OpenCode"
-        A1[Abrir navegador] --> A2[Ir a ChatGPT]
-        A2 --> A3[Copiar pregunta]
-        A3 --> A4[Esperar respuesta]
-        A4 --> A5[Copiar respuesta]
-        A5 --> A6[Pegar en tu archivo]
+    subgraph Slow["❌ SIN OpenCode - 6 Pasos"]
+        direction TB
+        A1["1️⃣ Abrir<br/>navegador"] --> A2["2️⃣ Ir a<br/>ChatGPT"]
+        A2 --> A3["3️⃣ Copiar<br/>pregunta"]
+        A3 --> A4["4️⃣ Esperar<br/>respuesta"]
+        A4 --> A5["5️⃣ Copiar<br/>respuesta"]
+        A5 --> A6["6️⃣ Pegar en<br/>archivo"]
     end
     
-    subgraph "CON OpenCode"
-        B1[Escribir comando] --> B2[OpenCode hace TODO]
-        B2 --> B3[¡Listo!]
+    subgraph Fast["✅ CON OpenCode - 1 Paso"]
+        direction TB
+        B1["1️⃣ Escribir<br/>comando"] --> B2["🤖 OpenCode<br/>hace TODO"] --> B3["🎉<br/>¡Listo!"]
     end
     
-    style A1 fill:#ffcccc
-    style A6 fill:#ffcccc
-    style B1 fill:#ccffcc
-    style B3 fill:#ccffcc
+    style Slow fill:#FFE5E5,stroke:#FF6B6B,stroke-width:3px
+    style Fast fill:#E5F9E5,stroke:#50C878,stroke-width:3px
+    style A1 fill:#FFCCCB,stroke:#FF6B6B,stroke-width:2px
+    style A6 fill:#FFCCCB,stroke:#FF6B6B,stroke-width:2px
+    style B1 fill:#C8E6C9,stroke:#50C878,stroke-width:2px
+    style B3 fill:#A5D6A7,stroke:#3A9B5C,stroke-width:3px,color:#fff
 ```
 
 ### Paso 1: Instalar OpenCode
 
-> **Nota**: OpenCode utiliza el CLI oficial de Anthropic. El paquete se llama `@anthropic-ai/claude-code` pero lo usaremos con el comando `opencode` en la terminal.
+> **Nota**: OpenCode es GRATUITO y funciona con tu cuenta de claude.ai. NO necesitas API keys ni tarjeta de crédito.
 
 **En la misma PowerShell/Terminal que abriste antes**, escribe:
 
 ```bash
-npm install -g @anthropic-ai/claude-code
+npm install -g opencode
 ```
 
 **¿Qué significa esto?**
 - `npm` = Programa que instala cosas (viene con Node.js)
 - `install` = Instalar
 - `-g` = Global (en toda tu computadora)
-- `@anthropic-ai/claude-code` = El paquete oficial de Anthropic para OpenCode
+- `opencode` = La herramienta GRATUITA de OpenCode
 
 **Presiona Enter y espera**
 
@@ -261,103 +274,96 @@ Verás muchas líneas de texto pasando rápido - **esto es normal**. Es como cua
 
 **Cuando termine**, deberías ver algo como:
 ```
-+ @anthropic-ai/claude-code@1.x.x
-added 150 packages in 3m
++ opencode@x.x.x
+added 50 packages in 2m
 ```
 
-### Paso 2: Obtener tu "Llave" (API Key)
+### Paso 2: Configurar OpenCode con Zen
 
-**Analogía**: Para usar OpenCode, necesitas una "llave" especial. Es como una contraseña que le dice a la IA "esta persona tiene permiso para usarme".
+**Analogía**: OpenCode necesita conectarse a un modelo de IA. Usaremos **Zen**, que es completamente GRATUITO.
 
 ```mermaid
 journey
-    title Obtener tu API Key
-    section Crear Cuenta
-      Ir a Anthropic.com: 5: Tú
-      Registrarte con email: 4: Tú
-      Confirmar email: 3: Tú
-    section Obtener Llave
-      Ir a API Keys: 4: Tú
-      Crear nueva llave: 5: Tú
-      Copiar llave: 5: Tú
-    section Guardar Llave
-      Configurar en computadora: 3: Tú
-      ¡Listo para usar!: 5: Tú
+    title 🎯 Configurar OpenCode con Zen
+    section 1️⃣ Configuración Inicial
+      Ejecutar opencode configure: 5: 👤 Tú
+      Seleccionar Zen como provider: 5: 👤 Tú
+      Confirmar y guardar config: 4: 👤 Tú
+    section 2️⃣ Verificación
+      Ejecutar opencode status: 4: 👤 Tú
+      Ver "Connected" en pantalla: 5: 👤 Tú
+    section 3️⃣ Primera Prueba
+      Ejecutar opencode test: 4: 👤 Tú
+      ¡Recibir respuesta de IA!: 5: 🎉 Éxito
 ```
 
 **Pasos Detallados**:
 
-1. **Abre tu navegador** y ve a: `console.anthropic.com`
+1. **Abre tu PowerShell/Terminal**
 
-2. **Crea una cuenta** (si no tienes):
-   - Click en "Sign Up" (Registrarse)
-   - Usa tu email de FPUNA (o personal)
-   - Crea una contraseña segura
-   - **IMPORTANTE**: Guarda esta contraseña en un lugar seguro
+2. **Configura OpenCode con Zen**:
+   ```bash
+   opencode configure --provider zen
+   ```
 
-3. **Verifica tu email**:
-   - Revisa tu bandeja de entrada
-   - Busca email de Anthropic
-   - Click en el enlace de verificación
+3. **Sigue las instrucciones** en pantalla:
+   - Confirma que quieres usar Zen
+   - Acepta la configuración por defecto
 
-4. **Inicia sesión**
+4. **Verifica la configuración**:
+   ```bash
+   opencode config show
+   ```
+   
+5. **Prueba que funciona**:
+   ```bash
+   opencode test
+   ```
+   - Si ves "✓ Connected to AI model", estás listo
 
-5. **Obtén tu API Key**:
-   - Una vez dentro, busca "API Keys" en el menú lateral
-   - Click en "Create Key" (Crear Llave)
-   - **IMPORTANTE**: Verás algo como: `sk-ant-api03-xxxxxxxxxxxx...`
-   - **Copia esto COMPLETO** - lo necesitarás en el siguiente paso
+### Paso 3: Verificar la Conexión (Simple y GRATIS)
 
-### Paso 3: Configurar la API Key en tu Computadora
+**Este paso confirma que OpenCode está correctamente configurado.**
 
-**Este es el paso más técnico, pero lo haremos juntos paso a paso.**
+#### Para TODOS (Windows/Mac/Linux):
 
-#### 🪟 En Windows (PowerShell):
+**En tu PowerShell/Terminal**, escribe:
 
-Escribe este comando **reemplazando** la parte `TU-CLAVE-AQUI` con tu clave real:
-
-```powershell
-[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-ant-api03-TU-CLAVE-AQUI", "User")
-```
-
-**Ejemplo real** (NO uses esta clave, usa la tuya):
-```powershell
-[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-ant-api03-abc123xyz789def456ghi012jkl345mno678pqr901stu234", "User")
-```
-
-**Presiona Enter**
-
-**IMPORTANTE**: Ahora **CIERRA PowerShell y ábrelo de nuevo**
-
-#### 🍎 En Mac (Terminal):
-
-1. Primero, abre el archivo de configuración:
 ```bash
-nano ~/.zshrc
+opencode status
 ```
 
-2. Verás un editor de texto. Usa las flechas para ir al final del archivo
+**¿Qué deberías ver?**
 
-3. Escribe esta línea (reemplaza con TU clave):
-```bash
-export ANTHROPIC_API_KEY="sk-ant-api03-TU-CLAVE-AQUI"
+```
+✓ OpenCode v1.x.x
+✓ Provider: Zen
+✓ Status: Connected
+✓ Ready to use
 ```
 
-4. **Guardar**:
-   - Presiona `Control + O` (la letra O, no cero)
-   - Presiona Enter
-   - Presiona `Control + X`
+**Si ves errores**:
 
-5. **Aplicar cambios**:
-```bash
-source ~/.zshrc
-```
+1. Verifica la configuración:
+   ```bash
+   opencode config show
+   ```
 
-### Paso 4: Verificar que OpenCode Funciona
+2. Reconfigura si es necesario:
+   ```bash
+   opencode configure --provider zen
+   ```
+
+**IMPORTANTE**: 
+- ✅ NO necesitas API keys
+- ✅ NO necesitas tarjeta de crédito
+- ✅ Completamente GRATIS con Zen
+
+### Paso 4: Primera Prueba de OpenCode
 
 **¡Momento de la verdad!** Vamos a probar tu asistente de IA.
 
-> **Nota**: Aunque instalamos el paquete de Anthropic, el comando que usamos es `opencode`. Este es el CLI de OpenCode.
+> **Nota**: OpenCode está configurado con Zen y puedes usarlo GRATIS desde la terminal.
 
 Escribe esto:
 
@@ -372,7 +378,12 @@ opencode "Hola, ¿puedes confirmar que estás funcionando? Responde en español.
 con lo que necesites. ¿En qué puedo asistirte hoy?
 ```
 
-**🎉 ¡FELICITACIONES! ¡Tu asistente de IA está funcionando!**
+**Si ves un error**:
+- "Connection failed" → Ejecuta `opencode configure --provider zen` de nuevo
+- "Command not found" → Cierra y abre la terminal de nuevo
+- Otro error → Pide ayuda al instructor
+
+**🎉 ¡FELICITACIONES! ¡Tu asistente de IA está funcionando GRATIS!**
 
 ---
 
@@ -384,24 +395,27 @@ con lo que necesites. ¿En qué puedo asistirte hoy?
 
 ```mermaid
 mindmap
-  root((Oh My<br/>OpenCode))
-    Agentes Especializados
-      Frontend Developer
-      Backend Developer
-      Data Scientist
-      Content Writer
-    Skills Pre-configurados
-      Crear proyectos
-      Generar tests
-      Escribir docs
-    Plantillas
-      React App
-      API REST
-      Dashboard
-    Automatización
-      Hooks
-      Rules
-      Workflows
+  root(("🚀<br/>Oh My<br/>OpenCode<br/>🎯"))
+    ("👥 Agentes<br/>Especializados")
+      "🎨 Frontend<br/>Developer"
+      "⚙️ Backend<br/>Developer"
+      "📊 Data<br/>Scientist"
+      "✍️ Content<br/>Writer"
+    ("📦 Skills<br/>Pre-configurados")
+      "🏗️ Crear<br/>proyectos"
+      "🧪 Generar<br/>tests"
+      "📝 Escribir<br/>docs"
+      "🔍 Code<br/>review"
+    ("📋 Plantillas<br/>Listas")
+      "⚛️ React<br/>App"
+      "🔌 API<br/>REST"
+      "📈 Admin<br/>Dashboard"
+      "💾 Database<br/>Schema"
+    ("⚡ Automatización<br/>Avanzada")
+      "🪝 Hooks"
+      "📜 Rules"
+      "🔄 Workflows"
+      "🎯 MCP<br/>Servers"
 ```
 
 ### Instalación Simple
@@ -445,14 +459,14 @@ Este comando:
 
 ```mermaid
 flowchart LR
-    A[Tú describes<br/>lo que quieres] --> B[OpenCode<br/>piensa]
-    B --> C[OpenCode<br/>crea archivos]
-    C --> D[¡Calculadora<br/>funcionando!]
+    A["💭<br/>Tú describes<br/>lo que quieres"] --> B["🧠<br/>OpenCode<br/>analiza"]
+    B --> C["⚙️<br/>OpenCode<br/>genera código"]
+    C --> D["🎉<br/>¡Calculadora<br/>funcionando!"]
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#90EE90
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:3px,color:#fff
+    style C fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
+    style D fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
 ```
 
 ### Paso 1: Crear Carpeta del Proyecto
@@ -477,7 +491,7 @@ cd mi-calculadora
 **Copia y pega este comando** (o escríbelo):
 
 ```bash
-opencode "Crea una calculadora simple en JavaScript que:
+opencode chat "Crea una calculadora simple en JavaScript que:
 - Tenga funciones para sumar, restar, multiplicar y dividir
 - Valide que los números sean correctos
 - Tenga un archivo README.md en español explicando cómo usarla
@@ -523,7 +537,7 @@ function restar(a, b) {
 **Para probarla**, crea un archivo `prueba.js`:
 
 ```bash
-opencode "Crea un archivo prueba.js que use la calculadora con ejemplos"
+opencode chat "Crea un archivo prueba.js que use la calculadora con ejemplos"
 ```
 
 **Ejecutar**:
@@ -539,34 +553,40 @@ node prueba.js
 
 ```mermaid
 flowchart TD
-    Start[🎯 Verificación Final] --> Check1{Node.js<br/>instalado?}
-    Check1 -->|✅ Sí| Check2{OpenCode<br/>funciona?}
-    Check1 -->|❌ No| Fix1[Reinstalar Node.js]
+    Start["🎯<br/>Verificación<br/>Final"] --> Check1{"📦<br/>Node.js<br/>instalado?"}
+    Check1 -->|"✅ Sí"| Check2{"🤖<br/>OpenCode<br/>funciona?"}
+    Check1 -->|"❌ No"| Fix1["🔧<br/>Reinstalar<br/>Node.js"]
     
-    Check2 -->|✅ Sí| Check3{API Key<br/>configurada?}
-    Check2 -->|❌ No| Fix2[Reinstalar OpenCode]
+    Check2 -->|"✅ Sí"| Check3{"🔌<br/>Conectado<br/>con Zen?"}
+    Check2 -->|"❌ No"| Fix2["🔧<br/>Reinstalar<br/>OpenCode"]
     
-    Check3 -->|✅ Sí| Check4{OMO<br/>instalado?}
-    Check3 -->|❌ No| Fix3[Reconfigurar API Key]
+    Check3 -->|"✅ Sí"| Check4{"🚀<br/>OMO<br/>instalado?"}
+    Check3 -->|"❌ No"| Fix3["🔧<br/>Configurar<br/>con Zen"]
     
-    Check4 -->|✅ Sí| Check5{Proyecto<br/>creado?}
-    Check4 -->|❌ No| Fix4[Instalar OMO]
+    Check4 -->|"✅ Sí"| Check5{"🎨<br/>Proyecto<br/>creado?"}
+    Check4 -->|"❌ No"| Fix4["🔧<br/>Instalar<br/>OMO"]
     
-    Check5 -->|✅ Sí| Success[🎉 ¡TODO LISTO!]
-    Check5 -->|❌ No| Fix5[Crear proyecto de nuevo]
+    Check5 -->|"✅ Sí"| Success["🎉<br/>¡TODO<br/>LISTO!"]
+    Check5 -->|"❌ No"| Fix5["🔧<br/>Crear<br/>proyecto"]
     
-    Fix1 --> Check1
-    Fix2 --> Check2
-    Fix3 --> Check3
-    Fix4 --> Check4
-    Fix5 --> Check5
+    Fix1 -.-> Check1
+    Fix2 -.-> Check2
+    Fix3 -.-> Check3
+    Fix4 -.-> Check4
+    Fix5 -.-> Check5
     
-    style Success fill:#90EE90
-    style Fix1 fill:#FFB6C1
-    style Fix2 fill:#FFB6C1
-    style Fix3 fill:#FFB6C1
-    style Fix4 fill:#FFB6C1
-    style Fix5 fill:#FFB6C1
+    style Start fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style Success fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style Fix1 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Fix2 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Fix3 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Fix4 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Fix5 fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#fff
+    style Check1 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check2 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check3 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check4 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
+    style Check5 fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
 ```
 
 ### Checklist Final
@@ -575,6 +595,7 @@ Marca cada uno conforme lo verificas:
 
 - [ ] ✅ `node --version` muestra v18+
 - [ ] ✅ `npm --version` muestra v9+
+- [ ] ✅ `opencode status` muestra "Connected"
 - [ ] ✅ `opencode "hola"` responde correctamente
 - [ ] ✅ `omo --version` muestra versión
 - [ ] ✅ Tengo mi carpeta FPUNA-Proyectos
@@ -596,23 +617,23 @@ Marca cada uno conforme lo verificas:
 1. Cierra PowerShell/Terminal COMPLETAMENTE
 2. Ábrelo de nuevo
 3. Intenta nuevamente
-4. Si persiste, reinstala con: `npm install -g @anthropic-ai/claude-code`
+4. Si persiste, reinstala con: `npm install -g opencode`
 
-#### 2. "API key inválida"
+#### 2. "Connection failed" o "No se puede conectar"
 
-**Causa**: La llave no está bien configurada
+**Causa**: OpenCode no está configurado correctamente con Zen
 
 **Solución**:
-1. Ve a `console.anthropic.com`
-2. Genera una NUEVA llave (borra la anterior)
-3. Copia la nueva llave COMPLETA
-4. Configúrala de nuevo siguiendo los pasos anteriores
+1. Ejecuta: `opencode configure --provider zen`
+2. Confirma la configuración
+3. Verifica con: `opencode status`
+4. Intenta el comando de nuevo
 
 #### 3. "La IA no responde en español"
 
 **Solución**: Siempre especifica en tu prompt:
 ```bash
-opencode "Tu pregunta aquí. RESPONDE EN ESPAÑOL."
+opencode chat "Tu pregunta aquí. RESPONDE EN ESPAÑOL."
 ```
 
 #### 4. "No entiendo los comandos de terminal"
@@ -620,11 +641,32 @@ opencode "Tu pregunta aquí. RESPONDE EN ESPAÑOL."
 **¡Tranquilo/a!** Es normal. Aquí un resumen:
 
 ```mermaid
-graph LR
-    A[cd] -->|Cambiar de carpeta| B[Como abrir<br/>una carpeta]
-    C[ls/dir] -->|Ver archivos| D[Como listar<br/>contenido]
-    E[mkdir] -->|Crear carpeta| F[Como crear<br/>nueva carpeta]
-    G[node] -->|Ejecutar código| H[Como correr<br/>un programa]
+graph TB
+    subgraph Navegacion["📂 Navegación"]
+        A["cd"] -->|"Cambiar<br/>carpeta"| B["📁 Mover entre<br/>directorios"]
+    end
+    
+    subgraph Visualizar["👁️ Visualizar"]
+        C["ls/dir"] -->|"Listar<br/>archivos"| D["📋 Ver contenido<br/>carpeta"]
+    end
+    
+    subgraph Crear["➕ Crear"]
+        E["mkdir"] -->|"Nueva<br/>carpeta"| F["📁 Crear<br/>directorio"]
+    end
+    
+    subgraph Ejecutar["▶️ Ejecutar"]
+        G["node"] -->|"Correr<br/>código"| H["🚀 Ejecutar<br/>programa"]
+    end
+    
+    style Navegacion fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
+    style Visualizar fill:#F3E5F5,stroke:#9C27B0,stroke-width:2px
+    style Crear fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
+    style Ejecutar fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
+    
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style C fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style E fill:#50C878,stroke:#3A9B5C,stroke-width:2px,color:#fff
+    style G fill:#FFD93D,stroke:#CCB031,stroke-width:2px,color:#333
 ```
 
 **Comandos básicos**:
@@ -680,10 +722,10 @@ Para profundizar más:
 ### Preguntas
 
 **1. ¿Cuál es el orden CORRECTO para instalar el stack de IA?**
-a) Oh My OpenCode → Node.js → OpenCode → API Key  
-b) Node.js → OpenCode → API Key → Oh My OpenCode  
-c) API Key → OpenCode → Node.js → Oh My OpenCode  
-d) OpenCode → Oh My OpenCode → Node.js → API Key  
+a) Oh My OpenCode → Node.js → OpenCode → Autenticación  
+b) Node.js → OpenCode → Autenticación (opencode login) → Oh My OpenCode  
+c) Autenticación → OpenCode → Node.js → Oh My OpenCode  
+d) OpenCode → Oh My OpenCode → Node.js → Autenticación  
 
 **2. ¿Qué es OpenCode?**
 a) Un navegador web  
@@ -693,11 +735,11 @@ d) Un sistema operativo
 
 **3. Verdadero o Falso: Oh My OpenCode (OMO) funciona SIN necesidad de instalar OpenCode primero.**
 
-**4. ¿Dónde obtienes tu API Key de Claude?**
-a) En la página de OpenCode  
-b) En https://console.anthropic.com  
-c) No necesitas API Key  
-d) Se genera automáticamente al instalar  
+**4. ¿Cómo se configura OpenCode con Zen?**
+a) Con una API key de pago  
+b) Usando el comando `opencode configure --provider zen`  
+c) Se configura automáticamente  
+d) Necesitas una licencia enterprise  
 
 **5. ¿Cuál comando verifica si Node.js está instalado correctamente?**
 a) `npm --version`  
@@ -713,12 +755,12 @@ b) Tener conexión a internet
 c) Tener título universitario  
 d) Tener email válido  
 
-**8. Verdadero o Falso: Si OpenCode no responde, el PRIMER paso de troubleshooting es verificar la API Key.**
+**8. Verdadero o Falso: Si OpenCode no responde, el PRIMER paso de troubleshooting es verificar la configuración con `opencode status`.**
 
-**9. ¿Cuál es la diferencia entre OpenCode y Claude AI?**
+**9. ¿Cuál es la diferencia entre OpenCode y Zen?**
 a) Son exactamente lo mismo  
-b) OpenCode es la aplicación en tu computadora, Claude AI es el "cerebro" en la nube  
-c) Claude AI es más viejo  
+b) OpenCode es la aplicación en tu computadora, Zen es el modelo de IA que usa  
+c) Zen es más viejo  
 d) OpenCode solo funciona en Windows  
 
 **10. Menciona 2 formas en las que podrías usar OpenCode en tu vida diaria/carrera (respuesta abierta).**
@@ -727,9 +769,9 @@ d) OpenCode solo funciona en Windows
 
 ### Respuestas
 
-**1. b) Node.js → OpenCode → API Key → Oh My OpenCode**
+**1. b) Node.js → OpenCode → Autenticación (opencode login) → Oh My OpenCode**
 
-Este es el orden lógico de instalación: primero necesitas Node.js (base), luego instalas OpenCode, lo configuras con tu API Key para que funcione, y finalmente agregas Oh My OpenCode para superpoderes.
+Este es el orden lógico de instalación: primero necesitas Node.js (base), luego instalas OpenCode, lo configuras con Zen usando `opencode configure --provider zen`, y finalmente agregas Oh My OpenCode para superpoderes.
 
 ---
 
@@ -745,9 +787,9 @@ Oh My OpenCode es una EXTENSIÓN de OpenCode. Necesitas tener OpenCode instalado
 
 ---
 
-**4. b) En https://console.anthropic.com**
+**4. b) Usando el comando `opencode configure --provider zen`**
 
-La API Key de Claude se obtiene creando una cuenta en Anthropic Console (https://console.anthropic.com), la empresa detrás de Claude AI.
+OpenCode se configura con Zen usando el comando `opencode configure --provider zen`. Es completamente GRATUITO y NO necesitas API keys de pago ni tarjeta de crédito.
 
 ---
 
@@ -778,13 +820,13 @@ NO necesitas título universitario para instalar o usar IA. Solo necesitas: comp
 
 **8. Verdadero**
 
-Según la sección de troubleshooting, si OpenCode no responde, el PRIMER paso es verificar que tu API Key esté configurada correctamente en `~/.opencode/config.json`. Es el problema más común.
+Según la sección de troubleshooting, si OpenCode no responde, el PRIMER paso es verificar tu configuración ejecutando `opencode status` para ver si está conectado correctamente a Zen. Es el problema más común.
 
 ---
 
-**9. b) OpenCode es la aplicación en tu computadora, Claude AI es el "cerebro" en la nube**
+**9. b) OpenCode es la aplicación en tu computadora, Zen es el modelo de IA que usa**
 
-OpenCode es la interfaz (CLI) que instalas localmente. Claude AI es el modelo de inteligencia artificial en los servidores de Anthropic que hace el "pensamiento pesado". OpenCode se conecta a Claude AI vía API.
+OpenCode es la interfaz (CLI) que instalas localmente. Zen es el modelo de inteligencia artificial que hace el "pensamiento pesado". OpenCode se conecta a Zen para procesar tus solicitudes.
 
 ---
 
@@ -810,7 +852,7 @@ OpenCode es la interfaz (CLI) que instalas localmente. Claude AI es el modelo de
 |-------|--------------|----------------|
 | 9-10 | Excelente | Instalación dominada, listo para Módulo 02 |
 | 7-8 | Bueno | Comprensión sólida, puede continuar |
-| 5-6 | Suficiente | Revisar conceptos de OMO y API Key |
+| 5-6 | Suficiente | Revisar conceptos de OMO y autenticación |
 | 0-4 | Insuficiente | Repetir instalación y leer módulo completo |
 
 **Notas sobre puntuación**:
@@ -850,18 +892,23 @@ journey
 
 ```mermaid
 graph TD
-    A[🎯 Comenzaste] --> B[📦 Instalaste Node.js]
-    B --> C[🤖 Instalaste OpenCode]
-    C --> D[🔑 Configuraste API Key]
-    D --> E[🚀 Instalaste OMO]
-    E --> F[🎨 Creaste primer proyecto]
-    F --> G[✅ ¡LISTO!]
+    A["🎯<br/>Comenzaste"] --> B["📦<br/>Instalaste<br/>Node.js"]
+    B --> C["🤖<br/>Instalaste<br/>OpenCode"]
+    C --> D["🔌<br/>Configurado<br/>con Zen<br/>✨ GRATIS"]
+    D --> E["🚀<br/>Instalaste<br/>OMO"]
+    E --> F["🎨<br/>Creaste<br/>primer<br/>proyecto"]
+    F --> G["✅<br/>¡LISTO!"]
     
-    G --> H[📖 Módulo 02]
+    G --> H["📖<br/>Módulo 02<br/>▶️"]
     
-    style A fill:#e1f5ff
-    style G fill:#90EE90
-    style H fill:#fff4e1
+    style A fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style B fill:#7B68EE,stroke:#5A4BB5,stroke-width:2px,color:#fff
+    style C fill:#9B59B6,stroke:#7D3C98,stroke-width:2px,color:#fff
+    style D fill:#E74C3C,stroke:#C0392B,stroke-width:3px,color:#fff
+    style E fill:#F39C12,stroke:#D68910,stroke-width:2px,color:#fff
+    style F fill:#1ABC9C,stroke:#16A085,stroke-width:2px,color:#fff
+    style G fill:#50C878,stroke:#3A9B5C,stroke-width:4px,color:#fff
+    style H fill:#FFD93D,stroke:#CCB031,stroke-width:3px,color:#333
 ```
 
 ---
