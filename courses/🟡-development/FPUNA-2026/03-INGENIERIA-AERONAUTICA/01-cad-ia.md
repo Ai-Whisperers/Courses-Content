@@ -10,6 +10,229 @@
 
 ---
 
+## 🤖 ¿Qué Tipo de IA Usamos en este Módulo?
+
+### ❌ NO es "IA Mágica" que Diseña por Ti
+
+**Aclaremos expectativas desde el inicio**:
+
+Este módulo **NO enseña** a usar ChatGPT para pedirle *"diseña un avión completo"* y que te genere un modelo 3D automágicamente. Eso **no existe** (aún) y si existiera, no serías ingeniero—serías un operador de prompts.
+
+**Lo que NO harás aquí**:
+- ❌ Pedirle a ChatGPT: "Diseña un fuselaje aerodinámico de UAV" → Modelo 3D completo
+- ❌ Usar IA para "adivinar" formas óptimas sin entender física
+- ❌ Reemplazar tu conocimiento de ingeniería con IA generativa
+- ❌ Generar diseños certificables sin intervención humana
+
+**¿Por qué no?**
+- La IA generativa actual (ChatGPT, Claude, Copilot) **NO entiende física**
+- No puede calcular resistencia estructural, flujos aerodinámicos, o factores de seguridad
+- No cumple normas de certificación (FAA, EASA, DINAC)
+- **Ejemplo real**: ChatGPT puede generar un "ala bonita" visualmente, pero que se rompa en vuelo por no entender cargas de flexión
+
+### ✅ ES "IA Asistente" que Acelera tu Trabajo
+
+**Lo que SÍ aprenderás**:
+
+Usar **OpenCode** (Claude Code + Oh My Code) como tu **asistente de ingeniería** que:
+
+1. **Escribe scripts repetitivos automáticamente**
+   - Generar coordenadas de 100 variantes de perfiles NACA → 5 min (vs 2 horas manual)
+   - Calcular propiedades másicas de 50 componentes → instantáneo
+   - Automatizar exportación a formatos CAD (STEP, IGES, STL)
+
+2. **Integra datos de múltiples fuentes**
+   - Importar coordenadas de bases de datos aerodinámicas → CAD
+   - Conectar cálculos Python (performance) con geometrías 3D
+   - Sincronizar modelos CAD con hojas de cálculo de ingeniería
+
+3. **Documenta tu trabajo técnico**
+   - Generar reportes técnicos automáticos desde modelos 3D
+   - Crear tablas de propiedades (área, volumen, CG, momentos de inercia)
+   - Export
+
+ar planos 2D con acotaciones desde modelos 3D
+
+4. **Acelera tareas tediosas (NO creativas)**
+   - Crear patrones repetitivos (200 agujeros en un panel → 1 comando)
+   - Modificar 50 componentes simultáneamente (cambiar espesor de pared)
+   - Validar consistencia de unidades en todo el proyecto
+
+### 🎯 Analogía Clara: El Chef vs el Ayudante de Cocina
+
+```
+TÚ eres el CHEF (Ingeniero Aeronáutico):
+- Decides QUÉ cocinar (diseño conceptual)
+- Determinas ingredientes y proporciones (geometrías, materiales)
+- Sabes POR QUÉ cada paso (fundamentos de aerodinámica, estructuras)
+- Validas que el platillo es seguro y delicioso (análisis FEA, CFD)
+
+OpenCode es el AYUDANTE:
+- Corta 100 vegetales idénticos (genera variantes geométricas)
+- Mide temperaturas constantemente (monitorea propiedades)
+- Limpia mientras cocinas (organiza archivos, exporta formatos)
+- Toma notas de la receta (documentación automática)
+
+❌ ChatGPT NO es ni chef ni ayudante—es un libro de recetas:
+- Puede sugerir ideas generales ("un ala delta es buena para Mach 2")
+- NO puede ejecutar el diseño
+- NO entiende si la receta funcionará en TU cocina (tus restricciones)
+```
+
+### 📐 Ejemplo Concreto: Perfil Alar NACA 0012
+
+**Tarea**: Modelar un perfil alar simétrico NACA 0012 en CAD.
+
+#### Enfoque INCORRECTO (IA mágica):
+```
+Prompt a ChatGPT: "Diseña un perfil NACA 0012 en CAD"
+→ Respuesta: Explicación teórica + código Python genérico
+→ NO genera archivo CAD directamente
+→ Código probablemente tiene errores
+→ NO se integra con tu Fusion 360
+→ Pierdes 2 horas debuggeando
+```
+
+#### Enfoque CORRECTO (OpenCode como asistente):
+```
+TÚ (Ingeniero):
+1. Conoces la ecuación NACA: y = (t/0.2) × c × [0.2969√(x/c) - ...]
+2. Sabes que necesitas 100 puntos distribuidos con espaciado coseno
+3. Decides cuerda c=1000mm, espesor t=12%
+4. Quieres exportar CSV para importar en Fusion 360
+
+OpenCode (Asistente):
+1. Escribe script Python completo con TU ecuación
+2. Implementa distribución coseno correctamente
+3. Genera CSV en formato exacto que Fusion acepta
+4. Crea plot para que valides visualmente
+5. Documenta cada paso en comentarios
+
+Resultado: 5 minutos (vs 1 hora manual)
+```
+
+**Código que OpenCode genera para ti**:
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def naca_0012_profile(chord=1000, n_points=100):
+    """
+    Genera coordenadas de perfil NACA 0012.
+    Parámetros definidos por el ingeniero.
+    """
+    # Distribución coseno (más densidad en bordes)
+    beta = np.linspace(0, np.pi, n_points)
+    x = chord * (1 - np.cos(beta)) / 2
+    
+    # Ecuación NACA estándar (t=12%)
+    t = 0.12
+    y_t = (t/0.2) * chord * (
+        0.2969 * np.sqrt(x/chord) - 
+        0.1260 * (x/chord) - 
+        0.3516 * (x/chord)**2 + 
+        0.2843 * (x/chord)**3 - 
+        0.1015 * (x/chord)**4
+    )
+    
+    # Coordenadas superiores e inferiores (simétrico)
+    df = pd.DataFrame({
+        'x': x,
+        'y_upper': y_t,
+        'y_lower': -y_t
+    })
+    
+    # Exportar CSV para CAD
+    df.to_csv('naca_0012.csv', index=False)
+    
+    # Plot de verificación
+    plt.plot(x, y_t, 'b-', label='Superior')
+    plt.plot(x, -y_t, 'r-', label='Inferior')
+    plt.axis('equal')
+    plt.grid(True)
+    plt.title('Perfil NACA 0012')
+    plt.savefig('naca_0012_preview.png')
+    
+    return df
+
+# Ejecutar
+profile = naca_0012_profile(chord=1000, n_points=100)
+print(f"✅ Perfil generado: {len(profile)} puntos")
+print(f"📁 Archivo: naca_0012.csv")
+```
+
+**TÚ validas**:
+- ✅ Espesor máximo en x/c ≈ 0.3 → OK (teoría NACA)
+- ✅ Borde de ataque cerrado → OK
+- ✅ Forma suave sin discontinuidades → OK
+- ✅ Importa perfecto en Fusion 360 → ¡Listo!
+
+### 🚀 Beneficios Reales del Enfoque Correcto
+
+| Tarea | Sin IA | Con OpenCode (Asistente) | Mejora |
+|-------|--------|--------------------------|--------|
+| Generar 10 variantes de perfil | 2 horas | 10 minutos | **12× más rápido** |
+| Calcular CG de ensamblaje 50 piezas | 30 min | 2 min | **15× más rápido** |
+| Documentar modelo (reporte técnico) | 1 hora | 5 min | **12× más rápido** |
+| Export 5 formatos (STEP, STL, IGES...) | 15 min | 1 min | **15× más rápido** |
+
+**Total**: Aceleras trabajo repetitivo **10-15×**, liberando tiempo para diseño creativo.
+
+### ⚠️ Advertencia Crítica: Dónde la IA Falla
+
+**Casos donde NO confiar en IA** (requieren TU criterio de ingeniero):
+
+1. **Innovación real**:
+   - Diseñar vortex generators en raíz de ala (requiere intuición física)
+   - Optimizar forma para reducir drag inducido (trade-offs complejos)
+   - Solucionar problemas no documentados en literatura
+
+2. **Decisiones de seguridad**:
+   - Seleccionar factor de seguridad (depende de normativa, riesgo aceptable)
+   - Validar resistencia estructural (FEA requiere interpretación experta)
+   - Certificación aeronáutica (DINAC, FAA, EASA - 100% humano)
+
+3. **Trade-offs de ingeniería**:
+   - ¿Más resistencia o menos peso? (depende de misión)
+   - ¿Materiales caros vs baratos? (depende de presupuesto, disponibilidad Paraguay)
+   - ¿Diseño simple vs óptimo? (depende de capacidad de manufactura local)
+
+### 🎓 Expectativas de este Módulo
+
+**Al finalizar, podrás**:
+
+✅ Usar OpenCode para escribir scripts Python que generen geometrías CAD  
+✅ Automatizar cálculos de propiedades másicas (área, volumen, CG, momentos)  
+✅ Importar/exportar datos entre CAD y otras herramientas (CFD, Excel)  
+✅ Generar variantes de diseño rápidamente (optimización paramétrica)  
+✅ Documentar modelos 3D automáticamente (reportes técnicos)  
+✅ **Entender dónde confiar en IA y dónde aplicar tu criterio de ingeniero**
+
+**NO podrás** (y está bien, porque ningún ingeniero profesional lo hace):
+
+❌ Pedirle a ChatGPT que diseñe un UAV completo sin tu intervención  
+❌ Confiar ciegamente en geometrías generadas por IA sin validar  
+❌ Reemplazar análisis FEA/CFD con "opiniones" de IA generativa  
+❌ Certificar aeronaves usando solo herramientas de IA
+
+### 💡 Filosofía del Curso
+
+> **"IA amplifica tu ingenio, no lo reemplaza"**
+
+Si eres un **ingeniero 7/10**, OpenCode te hace **7 × 1.5 = 10.5/10** (más productivo).  
+Si eres un **ingeniero 3/10**, OpenCode te hace **3 × 1.5 = 4.5/10** (sigue siendo insuficiente).
+
+**La base sigue siendo TU conocimiento de**:
+- Termodinámica y aerodinámica
+- Resistencia de materiales y estructuras
+- Dibujo técnico y geometría
+- Normativas aeronáuticas (DINAC, FAA)
+
+**OpenCode solo acelera la ejecución de lo que ya sabes hacer**.
+
+---
+
 ## 🎓 ¿Qué Vas a Lograr?
 
 1. ✅ **Modelado 3D aeronáutico** - Fuselajes, alas, y componentes profesionales

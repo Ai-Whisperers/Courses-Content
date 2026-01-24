@@ -1443,6 +1443,962 @@ Integrarás estructuras + propulsión en un diseño completo y certificable.
 
 ---
 
+**🎯 Transición**: Has dominado el diseño y selección de sistemas de propulsión (motores, hélices, baterías), cálculos de performance (autonomía, velocidades), y optimización para misiones específicas. Pero en la **realidad operacional**, tu UAV no vuela solo una vez en condiciones ideales—vuela **cientos de veces** en entornos variables con múltiples sistemas que requieren monitoreo constante. Un ingeniero moderno no solo diseña motores, también **automatiza su operación** para que sean confiables, eficientes, y fáciles de usar. En esta parte final, aprenderás a construir sistemas inteligentes que monitorean, controlan, predicen fallas, y simplifican interfaces—exactamente lo que diferencia un prototipo académico de un producto comercial.
+
+## 🤖 Parte 5: Automatización de Sistemas de Propulsión (90 min)
+
+### Concepto: Del Diseño a la Operación Inteligente
+
+**Analogía**: Diseñar un motor es como diseñar un auto. **Automatizar su operación** es como agregar piloto automático, sensores de temperatura, alertas de mantenimiento, y un dashboard simple que cualquiera pueda entender.
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+graph TD
+    subgraph "Ciclo de Vida Completo"
+        A[📐 DISEÑO<br/>Mod 01-04: Calcular, optimizar]
+        B[🔧 FABRICACIÓN<br/>Construir físicamente]
+        C[✈️ OPERACIÓN<br/>Volar repetidamente]
+        D[🔍 MANTENIMIENTO<br/>Prevenir fallas]
+        
+        A --> B
+        B --> C
+        C --> D
+        D --> C
+        
+        E[🤖 IA/Automatización<br/>ESTA PARTE]
+        
+        E -.Acelera.- A
+        E -.Monitorea.- C
+        E -.Predice.- D
+    end
+    
+    style A fill:#0d47a1
+    style B fill:#4a148c
+    style C fill:#1b5e20
+    style D fill:#e65100
+    style E fill:#FFD700
+```
+
+**Problema Real (Paraguay)**:
+- Un ingeniero diseña un UAV agrícola con autonomía 45 min ✅
+- Lo vende a 20 productores de soja en Itapúa ✅
+- Los productores NO son ingenieros—necesitan interface **simple** ❌
+- Sin automatización → crashes, mantenimiento reactivo, baja confianza ❌
+
+**Solución**: **Automatización con IA** que simplifica operación y previene fallas.
+
+---
+
+### ¿Por Qué Automatizar Sistemas de Propulsión?
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+mindmap
+  root((Automatización<br/>Propulsión))
+    Seguridad
+      Detectar sobrecalentamiento
+      Prevenir fallas catastróficas
+      Aterrizaje automático emergencia
+      Reducir error humano
+    Eficiencia
+      Optimizar throttle en tiempo real
+      Adaptarse a viento/clima
+      Maximizar autonomía
+      Reducir consumo 10-20%
+    Usabilidad
+      Interface simple no-técnica
+      Alertas inteligentes
+      Mantenimiento predictivo
+      Expandir mercado
+    Costo
+      Menos crashes → menos reposición
+      Mantenimiento preventivo < correctivo
+      Operadores sin entrenamiento técnico
+      Escalabilidad comercial
+```
+
+**Casos de Uso Paraguay**:
+
+1. **Dron agrícola fumigador**:
+   - **Sin IA**: Piloto monitorea 47 parámetros (voltaje, corriente, RPM, temp, GPS, etc.)
+   - **Con IA**: Dashboard muestra 3 indicadores (batería, temperatura, cobertura)
+   - **Resultado**: Productores sin formación técnica pueden operar
+
+2. **UAV de inspección (Yacyretá)**:
+   - **Sin IA**: Falla de rodamiento causa crash → USD 3,000 pérdida
+   - **Con IA**: Sistema detecta vibración anormal 20 min antes → aterriza preventivo
+   - **Resultado**: Ahorro USD 3,000 + evita riesgos
+
+3. **Dron de delivery urbano (Asunción)**:
+   - **Sin IA**: Vientos variables → consumo impredecible → autonomía inconsistente
+   - **Con IA**: Ajusta throttle en tiempo real → autonomía estable ±5%
+   - **Resultado**: Rutas predecibles, cliente satisfecho
+
+---
+
+### Componente 1: Sistema de Telemetría Inteligente (25 min)
+
+#### Problema: Sobrecarga de Datos
+
+**Datos brutos de un UAV en vuelo**:
+```python
+# Ejemplo: Datos MAVLink (protocolo aeronáutico estándar)
+# 47 parámetros transmitidos a 10 Hz (470 valores/segundo)
+
+{
+    "battery_voltage": 14.2,        # Voltios
+    "battery_current": 18.5,        # Amperios
+    "battery_remaining": 68,        # Porcentaje
+    "motor_rpm": [5420, 5380, 5410, 5390],  # 4 motores
+    "motor_temp": [58, 62, 59, 61], # °C
+    "esc_temp": [45, 47, 44, 46],   # °C
+    "gps_lat": -25.2637,
+    "gps_lon": -57.5759,
+    "altitude": 120.5,              # metros
+    "heading": 285,                 # grados
+    "groundspeed": 14.2,            # m/s
+    "airspeed": 15.8,               # m/s
+    "vertical_speed": 0.3,          # m/s
+    "roll": 2.1,                    # grados
+    "pitch": -1.5,
+    "yaw_rate": 0.8,
+    "vibration_x": 0.12,            # g
+    "vibration_y": 0.09,
+    "vibration_z": 0.15,
+    "wind_speed": 3.2,              # m/s
+    "wind_dir": 220,                # grados
+    # ... 28 parámetros más ...
+}
+```
+
+**Desafío**: Un operador **no puede** procesar 47 parámetros en tiempo real. Sobrecarga cognitiva → errores.
+
+#### Solución: Filtrado con IA
+
+**Concepto**: Reducir 47 parámetros → 3-5 **indicadores clave** usando ML.
+
+```python
+# Pseudo-código del sistema inteligente
+
+def telemetry_ai_filter(raw_data):
+    """
+    Convierte 47 parámetros en 3 indicadores críticos
+    usando reglas de ingeniería + ML
+    """
+    
+    # 1. Salud del Sistema de Propulsión (0-100)
+    propulsion_health = calculate_propulsion_health(
+        battery_voltage=raw_data["battery_voltage"],
+        motor_temps=raw_data["motor_temp"],
+        esc_temps=raw_data["esc_temp"],
+        rpm_balance=std_dev(raw_data["motor_rpm"]),
+        vibration=raw_data["vibration_z"]
+    )
+    
+    # 2. Autonomía Restante (minutos)
+    remaining_time = ml_predict_endurance(
+        battery_remaining=raw_data["battery_remaining"],
+        current_draw=raw_data["battery_current"],
+        wind_speed=raw_data["wind_speed"],
+        payload_weight=estimate_payload(),
+        historical_efficiency=flight_log_avg()
+    )
+    
+    # 3. Alerta de Acción (none / warning / critical)
+    alert = check_anomalies(
+        all_params=raw_data,
+        thresholds=safety_limits,
+        ml_model=anomaly_detector
+    )
+    
+    return {
+        "health": propulsion_health,        # 85/100
+        "time_remaining": remaining_time,   # 23 min
+        "alert": alert                       # "warning: temp motor 3"
+    }
+```
+
+**Implementación Real**:
+
+Ver archivo: [`codigo-ejemplos/propulsion/telemetry_monitor.py`](./codigo-ejemplos/propulsion/telemetry_monitor.py)
+
+**Características**:
+- Conexión MAVLink (protocolo estándar drones)
+- Filtrado de ruido con Kalman Filter
+- Detección de anomalías con Isolation Forest (ML)
+- Dashboard en tiempo real (Streamlit)
+- Alertas inteligentes (email/SMS si crítico)
+
+**Beneficio**:
+- **Antes**: Piloto monitorea 47 gauges → 90% carga cognitiva
+- **Después**: 3 indicadores simples → 20% carga cognitiva
+- **Resultado**: Menos errores, más enfoque en misión
+
+---
+
+### Componente 2: Control Automático Adaptativo (25 min)
+
+#### Problema: Control Manual Ineficiente
+
+**Escenario Real**:
+- UAV fumigador vuela a 15 m/s (velocidad crucero)
+- Viento de frente 5 m/s (ráfagas variables)
+- Piloto debe ajustar throttle manualmente cada 10-30 seg
+- **Resultado**: Consumo aumenta 25%, autonomía cae de 45 → 34 min ❌
+
+#### Solución: PID + IA para Throttle Adaptativo
+
+**Concepto**: Sistema ajusta throttle automáticamente para mantener velocidad constante a pesar de viento.
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+graph LR
+    subgraph "Control Loop (10 Hz)"
+        A[📊 Sensores<br/>GPS, IMU, Airspeed]
+        B[🧠 PID Controller<br/>+ AI Tuning]
+        C[⚙️ ESC<br/>Ajusta RPM]
+        D[🌀 Motor<br/>Varía empuje]
+        
+        A --> B
+        B --> C
+        C --> D
+        D -.Feedback.- A
+    end
+    
+    E[🌬️ Disturbios<br/>Viento, ráfagas]
+    E -.Afecta.- D
+    
+    style A fill:#0d47a1
+    style B fill:#FFD700
+    style C fill:#e65100
+    style D fill:#1b5e20
+```
+
+**Implementación**:
+
+```python
+# Control PID básico con auto-tuning por IA
+
+class AdaptiveThrottleController:
+    def __init__(self):
+        self.Kp = 0.5  # Proporcional (respuesta inmediata)
+        self.Ki = 0.1  # Integral (corregir offset acumulado)
+        self.Kd = 0.2  # Derivativo (suavizar oscilaciones)
+        
+        self.target_speed = 15.0  # m/s (velocidad crucero objetivo)
+        self.integral = 0
+        self.prev_error = 0
+        
+        # AI: Ajusta ganancias PID según condiciones
+        self.ml_tuner = load_model("pid_tuner_rf.pkl")
+    
+    def update(self, current_speed, wind_speed, dt=0.1):
+        """
+        Calcula throttle óptimo cada 0.1 seg (10 Hz)
+        """
+        # Error actual
+        error = self.target_speed - current_speed
+        
+        # Término proporcional
+        P = self.Kp * error
+        
+        # Término integral (acumulado)
+        self.integral += error * dt
+        I = self.Ki * self.integral
+        
+        # Término derivativo (cambio)
+        derivative = (error - self.prev_error) / dt
+        D = self.Kd * derivative
+        
+        # PID clásico
+        throttle_pid = P + I + D
+        
+        # AI: Compensación de viento (predictiva)
+        wind_compensation = self.ml_tuner.predict([[
+            wind_speed,
+            current_speed,
+            error,
+            self.integral
+        ]])[0]
+        
+        # Throttle final (0-100%)
+        throttle = np.clip(throttle_pid + wind_compensation, 0, 100)
+        
+        self.prev_error = error
+        return throttle
+```
+
+**Ventajas del AI-Enhanced PID**:
+
+| Métrica | PID Clásico | PID + IA |
+|---------|-------------|----------|
+| **Overshoot** | 15% | 5% |
+| **Settling time** | 8 seg | 3 seg |
+| **Consumo extra (viento)** | +25% | +12% |
+| **Autonomía (45 min sin viento)** | 34 min con viento | 41 min con viento |
+
+**Implementación Real**:
+
+Ver archivo: [`codigo-ejemplos/propulsion/adaptive_controller.py`](./codigo-ejemplos/propulsion/adaptive_controller.py)
+
+**Incluye**:
+- PID con auto-tuning (Ziegler-Nichols automatizado)
+- Modelo ML para compensación de viento (Random Forest)
+- Límites de seguridad (no exceder 90% throttle)
+- Logging para análisis post-vuelo
+
+---
+
+### Componente 3: Predicción de Fallas (Mantenimiento Predictivo) (20 min)
+
+#### Problema: Mantenimiento Reactivo es Costoso
+
+**Ciclo tradicional (reactivo)**:
+```
+1. Componente falla durante vuelo
+2. UAV se estrella o aterriza emergencia
+3. Diagnóstico post-crash (¿qué falló?)
+4. Reemplazo componente
+5. Pérdida: tiempo + dinero + confianza
+```
+
+**Costo típico**:
+- Motor brushless: USD 80-120
+- ESC: USD 40-80
+- Tiempo inactividad: 3-7 días
+- Pérdida de confianza cliente: ∞
+
+#### Solución: Machine Learning para Detección Temprana
+
+**Concepto**: Entrenar modelo ML con datos históricos de fallas para predecir **antes** de que ocurra el fallo catastrófico.
+
+**Señales Precursoras de Falla**:
+
+```python
+# Indicadores tempranos de problemas (5-30 min antes de falla)
+
+failure_indicators = {
+    "motor_bearing_degradation": {
+        "signal": "vibration_increase",
+        "pattern": "Vibración aumenta gradualmente 20-30% sobre baseline",
+        "lead_time": "10-30 min antes de fallo total"
+    },
+    "esc_thermal_runaway": {
+        "signal": "temp_acceleration",
+        "pattern": "Temperatura sube >2°C/min consistentemente",
+        "lead_time": "5-15 min antes de apagado"
+    },
+    "battery_cell_imbalance": {
+        "signal": "voltage_drop_rate",
+        "pattern": "Voltaje cae más rápido que modelo de descarga",
+        "lead_time": "8-20 min antes de cut-off inesperado"
+    },
+    "propeller_damage": {
+        "signal": "rpm_oscillation",
+        "pattern": "RPM oscila ±150 rpm a throttle constante",
+        "lead_time": "Inmediato (ya dañada, evitar más vuelo)"
+    }
+}
+```
+
+**Modelo de Predicción**:
+
+```python
+# Ejemplo: Detección de degradación de rodamiento (bearing)
+
+import numpy as np
+from sklearn.ensemble import IsolationForest
+
+class BearingFailurePredictor:
+    def __init__(self):
+        # Modelo entrenado con datos históricos
+        self.model = IsolationForest(contamination=0.05)
+        self.baseline_vibration = 0.12  # g (normal)
+        self.alert_threshold = 1.25  # 25% sobre baseline
+        
+    def fit_baseline(self, historical_vibration_data):
+        """
+        Aprende comportamiento 'normal' de este motor específico
+        usando primeros 10 vuelos
+        """
+        self.model.fit(historical_vibration_data)
+        self.baseline_vibration = np.mean(historical_vibration_data)
+    
+    def predict_failure_risk(self, current_vibration_stream):
+        """
+        Analiza ventana deslizante de 60 seg de vibración
+        Retorna: riesgo (0-100) y tiempo estimado hasta falla
+        """
+        # Feature engineering
+        features = self.extract_features(current_vibration_stream)
+        
+        # Anomaly score
+        anomaly_score = self.model.decision_function([features])[0]
+        
+        # Comparar con baseline
+        vibration_increase = current_vibration_stream.mean() / self.baseline_vibration
+        
+        # Riesgo combinado
+        if vibration_increase > self.alert_threshold:
+            risk = min(100, (vibration_increase - 1) * 100)
+            time_to_failure = self.estimate_ttf(vibration_increase, anomaly_score)
+            
+            return {
+                "risk": risk,                      # 0-100
+                "time_to_failure_min": time_to_failure,  # minutos
+                "action": self.recommend_action(risk)
+            }
+        
+        return {"risk": 0, "time_to_failure_min": None, "action": "continue"}
+    
+    def extract_features(self, vibration_60s):
+        """
+        Calcula features estadísticas de ventana de 60 seg
+        """
+        return np.array([
+            np.mean(vibration_60s),
+            np.std(vibration_60s),
+            np.max(vibration_60s) - np.min(vibration_60s),  # range
+            np.percentile(vibration_60s, 95),
+            self.calculate_trend(vibration_60s)  # ¿creciente?
+        ])
+    
+    def recommend_action(self, risk):
+        if risk < 20:
+            return "Continue operation - Normal"
+        elif risk < 50:
+            return "Warning - Schedule maintenance after mission"
+        elif risk < 80:
+            return "Caution - Land ASAP, do not continue mission"
+        else:
+            return "CRITICAL - Immediate emergency landing"
+```
+
+**Implementación Real**:
+
+Ver archivo: [`codigo-ejemplos/propulsion/failure_predictor.py`](./codigo-ejemplos/propulsion/failure_predictor.py)
+
+**Dataset de entrenamiento**:
+- 500 vuelos normales (baseline)
+- 50 vuelos con fallas reales (degradación gradual)
+- Features: vibración, temp, RPM, corriente
+- Labels: "normal" / "pre-failure" / "failure"
+
+**Resultados**:
+- **Precisión**: 87% detección correcta de fallas 15+ min antes
+- **Falsos positivos**: 12% (acceptable—mejor prevenir)
+- **Beneficio**: Reduce crashes 70-80%
+
+---
+
+### Componente 4: Interfaces Simplificadas (Modo Experto vs Modo Simple) (20 min)
+
+#### Problema: Complejidad Limita Adopción
+
+**Realidad comercial**:
+- Ingeniero aeronáutico: Entiende 47 parámetros ✅
+- Productor de soja en Itapúa: Necesita 3 botones ❌
+
+**Barrera de entrada alta** → **Mercado limitado** → **Negocio no escala**
+
+#### Solución: Dashboard con 2 Modos
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+graph TD
+    subgraph "Modo Experto (Ingeniero)"
+        A1[📊 47 parámetros<br/>Gráficos en tiempo real]
+        A2[🔧 Ajustes manuales<br/>PID tuning, overrides]
+        A3[📁 Logs detallados<br/>Export CSV, análisis]
+        
+        A1 --> A2
+        A2 --> A3
+    end
+    
+    subgraph "Modo Simple (Operador)"
+        B1[✅ Semáforo<br/>Verde/Amarillo/Rojo]
+        B2[🔋 Batería restante<br/>Minutos de vuelo]
+        B3[🌡️ Temperatura<br/>OK / Caliente]
+        
+        B1 --> B2
+        B2 --> B3
+    end
+    
+    C[👤 Usuario selecciona modo]
+    C --> A1
+    C --> B1
+    
+    style A1 fill:#0d47a1
+    style A2 fill:#4a148c
+    style B1 fill:#1b5e20
+    style B2 fill:#e65100
+    style B3 fill:#FFD700
+```
+
+**Implementación: Dashboard Streamlit**
+
+```python
+# Pseudo-código del dashboard adaptativo
+
+import streamlit as st
+
+def main():
+    st.title("🚁 UAV Agrícola - Dashboard de Propulsión")
+    
+    # Selector de modo
+    mode = st.sidebar.radio("Modo de Usuario", ["Simple", "Experto"])
+    
+    # Leer telemetría en tiempo real
+    telemetry = read_mavlink_stream()
+    
+    if mode == "Simple":
+        render_simple_dashboard(telemetry)
+    else:
+        render_expert_dashboard(telemetry)
+
+def render_simple_dashboard(data):
+    """
+    Interface para operador no-técnico
+    """
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        # Semáforo de salud
+        health = calculate_health_score(data)
+        color = "🟢" if health > 80 else "🟡" if health > 50 else "🔴"
+        st.metric("Estado del Sistema", f"{color} {health}/100")
+    
+    with col2:
+        # Autonomía simple
+        time_left = predict_endurance(data)
+        st.metric("Tiempo de Vuelo Restante", f"{time_left} min")
+    
+    with col3:
+        # Temperatura simple
+        temp_status = check_temperature(data)
+        emoji = "❄️" if temp_status == "cold" else "✅" if temp_status == "ok" else "🔥"
+        st.metric("Temperatura Motores", f"{emoji} {temp_status.upper()}")
+    
+    # Alerta grande si hay problema
+    if health < 50:
+        st.error("⚠️ ATENCIÓN: Aterriza el UAV inmediatamente. Problema detectado.")
+
+def render_expert_dashboard(data):
+    """
+    Interface completa para ingeniero
+    """
+    # Tabs para organizar información
+    tab1, tab2, tab3, tab4 = st.tabs(["Propulsión", "Batería", "Performance", "Logs"])
+    
+    with tab1:
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            # Gráfico RPM de 4 motores en tiempo real
+            st.line_chart(data["motor_rpm_history"])
+            
+            # Tabla de temperaturas
+            st.dataframe({
+                "Motor": [1, 2, 3, 4],
+                "RPM": data["motor_rpm"],
+                "Temp (°C)": data["motor_temp"],
+                "ESC Temp (°C)": data["esc_temp"]
+            })
+        
+        with col2:
+            # Gráfico de vibración (FFT analysis)
+            st.plotly_chart(create_vibration_fft(data["vibration"]))
+            
+            # Predictive maintenance
+            failure_risk = predict_failures(data)
+            if failure_risk["risk"] > 20:
+                st.warning(f"Riesgo de falla: {failure_risk['risk']}% - {failure_risk['action']}")
+    
+    with tab2:
+        # Voltaje, corriente, potencia, C-rating actual
+        render_battery_details(data)
+    
+    with tab3:
+        # Curvas de performance (empuje vs velocidad)
+        render_performance_analysis(data)
+    
+    with tab4:
+        # Export logs, análisis histórico
+        render_log_analysis(data)
+```
+
+**Implementación Real**:
+
+Ver archivo: [`codigo-ejemplos/propulsion/simple_dashboard.py`](./codigo-ejemplos/propulsion/simple_dashboard.py)
+
+**Características**:
+- Streamlit web app (corre en navegador)
+- Conexión MAVLink en tiempo real
+- 2 modos intercambiables (botón toggle)
+- Responsive (funciona en tablet para campo)
+- Alertas por voz (Text-to-Speech si crítico)
+
+**Beneficio Comercial**:
+
+```
+Modo Experto solamente:
+→ Solo ingenieros pueden operar
+→ Mercado limitado: 50 clientes potenciales (Paraguay)
+→ Precio alto (requiere ingeniero a bordo)
+
+Modo Experto + Modo Simple:
+→ Productores pueden operar directamente
+→ Mercado ampliado: 5,000 productores soja (Itapúa, Alto Paraná)
+→ Precio accesible (sin ingeniero permanente)
+→ Modelo de negocio: venta + capacitación 2 días
+```
+
+---
+
+## 🎯 Ejercicio Práctico Integrador (30 min)
+
+### Objetivo
+
+Construir un **monitor de temperatura básico** que detecta sobrecalentamiento y envía alerta.
+
+### Especificación
+
+**Input**: Stream de datos de temperatura de motor (simulado)  
+**Output**: Dashboard con alerta si temp > umbral
+
+**Requerimientos**:
+1. Leer datos de sensor (CSV simulado)
+2. Calcular temperatura promedio ventana deslizante (30 seg)
+3. Comparar con umbral (75°C)
+4. Si excede: mostrar alerta visual + sonora
+5. Graficar temperatura vs tiempo
+
+### Implementación Guiada con OpenCode
+
+```bash
+opencode "Crea monitor de temperatura para motor de UAV:
+
+SISTEMA:
+- Motor brushless T-Motor MN3520
+- Sensor: Termopar tipo K (0-150°C)
+- Frecuencia muestreo: 1 Hz (1 lectura/segundo)
+- Umbral crítico: 75°C
+- Ventana de análisis: 30 segundos (promedio móvil)
+
+TAREAS:
+1. Generar datos simulados (CSV):
+   - 600 segundos de vuelo
+   - Temperatura inicia 40°C
+   - Aumenta gradualmente 0.05°C/seg (desgaste normal)
+   - A los 400 seg: spike a 80°C (problema simulado)
+   - Luego baja a 65°C (aterrizaje)
+   
+2. Crear script Python (temp_monitor.py):
+   - Leer CSV
+   - Calcular promedio móvil 30 seg
+   - Detectar exceso de umbral
+   - Generar alerta (print + beep si disponible)
+   
+3. Dashboard simple (Streamlit):
+   - Gráfico temperatura vs tiempo
+   - Línea umbral (75°C) en rojo
+   - Indicador grande: OK / WARNING / CRITICAL
+   - Botón para pausar/reanudar
+   
+4. Extensión con IA (opcional):
+   - Predecir temperatura futura (60 seg ahead)
+   - Usar regresión lineal simple
+   - Alertar si predicción > umbral
+
+INCLUIR:
+- Código Python completo y comentado
+- Instrucciones de ejecución
+- Ejemplo de CSV (primeras 20 filas)
+- Screenshot esperado del dashboard
+
+TODO en español con contexto de UAV paraguayo"
+```
+
+### Solución Esperada
+
+Ver directorio: [`codigo-ejemplos/propulsion/ejercicio-monitor/`](./codigo-ejemplos/propulsion/ejercicio-monitor/)
+
+Archivos:
+- `generate_data.py` - Genera CSV simulado
+- `temp_monitor.py` - Lógica de detección
+- `dashboard.py` - Interface Streamlit
+- `README.md` - Instrucciones
+
+**Validación**:
+- ✅ Detecta spike de temperatura a los 400 seg
+- ✅ Alerta se activa cuando promedio móvil > 75°C
+- ✅ Dashboard muestra gráfico correcto
+- ✅ Código tiene comentarios explicativos
+
+---
+
+## 🚀 Casos de Uso Avanzados (Lectura Opcional)
+
+### 1. Optimización de Ruta con Consumo Dinámico
+
+**Problema**: Rutas predefinidas no consideran viento real.
+
+**Solución IA**:
+```python
+# Pseudo-código
+
+def optimize_route_with_wind(waypoints, wind_forecast, battery_capacity):
+    """
+    Ajusta ruta para minimizar consumo considerando viento
+    """
+    # Modelo ML predice consumo por segmento
+    for i, segment in enumerate(waypoints):
+        wind_at_segment = wind_forecast[i]
+        predicted_consumption = ml_model.predict([
+            segment.distance,
+            segment.altitude_change,
+            wind_at_segment.speed,
+            wind_at_segment.direction
+        ])
+        
+        # Si consumo excede batería, sugerir ruta alternativa
+        if sum(predicted_consumption) > battery_capacity * 0.8:
+            alternative_route = find_lower_consumption_path(waypoints[i:])
+            return alternative_route
+    
+    return waypoints  # Ruta original es óptima
+```
+
+**Beneficio**: Aumenta éxito de misiones 15-25% en días ventosos.
+
+---
+
+### 2. Diagnóstico Automático Post-Vuelo
+
+**Problema**: Operadores no saben interpretar logs.
+
+**Solución IA**:
+```python
+# Genera reporte automático en lenguaje natural
+
+def generate_flight_report(flight_log):
+    """
+    Analiza log de vuelo y genera reporte en español
+    """
+    analysis = {
+        "summary": f"Vuelo de {flight_log.duration} min completado {flight_log.status}",
+        "battery": analyze_battery_performance(flight_log),
+        "motors": analyze_motor_health(flight_log),
+        "efficiency": compare_vs_baseline(flight_log),
+        "recommendations": []
+    }
+    
+    # IA identifica problemas
+    if analysis["motors"]["temp_max"] > 70:
+        analysis["recommendations"].append(
+            "🔥 Motores sobrecalentaron. Reducir throttle o mejorar ventilación."
+        )
+    
+    if analysis["efficiency"]["consumption_increase"] > 20:
+        analysis["recommendations"].append(
+            "⚡ Consumo 20% sobre normal. Revisar hélices por daños."
+        )
+    
+    # Generar PDF con gráficos
+    create_pdf_report(analysis, output="reporte_vuelo_123.pdf")
+```
+
+**Ejemplo de Output**:
+```
+📊 REPORTE DE VUELO #123
+Fecha: 15 Enero 2026
+Duración: 42 minutos
+Estado: ✅ Completado exitosamente
+
+🔋 BATERÍA:
+- Voltaje inicial: 16.8V (4S completamente cargada)
+- Voltaje final: 14.4V (20% restante)
+- Consumo promedio: 210W
+- Eficiencia: 95% de lo esperado ✅
+
+🌀 MOTORES:
+- Temperatura máxima: 68°C (Motor 3)
+- RPM promedio: 5,420 rpm (consistente)
+- Vibración: 0.14g (normal: < 0.15g) ✅
+
+⚙️ EFICIENCIA:
+- Consumo vs baseline: +8% (aceptable)
+- Probable causa: viento de frente 4 m/s
+
+💡 RECOMENDACIONES:
+1. ✅ Sistema operando normalmente
+2. Programar mantenimiento preventivo en 15 vuelos
+3. Considerar volar mañanas (menos viento)
+
+Próximo vuelo estimado: 18 vuelos más con esta batería
+```
+
+---
+
+### 3. Gemelo Digital (Digital Twin)
+
+**Concepto avanzado**: Modelo virtual del UAV real que simula comportamiento en paralelo.
+
+```python
+# Digital Twin en tiempo real
+
+class PropulsionDigitalTwin:
+    def __init__(self, uav_config):
+        self.physics_model = load_physics_model(uav_config)
+        self.real_data_buffer = []
+        
+    def sync_with_real_uav(self, telemetry):
+        """
+        Actualiza modelo virtual con datos reales
+        """
+        self.real_data_buffer.append(telemetry)
+        
+        # Simula comportamiento esperado
+        expected = self.physics_model.predict_next_state(telemetry)
+        
+        # Compara real vs esperado
+        deviation = self.calculate_deviation(telemetry, expected)
+        
+        if deviation > threshold:
+            return {
+                "alert": f"Desviación detectada: {deviation}%",
+                "possible_cause": self.diagnose(deviation),
+                "action": "Revisar componente X"
+            }
+        
+        return {"status": "normal"}
+```
+
+**Aplicaciones**:
+- Detectar degradación gradual (baseline drift)
+- Validar sensores (si sensor miente, twin detecta)
+- Entrenamiento de pilotos (simulador con física real)
+
+---
+
+## 📊 Resumen: De Diseño a Operación Autónoma
+
+**Evolución del Ingeniero Aeronáutico Moderno**:
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+graph TD
+    subgraph "Ingeniero Tradicional"
+        A1[Diseña motor]
+        A2[Calcula performance]
+        A3[Entrega a operador]
+        A4[⚠️ Fin de responsabilidad]
+        
+        A1 --> A2
+        A2 --> A3
+        A3 --> A4
+    end
+    
+    subgraph "Ingeniero Moderno con IA"
+        B1[Diseña motor]
+        B2[Calcula performance]
+        B3[🤖 Automatiza operación]
+        B4[📊 Monitoreo inteligente]
+        B5[🔍 Mantenimiento predictivo]
+        B6[📱 Interface simple]
+        B7[✅ Producto completo]
+        
+        B1 --> B2
+        B2 --> B3
+        B3 --> B4
+        B4 --> B5
+        B5 --> B6
+        B6 --> B7
+    end
+    
+    style A4 fill:#b71c1c
+    style B7 fill:#1b5e20
+```
+
+**Competencias Adquiridas**:
+1. ✅ Telemetría inteligente (reducir complejidad)
+2. ✅ Control adaptativo (eficiencia en condiciones variables)
+3. ✅ Predicción de fallas (mantenimiento preventivo)
+4. ✅ Interfaces duales (experto + simple)
+5. ✅ Integración IA en sistemas aeronáuticos
+
+**Valor Agregado al Producto**:
+- **Seguridad**: +70% reducción de crashes
+- **Eficiencia**: +15% autonomía real vs teórica
+- **Usabilidad**: Mercado ampliado 100× (ingenieros → operadores)
+- **Costo**: Mantenimiento predictivo < reactivo
+
+---
+
+## 🔧 Herramientas y Tecnologías Usadas
+
+### Software
+- **Python 3.8+** - Lenguaje principal
+- **MAVLink** - Protocolo telemetría aeronáutica
+- **Streamlit** - Dashboards web
+- **scikit-learn** - Machine Learning
+- **pandas/numpy** - Análisis de datos
+- **matplotlib/plotly** - Visualización
+
+### Hardware (para implementación real)
+- **Pixhawk** - Flight controller con MAVLink
+- **Raspberry Pi** - Computadora de bordo
+- **Sensores**: IMU, GPS, termopares, voltímetro
+- **Telemetría**: Radio 433 MHz o 4G modem
+
+### Recursos de Aprendizaje
+- [MAVLink Developer Guide](https://mavlink.io/en/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [scikit-learn Tutorials](https://scikit-learn.org/stable/tutorial/index.html)
+
+---
+
+## 💡 Proyecto Sugerido: Sistema Completo
+
+**Desafío**: Integrar los 4 componentes en un sistema funcional.
+
+**Especificación**:
+1. **Telemetría**: Conectar a Pixhawk simulado (SITL)
+2. **Control**: Implementar PID adaptativo para velocidad
+3. **Predicción**: Entrenar modelo con 100 vuelos simulados
+4. **Dashboard**: Modo experto + simple funcionando
+
+**Entregable**:
+- Código fuente completo (GitHub repo)
+- Video demo (5 min)
+- Reporte técnico (PDF, 10 páginas)
+
+**Tiempo estimado**: 20-30 horas
+
+---
+
+## ✅ Checklist de Dominio
+
+Verifica que domines estos conceptos:
+
+- [ ] Entiendo por qué automatización es crítica (seguridad + eficiencia + usabilidad)
+- [ ] Puedo explicar cómo reducir 47 parámetros a 3 indicadores con IA
+- [ ] Comprendo PID y cómo IA mejora el control clásico
+- [ ] Sé qué señales indican fallas inminentes (vibración, temperatura, voltaje)
+- [ ] Puedo diseñar interfaces para 2 audiencias (experto vs operador)
+- [ ] He ejecutado al menos el ejercicio de monitor de temperatura
+- [ ] Veo la conexión entre diseño (Partes 1-4) y operación (Parte 5)
+
+**Si marcaste 6-7**: ✅ Listo para integrar en proyecto capstone  
+**Si marcaste 4-5**: ⚠️ Repasa secciones con dudas  
+**Si marcaste < 4**: ❌ Revisa todo el contenido nuevamente
+
+---
+
+**🎯 Próximo Paso**: En el **Módulo 05 (Diseño de Aeronaves)**, integrarás TODO lo aprendido (CAD, aerodinámica, estructuras, propulsión, automatización) en un diseño completo y certificable de UAV. La automatización que dominaste aquí será parte fundamental de tu propuesta de valor comercial.
+
+---
+
 ## 📝 Quiz de Evaluación
 
 ### Instrucciones
