@@ -81,8 +81,8 @@ Ver: [SETUP-DIA-01.md](./SETUP-DIA-01.md) para instrucciones completas.
 
 ## Materiales para el Instructor
 
-- [Guión de Clase](../../instructor/guiones/dia-01-guion.md)
-- [Slides/Presentación](../../instructor/slides/dia-01-slides.md)
+- [Guión de Clase](../../instructor/guiones-clases/dia-01-guion.md)
+- [Mentimeter Onboarding](./mentimeter.md)
 - [Ejercicios Resueltos](./ejercicios-resueltos/)
 
 ---
