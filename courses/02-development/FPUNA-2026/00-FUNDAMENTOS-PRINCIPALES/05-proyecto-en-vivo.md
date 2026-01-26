@@ -3,16 +3,18 @@
 ## Objetivo
 Observar al instructor crear una aplicacion completa desde cero usando OpenCode, aplicando todos los conceptos de los modulos anteriores en un workflow real.
 
-## El Proyecto: Gestor de Gastos Personales
+> **Demo Completo**: Revisa el ejemplo terminado en [`./live-demo-proyecto/`](./live-demo-proyecto/) - incluye el codigo fuente, todos los prompts usados, y documentacion para replicar el proceso.
 
-Una aplicacion web para que estudiantes de FPUNA gestionen sus gastos mensuales en Guaranies.
+## El Proyecto: Catalogo de Productos Grocery
+
+Una aplicacion web de catalogo de productos usando datos reales del repositorio [grocery](https://github.com/IvanWeissVanDerPol/grocery).
 
 ### Caracteristicas
-- Agregar gastos con monto, categoria y descripcion
-- Visualizar lista de gastos con filtros
-- Ver totales por categoria
-- Persistencia en LocalStorage (funciona offline)
-- Export a CSV
+- Grid/Lista de productos con imagenes
+- Filtros por categoria, busqueda de texto, productos con imagen
+- Ordenamiento alfabetico (A-Z / Z-A)
+- Toggle vista grid/lista con persistencia en LocalStorage
+- Contador de productos y estado vacio
 
 ## Fases del Demo
 
@@ -28,27 +30,34 @@ graph LR
 
 ### Fase 1: Setup (5 min)
 - Crear carpeta del proyecto
-- Inicializar con `npm init`
-- Crear estructura basica de archivos
+- Crear CLAUDE.md con especificaciones del catalogo
 
-### Fase 2: Contexto (5 min)
-- Crear CLAUDE.md con especificaciones
-- Definir convenciones del proyecto
+### Fase 2: Datos (5 min)
+- Extraer productos del repositorio grocery a JSON
+- Crear data.js con array de productos
 
-### Fase 3: Implementacion (35 min)
-- Generar HTML (estructura)
-- Generar JavaScript (logica)
-- Generar CSS (estilos)
+### Fase 3: Estructura HTML (10 min)
+- Header con titulo
+- Seccion de filtros (categoria, busqueda, checkbox, ordenamiento)
+- Grid de productos
+- Footer con creditos
 
-### Fase 4: Testing y Debug (15 min)
-- Probar funcionalidades
-- Identificar y corregir bugs
-- Iterar con OpenCode
+### Fase 4: Estilos CSS (15 min)
+- Variables CSS para colores y espaciado
+- Layout responsive con Grid
+- Cards de producto con hover effects
+- Vista grid y lista
 
-### Fase 5: Refinamiento (15 min)
-- Agregar features extras
-- Mejorar UX
-- Documentar
+### Fase 5: Logica JavaScript (15 min)
+- Funciones de filtrado y ordenamiento
+- Renderizado dinamico de productos
+- Event listeners para controles
+- Persistencia de preferencias
+
+### Fase 6: Testing (5 min)
+- Probar todos los filtros
+- Verificar responsive design
+- Documentar prompts usados
 
 ## Que Observar (Checklist)
 
