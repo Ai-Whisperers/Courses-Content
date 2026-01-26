@@ -20,6 +20,8 @@ Professional training courses for AI-augmented development.
 
 ## Quick Start
 
+**New here?** See [GETTING-STARTED.md](./GETTING-STARTED.md) for setup instructions.
+
 **Students**: Start with [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) - it's production-ready.
 
 **Instructors**: Each course has a README with curriculum overview and instructor notes.

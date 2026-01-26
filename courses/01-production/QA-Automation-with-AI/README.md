@@ -7,8 +7,6 @@
 ## PRIMARY COURSE - 12 Complete Modules
 
 > **This is the main QA automation course** with comprehensive AI-first curriculum.
-> **Alternative Format:** For a traditional 4-week intensive, see [MentorMate-QA-Automation/](../MentorMate-QA-Automation/)
-> **See:** [CORRECTION-NOTICE.md](../CORRECTION-NOTICE.md) for details about November 2025 update
 
 ---
 
