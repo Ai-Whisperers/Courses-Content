@@ -23,6 +23,28 @@ By the end of this module, you will be able to:
 - **Control**: Test specific scenarios (errors, edge cases)
 - **Isolation**: Test UI behavior independently
 
+> **Try It Now (3 min)**
+> 
+> See network mocking in action. Create a file `mock-demo.spec.ts`:
+> ```typescript
+> import { test, expect } from '@playwright/test';
+> 
+> test('mock example', async ({ page }) => {
+>   // Mock any request to jsonplaceholder
+>   await page.route('**/users/1', route => route.fulfill({
+>     status: 200,
+>     body: JSON.stringify({ id: 1, name: 'Mocked User' })
+>   }));
+>   
+>   await page.goto('https://jsonplaceholder.typicode.com/users/1');
+>   await expect(page.getByText('Mocked User')).toBeVisible();
+> });
+> ```
+> 
+> Run it: `npx playwright test mock-demo.spec.ts`
+> 
+> The real API returns "Leanne Graham" but your test sees "Mocked User"!
+
 ### Basic Request Interception
 
 ```typescript

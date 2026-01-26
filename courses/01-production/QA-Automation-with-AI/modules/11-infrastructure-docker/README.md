@@ -48,6 +48,18 @@ Docker packages your test environment into a container:
 | Reproducibility | Anyone can run the same setup |
 | Portability | Works on any system with Docker |
 
+> **Try It Now (1 min)**
+> 
+> Check if Docker is installed:
+> ```bash
+> docker --version
+> ```
+> 
+> - See a version? Great, you're ready!
+> - "Command not found"? Install Docker Desktop from [docker.com](https://docker.com)
+> 
+> **Bonus:** Run `docker run hello-world` to verify Docker works.
+
 ---
 
 ## 11.2 Docker Basics for QA

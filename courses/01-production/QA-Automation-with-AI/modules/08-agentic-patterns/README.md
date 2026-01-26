@@ -32,6 +32,18 @@ Design patterns for building AI workflows that:
 | Parallelization | Large-scale generation |
 | Tool Use | Integrated workflows |
 
+> **Try It Now (3 min)**
+> 
+> Experience a simple 2-step chain:
+> 
+> **Step 1 - Ask Claude:**
+> `List all the functions in this code that need tests: [paste any small file]`
+> 
+> **Step 2 - Then ask:**
+> `For the first function you listed, generate 3 test cases with specific inputs and expected outputs`
+> 
+> Notice how breaking the task into steps produces more focused, higher-quality output than asking for everything at once.
+
 ---
 
 ## 8.2 Prompt Chaining

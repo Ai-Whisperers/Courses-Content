@@ -28,6 +28,16 @@ Select ONE of these options:
 - Use the course sample project (if provided)
 - E-commerce API with users, products, orders
 
+> **Try It Now (5 min)**
+> 
+> Make your project decision right now:
+> 1. List 2-3 candidate projects (work repos or open source)
+> 2. Check each for: Has API? <100% test coverage? You have access?
+> 3. Pick one and clone it: `git clone [url] final-project`
+> 4. Create an empty CLAUDE.md: `touch final-project/CLAUDE.md`
+> 
+> **Done?** You've completed 10% of your final project just by starting!
+
 ---
 
 ## Deliverables

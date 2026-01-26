@@ -27,6 +27,20 @@ Test Plan → Select Test Case → Generate Code → Review → Refine → Run �
 3. Tests for bug-prone areas
 4. Tests that unblock others
 
+> **Try It Now (5 min)**
+> 
+> Pick a simple function from your codebase (or use this one):
+> ```javascript
+> function calculateDiscount(price, percentage) {
+>   if (percentage < 0 || percentage > 100) throw new Error('Invalid percentage');
+>   return price * (percentage / 100);
+> }
+> ```
+> 
+> Ask Claude: `Generate Jest unit tests for this function including happy path, error cases, and edge cases`
+> 
+> Notice how AI generates multiple test scenarios you might not have thought of!
+
 ---
 
 ## 6.2 Generating Unit Tests

@@ -28,6 +28,18 @@ By the end of this module, you will be able to:
 Push → Install → Lint → Unit Tests → Integration Tests → E2E → Report → Deploy
 ```
 
+> **Try It Now (2 min)**
+> 
+> Check if your project has CI already:
+> ```bash
+> ls -la .github/workflows/
+> ```
+> 
+> - See YAML files? You have CI! Read one to understand what runs.
+> - Empty or "no such file"? You'll create one in this module.
+> 
+> **Bonus:** If you have CI, check your last 5 runs: `gh run list --limit 5`
+
 ---
 
 ## 9.2 GitHub Actions Setup

@@ -34,6 +34,20 @@ A test plan defines:
 7. Schedule
 8. Risk assessment
 
+> **Try It Now (3 min)**
+> 
+> Think of a feature you recently tested or developed. Ask Claude:
+> ```
+> I have a user login feature with email/password. 
+> List 10 test cases I should cover, including:
+> - Happy path
+> - Error cases  
+> - Edge cases
+> - Security considerations
+> ```
+> 
+> Notice how quickly AI generates a comprehensive list - this is what we'll formalize into full test plans.
+
 ---
 
 ## 5.2 Generating Test Plans with AI

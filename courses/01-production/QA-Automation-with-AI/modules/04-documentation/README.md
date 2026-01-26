@@ -30,6 +30,18 @@ By the end of this module, you will be able to:
 | Setup Guide | Environment setup | New developers |
 | Test Documentation | Test strategy | QA team |
 
+> **Try It Now (3 min)**
+> 
+> Pick any small project you have access to and ask Claude:
+> ```
+> Analyze this codebase and give me a one-paragraph summary of:
+> 1. What it does
+> 2. The main technologies used
+> 3. How the code is organized
+> ```
+> 
+> This is the foundation of all documentation - AI can generate the first draft in seconds.
+
 ---
 
 ## 4.2 Architecture Documentation

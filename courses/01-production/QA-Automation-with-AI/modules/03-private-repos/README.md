@@ -50,6 +50,12 @@ gh --version
 # Expected: gh version 2.x.x
 ```
 
+> **Try It Now (1 min)**
+> 
+> Run `gh --version` in your terminal.
+> - See a version number? You're ready for authentication.
+> - "Command not found"? Go back and install gh for your OS.
+
 ---
 
 ## 3.2 Authentication
@@ -79,6 +85,13 @@ gh auth status
 #   ✓ Git operations for github.com configured to use https
 #   ✓ Token: *****
 ```
+
+> **Try It Now (2 min)**
+> 
+> Run `gh auth status` right now.
+> - See green checkmarks? Perfect - you're authenticated!
+> - See "not logged in"? Run `gh auth login` and follow the prompts.
+> - Have an organization? Run `gh repo list YourOrgName --limit 3` to test access.
 
 ### Organization Access
 

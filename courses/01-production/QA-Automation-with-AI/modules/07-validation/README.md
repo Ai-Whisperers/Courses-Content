@@ -23,6 +23,18 @@ By the end of this module, you will be able to:
 5. **Over-testing** - Testing implementation, not behavior
 6. **Under-testing** - Missing error scenarios
 
+> **Try It Now (2 min)**
+> 
+> Spot the weak assertion:
+> ```javascript
+> test('creates user', async () => {
+>   const user = await createUser({ email: 'test@example.com' });
+>   expect(user).toBeDefined();  // Is this enough?
+> });
+> ```
+> 
+> **Answer:** No! `toBeDefined()` only checks the variable isn't undefined. The user could have wrong data. Better: `expect(user.email).toBe('test@example.com')`
+
 ---
 
 ## 7.2 Test Quality Checklist
