@@ -9,7 +9,7 @@
 | Course | Location | Status | Completion |
 |--------|----------|--------|------------|
 | **QA Automation with AI** | `courses/01-production/QA-Automation-with-AI/` | Production | 100% |
-| **FPUNA 2026** | `courses/02-development/FPUNA-2026/` | Development | ~35% |
+| **FPUNA 2026** | `courses/02-development/FPUNA-2026/` | Development | ~70% |
 | **Prompt Engineering Masterclass** | `courses/03-beta/Prompt-Engineering-Masterclass/` | Beta | ~60% |
 | **Building AI-Powered Applications** | `courses/03-beta/Building-AI-Powered-Applications/` | Beta | ~50% |
 | **AI Tools for Productivity** | `courses/03-beta/AI-Tools-for-Productivity/` | Beta | ~40% |
@@ -27,10 +27,12 @@
 - **AI Tools for Productivity**: Scaffolding + partial content
 
 ### In Development (1 course)
-- **FPUNA 2026**: Core Foundation ~70%, Specialized Tracks ~15%
+- **FPUNA 2026**: Core Foundation ~90%, Specialized Tracks ~60%
+  - 291 markdown files, 6 specialized tracks with substantial content
   - Target audience: Universidad Nacional de Asuncion (Paraguay)
-  - Language: Spanish (standardization in progress)
+  - Language: Spanish
   - Timeline: Q2 2026
+  - Remaining: Exercise validation, instructor testing
 
 ---
 
@@ -47,9 +49,10 @@ courses/
 
 ## Next Actions
 
-1. Complete FPUNA Core Foundation modules
-2. Validate Prompt Engineering exercises
+1. Validate FPUNA exercises with instructors
+2. Fix Python type errors in aeronautical examples
 3. Student testing for beta courses
+4. Review Prompt Engineering exercises
 
 ---
 
