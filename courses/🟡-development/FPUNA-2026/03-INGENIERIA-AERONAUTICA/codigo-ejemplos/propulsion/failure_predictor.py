@@ -22,14 +22,18 @@ Fecha: Enero 2026
 Licencia: MIT
 """
 
+from __future__ import annotations
+
+import logging
+from typing import Optional
+
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest, RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
-import warnings
 
-warnings.filterwarnings("ignore")
+logger = logging.getLogger(__name__)
 
 
 class BearingFailurePredictor:
@@ -39,7 +43,7 @@ class BearingFailurePredictor:
     Detecta degradación 10-30 minutos antes de fallo total.
     """
 
-    def __init__(self, baseline_vibration=0.12):
+    def __init__(self, baseline_vibration: float = 0.12) -> None:
         """
         Inicializa predictor de rodamientos.
 
@@ -61,7 +65,7 @@ class BearingFailurePredictor:
         print(f"   Baseline: {baseline_vibration:.3f}g")
         print(f"   Alert threshold: {baseline_vibration * self.alert_threshold:.3f}g")
 
-    def fit_baseline(self, historical_vibration_data):
+    def fit_baseline(self, historical_vibration_data: np.ndarray) -> None:
         """
         Aprende comportamiento 'normal' usando primeros vuelos.
 
@@ -81,7 +85,7 @@ class BearingFailurePredictor:
 
         print(f"✅ Baseline actualizado: {self.baseline_vibration:.3f}g")
 
-    def predict_failure_risk(self, vibration_stream_60s):
+    def predict_failure_risk(self, vibration_stream_60s: np.ndarray) -> dict:
         """
         Analiza ventana de 60 segundos de vibración.
 
@@ -140,7 +144,7 @@ class BearingFailurePredictor:
             "vibration_increase_pct": (vibration_increase - 1) * 100,
         }
 
-    def _extract_features_single(self, vibration_60s):
+    def _extract_features_single(self, vibration_60s: np.ndarray) -> np.ndarray:
         """Extrae features de una ventana de 60 segundos."""
         return np.array(
             [
@@ -153,7 +157,7 @@ class BearingFailurePredictor:
             ]
         )
 
-    def _extract_features_batch(self, data):
+    def _extract_features_batch(self, data: np.ndarray) -> np.ndarray:
         """Extrae features de múltiples ventanas."""
         # Dividir en ventanas de 60 segundos
         window_size = 600
@@ -165,7 +169,7 @@ class BearingFailurePredictor:
 
         return np.array(features_list)
 
-    def _calculate_trend(self, data):
+    def _calculate_trend(self, data: np.ndarray) -> float:
         """Calcula tendencia (¿creciente o decreciente?)."""
         x = np.arange(len(data))
         y = data
@@ -175,7 +179,7 @@ class BearingFailurePredictor:
 
         return slope
 
-    def _estimate_ttf(self, vibration_increase, trend):
+    def _estimate_ttf(self, vibration_increase: float, trend: float) -> Optional[float]:
         """
         Estima tiempo hasta falla (Time To Failure).
 
@@ -196,7 +200,7 @@ class BearingFailurePredictor:
 
         return ttf
 
-    def _recommend_action(self, risk, ttf):
+    def _recommend_action(self, risk: float, ttf: Optional[float]) -> str:
         """Recomienda acción según riesgo."""
         if risk < 20:
             return "Continue operation - Normal"
@@ -215,7 +219,7 @@ class ESCThermalPredictor:
     Predictor de thermal runaway en ESCs basado en temperatura.
     """
 
-    def __init__(self, normal_temp=45.0, critical_temp=65.0):
+    def __init__(self, normal_temp: float = 45.0, critical_temp: float = 65.0) -> None:
         """
         Inicializa predictor de ESC.
 
@@ -232,7 +236,7 @@ class ESCThermalPredictor:
 
         print("✅ ESCThermalPredictor inicializado")
 
-    def predict_thermal_runaway(self, temp_stream_30s):
+    def predict_thermal_runaway(self, temp_stream_30s: np.ndarray) -> dict:
         """
         Analiza si ESC está en riesgo de thermal runaway.
 
@@ -287,7 +291,7 @@ class BatteryCellImbalanceDetector:
     Detector de desbalance de celdas en batería LiPo.
     """
 
-    def __init__(self, cell_count=4):
+    def __init__(self, cell_count: int = 4) -> None:
         """
         Inicializa detector de batería.
 
@@ -302,7 +306,7 @@ class BatteryCellImbalanceDetector:
 
         print(f"✅ BatteryCellImbalanceDetector inicializado ({cell_count}S)")
 
-    def detect_imbalance(self, cell_voltages):
+    def detect_imbalance(self, cell_voltages: list) -> dict:
         """
         Detecta desbalance entre celdas.
 
@@ -343,7 +347,7 @@ class ComprehensiveFailurePredictor:
     Predictor integrado que combina todos los subsistemas.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Inicializa predictor completo."""
         self.bearing_predictor = BearingFailurePredictor()
         self.esc_predictor = ESCThermalPredictor()
@@ -357,7 +361,7 @@ class ComprehensiveFailurePredictor:
         print("   - Battery cell imbalance (voltaje)")
         print("=" * 60)
 
-    def analyze_system_health(self, telemetry_data):
+    def analyze_system_health(self, telemetry_data: dict) -> dict:
         """
         Analiza salud completa del sistema.
 
@@ -416,7 +420,7 @@ class ComprehensiveFailurePredictor:
 
         return diagnosis
 
-    def generate_maintenance_report(self, diagnosis):
+    def generate_maintenance_report(self, diagnosis: dict) -> str:
         """
         Genera reporte de mantenimiento en lenguaje natural.
 
@@ -493,7 +497,7 @@ class ComprehensiveFailurePredictor:
 # =============================================================================
 
 
-def simulate_normal_flight():
+def simulate_normal_flight() -> dict:
     """Simula vuelo normal sin fallas."""
     duration = 600  # 10 min
 
@@ -506,7 +510,7 @@ def simulate_normal_flight():
     return data
 
 
-def simulate_bearing_degradation():
+def simulate_bearing_degradation() -> dict:
     """Simula degradación gradual de rodamiento."""
     # Vibración aumenta progresivamente
     time = np.linspace(0, 600, 600)
@@ -521,7 +525,7 @@ def simulate_bearing_degradation():
     return data
 
 
-def simulate_esc_thermal_runaway():
+def simulate_esc_thermal_runaway() -> dict:
     """Simula thermal runaway en ESC."""
     # Temperatura acelera exponencialmente
     time = np.linspace(0, 300, 300)
@@ -536,7 +540,7 @@ def simulate_esc_thermal_runaway():
     return data
 
 
-def simulate_battery_imbalance():
+def simulate_battery_imbalance() -> dict:
     """Simula desbalance crítico de celdas."""
     data = {
         "vibration_stream_60s": np.random.normal(0.12, 0.01, 600),

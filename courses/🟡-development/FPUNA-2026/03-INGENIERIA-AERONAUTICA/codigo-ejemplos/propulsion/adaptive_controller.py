@@ -23,14 +23,18 @@ Fecha: Enero 2026
 Licencia: MIT
 """
 
+from __future__ import annotations
+
+import logging
+import pickle
+from typing import Optional
+
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-import pickle
-import warnings
 
-warnings.filterwarnings("ignore")
+logger = logging.getLogger(__name__)
 
 
 class AdaptiveThrottleController:
@@ -41,7 +45,7 @@ class AdaptiveThrottleController:
     considerando perturbaciones ambientales.
     """
 
-    def __init__(self, target_speed=15.0, auto_tune=True):
+    def __init__(self, target_speed: float = 15.0, auto_tune: bool = True) -> None:
         """
         Inicializa controlador con parámetros por defecto.
 
@@ -83,7 +87,7 @@ class AdaptiveThrottleController:
         print(f"   Target: {target_speed:.1f} m/s")
         print(f"   PID gains: Kp={self.Kp:.3f}, Ki={self.Ki:.3f}, Kd={self.Kd:.3f}")
 
-    def _ziegler_nichols_tuning(self):
+    def _ziegler_nichols_tuning(self) -> tuple[float, float, float]:
         """
         Auto-tuning usando método Ziegler-Nichols.
 
@@ -109,7 +113,9 @@ class AdaptiveThrottleController:
 
         return Kp, Ki, Kd
 
-    def update(self, current_speed, wind_speed=0.0, dt=0.1):
+    def update(
+        self, current_speed: float, wind_speed: float = 0.0, dt: float = 0.1
+    ) -> float:
         """
         Calcula throttle óptimo basado en estado actual.
 
@@ -194,7 +200,9 @@ class AdaptiveThrottleController:
 
         return throttle
 
-    def _predict_wind_compensation(self, wind_speed, current_speed, error):
+    def _predict_wind_compensation(
+        self, wind_speed: float, current_speed: float, error: float
+    ) -> float:
         """
         Usa modelo ML para predecir compensación óptima de viento.
 
@@ -220,7 +228,7 @@ class AdaptiveThrottleController:
 
         return compensation
 
-    def train_wind_model(self, training_data):
+    def train_wind_model(self, training_data: pd.DataFrame) -> float:
         """
         Entrena modelo ML con datos históricos de vuelos.
 
@@ -265,43 +273,44 @@ class AdaptiveThrottleController:
 
         return score
 
-    def save_model(self, filepath="wind_model.pkl"):
+    def save_model(self, filepath: str = "wind_model.pkl") -> None:
         """Guarda modelo entrenado a disco."""
         if self.wind_model is None:
-            print("⚠️ No hay modelo para guardar")
+            logger.warning("No hay modelo para guardar")
             return
 
-        with open(filepath, "wb") as f:
-            pickle.dump(self.wind_model, f)
+        try:
+            with open(filepath, "wb") as f:
+                pickle.dump(self.wind_model, f)
+            logger.info(f"Modelo guardado: {filepath}")
+        except IOError as e:
+            logger.error(f"Error guardando modelo: {e}")
 
-        print(f"✅ Modelo guardado: {filepath}")
-
-    def load_model(self, filepath="wind_model.pkl"):
+    def load_model(self, filepath: str = "wind_model.pkl") -> None:
         """Carga modelo previamente entrenado."""
         try:
             with open(filepath, "rb") as f:
                 self.wind_model = pickle.load(f)
-
             self.wind_model_trained = True
-            print(f"✅ Modelo cargado: {filepath}")
+            logger.info(f"Modelo cargado: {filepath}")
         except FileNotFoundError:
-            print(f"❌ Archivo no encontrado: {filepath}")
+            logger.error(f"Archivo no encontrado: {filepath}")
         except Exception as e:
-            print(f"❌ Error cargando modelo: {e}")
+            logger.error(f"Error cargando modelo: {e}")
 
-    def reset(self):
+    def reset(self) -> None:
         """Resetea estado del controlador (útil para nuevo vuelo)."""
         self.integral = 0.0
         self.prev_error = 0.0
         self.history = []
-        print("🔄 Controlador reseteado")
+        logger.info("Controlador reseteado")
 
-    def set_target_speed(self, new_target):
+    def set_target_speed(self, new_target: float) -> None:
         """Cambia velocidad objetivo en vuelo."""
         self.target_speed = new_target
-        print(f"🎯 Nueva velocidad objetivo: {new_target:.1f} m/s")
+        logger.info(f"Nueva velocidad objetivo: {new_target:.1f} m/s")
 
-    def get_performance_metrics(self):
+    def get_performance_metrics(self) -> dict:
         """
         Calcula métricas de performance del controlador.
 
@@ -328,7 +337,9 @@ class AdaptiveThrottleController:
 
         return metrics
 
-    def _calculate_settling_time(self, df, tolerance=0.5):
+    def _calculate_settling_time(
+        self, df: pd.DataFrame, tolerance: float = 0.5
+    ) -> Optional[float]:
         """
         Calcula tiempo de establecimiento (settling time).
         Tiempo hasta que error permanece < tolerance.
@@ -348,7 +359,7 @@ class AdaptiveThrottleController:
         else:
             return None
 
-    def _calculate_overshoot(self, df):
+    def _calculate_overshoot(self, df: pd.DataFrame) -> float:
         """Calcula overshoot máximo (% sobre target)."""
         overshoot = (df["current_speed"] - self.target_speed).max()
         overshoot_pct = (overshoot / self.target_speed) * 100
@@ -360,7 +371,9 @@ class AdaptiveThrottleController:
 # =============================================================================
 
 
-def simulate_flight_with_wind(duration=600, target_speed=15.0, wind_profile="variable"):
+def simulate_flight_with_wind(
+    duration: int = 600, target_speed: float = 15.0, wind_profile: str = "variable"
+) -> pd.DataFrame:
     """
     Simula vuelo con diferentes perfiles de viento.
 
@@ -397,7 +410,7 @@ def simulate_flight_with_wind(duration=600, target_speed=15.0, wind_profile="var
     return pd.DataFrame(data)
 
 
-def compare_controllers(duration=600, target_speed=15.0):
+def compare_controllers(duration: int = 600, target_speed: float = 15.0) -> dict:
     """
     Compara performance: Sin control vs PID básico vs PID+IA.
 
@@ -494,7 +507,7 @@ def compare_controllers(duration=600, target_speed=15.0):
     return results
 
 
-def simulate_no_control(sim_data, throttle=50.0):
+def simulate_no_control(sim_data: pd.DataFrame, throttle: float = 50.0) -> pd.Series:
     """Simula vuelo sin control (throttle fijo)."""
     # Modelo simplificado: velocidad depende de throttle y viento
     base_speed = throttle / 5.0  # 50% throttle → ~10 m/s sin viento
@@ -503,7 +516,9 @@ def simulate_no_control(sim_data, throttle=50.0):
     return speed
 
 
-def simulate_with_controller(sim_data, controller, use_ml=False):
+def simulate_with_controller(
+    sim_data: pd.DataFrame, controller: AdaptiveThrottleController, use_ml: bool = False
+) -> pd.Series:
     """Simula vuelo con controlador."""
     speeds = []
     current_speed = 10.0  # Velocidad inicial
@@ -530,7 +545,7 @@ def simulate_with_controller(sim_data, controller, use_ml=False):
     return pd.Series(speeds)
 
 
-def generate_training_data(n_samples=1000):
+def generate_training_data(n_samples: int = 1000) -> pd.DataFrame:
     """
     Genera datos sintéticos para entrenar modelo de viento.
 

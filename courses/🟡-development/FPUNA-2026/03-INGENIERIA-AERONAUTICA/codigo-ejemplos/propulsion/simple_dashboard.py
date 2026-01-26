@@ -45,11 +45,12 @@ try:
     from adaptive_controller import AdaptiveThrottleController
 
     MODULES_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     MODULES_AVAILABLE = False
-    st.warning(
-        "⚠️ Módulos telemetry_monitor y adaptive_controller no encontrados. Usando modo demo."
-    )
+    import logging
+
+    logger = logging.getLogger(__name__)
+    logger.warning(f"Módulos no encontrados: {e}. Usando modo demo.")
 
 
 # =============================================================================
@@ -69,7 +70,7 @@ st.set_page_config(
 # =============================================================================
 
 
-def get_health_color(health_score):
+def get_health_color(health_score: float) -> tuple[str, str]:
     """Retorna color según score de salud."""
     if health_score >= 80:
         return "🟢", "#28a745"
@@ -79,7 +80,7 @@ def get_health_color(health_score):
         return "🔴", "#dc3545"
 
 
-def get_alert_emoji(alert_level):
+def get_alert_emoji(alert_level: str) -> str:
     """Retorna emoji según nivel de alerta."""
     if alert_level == "none":
         return "✅"
@@ -89,7 +90,7 @@ def get_alert_emoji(alert_level):
         return "🚨"
 
 
-def simulate_telemetry_frame():
+def simulate_telemetry_frame() -> dict:
     """Simula un frame de telemetría para demo."""
     now = datetime.now()
 
@@ -123,7 +124,7 @@ def simulate_telemetry_frame():
     }
 
 
-def calculate_health_score(telemetry):
+def calculate_health_score(telemetry: dict) -> float:
     """Calcula score de salud simplificado (0-100)."""
     health = 100.0
 
@@ -139,7 +140,7 @@ def calculate_health_score(telemetry):
     return max(0, min(100, health))
 
 
-def predict_endurance(telemetry):
+def predict_endurance(telemetry: dict) -> float:
     """Predice autonomía restante (minutos)."""
     battery_wh = 74 * (telemetry["battery_remaining"] / 100)
     power_w = telemetry["battery_voltage"] * telemetry["battery_current"]
@@ -155,7 +156,7 @@ def predict_endurance(telemetry):
 # =============================================================================
 
 
-def render_simple_dashboard(telemetry):
+def render_simple_dashboard(telemetry: dict) -> None:
     """
     Dashboard simplificado para operadores no-técnicos.
 
@@ -250,7 +251,7 @@ def render_simple_dashboard(telemetry):
 # =============================================================================
 
 
-def render_expert_dashboard(telemetry):
+def render_expert_dashboard(telemetry: dict) -> None:
     """
     Dashboard completo para ingenieros con todos los parámetros.
     """
@@ -275,7 +276,7 @@ def render_expert_dashboard(telemetry):
         render_logs_tab(telemetry)
 
 
-def render_propulsion_tab(telemetry):
+def render_propulsion_tab(telemetry: dict) -> None:
     """Tab de propulsión con detalles técnicos."""
     col1, col2 = st.columns(2)
 
@@ -355,7 +356,7 @@ def render_propulsion_tab(telemetry):
             st.error("🚨 Vibración excesiva - Aterrizar y revisar")
 
 
-def render_battery_tab(telemetry):
+def render_battery_tab(telemetry: dict) -> None:
     """Tab de batería con métricas detalladas."""
     col1, col2, col3 = st.columns(3)
 
@@ -424,7 +425,7 @@ def render_battery_tab(telemetry):
     st.plotly_chart(fig, use_container_width=True)
 
 
-def render_performance_tab(telemetry):
+def render_performance_tab(telemetry: dict) -> None:
     """Tab de performance con métricas de vuelo."""
     col1, col2 = st.columns(2)
 
@@ -468,7 +469,7 @@ def render_performance_tab(telemetry):
             )
 
 
-def render_logs_tab(telemetry):
+def render_logs_tab(telemetry: dict) -> None:
     """Tab de logs y export."""
     st.markdown("#### 📁 Logs y Exportación")
 
@@ -523,7 +524,7 @@ def render_logs_tab(telemetry):
 # =============================================================================
 
 
-def main():
+def main() -> None:
     """Aplicación principal del dashboard."""
 
     # Sidebar con configuración

@@ -362,7 +362,7 @@ El skill:
 
 1. 📖 Aprende sobre: [Hooks y Rules](../hooks-rules/README.md)
 2. 📖 Explora: [Plantillas de Proyecto](../project-templates/README.md)
-3. 📖 Practica con: [Módulo 02 - Configuration Mastery](../../00-FUNDAMENTOS-PRINCIPALES/modules/02-configuration-mastery/README.md)
+3. 📖 Practica con: [Módulo 02 - Maestría de Configuración](../../00-FUNDAMENTOS-PRINCIPALES/02-maestria-configuracion.md)
 
 ---
 

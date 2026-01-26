@@ -283,17 +283,23 @@ Verás muchas líneas de texto pasando rápido - **esto es normal**. Es como cua
 added 50 packages in 2m
 ```
 
-### Paso 2: Configurar OpenCode con Zen
+### Paso 2: Configurar OpenCode con tu Proveedor de IA
 
-**Analogía**: OpenCode necesita conectarse a un modelo de IA. Usaremos **Zen**, que es completamente GRATUITO.
+**Analogía**: OpenCode necesita conectarse a un modelo de IA. Tienes varias opciones:
+
+> **📌 NOTA PARA ESTUDIANTES FPUNA**: El instructor te indicará qué proveedor usar durante la clase. Las opciones más comunes son:
+> - **Anthropic** (Claude) - Requiere cuenta en anthropic.com
+> - **OpenAI** (GPT) - Requiere cuenta en openai.com  
+> - **Ollama** - Modelos locales, completamente GRATIS pero requiere más recursos
+> - **OpenRouter** - Acceso a múltiples modelos con una sola cuenta
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 journey
-    title Configurar OpenCode con Zen
+    title Configurar OpenCode con tu Proveedor
     section 1️⃣ Configuración Inicial
       Ejecutar opencode configure: 5: Tú
-      Seleccionar Zen como provider: 5: Tú
+      Seleccionar tu provider: 5: Tú
       Confirmar y guardar config: 4: Tú
     section 2️⃣ Verificación
       Ejecutar opencode status: 4: Tú
@@ -307,13 +313,20 @@ journey
 
 1. **Abre tu PowerShell/Terminal**
 
-2. **Configura OpenCode con Zen**:
+2. **Configura OpenCode con tu proveedor** (el instructor te indicará cuál usar):
    ```bash
-   opencode configure --provider zen
+   # Opción A: Anthropic (Claude) - Recomendado para el curso
+   opencode configure --provider anthropic
+   
+   # Opción B: OpenAI (GPT)
+   opencode configure --provider openai
+   
+   # Opción C: Ollama (Local, GRATIS)
+   opencode configure --provider ollama
    ```
 
 3. **Sigue las instrucciones** en pantalla:
-   - Confirma que quieres usar Zen
+   - Ingresa tu API key si es requerida (el instructor te ayudará)
    - Acepta la configuración por defecto
 
 4. **Verifica la configuración**:
@@ -343,7 +356,7 @@ opencode status
 
 ```
 ✓ OpenCode v1.x.x
-✓ Provider: Zen
+✓ Provider: [tu proveedor]
 ✓ Status: Connected
 ✓ Ready to use
 ```
@@ -357,13 +370,12 @@ opencode status
 
 2. Reconfigura si es necesario:
    ```bash
-   opencode configure --provider zen
+   opencode configure --provider [tu-proveedor]
    ```
 
-**IMPORTANTE**: 
-- ✅ NO necesitas API keys
-- ✅ NO necesitas tarjeta de crédito
-- ✅ Completamente GRATIS con Zen
+**NOTA**: 
+- Si usas **Ollama**: Es completamente GRATIS, ejecuta localmente en tu máquina
+- Si usas **Anthropic/OpenAI**: Necesitas una API key (el instructor puede proporcionar una de prueba)
 
 ### Paso 4: Primera Prueba de OpenCode
 
@@ -385,11 +397,12 @@ con lo que necesites. ¿En qué puedo asistirte hoy?
 ```
 
 **Si ves un error**:
-- "Connection failed" → Ejecuta `opencode configure --provider zen` de nuevo
+- "Connection failed" → Ejecuta `opencode configure --provider [tu-proveedor]` de nuevo
+- "API key invalid" → Verifica tu API key con el instructor
 - "Command not found" → Cierra y abre la terminal de nuevo
 - Otro error → Pide ayuda al instructor
 
-**🎉 ¡FELICITACIONES! ¡Tu asistente de IA está funcionando GRATIS!**
+**🎉 ¡FELICITACIONES! ¡Tu asistente de IA está funcionando!**
 
 ---
 
@@ -694,12 +707,12 @@ graph TB
 
 Para profundizar más:
 
-- 📖 [Guía Detallada de OpenCode](../../COMPARTIDO/opencode-installation/guide.md)
-- 📖 [Instalación en Windows](../../COMPARTIDO/opencode-installation/windows.md)
-- 📖 [Instalación en Mac](../../COMPARTIDO/opencode-installation/mac.md)
-- 📖 [Instalación en Linux](../../COMPARTIDO/opencode-installation/linux.md)
-- 📖 [Solución de Problemas](../../COMPARTIDO/opencode-installation/troubleshooting.md)
-- 📖 [Preguntas Frecuentes](../../COMPARTIDO/opencode-installation/FAQ.md)
+- 📖 [Guía Detallada de OpenCode](../COMPARTIDO/instalacion-opencode/guide.md)
+- 📖 [Instalación en Windows](../COMPARTIDO/instalacion-opencode/windows.md)
+- 📖 [Instalación en Mac](../COMPARTIDO/instalacion-opencode/mac.md)
+- 📖 [Instalación en Linux](../COMPARTIDO/instalacion-opencode/linux.md)
+- 📖 [Solución de Problemas](../COMPARTIDO/instalacion-opencode/troubleshooting.md)
+- 📖 [Preguntas Frecuentes](../COMPARTIDO/instalacion-opencode/FAQ.md)
 
 ### Soporte FPUNA
 

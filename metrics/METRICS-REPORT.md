@@ -1,6 +1,6 @@
 # Metrics Report
 
-**Generated:** 2026-01-23 12:04:34  
+**Generated:** 2026-01-26 09:08:52  
 **Repository:** Courses Content
 
 ---
@@ -11,7 +11,7 @@
 |--------|-------|
 | **Total Courses** | 15 |
 | **Production Ready** | 2 |
-| **Total Documentation Files** | 2,521 |
+| **Total Documentation Files** | 1,992 |
 | **Documentation Health Score** | 63/100 |
 
 ---
@@ -31,7 +31,7 @@
 
 | Rank | Course | Lines | Modules | Completion |
 |------|--------|-------|---------|------------|
-| 1 | FPUNA-2026 | 126,290 | 0 | 50% |
+| 1 | FPUNA-2026 | 134,002 | 0 | 50% |
 | 2 | MentorMate-QA-Automation | 74,359 | 12 | 80% |
 | 3 | AI-Assisted-Software-Development | 28,031 | 8 | 60% |
 | 4 | QA-Automation-with-AI | 25,603 | 12 | 100% |
@@ -63,7 +63,7 @@
 
 ### Documentation Age
 
-Average document age: **7.6 days**
+Average document age: **10.5 days**
 
 ✅ Documentation is very fresh
 

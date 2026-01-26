@@ -706,8 +706,8 @@ claude "Crea una función en Python que calcule el área de un círculo. Comenta
 - Stack Overflow (tag: claude-ai)
 
 **Cursos FPUNA**:
-- Módulo 03: [Ingeniería de Prompts](../../00-FUNDAMENTOS-PRINCIPALES/modules/03-prompt-engineering/README.md)
-- Módulo 06: [Patrones de Trabajo](../../00-FUNDAMENTOS-PRINCIPALES/modules/06-workflow-patterns/README.md)
+- Módulo 03: [Ingeniería de Prompts](../../00-FUNDAMENTOS-PRINCIPALES/03-ingenieria-prompts.md)
+- Módulo 06: [Patrones de Trabajo](../../00-FUNDAMENTOS-PRINCIPALES/06-patrones-flujo-trabajo.md)
 
 **YouTube** (canales recomendados):
 - "AI Coding Tutorials"

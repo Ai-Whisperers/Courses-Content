@@ -36,7 +36,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: OpenCode funcionando en tu computadora
 
-📚 [Ir al Módulo 01 →](./01-ai-stack-setup.md)
+📚 [Ir al Módulo 01 →](./01-configuracion-stack-ia.md)
 
 ---
 
@@ -52,7 +52,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: OpenCode configurado con 3 skills y 2 MCPs
 
-📚 [Ir al Módulo 02 →](./02-configuration-mastery.md)
+📚 [Ir al Módulo 02 →](./02-maestria-configuracion.md)
 
 ---
 
@@ -67,7 +67,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: Biblioteca de 10 prompts útiles
 
-📚 [Ir al Módulo 03 →](./03-prompt-engineering.md)
+📚 [Ir al Módulo 03 →](./03-ingenieria-prompts.md)
 
 ---
 
@@ -82,7 +82,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: Proyecto configurado con archivos de contexto
 
-📚 [Ir al Módulo 04 →](./04-context-engineering.md)
+📚 [Ir al Módulo 04 →](./04-ingenieria-contexto.md)
 
 ---
 
@@ -97,7 +97,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: Comprensión del workflow completo
 
-📚 [Ir al Módulo 05 →](./05-live-project.md)
+📚 [Ir al Módulo 05 →](./05-proyecto-en-vivo.md)
 
 ---
 
@@ -112,7 +112,7 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 **Entregable**: Guía de patrones de referencia
 
-📚 [Ir al Módulo 06 →](./06-workflow-patterns.md)
+📚 [Ir al Módulo 06 →](./06-patrones-flujo-trabajo.md)
 
 ---
 
@@ -162,17 +162,17 @@ Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y 
 
 Todos los módulos referencian componentes reutilizables:
 
-### 📦 Componentes SHARED
-- [Guía de Instalación de OpenCode](../COMPARTIDO/opencode-installation/guide.md)
-- [Configuración de MCPs](../COMPARTIDO/mcp-configuration/README.md)
-- [Sistema de Skills](../COMPARTIDO/skills-system/README.md)
-- [Hooks y Rules](../COMPARTIDO/hooks-rules/README.md)
-- [Plantillas de Proyecto](../COMPARTIDO/project-templates/README.md)
+### 📦 Componentes COMPARTIDO
+- [Guía de Instalación de OpenCode](../COMPARTIDO/instalacion-opencode/guide.md)
+- [Configuración de MCPs](../COMPARTIDO/configuracion-mcp/README.md)
+- [Sistema de Skills](../COMPARTIDO/sistema-skills/README.md)
+- [Hooks y Rules](../COMPARTIDO/hooks-reglas/README.md)
+- [Plantillas de Proyecto](../COMPARTIDO/plantillas-proyecto/README.md)
 
 ### 📚 Recursos Adicionales
-- [Biblioteca de Prompts](./shared-resources/prompt-libraries/)
-- [Plantillas de Configuración](./shared-resources/configuration-templates/)
-- [Guías de Troubleshooting](./shared-resources/troubleshooting/)
+- [Troubleshooting General](../COMPARTIDO/instalacion-opencode/troubleshooting.md)
+- [Ejemplos de Skills](../COMPARTIDO/sistema-skills/examples.md)
+- [Ejemplos de Configuración MCP](../COMPARTIDO/configuracion-mcp/config-examples.md)
 
 ---
 

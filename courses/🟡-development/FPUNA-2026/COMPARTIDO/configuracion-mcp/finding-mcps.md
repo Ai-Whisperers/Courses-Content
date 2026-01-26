@@ -411,7 +411,7 @@ Necesito un MCP que permita [funcionalidad deseada]
 
 ### Opción 2: Crear tu Propio MCP
 
-Ver guía en [Módulo 02 - Configuration Mastery](../../00-FUNDAMENTOS-PRINCIPALES/modules/02-configuration-mastery/README.md)
+Ver guía en [Módulo 02 - Maestría de Configuración](../../00-FUNDAMENTOS-PRINCIPALES/02-maestria-configuracion.md)
 
 ---
 

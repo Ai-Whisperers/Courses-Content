@@ -111,7 +111,7 @@ Master advanced prompt engineering techniques to unlock the full potential of Ch
 - Beta testing with pilot students
 
 **Documentation:**
-- [📊 Honest Status Report](./HONEST-STATUS-REPORT.md) - **READ THIS FIRST** for accurate status
+- [📊 Honest Status Report](./AUDIT-REPORTS/HONEST-STATUS-REPORT.md) - **READ THIS FIRST** for accurate status
 - [📈 Previous Reports](./AUDIT-REPORTS/) - Historical context (NOTE: Contains optimistic estimates)
 
 **Start Here:** [courses/🟡-development/FPUNA-2026/README.md](./courses/🟡-development/FPUNA-2026/README.md)

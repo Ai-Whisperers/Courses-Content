@@ -22,15 +22,19 @@ Fecha: Enero 2026
 Licencia: MIT
 """
 
+from __future__ import annotations
+
+import logging
+from datetime import datetime
+from typing import Optional
+
 import numpy as np
 import pandas as pd
+from filterpy.kalman import KalmanFilter
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
-from filterpy.kalman import KalmanFilter
-from datetime import datetime
-import warnings
 
-warnings.filterwarnings("ignore")
+logger = logging.getLogger(__name__)
 
 
 class TelemetryMonitor:
@@ -39,7 +43,7 @@ class TelemetryMonitor:
     de datos MAVLink y detecta anomalías en tiempo real.
     """
 
-    def __init__(self, anomaly_contamination=0.05):
+    def __init__(self, anomaly_contamination: float = 0.05) -> None:
         """
         Inicializa el monitor con configuración por defecto.
 
@@ -80,7 +84,7 @@ class TelemetryMonitor:
 
         print("✅ TelemetryMonitor inicializado correctamente")
 
-    def _init_kalman_filter(self):
+    def _init_kalman_filter(self) -> KalmanFilter:
         """
         Inicializa filtro de Kalman para suavizado de temperatura.
 
@@ -111,7 +115,7 @@ class TelemetryMonitor:
 
         return kf
 
-    def train_baseline(self, historical_data):
+    def train_baseline(self, historical_data: pd.DataFrame) -> None:
         """
         Entrena el modelo con datos históricos para aprender
         comportamiento 'normal' del UAV.
@@ -145,7 +149,7 @@ class TelemetryMonitor:
         print(f"   Temperatura promedio: {self.baseline_mean['motor_temp_avg']:.1f}°C")
         print(f"   Vibración promedio: {self.baseline_mean['vibration']:.3f}g")
 
-    def _extract_features(self, data):
+    def _extract_features(self, data: pd.DataFrame) -> pd.DataFrame:
         """
         Extrae features relevantes para análisis de anomalías.
 
@@ -196,7 +200,7 @@ class TelemetryMonitor:
 
         return features
 
-    def process_telemetry_frame(self, raw_data):
+    def process_telemetry_frame(self, raw_data: dict) -> dict:
         """
         Procesa un frame de telemetría y genera indicadores simplificados.
 
@@ -253,7 +257,7 @@ class TelemetryMonitor:
 
         return simplified
 
-    def _calculate_propulsion_health(self, features):
+    def _calculate_propulsion_health(self, features: dict) -> float:
         """
         Calcula score de salud (0-100) del sistema de propulsión.
 
@@ -298,7 +302,7 @@ class TelemetryMonitor:
         # Limitar a rango [0, 100]
         return max(0, min(100, health))
 
-    def _predict_endurance(self, raw_data):
+    def _predict_endurance(self, raw_data: dict) -> float:
         """
         Predice autonomía restante en minutos usando modelo simple.
 
@@ -335,7 +339,7 @@ class TelemetryMonitor:
 
         return time_min
 
-    def _check_anomalies(self, features, raw_data):
+    def _check_anomalies(self, features: dict, raw_data: dict) -> tuple[str, str]:
         """
         Detecta anomalías usando reglas + ML.
 
@@ -411,7 +415,7 @@ class TelemetryMonitor:
 
         return max_severity, message
 
-    def apply_kalman_filter(self, noisy_temp):
+    def apply_kalman_filter(self, noisy_temp: float) -> float:
         """
         Aplica filtro de Kalman para suavizar lectura de temperatura.
 
@@ -435,7 +439,9 @@ class TelemetryMonitor:
 # =============================================================================
 
 
-def simulate_mavlink_data(seconds=600, failure_at_sec=None):
+def simulate_mavlink_data(
+    seconds: int = 600, failure_at_sec: Optional[int] = None
+) -> pd.DataFrame:
     """
     Genera datos MAVLink simulados para testing.
 

@@ -316,13 +316,13 @@ TALLERES-VERANO-2026/
 ### Para Instructores
 
 1. ✅ **Revisar todos los lesson plans** en [`lesson-plans/`](./lesson-plans/)
-2. ✅ **Practicar live demos** usando [`presenter-notes/LIVE-DEMO-SCRIPTS.md`](./presenter-notes/LIVE-DEMO-SCRIPTS.md)
+2. ✅ **Practicar live demos** (ver lesson plans para scripts de demostración)
 3. ✅ **Preparar entorno técnico** (OpenCode, screen sharing setup)
-4. ✅ **Leer FAQ** en [`presenter-notes/FAQ-TROUBLESHOOTING.md`](./presenter-notes/FAQ-TROUBLESHOOTING.md)
+4. ✅ **Leer FAQ** en [`presenter-notes/QUICK-REFERENCE.md`](./presenter-notes/QUICK-REFERENCE.md)
 
 ### Para Estudiantes
 
-1. ✅ **Instalar herramientas** siguiendo [`resources/INSTALLATION-GUIDE.md`](./resources/INSTALLATION-GUIDE.md)
+1. ✅ **Instalar herramientas** siguiendo [`resources/OPENCODE-INSTALLATION-GUIDE.md`](./resources/OPENCODE-INSTALLATION-GUIDE.md)
 2. ✅ **Asistir a todas las clases** (18:00-20:00)
 3. ✅ **Completar ejercicios** durante y después de clase
 4. ✅ **Preparar proyecto/idea** para Clase 6

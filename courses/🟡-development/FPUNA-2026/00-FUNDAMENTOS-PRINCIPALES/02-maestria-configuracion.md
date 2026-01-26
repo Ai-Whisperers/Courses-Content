@@ -1251,13 +1251,13 @@ echo $GITHUB_TOKEN       # Mac
 
 Para profundizar:
 
-- 📖 [Guía Completa de MCPs](../../COMPARTIDO/mcp-configuration/README.md)
-- 📖 [Encontrar Más MCPs](../../COMPARTIDO/mcp-configuration/finding-mcps.md)
-- 📖 [Configurar MCPs Avanzados](../../COMPARTIDO/mcp-configuration/advanced-config.md)
-- 📖 [Sistema de Skills](../../COMPARTIDO/skills-system/README.md)
-- 📖 [Crear Skills Personalizados](../../COMPARTIDO/skills-system/creating-skills.md)
-- 📖 [Hooks y Rules](../../COMPARTIDO/hooks-rules/README.md)
-- 📖 [Ejemplos de Configuración](../../COMPARTIDO/components/configuration-examples.md)
+- 📖 [Guía Completa de MCPs](../COMPARTIDO/configuracion-mcp/README.md)
+- 📖 [Encontrar Más MCPs](../COMPARTIDO/configuracion-mcp/finding-mcps.md)
+- 📖 [Configurar MCPs Avanzados](../COMPARTIDO/configuracion-mcp/advanced-config.md)
+- 📖 [Sistema de Skills](../COMPARTIDO/sistema-skills/README.md)
+- 📖 [Crear Skills Personalizados](../COMPARTIDO/sistema-skills/creating-skills.md)
+- 📖 [Hooks y Rules](../COMPARTIDO/hooks-reglas/README.md)
+- 📖 [Ejemplos de Configuración](../COMPARTIDO/components/configuration-examples.md)
 
 ### Videos y Tutoriales
 
