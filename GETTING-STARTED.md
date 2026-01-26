@@ -6,13 +6,13 @@ Welcome! This guide helps you set up and start learning.
 
 ## Step 1: Choose Your Course
 
-| Course | Best For | Start Here |
-|--------|----------|------------|
-| [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) | QA engineers wanting to automate with AI | Production-ready, start immediately |
-| [FPUNA 2026](./courses/02-development/FPUNA-2026/) | University students (Spanish) | In development, usable now |
-| [Prompt Engineering](./courses/03-beta/Prompt-Engineering-Masterclass/) | Anyone wanting better AI interactions | Beta, content complete |
-| [Building AI Apps](./courses/03-beta/Building-AI-Powered-Applications/) | Developers building AI applications | Beta, ~50% complete |
-| [AI Tools for Productivity](./courses/03-beta/AI-Tools-for-Productivity/) | Professionals using AI daily | Beta, ~40% complete |
+| Course | Best For | Setup Guide |
+|--------|----------|-------------|
+| [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) | QA engineers | [SETUP.md](./courses/01-production/QA-Automation-with-AI/SETUP.md) |
+| [FPUNA 2026](./courses/02-development/FPUNA-2026/) | University students (Spanish) | [starter-kit](./courses/02-development/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES/starter-kit/) |
+| [Prompt Engineering](./courses/03-beta/Prompt-Engineering-Masterclass/) | Anyone wanting better AI | [SETUP.md](./courses/03-beta/Prompt-Engineering-Masterclass/SETUP.md) |
+| [Building AI Apps](./courses/03-beta/Building-AI-Powered-Applications/) | Developers | [SETUP.md](./courses/03-beta/Building-AI-Powered-Applications/SETUP.md) |
+| [AI Tools for Productivity](./courses/03-beta/AI-Tools-for-Productivity/) | Professionals | [SETUP.md](./courses/03-beta/AI-Tools-for-Productivity/SETUP.md) |
 
 **Recommended first course:** [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) - it's complete and tested.
 
@@ -153,6 +153,12 @@ A: Not recommended. Modules build on previous ones.
 
 **Q: What if I get stuck?**  
 A: Open an issue or discussion. Include what you tried.
+
+---
+
+## AI-Assisted Setup
+
+Want an AI to set up everything for you? See [Setup Prompts](./_shared/setup/SETUP-PROMPTS.md) for copy-paste prompts that automate environment setup.
 
 ---
 
