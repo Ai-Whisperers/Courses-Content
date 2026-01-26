@@ -143,12 +143,58 @@ Run through this checklist:
 
 ---
 
+## Your First Win (3 minutes)
+
+Before moving on, let's prove the power of structured prompts:
+
+### The Magic of Specificity
+
+**Bad prompt (try this first):**
+```
+Write me an email.
+```
+
+**Good prompt (try this second):**
+```
+Write a professional email to my manager requesting time off.
+
+Context: I need 3 days off next month (March 15-17) for a family wedding.
+Tone: Professional but warm
+Key points: 
+- I've already arranged coverage with my colleague Sarah
+- All my deliverables will be completed before I leave
+- I'll be reachable by phone for emergencies
+
+Length: Under 100 words
+```
+
+### Try It Now
+
+1. Open Claude.ai or ChatGPT
+2. Paste the bad prompt → Notice the generic, useless output
+3. Paste the good prompt → Notice the specific, usable output
+
+**That's the difference structured prompting makes.**
+
+### What You Just Learned
+
+The second prompt works because it includes:
+- **Context** (what's the situation?)
+- **Tone** (how should it sound?)
+- **Key points** (what must be included?)
+- **Constraints** (length, format)
+
+This is the STAR framework you'll master in this course.
+
+**Save both prompts and outputs to your prompt library. Your journey begins now.**
+
+---
+
 ## Next Steps
 
-1. Open `modules/01-how-llms-work/README.md`
-2. Read the lesson content
-3. Complete the module exercises
-4. Save effective prompts to your library
+1. **Read** [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - Learning strategies for this course
+2. **Open** `modules/01-how-llms-work/README.md` - Start Module 1
+3. **Start** your prompt library with today's experiment
 
 ---
 

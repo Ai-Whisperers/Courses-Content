@@ -129,13 +129,58 @@ npx playwright install --with-deps
 
 ---
 
+## Your First Win (5 minutes)
+
+Before moving on, let's prove everything works with a real test:
+
+### Create Your First Test
+
+1. Create a file called `first-win.spec.js`:
+
+```javascript
+const { test, expect } = require('@playwright/test');
+
+test('my first AI-assisted test', async ({ page }) => {
+  // Navigate to a real website
+  await page.goto('https://example.com');
+  
+  // Verify the page loaded
+  await expect(page).toHaveTitle(/Example Domain/);
+  
+  // Check for expected content
+  const heading = page.locator('h1');
+  await expect(heading).toHaveText('Example Domain');
+  
+  console.log('Your first test passed!');
+});
+```
+
+2. Run it:
+
+```bash
+npx playwright test first-win.spec.js
+```
+
+3. **See the green checkmark?** That's your first automated test!
+
+### What Just Happened
+
+You just:
+- Automated a browser to open a real website
+- Verified the page title and content
+- Created a repeatable test that runs in seconds
+
+This is the foundation of everything you'll learn in this course.
+
+**Screenshot it. Share it. You're a QA Automation Engineer now.**
+
+---
+
 ## Next Steps
 
-Once setup is complete:
-
-1. Open `modules/01-introduction/README.md`
-2. Complete the first exercise
-3. Start building your first test
+1. **Read** [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - Learning strategies for this course
+2. **Open** `modules/01-introduction/README.md` - Start Module 1
+3. **Build** on your first test - Add more assertions!
 
 ---
 

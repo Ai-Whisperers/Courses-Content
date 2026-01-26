@@ -194,12 +194,73 @@ You've hit API limits. Wait a minute and try again, or check your usage at platf
 
 ---
 
+## Your First Win (5 minutes)
+
+Before moving on, let's build something real:
+
+### Create Your First AI Function
+
+Create a file called `first_win.py`:
+
+```python
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
+client = OpenAI()
+
+def ask_ai(question: str) -> str:
+    """Your first AI-powered function!"""
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant. Be concise."},
+            {"role": "user", "content": question}
+        ],
+        max_tokens=150
+    )
+    return response.choices[0].message.content
+
+# Test it!
+if __name__ == "__main__":
+    questions = [
+        "What is Python?",
+        "Explain APIs in one sentence.",
+        "Why is error handling important?"
+    ]
+    
+    for q in questions:
+        print(f"\nQ: {q}")
+        print(f"A: {ask_ai(q)}")
+    
+    print("\n🎉 Your first AI app works!")
+```
+
+Run it:
+```bash
+python first_win.py
+```
+
+### What You Just Built
+
+You just created:
+- A reusable function that calls OpenAI's API
+- Proper error handling with environment variables
+- A system prompt that shapes AI behavior
+- A working foundation for everything in this course
+
+**This 20-line function is the seed of every AI application you'll build.**
+
+Cost of this test: ~$0.001 (fraction of a cent)
+
+---
+
 ## Next Steps
 
-1. Verify `test_setup.py` runs successfully
-2. Open `modules/01-ai-integration-fundamentals/README.md`
-3. Complete the first exercises
-4. Build your first AI-powered endpoint
+1. **Read** [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - Learning strategies for this course
+2. **Open** `modules/01-ai-integration-fundamentals/README.md` - Start Module 1
+3. **Extend** your first function - Try different system prompts!
 
 ---
 

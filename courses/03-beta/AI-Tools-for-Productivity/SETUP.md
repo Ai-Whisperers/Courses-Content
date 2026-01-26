@@ -205,12 +205,64 @@ Checklist:
 
 ---
 
+## Your First Win (5 minutes)
+
+Before moving on, let's save you time RIGHT NOW:
+
+### Draft Your Next Email with AI
+
+Think of an email you need to write today. Then use this prompt:
+
+```
+Write a professional email for this situation:
+
+Context: [DESCRIBE YOUR SITUATION IN 1-2 SENTENCES]
+
+Recipient: [WHO IS THIS TO? E.g., "my manager", "a client", "a colleague"]
+
+Goal: [WHAT DO YOU WANT TO HAPPEN? E.g., "schedule a meeting", "request information", "follow up on a project"]
+
+Tone: [professional / friendly / formal / casual]
+
+Key points to include:
+1. [FIRST THING YOU NEED TO SAY]
+2. [SECOND THING]
+3. [THIRD THING - optional]
+
+Length: Under 150 words
+```
+
+### Try It Now
+
+1. Open Claude.ai or ChatGPT
+2. Fill in the template above with YOUR real email
+3. Generate the draft
+4. Copy it to your email client
+5. Edit as needed and send
+
+### Measure Your Win
+
+**Without AI:** Writing that email would take ~10-15 minutes
+**With AI:** Took ~3 minutes (including edits)
+**Time saved:** ~10 minutes
+
+**Log this in your tracker.** Your first productivity win is in the books.
+
+### What You Just Learned
+
+- AI doesn't replace your judgment—it accelerates your output
+- Good prompts need context, goal, tone, and constraints
+- The editing step is crucial—AI drafts, you polish
+
+**You just saved 10 minutes. Imagine doing this 10 times a day.**
+
+---
+
 ## Next Steps
 
-1. Open `modules/01-ai-fundamentals/README.md`
-2. Complete the first exercises
-3. Apply learnings to a real work task
-4. Track time saved
+1. **Read** [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - Learning strategies for this course
+2. **Open** `modules/01-ai-fundamentals/README.md` - Start Module 1
+3. **Track** every email you draft with AI this week
 
 ---
 

@@ -49,7 +49,13 @@ QA-Automation-with-AI/
 
 ## Quick Start
 
+### 0. Read the Learning Guide First
+
+**New to this course?** Start with [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - it takes 10 minutes and will save you hours.
+
 ### 1. Set Up Your Environment
+
+See [SETUP.md](./SETUP.md) for detailed setup instructions, or quick start:
 
 ```bash
 # Install required tools

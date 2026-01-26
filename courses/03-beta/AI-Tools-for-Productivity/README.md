@@ -69,7 +69,13 @@ By completing this course, you will be able to:
 
 ## Quick Start
 
+### 0. Read the Learning Guide First
+
+**New to this course?** Start with [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - it takes 10 minutes and will save you hours.
+
 ### 1. Set Up Your AI Toolkit
+
+See [SETUP.md](./SETUP.md) for detailed setup, or quick start:
 
 - Create a Claude.ai account (free tier available)
 - Create a ChatGPT account (free tier available)

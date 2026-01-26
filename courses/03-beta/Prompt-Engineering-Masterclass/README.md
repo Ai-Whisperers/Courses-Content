@@ -68,7 +68,13 @@ By completing this course, you will be able to:
 
 ## Quick Start
 
+### 0. Read the Learning Guide First
+
+**New to this course?** Start with [HOW-TO-LEARN.md](./HOW-TO-LEARN.md) - it takes 10 minutes and will save you hours.
+
 ### 1. Set Up Your AI Accounts
+
+See [SETUP.md](./SETUP.md) for detailed setup, or quick start:
 
 - Claude.ai account (Pro recommended for comparison)
 - ChatGPT account (Plus recommended for comparison)
