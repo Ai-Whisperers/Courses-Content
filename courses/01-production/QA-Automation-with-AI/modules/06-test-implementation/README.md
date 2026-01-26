@@ -451,6 +451,57 @@ Proceed to **Module 7: Test Validation and Quality Assurance** to review and imp
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when implementing tests with AI:
+
+### 1. Not Running Generated Tests
+**Wrong**: AI generates tests, you commit them without running.
+**Why it fails**: AI can generate syntactically correct tests that fail on execution—wrong imports, missing mocks, incorrect assertions.
+**Correct**: Run every test before committing. If it fails, fix it or delete it. Green tests only.
+
+### 2. Testing Implementation, Not Behavior
+**Wrong**: Tests that verify internal method calls rather than outcomes.
+**Why it fails**: When you refactor, all your tests break even though the behavior is unchanged. Tests become maintenance burden.
+**Correct**: Test what the function returns or does, not how it does it. "Given X, expect Y" - not "expect method A called before method B."
+
+### 3. Insufficient Mocking
+**Wrong**: Unit tests that hit real databases, APIs, or file systems.
+**Why it fails**: Tests become slow, flaky, and environment-dependent. They fail on CI because the database isn't there.
+**Correct**: Mock all external dependencies in unit tests. Real dependencies only in integration tests with proper setup.
+
+### 4. Over-Mocking
+**Wrong**: Mocking everything including the code you're testing.
+**Why it fails**: You're testing your mocks, not your code. Tests pass but code is broken.
+**Correct**: Mock dependencies, not the unit under test. If you're mocking 10 things, you might be testing at the wrong level.
+
+### 5. Copy-Paste Test Duplication
+**Wrong**: Same test repeated with minor variations, 50 lines each.
+**Why it fails**: Maintenance nightmare. Change the function signature, update 20 tests manually.
+**Correct**: Use parameterized tests for variations. Use factories for test data. DRY applies to tests too.
+
+### 6. No Assertions or Weak Assertions
+**Wrong**: `expect(result).toBeTruthy()` when result should be specific object.
+**Why it fails**: Test passes when it shouldn't. Bugs slip through because assertions are too weak.
+**Correct**: Be specific: `expect(result).toEqual({ id: 1, name: 'Test' })`. If the structure matters, assert the structure.
+
+### 7. Ignoring Test Failure Messages
+**Wrong**: Test fails, you change random things until it passes.
+**Why it fails**: Shotgun debugging doesn't teach you anything. You might "fix" the test by breaking the test.
+**Correct**: Read the error message. Understand why it failed. Fix the root cause. Ask AI to explain if needed.
+
+### 8. No Test Cleanup
+**Wrong**: Integration tests that create data but don't clean up.
+**Why it fails**: Tests pollute each other. Test order matters. Tests pass individually but fail together.
+**Correct**: Clean up in `afterEach`. Use transactions that rollback. Start each test with known state.
+
+### 9. Flaky Tests Accepted
+**Wrong**: "Oh that test fails sometimes, just re-run CI."
+**Why it fails**: Flaky tests erode trust. Eventually nobody believes test failures. Real bugs get ignored.
+**Correct**: Fix or delete flaky tests immediately. No exceptions. Flakiness is a bug.
+
+---
+
 ## Module Progress
 
 Track your completion:

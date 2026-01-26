@@ -310,6 +310,52 @@ You are now an **AI-Augmented QA Automation Engineer**!
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors during your final project:
+
+### 1. Starting Without a Plan
+**Wrong**: Diving straight into writing tests without reading the codebase.
+**Why it fails**: You'll write tests for the wrong things, miss critical paths, and waste time on low-value areas.
+**Correct**: Spend Day 1-2 on setup and understanding. Create CLAUDE.md. Generate documentation. THEN plan tests.
+
+### 2. Trying to Test Everything
+**Wrong**: "I'll achieve 100% coverage on the entire codebase."
+**Why it fails**: Not all code is equally important. You'll run out of time before covering critical paths.
+**Correct**: Prioritize ruthlessly. Test critical paths first (auth, payments, data handling). P0 tests before P3 tests.
+
+### 3. Perfect Documentation Before Any Tests
+**Wrong**: Spending a week on documentation before writing a single test.
+**Why it fails**: Documentation is supporting material. Tests are the deliverable. Perfectionism on docs = no tests.
+**Correct**: Documentation should be "good enough" in a day. Move to test planning quickly. Refine docs later if time permits.
+
+### 4. Not Running Tests Until the End
+**Wrong**: Writing 30 tests, then running them all at once in Week 3.
+**Why it fails**: You discover 25 of them fail. No time to debug. Panic.
+**Correct**: Run tests as you write them. Green tests only at every checkpoint. Never accumulate untested code.
+
+### 5. Ignoring the Rubric
+**Wrong**: Focusing on cool features instead of rubric requirements.
+**Why it fails**: Grading follows the rubric. If rubric says "15 unit tests" and you wrote 5 amazing E2E tests, you still lose points.
+**Correct**: Read the rubric carefully. Check off each requirement. Cool extras come AFTER requirements are met.
+
+### 6. Working Alone When Stuck
+**Wrong**: Spending 4 hours debugging something you don't understand.
+**Why it fails**: Wastes time you don't have. Frustration kills motivation.
+**Correct**: If stuck for 30+ minutes, ask for help. Use the forum. Ask Claude to explain. Fresh eyes solve problems faster.
+
+### 7. Last-Minute CI Setup
+**Wrong**: Adding GitHub Actions workflow on the final day.
+**Why it fails**: CI setup always has surprises. Environment differences, missing dependencies, flaky tests. No buffer time.
+**Correct**: Set up CI in Week 1. Push to it regularly. Fix issues early when you have time.
+
+### 8. Skipping the Presentation Prep
+**Wrong**: "I'll record a video the night before."
+**Why it fails**: Recordings need multiple takes. Tech issues happen. You forget key points when rushed.
+**Correct**: Draft presentation outline early. Record with 2+ days buffer. Review and re-record if needed.
+
+---
+
 ## Module Progress
 
 Track your completion:

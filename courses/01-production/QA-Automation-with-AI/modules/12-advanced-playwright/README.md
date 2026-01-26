@@ -357,6 +357,57 @@ test.describe('Shopping cart', () => {
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors with advanced Playwright techniques:
+
+### 1. Over-Mocking Everything
+**Wrong**: Mocking every API call in E2E tests.
+**Why it fails**: You're not testing real integration anymore. The frontend might work with mocks but fail with real backend.
+**Correct**: Mock strategically. Mock third-party APIs (payments, email). Let your own backend run real for E2E.
+
+### 2. Forgetting to Remove Test Mocks
+**Wrong**: `page.route()` set up in one test affects subsequent tests.
+**Why it fails**: Tests become order-dependent. Test A passes alone, fails after Test B.
+**Correct**: Use `page.unroute()` or set up mocks in `beforeEach` with fresh page context for each test.
+
+### 3. Storage State With Expired Sessions
+**Wrong**: Auth setup saves state, but session expires after 1 hour. Tests fail at 2am.
+**Why it fails**: Storage state doesn't refresh tokens. Long-running test suites fail mysteriously.
+**Correct**: Re-run auth setup before each test run. Or use tokens with long expiry for test environment.
+
+### 4. Visual Tests Without Masking Dynamic Content
+**Wrong**: Screenshot test captures page with timestamps, random IDs, or ads.
+**Why it fails**: Every run produces different screenshots. Visual tests always fail or always need updating.
+**Correct**: Mask all dynamic content: timestamps, user-specific data, ads, animations. Compare only stable UI elements.
+
+### 5. Using CSS Selectors Instead of Role/Label
+**Wrong**: `page.locator('.btn-primary.submit-form')`.
+**Why it fails**: CSS classes change during refactoring. Tests break when UI looks identical.
+**Correct**: `page.getByRole('button', { name: 'Submit' })`. Semantic selectors survive refactoring.
+
+### 6. Fixed Timeouts Instead of Waiting for Conditions
+**Wrong**: `await page.waitForTimeout(5000)` hoping the element loads.
+**Why it fails**: Flaky. Sometimes 5 seconds isn't enough. Sometimes it's 4 seconds of wasted time.
+**Correct**: `await expect(page.getByText('Loaded')).toBeVisible()`. Wait for the specific condition you need.
+
+### 7. Not Handling Dialogs/Popups
+**Wrong**: Test clicks delete button, browser shows confirm dialog, test hangs.
+**Why it fails**: Native dialogs block Playwright until handled. Test times out.
+**Correct**: Set up dialog handler BEFORE triggering the action: `page.on('dialog', d => d.accept())`.
+
+### 8. Parallel Tests Sharing State
+**Wrong**: 4 parallel workers, all testing the same user account.
+**Why it fails**: Worker A creates order, Worker B deletes it, Worker A's assertions fail.
+**Correct**: Each parallel worker should have isolated test data. Use unique users, unique records. No shared mutable state.
+
+### 9. Ignoring Accessibility in Selectors
+**Wrong**: `page.locator('#btn-123')` - works but meaningless.
+**Why it fails**: IDs are implementation details. If your selectors fail when a screen reader would succeed, you're doing it wrong.
+**Correct**: If users can find it by role/label, so should your tests. `getByRole`, `getByLabel`, `getByPlaceholder`.
+
+---
+
 ## Module Progress
 
 Track your completion:

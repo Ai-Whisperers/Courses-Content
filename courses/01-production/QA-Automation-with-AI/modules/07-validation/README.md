@@ -368,6 +368,47 @@ Proceed to **Module 8: Applying Agentic Patterns to Testing** to level up your A
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when validating test quality:
+
+### 1. Skipping Review Because Tests Pass
+**Wrong**: "All tests are green, we're good!"
+**Why it fails**: Passing tests don't mean good tests. A test that asserts nothing always passes. Weak assertions pass but don't catch bugs.
+**Correct**: Review test quality independently of pass/fail status. Ask: "Would this test fail if the code were broken?"
+
+### 2. Trusting Coverage Numbers Blindly
+**Wrong**: "We have 90% coverage, our testing is complete."
+**Why it fails**: Coverage measures execution, not quality. You can execute every line without asserting anything meaningful.
+**Correct**: Use coverage to find gaps, but verify that covered code has meaningful assertions. Mutation testing reveals the truth.
+
+### 3. Ignoring Mutation Testing Results
+**Wrong**: "Mutation testing is too slow/complex, we'll skip it."
+**Why it fails**: Mutation testing is the only way to know if your tests actually detect bugs. Without it, you're guessing.
+**Correct**: Run mutation testing at least on critical modules. If mutants survive (tests don't catch them), your tests need strengthening.
+
+### 4. Fixing Tests by Weakening Assertions
+**Wrong**: Test fails, so you change `expect(result).toBe(5)` to `expect(result).toBeDefined()`.
+**Why it fails**: You've hidden the bug instead of fixing it. The test passes but the code is still broken.
+**Correct**: When a test fails, investigate. Is the test wrong or the code? Fix the actual problem, not the symptom.
+
+### 5. Not Reviewing AI-Generated Tests
+**Wrong**: AI generated 50 tests, they all pass, ship it.
+**Why it fails**: AI tests often have weak assertions, miss edge cases, or test implementation details. They look complete but aren't.
+**Correct**: Review every AI-generated test. Check: meaningful assertions? Edge cases? Proper isolation? No redundancy?
+
+### 6. Over-Relying on Happy Path Tests
+**Wrong**: "We test that login works. That's enough."
+**Why it fails**: Happy paths usually work because developers test them manually. Bugs hide in error paths, edge cases, and unexpected inputs.
+**Correct**: For every happy path test, add 3+ negative tests: wrong password, missing fields, expired session, network failure.
+
+### 7. Not Fixing Flaky Tests Immediately
+**Wrong**: "That test fails sometimes, just re-run CI."
+**Why it fails**: Flaky tests destroy trust. Eventually the team ignores all test failures. Real bugs slip through.
+**Correct**: Treat flakiness as a critical bug. Fix or delete flaky tests immediately. Zero tolerance.
+
+---
+
 ## Module Progress
 
 Track your completion:

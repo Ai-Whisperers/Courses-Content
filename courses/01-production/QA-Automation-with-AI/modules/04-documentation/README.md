@@ -397,6 +397,47 @@ Proceed to **Module 5: Creating Test Plans with AI** to learn systematic test pl
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when generating documentation with AI:
+
+### 1. Publishing Without Verification
+**Wrong**: AI generates ARCHITECTURE.md, you commit it directly without reading.
+**Why it fails**: AI makes assumptions. It might describe components that don't exist, miss critical services, or get relationships wrong.
+**Correct**: Treat AI docs as a first draft. Verify every claim against the actual codebase. Test the Mermaid diagrams render correctly.
+
+### 2. Outdated Documentation
+**Wrong**: Generating docs once and never updating them.
+**Why it fails**: Code changes, docs don't. Within weeks, your beautiful architecture doc describes a system that no longer exists.
+**Correct**: Regenerate docs when architecture changes. Add "Last updated" dates. Include doc updates in your PR checklist.
+
+### 3. Copy-Paste API Examples Without Testing
+**Wrong**: AI generates curl examples, you include them in docs without running them.
+**Why it fails**: The endpoints might be wrong, authentication might be missing, request bodies might have incorrect fields.
+**Correct**: Actually run every curl example. Verify responses match what you documented.
+
+### 4. Too Much Detail
+**Wrong**: 50-page architecture doc covering every utility function.
+**Why it fails**: Nobody reads it. The important information is buried in noise. Maintenance becomes impossible.
+**Correct**: Layer your documentation. High-level overview for everyone, detailed specs only where needed. Link to code for details.
+
+### 5. No Examples
+**Wrong**: API docs that describe endpoints but don't show how to call them.
+**Why it fails**: Developers learn by example. Abstract descriptions don't stick.
+**Correct**: Every API endpoint needs at least one working curl/code example. Every config section needs sample values.
+
+### 6. Mermaid Diagrams That Don't Render
+**Wrong**: Fancy Mermaid diagrams that look great in AI output but break in GitHub/GitLab.
+**Why it fails**: Different Mermaid versions have different syntax. Not all features work everywhere.
+**Correct**: Preview diagrams in your actual platform. Keep them simple. Test that they render after commit.
+
+### 7. Setup Guide That Only Works on Your Machine
+**Wrong**: "Just run `npm start`" when there are 15 environment variables to configure.
+**Why it fails**: New developers spend hours debugging setup. They blame themselves when the docs are the problem.
+**Correct**: Follow your own setup guide on a fresh machine (or have a new team member try it). Document every gotcha you hit.
+
+---
+
 ## Module Progress
 
 Track your completion:

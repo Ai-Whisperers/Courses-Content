@@ -420,6 +420,47 @@ Proceed to **Module 2: Context Engineering** to learn how to provide effective c
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when getting started with AI coding assistants:
+
+### 1. Blindly Trusting AI Output
+**Wrong**: Copying AI-generated code directly into production without review.
+**Why it fails**: AI can hallucinate APIs, miss edge cases, or generate insecure code. The `fetch().json()` missing `await` example is just one of many subtle bugs AI introduces.
+**Correct**: Always review, test, and understand AI-generated code before using it. Treat AI as a junior developer whose work needs code review.
+
+### 2. Not Installing Properly Before Starting
+**Wrong**: Skipping installation verification and jumping into exercises.
+**Why it fails**: Half the frustration in this module comes from environment issues, not AI concepts. Students waste hours debugging prompts when Claude isn't even installed correctly.
+**Correct**: Run `claude --version` and confirm authentication works BEFORE attempting any exercises.
+
+### 3. Using AI for Everything
+**Wrong**: "Claude, write my entire authentication system."
+**Why it fails**: AI excels at specific, bounded tasks. Large requests produce generic, often unusable code. You also don't learn the fundamentals.
+**Correct**: Break work into small tasks: "Generate tests for this one function", "Explain this error message", "Refactor this 20-line method."
+
+### 4. Giving Up After One Bad Response
+**Wrong**: "AI gave me wrong code, this tool is useless."
+**Why it fails**: AI is conversational. The first response is a starting point, not the final answer.
+**Correct**: Iterate! Say "That's not quite right because [reason]. Try again with [constraint]." Good prompting is a skill you build.
+
+### 5. Not Providing Context
+**Wrong**: "Write a test for login."
+**Why it fails**: Which framework? What does login look like? What should pass/fail? AI has to guess everything.
+**Correct**: "Write a Jest test for this login function [paste code]. Test successful login and invalid credentials. Use our UserFactory for test data."
+
+### 6. Expecting Real-Time Knowledge
+**Wrong**: "What's the latest version of React?" or "Check if this API endpoint is working."
+**Why it fails**: AI has a knowledge cutoff and cannot access the internet or execute code in real-time.
+**Correct**: Use AI for logic and patterns, use actual tools (npm, curl, browser) for real-time information.
+
+### 7. Confusing Claude Code with ChatGPT
+**Wrong**: Treating Claude Code like a chatbot without file system access.
+**Why it fails**: Claude Code's power is its tool integration—reading files, running commands, editing code. Using it as a chat interface wastes its capabilities.
+**Correct**: Let Claude read your actual files: "Read src/auth.js and suggest improvements" rather than pasting code manually.
+
+---
+
 ## Module Progress
 
 Track your completion:

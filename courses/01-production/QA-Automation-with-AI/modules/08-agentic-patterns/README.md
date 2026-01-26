@@ -428,6 +428,52 @@ Proceed to **Module 9: CI/CD Integration** to automate your testing pipeline.
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when applying agentic patterns:
+
+### 1. Over-Engineering Simple Tasks
+**Wrong**: Building a 5-step prompt chain for "write a test for this function."
+**Why it fails**: Not every task needs complex patterns. Simple tasks with complex workflows waste time and add failure points.
+**Correct**: Use patterns when complexity warrants them. Single function? Single prompt. Entire module? Chain prompts.
+
+### 2. Breaking Chains on Failure
+**Wrong**: Step 2 fails, so you restart the entire chain from Step 1.
+**Why it fails**: Wastes time redoing work. You lose context from previous steps.
+**Correct**: Debug the failing step. Fix it. Continue from there. Chain steps should be independently resumable.
+
+### 3. Infinite Reflection Loops
+**Wrong**: Reflection loop runs 10+ iterations trying to achieve perfect score.
+**Why it fails**: Diminishing returns after 2-3 iterations. AI starts making arbitrary changes to hit the score.
+**Correct**: Set a maximum iteration limit (3-5). Accept "good enough" (8+/10 score). Perfect is the enemy of done.
+
+### 4. RAG Without Quality Control
+**Wrong**: Dumping entire test codebase into knowledge base without curation.
+**Why it fails**: Garbage in, garbage out. If your knowledge base includes bad patterns, AI will reproduce them.
+**Correct**: Curate knowledge base carefully. Include only good examples. Tag patterns with quality notes.
+
+### 5. Parallelizing Dependent Tasks
+**Wrong**: "Generate tests for Module A and Module B in parallel" when B depends on A's types.
+**Why it fails**: Parallel tasks produce inconsistent results. Module B might define different types than Module A.
+**Correct**: Identify dependencies before parallelizing. Only parallelize truly independent modules.
+
+### 6. Not Normalizing Parallel Results
+**Wrong**: Merge parallel test outputs directly without review.
+**Why it fails**: Different prompts produce different styles. You end up with inconsistent naming, duplicate tests, conflicting fixtures.
+**Correct**: Always run a normalization step after parallel generation. Unify style, remove duplicates, extract shared code.
+
+### 7. Skipping the Validation Step
+**Wrong**: Chain: Analyze → Plan → Implement → Done!
+**Why it fails**: No quality check. You've generated tests but don't know if they're good.
+**Correct**: Always include validation as the final chain step. Review generated tests against quality criteria before accepting.
+
+### 8. Using Patterns You Don't Understand
+**Wrong**: "I'll use RAG because it sounds advanced" without understanding what it does.
+**Why it fails**: Misapplied patterns make things worse. You add complexity without benefit.
+**Correct**: Understand each pattern's purpose. Use it only when the use case matches. Start simple, add complexity only when needed.
+
+---
+
 ## Module Progress
 
 Track your completion:

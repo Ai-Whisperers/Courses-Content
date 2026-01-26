@@ -569,6 +569,52 @@ Proceed to **Module 3: Accessing Private Repositories** to learn how to use AI w
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when working with context and prompts:
+
+### 1. Writing a Novel in CLAUDE.md
+**Wrong**: A 500-line CLAUDE.md with every possible detail about the project.
+**Why it fails**: AI has finite context. Overwhelming it with information means important details get lost. You're also wasting tokens on rarely-needed info.
+**Correct**: Keep CLAUDE.md concise (50-150 lines). Focus on conventions, patterns, and current focus. Add details only when needed per-session.
+
+### 2. No CLAUDE.md at All
+**Wrong**: Starting every session by re-explaining your project structure and conventions.
+**Why it fails**: Wastes time, inconsistent context, AI makes different assumptions each session.
+**Correct**: Invest 15 minutes creating a basic CLAUDE.md. It pays for itself in the first week.
+
+### 3. One Giant Prompt
+**Wrong**: "Generate a complete test suite for the entire user module including unit tests, integration tests, E2E tests, mocking, fixtures, and coverage reports."
+**Why it fails**: AI loses focus on complex prompts. Output is generic and often unusable.
+**Correct**: Break into steps: "First, list all functions in the user module. Now, generate unit tests for createUser. Now add tests for updateUser."
+
+### 4. Copy-Pasting Code Instead of Referencing Files
+**Wrong**: Manually copying 200 lines of code into your prompt.
+**Why it fails**: Claude Code can read files directly. Manual copying wastes time, introduces errors, and misses related context.
+**Correct**: "Read src/services/user.ts and generate tests for the createUser function."
+
+### 5. Vague Prompts with No Examples
+**Wrong**: "Write good tests."
+**Why it fails**: "Good" means different things. Without examples, AI guesses your style preferences.
+**Correct**: "Write tests following this pattern: [include one example test]. Use describe blocks, AAA pattern, and our TestFactory."
+
+### 6. Not Iterating
+**Wrong**: Accepting the first response even when it's not quite right.
+**Why it fails**: AI improves dramatically with feedback. The first response is a draft, not a final answer.
+**Correct**: "Good, but change X. Also add Y. Remove the Z part." Three iterations usually beats one long prompt.
+
+### 7. Forgetting Session Context
+**Wrong**: Repeating all context in every prompt within the same session.
+**Why it fails**: Wastes tokens and can confuse AI with slightly different phrasings.
+**Correct**: After initial context is established, just reference it: "Using the same conventions, now test deleteUser."
+
+### 8. Overconstraining Format
+**Wrong**: "Output exactly in this format: line 1 must be X, line 2 must be Y, each test must have exactly 5 assertions..."
+**Why it fails**: Over-specification leads to awkward, unnatural output that follows the letter but not the spirit.
+**Correct**: Specify the important constraints, show one example, let AI handle the details.
+
+---
+
 ## Module Progress
 
 Track your completion:

@@ -436,6 +436,47 @@ Proceed to **Module 4: Documentation Generation** to learn how to generate compr
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when working with private repositories:
+
+### 1. Skipping Organization Access
+**Wrong**: Authenticating with `gh auth login` and assuming you can access all repos.
+**Why it fails**: Organization repos often require separate authorization. You'll get "not found" errors for repos you actually have access to.
+**Correct**: After login, run `gh auth refresh -s read:org` and grant access to your organization in GitHub settings.
+
+### 2. Cloning Into Wrong Directory
+**Wrong**: Running `gh repo clone` in random locations, ending up with repos scattered everywhere.
+**Why it fails**: Claude Code works from the current directory. If you're not in your repo, AI can't see your files.
+**Correct**: Create a workspace directory (`~/work/` or `C:\projects\`) and always clone there. Stay organized.
+
+### 3. Not Starting Claude in the Repo Directory
+**Wrong**: Starting `claude` in your home directory, then asking about project files.
+**Why it fails**: Claude can only see files in the current directory and subdirectories. It can't access your repo if you're not in it.
+**Correct**: Always `cd repo-name` before running `claude`. Verify with `ls` or `dir` that you see your project files.
+
+### 4. Asking for "Everything" at Once
+**Wrong**: "Analyze this entire codebase and generate complete documentation for everything."
+**Why it fails**: Large codebases overwhelm both you and the AI. You get shallow, generic output.
+**Correct**: Start with high-level overview, then drill into specific areas: "First explain the architecture, then we'll look at the auth module."
+
+### 5. Not Creating CLAUDE.md After Exploration
+**Wrong**: Exploring a codebase, learning its conventions, then starting a new session tomorrow and losing all context.
+**Why it fails**: Session context is temporary. Tomorrow you repeat the same exploration.
+**Correct**: After initial exploration, create a CLAUDE.md capturing what you learned. Future sessions start informed.
+
+### 6. Sharing Private Code Publicly
+**Wrong**: Copying AI-generated explanations (with code snippets) to public Slack channels or Stack Overflow.
+**Why it fails**: You might accidentally leak proprietary code, API keys, or internal architecture details.
+**Correct**: Always review what you share. Sanitize code examples. When in doubt, keep it internal.
+
+### 7. Ignoring Token Expiration
+**Wrong**: Getting "authentication failed" errors weeks later and not knowing why.
+**Why it fails**: GitHub tokens expire. Your auth might silently fail.
+**Correct**: If you get unexpected permission errors, run `gh auth status` first. Re-authenticate if needed.
+
+---
+
 ## Module Progress
 
 Track your completion:

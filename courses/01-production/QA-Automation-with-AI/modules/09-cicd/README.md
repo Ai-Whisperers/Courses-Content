@@ -381,6 +381,52 @@ Proceed to **Module 10: Final Project** to apply everything you've learned.
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when setting up CI/CD:
+
+### 1. Not Caching Dependencies
+**Wrong**: `npm install` runs fresh on every CI build, taking 3+ minutes.
+**Why it fails**: Slow pipelines discourage running tests. Developers stop waiting for CI feedback.
+**Correct**: Always cache `node_modules` or use `actions/setup-node` with cache. Builds should start fast.
+
+### 2. Running All Tests on Every Change
+**Wrong**: 30-minute full E2E suite runs on every commit.
+**Why it fails**: Slow feedback loop. Developers push code and context-switch. When tests fail 30 minutes later, they've forgotten what they changed.
+**Correct**: Run fast tests (unit) on every commit. Run slow tests (E2E) on PR merge or nightly.
+
+### 3. No Quality Gates
+**Wrong**: Tests run but don't block merge. "We'll fix it later."
+**Why it fails**: Technical debt accumulates. "Later" never comes. Eventually tests are ignored entirely.
+**Correct**: Make tests a required check for merge. No exceptions. Red tests = blocked PR.
+
+### 4. Ignoring CI Failures
+**Wrong**: "CI failed again, just re-run it." (for the 3rd time)
+**Why it fails**: You're training yourself to ignore failures. Real bugs get ignored alongside flaky tests.
+**Correct**: Every CI failure deserves investigation. If flaky, fix the flakiness. If real failure, fix the bug.
+
+### 5. Secrets in YAML Files
+**Wrong**: Hardcoding API keys or passwords in workflow files.
+**Why it fails**: Security disaster. Anyone with repo access sees your secrets. They end up in git history forever.
+**Correct**: Use GitHub Secrets. Reference with `${{ secrets.MY_SECRET }}`. Never commit credentials.
+
+### 6. No Test Artifacts
+**Wrong**: E2E tests fail in CI but you can't see what happened.
+**Why it fails**: Debugging CI failures is impossible without screenshots, videos, or logs.
+**Correct**: Always upload test artifacts (screenshots, traces, reports) on failure. Use `if: always()` to capture even on crash.
+
+### 7. Pre-commit Hooks That Are Too Slow
+**Wrong**: Pre-commit runs full test suite (5 minutes per commit).
+**Why it fails**: Developers bypass hooks with `--no-verify`. The safety net disappears.
+**Correct**: Pre-commit should run in <30 seconds. Lint changed files only. Run full tests in CI, not locally.
+
+### 8. Not Testing the CI Pipeline Itself
+**Wrong**: CI workflow unchanged for months. You assume it still works.
+**Why it fails**: Dependencies update, actions deprecate, caches expire. Your CI silently degrades.
+**Correct**: Periodically review and test your CI pipeline. Update action versions. Verify caching works.
+
+---
+
 ## Module Progress
 
 Track your completion:

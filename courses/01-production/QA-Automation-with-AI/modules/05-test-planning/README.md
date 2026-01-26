@@ -375,6 +375,52 @@ Proceed to **Module 6: Implementing Tests with AI** to turn your test plan into 
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when creating test plans with AI:
+
+### 1. Planning Without Understanding
+**Wrong**: Generating a test plan for code you haven't read.
+**Why it fails**: AI will produce generic plans. You won't know if it missed domain-specific scenarios or misunderstood the feature.
+**Correct**: Understand the feature first. Read the code. Then use AI to expand your thinking, not replace it.
+
+### 2. Over-Planning, Under-Executing
+**Wrong**: 100-page test plan that never gets implemented.
+**Why it fails**: Test plans are worthless without tests. Planning is procrastination if you never execute.
+**Correct**: Plan incrementally. Plan a few tests → Implement them → Learn → Plan more. Keep plans actionable.
+
+### 3. All Tests Same Priority
+**Wrong**: Every test is P1 (high priority).
+**Why it fails**: If everything is important, nothing is. When time is limited, you won't know what to cut.
+**Correct**: Be ruthless about prioritization. P0 = critical path only. P1 = important but not blocking. P2/P3 = nice to have.
+
+### 4. Missing Negative Tests
+**Wrong**: Test plan only covers happy paths ("user logs in successfully").
+**Why it fails**: Most bugs live in error handling. Happy paths usually work because developers test them manually.
+**Correct**: For every happy path, add 3+ error scenarios. What happens with bad input? Network failure? Race conditions?
+
+### 5. Ignoring Test Data Requirements
+**Wrong**: "Test user registration" without specifying what data to use.
+**Why it fails**: Tests fail because of data issues, not code issues. You waste time debugging phantom problems.
+**Correct**: Define explicit test data: valid emails, invalid emails, edge cases, special characters. Plan data cleanup.
+
+### 6. No Coverage Matrix
+**Wrong**: Long list of tests with no way to see what's covered vs missing.
+**Why it fails**: You can have 100 tests and still miss critical functionality. Lists don't show gaps.
+**Correct**: Create a feature × test-type matrix. Visualize coverage. Identify gaps before writing code.
+
+### 7. Planning in Isolation
+**Wrong**: QA creates test plan without talking to developers.
+**Why it fails**: Developers know the risky areas, recent changes, and technical constraints. You miss this knowledge.
+**Correct**: Review test plan with developers. Ask "what are you worried about?" and "what did you not have time to test?"
+
+### 8. Static Test Plan
+**Wrong**: Test plan written once at project start, never updated.
+**Why it fails**: Requirements change, code changes, risks change. Your plan becomes fiction.
+**Correct**: Update test plan when scope changes. Mark tests obsolete. Add new scenarios. Living document, not artifact.
+
+---
+
 ## Module Progress
 
 Track your completion:

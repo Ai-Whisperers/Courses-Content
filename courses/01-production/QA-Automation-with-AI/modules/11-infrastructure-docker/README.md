@@ -320,6 +320,52 @@ DEBUG=pw:api npx playwright test login.spec.ts
 
 ---
 
+## Common Mistakes
+
+Avoid these frequent errors when working with Docker for testing:
+
+### 1. Not Using Official Playwright Images
+**Wrong**: Building custom image from `node:20` and installing browsers manually.
+**Why it fails**: Browser dependencies are complex. You'll miss libraries, get version mismatches, and waste hours debugging.
+**Correct**: Start from `mcr.microsoft.com/playwright:vX.Y.Z-jammy`. It includes all browser dependencies correctly configured.
+
+### 2. Copying Everything Before Installing Dependencies
+**Wrong**: `COPY . .` then `RUN npm install` in Dockerfile.
+**Why it fails**: Any code change invalidates the npm install cache. Every build reinstalls all dependencies from scratch.
+**Correct**: Copy `package*.json` first, run `npm ci`, THEN copy source code. Dependencies are cached unless package.json changes.
+
+### 3. No Volume Mounts for Test Results
+**Wrong**: Tests run in container, reports stay in container, container exits, reports are gone.
+**Why it fails**: You can't see test results, screenshots, or videos. Debugging failures is impossible.
+**Correct**: Mount volumes for output directories: `-v ./test-results:/app/test-results`. Results persist after container exits.
+
+### 4. Hardcoding Environment-Specific Values
+**Wrong**: `BASE_URL=http://localhost:3000` hardcoded in test files.
+**Why it fails**: Works on your machine, fails in Docker where services have different hostnames.
+**Correct**: Use environment variables: `BASE_URL=http://app:3000` in Docker Compose. Configure Playwright to read from env.
+
+### 5. Not Waiting for Services to Start
+**Wrong**: `depends_on: [app]` means tests run immediately when app container starts.
+**Why it fails**: Container starting ≠ service ready. App might still be initializing when tests begin.
+**Correct**: Use healthchecks or wait scripts. Test runner should wait for app to actually respond before running.
+
+### 6. Running as Root Without Consideration
+**Wrong**: Default Docker runs as root, Playwright sometimes has issues with this.
+**Why it fails**: Browser sandbox issues, permission problems with mounted volumes.
+**Correct**: Use `USER pwuser` in Dockerfile (Playwright images provide this user) or configure browser to run without sandbox.
+
+### 7. Giant Docker Images
+**Wrong**: 5GB Docker image because you included dev dependencies, build artifacts, and git history.
+**Why it fails**: Slow to build, slow to push, slow to pull. CI takes forever.
+**Correct**: Use multi-stage builds. `.dockerignore` for node_modules, .git, test-results. Final image should have only what's needed to run tests.
+
+### 8. Not Cleaning Up
+**Wrong**: Running `docker-compose up` repeatedly without `down`. Containers, volumes, networks accumulate.
+**Why it fails**: Disk fills up. Port conflicts. Old containers interfere with new ones.
+**Correct**: Always `docker-compose down -v` when done. Automate cleanup in CI. Periodically `docker system prune`.
+
+---
+
 ## Module Progress
 
 Track your completion:
