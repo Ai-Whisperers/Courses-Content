@@ -332,3 +332,14 @@ test.describe('Shopping cart', () => {
 - Complete the [Exercise](EXERCISE.md) to practice advanced techniques
 - Take the [Quiz](QUIZ.md) to verify your understanding
 - Continue to the [Final Project](../10-final-project/) to apply all skills
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

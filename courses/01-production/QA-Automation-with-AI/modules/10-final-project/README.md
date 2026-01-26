@@ -297,3 +297,14 @@ You are now an **AI-Augmented QA Automation Engineer**!
 ---
 
 *Good luck with your final project!*
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

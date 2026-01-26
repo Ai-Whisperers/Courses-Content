@@ -434,3 +434,14 @@ In this module, you learned:
 ## Next Steps
 
 Proceed to **Module 7: Test Validation and Quality Assurance** to review and improve your tests.
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

@@ -305,3 +305,14 @@ DEBUG=pw:api npx playwright test login.spec.ts
 - Complete the [Exercise](EXERCISE.md) to containerize your tests
 - Take the [Quiz](QUIZ.md) to verify your understanding
 - Continue to [Module 12: Advanced Playwright](../12-advanced-playwright/)
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

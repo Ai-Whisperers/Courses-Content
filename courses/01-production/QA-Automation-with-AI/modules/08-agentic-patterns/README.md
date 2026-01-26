@@ -413,3 +413,14 @@ In this module, you learned:
 ## Next Steps
 
 Proceed to **Module 9: CI/CD Integration** to automate your testing pipeline.
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

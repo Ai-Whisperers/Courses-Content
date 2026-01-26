@@ -66,6 +66,16 @@ Information specific to the current request:
 
 **Where**: Your message to Claude
 
+> **Try It Now (2 min)**
+> 
+> See context levels in action:
+> 1. Open Claude and ask: `Write a test for a login function`
+> 2. Notice the generic response (no project context)
+> 3. Now add context: `Write a Playwright test for a login function using data-testid selectors and Page Object Model`
+> 4. Compare the two responses
+> 
+> **Lesson:** More context = more accurate output.
+
 ---
 
 ## 2.2 Creating CLAUDE.md Files
@@ -556,6 +566,17 @@ In this module, you learned:
 ## Next Steps
 
 Proceed to **Module 3: Accessing Private Repositories** to learn how to use AI with private codebases.
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes
 
 ---
 

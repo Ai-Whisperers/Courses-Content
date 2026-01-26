@@ -382,3 +382,14 @@ In this module, you learned:
 ## Next Steps
 
 Proceed to **Module 5: Creating Test Plans with AI** to learn systematic test planning.
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes

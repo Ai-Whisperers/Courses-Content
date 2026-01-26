@@ -423,6 +423,17 @@ Proceed to **Module 4: Documentation Generation** to learn how to generate compr
 
 ---
 
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes
+
+---
+
 ## Resources
 
 - [GitHub CLI Documentation](https://cli.github.com/manual)

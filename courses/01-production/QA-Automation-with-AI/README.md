@@ -25,17 +25,20 @@ Transform from Manual QA Engineer to AI-Augmented QA Automation Engineer in 8-12
 ```
 QA-Automation-with-AI/
 ├── README.md                    # This file
+├── HOW-TO-LEARN.md              # Learning strategies (read first!)
+├── SETUP.md                     # Environment setup
+├── MINI-PROJECTS.md             # Milestone projects between modules
 ├── SYLLABUS.md                  # Complete course syllabus
-├── modules/                     # Course content by module (Lessons, Exercises, Quizzes)
+├── modules/                     # Course content by module
 │   ├── 01-introduction/
 │   ├── 02-context-engineering/
-│   ├── 03-private-repos/
+│   ├── 03-private-repos/        # → Mini-Project 1
 │   ├── 04-documentation/
 │   ├── 05-test-planning/
-│   ├── 06-test-implementation/
+│   ├── 06-test-implementation/  # → Mini-Project 2
 │   ├── 07-validation/
 │   ├── 08-agentic-patterns/
-│   ├── 09-cicd/
+│   ├── 09-cicd/                 # → Mini-Project 3
 │   ├── 10-final-project/
 │   ├── 11-infrastructure-docker/
 │   └── 12-advanced-playwright/
@@ -77,6 +80,10 @@ Each module has a hands-on `EXERCISE.md` file (e.g., `modules/01-introduction/EX
 ### 4. Take Assessments
 
 Test your knowledge with the `QUIZ.md` file in each module folder.
+
+### 5. Complete Mini-Projects
+
+Build real skills with [MINI-PROJECTS.md](./MINI-PROJECTS.md) after modules 3, 6, and 9.
 
 ### 5. Build Final Project
 

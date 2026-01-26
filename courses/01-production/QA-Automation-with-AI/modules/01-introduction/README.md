@@ -51,6 +51,15 @@ AI coding assistants are tools powered by Large Language Models (LLMs) that can:
 - **Tool integration**: File system, git, terminal access
 - **Agentic capabilities**: Can plan and execute multi-step tasks
 
+> **Try It Now (2 min)**
+> 
+> Before installing anything, try Claude in your browser:
+> 1. Go to [claude.ai](https://claude.ai)
+> 2. Paste this prompt: `Explain what a Page Object Model is in test automation, with a simple example`
+> 3. Notice how Claude structures its response with explanation AND code
+> 
+> This is the same AI you'll use through Claude Code, but with file system access.
+
 ---
 
 ## 1.2 Installing Claude Code
@@ -110,6 +119,12 @@ npm install -g @anthropic-ai/claude-code
 claude --version
 # Expected: Claude Code v1.x.x
 ```
+
+> **Try It Now (1 min)**
+> 
+> Run `claude --version` in your terminal right now.
+> - If you see a version number, you're ready!
+> - If you see "command not found", go back and complete installation.
 
 ### First-Time Setup
 
@@ -260,6 +275,16 @@ const data = await result.json();
 
 **Always review AI-generated code!**
 
+> **Try It Now (3 min)**
+> 
+> Test Claude's limitations yourself:
+> 1. Ask Claude: `What's the current price of Bitcoin?`
+> 2. Notice it can't give real-time data (knowledge cutoff)
+> 3. Now ask: `Write a function to calculate compound interest`
+> 4. Notice how confidently it generates the code
+> 
+> **Lesson:** AI is confident even when wrong. Always verify!
+
 ### When to Use AI vs Manual
 
 | Use AI | Use Manual |
@@ -392,6 +417,17 @@ In this module, you learned:
 ## Next Steps
 
 Proceed to **Module 2: Context Engineering** to learn how to provide effective context for better AI results.
+
+---
+
+## Module Progress
+
+Track your completion:
+
+- [ ] Read through all lesson content
+- [ ] Completed hands-on exercises
+- [ ] Passed module quiz (70%+)
+- [ ] Can explain key concepts without notes
 
 ---
 
