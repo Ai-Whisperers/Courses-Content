@@ -1,302 +1,108 @@
 # 00 - Fundamentos Universales (Core Foundation)
 ## FPUNA Verano 2026 - Semana 1
 
-**Duración**: 8 horas  
-**Modalidad**: Presencial  
-**Prerequisitos**: Ninguno  
-**Para**: TODOS los estudiantes (independiente de la carrera)
+**Duracion**: 8 horas | **Modalidad**: Presencial | **Prerequisitos**: Ninguno
 
 ---
 
-## Descripción
+## Descripcion
 
-Este módulo fundamental enseña a **todos** los estudiantes cómo configurar y usar herramientas de IA (OpenCode + Oh My OpenCode) para acelerar su trabajo. Al finalizar esta semana, todos tendrán:
+Este modulo fundamental ensena a **todos** los estudiantes como configurar y usar herramientas de IA (OpenCode + Oh My OpenCode) para acelerar su trabajo. Al finalizar:
 
-✅ OpenCode instalado y funcionando  
-✅ Oh My OpenCode configurado  
-✅ Skills, MCPs, Hooks y Rules configurados  
-✅ Conocimiento de ingeniería de prompts  
-✅ Experiencia con un proyecto completo  
-✅ Patrones de trabajo establecidos  
+- OpenCode instalado y funcionando
+- Skills, MCPs, Hooks y Rules configurados
+- Conocimiento de ingenieria de prompts y contexto
+- Experiencia con un proyecto completo
+- Patrones de trabajo establecidos
 
-**Resultado**: Base sólida para especializarse en la Semana 2 según tu carrera.
-
----
-
-## Estructura del Módulo
-
-### Módulo 01: Instalación del Stack de IA (2 horas)
-**Objetivo**: Instalar OpenCode + Oh My OpenCode en tu máquina
-
-**Qué aprenderás**:
-- Instalar OpenCode (Windows/Mac/Linux)
-- Instalar Oh My OpenCode
-- Verificar que todo funciona
-- Resolver problemas comunes
-
-**Entregable**: OpenCode funcionando en tu computadora
-
-📚 [Ir al Módulo 01 →](./01-configuracion-stack-ia.md)
+**Resultado**: Base solida para especializarse en la Semana 2 segun tu carrera.
 
 ---
 
-### Módulo 02: Dominio de Configuración (2 horas)
-**Objetivo**: Dominar la configuración de OpenCode
+## Modulos
 
-**Qué aprenderás**:
-- Estructura de `.opencode/`
-- Qué son Skills y cómo instalarlos
-- Qué son MCPs y cómo configurarlos
-- Hooks (automatización)
-- Rules (comportamiento por contexto)
-
-**Entregable**: OpenCode configurado con 3 skills y 2 MCPs
-
-📚 [Ir al Módulo 02 →](./02-maestria-configuracion.md)
+| # | Modulo | Duracion | Entregable |
+|---|--------|----------|------------|
+| 01 | [Instalacion del Stack](./01-configuracion-stack-ia.md) | 2h | OpenCode funcionando |
+| 02 | [Dominio de Configuracion](./02-maestria-configuracion.md) | 2h | MCPs, Skills, Hooks, Rules configurados |
+| 03 | [Ingenieria de Prompts](./03-ingenieria-prompts.md) | 1.5h | Biblioteca de prompts utiles |
+| 04 | [Ingenieria de Contexto](./04-ingenieria-contexto.md) | 1h | Proyecto con CLAUDE.md configurado |
+| 05 | [Proyecto en Vivo](./05-proyecto-en-vivo.md) | 1.5h | Comprension del workflow completo |
+| 06 | [Patrones de Trabajo](./06-patrones-flujo-trabajo.md) | 1h | Guia de patrones de referencia |
 
 ---
 
-### Módulo 03: Ingeniería de Prompts (1.5 horas)
-**Objetivo**: Aprender a escribir prompts efectivos
+## Cronograma
 
-**Qué aprenderás**:
-- Anatomía de un buen prompt
-- Técnicas de refinamiento iterativo
-- Contexto en prompts
-- Prompts específicos por dominio
+### Dia 1 (Lunes) - 4 horas
+- **9:00-11:00**: Modulo 01 (Instalacion)
+- **11:15-13:15**: Modulo 02 (Configuracion)
 
-**Entregable**: Biblioteca de 10 prompts útiles
-
-📚 [Ir al Módulo 03 →](./03-ingenieria-prompts.md)
-
----
-
-### Módulo 04: Ingeniería de Contexto (1 hora)
-**Objetivo**: Configurar contexto para proyectos
-
-**Qué aprenderás**:
-- Archivo `.opencode` de configuración
-- `CLAUDE.md` para instrucciones del proyecto
-- `README.md` y `ARCHITECTURE.md`
-- Rules para auto-contexto
-
-**Entregable**: Proyecto configurado con archivos de contexto
-
-📚 [Ir al Módulo 04 →](./04-ingenieria-contexto.md)
+### Dia 2 (Martes) - 4 horas
+- **9:00-10:30**: Modulo 03 (Prompts)
+- **10:45-11:45**: Modulo 04 (Contexto)
+- **12:00-13:30**: Modulo 05 (Demo en Vivo)
+- **13:45-14:45**: Modulo 06 (Patrones)
 
 ---
 
-### Módulo 05: Proyecto en Vivo (1.5 horas)
-**Objetivo**: Ver un proyecto completo de inicio a fin
+## Requisitos Previos
 
-**Qué harás**:
-- Observar demo en vivo del instructor
-- Ver planificación → ejecución → refinamiento
-- Entender workflow completo
-- Sesión de preguntas y respuestas
+### Hardware
+- Laptop con Windows 10+, macOS 10.15+, o Linux
+- 4GB+ RAM disponible
+- 2GB espacio en disco
+- Conexion a internet
 
-**Entregable**: Comprensión del workflow completo
+### Software
+- Git instalado (`git --version`)
+- Node.js 18+ (`node --version`)
+- Editor de codigo (VS Code recomendado)
 
-📚 [Ir al Módulo 05 →](./05-proyecto-en-vivo.md)
+### Cuentas
+- Cuenta de GitHub (https://github.com)
 
----
+### Verificacion Pre-Curso
+```bash
+git --version   # Esperado: git version 2.x.x
+node --version  # Esperado: v18.x.x o superior
+npm --version   # Esperado: 9.x.x o superior
+```
 
-### Módulo 06: Patrones de Trabajo (1 hora)
-**Objetivo**: Aprender patrones de trabajo con IA
-
-**Qué aprenderás**:
-- Patrones de diseño agentico
-- Descomposición de tareas
-- Trabajo en paralelo con agentes
-- Mejores prácticas
-
-**Entregable**: Guía de patrones de referencia
-
-📚 [Ir al Módulo 06 →](./06-patrones-flujo-trabajo.md)
+Si algo falla, llega 1 hora antes del Dia 1 para ayuda tecnica.
 
 ---
 
-## Cronograma Recomendado
+## Evaluacion
 
-### Día 1 (Lunes) - 4 horas
-- **9:00 - 11:00**: Módulo 01 (Instalación)
-  - Instalación de OpenCode
-  - Instalación de Oh My OpenCode
-  - Verificación y troubleshooting
-  
-- **11:00 - 11:15**: ☕ Break
-
-- **11:15 - 13:15**: Módulo 02 (Configuración)
-  - Skills system
-  - MCPs configuration
-  - Hooks y Rules
-
-### Día 2 (Martes) - 4 horas
-- **9:00 - 10:30**: Módulo 03 (Prompts)
-  - Ingeniería de prompts
-  - Ejercicios prácticos
-  
-- **10:30 - 10:45**: ☕ Break
-
-- **10:45 - 11:45**: Módulo 04 (Contexto)
-  - Archivos de contexto
-  - Configuración de proyecto
-  
-- **11:45 - 12:00**: 🍽️ Break
-
-- **12:00 - 13:30**: Módulo 05 (Proyecto en Vivo)
-  - Demo del instructor
-  - Q&A
-
-- **13:30 - 13:45**: ☕ Break
-
-- **13:45 - 14:45**: Módulo 06 (Patrones)
-  - Patrones de trabajo
-  - Mejores prácticas
-
-- **14:45 - 15:00**: Cierre y preparación para Semana 2
-
----
-
-## Recursos Compartidos
-
-Todos los módulos referencian componentes reutilizables:
-
-### 📦 Componentes COMPARTIDO
-- [Guía de Instalación de OpenCode](../COMPARTIDO/instalacion-opencode/guide.md)
-- [Configuración de MCPs](../COMPARTIDO/configuracion-mcp/README.md)
-- [Sistema de Skills](../COMPARTIDO/sistema-skills/README.md)
-- [Hooks y Rules](../COMPARTIDO/hooks-reglas/README.md)
-- [Plantillas de Proyecto](../COMPARTIDO/plantillas-proyecto/README.md)
-
-### 📚 Recursos Adicionales
-- [Troubleshooting General](../COMPARTIDO/instalacion-opencode/troubleshooting.md)
-- [Ejemplos de Skills](../COMPARTIDO/sistema-skills/examples.md)
-- [Ejemplos de Configuración MCP](../COMPARTIDO/configuracion-mcp/config-examples.md)
-
----
-
-## Evaluación
-
-### Evaluación Continua
-- Quiz al final de cada módulo (5 preguntas)
-- Ejercicios prácticos obligatorios
-- Participación en clase
-
-### Evaluación Final
-**Proyecto de Verificación**: Configurar OpenCode para un proyecto personal
-- Instalación correcta ✅
-- Configuración completa ✅
-- Demostración de uso ✅
-
-**Pasa si**: Todas las verificaciones ✅
+- **Quiz al final de cada modulo** (3 preguntas)
+- **Proyecto de Verificacion Final**: Configurar OpenCode para un proyecto personal
+  - Instalacion correcta
+  - Configuracion completa
+  - Demostracion de uso
 
 ---
 
 ## Soporte
 
-### Durante el Curso
-- **Instructor principal**: Disponible durante todas las sesiones
-- **Asistentes técnicos**: 2 asistentes para ayuda 1-on-1
 - **Slack**: #fpuna-core-foundation
-
-### Después del Curso
 - **Email**: soporte-core@fpuna.edu.py
 - **Horario de consulta**: Lunes-Viernes 14:00-16:00
-- **Slack**: Sigue activo para dudas
 
 ---
 
-## Preparación
+## Proximos Pasos
 
-### Antes del Día 1
-
-**Requisitos de Hardware**:
-- 💻 Laptop con Windows 10+, macOS 10.15+, o Linux
-- 💾 4GB+ RAM disponible
-- 📀 2GB espacio en disco
-- 🌐 Conexión a internet
-
-**Requisitos de Software**:
-- Git instalado
-- Node.js 18+ (para algunos MCPs)
-- Editor de código (VS Code recomendado)
-
-**Cuentas Necesarias**:
-- Cuenta de GitHub (crear en https://github.com)
-- Cuenta de Anthropic (opcional, para Claude API)
-
-### Verificación Pre-Curso
-
-Ejecuta estos comandos en tu terminal para verificar:
-
-```bash
-# Verificar Git
-git --version
-# Debe mostrar: git version 2.x.x
-
-# Verificar Node.js
-node --version
-# Debe mostrar: v18.x.x o superior
-
-# Verificar npm
-npm --version
-# Debe mostrar: 9.x.x o superior
-```
-
-Si algo falla, trae tu laptop 1 hora antes del Día 1 para ayuda técnica.
+Al completar Core Foundation, elige tu Track (Semana 2):
+- Software Development
+- Electronics & Automation
+- Aeronautical Engineering
+- Marketing & Communication
+- Research & Academia
+- Hospitality & Tourism
+- QA Automation
+- Web Development
 
 ---
 
-## Preguntas Frecuentes
-
-**P: ¿Necesito experiencia previa con IA?**  
-R: No. Este curso empieza desde cero.
-
-**P: ¿Funciona en mi sistema operativo?**  
-R: Sí. Soportamos Windows, macOS y Linux.
-
-**P: ¿Qué pasa si me atraso en un módulo?**  
-R: Los módulos son independientes. Puedes recuperar fuera de clase.
-
-**P: ¿Puedo faltar al Módulo 05 (demo en vivo)?**  
-R: Habrá grabación disponible, pero recomendamos asistir en vivo.
-
-**P: ¿Qué sigue después de Core Foundation?**  
-R: En Semana 2 eliges tu track especializado según tu carrera.
-
----
-
-## Próximos Pasos
-
-Al completar Core Foundation:
-
-1. **Elegir tu Track** (Semana 2):
-   - Software Development
-   - Electronics & Automation
-   - Aeronautical Engineering
-   - Marketing & Communication
-   - Research & Academia
-   - Hospitality & Tourism
-   - QA Automation
-   - Web Development
-
-2. **Practicar**: Usa OpenCode en tus proyectos personales
-
-3. **Explorar**: Descubre más Skills y MCPs
-
----
-
-## Contacto
-
-**Coordinador del Curso**: Prof. Ana García  
-📧 ana.garcia@fpuna.edu.py  
-💬 Slack: @ana.garcia
-
-**Soporte Técnico**: soporte-core@fpuna.edu.py
-
----
-
-¡Bienvenidos al Core Foundation! 🚀
-
-Prepárense para acelerar su productividad con IA.
+**Coordinador**: Prof. Ana Garcia (ana.garcia@fpuna.edu.py)
