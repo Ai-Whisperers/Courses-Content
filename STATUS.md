@@ -24,7 +24,8 @@
   - ✅ HOW-TO-LEARN.md meta-lesson
   - ✅ MINI-PROJECTS.md with 3 milestone projects
   - ✅ Progress checkboxes in all modules
-  - ✅ "Try It Now" interactive boxes (modules 1-2, more coming)
+  - ✅ "Try It Now" interactive boxes in ALL 12 modules
+  - ✅ "Common Mistakes" anti-pattern sections in ALL 12 modules
   - ✅ "Your First Win" in SETUP.md
 
 ### Beta (3 courses)
@@ -75,8 +76,9 @@ courses/
 2. ✅ Added "Your First Win" to all SETUP.md files
 3. ✅ Added progress checkboxes to all QA module READMEs
 4. ✅ Added MINI-PROJECTS.md with milestone projects
-5. ✅ Added "Try It Now" interactive boxes (started)
-6. ✅ Created SOLUTIONS.md for all 11 QA modules
+5. ✅ Added "Try It Now" interactive boxes to ALL 12 QA modules
+6. ✅ Added "Common Mistakes" anti-pattern sections to ALL 12 QA modules
+7. ✅ Created SOLUTIONS.md for all 12 QA modules
 
 ### Based on Research From
 - freeCodeCamp (50/50 theory:practice ratio)
@@ -89,19 +91,21 @@ courses/
 ## Next Actions
 
 ### High Priority
-1. Add "Try It Now" boxes to remaining QA modules (3-12)
-2. Create SOLUTIONS.md for AI Tools for Productivity course
-3. Fill gaps in Building AI Apps (Module 6, quizzes, final project)
+1. **Building AI Apps**: Create Module 06 (testing-quality) - full module with README, EXERCISE, SOLUTIONS, QUIZ
+2. **Building AI Apps**: Create QUIZ.md for modules 01-05 (5 files)
+3. **Building AI Apps**: Create final-project folder with rubric and examples
+4. **AI Tools for Productivity**: Create SOLUTIONS.md for all 8 modules
 
 ### Medium Priority
-4. Set up Discord community for student support
 5. Student beta testing for Prompt Engineering course
-6. Fix Python type errors in FPUNA aeronautical examples
+6. Instructor validation for Prompt Engineering course
+7. Fix Python type errors in FPUNA aeronautical examples
+8. FPUNA exercise validation and instructor testing
 
 ### Low Priority
-7. Video walkthroughs for setup
-8. Add "Common Mistakes" sections to all modules
-9. Sync folder names with README names in beta courses
+9. Set up Discord community for student support
+10. Video walkthroughs for setup
+11. Sync folder names with README names in beta courses
 
 ---
 
