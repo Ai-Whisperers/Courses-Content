@@ -1,6 +1,6 @@
 # Repository Status
 
-**Last Updated**: January 26, 2026
+**Last Updated**: January 27, 2026
 
 ---
 
@@ -9,7 +9,7 @@
 | Course | Location | Status | Completion |
 |--------|----------|--------|------------|
 | **QA Automation with AI** | `courses/01-production/QA-Automation-with-AI/` | Production | 100% |
-| **FPUNA 2026** | `courses/02-development/FPUNA-2026/` | Development | ~70% |
+| **FPUNA 2026** | `courses/02-development/FPUNA-2026/` | Development | ~90% |
 | **Prompt Engineering Masterclass** | `courses/03-beta/Prompt-Engineering-Masterclass/` | Beta | ~95% |
 | **Building AI-Powered Applications** | `courses/03-beta/Building-AI-Powered-Applications/` | Beta | ~95% |
 | **AI Tools for Productivity** | `courses/03-beta/AI-Tools-for-Productivity/` | Beta | ~95% |
@@ -49,12 +49,14 @@
   - ❌ Needs instructor validation and student testing
 
 ### In Development (1 course)
-- **FPUNA 2026**: Core Foundation ~90%, Specialized Tracks ~60%
-  - 291 markdown files, 6 specialized tracks with substantial content
-  - Target audience: Universidad Nacional de Asuncion (Paraguay)
-  - Language: Spanish
+- **FPUNA 2026**: ~90% complete
+  - ✅ 00-FUNDAMENTOS: 6 modules, proyecto-final with rubric, live-demo-proyecto
+  - ✅ 6 specialized tracks (Electrónica, Aeronáutica, Software, Marketing, Hospitalidad, Investigación)
+  - ✅ Daily instructor scripts (dias/) with 9 solved exercises
+  - ✅ 291+ markdown files in Spanish
+  - Target audience: Universidad Nacional de Asunción (Paraguay)
   - Timeline: Q2 2026
-  - Remaining: Exercise validation, instructor testing
+  - Remaining: Instructor validation, student testing
 
 ---
 
@@ -96,6 +98,12 @@ courses/
     - Module 07: Critical Evaluation & Security (verification, data privacy)
     - Module 08: Final Project (complete sample project with 87hr/yr ROI)
 
+### FPUNA 2026 Course Completion (January 27, 2026)
+12. ✅ Created proyecto-final for 00-FUNDAMENTOS (README.md + rubrica.md)
+    - Project options: utility app, informative page, or interactive tool
+    - Technical requirements: HTML5/CSS3/vanilla JS (no frameworks)
+    - 100-point rubric with 5 categories and bonus/penalty system
+
 ### Based on Research From
 - freeCodeCamp (50/50 theory:practice ratio)
 - The Odin Project (project-based learning)
@@ -111,8 +119,7 @@ courses/
 2. Instructor validation for Prompt Engineering, Building AI Apps, AI Tools courses
 
 ### Medium Priority
-3. Fix Python type errors in FPUNA aeronautical examples
-4. FPUNA exercise validation and instructor testing
+3. FPUNA instructor validation and student testing
 
 ### Low Priority
 5. Set up Discord community for student support
