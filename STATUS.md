@@ -113,11 +113,10 @@ courses/
 ### Medium Priority
 3. Fix Python type errors in FPUNA aeronautical examples
 4. FPUNA exercise validation and instructor testing
-5. Sync folder names with README names in beta courses
 
 ### Low Priority
-6. Set up Discord community for student support
-7. Video walkthroughs for setup
+5. Set up Discord community for student support
+6. Video walkthroughs for setup
 
 ---
 
