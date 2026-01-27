@@ -99,7 +99,7 @@ Registra **TODOS** los prompts que usaste:
 **Ajustes realizados**: [Si aplicable]
 ```
 
-**Mínimo**: 8 prompts documentados
+**Mínimo**: 6 prompts documentados (8+ para calificación "Bueno", 10+ para "Excelente")
 
 ### 3. README.md del Proyecto
 - Qué hace tu aplicación
@@ -113,7 +113,7 @@ Registra **TODOS** los prompts que usaste:
 | Criterio | Peso | Descripción |
 |----------|------|-------------|
 | **CLAUDE.md** | 25% | Completo, sigue la plantilla, útil para la IA |
-| **PROMPTS-LOG.md** | 25% | 8+ prompts, usa marco CERO, documenta iteraciones |
+| **PROMPTS-LOG.md** | 25% | 6+ prompts, usa marco CERO, documenta iteraciones |
 | **Funcionalidad** | 25% | La app funciona, sin errores, cumple requisitos |
 | **Código** | 15% | Limpio, comentado, buenas prácticas |
 | **Presentación** | 10% | README claro, proyecto organizado |
@@ -239,7 +239,7 @@ Estilo: limpio y profesional, fondo claro.
 Antes de entregar, verifica:
 
 - [ ] CLAUDE.md completo y útil
-- [ ] PROMPTS-LOG.md con 8+ prompts documentados
+- [ ] PROMPTS-LOG.md con 6+ prompts documentados
 - [ ] La app funciona sin errores en consola
 - [ ] Responsive (probar en móvil)
 - [ ] README.md explica qué hace y cómo usarla
