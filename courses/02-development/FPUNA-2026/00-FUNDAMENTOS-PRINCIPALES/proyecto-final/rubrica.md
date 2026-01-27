@@ -182,11 +182,16 @@
 
 ## Bonus Points (+5 máximo)
 
-- **+2**: Animaciones CSS suaves (transitions, keyframes)
-- **+1**: LocalStorage para persistir datos
+### Recomendados (para proyectos con datos)
+- **+2**: LocalStorage para persistir datos (muy recomendado para listas, presupuestos, etc.)
+
+### Crédito Extra
+- **+1**: Animaciones CSS suaves (transitions, keyframes)
 - **+1**: Accesibilidad (aria-labels, navegación por teclado)
 - **+1**: Modo oscuro/claro toggle
 - **+1**: PWA básico (manifest.json)
+
+> **Nota**: LocalStorage es especialmente valioso para apps de listas, presupuestos o cualquier proyecto que maneje datos del usuario. Para conversores o calculadoras simples, los otros bonus pueden ser más relevantes.
 
 ---
 
