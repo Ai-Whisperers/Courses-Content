@@ -18,20 +18,22 @@ Curated video resources for setting up AI development tools used across all cour
 
 ## Claude Code
 
-### Official Setup
+### Official Resources
+
+| Resource | Type | Description |
+|----------|------|-------------|
+| [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code) | Docs | Official setup guide |
+| [Claude Video Tutorials](https://support.claude.com/en/collections/10548294-video-tutorials) | Videos | Official Anthropic tutorials |
+| [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) | Course | Official training course |
+
+### Community Tutorials
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [Claude Code: Getting Started](https://www.youtube.com/results?search_query=claude+code+setup+tutorial) | ~10 min | Official installation walkthrough |
-| [Claude Code in VS Code](https://www.youtube.com/results?search_query=claude+code+vscode+extension) | ~8 min | VS Code extension setup |
-| [First Project with Claude Code](https://www.youtube.com/results?search_query=claude+code+first+project) | ~15 min | Building your first project |
+| [AI Coding with Claude](https://www.youtube.com/watch?v=EUHdQFSKi0E) | 20 min | Getting started walkthrough |
+| [Claude Code Tips](https://www.youtube.com/watch?v=YoLUaT3u8Nk) | 15 min | Productivity techniques |
 
-### Tips & Tricks
-
-| Video | Duration | Description |
-|-------|----------|-------------|
-| [Writing Better Prompts](https://www.youtube.com/results?search_query=claude+prompting+tips) | ~12 min | Get better results from Claude |
-| [CLAUDE.md Context Files](https://www.youtube.com/results?search_query=claude+context+files) | ~10 min | Project context configuration |
+> **Note**: Claude Code is a newer tool. Check the [official docs](https://docs.anthropic.com/en/docs/claude-code) for the latest setup instructions.
 
 ---
 
@@ -41,6 +43,7 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Video | Duration | Platform |
 |-------|----------|----------|
+| [VS Code Crash Course](https://www.youtube.com/watch?v=WPqXP_kLzpo) | 90 min | All (freeCodeCamp) |
 | [VS Code Setup - Windows](https://www.youtube.com/watch?v=MlIzFUI1QGA) | 8 min | Windows |
 | [VS Code Setup - macOS](https://www.youtube.com/watch?v=06I63_p-2A4) | 7 min | macOS |
 | [VS Code Setup - Linux](https://www.youtube.com/watch?v=Tz4MKEi9dJI) | 6 min | Linux/Ubuntu |
@@ -49,16 +52,15 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [Top VS Code Extensions 2025](https://www.youtube.com/results?search_query=best+vscode+extensions+2025) | ~15 min | Must-have extensions |
-| [GitLens Tutorial](https://www.youtube.com/results?search_query=gitlens+vscode+tutorial) | ~10 min | Git integration |
-| [Prettier Setup](https://www.youtube.com/results?search_query=prettier+vscode+setup) | ~5 min | Code formatting |
+| [25 VS Code Productivity Tips](https://www.youtube.com/watch?v=ifTF3ags0XI) | 30 min | Fireship - shortcuts & tips |
+| [VS Code Extensions 2024](https://www.youtube.com/watch?v=KMxo3T_MTvY) | 15 min | Traversy Media - top extensions |
 
 ### Productivity
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [VS Code Shortcuts](https://www.youtube.com/results?search_query=vscode+keyboard+shortcuts) | ~12 min | Speed up your workflow |
-| [Multi-cursor Editing](https://www.youtube.com/results?search_query=vscode+multi+cursor) | ~8 min | Edit multiple lines at once |
+| [VS Code Top Tips](https://www.youtube.com/watch?v=u21W_tfPVrY) | 8 min | Fireship - quick tips |
+| [VS Code in 100 Seconds](https://www.youtube.com/watch?v=KMxo3T_MTvY) | 2 min | Fireship - overview |
 
 ---
 
@@ -66,18 +68,18 @@ Curated video resources for setting up AI development tools used across all cour
 
 ### Installation
 
-| Video | Duration | Platform |
-|-------|----------|----------|
-| [Node.js Setup - Windows](https://www.youtube.com/watch?v=JINE4D0Syqw) | 10 min | Windows |
-| [Node.js Setup - macOS](https://www.youtube.com/watch?v=TQks1p7xjdI) | 8 min | macOS (with Homebrew) |
-| [Node.js Setup - Linux](https://www.youtube.com/watch?v=OMhMnj7SBRQ) | 7 min | Ubuntu/Debian |
+| Video | Duration | Description |
+|-------|----------|-------------|
+| [Node.js Full Course](https://www.youtube.com/watch?v=Oe421EPjeBE) | 8 hr | freeCodeCamp - comprehensive |
+| [Node.js Crash Course](https://www.youtube.com/watch?v=32M1al-Y6Ag) | 2 hr | Traversy Media |
+| [Node.js Setup - Windows](https://www.youtube.com/watch?v=JINE4D0Syqw) | 10 min | Windows install |
 
 ### Package Management
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [NPM Basics](https://www.youtube.com/results?search_query=npm+tutorial+beginners) | ~15 min | Package installation |
-| [NVM Tutorial](https://www.youtube.com/results?search_query=nvm+node+version+manager) | ~10 min | Manage multiple Node versions |
+| [NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0) | 30 min | Traversy Media |
+| [NVM Tutorial](https://www.youtube.com/watch?v=ohBFbA0O6hs) | 10 min | Node version manager |
 
 ---
 
@@ -87,17 +89,19 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Video | Duration | Description |
 |-------|----------|-------------|
+| [Git in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE) | 2 min | Fireship - quick overview |
 | [Git in 15 Minutes](https://www.youtube.com/watch?v=USjZcfj8yxE) | 15 min | Quick Git overview |
-| [Git for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE) | 60 min | Complete beginner course |
-| [Git Branching](https://www.youtube.com/results?search_query=git+branching+tutorial) | ~12 min | Branch management |
+| [Git for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE) | 60 min | Programming with Mosh |
+| [Git & GitHub Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk) | 60 min | freeCodeCamp - complete course |
+| [13 Advanced Git Techniques](https://www.youtube.com/watch?v=ecK3EnyGD8o) | 8 min | Fireship - productivity tips |
 
 ### GitHub
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [GitHub Account Setup](https://www.youtube.com/results?search_query=github+account+setup+2025) | ~5 min | Create and configure account |
-| [GitHub Desktop](https://www.youtube.com/results?search_query=github+desktop+tutorial) | ~15 min | Visual Git interface |
-| [Pull Requests](https://www.youtube.com/results?search_query=github+pull+request+tutorial) | ~10 min | Collaborate with PRs |
+| [Git & GitHub Tutorial](https://www.youtube.com/watch?v=SWYqp7iY_Tc) | 30 min | Traversy Media |
+| [GitHub Basics](https://www.youtube.com/watch?v=iv8rSLsi1xo) | 20 min | Traversy Media - essentials |
+| [Pull Requests Explained](https://www.youtube.com/watch?v=8lGpZkjnkt4) | 10 min | freeCodeCamp - collaboration |
 
 ---
 
@@ -107,16 +111,16 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Video | Duration | Platform |
 |-------|----------|----------|
-| [Windows Terminal](https://www.youtube.com/results?search_query=windows+terminal+tutorial+beginners) | ~12 min | Windows |
-| [macOS Terminal](https://www.youtube.com/results?search_query=mac+terminal+basics+beginners) | ~15 min | macOS |
-| [Linux Terminal](https://www.youtube.com/results?search_query=linux+terminal+basics+beginners) | ~20 min | Linux |
+| [50 Linux Commands Full Course](https://www.youtube.com/watch?v=ZtqBQ68cfJc) | 5 hr | freeCodeCamp - comprehensive |
+| [Linux Command Line Tutorial](https://www.youtube.com/watch?v=cBokz0LTizk) | 5 hr | freeCodeCamp - beginner |
+| [Bash in 100 Seconds](https://www.youtube.com/watch?v=I4EWvMFj37g) | 2 min | Fireship - quick overview |
 
 ### Essential Commands
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [20 Commands You Need](https://www.youtube.com/results?search_query=terminal+commands+beginners) | ~15 min | Most used commands |
-| [Navigate Directories](https://www.youtube.com/results?search_query=cd+ls+pwd+terminal) | ~8 min | cd, ls, pwd basics |
+| [15 Useful Linux Commands](https://www.youtube.com/watch?v=CV-ven_rxhw) | 12 min | NetworkChuck - essentials |
+| [Terminal for Beginners](https://www.youtube.com/watch?v=uwAqEzhyjtw) | 20 min | Traversy Media - basics |
 
 ---
 
@@ -126,22 +130,25 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [Playwright Setup](https://www.youtube.com/results?search_query=playwright+setup+tutorial+2025) | ~15 min | Test framework installation |
-| [Playwright First Test](https://www.youtube.com/results?search_query=playwright+first+test) | ~12 min | Write your first test |
+| [Playwright Full Course](https://www.youtube.com/playlist?list=PLUeDIlio4THEXmQxNvKmdDxAVloGTHXMr) | 3 hr | TypeScript playlist |
+| [Playwright Crash Course](https://www.youtube.com/watch?v=wawbt1cATsk) | 2 hr | Automation Step by Step |
+| [Playwright Getting Started](https://www.youtube.com/watch?v=4_m3HsaNwOE) | 45 min | Official Playwright |
 
 ### Web Development
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [Next.js 14 Setup](https://www.youtube.com/results?search_query=nextjs+14+setup+tutorial) | ~10 min | React framework |
-| [Prisma ORM Setup](https://www.youtube.com/results?search_query=prisma+orm+setup+tutorial) | ~12 min | Database toolkit |
+| [Next.js 14 Full Course](https://www.youtube.com/watch?v=wm5gMKuwSYk) | 5 hr | Lama Dev - complete |
+| [Next.js in 100 Seconds](https://www.youtube.com/watch?v=Sklc_fQBmcs) | 2 min | Fireship - overview |
+| [Prisma in 60 Minutes](https://www.youtube.com/watch?v=RebA5J-rlwg) | 60 min | Web Dev Simplified |
 
 ### Data Analysis (FPUNA)
 
 | Video | Duration | Description |
 |-------|----------|-------------|
-| [Python Setup](https://www.youtube.com/results?search_query=python+setup+beginners+2025) | ~10 min | Python installation |
-| [Jupyter Notebooks](https://www.youtube.com/results?search_query=jupyter+notebook+setup) | ~8 min | Interactive notebooks |
+| [Python for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc) | 6 hr | Programming with Mosh |
+| [Python Full Course](https://www.youtube.com/watch?v=XKHEtdqhLK8) | 4 hr | freeCodeCamp |
+| [Jupyter Notebook Tutorial](https://www.youtube.com/watch?v=HW29067qVWk) | 30 min | Corey Schafer |
 
 ---
 
@@ -175,10 +182,12 @@ Curated video resources for setting up AI development tools used across all cour
 
 | Channel | Focus | Link |
 |---------|-------|------|
+| **freeCodeCamp** | Complete courses, all levels | [youtube.com/@freecodecamp](https://youtube.com/@freecodecamp) |
 | **Fireship** | Quick tutorials, web dev | [youtube.com/@Fireship](https://youtube.com/@Fireship) |
 | **Traversy Media** | Full tutorials, various topics | [youtube.com/@TraversyMedia](https://youtube.com/@TraversyMedia) |
-| **The Coding Train** | Creative coding, beginners | [youtube.com/@TheCodingTrain](https://youtube.com/@TheCodingTrain) |
+| **Programming with Mosh** | Comprehensive courses | [youtube.com/@programmingwithmosh](https://youtube.com/@programmingwithmosh) |
 | **Web Dev Simplified** | Clear explanations | [youtube.com/@WebDevSimplified](https://youtube.com/@WebDevSimplified) |
+| **The Coding Train** | Creative coding, beginners | [youtube.com/@TheCodingTrain](https://youtube.com/@TheCodingTrain) |
 | **NetworkChuck** | IT, DevOps, fun style | [youtube.com/@NetworkChuck](https://youtube.com/@NetworkChuck) |
 
 ---
