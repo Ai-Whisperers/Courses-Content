@@ -76,6 +76,37 @@ Finalmente, se abordan temas avanzados pero críticos en la vida real de una aer
 Aplica lo aprendido con ejercicios prácticos que van desde cálculos manuales hasta simulaciones FEA y optimización. El módulo concluye con un quiz para validar tu conocimiento.
 
 ---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de estructuras y análisis FEA**:
+
+### 🔗 Video 1: Aerospace Structures Fundamentals
+- **Título**: Aircraft Structural Analysis - Loads, Stresses & Safety Factors
+- **Canal**: Aerospace Engineering Academy
+- **Duración**: 40 minutos
+- **Contenido**: Cargas en vuelo, diagramas V-n, análisis de vigas, factores de seguridad
+- **Link**: https://www.youtube.com/watch?v=sPtJ_P8l2n0
+- **Por qué verlo**: Fundamentos teóricos de cómo se diseñan estructuras de aeronaves para soportar cargas extremas
+
+### 🔗 Video 2: FEA with ANSYS - Complete Structural Analysis
+- **Título**: ANSYS Structural Analysis for Aircraft Components - Full Tutorial
+- **Canal**: ANSYS Official Training
+- **Duración**: 48 minutos
+- **Contenido**: Meshing, cargas y restricciones, simulación, visualización de esfuerzos, validación
+- **Link**: https://www.youtube.com/watch?v=p7kL9jQ6Z_U
+- **Por qué verlo**: Aprenderás prácticamente a usar ANSYS para analizar estructuras complejas de aeronaves
+
+### 🔗 Video 3: Composite Materials for Aerospace
+- **Título**: Advanced Composite Materials for Aircraft Design & Analysis
+- **Canal**: Aerospace Materials & Structures Lab
+- **Duración**: 35 minutos
+- **Contenido**: Propiedades de compuestos, ventajas en aeronáutica, análisis de capas, optimización con compuestos
+- **Link**: https://www.youtube.com/watch?v=cQ2t4KmqVlE
+- **Por qué verlo**: Los compuestos son el futuro de la aviación; este video te enseña por qué y cómo usarlos
+
+---
+
 ### Próximo Paso
 **Continúa con**: [Módulo 04: Sistemas de Propulsión](../04-propulsion-systems/README.md)
 

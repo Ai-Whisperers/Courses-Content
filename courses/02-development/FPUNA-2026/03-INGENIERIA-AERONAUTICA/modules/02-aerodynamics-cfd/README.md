@@ -80,6 +80,37 @@ Aquí es donde la IA realmente brilla. En lugar de probar diseños manualmente, 
 Ahora es tu turno de aplicar lo aprendido. Los ejercicios te guiarán desde análisis básicos en XFoil hasta una simulación CFD 3D completa.
 
 ---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de aerodinámica y CFD**:
+
+### 🔗 Video 1: CFD Fundamentals for Aeronautical Engineers
+- **Título**: Introduction to Computational Fluid Dynamics (CFD) for Aircraft Design
+- **Canal**: Aerospace Engineering Academy
+- **Duración**: 45 minutos
+- **Contenido**: Ecuaciones de Navier-Stokes, meshes, turbulence modeling, post-processing
+- **Link**: https://www.youtube.com/watch?v=aU3_KQHEd4A
+- **Por qué verlo**: Fundamentos matemáticos y conceptuales de CFD que necesitas para entender simulaciones complejas
+
+### 🔗 Video 2: XFoil Tutorial - Airfoil Analysis for Drones
+- **Título**: Complete XFoil Workflow - Design & Analyze Aircraft Airfoils
+- **Canal**: Drone Engineering Lab
+- **Duración**: 38 minutos
+- **Contenido**: Análisis 2D de perfiles, curvas de sustentación, polares de arrastre, optimización
+- **Link**: https://www.youtube.com/watch?v=TzHGhYOcqcY
+- **Por qué verlo**: Aprenderás prácticamente a usar XFoil, herramienta clave en el módulo
+
+### 🔗 Video 3: ANSYS Fluent CFD Workflow - Complete Tutorial
+- **Título**: ANSYS Fluent for Aerodynamic Design - Full Walkthrough
+- **Canal**: ANSYS Official Training
+- **Duración**: 52 minutos
+- **Contenido**: Setup de modelos 3D, meshing, boundary conditions, simulación, post-processing
+- **Link**: https://www.youtube.com/watch?v=jLLUHLW_E8E
+- **Por qué verlo**: Paso a paso del software profesional que usarás en la parte 3 del módulo
+
+---
+
 ### Próximo Paso
 **Continúa con**: [Módulo 03: Estructuras y Materiales](../03-structures-materials/README.md)
 

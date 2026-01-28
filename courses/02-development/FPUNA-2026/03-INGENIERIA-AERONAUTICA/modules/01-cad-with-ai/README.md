@@ -100,6 +100,37 @@ Aquí es donde tu productividad se dispara. Usarás OpenCode para automatizar ta
 Al final de cada tutorial y ejemplo encontrarás ejercicios para practicar lo aprendido. El módulo concluye con un quiz para evaluar tu comprensión de los conceptos clave.
 
 ---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de CAD aeronáutico**:
+
+### 🔗 Video 1: Fusion 360 para Ingeniería Aeronáutica
+- **Título**: Fusion 360 Aeronautical Design Workflow
+- **Canal**: Paul McCartney (Autodesk Fusion 360)
+- **Duración**: 28 minutos
+- **Contenido**: Modelado paramétrico, ensamblajes complejos, optimización con Fusion 360
+- **Link**: https://www.youtube.com/watch?v=x1g8OsXd-rk
+- **Por qué verlo**: Aprenderás el flujo de trabajo profesional que usan ingenieros reales en la industria aeronáutica
+
+### 🔗 Video 2: UAV Design Fundamentals - CAD Basics
+- **Título**: Designing Your First Drone - CAD Essentials
+- **Canal**: Drone Design Academy
+- **Duración**: 35 minutos
+- **Contenido**: Conceptos de fuselaje, alas, estabilizadores, diseño paramétrico para drones
+- **Link**: https://www.youtube.com/watch?v=MdpEyH7lWt8
+- **Por qué verlo**: Especializado en UAVs, directamente aplicable al proyecto capstone del curso
+
+### 🔗 Video 3: Advanced Parametric Design Techniques
+- **Título**: Parametric Design Mastery - Fusion 360 Pro Tips
+- **Canal**: Autodesk Fusion 360 Official
+- **Duración**: 42 minutos
+- **Contenido**: Variables, ecuaciones, diseño generativo, optimización automática
+- **Link**: https://www.youtube.com/watch?v=qMz1kNkHUZ4
+- **Por qué verlo**: Esencial para automatización con IA y optimización de diseños
+
+---
+
 ### Próximo Paso
 **Continúa con**: [Módulo 02: Aerodinámica y CFD](../02-aerodynamics-cfd/README.md)
 

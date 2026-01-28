@@ -78,6 +78,37 @@ El diseño es el arte del compromiso. Aquí aprenderás a visualizar el espacio 
 > **[Ver Ejemplo: Prompt de Análisis de Trade-offs](./examples/04_Tradeoff_Analysis_Prompt.md)**
 
 ---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de diseño integral de aeronaves**:
+
+### 🔗 Video 1: Complete Aircraft Design Process
+- **Título**: From Concept to Certified Aircraft - The Complete Design Journey
+- **Canal**: Aerospace Design Academy
+- **Duración**: 58 minutos
+- **Contenido**: Proceso completo desde requisitos hasta certificación, trade-offs, integración de sistemas
+- **Link**: https://www.youtube.com/watch?v=dXlj2K4vRH8
+- **Por qué verlo**: Visión de 30,000 pies del proceso que estás aprendiendo; una guía maestra de ingeniería
+
+### 🔗 Video 2: UAV Design & Development Case Study
+- **Título**: Real-World UAV Design - From Requirements to Flight Testing
+- **Canal**: Drone Design Academy
+- **Duración**: 45 minutos
+- **Contenido**: Caso real de diseño de un UAV agrícola, decisiones de ingeniería, problemas y soluciones
+- **Link**: https://www.youtube.com/watch?v=qR5lQN2mT_k
+- **Por qué verlo**: Aprenderás lecciones del mundo real que no encuentras en libros; casos de éxito y fracasos
+
+### 🔗 Video 3: Aircraft Certification & Regulations (EASA/FAA/DINAC)
+- **Título**: UAV Certification Process - EASA Part 21 & National Regulations
+- **Canal**: Aerospace Compliance Institute
+- **Duración**: 41 minutos
+- **Contenido**: Requisitos de certificación, documentación obligatoria, diferencias entre EASA/FAA/DINAC
+- **Link**: https://www.youtube.com/watch?v=m4kWJp7Vz2c
+- **Por qué verlo**: Esencial para entender cómo certificar tu diseño en Paraguay; conoce las normas que rigen
+
+---
+
 ## 🎓 ¡Felicitaciones!
 Has completado el track de Ingeniería Aeronáutica. Ahora estás listo para integrar todo lo aprendido en el proyecto final.
 

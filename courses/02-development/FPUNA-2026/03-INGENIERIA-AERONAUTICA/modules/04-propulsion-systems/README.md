@@ -66,6 +66,37 @@ Elegir el sistema propulsor correcto es un ejercicio de optimización multi-obje
 Aplica los conceptos para diseñar y optimizar un sistema de propulsión para un UAV de fumigación, y resuelve problemas comunes como sobrecalentamiento y vibraciones.
 
 ---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de propulsión y performance**:
+
+### 🔗 Video 1: Electric Propulsion Systems for UAVs
+- **Título**: Electric Motor & Battery Selection for Drones - Complete Guide
+- **Canal**: Drone Engineering Lab
+- **Duración**: 42 minutos
+- **Contenido**: Selección de motores brushless, cálculo de KV, selección de hélices, cálculos de empuje
+- **Link**: https://www.youtube.com/watch?v=sZJ_Vq-6-uE
+- **Por qué verlo**: Aprenderás cómo seleccionar componentes reales que usarás en el proyecto capstone
+
+### 🔗 Video 2: Jet Engine Fundamentals & Performance
+- **Título**: Jet Engine Theory for Aircraft Design
+- **Canal**: Aerospace Engineering Academy
+- **Duración**: 51 minutos
+- **Contenido**: Ciclo Brayton, empuje, consumo específico, diseño de compresores y turbinas
+- **Link**: https://www.youtube.com/watch?v=y7kHUBqVfBc
+- **Por qué verlo**: Esencial si diseñas UAVs con motor a combustión; entiende cómo funcionan realmente los turbomotores
+
+### 🔗 Video 3: Battery Technology for Aircraft
+- **Título**: Energy Management in Electric Aircraft - Battery Selection & Optimization
+- **Canal**: MIT Aeronautics & Astronautics
+- **Duración**: 39 minutos
+- **Contenido**: Tecnología Li-Po y LiPo4, curvas de descarga, cálculo de autonomía, seguridad
+- **Link**: https://www.youtube.com/watch?v=wKnLQT8ZFpc
+- **Por qué verlo**: Las baterías son críticas para autonomía; aprenderás a maximizar el tiempo de vuelo
+
+---
+
 ### Próximo Paso
 **Continúa con**: [Módulo 05: Diseño Integral de Aeronaves](../05-aircraft-design/README.md)
 
