@@ -13,51 +13,62 @@ class DroneDesigner:
         """
         Generates a conceptual design based on high-level requirements.
         """
-        print(f"\n🧠 AI DESIGNER: Analyzing requirements for {mission_type} mission...")
+        print(f"\n[AI DESIGNER]: Analyzing requirements for {mission_type} mission...")
         print(f"   Payload: {payload_kg} kg | Endurance: {endurance_min} min")
 
-        # 1. Weight Estimation (Iterative Sizing)
-        # MTOW = Payload / (1 - EmptyFrac - FuelFrac)
-        # Simplified heuristics for electric UAVs
+        # 1. Weight Estimation
 
-        if mission_type == "surveillance":
-            structural_efficiency = 0.35  # lighter
+        if mission_type == "cargo":
+            structural_frac = 0.45
+            battery_density = 180  # Wh/kg
+            base_LD = 8
+        else:  # surveillance
+            structural_frac = 0.35
             battery_density = 200  # Wh/kg
-        elif mission_type == "cargo":
-            structural_efficiency = 0.45  # stronger/heavier
-            battery_density = 180  # robust cells
+            base_LD = 12
 
-        # Estimating Power required
-        # P = (W * V) / (L/D)
-        estimated_LD = 12 if mission_type == "surveillance" else 8
         cruise_speed = 15  # m/s
+        g = 9.81
 
-        # Iterative solver simulation
-        mtow = payload_kg * 3  # Initial guess
+        # Iterative sizing
+        # We need to find an MTOW where everything fits.
+        mtow = payload_kg * 5.0  # Initial guess
 
-        for i in range(5):
-            battery_mass = mtow * 0.4  # 40% of mass is battery (aggressive)
-            battery_energy = battery_mass * battery_density
+        # Initialize variables to avoid UnboundLocalError
+        power_req = 0.0
+        energy_req_wh = 0.0
 
-            # Power required for cruise
-            power_req = (mtow * 9.81 * cruise_speed) / estimated_LD
+        for i in range(10):
+            # Physics Model
+            # 1. Drag & Power
+            # Bigger planes have slightly better L/D (Reynolds number effect)
+            LD = base_LD * (mtow / 2.0) ** 0.1
+            drag = (mtow * g) / LD
+            power_req = drag * cruise_speed
 
-            # Calculate endurance
-            endurance_calc = (battery_energy / power_req) * 60  # minutes
+            # 2. Energy Required for Endurance
+            energy_req_wh = power_req * (endurance_min / 60.0)
 
-            # Adjust MTOW based on endurance miss
-            error = endurance_min - endurance_calc
-            if abs(error) < 1:
+            # 3. Component Masses
+            battery_mass = energy_req_wh / battery_density
+            structure_mass = mtow * structural_frac
+
+            # 4. New MTOW
+            calc_mtow = payload_kg + structure_mass + battery_mass
+
+            # Convergence check
+            error = calc_mtow - mtow
+            if abs(error) < 0.05:
                 break
 
-            # If endurance is too low, we need more battery -> more weight
-            mtow += error * 0.05
+            # Relaxation (move halfway to calculated)
+            mtow = mtow + 0.5 * error
 
         self.specs = {
             "mtow": round(mtow, 2),
             "wingspan": round((mtow / 0.5) ** 0.5, 2),  # Simple scaling law
             "motor_power": round(power_req * 1.5, 0),  # 1.5x margin
-            "battery_capacity": round(battery_energy, 0),
+            "battery_capacity": round(energy_req_wh * 1.2, 0),  # 20% reserve
             "cruise_speed": cruise_speed,
         }
 
@@ -109,14 +120,14 @@ if __name__ == "__main__":
     # 1. AI Logic
     specs = designer.design_from_requirements(payload, endurance)
 
-    print("\n✅ DESIGN CONVERGED:")
+    print("\n[SUCCESS] DESIGN CONVERGED:")
     print(f"   • MTOW: {specs['mtow']} kg")
     print(f"   • Wingspan: {specs['wingspan']} m")
     print(f"   • Battery: {specs['battery_capacity']} Wh")
     print(f"   • Motor: {specs['motor_power']} W")
 
     # 2. Generative Output
-    print("\n📄 GENERATING CAD SCRIPT...")
+    print("\n[INFO] GENERATING CAD SCRIPT...")
     cad_code = designer.generate_cad_script()
     print(cad_code)
 
