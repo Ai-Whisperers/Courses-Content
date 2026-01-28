@@ -1,0 +1,1 @@
+I have completed the refactoring for all 5 core modules of the **Software Development** track. Each module now has a clean structure with a core `README.md` and separate `tutorials/` and `examples/` folders. I am now proceeding to refactor the two specializations: **QA Automation** and **Web Development**. I will start with QA Automation.

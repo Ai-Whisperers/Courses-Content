@@ -99,73 +99,21 @@ Ingeniero Junior        → Ingeniero Senior   → Especialista
 
 ## Roadmap de Aprendizaje
 
-### Módulo 01: CAD con AI (4 horas)
+### [Módulo 01: CAD con AI](./modules/01-cad-with-ai/README.md) (4 horas)
 **Objetivo**: Dominar diseño 3D asistido por IA
 
-**Contenido**:
-- Introducción a CAD aeronáutico
-- Fusion 360 / FreeCAD basics
-- AI-assisted design (generative design)
-- Modelado de fuselaje y alas
-- Exportación para análisis
-
-**Proyecto**: Diseñar fuselaje de UAV con AI
-
----
-
-### Módulo 02: Aerodinámica & CFD (4 horas)
+### [Módulo 02: Aerodinámica & CFD](./modules/02-aerodynamics-cfd/README.md) (4 horas)
 **Objetivo**: Simular y optimizar flujos aerodinámicos
 
-**Contenido**:
-- Fundamentos de aerodinámica
-- OpenFOAM / ANSYS Fluent
-- XFLR5 para análisis de perfiles
-- CFD mesh generation
-- Optimización de perfiles con AI
-
-**Proyecto**: Simular perfil alar NACA
-
----
-
-### Módulo 03: Estructuras & Materiales (4 horas)
+### [Módulo 03: Estructuras & Materiales](./modules/03-structures-materials/README.md) (4 horas)
 **Objetivo**: Analizar resistencia estructural
 
-**Contenido**:
-- Análisis FEA (Finite Element Analysis)
-- Selección de materiales (aluminio, composites)
-- Cargas aerodinámicas
-- Factor de seguridad
-- Optimización topológica con AI
-
-**Proyecto**: Análisis FEA de larguero de ala
-
----
-
-### Módulo 04: Sistemas de Propulsión (4 horas)
+### [Módulo 04: Sistemas de Propulsión](./modules/04-propulsion-systems/README.md) (4 horas)
 **Objetivo**: Calcular performance y seleccionar motores
 
-**Contenido**:
-- Motores eléctricos vs combustión
-- Cálculos de empuje y potencia
-- Autonomía y alcance
-- Baterías y eficiencia
-- Simulación de performance
-
-**Proyecto**: Calcular autonomía de UAV
-
----
-
-### Módulo 05: Diseño de Aeronaves (4 horas)
+### [Módulo 05: Diseño de Aeronaves](./modules/05-aircraft-design/README.md) (4 horas)
 **Objetivo**: Integrar todos los sistemas
 
-**Contenido**:
-- Metodología de diseño
-- Trade-off analysis
-- Certificación FAA/EASA basics
-- Documentación técnica
-- AI para optimización global
-
-**Proyecto**: Propuesta de diseño conceptual
 
 ---
 
@@ -261,43 +209,25 @@ Reutiliza del directorio `SHARED/`:
 ├── README.md (este archivo)
 ├── modules/
 │   ├── 01-cad-with-ai/
-│   │   ├── README.md
-│   │   ├── content/
-│   │   │   └── 01-cad-fundamentals.md
-│   │   └── EXERCISE.md
+│   │   ├── README.md (Core Content)
+│   │   ├── tutorials/
+│   │   └── examples/
 │   │
 │   ├── 02-aerodynamics-cfd/
-│   │   ├── README.md
-│   │   ├── content/
-│   │   │   └── 01-cfd-basics.md
-│   │   └── EXERCISE.md
+│   │   ├── README.md (Core Content)
+│   │   ├── tutorials/
+│   │   └── examples/
 │   │
-│   ├── 03-structures-materials/
-│   │   ├── README.md
-│   │   ├── content/
-│   │   │   └── 01-fea-analysis.md
-│   │   └── EXERCISE.md
-│   │
-│   ├── 04-propulsion-systems/
-│   │   ├── README.md
-│   │   ├── content/
-│   │   │   └── 01-propulsion-basics.md
-│   │   └── EXERCISE.md
-│   │
-│   └── 05-aircraft-design/
-│       ├── README.md
-│       ├── content/
-│       │   └── 01-design-methodology.md
-│       └── EXERCISE.md
+│   ├── ... (y así para los 5 módulos)
 │
-├── capstone/
+├── proyecto-final/
 │   ├── README.md
 │   └── rubrica.md
 │
-└── resources/
+└── recursos/
+    ├── LIMITS-OF-AI.md (¡Lectura Obligatoria!)
     ├── guia-rapida.md
-    ├── herramientas.md
-    └── prompts.md
+    └── ...
 ```
 
 ---

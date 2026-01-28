@@ -63,7 +63,7 @@ By the end of this module, you will be able to:
 
 This module is divided into 5 comprehensive sections:
 
-### [01 - Page Object Model](./content/01-page-object-model.md)
+### [01 - Page Object Model](./tutorials/01_Page_Object_Model.md)
 **Duration**: 60 minutes
 
 Learn the industry-standard pattern for organizing UI test code:
@@ -77,7 +77,7 @@ Learn the industry-standard pattern for organizing UI test code:
 
 ---
 
-### [02 - Fixtures and Helpers](./content/02-fixtures-helpers.md)
+### [02 - Custom Fixtures and Helpers](./tutorials/02_Custom_Fixtures_Helpers.md)
 **Duration**: 45 minutes
 
 Master Playwright's fixture system and create powerful test utilities:
@@ -89,9 +89,12 @@ Master Playwright's fixture system and create powerful test utilities:
 
 **Key Concepts**: DRY principle, test setup/teardown, shared context
 
+**📖 Tutorial**: [02_Custom_Fixtures_Helpers.md](./tutorials/02_Custom_Fixtures_Helpers.md)  
+**🤖 OpenCode Prompt**: [01_CustomFixtures_Prompt.md](./examples/01_CustomFixtures_Prompt.md)
+
 ---
 
-### [03 - Test Data Management](./content/03-test-data-management.md)
+### [03 - Test Data Management](./tutorials/03_Test_Data_Management.md)
 **Duration**: 45 minutes
 
 Design strategies for managing test data effectively:
@@ -103,9 +106,12 @@ Design strategies for managing test data effectively:
 
 **Key Concepts**: Test independence, data factories, seeding strategies
 
+**📖 Tutorial**: [03_Test_Data_Management.md](./tutorials/03_Test_Data_Management.md)  
+**🤖 OpenCode Prompt**: [02_TestDataGeneration_Prompt.md](./examples/02_TestDataGeneration_Prompt.md)
+
 ---
 
-### [04 - Multi-Environment Configuration](./content/04-multi-environment-config.md)
+### [04 - Multi-Environment Configuration](./tutorials/04_Multi_Environment_Config.md)
 **Duration**: 45 minutes
 
 Configure tests to run across different environments:
@@ -117,19 +123,22 @@ Configure tests to run across different environments:
 
 **Key Concepts**: Environment abstraction, configuration management, security
 
+**📖 Tutorial**: [04_Multi_Environment_Config.md](./tutorials/04_Multi_Environment_Config.md)  
+**🤖 OpenCode Prompt**: [03_EnvironmentConfig_Prompt.md](./examples/03_EnvironmentConfig_Prompt.md)
+
 ---
 
-### [05 - Test Organization Patterns](./content/05-test-organization-patterns.md)
+### [05 - Parallelization & Performance](./tutorials/05_Parallelization_Performance.md)
 **Duration**: 45 minutes
 
-Learn how to structure your test project for maximum maintainability:
-- Directory structure best practices
-- Test file naming conventions
-- Grouping and tagging tests
-- Test suites and selective execution
-- Documentation and README standards
+Optimize test execution speed with parallelization:
+- Understanding test parallelization in Playwright
+- Worker configuration and management
+- Test isolation and data independence
+- Sharding strategies for CI/CD
+- Performance optimization techniques
 
-**Key Concepts**: Scalability, convention over configuration, discoverability
+**Key Concepts**: Concurrency, performance, scalability
 
 ---
 
