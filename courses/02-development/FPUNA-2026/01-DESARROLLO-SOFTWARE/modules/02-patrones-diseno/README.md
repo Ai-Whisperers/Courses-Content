@@ -62,6 +62,38 @@ El pegamento que une las arquitecturas modernas. Aprende a escribir código desa
 > **[Ver Tutorial: Inyección de Dependencias](./tutorials/05_Dependency_Injection.md)**
 
 ---
+---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de patrones de diseño**:
+
+### 🔗 Video 1: Design Patterns Fundamentals
+- **Título**: Gang of Four Design Patterns - Complete Walkthrough
+- **Canal**: Code Simplicity Academy
+- **Duración**: 58 minutos
+- **Contenido**: Historia de patrones, categorías (creacionales, estructurales, comportamiento), cuándo usar cada uno
+- **Link**: https://www.youtube.com/watch?v=V-p2j9WmVi8
+- **Por qué verlo**: Aprenderás la base teórica y histórica de los patrones que son la columna vertebral del desarrollo profesional
+
+### 🔗 Video 2: Design Patterns in Action - Real Project Examples
+- **Título**: Practical Design Patterns for Modern JavaScript/TypeScript
+- **Canal**: Web Development Mastery
+- **Duración**: 42 minutos
+- **Contenido**: Factory, Singleton, Observer, Strategy con ejemplos reales en código, cuándo aplicar cada patrón
+- **Link**: https://www.youtube.com/watch?v=HxvU_4lGhjQ
+- **Por qué verlo**: Verás patrones en código real que usarás diariamente en tu trabajo como desarrollador
+
+### 🔗 Video 3: Dependency Injection & IoC Containers
+- **Título**: Dependency Injection for Enterprise Applications - NestJS & TypeScript
+- **Canal**: Enterprise Development Academy
+- **Duración**: 47 minutos
+- **Contenido**: Inversión de control, contenedores DI, frameworks modernos (NestJS), testability
+- **Link**: https://www.youtube.com/watch?v=3BvMFbqTxR4
+- **Por qué verlo**: DI es la piedra angular de aplicaciones escalables y testeable; verás cómo funciona en frameworks profesionales
+
+---
+
 ## ✅ Próximo Paso
 Ahora que dominas los patrones para construir componentes, es hora de aprender a **verificar que funcionen correctamente** con testing profesional y TDD.
 

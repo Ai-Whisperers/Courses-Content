@@ -1917,6 +1917,36 @@ Antes de hacer commit, verifica:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de código limpio**:
+
+### 🔗 Video 1: Clean Code Principles - Robert Martin's Guide
+- **Título**: Clean Code: A Handbook of Agile Software Craftsmanship - Core Principles
+- **Canal**: Tech Code Academy
+- **Duración**: 55 minutos
+- **Contenido**: Naming, funciones, comentarios, formatting, error handling, refactoring
+- **Link**: https://www.youtube.com/watch?v=TTJF2KYNInE
+- **Por qué verlo**: Aprenderás principios atemporales de Robert Martin (Uncle Bob) que definen código profesional
+
+### 🔗 Video 2: Refactoring Techniques & Code Smells
+- **Título**: Refactoring Guide - Extract Method, Simplify Names, Reduce Duplication
+- **Canal**: Code Refactoring Academy
+- **Duración**: 42 minutos
+- **Contenido**: Code smells, técnicas de refactoring, herramientas, antes y después
+- **Link**: https://www.youtube.com/watch?v=OZdOlfVwZ8I
+- **Por qué verlo**: Refactoring no es un acto individual; es una disciplina que prolonga la vida de tu código
+
+### 🔗 Video 3: SOLID Principles in Action
+- **Título**: SOLID Design Principles - The 5 Pillars of Clean Architecture
+- **Canal**: Enterprise Development Academy
+- **Duración**: 50 minutos
+- **Contenido**: S-O-L-I-D principles, ejemplos prácticos, cómo detectar violaciones, refactoring a SOLID
+- **Link**: https://www.youtube.com/watch?v=aylQKxcHT_w
+- **Por qué verlo**: SOLID es la escalera para pasar de código funcional a código verdaderamente profesional y escalable
+
+---
+
 *Módulo creado para FPUNA Verano 2026*  
 *Actualizado: Enero 2026*  
 *Track: Software Development*

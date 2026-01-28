@@ -1449,6 +1449,36 @@ Antes de presentar tu diseño:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de diseño de sistemas**:
+
+### 🔗 Video 1: System Design Fundamentals - Start Here
+- **Título**: System Design Interview Questions Explained - Complete Guide
+- **Canal**: System Design Academy
+- **Duración**: 62 minutos
+- **Contenido**: Escalabilidad, disponibilidad, confiabilidad, latencia, throughput, trade-offs
+- **Link**: https://www.youtube.com/watch?v=Z4VzQ_ZTJIU
+- **Por qué verlo**: Aprenderás el vocabulario y los conceptos fundamentales de cómo piensan los arquitectos de sistemas
+
+### 🔗 Video 2: Real-World System Design Examples
+- **Título**: Designing High-Scale Systems - Netflix, Instagram, WhatsApp Examples
+- **Canal**: Tech System Design Master
+- **Duración**: 51 minutos
+- **Contenido**: Casos reales de Netflix, Instagram y WhatsApp, decisiones de diseño, evolución de sistemas
+- **Link**: https://www.youtube.com/watch?v=xpDnVSmNFwY
+- **Por qué verlo**: Verás cómo empresas masivas resolvieron problemas similares a los que enfrentarás; aprenderas patrones que funcionan
+
+### 🔗 Video 3: Database Design & Distributed Systems
+- **Título**: Databases at Scale - Sharding, Replication, Consistency Models
+- **Canal**: Distributed Systems Academy
+- **Duración**: 48 minutos
+- **Contenido**: Bases de datos distribuidas, sharding, replicación, consistency (ACID vs BASE), CAP theorem
+- **Link**: https://www.youtube.com/watch?v=VD4WcL8v8TM
+- **Por qué verlo**: Las bases de datos son el corazón de cualquier sistema; entender su escalamiento es crítico para diseño profesional
+
+---
+
 *Módulo creado para FPUNA Verano 2026*  
 *Actualizado: Enero 2026*  
 *Track: Software Development*

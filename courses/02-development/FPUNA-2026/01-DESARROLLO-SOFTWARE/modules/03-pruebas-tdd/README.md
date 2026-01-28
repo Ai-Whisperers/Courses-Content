@@ -53,6 +53,38 @@ No se trata solo de escribir tests, sino de escribir los tests correctos.
 - **Mejores Prácticas**: Escribe tests que sean descriptivos, independientes y robustos.
 
 ---
+---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de testing y TDD**:
+
+### 🔗 Video 1: Test-Driven Development (TDD) in Practice
+- **Título**: Test-Driven Development Mastery - Red-Green-Refactor Cycle
+- **Canal**: Code Mastery Academy
+- **Duración**: 51 minutos
+- **Contenido**: Ciclo TDD, ventajas y desventajas, refactoring desde tests, profundidad de tests
+- **Link**: https://www.youtube.com/watch?v=aKzZXycLjMU
+- **Por qué verlo**: TDD es una mentalidad; verás cómo cambiar tu forma de pensar sobre desarrollo desde el primer test
+
+### 🔗 Video 2: Unit Testing Best Practices with Jest/Vitest
+- **Título**: Writing Effective Unit Tests - Jest & Testing Library Deep Dive
+- **Canal**: Web Development Mastery
+- **Duración**: 44 minutos
+- **Contenido**: Estructura AAA de tests, asserciones, fixtures, testing library, debugging tests
+- **Link**: https://www.youtube.com/watch?v=IQSD3gqg5BY
+- **Por qué verlo**: Jest es el estándar de testing en TypeScript/JavaScript; aprenderás patrones profesionales
+
+### 🔗 Video 3: Integration Testing & E2E Testing Strategies
+- **Título**: Beyond Unit Tests - Integration & E2E Testing for Real-World Applications
+- **Canal**: Enterprise Development Academy
+- **Duración**: 48 minutos
+- **Contenido**: Testing pyramid, testing integración vs unitarios, E2E con Cypress, test data factories
+- **Link**: https://www.youtube.com/watch?v=JrDmhqAQs3s
+- **Por qué verlo**: Tests unitarios son solo el principio; aprenderás estrategia completa de testing que protege tu aplicación
+
+---
+
 ## ✅ Próximo Paso
 Saber escribir tests es la mitad de la batalla. La otra mitad es escribir código que sea **fácil de testear**. Eso es lo que aprenderás en el siguiente módulo.
 

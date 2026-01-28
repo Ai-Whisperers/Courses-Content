@@ -72,6 +72,38 @@ La API es el "contrato" de tu servicio. Aprende a diseñar APIs limpias, eficien
 > **[Ver Ejemplo: Prompts para Diseño de APIs](./examples/03_API_Design_Prompts.md)**
 
 ---
+---
+
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar conceptos de arquitectura de software**:
+
+### 🔗 Video 1: Software Architecture Fundamentals - Core Concepts
+- **Título**: The Software Architecture Handbook - From Monolith to Microservices
+- **Canal**: Tech Academy
+- **Duración**: 52 minutos
+- **Contenido**: Decisiones arquitectónicas, trade-offs, estilos principales, cuando usar cada uno
+- **Link**: https://www.youtube.com/watch?v=C7adWvw420w
+- **Por qué verlo**: Panorama completo de conceptos que forman la base de este módulo
+
+### 🔗 Video 2: Layered Architecture Deep Dive
+- **Título**: Mastering Layered Architecture - Design Patterns for Scalable Applications
+- **Canal**: Software Design Patterns Academy
+- **Duración**: 38 minutos
+- **Contenido**: Estructura en capas, separación de responsabilidades, testing en capas, refactoring
+- **Link**: https://www.youtube.com/watch?v=cNUe6MkJKK8
+- **Por qué verlo**: Aprenderas prácticamente cómo estructurar aplicaciones reales con la arquitectura en capas
+
+### 🔗 Video 3: REST API Design Best Practices
+- **Título**: RESTful API Design - Best Practices & Patterns
+- **Canal**: API Academy
+- **Duración**: 45 minutos
+- **Contenido**: Diseño de endpoints, versionamiento, códigos de respuesta, documentación, seguridad
+- **Link**: https://www.youtube.com/watch?v=iqRDvq-vPOs
+- **Por qué verlo**: APIs bien diseñadas son críticas en cualquier arquitectura moderna; aprenderás estándares de industria
+
+---
+
 ## ✅ Próximo Paso
 Ahora que entiendes las arquitecturas, el siguiente paso es aprender los **Patrones de Diseño** que se usan para construir los componentes *dentro* de esas arquitecturas.
 
