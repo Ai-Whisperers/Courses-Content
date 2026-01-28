@@ -58,7 +58,7 @@
     - 04-MARKETING-NEGOCIOS-TURISMO (8 modules with 2 specialization paths)
     - 05-INVESTIGACION-ACADEMIA (5 modules)
   - ✅ Daily instructor scripts (dias/) with 9 solved exercises
-  - ✅ 280+ markdown files in Spanish
+  - ✅ 269 markdown files in Spanish
   - Target audience: Universidad Nacional de Asunción (Paraguay)
   - Timeline: Q2 2026
   - Remaining: Instructor validation, student testing
@@ -117,6 +117,12 @@ courses/
       - Especialización B - Hospitalidad y Turismo (12h)
     - Students can take 20h, 24h, or 32h depending on career focus
     - Reduced from 6 to 5 specialized tracks
+
+14. ✅ Updated all FPUNA documentation and cross-references
+    - Updated días/README.md and día-05-marketing for merged track
+    - Updated FPUNA README.md with correct track structure
+    - Updated EXPANSION-ROADMAP.md and IMPLEMENTATION-PLAN.md
+    - All internal links verified and corrected
 
 ### Based on Research From
 - freeCodeCamp (50/50 theory:practice ratio)
