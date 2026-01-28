@@ -1,7 +1,7 @@
 # 00 - Fundamentos Universales (Core Foundation)
 ## FPUNA Verano 2026 - Semana 1
 
-**Duracion**: 8 horas | **Modalidad**: Presencial | **Prerequisitos**: Ninguno
+**Duracion**: 20 horas | **Modalidad**: Presencial | **Prerequisitos**: Ninguno
 
 ---
 
@@ -91,17 +91,39 @@ Si algo falla, llega 1 hora antes del Dia 1 para ayuda tecnica.
 
 ---
 
+## Recursos del Track
+
+### Incluidos en este directorio
+
+| Recurso | Ubicacion | Descripcion |
+|---------|-----------|-------------|
+| **Template CLAUDE.md** | `_templates/CLAUDE-template.md` | Template base para configurar contexto en proyectos |
+| **Proyecto Demo** | `live-demo-proyecto/` | Ejemplo completo usado en Modulo 05 |
+| **Proyecto Final** | `proyecto-final/` | Requisitos y rubrica de evaluacion |
+| **Prerequisitos** | `_components/_prerequisites.md` | Requisitos tecnicos detallados |
+
+### Recursos Compartidos (COMPARTIDO/)
+
+Este track utiliza recursos del directorio compartido:
+
+| Recurso | Ubicacion | Descripcion |
+|---------|-----------|-------------|
+| **Instalacion OpenCode** | `COMPARTIDO/instalacion-opencode/` | Guias por SO (Windows/Mac/Linux) + FAQ |
+| **Configuracion MCP** | `COMPARTIDO/configuracion-mcp/` | Setup de MCPs |
+| **Sistema de Skills** | `COMPARTIDO/sistema-skills/` | Como crear y usar skills |
+| **Hooks y Reglas** | `COMPARTIDO/hooks-reglas/` | Best practices |
+| **Plantillas Proyecto** | `COMPARTIDO/plantillas-proyecto/` | Templates basico y completo |
+
+---
+
 ## Proximos Pasos
 
 Al completar Core Foundation, elige tu Track (Semana 2):
-- Software Development
-- Electronics & Automation
-- Aeronautical Engineering
-- Marketing & Communication
-- Research & Academia
-- Hospitality & Tourism
-- QA Automation
-- Web Development
+- **01-DESARROLLO-SOFTWARE**: Arquitectura, patrones, testing
+- **02-ELECTRONICA-AUTOMATIZACION**: Circuitos, IoT, firmware
+- **03-INGENIERIA-AERONAUTICA**: CAD, aerodinamica, UAV
+- **04-MARKETING-NEGOCIOS-TURISMO**: Marketing digital, contenido, hospitalidad
+- **05-INVESTIGACION-ACADEMIA**: Metodologia, redaccion academica
 
 ---
 
