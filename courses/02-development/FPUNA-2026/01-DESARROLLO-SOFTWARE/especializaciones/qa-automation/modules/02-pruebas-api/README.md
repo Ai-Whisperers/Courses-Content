@@ -1256,6 +1256,28 @@ Zod resuelve el problema de validación en runtime. TypeScript solo valida en co
 
 ---
 
+## 📚 Tutoriales Disponibles
+
+Aprende cada tema en profundidad:
+
+- 📖 [01_REST_API_Basics.md](./tutorials/01_REST_API_Basics.md) - Fundamentos de APIs REST
+- 📖 [02_Schema_Validation_Zod.md](./tutorials/02_Schema_Validation_Zod.md) - Validación type-safe con Zod
+- 📖 [03_Contract_Testing.md](./tutorials/03_Contract_Testing.md) - Consumer-driven contracts
+- 📖 [04_Performance_Testing.md](./tutorials/04_Performance_Testing.md) - Medir y optimizar performance
+- 📖 [05_API_Mocking.md](./tutorials/05_API_Mocking.md) - Aislar tests con mocking
+
+---
+
+## 🤖 Ejemplos de IA (Copy-Paste Ready)
+
+Prompts para OpenCode:
+
+- 🤖 [01_APITestSuite_Prompt.md](./examples/01_APITestSuite_Prompt.md) - Suite completa de tests API
+- 🤖 [02_SchemaValidation_Prompt.md](./examples/02_SchemaValidation_Prompt.md) - Validación con Zod
+- 🤖 [03_LoadTesting_Prompt.md](./examples/03_LoadTesting_Prompt.md) - Performance y load testing
+
+---
+
 ## 🎓 Resumen del Módulo
 
 ### Lo Que Dominaste
@@ -1269,7 +1291,7 @@ Zod resuelve el problema de validación en runtime. TypeScript solo valida en co
 
 ### Próximo Paso
 
-**Continúa con**: [Módulo 03 - Arquitectura de Tests](./03-arquitectura-pruebas.md)
+**Continúa con**: [Módulo 03 - Arquitectura de Tests](../03-arquitectura-pruebas/README.md)
 
 ---
 
