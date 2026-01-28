@@ -51,9 +51,14 @@
 ### In Development (1 course)
 - **FPUNA 2026**: ~90% complete
   - ✅ 00-FUNDAMENTOS: 6 modules, proyecto-final with rubric, live-demo-proyecto
-  - ✅ 6 specialized tracks (Electrónica, Aeronáutica, Software, Marketing, Hospitalidad, Investigación)
+  - ✅ 5 specialized tracks:
+    - 01-DESARROLLO-SOFTWARE (5 modules)
+    - 02-ELECTRONICA-AUTOMATIZACION (5 modules)
+    - 03-INGENIERIA-AERONAUTICA (5 modules)
+    - 04-MARKETING-NEGOCIOS-TURISMO (8 modules with 2 specialization paths)
+    - 05-INVESTIGACION-ACADEMIA (5 modules)
   - ✅ Daily instructor scripts (dias/) with 9 solved exercises
-  - ✅ 291+ markdown files in Spanish
+  - ✅ 280+ markdown files in Spanish
   - Target audience: Universidad Nacional de Asunción (Paraguay)
   - Timeline: Q2 2026
   - Remaining: Instructor validation, student testing
@@ -103,6 +108,15 @@ courses/
     - Project options: utility app, informative page, or interactive tool
     - Technical requirements: HTML5/CSS3/vanilla JS (no frameworks)
     - 100-point rubric with 5 categories and bonus/penalty system
+
+13. ✅ Merged Marketing and Hospitalidad into unified track
+    - New: 04-MARKETING-NEGOCIOS-TURISMO (was 04-MARKETING + 06-HOSPITALIDAD)
+    - Modular structure with specialization paths:
+      - Núcleo Común (12h): Content, Data, Social Media
+      - Especialización A - Marketing General (8h)
+      - Especialización B - Hospitalidad y Turismo (12h)
+    - Students can take 20h, 24h, or 32h depending on career focus
+    - Reduced from 6 to 5 specialized tracks
 
 ### Based on Research From
 - freeCodeCamp (50/50 theory:practice ratio)
