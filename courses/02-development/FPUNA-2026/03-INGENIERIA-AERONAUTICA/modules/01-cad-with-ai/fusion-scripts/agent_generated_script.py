@@ -100,7 +100,7 @@ def run(context):
         sketches = rootComp.sketches
         xyPlane = rootComp.xYConstructionPlane
         sketch = sketches.add(xyPlane)
-        sketch.sketchCurves.sketchSplines.add(airfoil_points)
+        sketch.sketchCurves.sketchFittedSplines.add(airfoil_points)
 
         # 4. Extrude the airfoil profile to create a wing section
         prof = sketch.profiles.item(0)
