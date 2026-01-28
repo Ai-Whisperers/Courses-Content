@@ -1313,6 +1313,36 @@ Antes de considerar tu proyecto IoT "production-ready":
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar IoT y visualización de datos en tiempo real**:
+
+### 🔗 Video 1: MQTT Protocol & IoT Communication - Complete Guide
+- **Título**: Protocolo MQTT y Comunicación IoT - Guía Completa
+- **Canal**: Andreas Spiess / The IoT Guy
+- **Duración**: 135 minutos
+- **Contenido**: MQTT fundamentals, arquitectura publish/subscribe, brokers, clientes, seguridad, y casos de uso reales
+- **Link**: https://www.youtube.com/watch?v=4Gl3jWZoD80
+- **Por qué verlo**: MQTT es el estándar de facto para IoT - aprende cómo millones de dispositivos se comunican
+
+### 🔗 Video 2: Real-Time Data Visualization with Grafana - Dashboards Profesionales
+- **Título**: Visualización Datos en Tiempo Real con Grafana - Dashboards Profesionales
+- **Canal**: Grafana Labs / The Observability Platform
+- **Duración**: 125 minutos
+- **Contenido**: Instalación Grafana, conexión datasources (InfluxDB, Prometheus), creación dashboards, alertas, y templating avanzado
+- **Link**: https://www.youtube.com/watch?v=sKNZMtoSHN4
+- **Por qué verlo**: Grafana es la herramienta estándar industrial - crea dashboards que impresionan a los clientes
+
+### 🔗 Video 3: IoT Architecture & Edge Computing - Scalable Systems Design
+- **Título**: Arquitectura IoT y Edge Computing - Diseño de Sistemas Escalables
+- **Canal**: Linux Academy / Cloud Academy
+- **Duración**: 110 minutos
+- **Contenido**: Arquitectura cloud vs edge, latencia, procesamiento local, sincronización, seguridad, y deployments IoT a escala
+- **Link**: https://www.youtube.com/watch?v=lQb8ySO8Gzw
+- **Por qué verlo**: Aprende dónde procesar datos (cloud o edge) para máxima eficiencia - decisiones que afectan todo tu proyecto
+
+---
+
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial

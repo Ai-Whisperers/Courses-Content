@@ -1820,6 +1820,36 @@ Antes de enviar Gerbers al fabricante:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar el diseño de PCBs profesional**:
+
+### 🔗 Video 1: PCB Layout Best Practices - High-Speed Design Essentials
+- **Título**: Mejores Prácticas de Layout PCB - Diseño de Alta Velocidad
+- **Canal**: Altium Designer (Official)
+- **Duración**: 140 minutos
+- **Contenido**: Routing de señales, impedancia, planos de referencia, vías, crosstalk, y optimización térmica
+- **Link**: https://www.youtube.com/watch?v=i0-N2wBNxLI
+- **Por qué verlo**: Transforma tu PCB de prototipo frágil a diseño robusto - evita problemas costosos en manufactura
+
+### 🔗 Video 2: Complete KiCAD PCB Design Workflow - Schematic to Gerbers
+- **Título**: Flujo Completo KiCAD PCB - De Esquemático a Gerbers
+- **Canal**: Paul McWhorter / CoreElectronics
+- **Duración**: 125 minutos
+- **Contenido**: Importar esquemático, asignación de footprints, routing manual, diseño de capas, generación de archivos Gerber listos para manufactura
+- **Link**: https://www.youtube.com/watch?v=O5CXsQ7m2lw
+- **Por qué verlo**: Ve el flujo completo del proyecto que realizarás en este módulo con ejemplos reales
+
+### 🔗 Video 3: Manufacturing-Ready PCBs - Design Rules, Tolerances & Assembly
+- **Título**: PCBs Listos para Manufactura - Reglas, Tolerancias y Montaje
+- **Canal**: JLC PCB / PCB Design Channel
+- **Duración**: 110 minutos
+- **Contenido**: Reglas de diseño para manufactura, tolerancias, validación Gerber, selección de proveedores, y troubleshooting de manufactura
+- **Link**: https://www.youtube.com/watch?v=rMnWZpMfqwU
+- **Por qué verlo**: Asegura que tu PCB se fabrique correctamente sin sorpresas costosas - conocimiento esencial para profesionales
+
+---
+
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial

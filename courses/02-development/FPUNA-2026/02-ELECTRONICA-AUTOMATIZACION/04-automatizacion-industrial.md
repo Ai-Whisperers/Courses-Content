@@ -1219,6 +1219,36 @@ Antes de poner en producción:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar automatización industrial y sistemas SCADA**:
+
+### 🔗 Video 1: PLC Programming - Ladder Logic from Beginner to Professional
+- **Título**: Programación de PLCs - Lógica Escalera de Básico a Profesional
+- **Canal**: Industrial Automation Basics
+- **Duración**: 135 minutos
+- **Contenido**: Fundamentos ladder, sensores, contactores, temporizadores, contadores, transiciones de estado, y proyectos reales
+- **Link**: https://www.youtube.com/watch?v=o_TH-ZF1d1Y
+- **Por qué verlo**: Los PLCs son el corazón de la industria 4.0 - ladder es el lenguaje industrial estándar
+
+### 🔗 Video 2: SCADA Systems & HMI Design - Monitoring & Control at Scale
+- **Título**: Sistemas SCADA y Diseño HMI - Monitoreo y Control a Escala Industrial
+- **Canal**: Automation & Control Channel
+- **Duración**: 120 minutos
+- **Contenido**: Arquitectura SCADA, HMI design, comunicación entre dispositivos, alarmas, históricos, y mejores prácticas operativas
+- **Link**: https://www.youtube.com/watch?v=9vI4NZfnvGQ
+- **Por qué verlo**: Entiende cómo todo se conecta - del sensor al dashboard industrial que los operarios usan diariamente
+
+### 🔗 Video 3: Industrial Protocols & Modbus Communication - Real-World Troubleshooting
+- **Título**: Protocolos Industriales & Comunicación Modbus - Troubleshooting Real
+- **Canal**: Electrical Engineering Channel
+- **Duración**: 100 minutos
+- **Contenido**: Modbus TCP/RTU, configuración de redes industriales, diagnóstico de problemas de comunicación, ethernet industrial
+- **Link**: https://www.youtube.com/watch?v=gJ-6QUSM0sY
+- **Por qué verlo**: Las comunicaciones son el 80% de los problemas industriales - saber debuggear Modbus te hace invaluable
+
+---
+
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial

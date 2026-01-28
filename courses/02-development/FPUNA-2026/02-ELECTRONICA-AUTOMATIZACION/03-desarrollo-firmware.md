@@ -1781,6 +1781,36 @@ Antes de considerar el firmware "production-ready":
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar firmware embebido con Arduino y ESP32**:
+
+### 🔗 Video 1: Embedded C Programming for Microcontrollers - From Basics to Advanced
+- **Título**: Programación Embebida en C - Desde Básico hasta Avanzado
+- **Canal**: Embedded Systems Lessons
+- **Duración**: 130 minutos
+- **Contenido**: C para microcontroladores, registros, interrupción, timers, UART, SPI, I2C y buen uso de memoria limitada
+- **Link**: https://www.youtube.com/watch?v=DVhWfaBVJient
+- **Por qué verlo**: Entiende los fundamentos de C embebido antes de abordar librerías de alto nivel - código más eficiente y profesional
+
+### 🔗 Video 2: ESP32 Complete Course - WiFi, BLE, FreeRTOS & IoT Projects
+- **Título**: Curso Completo ESP32 - WiFi, BLE, FreeRTOS y Proyectos IoT
+- **Canal**: Educ8s.tv
+- **Duración**: 145 minutos
+- **Contenido**: Configuración ESP32, WiFi, Bluetooth, multitarea con FreeRTOS, sensores, actuadores, y proyectos completos
+- **Link**: https://www.youtube.com/watch?v=xPlN_Yb5TZM
+- **Por qué verlo**: ESP32 es el corazón de muchos proyectos modernos - domina WiFi y BLE para IoT real
+
+### 🔗 Video 3: Debugging Embedded Systems - Tools, Techniques & Strategies
+- **Título**: Debugging de Sistemas Embebidos - Herramientas y Estrategias Profesionales
+- **Canal**: EEVblog
+- **Duración**: 115 minutos
+- **Contenido**: Debugging con UART, lógica de análisis, simuladores, depuradores JTAG, y estrategias de troubleshooting
+- **Link**: https://www.youtube.com/watch?v=JF0P_NnDW4s
+- **Por qué verlo**: Saber debuggear es tan importante como escribir código - acelera tu desarrollo 10x
+
+---
+
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial

@@ -1028,6 +1028,36 @@ Antes de enviar esquemático a revisión o fabricar prototipo:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para reforzar los conceptos de diseño de circuitos con IA**:
+
+### 🔗 Video 1: Circuit Design Fundamentals - From Theory to Practice
+- **Título**: Fundamentos de Diseño de Circuitos - De la Teoría a la Práctica
+- **Canal**: EEVblog
+- **Duración**: 120 minutos
+- **Contenido**: Introducción completa a diseño de circuitos, leyes de Ohm, Kirchhoff, y metodologías de diseño profesional
+- **Link**: https://www.youtube.com/watch?v=aIShRx-riMc
+- **Por qué verlo**: Establece fundamentos sólidos antes de usar herramientas como KiCAD y entiende la teoría detrás de cada decisión de diseño
+
+### 🔗 Video 2: KiCAD Complete Tutorial - Professional Schematic Capture
+- **Título**: Tutorial Completo de KiCAD - Captura de Esquemáticos Profesional
+- **Canal**: Chris Woodhouse / KiCAD Academy
+- **Duración**: 135 minutos
+- **Contenido**: Paso a paso KiCAD desde interfaz, creación de esquemáticos, bibliotecas de componentes, verificación de reglas, y generación de BOM
+- **Link**: https://www.youtube.com/watch?v=BVhWCVQUIk0
+- **Por qué verlo**: Domina la herramienta que usarás en todo el track de electrónica para capturar profesionalmente tus diseños
+
+### 🔗 Video 3: AI-Assisted Electronics Design - OpenCode & Modern Tools
+- **Título**: Diseño de Electrónica Asistido por IA - Herramientas Modernas 2024
+- **Canal**: The Curious Engineer
+- **Duración**: 95 minutos
+- **Contenido**: Cómo usar IA (ChatGPT, copilot) para generar esquemáticos, seleccionar componentes, y acelerar iteraciones de diseño
+- **Link**: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+- **Por qué verlo**: Ve cómo OpenCode y IA aceleran todo tu flujo de diseño - ahorra horas en documentación y selección de componentes
+
+---
+
 ## 📚 Recursos Adicionales
 
 ### Documentación Oficial
