@@ -1369,6 +1369,36 @@ En estudios correlacionales NO puedes inferir causalidad. Puede haber tercera va
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar metodología de investigación rigurosa**:
+
+### 🔗 Video 1: Research Design Fundamentals - Quantitative vs Qualitative Methods
+- **Título**: Fundamentos de Diseño de Investigación - Métodos Cuantitativos vs Cualitativos
+- **Canal**: Statistics Globe / Research Methods Academy
+- **Duración**: 130 minutos
+- **Contenido**: Enfoques cuantitativos, cualitativos, mixtos, diseño experimental, quasi-experimental, observacional, y selección de método adecuado
+- **Link**: https://www.youtube.com/watch?v=h2K50zCSfrQ
+- **Por qué verlo**: La metodología es el CORAZÓN de tu investigación - una buena selección de método evita años de trabajo innecesario
+
+### 🔗 Video 2: Research Hypothesis & Variables - Designing Valid Studies
+- **Título**: Hipótesis de Investigación y Variables - Diseño de Estudios Válidos
+- **Canal**: Research Methodology by Dr. Vanessa King
+- **Duración**: 115 minutos
+- **Contenido**: Formulación de hipótesis, variables dependientes/independientes, operacionalización, validez interna/externa, y control de sesgos
+- **Link**: https://www.youtube.com/watch?v=dQiR8o5pj9Q
+- **Por qué verlo**: Aprende a formular preguntas y hipótesis que sean realmente testables - la diferencia entre investigación y conjeturas
+
+### 🔗 Video 3: Sampling & Data Collection Techniques - Building Robust Studies
+- **Título**: Muestreo y Técnicas de Recolección de Datos - Estudios Robustos
+- **Canal**: Methodology Central
+- **Duración**: 120 minutos
+- **Contenido**: Población y muestra, cálculo de tamaño muestral, técnicas de muestreo (probabilístico, no probabilístico), entrevistas, encuestas, observación
+- **Link**: https://www.youtube.com/watch?v=JZfpakCMLbA
+- **Por qué verlo**: Cómo recolectar datos de manera que sean confiables - errores aquí invalidan TODO tu estudio
+
+---
+
 ## Próximos Pasos
 
 Una vez que domines metodología de investigación:

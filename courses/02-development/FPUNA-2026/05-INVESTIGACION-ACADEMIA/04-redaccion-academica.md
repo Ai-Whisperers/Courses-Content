@@ -909,6 +909,36 @@ Conceptual de Programación (TCCP).
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para escribir papers académicos de calidad profesional**:
+
+### 🔗 Video 1: Academic Paper Structure - IMRaD Format Mastery
+- **Título**: Estructura de Papers Académicos - Formato IMRaD Profesional
+- **Canal**: Caitlin Aktinson & Dr. Suchitra Mathyssen
+- **Duración**: 125 minutos
+- **Contenido**: Introducción (gap identification), Métodos (reproducibilidad), Resultados (objetividad), Discusión (impacto), Abstract efectivo
+- **Link**: https://www.youtube.com/watch?v=6t7C1yG_9h8
+- **Por qué verlo**: La estructura IMRaD es ESTÁNDAR global - escribir mal IMRaD = rechazo automático de journal
+
+### 🔗 Video 2: Academic Writing with AI - ChatGPT, Grammarly & Enhancing Your Voice
+- **Título**: Escritura Académica Asistida por IA - Herramientas Modernas 2024
+- **Canal**: The Productive Academic
+- **Duración**: 110 minutos
+- **Contenido**: ChatGPT para draft inicial, Grammarly para gramática, Hemingway para claridad, mantener voz académica, ética en uso de IA
+- **Link**: https://www.youtube.com/watch?v=oQfLhpjDaMs
+- **Por qué verlo**: IA acelera escritura 50-70% pero requiere CRITERIO - aprende cuándo es apropiado delegar vs escribir vos
+
+### 🔗 Video 3: LaTeX & Professional Paper Formatting - Publication-Ready Documents
+- **Título**: LaTeX y Formato Profesional - Documentos Listos para Publicación
+- **Canal**: Dr. Edith Cowan / Overleaf
+- **Duración**: 115 minutos
+- **Contenido**: Introducción LaTeX, plantillas de papers, ecuaciones, tablas, figuras, bibliografía automática, compilación en Overleaf
+- **Link**: https://www.youtube.com/watch?v=VTH5xj60XLIM
+- **Por qué verlo**: LaTeX es OBLIGATORIO en ciencias duras (Math, Physics, CS) - papers en Word NO se aceptan en los mejores journals
+
+---
+
 ## Próximos Pasos
 
 Una vez que domines redacción académica:

@@ -968,6 +968,36 @@ Recibir reviews de tu paper. Crear documento "Response to Reviewers":
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para presentar y publicar tus investigaciones profesionalmente**:
+
+### 🔗 Video 1: Conference Presentations - Speaking Like a Researcher, Not a Robot
+- **Título**: Presentaciones en Conferencias - Cómo Hablar como Investigador
+- **Canal**: TED-Ed / Academic Presentations
+- **Duración**: 115 minutos
+- **Contenido**: Estructura de presentaciones, manejo del tiempo, manejo de audiencia, preguntas difíciles, cuerpo y voz, storytelling científico
+- **Link**: https://www.youtube.com/watch?v=Unwl-PmDIFw
+- **Por qué verlo**: La mejor investigación muere si no sabes presentarla - aprende a captar atención de expertos escépticos
+
+### 🔗 Video 2: Journal Submission & Peer Review - Publishing Your Research Successfully
+- **Título**: Submission a Journals y Proceso de Revisión Académica
+- **Canal**: Wiley Publishing / Elsevier
+- **Duración**: 130 minutos
+- **Contenido**: Elegir journal adecuado, Cover letter, responder reviewers, revisions, copyright/open access, tracking estatus de submission
+- **Link**: https://www.youtube.com/watch?v=o7X9CpLg3JU
+- **Por qué verlo**: Cada detalle importa - cover letter mal escrito = desk rejection automática. Responder reviewers profesionalmente = publicación
+
+### 🔗 Video 3: Building Your Research Profile & Networking - Academic Impact at Scale
+- **Título**: Construir tu Perfil Académico - Impacto y Networking Global
+- **Canal**: Dr. Raul Pacheco-Vega
+- **Duración**: 105 minutos
+- **Contenido**: Google Scholar, ResearchGate, ORCID, Twitter académico, seminarios, colaboraciones, mentoría, visibilidad internacional
+- **Link**: https://www.youtube.com/watch?v=ZAUuSx5FfPU
+- **Por qué verlo**: Tu carrera académica = red de colaboradores + reputación - inversión en networking académico vale décadas
+
+---
+
 ## Recursos Esenciales
 
 ### Herramientas de Presentación

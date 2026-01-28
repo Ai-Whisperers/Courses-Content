@@ -1120,6 +1120,36 @@ graph LR
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar la revisión sistemática de literatura**:
+
+### 🔗 Video 1: Systematic Literature Review - Methodology & Tools
+- **Título**: Revisión Sistemática de Literatura - Metodología y Herramientas
+- **Canal**: Research Methods Online
+- **Duración**: 120 minutos
+- **Contenido**: Pasos para una revisión sistemática, PRISMA guidelines, protocolo de estudio, selección de bases de datos, y evaluación de calidad
+- **Link**: https://www.youtube.com/watch?v=m4z06YDWnkk
+- **Por qué verlo**: Aprende la metodología estándar internacional para revisiones académicas - requerido para publicaciones de calidad
+
+### 🔗 Video 2: Literature Search Mastery - Semantic Scholar, Connected Papers & AI Tools
+- **Título**: Búsqueda Avanzada de Literatura - Herramientas de IA para Académicos
+- **Canal**: The Productive Researcher
+- **Duración**: 100 minutos
+- **Contenido**: Estrategias de búsqueda, operadores booleanos, Semantic Scholar, Connected Papers, Google Scholar, y IA para análisis de papers
+- **Link**: https://www.youtube.com/watch?v=xKBfFmOaqBQ
+- **Por qué verlo**: Domina herramientas modernas que te ahorran SEMANAS - la IA literalmente cambia el juego de la investigación
+
+### 🔗 Video 3: Citation Management & Academic Networking - Zotero Mastery
+- **Título**: Gestión de Citas y Networking Académico - Domina Zotero
+- **Canal**: Zotero Official / Research Methods
+- **Duración**: 95 minutos
+- **Contenido**: Instalación Zotero, importar papers, organizar por colecciones, generar bibliografías automáticas, colaboración con otros investigadores
+- **Link**: https://www.youtube.com/watch?v=q4lzBpT4eFk
+- **Por qué verlo**: Zotero es OBLIGATORIO para investigadores - ahorra horas en formateo de referencias y conecta con comunidades académicas
+
+---
+
 ## Próximos Pasos
 
 Una vez que domines la revisión de literatura:

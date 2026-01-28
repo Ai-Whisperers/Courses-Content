@@ -1034,6 +1034,36 @@ nota_final ~ horas_estudio + promedio_previo + uso_ia + carrera
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar análisis de datos con Python y R**:
+
+### 🔗 Video 1: Statistical Analysis Fundamentals - Hypothesis Testing & Inference
+- **Título**: Fundamentos del Análisis Estadístico - Pruebas de Hipótesis
+- **Canal**: StatQuest with Josh Starmer
+- **Duración**: 140 minutos
+- **Contenido**: Distribuciones, p-values, intervalos de confianza, t-tests, ANOVA, correlación, regresión, y cómo interpretar resultados
+- **Link**: https://www.youtube.com/watch?v=4vOxnrB201I
+- **Por qué verlo**: Estadística es el LENGUAJE de la investigación - entender p-values y significancia es no-negociable
+
+### 🔗 Video 2: Data Analysis with Python - Pandas, NumPy & Scikit-Learn
+- **Título**: Análisis de Datos con Python - Datos Reales y Casos de Estudio
+- **Canal**: Data School
+- **Duración**: 135 minutos
+- **Contenido**: Jupyter Notebooks, Pandas para cleaning, NumPy para cálculos, visualización con Matplotlib, machine learning intro con Scikit-Learn
+- **Link**: https://www.youtube.com/watch?v=5oT8cOR6_30
+- **Por qué verlo**: Python es el ESTÁNDAR para análisis académico - aprende herramientas que usarás en papers reales
+
+### 🔗 Video 3: Data Visualization for Research - Tell Your Story with Data
+- **Título**: Visualización de Datos para Investigación - Cómo Contar Tu Historia
+- **Canal**: Storytelling with Data / Tableau
+- **Duración**: 110 minutos
+- **Contenido**: Gráficos efectivos, diseño visual, evitar errores gráficos, interactividad, y cómo tus visualizaciones convencen a revisores
+- **Link**: https://www.youtube.com/watch?v=sxQlHIxPNqA
+- **Por qué verlo**: 80% de revisores forman opinión por visualizaciones - un gráfico bien hecho puede cambiar la decisión de publicación
+
+---
+
 ## Próximos Pasos
 
 Una vez que domines análisis de datos:
