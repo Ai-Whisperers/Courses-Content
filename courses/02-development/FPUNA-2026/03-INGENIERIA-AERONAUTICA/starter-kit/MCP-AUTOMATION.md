@@ -9,6 +9,7 @@
 MCP es el "USB-C de la IA" - un protocolo estandar que permite a asistentes de IA (como Claude) controlar software externo directamente.
 
 **Sin MCP:**
+
 ```
 Tu: "Crea un perfil NACA 2412"
 IA: "Aqui tienes las coordenadas..." (solo texto)
@@ -16,9 +17,10 @@ Tu: *copias manualmente a CAD*
 ```
 
 **Con MCP:**
+
 ```
-Tu: "Crea un perfil NACA 2412 en Fusion 360"
-IA: *crea el modelo 3D directamente en Fusion 360*
+Tu: "Crea un perfil NACA 2412 en Onshape"
+IA: *crea el modelo 3D directamente en Onshape usando la API*
 ```
 
 ---
@@ -27,21 +29,22 @@ IA: *crea el modelo 3D directamente en Fusion 360*
 
 ### Tier 1: Impacto Alto (Usar YA)
 
-| MCP | Que Automatiza | Ahorro de Tiempo |
-|-----|----------------|------------------|
-| **Fusion 360 MCP** | Modelado CAD 3D | 90% |
-| **FreeCAD MCP** | CAD Open Source | 90% |
-| **MATLAB MCP** | Calculos y graficos | 95% |
-| **OpenFOAM MCP** | Configuracion CFD | 85% |
-| **NumPy MCP** | Operaciones cientificas | 80% |
+| MCP                | Que Automatiza                     | Ahorro de Tiempo |
+| ------------------ | ---------------------------------- | ---------------- |
+| **Fusion 360 MCP** | Modelado CAD Desktop (Recomendado) | 90%              |
+| **Onshape MCP**    | Modelado CAD Cloud (Alternativa)   | 90%              |
+| **FreeCAD MCP**    | CAD Open Source                    | 90%              |
+| **MATLAB MCP**     | Calculos y graficos                | 95%              |
+| **OpenFOAM MCP**   | Configuracion CFD                  | 85%              |
+| **NumPy MCP**      | Operaciones cientificas            | 80%              |
 
 ### Tier 2: Soporte (Muy Utiles)
 
-| MCP | Que Automatiza | Uso |
-|-----|----------------|-----|
-| **Context7** | Documentacion actualizada | Buscar APIs |
-| **Filesystem** | Operaciones de archivos | Gestion de proyectos |
-| **Fetch** | Datos web (NACA, NASA) | Base de datos de perfiles |
+| MCP            | Que Automatiza            | Uso                       |
+| -------------- | ------------------------- | ------------------------- |
+| **Context7**   | Documentacion actualizada | Buscar APIs               |
+| **Filesystem** | Operaciones de archivos   | Gestion de proyectos      |
+| **Fetch**      | Datos web (NACA, NASA)    | Base de datos de perfiles |
 
 ---
 
@@ -51,7 +54,7 @@ IA: *crea el modelo 3D directamente en Fusion 360*
 
 ```bash
 # Verificar Node.js (requerido para la mayoria de MCPs)
-node --version  # Debe ser 18+ 
+node --version  # Debe ser 18+
 
 # Si no tienes Node.js:
 # Windows: winget install OpenJS.NodeJS
@@ -64,7 +67,7 @@ python --version  # Debe ser 3.11+
 
 ### Paso 2: Instalar MCPs Esenciales
 
-```bash
+````bash
 # MCP de Filesystem (incluido con Claude Desktop)
 npm install -g @modelcontextprotocol/server-filesystem
 
@@ -75,32 +78,13 @@ pip install mcp-server-fetch
 pip install numpy-mcp
 
 # Verificar instalacion
-pip list | grep mcp
-npm list -g --depth=0 | grep mcp
-```
-
-### Paso 3: Instalar MCPs de CAD
-
-#### Fusion 360 MCP (Requiere Fusion 360 instalado)
-
 ```bash
-# Opcion 1: Via npm
-npm install -g fusion360-mcp-server
+# 1. Instalar via npm
+npm install -g @hedless/onshape-mcp-server
 
-# Opcion 2: Desde Autodesk App Store
-# https://apps.autodesk.com/FUSION/en/Detail/Index?id=7269770001970905100
-```
-
-#### FreeCAD MCP (Gratuito y Open Source)
-
-```bash
-# Clonar repositorio
-git clone https://github.com/bonninr/freecad_mcp.git
-cd freecad_mcp
-
-# Instalar dependencias
-pip install -e .
-```
+# 2. Configurar variables de entorno (Ver QUICKSTART-ONSHAPE.md)
+# Necesitaras: ONSHAPE_ACCESS_KEY y ONSHAPE_SECRET_KEY
+````
 
 ### Paso 4: Instalar MCPs de Simulacion
 
@@ -162,10 +146,6 @@ Crea/edita el archivo de configuracion de Claude Desktop:
       "command": "python",
       "args": ["-m", "numpy_mcp"]
     },
-    "fusion360": {
-      "command": "node",
-      "args": ["C:/path/to/fusion360-mcp-server/index.js"]
-    },
     "freecad": {
       "command": "python",
       "args": ["-m", "freecad_mcp"]
@@ -193,7 +173,7 @@ Crea/edita el archivo de configuracion de Claude Desktop:
 #### Ejemplo: Crear Fuselaje con Fusion 360 MCP
 
 ```
-Prompt: "Usando Fusion 360, crea un fuselaje cilindrico de 2 metros 
+Prompt: "Usando Fusion 360, crea un fuselaje cilindrico de 2 metros
 de longitud con diametro de 0.3m y nariz ojival de 0.4m de largo"
 ```
 
@@ -204,7 +184,7 @@ El MCP ejecutara los comandos directamente en Fusion 360.
 ```
 Prompt: "En FreeCAD, crea un perfil I-beam para el larguero del ala:
 - Altura: 80mm
-- Ancho de ala: 40mm  
+- Ancho de ala: 40mm
 - Espesor de alma: 3mm
 - Espesor de ala: 5mm
 Luego extruye a 2 metros de longitud"
@@ -227,7 +207,7 @@ Muestra tabla y grafica resultante"
 #### Ejemplo: Configuracion CFD con OpenFOAM MCP
 
 ```
-Prompt: "Configura un caso de OpenFOAM para simular flujo 
+Prompt: "Configura un caso de OpenFOAM para simular flujo
 alrededor de un perfil NACA 0012:
 - Reynolds: 500,000
 - Angulo de ataque: 5 grados
@@ -255,7 +235,7 @@ Grafica cortante y momento flector vs posicion"
 
 ```
 Prompt: "Usando numpy_mcp, realiza el matching entre:
-Motor: 
+Motor:
 - Potencia maxima: 15 HP @ 5500 RPM
 - Curva de potencia: P = 15*(RPM/5500)^3 HP
 
@@ -398,17 +378,17 @@ def evaluate_airfoil(individual):
     m = individual[0]  # Max curvatura (0-9)
     p = individual[1]  # Posicion curvatura (0-9)
     t = individual[2]  # Espesor (06-24)
-    
+
     # Validar
     if t < 6:
         t = 6
     if t > 24:
         t = 24
-    
+
     # Simular evaluacion (en produccion usar NeuralFoil)
     # L/D aproximado basado en parametros tipicos
     ld = 10 + m * 0.5 - abs(p - 4) * 0.3 - (t - 12) ** 2 * 0.01
-    
+
     return (ld,)  # DEAP requiere tupla
 
 # Configurar algoritmo genetico
@@ -438,7 +418,7 @@ for gen in range(ngen):
     for fit, ind in zip(fits, offspring):
         ind.fitness.values = fit
     population = toolbox.select(offspring, k=len(population))
-    
+
     best = tools.selBest(population, k=1)[0]
     print(f"Gen {gen+1}: Mejor NACA {best[0]}{best[1]}{best[2]:02d} - L/D = {best.fitness.values[0]:.2f}")
 
@@ -478,6 +458,7 @@ python setup.py install
 ### Error: OpenFOAM no disponible
 
 OpenFOAM solo funciona en Linux. Opciones:
+
 1. Usar WSL2 en Windows
 2. Docker: `docker run -it openfoam/openfoam11-paraview510`
 3. VM con Ubuntu
@@ -506,13 +487,13 @@ OpenFOAM solo funciona en Linux. Opciones:
 
 ## Comparacion: Con vs Sin MCP
 
-| Tarea | Sin MCP | Con MCP | Ahorro |
-|-------|---------|---------|--------|
-| Crear modelo 3D de ala | 2-4 horas | 10-15 min | 90% |
-| Configurar caso CFD | 2-3 horas | 15-20 min | 88% |
-| Calculos de performance | 1-2 horas | 5-10 min | 92% |
-| Trade study parametrico | 8+ horas | 1-2 horas | 85% |
-| Optimizacion de perfil | Dias | Horas | 90% |
+| Tarea                        | Sin MCP         | Con MCP      | Ahorro  |
+| ---------------------------- | --------------- | ------------ | ------- |
+| Crear modelo 3D de ala       | 2-4 horas       | 10-15 min    | 90%     |
+| Configurar caso CFD          | 2-3 horas       | 15-20 min    | 88%     |
+| Calculos de performance      | 1-2 horas       | 5-10 min     | 92%     |
+| Trade study parametrico      | 8+ horas        | 1-2 horas    | 85%     |
+| Optimizacion de perfil       | Dias            | Horas        | 90%     |
 | **Ciclo de diseno completo** | **2-3 semanas** | **2-3 dias** | **85%** |
 
 ---
@@ -539,4 +520,4 @@ OpenFOAM solo funciona en Linux. Opciones:
 
 ---
 
-*MCP-AUTOMATION.md - Track 03 Aeronautica - FPUNA 2026*
+_MCP-AUTOMATION.md - Track 03 Aeronautica - FPUNA 2026_

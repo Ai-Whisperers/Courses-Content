@@ -1,5 +1,14 @@
 {
   "mcpServers": {
+    "onshape": {
+      "command": "npx",
+      "args": ["-y", "@hedless/onshape-mcp-server"],
+      "env": {
+        "ONSHAPE_ACCESS_KEY": "on_GPf29Gh8h91RsCl4N8Pwv",
+        "ONSHAPE_SECRET_KEY": "tmhRrJgn2Np3hYvqYMGK2Az8TeCWu4jXWdqCh2vq90OEhzzd" 
+      },
+      "description": "Onshape CAD integration - Requires API Keys"
+    },
     "numpy-mcp": {
       "command": "python",
       "args": ["-m", "numpy_mcp"],
@@ -15,7 +24,7 @@
       "args": [
         "-y",
         "@anthropic-ai/mcp-server-filesystem",
-        "C:/Users/TU_USUARIO/Documents/aeronautica"
+        "C:/Users/Alejandro/Documents/Ivan/Work/Courses Content/courses/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA"
       ],
       "description": "Read/write files in your project directory"
     }
