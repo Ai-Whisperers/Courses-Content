@@ -787,9 +787,10 @@ After setup is complete:
 - [VS Code Docs](https://code.visualstudio.com/docs)
 
 **Video Tutorials**:
-- OpenCode Getting Started (YouTube)
-- OMO Configuration Guide (YouTube)
-- FPUNA Setup Walkthrough (Slack)
+- [Guía Completa de Videos](../../../../_shared/setup/VIDEO-TUTORIALS.md) - Tutoriales para todas las herramientas
+- [Claude Code Setup](../../../../_shared/setup/VIDEO-TUTORIALS.md#claude-code) - Instalación paso a paso
+- [VS Code Configuration](../../../../_shared/setup/VIDEO-TUTORIALS.md#vs-code) - Editor recomendado
+- [Git & GitHub Basics](../../../../_shared/setup/VIDEO-TUTORIALS.md#git--github) - Control de versiones
 
 **Community**:
 - Slack: `#tech-support`, `#opencode-help`

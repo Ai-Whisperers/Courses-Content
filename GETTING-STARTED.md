@@ -162,4 +162,24 @@ Want an AI to set up everything for you? See [Setup Prompts](./_shared/setup/SET
 
 ---
 
+## Video Tutorials
+
+Prefer to learn by watching? We have curated video tutorials for all the tools you need:
+
+- **[Video Tutorials Guide](./_shared/setup/VIDEO-TUTORIALS.md)** - Complete list of setup videos
+  - Claude Code setup
+  - VS Code configuration
+  - Git & GitHub basics
+  - Node.js installation
+  - Terminal commands
+
+Quick links:
+| Tool | Time | Video |
+|------|------|-------|
+| Claude Code | 10 min | [Setup Guide](./_shared/setup/VIDEO-TUTORIALS.md#claude-code) |
+| VS Code | 15 min | [Installation](./_shared/setup/VIDEO-TUTORIALS.md#vs-code) |
+| Git Basics | 15 min | [Quick Start](./_shared/setup/VIDEO-TUTORIALS.md#git--github) |
+
+---
+
 Ready? Pick a course and start learning!
