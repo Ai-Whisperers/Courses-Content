@@ -1366,6 +1366,47 @@ Incluir:
 
 ---
 
+## 📖 Tutoriales Disponibles
+
+Complete hands-on tutorials with practical examples:
+
+### 01 - Generación Automática de Tests
+- [01_AI_Test_Generation.md](./tutorials/01_AI_Test_Generation.md) - Crear suites completas con OpenCode en minutos
+
+### 02 - Test Data con IA
+- [02_AI_Test_Data_Generation.md](./tutorials/02_AI_Test_Data_Generation.md) - Generar datos realistas: usuarios, productos, órdenes complejas
+
+### 03 - Debugging Asistido
+- [03_AI_Debugging_Analysis.md](./tutorials/03_AI_Debugging_Analysis.md) - Identificar y fijar errores de tests: timeouts, flakiness, selectores rotos
+
+### 04 - Visual Regression Testing
+- [04_Visual_Testing_AI.md](./tutorials/04_Visual_Testing_AI.md) - Snapshots con Playwright, Applitools Eyes, Percy
+
+### 05 - Mantenimiento de Tests
+- [05_Test_Maintenance_AI.md](./tutorials/05_Test_Maintenance_AI.md) - Refactorizar suites legacy, actualizar selectores, mejorar código
+
+---
+
+## 🤖 Ejemplos de OpenCode (Prompts)
+
+Use these prompts with OpenCode to automate QA tasks:
+
+- [01_Test_Generation_Prompt.md](./examples/01_Test_Generation_Prompt.md) - Generate complete test suites
+- [02_Test_Data_Prompt.md](./examples/02_Test_Data_Prompt.md) - Create realistic test datasets
+- [03_Debugging_Prompt.md](./examples/03_Debugging_Prompt.md) - Analyze and fix failing tests
+
+---
+
+## Próximos Pasos
+
+✅ **Completaste Módulo 04** - CI/CD Integration  
+📚 **Actualmente**: Módulo 05 - IA para QA  
+👈 **Volver a**:
+- [Módulo 04 - Integración CI/CD](../04-integracion-ci-cd/README.md)
+- [Módulo 03 - Arquitectura de Pruebas](../03-arquitectura-pruebas/README.md)
+
+---
+
 ## ✅ Checklist de Competencias
 
 Master este módulo completando:
