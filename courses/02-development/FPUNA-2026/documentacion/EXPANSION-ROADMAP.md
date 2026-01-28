@@ -1,31 +1,26 @@
 # FPUNA 2026 Tracks Expansion Roadmap
 
-**Date**: January 14, 2026  
-**Status**: Track 07 Complete, 7 Tracks Pending
+**Date**: January 27, 2026
+**Status**: All 6 Tracks Complete (~90%)
 
 ---
 
 ## Completion Status
 
-### ✅ Complete Tracks (1/8)
-- **Track 07: QA-AUTOMATION** - 100% Complete (~135,000 words)
-  - 5 modules fully developed
-  - 22 content sections
-  - 700+ code examples
-  - 5 comprehensive exercises
-  - Production-ready
+### ✅ Complete Tracks (6/6)
 
-### ⏳ Tracks Pending Expansion (7/8)
+| Track | Status | Modules | Notes |
+|-------|--------|---------|-------|
+| **00-FUNDAMENTOS-PRINCIPALES** | ✅ Complete | 6 + proyecto-final | Universal foundation |
+| **01-DESARROLLO-SOFTWARE** | ✅ Complete | 5 + proyecto-final | Software development |
+| **02-ELECTRONICA-AUTOMATIZACION** | ✅ Complete | 5 + proyecto-final | Electronics & automation |
+| **03-INGENIERIA-AERONAUTICA** | ✅ Complete | 5 + proyecto-final | Aeronautical engineering |
+| **04-MARKETING-NEGOCIOS-TURISMO** | ✅ Complete | 8 + proyecto-final | Marketing + Hospitality (merged) |
+| **05-INVESTIGACION-ACADEMIA** | ✅ Complete | 5 + proyecto-final | Research & academia |
 
-| Track | Status | Priority | Est. Time |
-|-------|--------|----------|-----------|
-| **08-WEB-DEVELOPMENT** | Structure only | HIGH | 15-20h |
-| **01-DESARROLLO-SOFTWARE** | Structure only | HIGH | 15-20h |
-| **02-ELECTRONICA-AUTOMATIZACION** | Structure only | MEDIUM | 20-25h |
-| **04-MARKETING-COMUNICACION** | Structure only | MEDIUM | 12-15h |
-| **05-INVESTIGACION-ACADEMIA** | Structure only | MEDIUM | 12-15h |
-| **03-INGENIERIA-AERONAUTICA** | Structure only | LOW | 20-25h |
-| **06-HOSPITALIDAD-TURISMO** | Structure only | LOW | 12-15h |
+### Track Structure Changes (January 2026)
+- **Merged**: 04-MARKETING-COMUNICACION + 06-HOSPITALIDAD-TURISMO → 04-MARKETING-NEGOCIOS-TURISMO
+- **Removed**: 07-QA-AUTOMATION, 08-WEB-DEVELOPMENT (moved to separate courses)
 
 ---
 

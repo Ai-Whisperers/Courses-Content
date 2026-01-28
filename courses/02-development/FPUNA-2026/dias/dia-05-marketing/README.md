@@ -1,4 +1,4 @@
-# Día 5: IA para Marketing y Comunicación
+# Día 5: IA para Marketing, Negocios y Turismo
 
 ## Información General
 
@@ -6,9 +6,12 @@
 |---------|---------|
 | **Fecha** | Viernes 6 de Febrero, 2026 |
 | **Duración** | 2 horas |
-| **Audiencia** | Marketing, Comunicación, Publicidad |
+| **Audiencia** | Marketing, Comunicación, Publicidad, Hotelería, Turismo |
 | **Pre-requisito** | Día 1 completado con éxito |
 | **Objetivo** | Usar IA para crear contenido, analizar datos y automatizar marketing |
+| **Track relacionado** | [04-MARKETING-NEGOCIOS-TURISMO](../../04-MARKETING-NEGOCIOS-TURISMO/) |
+
+> **Nota:** Este día cubre el núcleo común del Track 04, que incluye tanto la especialización en Marketing General como en Hospitalidad y Turismo.
 
 ---
 
@@ -193,5 +196,5 @@ Al final del Día 5, cada estudiante debe poder:
 
 ---
 
-*Día 5 - IA para Marketing*
+*Día 5 - IA para Marketing, Negocios y Turismo*
 *FPUNA Verano 2026*

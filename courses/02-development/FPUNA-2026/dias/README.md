@@ -19,7 +19,7 @@
 | **Día 2** | IA para Electrónica | Electrónica/Mecatrónica | 2 horas |
 | **Día 3** | IA para Aeronáutica | Ing. Aeronáutica | 2 horas |
 | **Día 4** | IA para Software | Informática/Software | 2 horas |
-| **Día 5** | IA para Marketing | Marketing/Comunicación | 2 horas |
+| **Día 5** | IA para Marketing y Negocios | Marketing/Comunicación/Turismo | 2 horas |
 | **Día 6** | IA para Investigación | Academia/Investigadores | 2 horas |
 
 ---

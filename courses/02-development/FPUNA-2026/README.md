@@ -1,6 +1,6 @@
 # FPUNA Verano 2026 - Programa de Desarrollo Aumentado con IA
 
-**Status:** 🟡 In Development (~40% Complete) | ⚠️ Not Yet Student Tested | 📦 6/45 Modules | 🎯 Target: Q2 2026
+**Status:** 🟡 In Development (~90% Complete) | ⚠️ Not Yet Student Tested | 📦 6 Tracks | 🎯 Target: Q2 2026
 
 ---
 
@@ -68,30 +68,18 @@ Módulos: 5 módulos + MCPs especializados (AutoCAD, KiCad)
 Para: Ingeniería Aeronáutica  
 Módulos: 5 módulos + MCPs especializados (CATIA, ANSYS)
 
-#### 04-MARKETING-COMUNICACION
+#### 04-MARKETING-NEGOCIOS-TURISMO
 
-Para: Marketing, Comunicación  
-Módulos: 4 módulos + herramientas de diseño y analytics
+Para: Marketing, Comunicación, Hotelería, Turismo
+Estructura modular con especializaciones:
+- **Núcleo Común** (12h): Contenido, Datos, Redes Sociales
+- **Especialización A** (8h): Marketing General - Diseño y Campañas
+- **Especialización B** (12h): Hospitalidad y Turismo - Revenue, Operaciones
 
 #### 05-INVESTIGACION-ACADEMIA
 
-Para: Investigadores, estudiantes de posgrado  
+Para: Investigadores, estudiantes de posgrado
 Módulos: 5 módulos + herramientas de investigación
-
-#### 06-HOSPITALIDAD-TURISMO
-
-Para: Hotelería y Turismo  
-Módulos: 4 módulos especializados
-
-#### 07-QA-AUTOMATION
-
-Para: Quality Assurance, Testing  
-Módulos: 5 módulos + framework completo
-
-#### 08-WEB-DEVELOPMENT
-
-Para: Desarrollo Web Full-Stack  
-Módulos: 5 módulos + Next.js, Prisma, etc.
 
 ---
 
@@ -186,14 +174,11 @@ FPUNA-2026/
 ├── planning/                          # Planes de trabajo
 ├── reports/                           # Reportes de avance
 ├── documentacion/                     # Documentación general
-├── 01-DESARROLLO-SOFTWARE/           # Track 1
-├── 02-ELECTRONICA-AUTOMATIZACION/         # Track 2
-├── 03-INGENIERIA-AERONAUTICA/       # Track 3
-├── 04-MARKETING-COMUNICACION/        # Track 4
-├── 05-INVESTIGACION-ACADEMIA/              # Track 5
-├── 06-HOSPITALIDAD-TURISMO/            # Track 6
-├── 07-QA-AUTOMATION/                  # Track 7
-└── 08-WEB-DEVELOPMENT/                # Track 8
+├── 01-DESARROLLO-SOFTWARE/            # Track 1: Software Development
+├── 02-ELECTRONICA-AUTOMATIZACION/     # Track 2: Electronics & Automation
+├── 03-INGENIERIA-AERONAUTICA/         # Track 3: Aeronautical Engineering
+├── 04-MARKETING-NEGOCIOS-TURISMO/     # Track 4: Marketing, Business & Tourism
+└── 05-INVESTIGACION-ACADEMIA/         # Track 5: Research & Academia
 ```
 
 ---
