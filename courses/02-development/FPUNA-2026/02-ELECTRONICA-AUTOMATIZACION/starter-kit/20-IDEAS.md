@@ -4,15 +4,57 @@
 
 ---
 
+## Resumen: Mapeo a Proyectos del Curso
+
+| # | Idea | Tier Elegible | Tiempo c/IA | Costo USD | AI Value |
+|---|------|---------------|-------------|-----------|----------|
+| 1 | LED + Botón + Brillo | Principiante | 2-3h | $8-12 | Bajo |
+| 2 | Semáforo LED | **Principiante** | 2-4h | $10-15 | Medio |
+| 3 | Sensor Temperatura Serial | Principiante | 3-4h | $12-18 | Medio |
+| 4 | Motor DC + L298N | **Principiante** | 4-6h | $20-30 | Alto |
+| 5 | Detector Luz LDR | **Principiante** | 3-5h | $10-15 | Alto |
+| 6 | Alarma Ultrasónica | **Principiante** | 3-4h | $12-18 | Medio |
+| 7 | Display LCD I2C | Principiante | 3-5h | $12-20 | Alto |
+| 8 | Estación Meteorológica | **Intermedio** | 8-15h | $45-70 | Alto |
+| 9 | Control PID Temperatura | **Intermedio** | 12-20h | $40-60 | Muy Alto |
+| 10 | Riego Multizona | Intermedio (simplificado) | 15-25h | $80-150 | Alto |
+| 11 | ESP32 + MQTT | **Intermedio** | 10-15h | $20-35 | Muy Alto |
+| 12 | Servidor Web ESP32 | Intermedio/Avanzado | 15-25h | $25-40 | Muy Alto |
+| 13 | Control Acceso RFID | **Intermedio** | 12-20h | $35-60 | Alto |
+| 14 | FSM Proceso Industrial | **Intermedio** | 10-18h | $25-40 | Alto |
+| 15 | Sistema SCADA | **Avanzado** | 30-50h | $100-200 | Muy Alto |
+| 16 | Brazo Robótico 4DOF | Avanzado (c/kit) | 40-70h | $80-150 | Muy Alto |
+| 17 | Monitor Solar 12V | **Avanzado** | 20-35h | $60-100 | Alto |
+| 18 | Modbus RTU | **Avanzado** | 25-40h | $50-90 | Muy Alto |
+| 19 | Sistema OEE | **Avanzado** | 30-50h | $60-120 | Alto |
+| 20 | Gemelo Digital | ~~No recomendado~~ | 50-80h | $100-200 | - |
+
+**Leyenda**:
+- **Negrita** = Recomendado para ese tier
+- AI Value: Cuánto acelera la IA el desarrollo
+
+---
+
 # NIVEL PRINCIPIANTE (Ideas 1-7)
 *Proyectos simples con componentes básicos, sin soldadura compleja*
+
+> **Para Proyecto Final Tier Principiante**: Elige una de estas ideas y agrégale un twist personal.
 
 ---
 
 ## 1. LED con Botón y Control de Brillo
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Principiante |
+| **Tiempo con IA** | 2-3 horas |
+| **Costo** | $8-12 USD |
+| **AI Value** | Bajo (tutoriales abundantes) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Encender/apagar un LED y controlar su brillo con un potenciómetro.
 
-```bash
+```
 claude "Diseña un circuito simple para Arduino UNO:
 
 Componentes:
@@ -34,12 +76,23 @@ Necesito:
 
 **Aprenderás:** PWM, entradas digitales/analógicas, ley de Ohm.
 
+**Para hacerlo proyecto de curso:** Agrega múltiples LEDs con patrones, o control por serial.
+
 ---
 
-## 2. Semáforo LED con Temporización
+## 2. Semáforo LED con Temporización ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Principiante** |
+| **Tiempo con IA** | 2-4 horas |
+| **Costo** | $10-15 USD |
+| **AI Value** | Medio (millis() es confuso para novatos) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Simular un semáforo con secuencia automática.
 
-```bash
+```
 claude "Crea un semáforo con Arduino:
 
 Componentes:
@@ -59,14 +112,25 @@ Necesito:
 4. Cómo agregar un botón de peatones después"
 ```
 
-**Aprenderás:** Secuenciación, timing no bloqueante.
+**Aprenderás:** Secuenciación, timing no bloqueante, FSM básica.
+
+**Para hacerlo proyecto de curso:** Agrega sensor de luz (modo nocturno), botón peatón, segundo semáforo sincronizado.
 
 ---
 
 ## 3. Sensor de Temperatura con Display Serial
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Principiante |
+| **Tiempo con IA** | 3-4 horas |
+| **Costo** | $12-18 USD |
+| **AI Value** | Medio (manejo de errores) |
+| **Disponibilidad Paraguay** | Alta (DHT11), Media (DHT22) |
+
 **Qué:** Leer temperatura y mostrarla en el monitor serial.
 
-```bash
+```
 claude "Lee temperatura con DHT11 y muestra en Serial:
 
 Componentes:
@@ -87,12 +151,23 @@ Necesito:
 
 **Aprenderás:** Sensores digitales, comunicación serial, librerías.
 
+**Para hacerlo proyecto de curso:** Agrega LCD, logging a SD, o umbral configurable.
+
 ---
 
-## 4. Control de Motor DC con L298N
+## 4. Control de Motor DC con L298N ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Principiante** |
+| **Tiempo con IA** | 4-6 horas |
+| **Costo** | $20-30 USD |
+| **AI Value** | Alto (conceptos de potencia, H-bridge) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Controlar velocidad y dirección de un motor.
 
-```bash
+```
 claude "Controla un motor DC con Arduino y L298N:
 
 Motor: 6V DC
@@ -110,14 +185,25 @@ Necesito:
 4. Cálculo de consumo y duración de batería"
 ```
 
-**Aprenderás:** Control de motores, drivers, consumo energético.
+**Aprenderás:** Control de motores, drivers, consumo energético, PWM para velocidad.
+
+**Para hacerlo proyecto de curso:** Agrega display de velocidad, rampa de aceleración, o límites de corriente.
 
 ---
 
-## 5. Detector de Luz con LDR
+## 5. Detector de Luz con LDR ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Principiante** |
+| **Tiempo con IA** | 3-5 horas |
+| **Costo** | $10-15 USD |
+| **AI Value** | Alto (histéresis es concepto no obvio) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Encender luz automáticamente cuando oscurece.
 
-```bash
+```
 claude "Crea un detector de luz con LDR:
 
 Componentes:
@@ -139,12 +225,23 @@ Necesito:
 
 **Aprenderás:** Divisor de voltaje, transistores como switch, histéresis.
 
+**Concepto clave - Histéresis:** Evita parpadeo usando dos umbrales (ej: enciende a <30%, apaga a >40%).
+
 ---
 
-## 6. Alarma Ultrasónica de Proximidad
+## 6. Alarma Ultrasónica de Proximidad ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Principiante** |
+| **Tiempo con IA** | 3-4 horas |
+| **Costo** | $12-18 USD |
+| **AI Value** | Medio (fórmula de distancia simple) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Sonar un buzzer cuando algo se acerca.
 
-```bash
+```
 claude "Crea alarma de proximidad con HC-SR04:
 
 Componentes:
@@ -165,14 +262,25 @@ Necesito:
 4. Limitaciones del sensor"
 ```
 
-**Aprenderás:** Sensores ultrasónicos, cálculo de distancia.
+**Aprenderás:** Sensores ultrasónicos, cálculo de distancia, física aplicada.
+
+**Fórmula clave:** `distancia_cm = (tiempo_us / 2) / 29.1`
 
 ---
 
 ## 7. Display LCD con Mensajes
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Principiante |
+| **Tiempo con IA** | 3-5 horas |
+| **Costo** | $12-20 USD |
+| **AI Value** | Alto (I2C address finding es frustrante) |
+| **Disponibilidad Paraguay** | Media (I2C backpack puede requerir pedido) |
+
 **Qué:** Mostrar mensajes personalizados en LCD 16x2.
 
-```bash
+```
 claude "Muestra información en LCD 16x2 con I2C:
 
 Componentes:
@@ -193,17 +301,30 @@ Necesito:
 
 **Aprenderás:** Comunicación I2C, displays, caracteres custom.
 
+**Tip:** Usa I2C Scanner sketch para encontrar la dirección (comúnmente 0x27 o 0x3F).
+
 ---
 
 # NIVEL INTERMEDIO (Ideas 8-14)
 *Proyectos con múltiples sensores/actuadores, comunicación, lógica compleja*
 
+> **Para Proyecto Final Tier Intermedio**: Estas ideas son perfectas. Puedes combinar elementos de varias.
+
 ---
 
-## 8. Estación Meteorológica con Almacenamiento
+## 8. Estación Meteorológica con Almacenamiento ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Intermedio** |
+| **Tiempo con IA** | 8-15 horas |
+| **Costo** | $45-70 USD |
+| **AI Value** | Alto (SD card quirks, multi-sensor) |
+| **Disponibilidad Paraguay** | Media (BMP280 requiere pedido) |
+
 **Qué:** Registrar temperatura, humedad y presión en SD card.
 
-```bash
+```
 claude "Crea estación meteorológica que guarda datos:
 
 Sensores:
@@ -226,14 +347,27 @@ Necesito:
 5. Gestión de errores de SD"
 ```
 
-**Aprenderás:** Múltiples sensores, almacenamiento, logging.
+**Aprenderás:** Múltiples sensores, SPI, almacenamiento, logging.
+
+**Simplificación válida:** Omitir BMP280 y usar solo DHT22.
 
 ---
 
-## 9. Control PID de Temperatura
+## 9. Control PID de Temperatura ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Intermedio** |
+| **Tiempo con IA** | 12-20 horas |
+| **Costo** | $40-60 USD |
+| **AI Value** | Muy Alto (PID es complejo conceptualmente) |
+| **Disponibilidad Paraguay** | Alta |
+
+> ⚠️ **SEGURIDAD**: Requiere supervisión. Elementos calefactores pueden causar incendios.
+
 **Qué:** Mantener temperatura constante con control PID.
 
-```bash
+```
 claude "Implementa control PID para incubadora:
 
 Sistema:
@@ -249,14 +383,25 @@ Requisitos:
 5. Anti-windup para el integrador"
 ```
 
-**Aprenderás:** Control PID, tuning, sistemas de control.
+**Aprenderás:** Control PID, tuning, sistemas de control, respuesta de sistemas.
+
+**Pregunta de comprensión:** "¿Qué pasa si solo usas P sin I ni D?"
 
 ---
 
 ## 10. Sistema de Riego Automático Multizona
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Intermedio (simplificado a 2 zonas) |
+| **Tiempo con IA** | 15-25 horas |
+| **Costo** | $80-150 USD (4 zonas), $40-60 (2 zonas) |
+| **AI Value** | Alto (lógica multi-zona) |
+| **Disponibilidad Paraguay** | Baja (electroválvulas requieren tienda agrícola) |
+
 **Qué:** Riego inteligente con múltiples sensores y zonas.
 
-```bash
+```
 claude "Sistema de riego automático para 4 zonas:
 
 Por zona:
@@ -279,12 +424,23 @@ Necesito código modular y comentado."
 
 **Aprenderás:** Múltiples zonas, scheduling, lógica condicional.
 
+**Simplificación recomendada:** Reducir a 2 zonas para proyecto de curso.
+
 ---
 
-## 11. ESP32 con WiFi y MQTT
+## 11. ESP32 con WiFi y MQTT ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Intermedio** |
+| **Tiempo con IA** | 10-15 horas |
+| **Costo** | $20-35 USD |
+| **AI Value** | Muy Alto (MQTT es complejo) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Enviar datos de sensores a broker MQTT.
 
-```bash
+```
 claude "Conecta ESP32 a broker MQTT:
 
 Sensor: DHT22
@@ -304,14 +460,25 @@ Requisitos:
 6. Deep sleep para ahorrar batería"
 ```
 
-**Aprenderás:** WiFi, MQTT, JSON, IoT.
+**Aprenderás:** WiFi, MQTT (pub/sub), JSON, IoT, deep sleep.
+
+**Concepto clave - MQTT:** Publish/Subscribe. Dispositivos publican a "topics", otros se suscriben.
 
 ---
 
 ## 12. Servidor Web en ESP32
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Intermedio (simplificado) / Avanzado (completo) |
+| **Tiempo con IA** | 15-25 horas |
+| **Costo** | $25-40 USD |
+| **AI Value** | Muy Alto (full-stack embebido) |
+| **Disponibilidad Paraguay** | Alta |
+
 **Qué:** Crear dashboard web servido desde el ESP32.
 
-```bash
+```
 claude "Crea servidor web en ESP32:
 
 Funcionalidad:
@@ -332,14 +499,25 @@ Necesito:
 4. Cómo subir archivos a SPIFFS"
 ```
 
-**Aprenderás:** Servidores web embebidos, WebSockets, frontend.
+**Aprenderás:** Servidores web embebidos, WebSockets, frontend básico.
+
+**Simplificación para Intermedio:** Omitir gráfico de 24h, solo mostrar valores actuales.
 
 ---
 
-## 13. Control de Acceso con RFID
+## 13. Control de Acceso con RFID ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Intermedio** |
+| **Tiempo con IA** | 12-20 horas |
+| **Costo** | $35-60 USD |
+| **AI Value** | Alto (RFID + EEPROM) |
+| **Disponibilidad Paraguay** | Media (RC522 disponible online) |
+
 **Qué:** Puerta que se abre con tarjeta RFID autorizada.
 
-```bash
+```
 claude "Sistema de control de acceso RFID:
 
 Componentes:
@@ -357,14 +535,25 @@ Funcionalidad:
 Necesito código seguro (no hardcodear UIDs en el código)."
 ```
 
-**Aprenderás:** RFID, seguridad básica, EEPROM.
+**Aprenderás:** RFID/SPI, seguridad básica, EEPROM, persistencia.
+
+**Pregunta de comprensión:** "¿Por qué no hardcodeamos los UIDs en el código?"
 
 ---
 
-## 14. Máquina de Estados (FSM) para Proceso
+## 14. Máquina de Estados (FSM) para Proceso ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Intermedio** |
+| **Tiempo con IA** | 10-18 horas |
+| **Costo** | $25-40 USD |
+| **AI Value** | Alto (FSM design, safety timeouts) |
+| **Disponibilidad Paraguay** | Alta (simulación con LEDs) |
+
 **Qué:** Implementar lógica industrial con estados.
 
-```bash
+```
 claude "Implementa FSM para lavadora simplificada:
 
 Estados:
@@ -390,19 +579,32 @@ Genera:
 4. LED de status por estado"
 ```
 
-**Aprenderás:** Máquinas de estados, lógica industrial, seguridad.
+**Aprenderás:** Máquinas de estados, lógica industrial, timeouts de seguridad.
+
+**Nota:** Es simulación - usas LEDs para representar bomba, motor, etc. No necesitas lavadora real.
 
 ---
 
 # NIVEL AVANZADO (Ideas 15-20)
 *Proyectos complejos, sistemas completos, industrial-grade*
 
+> **Para Proyecto Final Tier Avanzado**: Estas ideas requieren dedicación significativa. Elige una y hazla bien.
+
 ---
 
-## 15. Sistema SCADA Básico
+## 15. Sistema SCADA Básico ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Avanzado** |
+| **Tiempo con IA** | 30-50 horas |
+| **Costo** | $100-200 USD |
+| **AI Value** | Muy Alto (arquitectura multi-capa) |
+| **Disponibilidad Paraguay** | Media |
+
 **Qué:** Supervisión y control de proceso industrial.
 
-```bash
+```
 claude "Diseña sistema SCADA para tanque de agua:
 
 Proceso:
@@ -427,14 +629,27 @@ Arquitectura:
 Genera arquitectura y código de cada componente."
 ```
 
-**Aprenderás:** SCADA, Node-RED, control de procesos.
+**Aprenderás:** SCADA, Node-RED, control de procesos, arquitectura distribuida.
+
+**Simplificación válida:** Usar tanque pequeño de escritorio, bomba de acuario.
 
 ---
 
 ## 16. Brazo Robótico de 4 DOF
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | Avanzado (requiere kit mecánico) |
+| **Tiempo con IA** | 40-70 horas |
+| **Costo** | $80-150 USD |
+| **AI Value** | Muy Alto (cinemática inversa es matemática compleja) |
+| **Disponibilidad Paraguay** | Baja (kit requiere importación) |
+
+> ⚠️ **SEGURIDAD**: Servos de alto torque pueden causar lesiones.
+
 **Qué:** Construir y programar brazo robótico.
 
-```bash
+```
 claude "Programa brazo robótico 4DOF:
 
 Actuadores: 4 servomotores MG996R
@@ -455,14 +670,27 @@ Genera:
 4. Consideraciones de torque/peso"
 ```
 
-**Aprenderás:** Robótica, cinemática, servomotores.
+**Aprenderás:** Robótica, cinemática, servomotores, EEPROM.
+
+**Alternativa más simple:** Comprar kit pre-armado, enfocarse en programación.
 
 ---
 
-## 17. Inversor Solar Básico (Monitoreo)
+## 17. Monitor de Sistema Solar 12V ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Avanzado** |
+| **Tiempo con IA** | 20-35 horas |
+| **Costo** | $60-100 USD (sin panel/batería) |
+| **AI Value** | Alto (cálculos, calibración) |
+| **Disponibilidad Paraguay** | Media |
+
+> ⚠️ **SEGURIDAD**: Solo sistemas 12V aislados. NO conectar a red eléctrica.
+
 **Qué:** Sistema de monitoreo para instalación solar.
 
-```bash
+```
 claude "Monitorea sistema solar fotovoltaico:
 
 Mediciones:
@@ -486,14 +714,25 @@ IMPORTANTE: Solo monitoreo, no control de carga.
 Genera código con calibración para cada sensor."
 ```
 
-**Aprenderás:** Mediciones eléctricas, energía solar, seguridad.
+**Aprenderás:** Mediciones eléctricas, divisores de voltaje, sensores de corriente, energía.
+
+**Relevancia Paraguay:** Paraguay genera 99.7% de electricidad renovable. Solar es creciente.
 
 ---
 
-## 18. Control Remoto Industrial con Protocolo Modbus
+## 18. Control Remoto Industrial con Protocolo Modbus ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Avanzado** |
+| **Tiempo con IA** | 25-40 horas |
+| **Costo** | $50-90 USD |
+| **AI Value** | Muy Alto (Modbus es protocolo industrial especializado) |
+| **Disponibilidad Paraguay** | Baja (MAX485 requiere pedido) |
+
 **Qué:** Implementar comunicación Modbus RTU/TCP.
 
-```bash
+```
 claude "Implementa esclavo Modbus RTU:
 
 Hardware:
@@ -516,14 +755,25 @@ Genera:
 4. Consideraciones para RS-485 (terminación, bias)"
 ```
 
-**Aprenderás:** Protocolos industriales, RS-485, Modbus.
+**Aprenderás:** Protocolos industriales, RS-485, Modbus, registros.
+
+**Simplificación:** Omitir entradas 4-20mA, usar entradas digitales y analógicas estándar.
 
 ---
 
-## 19. Sistema de Producción con Conteo y OEE
+## 19. Sistema de Producción con Conteo y OEE ⭐ RECOMENDADO
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | **Avanzado** |
+| **Tiempo con IA** | 30-50 horas |
+| **Costo** | $60-120 USD |
+| **AI Value** | Alto (métricas industriales, interrupciones) |
+| **Disponibilidad Paraguay** | Media |
+
 **Qué:** Medir eficiencia de máquina (OEE).
 
-```bash
+```
 claude "Sistema de medición OEE para producción:
 
 Inputs:
@@ -547,14 +797,27 @@ Funcionalidades:
 Genera sistema completo con ESP32."
 ```
 
-**Aprenderás:** Métricas industriales, OEE, producción.
+**Aprenderás:** Métricas industriales, OEE, interrupciones para conteo preciso.
+
+**Simulación:** Usar motor con disco perforado pasando frente a sensor = "piezas producidas".
 
 ---
 
 ## 20. Gemelo Digital de Proceso
+
+| Métrica | Valor |
+|---------|-------|
+| **Tier Elegible** | ❌ **NO RECOMENDADO** - Nivel tesis |
+| **Tiempo con IA** | 50-80 horas |
+| **Costo** | $100-200 USD |
+| **AI Value** | - |
+| **Disponibilidad Paraguay** | Media |
+
+> ⚠️ **ADVERTENCIA**: Este proyecto es de complejidad de tesis. No recomendado para proyecto de curso.
+
 **Qué:** Crear simulación sincronizada con hardware real.
 
-```bash
+```
 claude "Crea gemelo digital de sistema de tanques:
 
 Sistema físico:
@@ -579,7 +842,13 @@ Genera:
 4. Dashboard con matplotlib animado"
 ```
 
-**Aprenderás:** Modelado matemático, simulación, industria 4.0.
+**Por qué no recomendado:**
+- Requiere conocimiento de ecuaciones diferenciales
+- Modelado matemático de fluidos es tema de ingeniería avanzada
+- Integración Python-Arduino-Visualización es compleja
+- Tiempo estimado excede significativamente el disponible
+
+**Alternativa:** Si te interesa Industria 4.0, elige Proyecto 15 (SCADA) o 19 (OEE).
 
 ---
 
@@ -590,6 +859,7 @@ Genera:
 - Usar fuentes de alimentación aisladas para motores/relays
 - Verificar polaridad antes de conectar
 - Proteger entradas con resistencias limitadoras
+- Proyectos con calefacción requieren supervisión
 
 ### Verificación
 1. Revisar conexiones ANTES de energizar
@@ -603,6 +873,36 @@ Genera:
 - La práctica en breadboard precede a PCB
 - Simular antes de construir (Tinkercad, Wokwi)
 
+### Uso de IA
+- **GREEN**: Sintaxis, explicaciones, templates
+- **YELLOW**: Código generado (verificar y entender)
+- **RED**: Conceptos fundamentales (aprender primero)
+
+Ver: [USO-IA-ELECTRONICA.md](./USO-IA-ELECTRONICA.md) para guía completa.
+
 ---
 
-*20-IDEAS.md para Electrónica y Automatización - FPUNA 2026*
+## Resumen de Recomendaciones por Tier
+
+### Tier Principiante (elige 1)
+- ⭐ #2 Semáforo (FSM básica)
+- ⭐ #4 Motor DC (potencia)
+- ⭐ #5 LDR (histéresis)
+- ⭐ #6 Alarma ultrasónica (física)
+
+### Tier Intermedio (elige 1)
+- ⭐ #8 Estación meteorológica (multi-sensor)
+- ⭐ #9 PID temperatura (control)
+- ⭐ #11 ESP32 + MQTT (IoT)
+- ⭐ #13 RFID (seguridad)
+- ⭐ #14 FSM proceso (industrial)
+
+### Tier Avanzado (elige 1)
+- ⭐ #15 SCADA (arquitectura)
+- ⭐ #17 Monitor solar (mediciones)
+- ⭐ #18 Modbus (protocolos)
+- ⭐ #19 OEE (manufactura)
+
+---
+
+*20-IDEAS.md para Electrónica y Automatización - FPUNA 2026 (Actualizado con mapeo a tiers)*
