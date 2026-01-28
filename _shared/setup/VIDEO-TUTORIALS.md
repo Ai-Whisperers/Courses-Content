@@ -2,30 +2,28 @@
 
 Recursos de video curados para configurar herramientas de desarrollo con IA.
 
-> **Nota para estudiantes FPUNA**: Los videos en español están primero. Los videos en inglés tienen subtítulos disponibles pero requieren comprensión visual del código.
-
 ---
 
 ## Referencia Rápida
 
-| Herramienta | Español | English | Dificultad |
-|-------------|---------|---------|------------|
-| VS Code | [Ir](#vs-code-español) | [Jump](#vs-code-english) | Fácil |
-| Git & GitHub | [Ir](#git--github-español) | [Jump](#git--github-english) | Fácil |
-| Node.js | [Ir](#nodejs-español) | [Jump](#nodejs-english) | Fácil |
-| Terminal/Linux | [Ir](#terminallinux-español) | [Jump](#terminallinux-english) | Fácil |
-| Python | [Ir](#python-español) | [Jump](#python-english) | Fácil |
-| Claude Code | [Ir](#claude-code) | - | Medio |
+| Herramienta | Español Nativo | English + Subs |
+|-------------|----------------|----------------|
+| VS Code | [Ir](#vs-code) | [Jump](#vs-code-1) |
+| Git & GitHub | [Ir](#git--github) | [Jump](#git--github-1) |
+| Node.js | [Ir](#nodejs) | [Jump](#nodejs-1) |
+| Terminal/Linux | [Ir](#terminallinux) | [Jump](#terminallinux-1) |
+| Python | [Ir](#python) | [Jump](#python-1) |
+| Claude Code | - | [Jump](#claude-code) |
 
 ---
 
-# VIDEOS EN ESPAÑOL
+# 🇪🇸 ESPAÑOL NATIVO
 
-Contenido con audio en español - recomendado para estudiantes hispanohablantes.
+Contenido **producido originalmente en español** - audio nativo, ejemplos latinoamericanos.
 
 ---
 
-## VS Code (Español)
+## VS Code
 
 | Video | Duración | Canal | Descripción |
 |-------|----------|-------|-------------|
@@ -35,29 +33,29 @@ Contenido con audio en español - recomendado para estudiantes hispanohablantes.
 
 ---
 
-## Git & GitHub (Español)
+## Git & GitHub
 
 | Video | Duración | Canal | Descripción |
 |-------|----------|-------|-------------|
 | [Aprende Git - Curso Completo](https://www.youtube.com/watch?v=VdGzPZ31ts8) | 1h | HolaMundo | Git desde cero, comandos esenciales |
 | [Git y GitHub desde Cero](https://www.youtube.com/watch?v=3GymExBkKjE) | 5h | MoureDev | Curso completo con práctica |
-| [Git y GitHub - Curso Completo](https://www.youtube.com/watch?v=mBYSUUnMt9M) | 5h | freeCodeCamp Español | Fundamentos y proyectos |
+| [Git y GitHub - Curso Completo](https://www.youtube.com/watch?v=mBYSUUnMt9M) | 5h | freeCodeCamp ES | Fundamentos y proyectos |
 | [GitHub para Principiantes](https://www.youtube.com/watch?v=hWglK8nWh60) | 30m | Bluuweb | Tutorial práctico rápido |
 
 ---
 
-## Node.js (Español)
+## Node.js
 
 | Video | Duración | Canal | Descripción |
 |-------|----------|-------|-------------|
 | [Node.js desde Cero](https://www.youtube.com/watch?v=yB4n_K7dZV8) | 2h | midudev | Introducción y primeros pasos |
-| [Node.js y Express - Curso Completo](https://www.youtube.com/watch?v=1hpc70_OoAg) | 8.5h | freeCodeCamp Español | Backend completo con proyectos |
+| [Node.js y Express - Curso Completo](https://www.youtube.com/watch?v=1hpc70_OoAg) | 8.5h | freeCodeCamp ES | Backend completo con proyectos |
 | [Node.js Curso Gratis](https://www.youtube.com/watch?v=BhvLIzVL8_o) | 4h | Carlos Azaustre | API REST con MongoDB |
 | [Node.js para Principiantes](https://www.youtube.com/watch?v=i3OdKwuBu9I) | 3h | Fazt | Fundamentos y primeros proyectos |
 
 ---
 
-## Terminal/Linux (Español)
+## Terminal/Linux
 
 | Video | Duración | Canal | Descripción |
 |-------|----------|-------|-------------|
@@ -67,17 +65,17 @@ Contenido con audio en español - recomendado para estudiantes hispanohablantes.
 
 ---
 
-## Python (Español)
+## Python
 
 | Video | Duración | Canal | Descripción |
 |-------|----------|-------|-------------|
-| [Python desde Cero - Curso Completo](https://www.youtube.com/watch?v=chPhlsHoEPo) | 4.5h | freeCodeCamp Español | Fundamentos para principiantes |
+| [Python desde Cero - Curso Completo](https://www.youtube.com/watch?v=chPhlsHoEPo) | 4.5h | freeCodeCamp ES | Fundamentos para principiantes |
 | [Curso Python](https://www.youtube.com/watch?v=Kp4Mvapo5kc) | 44h | MoureDev | Curso extenso: fundamentos a IA |
 | [Python para Principiantes](https://www.youtube.com/watch?v=DLikpfc64cA) | 4h | Fazt | Sintaxis y proyectos básicos |
 
 ---
 
-## Herramientas Específicas (Español)
+## Herramientas Específicas
 
 ### QA Automation
 
@@ -95,29 +93,30 @@ Contenido con audio en español - recomendado para estudiantes hispanohablantes.
 
 ---
 
-## Canales en Español Recomendados
+## Canales en Español
 
-| Canal | Enfoque | Enlace |
-|-------|---------|--------|
-| **HolaMundo** | Cursos completos, muy didáctico | [youtube.com/@HolaMundoDev](https://youtube.com/@HolaMundoDev) |
-| **midudev** | Web dev moderno, React, Node | [youtube.com/@midudev](https://youtube.com/@midudev) |
-| **MoureDev** | Python, Git, cursos extensos | [youtube.com/@moaboroudev](https://youtube.com/@moaboroudev) |
-| **freeCodeCamp Español** | Cursos largos y completos | [youtube.com/@faboroecodecamp](https://youtube.com/@faboroecodecamp) |
-| **Fazt** | Tutoriales prácticos, variados | [youtube.com/@FaztTech](https://youtube.com/@FaztTech) |
-| **Carlos Azaustre** | Node.js, JavaScript moderno | [youtube.com/@carlosazaustre](https://youtube.com/@carlosazaustre) |
-| **Bluuweb** | Vue, JavaScript, tutoriales | [youtube.com/@bluuweb](https://youtube.com/@bluuweb) |
-
----
-
-# VIDEOS IN ENGLISH
-
-English audio content - useful when Spanish alternatives aren't available or for advanced topics.
-
-> **Tip**: Most YouTube videos have auto-generated Spanish subtitles. Click CC → Auto-translate → Español.
+| Canal | Enfoque | Suscriptores | Enlace |
+|-------|---------|--------------|--------|
+| **HolaMundo** | Cursos completos, muy didáctico | 2M+ | [youtube.com/@HolaMundoDev](https://youtube.com/@HolaMundoDev) |
+| **midudev** | Web dev moderno, React, Node | 1M+ | [youtube.com/@midudev](https://youtube.com/@midudev) |
+| **MoureDev** | Python, Git, cursos extensos | 1.5M+ | [youtube.com/@moaboroudev](https://youtube.com/@moaboroudev) |
+| **freeCodeCamp ES** | Cursos largos y completos | 500K+ | [youtube.com/@faboroecodecamp](https://youtube.com/@faboroecodecamp) |
+| **Fazt** | Tutoriales prácticos, variados | 800K+ | [youtube.com/@FaztTech](https://youtube.com/@FaztTech) |
+| **Carlos Azaustre** | Node.js, JavaScript moderno | 200K+ | [youtube.com/@carlosazaustre](https://youtube.com/@carlosazaustre) |
+| **Bluuweb** | Vue, JavaScript, tutoriales | 400K+ | [youtube.com/@bluuweb](https://youtube.com/@bluuweb) |
+| **Código Facilito** | Cursos estructurados | 600K+ | [youtube.com/@codigofacilito](https://youtube.com/@codigofacilito) |
 
 ---
 
-## VS Code (English)
+# 🇬🇧 ENGLISH + SUBTITLES/DUBS
+
+Contenido **producido originalmente en inglés** - usar con subtítulos en español.
+
+> **Cómo activar subtítulos**: Click en CC → Configuración (⚙️) → Subtítulos → Traducir automáticamente → Español
+
+---
+
+## VS Code
 
 | Video | Duration | Channel | Description |
 |-------|----------|---------|-------------|
@@ -127,18 +126,18 @@ English audio content - useful when Spanish alternatives aren't available or for
 
 ---
 
-## Git & GitHub (English)
+## Git & GitHub
 
 | Video | Duration | Channel | Description |
 |-------|----------|---------|-------------|
 | [Git in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE) | 2 min | Fireship | Quick overview |
 | [Git & GitHub Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk) | 60 min | freeCodeCamp | Complete course |
-| [Git for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE) | 60 min | Programming with Mosh | Full tutorial |
+| [Git for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE) | 60 min | Prog. with Mosh | Full tutorial |
 | [13 Advanced Git Techniques](https://www.youtube.com/watch?v=ecK3EnyGD8o) | 8 min | Fireship | Productivity tips |
 
 ---
 
-## Node.js (English)
+## Node.js
 
 | Video | Duration | Channel | Description |
 |-------|----------|---------|-------------|
@@ -148,7 +147,7 @@ English audio content - useful when Spanish alternatives aren't available or for
 
 ---
 
-## Terminal/Linux (English)
+## Terminal/Linux
 
 | Video | Duration | Channel | Description |
 |-------|----------|---------|-------------|
@@ -158,17 +157,17 @@ English audio content - useful when Spanish alternatives aren't available or for
 
 ---
 
-## Python (English)
+## Python
 
 | Video | Duration | Channel | Description |
 |-------|----------|---------|-------------|
-| [Python for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc) | 6 hr | Programming with Mosh | Complete course |
+| [Python for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc) | 6 hr | Prog. with Mosh | Complete course |
 | [Python Full Course](https://www.youtube.com/watch?v=XKHEtdqhLK8) | 4 hr | freeCodeCamp | From scratch |
 | [Jupyter Notebook Tutorial](https://www.youtube.com/watch?v=HW29067qVWk) | 30 min | Corey Schafer | Data analysis |
 
 ---
 
-## Course-Specific Tools (English)
+## Course-Specific Tools
 
 ### QA Automation
 
@@ -197,7 +196,7 @@ English audio content - useful when Spanish alternatives aren't available or for
 | [Claude Video Tutorials](https://support.claude.com/en/collections/10548294-video-tutorials) | Videos | Official Anthropic tutorials |
 | [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) | Course | Official training |
 
-> **Nota**: Claude Code es una herramienta nueva. Consulta la documentación oficial para instrucciones actualizadas.
+> **Nota**: Claude Code es una herramienta nueva. La documentación oficial está en inglés.
 
 ---
 
@@ -214,6 +213,8 @@ English audio content - useful when Spanish alternatives aren't available or for
 
 ---
 
+# 📚 RECURSOS ADICIONALES
+
 ## Tips para Aprender con Videos
 
 1. **Velocidad 1.25x-1.5x** - Ahorra tiempo en explicaciones lentas
@@ -222,22 +223,29 @@ English audio content - useful when Spanish alternatives aren't available or for
 4. **Escribe el código** - No copies y pegues, escríbelo
 5. **Repite si no entiendes** - Los videos se pueden ver varias veces
 
-### Usar Subtítulos en YouTube
+---
 
-1. Haz clic en el ícono **CC** (subtítulos)
-2. Haz clic en **Configuración** (⚙️)
-3. Selecciona **Subtítulos** → **Traducir automáticamente**
-4. Elige **Español**
+## Cómo Activar Subtítulos en YouTube
+
+```
+1. Reproduce el video
+2. Click en CC (subtítulos)
+3. Click en ⚙️ (configuración)
+4. Subtítulos → Traducir automáticamente
+5. Selecciona "Español"
+```
+
+> **Nota**: Los subtítulos automáticos pueden tener errores. Los videos nativos en español son preferibles.
 
 ---
 
 ## Contribuir
 
-¿Encontraste un buen tutorial? Abre un PR para agregarlo:
+¿Encontraste un buen tutorial? Abre un PR:
 
 1. Verifica que no esté listado
-2. Prioriza contenido en español
-3. Verifica que el video sea reciente (< 2 años preferido)
+2. **Prioriza contenido nativo en español**
+3. Para inglés, verifica que tenga subtítulos disponibles
 4. Incluye duración y descripción breve
 5. Prueba que el enlace funcione
 
