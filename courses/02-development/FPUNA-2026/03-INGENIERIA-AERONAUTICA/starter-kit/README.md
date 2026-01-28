@@ -1,8 +1,29 @@
-# ✈️ Starter Kit: IA para Ingeniería Aeronáutica
+# ✈️ Starter Kit: IA para Ingenieria Aeronautica
 
 ## Bienvenido/a
 
-Este kit te enseña a usar IA como asistente para cálculos aerodinámicos, análisis de perfiles, y sizing preliminar - siempre con verificación rigurosa, porque en aeronáutica los errores pueden ser fatales.
+Este kit te ensena a usar IA como asistente para calculos aerodinamicos, analisis de perfiles, y sizing preliminar - siempre con verificacion rigurosa, porque en aeronautica los errores pueden ser fatales.
+
+**NUEVO:** Ahora con herramientas de IA avanzadas (NeuralFoil, AeroSandbox) y automatizacion con MCPs que reducen semanas de trabajo a horas.
+
+---
+
+## 🤖 Herramientas de IA Incluidas
+
+| Herramienta | Que Hace | Instalacion |
+|-------------|----------|-------------|
+| **NeuralFoil** | Analisis de perfiles 1000x mas rapido que XFOIL | `pip install neuralfoil` |
+| **AeroSandbox** | Diseno parametrico de aeronaves completas | `pip install aerosandbox` |
+| **MCPs** | Automatizacion de CAD, CFD, MATLAB | Ver [MCP-AUTOMATION.md](./MCP-AUTOMATION.md) |
+
+### Demo Rapido (30 segundos)
+```python
+from neuralfoil import get_aero_from_airfoil_name
+
+# Analizar NACA 2412 instantaneamente
+aero = get_aero_from_airfoil_name("naca2412", alpha=5, Re=500000)
+print(f"CL={aero['CL']:.3f}, CD={aero['CD']:.5f}, L/D={aero['CL']/aero['CD']:.1f}")
+```
 
 ---
 
@@ -41,8 +62,10 @@ Este curso es para **aprendizaje y sizing preliminar**, no para diseño final de
 | [SAFETY-WARNINGS.md](./SAFETY-WARNINGS.md) | Advertencias de seguridad | ⭐⭐⭐ **OBLIGATORIO** |
 | [VERIFICATION-CHECKLIST.md](./VERIFICATION-CHECKLIST.md) | Checklist de verificación | ⭐⭐⭐ Usar siempre |
 | [COMMON-MISTAKES.md](./COMMON-MISTAKES.md) | 12 errores fatales comunes | ⭐⭐ Referencia |
-| [20-IDEAS.md](./20-IDEAS.md) | 20 proyectos de práctica | ⭐ Inspiración |
+| [20-IDEAS.md](./20-IDEAS.md) | 30 proyectos de practica (incluye 10 con MCP) | ⭐ Inspiracion |
 | [CLAUDE.md](./CLAUDE.md) | Template de contexto | ⭐ Para proyectos |
+| [AI-INTEGRATION.md](./AI-INTEGRATION.md) | Guia de integracion IA | ⭐⭐ Herramientas avanzadas |
+| [MCP-AUTOMATION.md](./MCP-AUTOMATION.md) | Automatizacion con MCPs | ⭐⭐ Reducir trabajo tedioso |
 
 ### 📝 Ejercicios Prácticos
 | Ejercicio | Tema | Duración | Dificultad |
@@ -52,10 +75,17 @@ Este curso es para **aprendizaje y sizing preliminar**, no para diseño final de
 | [03-sizing-preliminar.md](./exercises/03-sizing-preliminar.md) | Sizing de UAV | 120 min | 🔴 Avanzado |
 
 ### 📚 Ejemplos Completados
-| Ejemplo | Qué muestra |
+| Ejemplo | Que muestra |
 |---------|-------------|
-| [ejemplo-calculo-reynolds.md](./examples/ejemplo-calculo-reynolds.md) | Cálculo Reynolds con análisis de sensibilidad |
+| [ejemplo-calculo-reynolds.md](./examples/ejemplo-calculo-reynolds.md) | Calculo Reynolds con analisis de sensibilidad |
 | [ejemplo-sizing-uav.md](./examples/ejemplo-sizing-uav.md) | Sizing completo de UAV (con error encontrado) |
+
+### 🤖 Demos de IA (NUEVO)
+| Demo | Que muestra |
+|------|-------------|
+| [01_neuralfoil_demo.py](./examples/ai-demos/01_neuralfoil_demo.py) | Analisis de perfiles 1000x mas rapido |
+| [02_aerosandbox_demo.py](./examples/ai-demos/02_aerosandbox_demo.py) | Diseno parametrico de UAV completo |
+| [03_genetic_optimization_demo.py](./examples/ai-demos/03_genetic_optimization_demo.py) | Optimizacion genetica de perfiles |
 
 ---
 
@@ -72,11 +102,17 @@ Sesión 2: Perfiles Aerodinámicos (3 horas)
 ├── 📖 Revisar ejemplo de Reynolds
 └── 🔧 Practicar con XFLR5
 
-Sesión 3: Sizing Preliminar (4 horas)
+Sesion 3: Sizing Preliminar (4 horas)
 ├── ✏️ Ejercicio 03: Sizing de UAV
 ├── 📖 Revisar ejemplo de sizing
 ├── 🔍 VERIFICATION-CHECKLIST.md completo
 └── 🎯 Elegir proyecto de 20-IDEAS.md
+
+Sesion 4: IA Avanzada (3 horas) - NUEVO
+├── 🤖 Instalar NeuralFoil y AeroSandbox
+├── ✏️ Ejecutar demos en examples/ai-demos/
+├── 📖 Leer MCP-AUTOMATION.md
+└── 🚀 Aplicar IA a tu proyecto
 ```
 
 ---
@@ -162,15 +198,23 @@ Si tu cálculo da valores fuera de estos rangos, **verificá**:
 
 ---
 
-## 🔧 Herramientas de Verificación
+## 🔧 Herramientas de Verificacion
 
-### Software Recomendado
+### Software Tradicional
 | Herramienta | Uso | Costo |
 |-------------|-----|-------|
-| **XFLR5** | Análisis de perfiles y alas | Gratis |
-| **OpenVSP** | Modelado paramétrico | Gratis |
-| **JavaFoil** | Análisis de perfiles online | Gratis |
-| **AVL** | Análisis de estabilidad | Gratis |
+| **XFLR5** | Analisis de perfiles y alas | Gratis |
+| **OpenVSP** | Modelado parametrico | Gratis |
+| **JavaFoil** | Analisis de perfiles online | Gratis |
+| **AVL** | Analisis de estabilidad | Gratis |
+
+### Herramientas de IA (NUEVO)
+| Herramienta | Uso | Costo |
+|-------------|-----|-------|
+| **NeuralFoil** | Analisis de perfiles 1000x mas rapido | Gratis |
+| **AeroSandbox** | Diseno parametrico con optimizacion | Gratis |
+| **DEAP** | Algoritmos geneticos para optimizacion | Gratis |
+| **MCPs** | Automatizacion de CAD/CFD/MATLAB | Gratis |
 
 ### Bases de Datos
 - [UIUC Airfoil Database](https://m-selig.ae.illinois.edu/ads/coord_database.html)

@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "numpy-mcp": {
+      "command": "python",
+      "args": ["-m", "numpy_mcp"],
+      "description": "Scientific computation with NumPy - for aerodynamic calculations"
+    },
+    "mcp-server-fetch": {
+      "command": "python",
+      "args": ["-m", "mcp_server_fetch"],
+      "description": "Fetch web content - for accessing airfoil databases"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic-ai/mcp-server-filesystem",
+        "C:/Users/TU_USUARIO/Documents/aeronautica"
+      ],
+      "description": "Read/write files in your project directory"
+    }
+  }
+}

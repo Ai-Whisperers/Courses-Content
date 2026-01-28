@@ -386,4 +386,103 @@ el peso del ala de un avión monomotor?"
 
 ---
 
+## NUEVO: Automatizacion con MCPs
+
+### Que son los MCPs?
+
+Los **Model Context Protocols (MCPs)** permiten a Claude controlar software externo directamente, eliminando el trabajo manual de copiar/pegar.
+
+### MCPs Recomendados para Aeronautica
+
+| MCP | Software | Que Automatiza |
+|-----|----------|----------------|
+| Fusion 360 MCP | Autodesk Fusion 360 | Modelado CAD 3D |
+| FreeCAD MCP | FreeCAD (gratuito) | CAD Open Source |
+| MATLAB MCP | MATLAB | Calculos y graficos |
+| OpenFOAM MCP | OpenFOAM | Simulaciones CFD |
+| NumPy MCP | Python | Operaciones cientificas |
+
+### Ejemplo de Uso
+
+**Sin MCP (tradicional):**
+```
+1. Pedir a Claude las coordenadas NACA
+2. Copiar coordenadas manualmente
+3. Importar a Fusion 360
+4. Crear sketch
+5. Extruir a 3D
+Tiempo: 30+ minutos
+```
+
+**Con MCP (automatizado):**
+```
+Prompt: "En Fusion 360, crea un ala con perfil NACA 2412, 
+envergadura 2m, cuerda 0.3m, sin taper"
+
+Claude ejecuta todo directamente en Fusion 360
+Tiempo: 2 minutos
+```
+
+### Instalacion Rapida
+
+```bash
+# Instalar herramientas de calculo
+pip install neuralfoil aerosandbox numpy-mcp
+
+# Instalar MCP de filesystem (ya incluido en Claude Desktop)
+npm install -g @modelcontextprotocol/server-filesystem
+```
+
+### Guia Completa
+
+Ver **MCP-AUTOMATION.md** para instrucciones detalladas de instalacion y uso de todos los MCPs.
+
+---
+
+## Herramientas de IA Instaladas
+
+### Python (pip install)
+
+```bash
+# Ya instaladas en el sistema
+neuralfoil==0.3.2      # Analisis de perfiles 1000x mas rapido que XFOIL
+aerosandbox==4.2.9     # Diseno y optimizacion de aeronaves
+numpy-mcp==0.1.0       # MCP para calculos cientificos
+mcp-server-fetch       # MCP para obtener datos web
+```
+
+### Uso de NeuralFoil (Demo Inmediata)
+
+```python
+from neuralfoil import get_aero_from_airfoil_name
+
+# Analisis instantaneo de perfil NACA
+result = get_aero_from_airfoil_name("naca2412", alpha=5, Re=500000)
+print(f"CL = {result['CL']:.3f}")
+print(f"CD = {result['CD']:.5f}")
+print(f"L/D = {result['CL']/result['CD']:.1f}")
+```
+
+### Uso de AeroSandbox (Diseno Rapido)
+
+```python
+import aerosandbox as asb
+
+# Crear ala parametrica
+wing = asb.Wing(
+    name="Main Wing",
+    symmetric=True,
+    xsecs=[
+        asb.WingXSec(xyz_le=[0, 0, 0], chord=1.5, airfoil=asb.Airfoil("naca4412")),
+        asb.WingXSec(xyz_le=[0.3, 5, 0.5], chord=0.6, airfoil=asb.Airfoil("naca4412")),
+    ]
+)
+
+# Visualizar
+airplane = asb.Airplane(name="UAV", wings=[wing])
+airplane.draw()
+```
+
+---
+
 *AI-INTEGRATION.md para Aeronáutica - FPUNA 2026*

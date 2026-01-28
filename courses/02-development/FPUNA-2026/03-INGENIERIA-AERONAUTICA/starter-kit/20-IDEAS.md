@@ -609,4 +609,236 @@ Justifica cada decisión de diseño."
 
 ---
 
+# BONUS: IDEAS CON MCP (Automatizacion Avanzada)
+*Usando Model Context Protocol para automatizar tareas tediosas*
+
+---
+
+## 21. Analisis de Perfil 1000x Mas Rapido (NeuralFoil)
+**Que:** Analizar perfiles con IA en milisegundos en lugar de segundos.
+
+```python
+# Instalar: pip install neuralfoil
+from neuralfoil import get_aero_from_airfoil_name
+import numpy as np
+
+# Analizar NACA 2412 a multiples angulos INSTANTANEAMENTE
+for alpha in range(-5, 16):
+    aero = get_aero_from_airfoil_name("naca2412", alpha=alpha, Re=500000)
+    print(f"alpha={alpha:3d}  CL={aero['CL']:6.3f}  CD={aero['CD']:7.5f}  L/D={aero['CL']/aero['CD']:6.1f}")
+```
+
+**Impacto:** Lo que tomaba horas con XFOIL ahora toma segundos.
+
+---
+
+## 22. Diseno Parametrico de Aeronaves (AeroSandbox)
+**Que:** Disenar y optimizar aeronaves completas con codigo Python.
+
+```python
+# Instalar: pip install aerosandbox
+import aerosandbox as asb
+
+# Crear UAV parametricamente
+wing = asb.Wing(
+    name="Main Wing",
+    symmetric=True,
+    xsecs=[
+        asb.WingXSec(xyz_le=[0, 0, 0], chord=0.4, airfoil=asb.Airfoil("naca4412")),
+        asb.WingXSec(xyz_le=[0.05, 2, 0.1], chord=0.2, airfoil=asb.Airfoil("naca4412")),
+    ]
+)
+
+airplane = asb.Airplane(name="Mi UAV", wings=[wing])
+airplane.draw()  # Visualizacion 3D instantanea!
+```
+
+**Impacto:** Disenar variaciones de aeronaves en minutos, no dias.
+
+---
+
+## 23. Optimizacion Genetica de Perfiles
+**Que:** Dejar que la IA evolucione el perfil optimo para tu mision.
+
+```python
+# Instalar: pip install deap neuralfoil
+from deap import base, creator, tools, algorithms
+from neuralfoil import get_aero_from_airfoil_name
+
+# La IA prueba cientos de perfiles NACA
+# y evoluciona hacia el optimo automaticamente
+# Ver: 03_genetic_optimization_demo.py
+```
+
+**Impacto:** Encontrar perfiles que un humano nunca hubiera probado.
+
+---
+
+## 24. CAD Automatico con Fusion 360 MCP
+**Que:** Crear modelos 3D con lenguaje natural.
+
+```
+Prompt al MCP: "Crea en Fusion 360 un fuselaje de UAV:
+- Longitud: 1.5 metros
+- Diametro maximo: 0.2 metros
+- Nariz ojival de 0.3m
+- Cola que se estrecha a 0.08m de diametro
+- Agrega montaje para camara en la parte inferior"
+
+El MCP ejecuta los comandos directamente en Fusion 360!
+```
+
+**Impacto:** Modelar en minutos lo que tomaria horas aprendiendo CAD.
+
+---
+
+## 25. CFD Setup Automatico con OpenFOAM MCP
+**Que:** Configurar simulaciones CFD complejas con instrucciones simples.
+
+```
+Prompt al MCP: "Configura simulacion OpenFOAM para:
+- Perfil NACA 0012
+- Reynolds 500,000
+- Angulo de ataque 5 grados
+- Solver simpleFoam
+- Modelo de turbulencia k-omega SST
+- Malla refinada cerca del perfil"
+
+El MCP genera todos los archivos de configuracion!
+```
+
+**Impacto:** Saltear horas de configuracion manual de OpenFOAM.
+
+---
+
+## 26. Calculos Matriciales con MATLAB MCP
+**Que:** Ejecutar analisis complejos sin escribir codigo MATLAB.
+
+```
+Prompt al MCP: "En MATLAB, calcula los modos de vibracion
+del ala con estas propiedades:
+- Longitud: 5 metros
+- 10 elementos finitos
+- Masa distribuida: 2 kg/m
+- EI = 50000 Nm2
+
+Grafica los primeros 3 modos y sus frecuencias naturales"
+
+MATLAB ejecuta y devuelve resultados y graficos!
+```
+
+**Impacto:** Usar MATLAB sin memorizar sintaxis.
+
+---
+
+## 27. Trade Studies Automatizados
+**Que:** Explorar espacios de diseno masivos automaticamente.
+
+```python
+# Con AeroSandbox + bucles automaticos
+import aerosandbox as asb
+import numpy as np
+
+# Variar 3 parametros, calcular 1000 combinaciones
+for AR in np.linspace(6, 12, 10):
+    for wing_loading in np.linspace(30, 80, 10):
+        for CD0 in np.linspace(0.02, 0.04, 10):
+            # Calcular performance para cada combinacion
+            # Generar superficie de respuesta
+            pass
+
+# Resultado: mapa completo del espacio de diseno
+```
+
+**Impacto:** Ver todo el espacio de diseno en una hora.
+
+---
+
+## 28. Documentacion Automatica
+**Que:** Generar reportes tecnicos a partir de calculos.
+
+```
+Prompt: "Genera un reporte tecnico de mi UAV con:
+- Especificaciones calculadas (de CLAUDE.md)
+- Diagramas 3-vistas (de resultados)
+- Tabla de performance
+- Graficos de polares
+- Conclusiones y recomendaciones
+
+Formato: Markdown listo para PDF"
+
+Claude genera el documento completo!
+```
+
+**Impacto:** Documentar en minutos, no horas.
+
+---
+
+## 29. Validacion Cruzada de Resultados
+**Que:** Verificar calculos contra multiples fuentes.
+
+```
+Prompt: "Valida mis resultados de diseno:
+
+Mi calculo:
+- V_stall = 22 m/s
+- (L/D)_max = 15
+- Alcance = 200 km
+
+Compara con:
+1. Recalculo usando diferentes formulas
+2. Datos de aeronaves similares (Cessna 152, Piper Cub)
+3. Correlaciones empiricas de Raymer
+
+Identifica cualquier inconsistencia"
+```
+
+**Impacto:** Detectar errores antes de que sean problemas.
+
+---
+
+## 30. Asistente de Debugging de Diseno
+**Que:** Diagnosticar problemas de diseno automaticamente.
+
+```
+Prompt: "Mi UAV no cumple el requisito de alcance.
+Especificaciones: [datos del diseno]
+Requisito: 100 km de alcance
+Calculado: 65 km de alcance
+
+Diagnostica:
+1. Que parametro tiene mayor impacto en alcance?
+2. Cuanto tendria que cambiar cada parametro?
+3. Cual es el cambio mas factible?
+4. Hay trade-offs que debo considerar?
+5. Propuesta de solucion ordenada por impacto"
+```
+
+**Impacto:** Resolver problemas de diseno sistematicamente.
+
+---
+
+## Instalacion de Herramientas para Ideas MCP
+
+```bash
+# Herramientas esenciales de IA
+pip install neuralfoil aerosandbox deap
+
+# MCPs (configurar en Claude Desktop)
+pip install numpy-mcp mcp-server-fetch
+
+# Verificar instalacion
+python -c "import neuralfoil, aerosandbox; print('OK!')"
+```
+
+---
+
+## Recursos para MCPs
+
+- **MCP-AUTOMATION.md**: Guia completa de automatizacion
+- **Demos**: starter-kit/examples/ai-demos/
+- **Repositorios MCP**: github.com/modelcontextprotocol/servers
+
+---
+
 *20-IDEAS.md para Ingeniería Aeronáutica - FPUNA 2026*
