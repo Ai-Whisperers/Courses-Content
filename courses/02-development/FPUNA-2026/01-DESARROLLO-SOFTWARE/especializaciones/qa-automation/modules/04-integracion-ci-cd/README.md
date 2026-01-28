@@ -1978,6 +1978,50 @@ TODO comentado en español y siguiendo best practices"
 
 ---
 
+## 📖 Tutoriales Disponibles
+
+Complete tutorials with hands-on examples for each topic:
+
+### Parte 1: GitHub Actions Fundamentals
+- [01_GitHub_Actions_Setup.md](./tutorials/01_GitHub_Actions_Setup.md) - Complete guide to setting up GitHub Actions workflows with Playwright
+
+### Parte 2-3: Reporting & Parallelization
+- [02_Professional_Reporting.md](./tutorials/02_Professional_Reporting.md) - Allure and HTML report configuration and best practices
+- [03_Test_Sharding.md](./tutorials/03_Test_Sharding.md) - Parallel test execution strategies
+
+### Parte 4: Notifications
+- [04_Notifications.md](./tutorials/04_Notifications.md) - Slack, Discord, and Email notification setup
+
+### Parte 5+: Advanced Topics
+- [05_Advanced_Workflows.md](./tutorials/05_Advanced_Workflows.md) - Production-grade workflow patterns and optimization
+
+---
+
+## 🤖 Ejemplos de IA (OpenCode Prompts)
+
+Use these prompts with OpenCode to generate CI/CD workflows automatically:
+
+### GitHub Actions Generation
+- [01_GitHub_Actions_Prompt.md](./examples/01_GitHub_Actions_Prompt.md) - Generate complete GitHub Actions workflows
+- [02_Allure_Report_Prompt.md](./examples/02_Allure_Report_Prompt.md) - Create professional Allure report setup
+- [03_Slack_Notifications_Prompt.md](./examples/03_Slack_Notifications_Prompt.md) - Configure Slack notification workflows
+
+---
+
+## Próximos Pasos en Este Módulo
+
+✅ **Módulo Actual**: Integración CI/CD (4 horas)
+
+📚 **Continúa con**:
+- [Módulo 05 - IA para QA](../05-ia-para-qa/README.md) - Automatiza testing con herramientas de IA
+
+👈 **Volver a**:
+- [Módulo 03 - Arquitectura de Pruebas](../03-arquitectura-pruebas/README.md)
+- [Módulo 02 - Pruebas de API](../02-api-testing/README.md)
+- [Módulo 01 - Playwright Avanzado](../01-playwright-avanzado/README.md)
+
+---
+
 *Módulo creado para FPUNA Verano 2026*  
 *Actualizado: Enero 2026*  
 *Track: QA Automation*
