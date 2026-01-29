@@ -26,7 +26,7 @@
 ## 📁 COMPLETE FILE STRUCTURE
 
 ```
-TALLERES-VERANO-2026/  ⭐ ROOT FOLDER
+cursos/talleres/verano-2026/  ⭐ ROOT FOLDER
 │
 ├── 📄 README.md                           ✅ Master overview
 ├── 📄 STATUS-SUMMARY.md                   ✅ Progress tracker

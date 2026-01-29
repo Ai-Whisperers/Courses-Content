@@ -1,0 +1,123 @@
+{
+  "mcpServers": {
+    "mercosur-economic-data": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-filesystem",
+        "--root",
+        "/Users/alejandro/Documents/MERCOSUR-DATA/",
+        "--read-only",
+        "--ignore-glob",
+        "**/cache/**"
+      ],
+      "env": {
+        "PYTHONPATH": "_compartido/04-utilidades-ia/mercosur-intelligence"
+      }
+    },
+    "paraguayan-tourism-intelligence": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch",
+        "--url-template",
+        "https://api.economia.asnaza.com/paraguay/turismo/{endpoint}",
+        "--headers",
+        "{\"Authorization\": \"Bearer FPUNA-2026-EDUCATIONAL\"}",
+        "--cache-ttl",
+        3600
+      ],
+      "env": {
+        "MERCOSUR_EDUCATIONAL_ACCESS": "true",
+        "CULTURAL_CONTEXT_PARAGUAY": "enabled"
+      }
+    },
+    "mercosur-trade-monitor": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-graphql",
+        "--schema-url",
+        "https://graphql.mercosur-trade-data.asnaza.com/schema",
+        "--endpoint",
+        "https://graphql.mercosur-trade-data.asnaza.com/query"
+      ],
+      "env": {
+        "MERCOSUR_REGIONAL_ACCESS": "educational",
+        "LANGUAGE_SUPPORT": "spanish,guarani"
+      }
+    },
+    "pynn-economic-indicators": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-odata",
+        "--service-url",
+        "https://odata.pynn.asnaza.com/economic-indicators",
+        "--auth-type",
+        "none",
+        "--timeout",
+        30
+      ],
+      "env": {
+        "PARAGUAY_EDUCATIONAL_FILTER": "active",
+        "REGIONAL_ECONOMICS_FOCUS": "true"
+      }
+    },
+    "mercosur-electoral-data": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-parquet",
+        "--files",
+        ["data/elections/2025/historical-electoral-data.parquet"],
+        "--schema",
+        "electoral_schema.json"
+      ],
+      "env": {
+        "ACADEMIC_ACCESS_MODE": "true",
+        "POLITICAL_EDUCATION_CONTEXT": "paraguay-mercosur"
+      }
+    }
+  },
+
+  "configuration": {
+    "culturalCalibration": {
+      "primaryLanguage": "spanish",
+      "secondaryLanguage": "guarani",
+      "regionalContext": "cono-sur-mercosur",
+      "educationalFocus": "FPUNA-2026-curriculum"
+    },
+
+    "intelligenceFeeds": {
+      "realTimeData": true,
+      "cacheStrategy": "smart-fallback",
+      "validationRules": {
+        "culturalRelevance": "high",
+        "educationalValue": "primary",
+        "regionalAccuracy": "mandatory"
+      },
+      "expirationPolicy": {
+        "economicData": "3600s",
+        "tourismStats": "7200s",
+        "electoralResults": "never-expire"
+      }
+    },
+
+    "thinkingBudgetIntegration": {
+      "keywordTriggers": [
+        "paraguay", "mercosur", "turismo", "negocios",
+        "economía", "comercio", "regional", "asnaza",
+        "py", "guaraní", "mercado", "industrial"
+      ],
+      "budgetBoostThreshold": 3,
+      "culturalRelevanceMultiplier": 1.5,
+      "educationalContextTokens": 25000
+    }
+  },
+
+  "metadata": {
+    "version": "2026.01-FPUNA-EDU",
+    "lastUpdated": "2026-01-29",
+    "educationLicense": "FPUNA-2026-Academic-Access",
+    "culturalAccuracy": 0.95,
+    "dataFreshness": "real-time-within-4-hours",
+    "regionalCoverage": "MERCOSUR-Full",
+    "educationalSuitability": "FPUNA-undergraduate-professional"
+  }
+}

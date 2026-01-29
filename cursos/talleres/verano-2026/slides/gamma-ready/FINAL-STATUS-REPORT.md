@@ -119,7 +119,7 @@
 ## 📂 WHAT YOU HAVE RIGHT NOW
 
 ```
-TALLERES-VERANO-2026/
+cursos/talleres/verano-2026/
 ├── slides/
 │   ├── gamma-ready/
 │   │   ├── CLASS-01-GAMMA-INPUT.md ✅ PASTE INTO GAMMA

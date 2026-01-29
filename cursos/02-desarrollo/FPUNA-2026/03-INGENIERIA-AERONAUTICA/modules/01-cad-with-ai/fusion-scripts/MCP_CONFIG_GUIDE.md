@@ -7,7 +7,7 @@ Run this command in your terminal to get the full path to the server script:
 
 ```bash
 # Windows (PowerShell)
-(Get-Item "cursos/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/fusion_mcp_server.py").FullName
+(Get-Item "cursos/02-desarrollo/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/fusion_mcp_server.py").FullName
 ```
 
 ## 2. Add to Claude Desktop Config

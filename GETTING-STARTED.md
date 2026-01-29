@@ -161,7 +161,7 @@ R: Abre un issue o discusión. Incluye lo que intentaste.
 
 ## Configuración Asistida por IA
 
-¿Quieres que una IA configure todo por ti? Mira [Prompts de Configuración](./_compartido/setup/SETUP-PROMPTS.md) para prompts de copiar y pegar que automatizan la configuración del entorno.
+¿Quieres que una IA configure todo por ti? Mira [Prompts de Configuración](./_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md) para prompts de copiar y pegar que automatizan la configuración del entorno.
 
 ---
 
@@ -169,7 +169,7 @@ R: Abre un issue o discusión. Incluye lo que intentaste.
 
 ¿Prefieres aprender viendo? Tenemos tutoriales en video curados para todas las herramientas que necesitas:
 
-- **[Guía de Tutoriales en Video](./_compartido/setup/VIDEO-TUTORIALS.md)** - Lista completa de videos de configuración
+- **[Guía de Tutoriales en Video](./_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md)** - Lista completa de videos de configuración
   - Configuración de Claude Code
   - Configuración de VS Code
   - Conceptos básicos de Git y GitHub
@@ -179,9 +179,9 @@ R: Abre un issue o discusión. Incluye lo que intentaste.
 Enlaces rápidos:
 | Herramienta | Tiempo | Video |
 |-------------|--------|-------|
-| Claude Code | 10 min | [Guía de Configuración](./_compartido/setup/VIDEO-TUTORIALS.md#claude-code) |
-| VS Code | 15 min | [Instalación](./_compartido/setup/VIDEO-TUTORIALS.md#vs-code) |
-| Git Basics | 15 min | [Inicio Rápido](./_compartido/setup/VIDEO-TUTORIALS.md#git--github) |
+| Claude Code | 10 min | [Guía de Configuración](./_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#claude-code) |
+| VS Code | 15 min | [Instalación](./_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#vs-code) |
+| Git Basics | 15 min | [Inicio Rápido](./_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#git--github) |
 
 ---
 

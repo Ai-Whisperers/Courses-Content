@@ -267,7 +267,7 @@ Cada clase incluye:
 ## 📂 Estructura de Archivos
 
 ```
-TALLERES-VERANO-2026/
+cursos/talleres/verano-2026/
 ├── README.md                          # Este archivo
 │
 ├── lesson-plans/                      # Planes de lección detallados

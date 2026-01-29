@@ -16,7 +16,7 @@ This folder contains the integration tools to let OpenCode "drive" Autodesk Fusi
 2.  **Install the Bridge**:
     *   Copy the file `RunAgentScript.py` from this folder into your Fusion 360 Scripts folder.
     *   **Crucial**: Edit `RunAgentScript.py` and update `AGENT_SCRIPT_PATH` to point to the `agent_generated_script.py` file in this directory.
-        *   *Example*: `C:/Users/Alejandro/Documents/Ivan/Work/Courses Content/cursos/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/agent_generated_script.py`
+        *   *Example*: `C:/Users/Alejandro/Documents/Ivan/Work/Courses Content/cursos/02-desarrollo/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/agent_generated_script.py`
 
 3.  **How to Use**:
     1.  **Ask the AI**: "Create a Fusion 360 script to model a 200mm cylinder."

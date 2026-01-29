@@ -1,0 +1,23 @@
+{
+    "permissions": {
+        "allow": [
+            "filesystem:read",
+            "filesystem:write"
+        ],
+        "deny": [
+            "**/.env*",
+            "**/secrets/**",
+            "**/*.pem",
+            "**/*.key"
+        ]
+    },
+    "behavior": {
+        "auto_approve_actions": false,
+        "always_use_thinking": true
+    },
+    "integrations": {
+        "github": {
+            "enabled": true
+        }
+    }
+}

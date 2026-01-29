@@ -42,12 +42,12 @@ graph LR
 ### **Para Instructores**
 - `cursos/01-produccion/QA-Automation-with-AI/README.md` - Curriculum completo
 - `cursos/02-desarrollo/FPUNA-2026/instructor/` - Materiales de enseñanza
-- `TALLERES-VERANO-2026/` - Contenido de workshops
+- `cursos/talleres/verano-2026/` - Contenido de workshops
 
 ### **Para Recursos Compartidos**
 - `_compartido/configs/` - Configuraciones reutilizables
 - `_compartido/ejemplos/` - Ejemplos de código
-- `_compartido/setup/` - Scripts de configuración
+- `_compartido/04-utilidades-ia/configuracion-inicial/` - Scripts de configuración
 - `_compartido/templates/` - Plantillas de documentos
 
 ---
@@ -67,7 +67,7 @@ graph LR
   - Fusión 360 y análisis CFD incluidos
 
 ### **Workshops Prácticos**
-- [🔥 Talleres de Verano 2026](TALLERES-VERANO-2026/)
+- [🔥 Talleres de Verano 2026](cursos/talleres/verano-2026/)
   - Sesiones intensivas teórico-prácticas
   - 6 clases estructuradas
 
@@ -100,7 +100,7 @@ graph LR
 **2026-01-29:** Completa limpieza y estandarización en español
 - Reorganización completa de directorios
 - Limpieza de archivos cache innecesarios
-- Traducción consistente `courses/` → `cursos/`, `_shared/` → `_compartido/`
+- Traducción consistente `cursos/` → `cursos/`, `_compartido/` → `_compartido/`
 
 ---
 

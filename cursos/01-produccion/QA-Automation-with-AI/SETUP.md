@@ -184,5 +184,5 @@ This is the foundation of everything you'll learn in this course.
 
 ---
 
-*See also: [Shared Setup Prompts](../../_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md)*
+*See also: [](../../../_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md)*
 

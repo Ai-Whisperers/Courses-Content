@@ -8,29 +8,29 @@
 
 | Status | Courses | Description |
 |--------|---------|-------------|
-| **01-production** | 1 | Ready for students |
-| **02-development** | 1 | Active work |
+| **01-produccion** | 1 | Ready for students |
+| **02-desarrollo** | 1 | Active work |
 | **03-beta** | 3 | Needs testing |
 
 ---
 
-## 01-production (1 Course)
+## 01-produccion (1 Course)
 
 Fully developed and tested.
 
 | Course | Audience | Duration | Modules |
 |--------|----------|----------|---------|
-| [QA Automation with AI](./01-production/QA-Automation-with-AI/) | QA Engineers | 40-50 hours | 12 |
+| [QA Automation with AI](./01-produccion/QA-Automation-with-AI/) | QA Engineers | 40-50 hours | 12 |
 
 ---
 
-## 02-development (1 Course)
+## 02-desarrollo (1 Course)
 
 Active development, ~35% complete.
 
 | Course | Audience | Language | Est. Ready |
 |--------|----------|----------|------------|
-| [FPUNA 2026](./02-development/FPUNA-2026/) | University Students (Paraguay) | Spanish | Q2 2026 |
+| [FPUNA 2026](./02-desarrollo/FPUNA-2026/) | University Students (Paraguay) | Spanish | Q2 2026 |
 
 ---
 
@@ -50,9 +50,9 @@ Content exists, needs student testing.
 
 ```
 cursos/
-├── 01-production/
+├── 01-produccion/
 │   └── QA-Automation-with-AI/
-├── 02-development/
+├── 02-desarrollo/
 │   └── FPUNA-2026/
 └── 03-beta/
     ├── Prompt-Engineering-Masterclass/

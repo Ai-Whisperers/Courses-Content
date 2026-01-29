@@ -38,7 +38,7 @@ All courses follow this structure:
 └── resources/               # Additional materials
 ```
 
-**Reference**: Use `courses/01-production/QA-Automation-with-AI/` as the gold standard.
+**Reference**: Use `cursos/01-produccion/QA-Automation-with-AI/` as the gold standard.
 
 ---
 

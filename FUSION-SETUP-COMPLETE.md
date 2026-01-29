@@ -15,7 +15,7 @@ I have successfully installed the bridge script into your Fusion 360 API folder.
 
 ## What happens when you run it?
 It will execute whatever code is currently in:
-`courses/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/agent_generated_script.py`
+`cursos/02-desarrollo/FPUNA-2026/03-INGENIERIA-AERONAUTICA/modules/01-cad-with-ai/fusion-scripts/agent_generated_script.py`
 
 Right now, that file contains a script to **Create a 50mm Cube**.
 So you should see a cube appear instantly!

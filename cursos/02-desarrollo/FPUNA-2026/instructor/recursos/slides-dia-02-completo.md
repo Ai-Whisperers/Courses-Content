@@ -231,7 +231,7 @@
 |  +----------------------------------------------------+  |
 |  |                                                    |  |
 |  |  github.com/Ai-Whisperers/Courses-Content/        |  |
-|  |  tree/main/cursos/02-development/FPUNA-2026      |  |
+|  |  tree/main/cursos/02-desarrollo/FPUNA-2026      |  |
 |  |                                                    |  |
 |  |  Carpeta: dias/dia-02-electronica/                |  |
 |  |                                                    |  |
