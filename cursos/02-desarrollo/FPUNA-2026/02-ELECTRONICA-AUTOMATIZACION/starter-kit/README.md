@@ -31,12 +31,14 @@ Andá a [exercises/01-debugger-arduino.md](./exercises/01-debugger-arduino.md) y
 | [20-IDEAS.md](./20-IDEAS.md) | 20 proyectos de práctica | ⭐ Inspiración |
 | [CLAUDE.md](./CLAUDE.md) | Template de contexto | ⭐ Para proyectos |
 
-### 📝 Ejercicios Prácticos
+### 📝 Ejercicios Prácticos (5 ejercicios)
 | Ejercicio | Tema | Duración | Dificultad |
 |-----------|------|----------|------------|
 | [01-debugger-arduino.md](./exercises/01-debugger-arduino.md) | Debug de código Arduino | 60 min | 🟢 Principiante |
 | [02-interpretar-datasheet.md](./exercises/02-interpretar-datasheet.md) | Extraer info de datasheets | 45 min | 🟡 Intermedio |
 | [03-logica-automatizacion.md](./exercises/03-logica-automatizacion.md) | Diseñar sistema de control | 90 min | 🟡 Intermedio |
+| [04-diseno-pcb-basico.md](./exercises/04-diseno-pcb-basico.md) | Diseño PCB con KiCAD | 75 min | 🟡 Intermedio |
+| [05-dashboard-iot.md](./exercises/05-dashboard-iot.md) | Dashboard IoT con ESP32 | 75 min | 🟡 Intermedio |
 
 ### 📚 Ejemplos Completados
 | Ejemplo | Qué muestra |
@@ -62,7 +64,17 @@ Sesión 2: Datasheets (2 horas)
 Sesión 3: Automatización (3 horas)
 ├── ✏️ Ejercicio 03: Sistema de control
 ├── 📖 Revisar ejemplo de riego
-└── 🎯 Elegir proyecto de 20-IDEAS.md
+└── 🔍 Revisar COMMON-MISTAKES.md (errores de hardware)
+
+Sesión 4: Diseño PCB (3 horas)
+├── ✏️ Ejercicio 04: Diseño PCB básico
+├── 📖 Revisar KiCAD design rules
+└── 🔍 Verificar con especificaciones JLCPCB
+
+Sesión 5: IoT y Dashboards (3 horas)
+├── ✏️ Ejercicio 05: Dashboard IoT
+├── 📖 Configurar ThingSpeak/Grafana
+└── 🎯 Elegir proyecto final de proyecto-final/
 ```
 
 ---

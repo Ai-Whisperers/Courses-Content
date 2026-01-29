@@ -96,14 +96,22 @@ Demanda:
 
 ## Capstone Project
 
-**Sistema de Automatización Inteligente**
+**Sistema Escalonado por Nivel**
 
-Diseñar e implementar:
-- Circuit design completo
-- PCB layout
-- Firmware con AI
-- IoT connectivity
-- Dashboard en tiempo real
+Elige tu proyecto según tu experiencia:
+
+| Nivel | Opciones | Inversión | Duración |
+|-------|----------|-----------|----------|
+| Principiante | 4 proyectos (P1-P4) | $15-25 USD | 15-20h |
+| Intermedio | 5 proyectos (I1-I5) | $30-50 USD | 25-35h |
+| Avanzado | 5 proyectos (A1-A5) | $60-100 USD | 40-60h |
+
+**Proyecto Destacado**: [Plataforma Universal de Desarrollo](./proyecto-final/PROYECTO-UNIVERSAL-EMBEBIDOS.md)
+- PCB reutilizable para futuros proyectos
+- Firmware framework profesional
+- Dashboard de monitoreo
+
+Ver opciones: [proyecto-final/](./proyecto-final/)
 
 ---
 
@@ -141,10 +149,12 @@ Diseñar e implementar:
 |------------|------|
 | Ejercicios (5×) | 25% |
 | Capstone | 50% |
+| Comprensión | 15% |
 | Participación | 10% |
-| Innovación | 15% |
 
-**Mínimo**: 70% para aprobar
+**Mínimo**: 60 puntos para aprobar (Suficiente)
+
+Ver rúbrica detallada: [proyecto-final/rubrica-escalonada.md](./proyecto-final/rubrica-escalonada.md)
 
 ---
 
@@ -173,18 +183,20 @@ Diseñar e implementar:
 
 ## Hardware Necesario
 
-**Mínimo** (para ejercicios):
+**Para ejercicios** (~USD 10-15):
 - Arduino Uno/Nano (~USD 5-10)
 - Breadboard + jumpers (~USD 3)
 - LEDs, resistencias básicas (~USD 2)
 
-**Completo** (para capstone):
-- ESP32 DevKit (~USD 8-12)
-- Sensor DHT22 (~USD 5)
-- Relay module (~USD 3)
-- Power supply (~USD 5)
+**Para capstone** (según nivel):
 
-**Total**: ~USD 25-35
+| Nivel | Hardware | Costo |
+|-------|----------|-------|
+| Principiante | Arduino + sensores básicos | $15-25 USD |
+| Intermedio | ESP32 + sensores + relays | $30-50 USD |
+| Avanzado | ESP32 + PCB + múltiples sensores | $60-100 USD |
+
+Ver BOM detallado en cada proyecto.
 
 ---
 

@@ -50,16 +50,16 @@ Este track utiliza un **sistema escalonado** que permite a cada estudiante elegi
 ## Proyectos Destacados
 
 ### Para Principiantes
-- **P1**: Estación Meteorológica (DHT22 + LCD)
-- **P2**: Control de Iluminación (LDR + relays)
+- **P1**: Semáforo Inteligente (LEDs + LDR + FSM)
+- **P2**: Monitor de Temperatura con Alertas (DHT + LCD + buzzer)
 
 ### Para Intermedios
-- **I1**: Monitor de Energía con Dashboard
-- **I3**: Sistema de Riego Inteligente con IoT
+- **I1**: Sistema de Riego 2 Zonas (ESP32 + MQTT + Web)
+- **I2**: Nodo IoT con Dashboard (ThingSpeak/Grafana)
 
 ### Para Avanzados
-- **A1**: Smart Home Multi-Zona
-- **A5**: Plataforma Universal de Desarrollo (PCB + Framework + Dashboard)
+- **A1**: Mini-SCADA Control de Nivel (Node-RED + MQTT)
+- **A5**: [Plataforma Universal de Desarrollo](./PROYECTO-UNIVERSAL-EMBEBIDOS.md) (PCB + Firmware Framework + Dashboard)
 
 ---
 
