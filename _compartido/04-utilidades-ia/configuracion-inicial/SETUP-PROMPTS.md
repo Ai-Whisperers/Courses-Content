@@ -165,7 +165,7 @@ Configura mi entorno para el curso FPUNA 2026:
 
 2. Clonar el repositorio:
    git clone https://github.com/Ai-Whisperers/Courses-Content.git
-   cd Courses-Content/courses/02-development/FPUNA-2026
+   cd Courses-Content/cursos/02-development/FPUNA-2026
 
 3. Ir al módulo de fundamentos:
    cd 00-FUNDAMENTOS-PRINCIPALES
@@ -272,3 +272,4 @@ Report any issues and how to fix them.
 ---
 
 *AI Whisperers - Setup Prompts v1.0*
+

@@ -1,18 +1,35 @@
-# 🛠️ Configuración de Herramientas de IA
+# 🚀 Mega-Guía de Configuración IA (Copy-Paste)
 
-Esta carpeta contiene plantillas de configuración para los IDEs y herramientas de IA más populares. El objetivo es que la IA tenga el contexto completo de tu proyecto desde el primer segundo.
+Esta carpeta contiene lo **mejor de lo mejor** en configuraciones para herramientas de IA de 2026. Hemos investigado qué están haciendo las comunidades de GitHub (Airbnb, Anthropic, Cursor Community) para que tú solo tengas que copiar y pegar.
 
-## 📁 Contenido
+## 🛠️ ¿Qué herramienta usas?
 
-- **/claude**: Configuraciones para **Claude Code**. Incluye `CLAUDE.md` y la carpeta oculta `.claude/`.
-- **/cursor**: Reglas para **Cursor (.mdc)** y archivos `.cursorignore`.
-- **/gemini**: Contexto para **Gemini (.md)** y configuraciones de extensión.
-- **/copilot**: Instrucciones para **GitHub Copilot** y configuración de agentes.
-- **/windsurf**: Reglas para **Windsurf** y flujos Cascade.
+### [1. Claude Code](./claude/)
 
-## 🚀 Cómo usar
+- **Lo mejor**: `CLAUDE.md` optimizado para no gastar tokens innecesarios y `/commands` personalizados para review automático.
+- **Instrucciones**: Copia la carpeta `.claude/` y el archivo `CLAUDE.md` a la raíz de tu proyecto.
 
-1. Identifica qué herramienta estás usando.
-2. Entra en su respectiva carpeta.
-3. Copia los archivos a la raíz de tu proyecto.
-4. **Importante**: Personaliza el contenido de los archivos `.md` para que reflejen el nombre y los objetivos de TU proyecto específico.
+### [2. Cursor](./cursor/)
+
+- **Lo mejor**: Reglas modulares `.mdc` que le explican a Cursor exactamente cómo codificar en tu proyecto.
+- **Instrucciones**: Copia la carpeta `.cursor/` a la raíz de tu proyecto.
+
+### [3. GitHub Copilot](./copilot/)
+
+- **Lo mejor**: Instrucciones repo-wide en `.github/` para que Copilot deje de sugerir código "basura".
+- **Instrucciones**: Copia la carpeta `.github/` a la raíz de tu proyecto.
+
+### [4. Windsurf](./windsurf/)
+
+- **Lo mejor**: Reglas tipo XML para Cascade que aseguran que la IA no se vuelva loca borrando archivos.
+- **Instrucciones**: Copia el archivo `.windsurf-rules.md` a la raíz.
+
+---
+
+## 💡 Pro-Tip Estudiantil
+
+Si estás trabajando en un proyecto nuevo, el orden recomendado es:
+
+1. Copia el `.aiignore` de [04-utilidades-ia/](../04-utilidades-ia/).
+2. Copia la configuración de tu herramienta favorita de esta carpeta.
+3. Personaliza el archivo principal (como `CLAUDE.md` o `repo.mdc`) con el nombre de tu proyecto.
