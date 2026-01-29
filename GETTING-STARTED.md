@@ -1,185 +1,188 @@
-# Getting Started
+# Comenzando
 
-Welcome! This guide helps you set up and start learning.
-
----
-
-## Step 1: Choose Your Course
-
-| Course | Best For | Setup Guide |
-|--------|----------|-------------|
-| [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) | QA engineers | [SETUP.md](./courses/01-production/QA-Automation-with-AI/SETUP.md) |
-| [FPUNA 2026](./courses/02-development/FPUNA-2026/) | University students (Spanish) | [starter-kit](./courses/02-development/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES/starter-kit/) |
-| [Prompt Engineering](./courses/03-beta/Prompt-Engineering-Masterclass/) | Anyone wanting better AI | [SETUP.md](./courses/03-beta/Prompt-Engineering-Masterclass/SETUP.md) |
-| [Building AI Apps](./courses/03-beta/Building-AI-Powered-Applications/) | Developers | [SETUP.md](./courses/03-beta/Building-AI-Powered-Applications/SETUP.md) |
-| [AI Tools for Productivity](./courses/03-beta/AI-Tools-for-Productivity/) | Professionals | [SETUP.md](./courses/03-beta/AI-Tools-for-Productivity/SETUP.md) |
-
-**Recommended first course:** [QA Automation with AI](./courses/01-production/QA-Automation-with-AI/) - it's complete and tested.
+¡Bienvenido! Esta guía te ayuda a configurar y comenzar a aprender.
 
 ---
 
-## Step 2: Prerequisites
+## Paso 1: Elige Tu Curso
 
-### For All Courses
+| Curso                                                                    | Ideal Para                            | Guía de Configuración                                                                    |
+| ------------------------------------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [QA Automation with AI](./cursos/01-produccion/QA-Automation-with-AI/)   | Ingenieros QA                         | [SETUP.md](./cursos/01-produccion/QA-Automation-with-AI/SETUP.md)                        |
+| [FPUNA 2026](./cursos/02-desarrollo/FPUNA-2026/)                         | Estudiantes Universitarios (Paraguay) | [starter-kit](./cursos/02-desarrollo/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES/starter-kit/) |
+| [Prompt Engineering](./cursos/03-beta/Prompt-Engineering-Masterclass/)   | Cualquiera que quiera mejor IA        | [SETUP.md](./cursos/03-beta/Prompt-Engineering-Masterclass/SETUP.md)                     |
+| [Building AI Apps](./cursos/03-beta/Building-AI-Powered-Applications/)   | Desarrolladores                       | [SETUP.md](./cursos/03-beta/Building-AI-Powered-Applications/SETUP.md)                   |
+| [AI Tools for Productivity](./cursos/03-beta/AI-Tools-for-Productivity/) | Profesionales                         | [SETUP.md](./cursos/03-beta/AI-Tools-for-Productivity/SETUP.md)                          |
 
-You need:
-- Computer (Windows 10+, macOS 10.15+, or Linux)
-- Internet connection
-- GitHub account ([create one](https://github.com/join))
-- Text editor (VS Code recommended)
+**Primer curso recomendado:** [QA Automation with AI](./cursos/01-produccion/QA-Automation-with-AI/) - está completo y probado.
 
-### Verify Your Setup
+---
 
-Open a terminal and run:
+## Paso 2: Prerrequisitos
+
+### Para Todos los Cursos
+
+Necesitas:
+
+- Computadora (Windows 10+, macOS 10.15+, o Linux)
+- Conexión a Internet
+- Cuenta de GitHub ([crea una](https://github.com/join))
+- Editor de texto (Recomendado VS Code)
+
+### Verifica Tu Configuración
+
+Abre una terminal y ejecuta:
 
 ```bash
-# Check Git is installed
+# Verificar si Git está instalado
 git --version
 
-# Check Node.js (required for some courses)
+# Verificar Node.js (requerido para algunos cursos)
 node --version
 ```
 
-If commands fail, install the missing tools:
+Si los comandos fallan, instala las herramientas faltantes:
+
 - **Git**: [git-scm.com](https://git-scm.com/downloads)
-- **Node.js**: [nodejs.org](https://nodejs.org/) (LTS version)
+- **Node.js**: [nodejs.org](https://nodejs.org/) (Versión LTS)
 
 ---
 
-## Step 3: Get the Materials
+## Paso 3: Obtén los Materiales
 
-### Option A: Clone the Repository (Recommended)
+### Opción A: Clonar el Repositorio (Recomendado)
 
 ```bash
 git clone https://github.com/Ai-Whisperers/Courses-Content.git
 cd Courses-Content
 ```
 
-### Option B: Download ZIP
+### Opción B: Descargar ZIP
 
-1. Go to [github.com/Ai-Whisperers/Courses-Content](https://github.com/Ai-Whisperers/Courses-Content)
-2. Click "Code" → "Download ZIP"
-3. Extract to your preferred location
+1. Ve a [github.com/Ai-Whisperers/Courses-Content](https://github.com/Ai-Whisperers/Courses-Content)
+2. Haz clic en "Code" → "Download ZIP"
+3. Extrae en tu ubicación preferida
 
 ---
 
-## Step 4: Start Learning
+## Paso 4: Comienza a Aprender
 
 ### QA Automation with AI
 
 ```bash
-# Navigate to the course
-cd courses/01-production/QA-Automation-with-AI
+# Navega al curso
+cd cursos/01-produccion/QA-Automation-with-AI
 
-# Read the course overview
+# Lee la descripción del curso
 cat README.md
 
-# Start with Module 1
+# Comienza con el Módulo 1
 cd modules/01-introduction
 ```
 
-### FPUNA 2026 (Spanish)
+### FPUNA 2026 (Español)
 
 ```bash
-cd courses/02-development/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES
+cd cursos/02-desarrollo/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES
 
-# Start with the starter kit
+# Comienza con el starter kit
 cd starter-kit
 cat README.md
 ```
 
-### Beta Courses
+### Cursos Beta
 
-Beta courses are usable but may have incomplete sections. Start with the README in each course folder.
+Los cursos Beta son utilizables pero pueden tener secciones incompletas. Comienza con el README en cada carpeta de curso.
 
 ---
 
-## Course Structure
+## Estructura del Curso
 
-All courses follow this pattern:
+Todos los cursos siguen este patrón:
 
 ```
-course-name/
-├── README.md           # Course overview - START HERE
-├── SYLLABUS.md         # Complete curriculum
-├── modules/            # Course content
-│   ├── 01-topic/
-│   │   ├── README.md   # Module overview
-│   │   ├── LESSON.md   # Main content
-│   │   ├── EXERCISE.md # Hands-on practice
-│   │   └── QUIZ.md     # Self-assessment
+nombre-del-curso/
+├── README.md           # Resumen del curso - COMIENZA AQUÍ
+├── SYLLABUS.md         # Plan de estudios completo
+├── modules/            # Contenido del curso
+│   ├── 01-tema/
+│   │   ├── README.md   # Resumen del módulo
+│   │   ├── LESSON.md   # Contenido principal
+│   │   ├── EXERCISE.md # Práctica práctica
+│   │   └── QUIZ.md     # Autoevaluación
 │   └── ...
-├── examples/           # Code examples
-└── resources/          # Additional materials
+├── examples/           # Ejemplos de código
+└── resources/          # Materiales adicionales
 ```
 
-**Learning flow:**
-1. Read module README
-2. Study the LESSON
-3. Complete the EXERCISE
-4. Test yourself with the QUIZ
-5. Move to next module
+**Flujo de aprendizaje:**
+
+1. Lee el README del módulo
+2. Estudia la LECCIÓN (LESSON)
+3. Completa el EJERCICIO (EXERCISE)
+4. Pruébate con el QUIZ
+5. Avanza al siguiente módulo
 
 ---
 
-## Getting Help
+## Obteniendo Ayuda
 
-- **Course questions**: Open an [issue](https://github.com/Ai-Whisperers/Courses-Content/issues)
-- **Discussions**: Join [GitHub Discussions](https://github.com/Ai-Whisperers/Courses-Content/discussions)
-- **Bugs/errors**: Report in issues with the file path and error
-
----
-
-## Tips for Success
-
-1. **Complete modules in order** - They build on each other
-2. **Do the exercises** - Reading isn't enough, practice is essential
-3. **Take notes** - Write down key concepts in your own words
-4. **Ask questions** - There are no stupid questions
-5. **Apply immediately** - Use what you learn in real projects
+- **Preguntas del curso**: Abre un [issue](https://github.com/Ai-Whisperers/Courses-Content/issues)
+- **Discusiones**: Únete a [GitHub Discussions](https://github.com/Ai-Whisperers/Courses-Content/discussions)
+- **Bugs/errores**: Reporta en issues con la ruta del archivo y el error
 
 ---
 
-## FAQ
+## Consejos para el Éxito
 
-**Q: Do I need to pay for anything?**  
-A: No. All course content is free. Some AI tools have free tiers.
-
-**Q: How long does each course take?**  
-A: QA Automation: 40-60 hours. Others vary, check their README.
-
-**Q: Can I skip modules?**  
-A: Not recommended. Modules build on previous ones.
-
-**Q: What if I get stuck?**  
-A: Open an issue or discussion. Include what you tried.
+1. **Completa los módulos en orden** - Se construyen uno sobre otro
+2. **Haz los ejercicios** - Leer no es suficiente, la práctica es esencial
+3. **Toma notas** - Escribe los conceptos clave con tus propias palabras
+4. **Haz preguntas** - No hay preguntas tontas
+5. **Aplica inmediatamente** - Usa lo que aprendes en proyectos reales
 
 ---
 
-## AI-Assisted Setup
+## FAQ (Preguntas Frecuentes)
 
-Want an AI to set up everything for you? See [Setup Prompts](./_shared/setup/SETUP-PROMPTS.md) for copy-paste prompts that automate environment setup.
+**P: ¿Necesito pagar algo?**
+R: No. Todo el contenido del curso es gratuito. Algunas herramientas de IA tienen niveles gratuitos.
 
----
+**P: ¿Cuánto tiempo toma cada curso?**
+R: QA Automation: 40-60 horas. Otros varían, revisa su README.
 
-## Video Tutorials
+**P: ¿Puedo saltar módulos?**
+R: No recomendado. Los módulos se basan en los anteriores.
 
-Prefer to learn by watching? We have curated video tutorials for all the tools you need:
-
-- **[Video Tutorials Guide](./_shared/setup/VIDEO-TUTORIALS.md)** - Complete list of setup videos
-  - Claude Code setup
-  - VS Code configuration
-  - Git & GitHub basics
-  - Node.js installation
-  - Terminal commands
-
-Quick links:
-| Tool | Time | Video |
-|------|------|-------|
-| Claude Code | 10 min | [Setup Guide](./_shared/setup/VIDEO-TUTORIALS.md#claude-code) |
-| VS Code | 15 min | [Installation](./_shared/setup/VIDEO-TUTORIALS.md#vs-code) |
-| Git Basics | 15 min | [Quick Start](./_shared/setup/VIDEO-TUTORIALS.md#git--github) |
+**P: ¿Qué pasa si me quedo atascado?**
+R: Abre un issue o discusión. Incluye lo que intentaste.
 
 ---
 
-Ready? Pick a course and start learning!
+## Configuración Asistida por IA
+
+¿Quieres que una IA configure todo por ti? Mira [Prompts de Configuración](./_compartido/setup/SETUP-PROMPTS.md) para prompts de copiar y pegar que automatizan la configuración del entorno.
+
+---
+
+## Tutoriales en Video
+
+¿Prefieres aprender viendo? Tenemos tutoriales en video curados para todas las herramientas que necesitas:
+
+- **[Guía de Tutoriales en Video](./_compartido/setup/VIDEO-TUTORIALS.md)** - Lista completa de videos de configuración
+  - Configuración de Claude Code
+  - Configuración de VS Code
+  - Conceptos básicos de Git y GitHub
+  - Instalación de Node.js
+  - Comandos de terminal
+
+Enlaces rápidos:
+| Herramienta | Tiempo | Video |
+|-------------|--------|-------|
+| Claude Code | 10 min | [Guía de Configuración](./_compartido/setup/VIDEO-TUTORIALS.md#claude-code) |
+| VS Code | 15 min | [Instalación](./_compartido/setup/VIDEO-TUTORIALS.md#vs-code) |
+| Git Basics | 15 min | [Inicio Rápido](./_compartido/setup/VIDEO-TUTORIALS.md#git--github) |
+
+---
+
+¿Listo? ¡Elige un curso y comienza a aprender!

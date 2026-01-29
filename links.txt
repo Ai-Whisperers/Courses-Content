@@ -1,0 +1,717 @@
+
+🔗 Markdown Link Checker
+================================================================================
+🔍 Checking 1191 markdown files...
+
+
+================================================================================
+LINK CHECK REPORT
+================================================================================
+
+📊 Statistics:
+   Files checked: 1191
+   Links checked: 863
+   Broken links:  259
+
+❌ Broken Links Found:
+
+📄 .claude\CLAUDE.local.md
+   Line 435: [CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+   Line 437: [EXTENDED_THINKING.md](EXTENDED_THINKING.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\EXTENDED_THINKING.md
+   Line 438: [SCREENSHOT_WORKFLOW.md](SCREENSHOT_WORKFLOW.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\SCREENSHOT_WORKFLOW.md
+
+📄 .claude\README.md
+   Line 143: [../CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+   Line 362: [Project CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+   Line 385: [QUICK_START.md](QUICK_START.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\QUICK_START.md
+   Line 386: [THREE_FILE_RULE.md](THREE_FILE_RULE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\THREE_FILE_RULE.md
+   Line 387: [BATCH_API_PATTERNS.md](BATCH_API_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\BATCH_API_PATTERNS.md
+   Line 388: [EXTENDED_THINKING.md](EXTENDED_THINKING.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\EXTENDED_THINKING.md
+   Line 389: [SCREENSHOT_WORKFLOW.md](SCREENSHOT_WORKFLOW.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\SCREENSHOT_WORKFLOW.md
+   Line 398: [QUICK_START.md](QUICK_START.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\QUICK_START.md
+   Line 411: [PHASE1_IMPLEMENTATION_COMPLETE.md](PHASE1_IMPLEMENTATION_COMPLETE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\PHASE1_IMPLEMENTATION_COMPLETE.md
+   Line 412: [docs/CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md](../docs/CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\docs\CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md
+   Line 413: [docs/CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md](../docs/CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\docs\CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md
+   Line 414: [PHASE2_ROADMAP.md](PHASE2_ROADMAP.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\PHASE2_ROADMAP.md
+
+📄 .claude\commands\git\create-pull-request-awesome.md
+   Line 121: [PR Template](.github/pull_request_template.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\commands\git\.github\pull_request_template.md
+
+📄 .claude\skills\documents\docx-processing-anthropic.md
+   Line 59: [`docx-js.md`](docx-js.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\docx-js.md
+   Line 68: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\ooxml.md
+   Line 116: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\ooxml.md
+
+📄 .claude\skills\documents\pptx-processing-anthropic.md
+   Line 151: [`html2pptx.md`](html2pptx.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\html2pptx.md
+   Line 157: [`html2pptx.js`](scripts/html2pptx.js)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\scripts\html2pptx.js
+   Line 176: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\documents\ooxml.md
+
+📄 .claude\skills\excel-export-validator\ACTIVATION_GUIDE.md
+   Line 5: [.claude/skills/excel-export-validator/SKILL.md](.claude/skills/excel-export-validator/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\excel-export-validator\.claude\skills\excel-export-validator\SKILL.md
+
+📄 .claude\skills\project-specific\api-contract-validator.md
+   Line 565: [api/app/api/endpoints/](../../../api/app/api/endpoints/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\app\api\endpoints
+   Line 566: [api/app/schemas/](../../../api/app/schemas/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\app\schemas
+   Line 567: [api/tests/api/](../../../api/tests/api/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\tests\api
+   Line 568: [api/app/main.py](../../../api/app/main.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\app\main.py
+
+📄 .claude\skills\project-specific\database-schema-designer.md
+   Line 525: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+   Line 526: [api/app/domain/models/](../../../api/app/domain/models/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\app\domain\models
+   Line 527: [api/alembic/](../../../api/alembic/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\alembic
+   Line 528: [api/tests/models/](../../../api/tests/models/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\tests\models
+
+📄 .claude\skills\project-specific\excel-export-validator.md
+   Line 303: [api/app/domain/export/excel/sheets/calculated_data_sheet.py](api/app/domain/export/excel/sheets/calculated_data_sheet.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\api\app\domain\export\excel\sheets\calculated_data_sheet.py
+   Line 304: [api/app/domain/export/excel/sheets/dashboard_sheet.py](api/app/domain/export/excel/sheets/dashboard_sheet.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\api\app\domain\export\excel\sheets\dashboard_sheet.py
+   Line 305: [api/app/domain/export/excel/sheets/view_sheets.py](api/app/domain/export/excel/sheets/view_sheets.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\api\app\domain\export\excel\sheets\view_sheets.py
+   Line 306: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\CLAUDE.md
+
+📄 .claude\skills\project-specific\import-dependency-analyzer.md
+   Line 490: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\CLAUDE.md
+   Line 491: [docs/IMPORT_REFACTORING_PLAN.md](docs/IMPORT_REFACTORING_PLAN.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\docs\IMPORT_REFACTORING_PLAN.md
+   Line 492: [scripts/validation/validate_imports.py](scripts/validation/validate_imports.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\scripts\validation\validate_imports.py
+
+📄 .claude\skills\project-specific\migration-generator.md
+   Line 596: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+
+📄 .claude\skills\project-specific\performance-profiler.md
+   Line 555: [api/scripts/profiling/](../../../api/scripts/profiling/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\scripts\profiling
+   Line 556: [api/app/infrastructure/observability/](../../../api/app/infrastructure/observability/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\api\app\infrastructure\observability
+   Line 557: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\CLAUDE.md
+
+📄 .claude\skills\project-specific\test-coverage-analyzer.md
+   Line 425: [api/pytest.ini](api/pytest.ini)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\api\pytest.ini
+   Line 426: [api/tests/conftest.py](api/tests/conftest.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\api\tests\conftest.py
+   Line 427: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\project-specific\CLAUDE.md
+
+📄 .claude\skills\security\sast-configuration-wshobson.md
+   Line 67: [Semgrep Rule Creation](references/semgrep-rules.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\references\semgrep-rules.md
+   Line 68: [SonarQube Configuration](references/sonarqube-config.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\references\sonarqube-config.md
+   Line 69: [CodeQL Setup Guide](references/codeql-setup.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\references\codeql-setup.md
+   Line 73: [semgrep-config.yml](assets/semgrep-config.yml)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\assets\semgrep-config.yml
+   Line 74: [sonarqube-settings.xml](assets/sonarqube-settings.xml)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\assets\sonarqube-settings.xml
+   Line 75: [run-sast.sh](scripts/run-sast.sh)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\security\scripts\run-sast.sh
+   Line 172: [OWASP Top 10 Checklist](../owasp-top10-checklist/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\owasp-top10-checklist\SKILL.md
+   Line 173: [Container Security](../container-security/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\container-security\SKILL.md
+   Line 174: [Dependency Scanning](../dependency-scanning/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\dependency-scanning\SKILL.md
+
+📄 .claude\skills\templates\mcp-builder-anthropic.md
+   Line 68: [📋 View Best Practices](./reference/mcp_best_practices.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\mcp_best_practices.md
+   Line 72: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\python_mcp_server.md
+   Line 76: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\node_mcp_server.md
+   Line 126: [🐍 Python Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\python_mcp_server.md
+   Line 131: [⚡ TypeScript Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\node_mcp_server.md
+   Line 181: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\python_mcp_server.md
+   Line 189: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\node_mcp_server.md
+   Line 237: [🐍 Python Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\python_mcp_server.md
+   Line 238: [⚡ TypeScript Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\node_mcp_server.md
+   Line 246: [✅ Evaluation Guide](./reference/evaluation.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\evaluation.md
+   Line 295: [📋 MCP Best Practices](./reference/mcp_best_practices.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\mcp_best_practices.md
+   Line 308: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\python_mcp_server.md
+   Line 315: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\node_mcp_server.md
+   Line 323: [✅ Evaluation Guide](./reference/evaluation.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\.claude\skills\templates\reference\evaluation.md
+
+📄 GETTING-STARTED.md
+   Line 12: [starter-kit](./cursos/02-desarrollo/FPUNA-2026/00-FUNDAMENTOS-PRINCIPALES/starter-kit/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\00-FUNDAMENTOS-PRINCIPALES\starter-kit
+   Line 164: [Prompts de Configuración](./_compartido/setup/SETUP-PROMPTS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\setup\SETUP-PROMPTS.md
+   Line 172: [Guía de Tutoriales en Video](./_compartido/setup/VIDEO-TUTORIALS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\setup\VIDEO-TUTORIALS.md
+   Line 182: [Guía de Configuración](./_compartido/setup/VIDEO-TUTORIALS.md#claude-code)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\setup\VIDEO-TUTORIALS.md
+   Line 183: [Instalación](./_compartido/setup/VIDEO-TUTORIALS.md#vs-code)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\setup\VIDEO-TUTORIALS.md
+   Line 184: [Inicio Rápido](./_compartido/setup/VIDEO-TUTORIALS.md#git--github)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\setup\VIDEO-TUTORIALS.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\CLAUDE.local.md
+   Line 435: [CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\EXTENDED_THINKING.md
+   Line 343: [CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\INDEX.md
+   Line 38: [docs/CLAUDE_SETUP_EXECUTIVE_SUMMARY.md](../docs/CLAUDE_SETUP_EXECUTIVE_SUMMARY.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_SETUP_EXECUTIVE_SUMMARY.md
+   Line 51: [docs/CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 70: [docs/ADVANCED_CLAUDE_PATTERNS.md](../docs/ADVANCED_CLAUDE_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\ADVANCED_CLAUDE_PATTERNS.md
+   Line 87: [CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+   Line 140: [CLAUDE_SETUP_EXECUTIVE_SUMMARY.md](../docs/CLAUDE_SETUP_EXECUTIVE_SUMMARY.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_SETUP_EXECUTIVE_SUMMARY.md
+   Line 143: [CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 146: [ADVANCED_CLAUDE_PATTERNS.md](../docs/ADVANCED_CLAUDE_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\ADVANCED_CLAUDE_PATTERNS.md
+   Line 149: [ADVANCED_CLAUDE_PATTERNS.md](../docs/ADVANCED_CLAUDE_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\ADVANCED_CLAUDE_PATTERNS.md
+   Line 152: [ADVANCED_CLAUDE_PATTERNS.md](../docs/ADVANCED_CLAUDE_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\ADVANCED_CLAUDE_PATTERNS.md
+   Line 155: [CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 158: [CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 161: [CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 164: [CLAUDE_FOLDER_CAPABILITIES.md](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 323: [Executive Summary](../docs/CLAUDE_SETUP_EXECUTIVE_SUMMARY.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_SETUP_EXECUTIVE_SUMMARY.md
+   Line 324: [Complete Capabilities](../docs/CLAUDE_FOLDER_CAPABILITIES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_FOLDER_CAPABILITIES.md
+   Line 325: [Advanced Patterns](../docs/ADVANCED_CLAUDE_PATTERNS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\ADVANCED_CLAUDE_PATTERNS.md
+   Line 326: [Project Context](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\QUICK_START.md
+   Line 412: [Community Research](docs/CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\docs\CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\README.md
+   Line 143: [../CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+   Line 362: [Project CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+   Line 411: [PHASE1_IMPLEMENTATION_COMPLETE.md](PHASE1_IMPLEMENTATION_COMPLETE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\PHASE1_IMPLEMENTATION_COMPLETE.md
+   Line 412: [docs/CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md](../docs/CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_CODE_IMPROVEMENTS_COMPLETE.md
+   Line 413: [docs/CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md](../docs/CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\docs\CLAUDE_CODE_COMMUNITY_RESEARCH_2025.md
+   Line 414: [PHASE2_ROADMAP.md](PHASE2_ROADMAP.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\PHASE2_ROADMAP.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\SCREENSHOT_WORKFLOW.md
+   Line 401: [CLAUDE.md](../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\SECURITY_PERMISSIONS.md
+   Line 325: [.gitignore](../.gitignore)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.gitignore
+   Line 326: [.secrets.baseline](../.secrets.baseline)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.secrets.baseline
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\commands\git\create-pull-request-awesome.md
+   Line 121: [PR Template](.github/pull_request_template.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\commands\git\.github\pull_request_template.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\custom-resources\README.md
+   Line 178: [CLAUDE.md](../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\documents\docx-processing-anthropic.md
+   Line 59: [`docx-js.md`](docx-js.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\docx-js.md
+   Line 68: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\ooxml.md
+   Line 116: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\ooxml.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\documents\pptx-processing-anthropic.md
+   Line 151: [`html2pptx.md`](html2pptx.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\html2pptx.md
+   Line 157: [`html2pptx.js`](scripts/html2pptx.js)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\scripts\html2pptx.js
+   Line 176: [`ooxml.md`](ooxml.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\documents\ooxml.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\excel-export-validator\ACTIVATION_GUIDE.md
+   Line 5: [.claude/skills/excel-export-validator/SKILL.md](.claude/skills/excel-export-validator/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\excel-export-validator\.claude\skills\excel-export-validator\SKILL.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api-contract-validator.md
+   Line 565: [api/app/api/endpoints/](../../../api/app/api/endpoints/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\app\api\endpoints
+   Line 566: [api/app/schemas/](../../../api/app/schemas/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\app\schemas
+   Line 567: [api/tests/api/](../../../api/tests/api/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\tests\api
+   Line 568: [api/app/main.py](../../../api/app/main.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\app\main.py
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\database-schema-designer.md
+   Line 525: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+   Line 526: [api/app/domain/models/](../../../api/app/domain/models/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\app\domain\models
+   Line 527: [api/alembic/](../../../api/alembic/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\alembic
+   Line 528: [api/tests/models/](../../../api/tests/models/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\tests\models
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\excel-export-validator.md
+   Line 303: [api/app/domain/export/excel/sheets/calculated_data_sheet.py](api/app/domain/export/excel/sheets/calculated_data_sheet.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api\app\domain\export\excel\sheets\calculated_data_sheet.py
+   Line 304: [api/app/domain/export/excel/sheets/dashboard_sheet.py](api/app/domain/export/excel/sheets/dashboard_sheet.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api\app\domain\export\excel\sheets\dashboard_sheet.py
+   Line 305: [api/app/domain/export/excel/sheets/view_sheets.py](api/app/domain/export/excel/sheets/view_sheets.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api\app\domain\export\excel\sheets\view_sheets.py
+   Line 306: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\import-dependency-analyzer.md
+   Line 490: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\CLAUDE.md
+   Line 491: [docs/IMPORT_REFACTORING_PLAN.md](docs/IMPORT_REFACTORING_PLAN.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\docs\IMPORT_REFACTORING_PLAN.md
+   Line 492: [scripts/validation/validate_imports.py](scripts/validation/validate_imports.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\scripts\validation\validate_imports.py
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\migration-generator.md
+   Line 596: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\performance-profiler.md
+   Line 555: [api/scripts/profiling/](../../../api/scripts/profiling/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\scripts\profiling
+   Line 556: [api/app/infrastructure/observability/](../../../api/app/infrastructure/observability/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\api\app\infrastructure\observability
+   Line 557: [CLAUDE.md](../../../CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\test-coverage-analyzer.md
+   Line 425: [api/pytest.ini](api/pytest.ini)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api\pytest.ini
+   Line 426: [api/tests/conftest.py](api/tests/conftest.py)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\api\tests\conftest.py
+   Line 427: [CLAUDE.md](CLAUDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\project-specific\CLAUDE.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\security\sast-configuration-wshobson.md
+   Line 67: [Semgrep Rule Creation](references/semgrep-rules.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\references\semgrep-rules.md
+   Line 68: [SonarQube Configuration](references/sonarqube-config.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\references\sonarqube-config.md
+   Line 69: [CodeQL Setup Guide](references/codeql-setup.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\references\codeql-setup.md
+   Line 73: [semgrep-config.yml](assets/semgrep-config.yml)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\assets\semgrep-config.yml
+   Line 74: [sonarqube-settings.xml](assets/sonarqube-settings.xml)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\assets\sonarqube-settings.xml
+   Line 75: [run-sast.sh](scripts/run-sast.sh)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\security\scripts\run-sast.sh
+   Line 172: [OWASP Top 10 Checklist](../owasp-top10-checklist/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\owasp-top10-checklist\SKILL.md
+   Line 173: [Container Security](../container-security/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\container-security\SKILL.md
+   Line 174: [Dependency Scanning](../dependency-scanning/SKILL.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\dependency-scanning\SKILL.md
+
+📄 _compartido\01-configuracion-herramientas\claude\.claude\skills\templates\mcp-builder-anthropic.md
+   Line 68: [📋 View Best Practices](./reference/mcp_best_practices.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\mcp_best_practices.md
+   Line 72: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\python_mcp_server.md
+   Line 76: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\node_mcp_server.md
+   Line 126: [🐍 Python Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\python_mcp_server.md
+   Line 131: [⚡ TypeScript Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\node_mcp_server.md
+   Line 181: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\python_mcp_server.md
+   Line 189: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\node_mcp_server.md
+   Line 237: [🐍 Python Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\python_mcp_server.md
+   Line 238: [⚡ TypeScript Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\node_mcp_server.md
+   Line 246: [✅ Evaluation Guide](./reference/evaluation.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\evaluation.md
+   Line 295: [📋 MCP Best Practices](./reference/mcp_best_practices.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\mcp_best_practices.md
+   Line 308: [🐍 Python Implementation Guide](./reference/python_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\python_mcp_server.md
+   Line 315: [⚡ TypeScript Implementation Guide](./reference/node_mcp_server.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\node_mcp_server.md
+   Line 323: [✅ Evaluation Guide](./reference/evaluation.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\01-configuracion-herramientas\claude\.claude\skills\templates\reference\evaluation.md
+
+📄 _compartido\02-estandares-y-calidad\README.md
+   Line 10: [eslint/](./eslint/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_compartido\02-estandares-y-calidad\eslint
+
+📄 cursos\01-produccion\QA-Automation-with-AI\SETUP.md
+   Line 187: [Shared Setup Prompts](../../_shared/setup/SETUP-PROMPTS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\_shared\setup\SETUP-PROMPTS.md
+
+📄 cursos\01-produccion\QA-Automation-with-AI\modules\02-context-engineering\README.md
+   Line 632: [CLAUDE.md Examples](../examples/claude-md/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\modules\examples\claude-md
+   Line 633: [Prompt Library](../prompts/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\modules\prompts
+
+📄 cursos\01-produccion\QA-Automation-with-AI\modules\03-private-repos\README.md
+   Line 495: [Prompt Library - Exploration](../prompts/README.md#exploration)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\modules\prompts\README.md
+
+📄 cursos\01-produccion\QA-Automation-with-AI\resources\by-module\module-08-agentic-patterns\ai-tools-advanced-features.md
+   Line 1323: [ai-tools-configuration-guide.md](ai-tools-configuration-guide.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\resources\by-module\module-08-agentic-patterns\ai-tools-configuration-guide.md
+
+📄 cursos\01-produccion\QA-Automation-with-AI\resources\instructor\COURSE-CREATION-FRAMEWORK.md
+   Line 420: [AI-CAPABILITIES-ANALYSIS.md](AI-CAPABILITIES-ANALYSIS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\resources\instructor\AI-CAPABILITIES-ANALYSIS.md
+   Line 421: [COURSE-QA-TO-AUTOMATION-WITH-AI.md](COURSE-QA-TO-AUTOMATION-WITH-AI.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\resources\instructor\COURSE-QA-TO-AUTOMATION-WITH-AI.md
+   Line 422: [EXAMPLE-WORKFLOW-PRIVATE-REPO-ACCESS.md](EXAMPLE-WORKFLOW-PRIVATE-REPO-ACCESS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-produccion\QA-Automation-with-AI\resources\instructor\EXAMPLE-WORKFLOW-PRIVATE-REPO-ACCESS.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\00-FUNDAMENTOS-PRINCIPALES\02-maestria-configuracion.md
+   Line 111: [Módulo 03: Ingeniería de Prompts](./03-prompt-engineering.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\00-FUNDAMENTOS-PRINCIPALES\03-prompt-engineering.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\03-arquitectura-pruebas\README.md
+   Line 342: [Section 01: Page Object Model](./content/01-page-object-model.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\03-arquitectura-pruebas\content\01-page-object-model.md
+   Line 1435: [→ Start Section 01: Page Object Model](./content/01-page-object-model.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\03-arquitectura-pruebas\content\01-page-object-model.md
+   Line 1436: [📝 Module Exercise](./EXERCISE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\03-arquitectura-pruebas\EXERCISE.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\04-integracion-ci-cd\README.md
+   Line 1631: [View full report](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\04-integracion-ci-cd\${{ github.server_url }}\${{ github.repository }}\actions\runs\${{ github.run_id }}
+   Line 1939: [Módulo 05 - IA para QA](./05-ia-para-qa.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\04-integracion-ci-cd\05-ia-para-qa.md
+   Line 2020: [Módulo 02 - Pruebas de API](../02-api-testing/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\qa-automation\modules\02-api-testing\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\web-development\05-despliegue-ia.md
+   Line 1393: [Proyecto Capstone](./capstone/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\web-development\capstone\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\web-development\proyecto-final\README.md
+   Line 187: [← Module 05](../modules/05-deployment-ai/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\especializaciones\web-development\modules\05-deployment-ai\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\OLD_README.md
+   Line 574: [Módulo 02 - Patrones de Diseño](./02-design-patterns.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\02-design-patterns.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\README.md
+   Line 44: [Ver Tutorial: Arquitectura de Microservicios](./tutorials/02_Microservices.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\tutorials\02_Microservices.md
+   Line 48: [Ver Ejemplo: Prompt para Microservicio](./examples/02_Microservice_Structure_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\examples\02_Microservice_Structure_Prompt.md
+   Line 56: [Ver Tutorial: Arquitectura Orientada a Eventos](./tutorials/04_Event_Driven_Architecture.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\tutorials\04_Event_Driven_Architecture.md
+   Line 60: [Ver Ejemplo: Prompt para Sistema de Eventos](./examples/04_Event_Driven_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\examples\04_Event_Driven_Prompt.md
+   Line 68: [Ver Tutorial: Diseño de APIs](./tutorials/03_API_Design.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\tutorials\03_API_Design.md
+   Line 72: [Ver Ejemplo: Prompts para Diseño de APIs](./examples/03_API_Design_Prompts.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\01-arquitectura-software\examples\03_API_Design_Prompts.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\OLD_README.md
+   Line 796: [Módulo 03 - Testing & TDD](./03-pruebas-tdd.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\03-pruebas-tdd.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\README.md
+   Line 34: [Ver Ejemplo: Prompt para Patrón Factory](./examples/01_Factory_Pattern_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\examples\01_Factory_Pattern_Prompt.md
+   Line 50: [Ver Tutorial: Patrones de Comportamiento](./tutorials/04_Behavioral_Patterns.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\tutorials\04_Behavioral_Patterns.md
+   Line 54: [Ver Ejemplo: Prompt para Patrón Observer](./examples/02_Observer_Pattern_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\examples\02_Observer_Pattern_Prompt.md
+   Line 62: [Ver Tutorial: Inyección de Dependencias](./tutorials/05_Dependency_Injection.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\02-patrones-diseno\tutorials\05_Dependency_Injection.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\03-pruebas-tdd\OLD_README.md
+   Line 1622: [Módulo 04 - Clean Code & Refactoring](./04-clean-code.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\03-pruebas-tdd\04-clean-code.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\03-pruebas-tdd\README.md
+   Line 27: [Ver Ejemplo: Prompt para Generación de Unit Tests](./examples/01_Unit_Test_Generation_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\03-pruebas-tdd\examples\01_Unit_Test_Generation_Prompt.md
+   Line 39: [Ver Ejemplo: Prompt para Implementación TDD](./examples/02_TDD_Implementation_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\03-pruebas-tdd\examples\02_TDD_Implementation_Prompt.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\04-codigo-limpio\README.md
+   Line 1876: [Módulo 05 - System Design](./05-system-design.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\04-codigo-limpio\05-system-design.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\05-diseno-sistemas\README.md
+   Line 1410: [QA Automation Track](./especializaciones/qa-automation/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\05-diseno-sistemas\especializaciones\qa-automation\README.md
+   Line 1411: [Web Development Track](./especializaciones/web-development/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\modules\05-diseno-sistemas\especializaciones\web-development\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\recursos\prompts.md
+   Line 113: [nombre](params)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\recursos\params
+
+📄 cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\README.md
+   Line 12: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\PREREQUISITES.md
+   Line 15: [SAFETY-WARNINGS.md](./SAFETY-WARNINGS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\SAFETY-WARNINGS.md
+   Line 18: [exercises/01-debugging-con-ia.md](./exercises/01-debugging-con-ia.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\exercises\01-debugging-con-ia.md
+   Line 27: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\PREREQUISITES.md
+   Line 28: [SAFETY-WARNINGS.md](./SAFETY-WARNINGS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\SAFETY-WARNINGS.md
+   Line 37: [01-debugging-con-ia.md](./exercises/01-debugging-con-ia.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\exercises\01-debugging-con-ia.md
+   Line 38: [02-documentacion-codigo.md](./exercises/02-documentacion-codigo.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\01-DESARROLLO-SOFTWARE\starter-kit\exercises\02-documentacion-codigo.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\02-ELECTRONICA-AUTOMATIZACION\starter-kit\README.md
+   Line 12: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\02-ELECTRONICA-AUTOMATIZACION\starter-kit\PREREQUISITES.md
+   Line 27: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\02-ELECTRONICA-AUTOMATIZACION\starter-kit\PREREQUISITES.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\03-structures-materials\README.md
+   Line 49: [Ver Tutorial: Análisis de Viga Paso a Paso](./tutorials/01_Beam_Analysis_Walkthrough.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\03-structures-materials\tutorials\01_Beam_Analysis_Walkthrough.md
+   Line 57: [Ver Tutorial: Workflow de FEA en ANSYS](./tutorials/02_FEA_Beam_Analysis.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\03-structures-materials\tutorials\02_FEA_Beam_Analysis.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\04-propulsion-systems\README.md
+   Line 62: [Ver Ejemplo: Prompt para Herramienta de Selección](./examples/02_Propulsion_Selection_Tool_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\04-propulsion-systems\examples\02_Propulsion_Selection_Tool_Prompt.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\README.md
+   Line 56: [Ver Ejemplo: Prompt de Análisis de Estabilidad](./examples/02_Stability_Analysis_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\examples\02_Stability_Analysis_Prompt.md
+   Line 67: [Ver Ejemplo: Prompt de Generación de Documentación](./examples/03_Documentation_Generation_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\examples\03_Documentation_Generation_Prompt.md
+   Line 78: [Ver Ejemplo: Prompt de Análisis de Trade-offs](./examples/04_Tradeoff_Analysis_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\examples\04_Tradeoff_Analysis_Prompt.md
+   Line 115: [Proyecto Final - Diseño Completo de un UAV](../proyecto-final/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\proyecto-final\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\recursos\flight-analysis\README.md
+   Line 11: [Python Installation Guide](../../recursos/PYTHON-INSTALLATION-GUIDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\recursos\PYTHON-INSTALLATION-GUIDE.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\tutorials\03_Documentation_And_Certification.md
+   Line 19: [Ver Ejemplo: Prompt para Generación de Documentación](./examples/03_Documentation_Generation_Prompt.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\modules\05-aircraft-design\tutorials\examples\03_Documentation_Generation_Prompt.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\starter-kit\README.md
+   Line 33: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\starter-kit\PREREQUISITES.md
+   Line 61: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\03-INGENIERIA-AERONAUTICA\starter-kit\PREREQUISITES.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\04-MARKETING-NEGOCIOS-TURISMO\starter-kit\README.md
+   Line 12: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\04-MARKETING-NEGOCIOS-TURISMO\starter-kit\PREREQUISITES.md
+   Line 27: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\04-MARKETING-NEGOCIOS-TURISMO\starter-kit\PREREQUISITES.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\05-INVESTIGACION-ACADEMIA\starter-kit\README.md
+   Line 12: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\05-INVESTIGACION-ACADEMIA\starter-kit\PREREQUISITES.md
+   Line 41: [PREREQUISITES.md](./PREREQUISITES.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\05-INVESTIGACION-ACADEMIA\starter-kit\PREREQUISITES.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\configuracion-mcp\README.md
+   Line 481: [Sistema de Skills](../skills-system/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\skills-system\README.md
+   Line 482: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+   Line 483: [Plantillas de Proyecto](../project-templates/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\project-templates\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\instalacion-opencode\FAQ.md
+   Line 195: [Módulo 01 - AI Stack Setup](../../00-FUNDAMENTOS-PRINCIPALES/modules/01-ai-stack-setup/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\00-FUNDAMENTOS-PRINCIPALES\modules\01-ai-stack-setup\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\instalacion-opencode\guide.md
+   Line 157: [Guía de Instalación de OMO](../../00-FUNDAMENTOS-PRINCIPALES/modules/01-ai-stack-setup/README.md#instalación-de-omo)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\00-FUNDAMENTOS-PRINCIPALES\modules\01-ai-stack-setup\README.md
+   Line 233: [Configuración de MCPs](../mcp-configuration/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\mcp-configuration\README.md
+   Line 234: [Sistema de Skills](../skills-system/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\skills-system\README.md
+   Line 235: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\instalacion-opencode\linux.md
+   Line 691: [Configuración de MCPs](../mcp-configuration/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\mcp-configuration\README.md
+   Line 692: [Sistema de Skills](../skills-system/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\skills-system\README.md
+   Line 693: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\instalacion-opencode\mac.md
+   Line 574: [Configuración de MCPs](../mcp-configuration/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\mcp-configuration\README.md
+   Line 575: [Sistema de Skills](../skills-system/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\skills-system\README.md
+   Line 576: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\instalacion-opencode\windows.md
+   Line 489: [Configuración de MCPs](../mcp-configuration/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\mcp-configuration\README.md
+   Line 490: [Sistema de Skills](../skills-system/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\skills-system\README.md
+   Line 491: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\plantillas-proyecto\full-project\README.md
+   Line 181: [docs/DEPLOYMENT.md](./documentacion/DEPLOYMENT.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\plantillas-proyecto\full-project\documentacion\DEPLOYMENT.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\sistema-skills\README.md
+   Line 363: [Hooks y Rules](../hooks-rules/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\hooks-rules\README.md
+   Line 364: [Plantillas de Proyecto](../project-templates/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\project-templates\README.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\INSTRUCTOR-README.md
+   Line 94: [PLAN-MAESTRO-TAREAS.md](./planning/PLAN-MAESTRO-TAREAS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\planning\PLAN-MAESTRO-TAREAS.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\README.md
+   Line 135: [`SHARED/components`](./COMPARTIDO/components/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\COMPARTIDO\components
+
+📄 cursos\02-desarrollo\FPUNA-2026\documentacion\RESUMEN-CARRERAS.md
+   Line 697: [Core Foundation](./00-FUNDAMENTOS-PRINCIPALES/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\00-FUNDAMENTOS-PRINCIPALES\README.md
+   Line 698: [Track 07 - QA Automation](./07-QA-AUTOMATION/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\07-QA-AUTOMATION\README.md
+   Line 699: [Track 08 - Web Development](./08-WEB-DEVELOPMENT/README.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\08-WEB-DEVELOPMENT\README.md
+   Line 700: [Instructor Guide](./INSTRUCTOR-GUIDE.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\INSTRUCTOR-GUIDE.md
+   Line 701: [Assessment Framework](./ASSESSMENT-FRAMEWORK.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\ASSESSMENT-FRAMEWORK.md
+   Line 702: [AI Tools Setup](./AI-TOOLS-SETUP.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\documentacion\AI-TOOLS-SETUP.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\students\CONFIGURACION-HERRAMIENTAS-IA.md
+   Line 790: [Guía Completa de Videos](../../../../_shared/setup/VIDEO-TUTORIALS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\VIDEO-TUTORIALS.md
+   Line 791: [Claude Code Setup](../../../../_shared/setup/VIDEO-TUTORIALS.md#claude-code)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\VIDEO-TUTORIALS.md
+   Line 792: [VS Code Configuration](../../../../_shared/setup/VIDEO-TUTORIALS.md#vs-code)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\VIDEO-TUTORIALS.md
+   Line 793: [Git & GitHub Basics](../../../../_shared/setup/VIDEO-TUTORIALS.md#git--github)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\VIDEO-TUTORIALS.md
+
+📄 cursos\02-desarrollo\FPUNA-2026\students\STUDENT-GUIDE.md
+   Line 819: [00-FUNDAMENTOS-PRINCIPALES/01-ai-stack-setup.md](./00-FUNDAMENTOS-PRINCIPALES/01-ai-stack-setup.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-desarrollo\FPUNA-2026\students\00-FUNDAMENTOS-PRINCIPALES\01-ai-stack-setup.md
+
+📄 cursos\03-beta\AI-Tools-for-Productivity\README.md
+   Line 142: [Introduction to AI for Business Professionals](../Introduction-to-AI-for-Business-Professionals/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\03-beta\Introduction-to-AI-for-Business-Professionals
+
+📄 cursos\03-beta\AI-Tools-for-Productivity\SETUP.md
+   Line 269: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\SETUP-PROMPTS.md
+
+📄 cursos\03-beta\Building-AI-Powered-Applications\SETUP.md
+   Line 267: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\SETUP-PROMPTS.md
+
+📄 cursos\03-beta\Building-AI-Powered-Applications\modules\04-agents-tools\SOLUTIONS.md
+   Line 506: [tool_name](tool_input)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\03-beta\Building-AI-Powered-Applications\modules\04-agents-tools\tool_input
+
+📄 cursos\03-beta\Prompt-Engineering-Masterclass\README.md
+   Line 189: [AI-Assisted Software Development](../AI-Assisted-Software-Development/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\03-beta\AI-Assisted-Software-Development
+
+📄 cursos\03-beta\Prompt-Engineering-Masterclass\SETUP.md
+   Line 201: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\_shared\setup\SETUP-PROMPTS.md
+
+📄 cursos\INDEX.md
+   Line 23: [QA Automation with AI](./01-production/QA-Automation-with-AI/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\01-production\QA-Automation-with-AI
+   Line 33: [FPUNA 2026](./02-development/FPUNA-2026/)
+      → Tried: C:\Users\Alejandro\Documents\Ivan\Work\Courses Content\cursos\02-development\FPUNA-2026
+
+================================================================================
+
+⚠️  Found 259 broken links in 87 files
+
+To fix:
+1. Update the markdown files listed above
+2. Run this script again to verify fixes
+3. Commit the changes

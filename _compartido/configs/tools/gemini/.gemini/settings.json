@@ -1,0 +1,25 @@
+{
+  "model": {
+    "name": "gemini-1.5-pro"
+  },
+  "context": {
+    "fileName": ["GEMINI.md"]
+  },
+  "tools": {
+    "sandbox": false
+  },
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"]
+    }
+  },
+  "telemetry": true
+}

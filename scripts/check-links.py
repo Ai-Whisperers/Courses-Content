@@ -189,29 +189,22 @@ class LinkChecker:
         for link in self.broken_links:
             url = link["url"]
 
-            # Check for old structure patterns
-            if "courses/Technical-Development/" in url:
-                fixed = url.replace(
-                    "courses/Technical-Development/QA-Automation-with-AI",
-                    "courses/🟢-production/QA-Automation-with-AI",
-                )
+            # Fix: courses -> cursos
+            if "courses/" in url:
+                fixed = url.replace("courses/", "cursos/")
+
+                # Update subdirectories
+                fixed = fixed.replace("01-production", "01-produccion")
+                fixed = fixed.replace("02-development", "02-desarrollo")
+
+                # Check if the fixed path exists (optional, but good for confidence)
                 suggestions[link["file"]].append(f"  {url} → {fixed}")
 
-            elif "courses/Business-Professional/" in url:
-                if "Prompt-Engineering" in url:
-                    fixed = url.replace(
-                        "courses/Business-Professional/", "courses/🟢-production/"
-                    )
-                else:
-                    fixed = url.replace(
-                        "courses/Business-Professional/", "courses/🔵-beta/"
-                    )
-                suggestions[link["file"]].append(f"  {url} → {fixed}")
-
-            elif "courses/Summer-Courses-University/FPUNA-2026" in url:
+            # Fix: TALLERES-VERANO-2026 relocation
+            elif "TALLERES-VERANO-2026" in url:
                 fixed = url.replace(
-                    "courses/Summer-Courses-University/FPUNA-2026",
-                    "courses/🟡-development/FPUNA-2026",
+                    "TALLERES-VERANO-2026",
+                    "cursos/talleres/verano-2026",
                 )
                 suggestions[link["file"]].append(f"  {url} → {fixed}")
 
