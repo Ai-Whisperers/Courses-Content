@@ -582,6 +582,64 @@ OEE = Disponibilidad × Rendimiento × Calidad
 
 ---
 
+### Proyecto A5: Plataforma Universal de Desarrollo Embebido
+
+**Descripción**: Tu herramienta de trabajo profesional - una plataforma reutilizable para testear sensores, prototipar circuitos y debuggear cualquier proyecto futuro.
+
+**Sistema de 3 Partes**:
+```
+┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
+│  1. HARDWARE     │   │  2. FIRMWARE     │   │  3. DASHBOARD    │
+│  Base Board PCB  │   │  Framework       │   │  Interface       │
+│                  │   │                  │   │                  │
+│  • Power mgmt    │   │  • HAL layer     │   │  • Serial monitor│
+│  • MCU socket    │   │  • Driver layer  │   │  • Data logger   │
+│  • I/O headers   │   │  • App layer     │   │  • Real-time plot│
+│  • Protections   │   │  • Test modes    │   │  • IoT bridge    │
+└──────────────────┘   └──────────────────┘   └──────────────────┘
+```
+
+**Hardware** (~$20-30 USD para PCB):
+- PCB custom diseñada en KiCAD (o perfboard para prototipo)
+- ESP32-WROOM o Arduino Nano/Uno
+- Power: 7-15V input → 5V → 3.3V con protección reversa y fusible
+- 4x entradas analógicas con protección ESD y divisores seleccionables (0-3.3V, 0-10V, 4-20mA)
+- 8x GPIO con LEDs indicadores y pull-up/down configurables
+- 4x salidas relay optoacopladas
+- 2x MOSFET outputs para PWM
+- Headers: I2C, SPI, UART, 1-Wire
+
+**Funcionalidades Requeridas**:
+1. Power management completo con LEDs de status por rail
+2. Entradas analógicas configurables por jumper
+3. Test mode que verifica cada subsistema automáticamente
+4. Firmware con arquitectura en capas (HAL → Driver → App)
+5. Dashboard web o serial mostrando estado de todos los I/O
+6. Documentación como template reutilizable
+
+**Conceptos que Aprende**:
+- Diseño profesional de PCB con protecciones reales
+- Arquitectura de firmware multicapa
+- Cálculos de divisores, protecciones, disipación
+- Documentación de ingeniería para reutilización
+
+**IA Value**: MUY ALTO - Arquitectura firmware, cálculos de protección, generación de BOM
+
+**SEGURIDAD**: Verificar polaridad antes de energizar. Usar fuente limitada en corriente para pruebas iniciales.
+
+**Documentación Completa**: Ver [PROYECTO-UNIVERSAL-EMBEBIDOS.md](./PROYECTO-UNIVERSAL-EMBEBIDOS.md) para esquemáticos detallados, código de firmware y especificaciones completas.
+
+**Entregables**:
+- [ ] PCB diseñada en KiCAD (Gerbers listos, fabricación opcional)
+- [ ] BOM con precios y proveedores
+- [ ] Firmware framework completo (PlatformIO)
+- [ ] Dashboard funcional (web o serial)
+- [ ] Documentación de diseño (por qué cada decisión)
+- [ ] Video demo 10 min mostrando test mode
+- [ ] Template documentado para proyectos futuros
+
+---
+
 ## Proyectos Alternativos (Con Aprobación)
 
 Puedes proponer un proyecto diferente si:
