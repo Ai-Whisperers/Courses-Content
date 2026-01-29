@@ -235,7 +235,7 @@
 |  +----------------------------------------------------+  |
 |  |                                                    |  |
 |  |  github.com/Ai-Whisperers/Courses-Content/        |  |
-|  |  tree/main/courses/02-development/FPUNA-2026      |  |
+|  |  tree/main/cursos/02-development/FPUNA-2026      |  |
 |  |                                                    |  |
 |  |  Carpeta: dias/dia-06-investigacion/              |  |
 |  |                                                    |  |
@@ -368,3 +368,4 @@
 *Slides Intro Día 6 - ~20 minutos (sin Q&A)*
 *Luego: Iván guía la práctica en vivo*
 *Al final: Menti feedback + Cierre*
+

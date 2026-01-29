@@ -264,4 +264,5 @@ Cost of this test: ~$0.001 (fraction of a cent)
 
 ---
 
-*See also: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)*
+*See also: [Shared Setup Prompts](../../../_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md)*
+

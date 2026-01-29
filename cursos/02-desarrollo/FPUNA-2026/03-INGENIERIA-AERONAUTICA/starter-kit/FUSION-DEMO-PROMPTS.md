@@ -29,4 +29,5 @@ If Claude says it doesn't have the tools:
 1. Ensure **Autodesk Fusion 360** is running.
 2. **Restart Claude Desktop** (Quit and Re-open).
 3. Check the logs or run the verification script again:
-   `python courses/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA/starter-kit/verify_fusion_setup.py`
+   `python cursos/02-development/FPUNA-2026/03-INGENIERIA-AERONAUTICA/starter-kit/verify_fusion_setup.py`
+

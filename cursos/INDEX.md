@@ -49,7 +49,7 @@ Content exists, needs student testing.
 ## Directory Structure
 
 ```
-courses/
+cursos/
 ├── 01-production/
 │   └── QA-Automation-with-AI/
 ├── 02-development/
@@ -59,3 +59,4 @@ courses/
     ├── Building-AI-Powered-Applications/
     └── AI-Tools-for-Productivity/
 ```
+

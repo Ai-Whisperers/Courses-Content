@@ -266,4 +266,5 @@ Length: Under 150 words
 
 ---
 
-*See also: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)*
+*See also: [Shared Setup Prompts](../../../_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md)*
+

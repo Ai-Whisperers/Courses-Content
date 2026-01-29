@@ -267,7 +267,7 @@ R --version
 ### Ejecutar Demo de Prueba
 ```bash
 # Desde la carpeta del curso
-cd courses/Summer-Courses-University/FPUNA-2026/demos
+cd cursos/Summer-Courses-University/FPUNA-2026/demos
 
 # Probar demo básico
 claude "$(cat demo-00-fundamentos.md | head -50)"
@@ -495,3 +495,4 @@ echo "=== FIN VERIFICACIÓN ==="
 ---
 
 *Checklist de Verificación - FPUNA 2026*
+

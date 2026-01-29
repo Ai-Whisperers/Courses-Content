@@ -255,7 +255,7 @@
 |  |  GUÍA COMPLETA:                                   |  |
 |  |                                                    |  |
 |  |  github.com/Ai-Whisperers/Courses-Content/        |  |
-|  |  tree/main/courses/02-development/FPUNA-2026      |  |
+|  |  tree/main/cursos/02-development/FPUNA-2026      |  |
 |  |                                                    |  |
 |  |  Ahí encontrarán:                                 |  |
 |  |  • Ejercicios de cada día                         |  |
@@ -348,3 +348,4 @@
 *Luego: Iván guía la práctica en vivo*
 *Al final: Q&A con Slide 10*
 *Guía: github.com/Ai-Whisperers/Courses-Content/.../FPUNA-2026*
+

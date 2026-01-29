@@ -787,10 +787,10 @@ After setup is complete:
 - [VS Code Docs](https://code.visualstudio.com/docs)
 
 **Video Tutorials**:
-- [Guía Completa de Videos](../../../../_shared/setup/VIDEO-TUTORIALS.md) - Tutoriales para todas las herramientas
-- [Claude Code Setup](../../../../_shared/setup/VIDEO-TUTORIALS.md#claude-code) - Instalación paso a paso
-- [VS Code Configuration](../../../../_shared/setup/VIDEO-TUTORIALS.md#vs-code) - Editor recomendado
-- [Git & GitHub Basics](../../../../_shared/setup/VIDEO-TUTORIALS.md#git--github) - Control de versiones
+- [Guía Completa de Videos](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md) - Tutoriales para todas las herramientas
+- [Claude Code Setup](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#claude-code) - Instalación paso a paso
+- [VS Code Configuration](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#vs-code) - Editor recomendado
+- [Git & GitHub Basics](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#git--github) - Control de versiones
 
 **Community**:
 - Slack: `#tech-support`, `#opencode-help`
@@ -807,3 +807,4 @@ After setup is complete:
 
 *FPUNA Summer 2026 - AI Tools Setup*  
 *Empowering Development with AI*
+

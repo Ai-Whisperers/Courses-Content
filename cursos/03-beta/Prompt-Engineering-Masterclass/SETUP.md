@@ -106,7 +106,7 @@ Help me set up for the Prompt Engineering Masterclass:
 git clone https://github.com/Ai-Whisperers/Courses-Content.git
 
 # Navigate to course
-cd Courses-Content/courses/03-beta/Prompt-Engineering-Masterclass
+cd Courses-Content/cursos/03-beta/Prompt-Engineering-Masterclass
 
 # Open in VS Code
 code .
@@ -198,4 +198,5 @@ This is the STAR framework you'll master in this course.
 
 ---
 
-*See also: [Shared Setup Prompts](../../../_shared/setup/SETUP-PROMPTS.md)*
+*See also: [Shared Setup Prompts](../../../_compartido/04-utilidades-ia/configuracion-inicial/SETUP-PROMPTS.md)*
+

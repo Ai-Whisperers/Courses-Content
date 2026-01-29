@@ -233,7 +233,7 @@
 |  +----------------------------------------------------+  |
 |  |                                                    |  |
 |  |  github.com/Ai-Whisperers/Courses-Content/        |  |
-|  |  tree/main/courses/02-development/FPUNA-2026      |  |
+|  |  tree/main/cursos/02-development/FPUNA-2026      |  |
 |  |                                                    |  |
 |  |  Carpeta: dias/dia-04-software/                   |  |
 |  |                                                    |  |
@@ -326,3 +326,4 @@
 *Slides Intro Día 4 - ~18 minutos (sin Q&A)*
 *Luego: Iván guía la práctica en vivo*
 *Al final: Q&A con Slide 10*
+
