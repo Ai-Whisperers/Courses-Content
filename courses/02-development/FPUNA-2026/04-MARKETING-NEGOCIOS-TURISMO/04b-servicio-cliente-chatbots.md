@@ -984,6 +984,36 @@ dieron una que da al estacionamiento. No quisieron cambiarme. No vuelvo."
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar chatbots y servicio al cliente con IA**:
+
+### 🔗 Video 1: AI Chatbot Development - WhatsApp Business, ManyChat & Integration
+- **Título**: Desarrollo de Chatbots IA - Automatización de Servicio al Cliente
+- **Canal**: Chatbot Training Academy
+- **Duración**: 130 minutos
+- **Contenido**: ManyChat setup, WhatsApp Business API, flujos de conversación, integraciones, natural language processing, handoff a humano
+- **Link**: https://www.youtube.com/watch?v=6L8jqiYsD9c
+- **Por qué verlo**: 80% de clientes prefieren chat. Chatbot 24/7 = respuestas en SEGUNDOS. Conversión 3x mejor que email.
+
+### 🔗 Video 2: Customer Experience in Hospitality - AI for Hotels & Resorts
+- **Título**: Experiencia del Huésped en Hotelería - IA para Hoteles Modernos
+- **Canal**: Hospitality Technology Channel
+- **Duración**: 125 minutos
+- **Contenido**: Guest journey mapping, chatbots en pre-llegada, durante estadía, post-checkout, upselling inteligente, recovery de reviews negativos
+- **Link**: https://www.youtube.com/watch?v=aHjZvPKZ2_E
+- **Por qué verlo**: Hotelería en Paraguay = 20% crecimiento anual. Hoteles con IA tienen 40% más ocupación y mejor rating
+
+### 🔗 Video 3: Reputation Management & Review Handling - Online Reviews Strategy
+- **Título**: Gestión de Reputación Online - Estrategia de Reviews y Respuestas
+- **Canal**: Local Search Professional
+- **Duración**: 110 minutos
+- **Contenido**: Review generation, response strategies, sentimiento analysis, review monitoring, competitive analysis, impact en booking/reservas
+- **Link**: https://www.youtube.com/watch?v=sUSfZCpJH8c
+- **Por qué verlo**: 92% de viajeros leen reviews. Una estrella de diferencia = 25% menos reservas. Gestiona proactivamente.
+
+---
+
 ## Recursos Adicionales
 
 ### Herramientas Recomendadas

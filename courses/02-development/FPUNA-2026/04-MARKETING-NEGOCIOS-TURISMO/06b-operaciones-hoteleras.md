@@ -1038,6 +1038,36 @@ Hotel 100 habitaciones, recepción 24/7
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar operaciones hoteleras con IA**:
+
+### 🔗 Video 1: Hotel PMS & Operations - Cloudbeds, Opera & Workflow Optimization
+- **Título**: Gestión de Operaciones Hoteleras - PMS y Automatización de Flujos
+- **Canal**: Hotel Manager Pro
+- **Duración**: 140 minutos
+- **Contenido**: PMS setup, housekeeping workflows, maintenance tracking, guest requests, night audit, post-checkout procedures, inventory management
+- **Link**: https://www.youtube.com/watch?v=JbxPq2ZK0kQ
+- **Por qué verlo**: Un buen PMS = menos manejo manual, menos errores, guests más felices. Diferencia entre hotel caótico y profesional.
+
+### 🔗 Video 2: Predictive Maintenance with IoT & AI - Equipment Intelligence
+- **Título**: Mantenimiento Predictivo en Hoteles - IoT y Reparaciones Inteligentes
+- **Canal**: Hospitality Innovation Lab
+- **Duración**: 125 minutos
+- **Contenido**: IoT sensors en HVAC, plomería, electricidad, predictive failure, programación de mantenimiento, costo reduction, guest impact minimization
+- **Link**: https://www.youtube.com/watch?v=9mN8J6qC9uI
+- **Por qué verlo**: Aire acondicionado roto = cliente furioso + review 1 estrella. Sensores previenen ANTES de fallar. Ahorra ₲millones en emergencias
+
+### 🔗 Video 3: Staff Scheduling & Workforce Optimization - Scheduling AI
+- **Título**: Programación Inteligente del Personal - Reducción de Costos Laborales
+- **Canal**: Hospitality HR Manager
+- **Duración**: 115 minutos
+- **Contenido**: Demand forecasting, shift optimization, labor cost analysis, staff cross-training, performance tracking, compliance automation, burnout prevention
+- **Link**: https://www.youtube.com/watch?v=Fmv3pUxL6Gg
+- **Por qué verlo**: Payroll es 35% del costo operativo. IA optimiza scheduling = ahorros de 10-15%. Mejora satisfacción de empleados simultáneamente.
+
+---
+
 ## Recursos Adicionales
 
 ### Software de Operaciones Hoteleras

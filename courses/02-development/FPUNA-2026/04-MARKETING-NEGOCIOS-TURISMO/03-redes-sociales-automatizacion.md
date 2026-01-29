@@ -818,6 +818,36 @@ Ahora que dominas automatización de redes sociales, estás listo para:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para automatizar y escalar tus redes sociales**:
+
+### 🔗 Video 1: Social Media Automation - Buffer, Later & Scheduling Strategy
+- **Título**: Automatización de Redes Sociales - Estrategia de Scheduling Profesional
+- **Canal**: Social Media Examiner
+- **Duración**: 130 minutos
+- **Contenido**: Herramientas scheduling (Buffer, Later, Hootsuite), content calendar best practices, batching, timezone optimization, posting patterns
+- **Link**: https://www.youtube.com/watch?v=VYI_qdJJLTU
+- **Por qué verlo**: Publicar en las mejores horas = 3x más engagement. Automatización = consistencia sin quemarse
+
+### 🔗 Video 2: Social Listening & Community Engagement - Chatbots & AI
+- **Título**: Social Listening y Community Management - Chatbots Inteligentes
+- **Canal**: MobileMonkey / AI Marketing
+- **Duración**: 120 minutos
+- **Contenido**: Social listening tools (Mention, Brand24), chatbot builders (ManyChat, Drift), engagement automation, respuesta 24/7, lead qualification
+- **Link**: https://www.youtube.com/watch?v=aqOPjNLkRKA
+- **Por qué verlo**: 70% de clientes expectan respuesta en <1 hora. Chatbots IA responden en SEGUNDOS - conversión automática
+
+### 🔗 Video 3: TikTok & Emerging Platforms - Algorithm Hacks & Viral Strategies
+- **Título**: TikTok y Plataformas Emergentes - Hacks del Algoritmo
+- **Canal**: Creator Academy / TikTok Official
+- **Duración**: 105 minutos
+- **Contenido**: Comprender algoritmo TikTok, Hook en primeros 3 segundos, trending sounds, duetos/stitches, creator fund, analytics
+- **Link**: https://www.youtube.com/watch?v=JlwVQiC_Rvc
+- **Por qué verlo**: TikTok creció 500% en LATAM. El futuro es video corto. Domina algoritmo = alcance viral sin pagar ads
+
+---
+
 ## 📞 Contacto y Consultas
 
 **Instructor:** [Nombre]  

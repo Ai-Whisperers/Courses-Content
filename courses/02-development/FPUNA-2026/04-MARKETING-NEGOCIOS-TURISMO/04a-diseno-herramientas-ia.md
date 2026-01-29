@@ -831,6 +831,36 @@ Crea un **Brand Visual Package** completo:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar diseño visual con herramientas de IA**:
+
+### 🔗 Video 1: Canva Pro Mastery - Design Without Being a Designer
+- **Título**: Canva Pro Dominio - Diseño Profesional Sin Experiencia Previa
+- **Canal**: Canva Official / Design School
+- **Duración**: 125 minutos
+- **Contenido**: Interfaz Canva, plantillas, elementos, animaciones, brand kits, colaboración, exportación, plugins, AI text to design
+- **Link**: https://www.youtube.com/watch?v=pXFw99LgqFI
+- **Por qué verlo**: Canva democratiza diseño - cualquiera (literalmente CUALQUIERA) puede crear posts que parecen profesionales
+
+### 🔗 Video 2: Midjourney & AI Image Generation - From Prompt to Professional Assets
+- **Título**: Midjourney y Generación de Imágenes con IA - Prompts Profesionales
+- **Canal**: Midjourney Official / AI Academy
+- **Duración**: 130 minutos
+- **Contenido**: Midjourney prompts, styles, quality settings, variations, upscaling, pano mode, video generation, workflow integration
+- **Link**: https://www.youtube.com/watch?v=kvcyGfkYnl4
+- **Por qué verlo**: Midjourney genera imágenes de CALIDAD PROFESIONAL. Antes necesitabas fotógrafo (USD 500+). Ahora: USD 10/mes.
+
+### 🔗 Video 3: Video Creation & Editing with AI - CapCut, Runway & Beyond
+- **Título**: Creación de Video con IA - CapCut, Runway y Automatización
+- **Canal**: Video Creator Academy
+- **Duración**: 115 minutos
+- **Contenido**: CapCut editing, Runway AI tools, auto-captions, background removal, video generation, stock footage integration, shorts optimization
+- **Link**: https://www.youtube.com/watch?v=n_2GKN86R8o
+- **Por qué verlo**: Video es 80% del engagement. IA permite crear 100 videos/mes. Tu competencia está HOY creando con IA.
+
+---
+
 ## 🚀 Próximos Pasos
 
 Ahora que dominas diseño con IA, estás listo para:

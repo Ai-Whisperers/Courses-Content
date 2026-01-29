@@ -1335,6 +1335,36 @@ Ahora que dominas data-driven marketing, estás listo para:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar Google Analytics y marketing basado en datos**:
+
+### 🔗 Video 1: Google Analytics 4 Complete Mastery - From Setup to Insights
+- **Título**: Google Analytics 4 Completo - De Configuración a Insights Accionables
+- **Canal**: Analytics Mania
+- **Duración**: 135 minutos
+- **Contenido**: GA4 setup, eventos custom, conversiones, audiencias, exploración de datos, dashboards, integración con Google Ads
+- **Link**: https://www.youtube.com/watch?v=qKsrS4BJ9nI
+- **Por qué verlo**: GA4 es OBLIGATORIO en marketing digital - 80% de empresas usan Google Analytics. Si no lo dominas, otros lo harán
+
+### 🔗 Video 2: Data-Driven Marketing Decisions - Metrics, KPIs & Reporting
+- **Título**: Decisiones de Marketing Basadas en Datos - Métricas que Importan
+- **Canal**: Marketing Analytics Institute
+- **Duración**: 120 minutos
+- **Contenido**: KPI definición, dashboards efectivos, atribución multi-touch, cohortes, retención, lifetime value, ROI cálculo
+- **Link**: https://www.youtube.com/watch?v=VGXO7Tnz0_8
+- **Por qué verlo**: Datos sin insights = vanidad. Aprende qué métricas importan REALMENTE para bottom line de tu empresa
+
+### 🔗 Video 3: A/B Testing at Scale - Experimentation Framework for Growth
+- **Título**: A/B Testing a Escala - Framework de Experimentación para Crecimiento
+- **Canal**: Growth Marketing Pro
+- **Duración**: 115 minutos
+- **Contenido**: Diseño de experimentos, tamaño de muestra, duración de test, significance statistical, iterar rápido, testing roadmap
+- **Link**: https://www.youtube.com/watch?v=SbNEZRpR8_Q
+- **Por qué verlo**: A/B testing sistemático = crecimiento compuesto. 1% de mejora mensual = 12% anual exponencial
+
+---
+
 ## 📞 Contacto y Consultas
 
 **Instructor:** [Nombre]  

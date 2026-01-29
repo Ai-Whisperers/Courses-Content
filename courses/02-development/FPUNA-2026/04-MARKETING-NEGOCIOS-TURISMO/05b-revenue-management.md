@@ -886,6 +886,36 @@ Un walk-in pide la última habitación disponible para esta noche. Tu tarifa es 
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar revenue management y pricing dinámico**:
+
+### 🔗 Video 1: Revenue Management Fundamentals - Pricing Strategy for Hotels
+- **Título**: Fundamentos de Revenue Management - Estrategia de Precios Hotelera
+- **Canal**: Hospitality Sales & Marketing Association
+- **Duración**: 135 minutos
+- **Contenido**: ADR, occupancy, RevPAR, pricing strategy, demand forecasting, segment analysis, competitor intelligence, yield management
+- **Link**: https://www.youtube.com/watch?v=hN7Vq2KwYbA
+- **Por qué verlo**: El 90% de hoteleros NO optimizan precios. Oportunidad: +15-20% en revenue SIN cambiar marketing. PURO bottom line.
+
+### 🔗 Video 2: Dynamic Pricing with AI - Forecast & Optimize in Real-Time
+- **Título**: Pricing Dinámico con IA - Optimización en Tiempo Real
+- **Canal**: AI for Business
+- **Duración**: 120 minutos
+- **Contenido**: Machine learning para forecasting, algoritmos de pricing, elasticidad de demanda, testing automático, A/B pricing, sentimientos de mercado
+- **Link**: https://www.youtube.com/watch?v=iV6i2Cxb7bQ
+- **Por qué verlo**: IA predice demanda 3-5 días antes que humanos. Ventaja = sobre-ocupación y precios premium. ₲millones en ganancia
+
+### 🔗 Video 3: Market Intelligence & Competitive Analysis - Tools & Tactics
+- **Título**: Inteligencia de Mercado y Análisis Competitivo para Hotelería
+- **Canal**: Hotel Management Institute
+- **Duración**: 115 minutos
+- **Contenido**: Rate shopping, competitive positioning, market trends, seasonal patterns, group vs transient mix, distribution strategy optimization
+- **Link**: https://www.youtube.com/watch?v=Rl9h4pKqLwM
+- **Por qué verlo**: Saber qué cobran competidores en TIEMPO REAL = poder de negociación. OTAs traen 40% de revenue en Paraguay.
+
+---
+
 ## Recursos Adicionales
 
 ### Herramientas de Revenue Management

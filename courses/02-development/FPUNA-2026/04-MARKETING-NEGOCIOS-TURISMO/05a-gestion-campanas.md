@@ -972,6 +972,36 @@ Diseña y ejecuta una **Campaña de Marketing Multicanal** completa:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para gestionar campañas publicitarias profesionales**:
+
+### 🔗 Video 1: Meta Ads Master - Facebook, Instagram & Conversion Campaigns
+- **Título**: Meta Ads Dominio - Campañas de Conversión Profesionales
+- **Canal**: Digital Marketing Institute
+- **Duración**: 140 minutos
+- **Contenido**: Ads Manager setup, pixel installation, audience targeting, campaign structures, creative optimization, scaling strategies, ROAS tracking
+- **Link**: https://www.youtube.com/watch?v=xKOzM7pqt14
+- **Por qué verlo**: Meta Ads es 40% del gasto digital global. Dominar = acceso a millones de usuarios dirigidos en Paraguay
+
+### 🔗 Video 2: Google Ads & Search Marketing - PPC Fundamentals to Advanced
+- **Título**: Google Ads Completo - De PPC Básico a Estrategia Avanzada
+- **Canal**: Google Ads Training
+- **Duración**: 135 minutos
+- **Contenido**: Keyword research, bid strategy, landing page optimization, quality score, conversion tracking, automation, budget allocation
+- **Link**: https://www.youtube.com/watch?v=FDhVqgLGUJw
+- **Por qué verlo**: Google Ads es el canal de MAYOR INTENCIÓN de compra. Alguien buscando ACTIVAMENTE lo que vendes está LISTO comprar
+
+### 🔗 Video 3: Campaign Strategy & Analytics - ROI Optimization at Scale
+- **Título**: Estrategia de Campañas y Optimización de ROI
+- **Canal**: Performance Marketing Academy
+- **Duración**: 120 minutos
+- **Contenido**: Full-funnel marketing, atribución multi-touch, budget allocation, testing framework, incrementality testing, scaling profitable campaigns
+- **Link**: https://www.youtube.com/watch?v=YmFd2rVFAq4
+- **Por qué verlo**: Gastar dinero en ads es fácil. GANAR dinero requiere framework - aprende el que usan agencias que facturan USD millones
+
+---
+
 ## 📞 Contacto y Consultas
 
 **Instructor:** [Nombre]  

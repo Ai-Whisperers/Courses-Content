@@ -635,6 +635,36 @@ Ahora que dominas la creación de contenido con IA, estás listo para:
 
 ---
 
+## 📺 Recommended YouTube Resources
+
+**Visualiza estos videos para dominar copywriting y generación de contenido con IA**:
+
+### 🔗 Video 1: AI Writing Fundamentals - ChatGPT, Claude & Content Creation
+- **Título**: Fundamentos de Escritura con IA - ChatGPT y Generación de Contenido
+- **Canal**: Content Creators Academy
+- **Duración**: 125 minutos
+- **Contenido**: Copywriting para conversiones, psicología del consumidor, prompts estratégicos, A/B testing de copies, tono de marca
+- **Link**: https://www.youtube.com/watch?v=RkzpD8zGgBg
+- **Por qué verlo**: El copywriting es el CORE del marketing - saber escribir que persuade vale millones en ventas
+
+### 🔗 Video 2: Content Marketing Strategy - From Idea to Distribution
+- **Título**: Estrategia de Content Marketing - De Idea a Distribución
+- **Canal**: HubSpot Academy
+- **Duración**: 140 minutos
+- **Contenido**: Calendario editorial, buyer journey, SEO copywriting, storytelling, multi-channel distribution, medición ROI
+- **Link**: https://www.youtube.com/watch?v=XqNirBbxzU4
+- **Por qué verlo**: Contenido sin estrategia = ruido. Aprende a crear SISTEMAS que generan leads y ventas automáticamente
+
+### 🔗 Video 3: AI Tools for Creators - Runway, Copy.ai & Scaling Automation
+- **Título**: Herramientas IA para Creadores - Automatización de Contenido
+- **Canal**: The AI Entrepreneur
+- **Duración**: 110 minutos
+- **Contenido**: Automatización de redacción, generación de emails, social media scheduling, análisis de trending, AI analytics
+- **Link**: https://www.youtube.com/watch?v=YRrZYWZplHo
+- **Por qué verlo**: Escala tu producción 10x - crea contenido para 50 plataformas desde una sola fuente
+
+---
+
 ## 📞 Contacto y Consultas
 
 **Instructor:** [Nombre]  
