@@ -213,6 +213,9 @@
 ## Cambios Recientes
 
 ### 30 de enero, 2026
+- ✅ Simplificados READMEs de módulos 01-03 en Track 01 (removidos links rotos a contenido inexistente)
+- ✅ Agregadas cross-references a limitaciones de IA en 00-FUNDAMENTOS (módulos 02 y 03)
+- ✅ Corregido link roto en módulo 02 (03-prompt-engineering.md → 03-ingenieria-prompts.md)
 - ✅ Eliminados 3 archivos OLD_README.md redundantes
 - ✅ Actualizado STATUS.md con conteo real de archivos
 - ✅ Agregadas referencias a COMPARTIDO en todos los tracks (6/6)
