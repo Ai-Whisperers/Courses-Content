@@ -9,7 +9,59 @@ Al terminar este módulo tendrás: **30 posts completos para Instagram/Facebook 
 
 ---
 
-## Prompt 1: Perfil de Marca en 3 Minutos ⏱️
+## ⚠️ PASO 0: Cargar Contexto (2 minutos)
+
+**PRERREQUISITO:** Debes haber completado el **Módulo 00: Research + Contexto Organizado** y tener tu carpeta `contexto/` con los 18 archivos generados.
+
+### Instrucciones:
+1. Abre tu carpeta `contexto/`
+2. Copia el contenido de estos archivos:
+   - `01-identidad/marca.md`
+   - `01-identidad/valores.md`
+   - `02-audiencia/cliente-ideal.md`
+   - `06-mensajes/tono-voz.md`
+   - `06-mensajes/palabras-clave.md`
+
+3. Pégalo en OpenCode con este prompt:
+
+```
+Voy a cargar el contexto completo de mi marca. Léelo todo antes de responder.
+
+---
+
+CONTEXTO DE MARCA:
+[Pegar aquí el contenido de los 5 archivos arriba]
+
+---
+
+CONTEXTO CARGADO ✅
+
+Instrucción: Usa esta información para crear contenido consistente con la identidad de marca. No preguntes por información que ya está aquí.
+```
+
+**Nota:** Ahora todos los prompts de este módulo asumen que OpenCode YA CONOCE tu marca. No necesitas repetir información básica.
+
+---
+
+## Prompt 1: Validar Contexto (2 minutos) ⏱️
+
+**¿Cuándo usar?** Al inicio de cada sesión para confirmar que OpenCode tiene el contexto claro.
+
+### 📝 Prompt (Copiar y Pegar):
+```
+Basándote en el contexto cargado, confirma:
+
+1. Nombre exacto de la marca
+2. Personalidad de marca (3 adjetivos)
+3. Cliente ideal (edad, intereses)
+4. Tono de voz (formal/casual/divertido)
+5. 5 palabras clave principales
+
+Responde brevemente para confirmar que tienes el contexto claro.
+```
+
+### ✅ Resultado Esperado:
+OpenCode confirma que entiende la marca correctamente. Si hay discrepancias, revisa los archivos de contexto.
 
 **¿Cuándo usar?** Antes de crear cualquier contenido. Necesitas definir quién es la marca.
 
