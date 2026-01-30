@@ -108,4 +108,4 @@ rules:
    <details><summary>Ver respuesta</summary>rules.yaml.</details>
 
 ## Siguiente Módulo
-[Módulo 03: Ingeniería de Prompts](./03-prompt-engineering.md)
+[Módulo 03: Ingeniería de Prompts](./03-ingenieria-prompts.md)
