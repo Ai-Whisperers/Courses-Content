@@ -1,121 +1,115 @@
-# Módulo 01: Instalación del Stack de IA
+# Módulo 01: El Semillero Manual (Bootstrapping)
 
 ## Objetivo y Duración
-**Objetivo**: Configurar tu entorno de trabajo con OpenCode y Oh My OpenCode para comenzar a utilizar IA en tus proyectos.
-**Duración**: 2 horas (estimado).
 
-## Requisitos Previos
-Antes de comenzar, asegúrate de cumplir con los requisitos técnicos detallados en la guía de prerrequisitos del curso. Necesitarás una computadora con Windows, Mac o Linux, conexión a internet y una cuenta de correo activa.
+**Objetivo**: Instalar el "Motor de IA" en tu sistema. Este es el último paso manual que harás en el curso. Una vez que la IA esté activa, ella se encargará del resto por ti.
+**Duración**: 1 hora (estimado).
 
-## Parte 1: Instalar Node.js
-Node.js es el entorno de ejecución necesario para que las herramientas de este curso funcionen.
+---
 
-### Paso 1: Descarga e Instalación
-1. Ve a [nodejs.org](https://nodejs.org).
-2. Descarga la versión **LTS** recomendada para tu sistema operativo.
-3. Ejecuta el instalador y sigue las instrucciones, manteniendo las opciones por defecto.
+## Parte 1: El Motor (Node.js)
+
+Node.js es el entorno de ejecución necesario para que nuestras herramientas de IA cobren vida.
+
+### Paso 1: Instalación
+
+1. Ve a [nodejs.org](https://nodejs.org) y descarga la versión **LTS**.
+2. Instálalo con las opciones por defecto.
 
 ### Paso 2: Verificación
-Abre una terminal (PowerShell en Windows o Terminal en Mac/Linux) y ejecuta:
+
+Abre tu terminal y comprueba que el motor está listo:
+
 ```bash
-node --version
-```
-Deberías ver una versión v18 o superior.
-
-```mermaid
-graph LR
-    A[Descargar Node.js] --> B[Ejecutar Instalador]
-    B --> C[Verificar con node --version]
+node --version # v18 o superior requerido
 ```
 
-## Parte 2: Instalar OpenCode
-OpenCode es tu asistente de IA principal que funciona directamente desde la terminal.
+---
 
-### Paso 1: Instalación Global
-En tu terminal, ejecuta el siguiente comando:
+## Parte 2: La Puerta de Enlace (OpenCode)
+
+OpenCode es tu interfaz principal con la IA. Es el asistente que ejecutará tus órdenes desde la terminal.
+
+### Paso 1: Instalación Manual
+
+Este es el componente final que instalaremos a mano:
+
 ```bash
 npm install -g opencode
 ```
 
-### Paso 2: Configuración del Proveedor
-OpenCode necesita conectarse a un modelo de IA. Configúralo con el proveedor indicado por tu instructor (ejemplo con Anthropic):
+### Paso 2: Activación
+
+Comprueba que tu socio está despierto:
+
 ```bash
-opencode configure --provider anthropic
+opencode status # Debe decir "Connected"
+opencode
 ```
 
-### Paso 3: Verificación de Conexión
-Verifica que OpenCode esté listo para usarse:
+### Paso 3: Configuración (Bootstrapping)
+
+Indícale a OpenCode con qué "cerebro" (proveedor) trabajarás. Para este curso, recomendamos usar **Google Gemini** por su generoso nivel gratuito.
+
+1. Obtén tu clave API gratuita en [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Configúralo en tu terminal:
+
 ```bash
-opencode status
-opencode "Hola, ¿estás funcionando? Responde en español."
+opencode configure --provider gemini --apiKey TU_CLAVE_AQUI
 ```
 
-## Parte 3: Instalar Oh My OpenCode
-Oh My OpenCode (OMO) añade "superpoderes" a OpenCode, como agentes especializados y automatizaciones.
+---
 
-### Paso 1: Instalación
-Ejecuta el siguiente comando en la terminal:
-```bash
-npm install -g oh-my-opencode
-```
+## Parte 3: La Gran Transición (El Fin de lo Manual)
 
-### Paso 2: Inicialización
-Prepara el entorno de OMO con:
-```bash
-omo init
-```
+A partir de este momento, **deja de escribir comandos de instalación**. Tu rol ha cambiado de "Obrero" a "Arquitecto". Todo lo que falte por configurar será responsabilidad de tu IA.
 
-## Parte 4: Primer Proyecto (Calculadora)
-Vamos a crear una herramienta real usando tu nuevo stack de IA.
+### Tu Primera Delegación: Oh My OpenCode (OMO)
 
-1. **Crear carpeta**:
-   ```bash
-   mkdir mi-calculadora
-   cd mi-calculadora
-   ```
+Oh My OpenCode añade agentes especializados y personalización avanzada. No lo instales tú, pídeselo a él.
 
-2. **Generar código con IA**:
-   ```bash
-   opencode chat "Crea una calculadora simple en JavaScript con funciones de suma, resta, multiplicación y división. Incluye un archivo README.md en español."
-   ```
+> **Prompt Maestro:**
+> "Ahora que estás activo, toma el control de mi sistema. Procede a instalar globalmente `oh-my-opencode`, ejecútalo e inicializa el entorno con `omo init`. Avísame cuando hayas terminado de preparar tu propia suite de superpoderes."
 
-3. **Probar la calculadora**:
-   Crea un archivo de prueba o pide a OpenCode que lo haga:
-   ```bash
-   opencode chat "Crea un archivo prueba.js para probar las funciones de la calculadora."
-   node prueba.js
-   ```
+**¿Qué pasa aquí?**
+La IA detectará si necesita `npm`, ejecutará la instalación y configurará OMO sin que tú toques una tecla más.
 
-## Verificación Final
-Asegúrate de haber completado todos los puntos:
-- [ ] `node --version` muestra v18+
-- [ ] `opencode status` muestra "Connected"
-- [ ] `omo --version` muestra la versión instalada
-- [ ] El proyecto de la calculadora se generó correctamente
+---
 
-## Solución de Problemas
-1. **"comando no encontrado"**: Cierra y vuelve a abrir tu terminal.
-2. **Error de conexión**: Reintenta `opencode configure --provider [proveedor]`.
-3. **Permisos en Windows**: Ejecuta PowerShell como Administrador si la instalación de npm falla.
-4. **Versión de Node antigua**: Desinstala Node.js y descarga la versión LTS más reciente.
-5. **IA responde en inglés**: Añade "Responde siempre en español" a tus peticiones.
+## Parte 4: Tu Primer Workspace (IA-Driven)
 
-## Quiz de Evaluación
+En lugar de crear carpetas y archivos a mano, pídele a la IA que prepare tu mesa de trabajo.
 
-<details>
-<summary><b>1. ¿Cuál es el orden correcto de instalación del stack?</b></summary>
-<blockquote>Node.js → OpenCode → Oh My OpenCode</blockquote>
-</details>
+> **Prompt Maestro:**
+> "Actúa como un Lead Architect senior. Crea un nuevo workspace en la carpeta `proyecto-calculadora-pro`. Dentro, desarrolla una suite de calculadora profesional en JavaScript que incluya:
+>
+> 1. **Lógica Modular**: Separa las operaciones matemáticas de la interfaz de usuario.
+> 2. **Documentación Exhaustiva**: Un `README.md` profesional con instrucciones de uso, arquitectura del proyecto y cómo contribuir.
+> 3. **Suite de Pruebas**: Implementa un archivo de tests unitarios que verifique casos de éxito y manejo de errores (ej. división por cero).
+> 4. **Estilo de Código**: Asegura que el código sea limpio, autodocumentado y siga las mejores prácticas de la industria.
+>
+> No hagas el mínimo: prepara una estructura de proyecto que sea el estándar de oro para lo que construiremos en FPUNA. Tú decides la mejor organización de archivos."
 
-<details>
-<summary><b>2. ¿Qué comando se utiliza para verificar la conexión de OpenCode?</b></summary>
-<blockquote><code>opencode status</code></blockquote>
-</details>
+---
 
-<details>
-<summary><b>3. ¿Es necesario instalar OpenCode antes que Oh My OpenCode?</b></summary>
-<blockquote>Sí, Oh My OpenCode es una extensión que requiere la base de OpenCode para funcionar.</blockquote>
-</details>
+## Verificación del Umbral
 
-## Siguiente Módulo
-[Módulo 02: Dominio de Configuración](./02-maestria-configuracion.md)
+Si has cruzado el umbral correctamente, tu estado debe ser:
+
+- [x] `node --version` muestra v18+ (Hecho a mano)
+- [x] `opencode status` muestra "Connected" (Hecho a mano)
+- [x] OMO está instalado e inicializado (Hecho por la IA)
+- [x] El proyecto de calculadora existe y tiene estructura profesional (Hecho por la IA)
+
+## Solución de Problemas (Auto-Asistida)
+
+Si algo falla en los pasos manuales, pide ayuda inmediata a la IA:
+
+- _"OpenCode, intenté instalar Node pero me da error de permisos en Windows. ¿Qué comando debo correr en PowerShell?"_
+- _"La instalación de OMO falló. Diagnóstica el error en mi terminal y corrígelo."_
+
+---
+
+## Siguiente Módulo: La Era de la Autonomía
+
+[Módulo 02: Maestría de Configuración](./02-maestria-configuracion.md)
