@@ -222,3 +222,8 @@ github-references/repos/
 # ============================================
 .terraform/
 *.terraform.lock.hcl
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local

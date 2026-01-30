@@ -401,5 +401,39 @@ Esto es **diseño teórico**. Construcción física está fuera del alcance (req
 
 ---
 
-*Track 03 - Aeronautical Engineering with AI - FPUNA Verano 2026*  
+---
+
+## Recursos Compartidos (COMPARTIDO)
+
+Este track utiliza recursos del directorio compartido de FPUNA:
+
+| Recurso | Descripción | Link |
+|---------|-------------|------|
+| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../COMPARTIDO/instalacion-opencode/guide.md) |
+| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../COMPARTIDO/configuracion-mcp/README.md) |
+| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../COMPARTIDO/sistema-skills/README.md) |
+| **Seguridad en Ingeniería** | Framework de seguridad y límites de IA | [Ver guía](../COMPARTIDO/seguridad-ingenieria/README.md) |
+| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../COMPARTIDO/plantillas-proyecto/README.md) |
+
+### Recursos Específicos del Track
+
+| Recurso | Descripción | Link |
+|---------|-------------|------|
+| **Fusion360 MCP Server** | MCP custom para CAD | [Ver docs](./fusion360-mcp-server/README.md) |
+| **Límites de IA** | Guía específica para aeronáutica | [Ver guía](./recursos/LIMITS-OF-AI.md) |
+| **Soluciones de Referencia** | Implementaciones ejemplo | [Ver soluciones](./solutions/) |
+
+### Configuración de Credenciales
+
+Para usar el Onshape MCP, crea un archivo `.env` basado en:
+```bash
+cp starter-kit/.env.example .env
+# Edita .env con tus credenciales de Onshape
+```
+
+Obtén tus API keys en: https://dev-portal.onshape.com/keys
+
+---
+
+*Track 03 - Aeronautical Engineering with AI - FPUNA Verano 2026*
 *Última actualización: Enero 2026*
