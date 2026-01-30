@@ -1,15 +1,16 @@
-# Track 07: Automatización QA con IA
-## FPUNA Verano 2026 - Especialización en Testing y QA
+# Track 07: Automatización QA con IA (Especialización)
+
+## FPUNA Verano 2026 - El Blindaje del Lead Architect
 
 ---
 
-## Descripción General
+## 🚀 Descripción General: Testing como Cimiento de la Autonomía
 
-Domina las técnicas avanzadas de automatización de pruebas usando Playwright, pruebas de API, e integración continua, todo acelerado con herramientas de IA. Este track te convertirá en un ingeniero de QA profesional capaz de construir frameworks de testing robustos para aplicaciones del mundo real.
+En la era de la IA, el QA no es una tarea de soporte; es el **sistema de control** que permite a un Lead Architect delegar con total confianza. Si no puedes probarlo automáticamente, no puedes escalarlo con IA. Este track te enseña a construir "Auditories Incorruptibles" usando Playwright, validación de contratos y AI-driven QA.
 
-**Duración**: Semana 2 (20 horas totales)  
-**Modalidad**: Hands-on con proyectos reales  
-**Prerrequisitos**: Módulos 00-FUNDAMENTOS (Semana 1) completados
+**Duración**: Semana 3 (20 horas totales)  
+**Modalidad**: Hands-on con frameworks de grado industrial  
+**Prerrequisitos**: Módulos 01-05 (Track 01) completados
 
 ---
 
@@ -122,24 +123,26 @@ Al completar este track, serás capaz de:
 
 ## Roadmap de Aprendizaje
 
-### Módulo 01: Playwright Avanzado (4 horas)
-**Objetivo**: Dominar técnicas avanzadas de testing web
+### Módulo 01: Playwright Pro (Blindaje Web)
+
+**Objetivo**: Convertir el navegador en un auditor técnico automático.
 
 **Contenido**:
-- Network interception y API mocking
-- Visual regression testing
-- Testing de componentes complejos (modals, iframes, shadow DOM)
-- Manejo de autenticación y sesiones
-- Performance optimization de tests
+
+- Inyección de sesiones y bypass de auth.
+- Visual Regression: La IA detecta cambios de diseño en milisegundos.
+- Emulación de redes y mocking de latencia.
 
 **Proyecto**: Test suite para aplicación e-commerce con 30+ tests
 
 ---
 
 ### Módulo 02: API Testing (4 horas)
+
 **Objetivo**: Automatizar pruebas de APIs REST y GraphQL
 
 **Contenido**:
+
 - Playwright para API testing
 - Schema validation con Zod/JSON Schema
 - Contract testing
@@ -151,9 +154,11 @@ Al completar este track, serás capaz de:
 ---
 
 ### Módulo 03: Arquitectura de Tests (4 horas)
+
 **Objetivo**: Construir frameworks escalables y mantenibles
 
 **Contenido**:
+
 - Page Object Model (POM) avanzado
 - Custom fixtures y test helpers
 - Test data management
@@ -165,9 +170,11 @@ Al completar este track, serás capaz de:
 ---
 
 ### Módulo 04: CI/CD Integration (4 horas)
+
 **Objetivo**: Integrar tests en pipelines de CI/CD
 
 **Contenido**:
+
 - GitHub Actions para Playwright
 - Reportes profesionales (Allure, HTML)
 - Test sharding y paralelización en CI
@@ -178,15 +185,15 @@ Al completar este track, serás capaz de:
 
 ---
 
-### Módulo 05: IA para QA (4 horas)
-**Objetivo**: Acelerar testing con herramientas de IA
+### Módulo 05: IA como Auditor de QA
+
+**Objetivo**: Delegar el 90% de la creación de tests sin perder precisión.
 
 **Contenido**:
-- Generación de tests con OpenCode
-- Test data generation con IA
-- Visual testing con IA (Applitools, Percy)
-- Debugging asistido por IA
-- Mantenimiento de tests con IA
+
+- **Prompt Maestro de QA**: Generación de suites completas desde el código.
+- Test Data Synthesis: Generación masiva de datos realistas con agentes.
+- Debugging Autónomo: La IA encuentra el error y propone el fix del test.
 
 **Proyecto**: Migración de suite manual a automatizada usando IA
 
@@ -199,6 +206,7 @@ Al completar este track, serás capaz de:
 **Descripción**: Construye un framework completo de testing para una aplicación e-commerce, demostrando todas las técnicas aprendidas.
 
 **Requisitos**:
+
 - 60+ tests UI (Playwright)
 - 40+ tests API
 - Page Object Model implementado
@@ -209,12 +217,14 @@ Al completar este track, serás capaz de:
 - 80%+ code coverage
 
 **Aplicaciones sugeridas**:
+
 - DemoQA Store
 - Sauce Demo
 - OpenCart Demo
 - Tu propio proyecto e-commerce
 
 **Entregables**:
+
 1. Repositorio GitHub con código completo
 2. README con instrucciones de setup
 3. CI/CD pipeline funcionando
@@ -226,28 +236,31 @@ Al completar este track, serás capaz de:
 ## Tecnologías y Herramientas
 
 ### Core Tools
-| Herramienta | Propósito | Costo |
-|-------------|-----------|-------|
-| **Playwright** | Web automation | FREE |
-| **Node.js** | Runtime | FREE |
-| **TypeScript** | Lenguaje | FREE |
-| **GitHub Actions** | CI/CD | FREE |
-| **VS Code** | Editor | FREE |
+
+| Herramienta        | Propósito      | Costo |
+| ------------------ | -------------- | ----- |
+| **Playwright**     | Web automation | FREE  |
+| **Node.js**        | Runtime        | FREE  |
+| **TypeScript**     | Lenguaje       | FREE  |
+| **GitHub Actions** | CI/CD          | FREE  |
+| **VS Code**        | Editor         | FREE  |
 
 ### Testing Libraries
-| Librería | Propósito | Costo |
-|----------|-----------|-------|
-| **@playwright/test** | Test runner | FREE |
-| **Zod** | Schema validation | FREE |
-| **Allure** | Reporting | FREE |
-| **Faker.js** | Test data | FREE |
+
+| Librería             | Propósito         | Costo |
+| -------------------- | ----------------- | ----- |
+| **@playwright/test** | Test runner       | FREE  |
+| **Zod**              | Schema validation | FREE  |
+| **Allure**           | Reporting         | FREE  |
+| **Faker.js**         | Test data         | FREE  |
 
 ### IA Tools
-| Herramienta | Propósito | Costo |
-|-------------|-----------|-------|
-| **OpenCode** | Test generation | FREE tier |
-| **GitHub Copilot** | Code assistance | Gratis para estudiantes |
-| **ChatGPT** | Debugging, learning | FREE tier |
+
+| Herramienta        | Propósito           | Costo                   |
+| ------------------ | ------------------- | ----------------------- |
+| **OpenCode**       | Test generation     | FREE tier               |
+| **GitHub Copilot** | Code assistance     | Gratis para estudiantes |
+| **ChatGPT**        | Debugging, learning | FREE tier               |
 
 ---
 
@@ -256,26 +269,31 @@ Al completar este track, serás capaz de:
 Este track reutiliza componentes del directorio `SHARED/`:
 
 ### De opencode-installation/
+
 - ✅ Guías de instalación de OpenCode (Windows/Mac/Linux)
 - ✅ Configuración de Node.js y VS Code
 - ✅ Troubleshooting común
 
 ### De mcp-configuration/
+
 - ✅ Configuración de MCPs para testing
 - ✅ Playwright MCP setup
 - ✅ Testing-specific configurations
 
 ### De skills-system/
+
 - ✅ Skills de testing automatizado
 - ✅ Playwright code generation skills
 - ✅ Test maintenance skills
 
 ### De hooks-rules/
+
 - ✅ Pre-commit hooks para tests
 - ✅ Reglas de linting para test code
 - ✅ Automated test execution hooks
 
 ### De project-templates/
+
 - ✅ Playwright project template
 - ✅ API testing template
 - ✅ CI/CD template para testing
@@ -288,12 +306,12 @@ Este track reutiliza componentes del directorio `SHARED/`:
 
 ### Distribución de Puntos
 
-| Componente | Peso | Descripción |
-|------------|------|-------------|
-| **Ejercicios de Módulos** | 25% | Uno por módulo (5 total) |
-| **Quizzes** | 15% | Evaluación conceptual por módulo |
-| **Proyecto Capstone** | 50% | Framework completo de testing |
-| **Participación** | 10% | Colaboración, ayuda a compañeros |
+| Componente                | Peso | Descripción                      |
+| ------------------------- | ---- | -------------------------------- |
+| **Ejercicios de Módulos** | 25%  | Uno por módulo (5 total)         |
+| **Quizzes**               | 15%  | Evaluación conceptual por módulo |
+| **Proyecto Capstone**     | 50%  | Framework completo de testing    |
+| **Participación**         | 10%  | Colaboración, ayuda a compañeros |
 
 ### Criterios de Aprobación
 
@@ -304,6 +322,7 @@ Este track reutiliza componentes del directorio `SHARED/`:
 ### Certificación
 
 Al aprobar recibirás:
+
 - 📜 **Certificado FPUNA**: "QA Automation con IA - FPUNA Verano 2026"
 - 💼 **Badge LinkedIn**: Verificable y compartible
 - 🎯 **Portfolio GitHub**: Proyectos públicos para empleadores
@@ -316,6 +335,7 @@ Al aprobar recibirás:
 ### Conocimientos Mínimos
 
 ✅ **Obligatorios** (de Semana 1):
+
 - Uso básico de OpenCode
 - Configuración de MCPs y Skills
 - Prompt engineering fundamentals
@@ -323,6 +343,7 @@ Al aprobar recibirás:
 - JavaScript/TypeScript básico
 
 ❌ **NO se requiere**:
+
 - Experiencia previa en testing
 - Conocimiento avanzado de programación
 - Experiencia con Playwright
@@ -330,12 +351,14 @@ Al aprobar recibirás:
 ### Software Requerido
 
 Desde Semana 1 ya tienes instalado:
+
 - ✅ OpenCode
 - ✅ Node.js (v18+)
 - ✅ VS Code
 - ✅ Git
 
 **Nuevo para este track** (instalaremos en Módulo 01):
+
 - Playwright (via npm)
 - Playwright browsers
 - Extensión de Playwright para VS Code
@@ -346,14 +369,14 @@ Desde Semana 1 ya tienes instalado:
 
 ### Formato Intensivo (5 días)
 
-| Día | Horario | Actividad | Duración |
-|-----|---------|-----------|----------|
-| **Lunes** | 08:00-12:00 | Módulo 01: Playwright Avanzado | 4h |
-| **Martes** | 08:00-12:00 | Módulo 02: API Testing | 4h |
-| **Miércoles** | 08:00-12:00 | Módulo 03: Test Architecture | 4h |
-| **Jueves** | 08:00-12:00 | Módulo 04: CI/CD Integration | 4h |
-| **Viernes** | 08:00-12:00 | Módulo 05: IA para QA | 4h |
-| **Extra** | Horario flexible | Proyecto Capstone | 20h |
+| Día           | Horario          | Actividad                      | Duración |
+| ------------- | ---------------- | ------------------------------ | -------- |
+| **Lunes**     | 08:00-12:00      | Módulo 01: Playwright Avanzado | 4h       |
+| **Martes**    | 08:00-12:00      | Módulo 02: API Testing         | 4h       |
+| **Miércoles** | 08:00-12:00      | Módulo 03: Test Architecture   | 4h       |
+| **Jueves**    | 08:00-12:00      | Módulo 04: CI/CD Integration   | 4h       |
+| **Viernes**   | 08:00-12:00      | Módulo 05: IA para QA          | 4h       |
+| **Extra**     | Horario flexible | Proyecto Capstone              | 20h      |
 
 **Total**: 20 horas presenciales + 20 horas proyecto = **40 horas**
 
@@ -374,6 +397,7 @@ Junior QA Engineer         → Mid-Level QA     → Senior QA / SDET
 ### Empresas en Paraguay
 
 **Contratan QA Automation**:
+
 - Softtek (multinacional, 500+ empleados PY)
 - Global Logic (remote-first, proyectos USA)
 - Aruma (fintech, stack moderno)
@@ -383,6 +407,7 @@ Junior QA Engineer         → Mid-Level QA     → Senior QA / SDET
 ### Certificaciones Siguientes
 
 Para continuar tu crecimiento:
+
 - **ISTQB Foundation Level** (~USD 200) - Fundamental QA certification
 - **ISTQB Test Automation Engineer** (~USD 200) - Especialización
 - **Certified Selenium Professional** (FREE) - Selenium skills
@@ -393,25 +418,33 @@ Para continuar tu crecimiento:
 ## FAQs
 
 ### ¿Puedo tomar este track si no tengo experiencia en testing?
+
 **Sí**, siempre que hayas completado los módulos CORE-FOUNDATION de Semana 1. Empezaremos desde conceptos intermedios pero con explicaciones claras.
 
 ### ¿Qué lenguaje de programación usaremos?
+
 **TypeScript** (superset de JavaScript). Si sabes JavaScript básico, estarás bien. Incluimos un repaso rápido en Módulo 01.
 
 ### ¿Necesito instalar software pago?
+
 **No**. Todo es 100% gratuito. Playwright, Node.js, VS Code, GitHub Actions - todo FREE.
 
 ### ¿Puedo trabajar en mi propio proyecto en lugar del capstone sugerido?
+
 **Sí**, si tu proyecto cumple con los requisitos técnicos (60+ tests UI, 40+ API, CI/CD, etc.). Consulta con el instructor primero.
 
 ### ¿Qué pasa si no termino el capstone a tiempo?
+
 Tienes **2 semanas extra** después del curso para entregar el capstone. Pero no se aceptan entregas después de ese período.
 
 ### ¿Este curso me prepara para certificaciones ISTQB?
+
 **Parcialmente**. Cubre testing automatizado a profundidad, pero ISTQB tiene temas adicionales (test design, management). Es un excelente complemento.
 
 ### ¿Puedo conseguir trabajo solo con este curso?
+
 **Es un inicio sólido**, especialmente con el proyecto capstone en tu portfolio. Pero deberás complementar con:
+
 - Práctica continua (2-3 meses)
 - Contribuciones open source
 - Proyectos personales adicionales
@@ -422,11 +455,13 @@ Tienes **2 semanas extra** después del curso para entregar el capstone. Pero no
 ## Contacto y Soporte
 
 ### Durante el Curso
+
 - **Slack**: #qa-automation-2026
 - **Office Hours**: Martes y Jueves 18:00-19:00
 - **Email Instructor**: qa-instructor@fpuna.edu.py
 
 ### Después del Curso
+
 - **Alumni Group**: Grupo de ex-alumnos para networking
 - **Mentorías**: 2 sesiones de 30 min en los primeros 3 meses
 - **Bolsa de Trabajo**: Acceso a oportunidades compartidas por FPUNA
@@ -444,5 +479,5 @@ Tienes **2 semanas extra** después del curso para entregar el capstone. Pero no
 
 ---
 
-*Track 07 - QA Automation con IA - FPUNA Verano 2026*  
-*Última actualización: Enero 2026*
+_Track 07 - QA Automation con IA - FPUNA Verano 2026_  
+_Última actualización: Enero 2026_
