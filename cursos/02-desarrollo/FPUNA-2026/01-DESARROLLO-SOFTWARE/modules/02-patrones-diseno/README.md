@@ -29,9 +29,7 @@ Estos patrones se especializan en cómo se crean los objetos, dándote flexibili
 > Aprende a usar **Factory**, **Singleton** y **Builder** para tener un control total sobre la creación de objetos.
 > **[Ver Tutorial: Patrones Creacionales](./tutorials/02_Creational_Patterns.md)**
 
-> #### 🤖 Ejemplo de IA en Acción
-> Usa este prompt para que OpenCode genere un `Factory` para crear diferentes tipos de notificaciones (Email, SMS, Push).
-> **[Ver Ejemplo: Prompt para Patrón Factory](./examples/01_Factory_Pattern_Prompt.md)**
+**Práctica con OpenCode**: Pídele que genere un `Factory` para crear diferentes tipos de notificaciones (Email, SMS, Push).
 
 ---
 ## 🔗 Parte 3: Patrones Estructurales
@@ -42,24 +40,11 @@ Estos patrones se enfocan en cómo se componen las clases y objetos para formar 
 > **[Ver Tutorial: Patrones Estructurales](./tutorials/03_Structural_Patterns.md)**
 
 ---
-## 🎯 Parte 4: Patrones de Comportamiento
-Estos patrones se ocupan de la comunicación y la asignación de responsabilidades entre objetos.
-
-> #### 📖 Tutorial Detallado
-> Implementa **Observer** para notificar cambios y **Strategy** para seleccionar algoritmos en tiempo de ejecución.
-> **[Ver Tutorial: Patrones de Comportamiento](./tutorials/04_Behavioral_Patterns.md)**
-
-> #### 🤖 Ejemplo de IA en Acción
-> Pídele a OpenCode que implemente el patrón `Observer` para un sistema de subastas en tiempo real.
-> **[Ver Ejemplo: Prompt para Patrón Observer](./examples/02_Observer_Pattern_Prompt.md)**
-
----
-## 💉 Parte 5: Inyección de Dependencias (DI)
-El pegamento que une las arquitecturas modernas. Aprende a escribir código desacoplado y altamente testeable invirtiendo el control de las dependencias.
-
-> #### 📖 Tutorial Detallado
-> Entiende la diferencia entre código acoplado y desacoplado y cómo los frameworks modernos como NestJS automatizan la Inyección de Dependencias.
-> **[Ver Tutorial: Inyección de Dependencias](./tutorials/05_Dependency_Injection.md)**
+## 📚 Para Profundizar (Lectura Opcional)
+Patrones adicionales para explorar después del taller:
+- **Patrones de Comportamiento**: Observer, Strategy, Command - útiles para sistemas reactivos
+- **Inyección de Dependencias**: El "pegamento" de arquitecturas modernas (NestJS, Spring lo implementan automáticamente)
+- **Referencia completa**: [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
 
 ---
 ---

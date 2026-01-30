@@ -22,9 +22,7 @@ Aprende a diferenciar los tipos de tests y a estructurarlos correctamente.
 > Entiende la Pirámide de Testing (Unit, Integration, E2E) y el patrón universal "Arrange-Act-Assert".
 > **[Ver Tutorial: Fundamentos de Testing](./tutorials/01_Testing_Fundamentals.md)**
 
-> #### 🤖 Ejemplo de IA en Acción
-> Usa este prompt para que OpenCode genere un conjunto completo de tests unitarios para un servicio complejo, cubriendo todos los casos de uso.
-> **[Ver Ejemplo: Prompt para Generación de Unit Tests](./examples/01_Unit_Test_Generation_Prompt.md)**
+**Práctica con OpenCode**: Pídele que genere tests unitarios para un servicio, cubriendo casos de éxito y error.
 
 ---
 ## 🔬 Parte 2: Test-Driven Development (TDD)
@@ -34,9 +32,7 @@ Cambia tu forma de programar para siempre escribiendo los tests *antes* que el c
 > Domina el ciclo "Red-Green-Refactor" para escribir código más limpio, modular y completamente testeado por diseño.
 > **[Ver Tutorial: El Flujo de Trabajo TDD](./tutorials/02_TDD_Workflow.md)**
 
-> #### 🤖 Ejemplo de IA en Acción
-> Pídele a OpenCode que implemente una nueva funcionalidad siguiendo estrictamente el ciclo TDD, mostrándote el test fallido, el código mínimo y el refactor final.
-> **[Ver Ejemplo: Prompt para Implementación TDD](./examples/02_TDD_Implementation_Prompt.md)**
+**Práctica con OpenCode**: Pídele que implemente una funcionalidad siguiendo TDD - primero el test fallido, luego el código mínimo.
 
 ---
 ## 🎭 Parte 3: Mocking y Stubbing
@@ -47,10 +43,11 @@ Aprende a aislar tus unidades de código usando "Test Doubles" para que tus test
 > **[Ver Tutorial: Mocking y Stubbing](./tutorials/03_Mocking_And_Stubbing.md)**
 
 ---
-## 📊 Parte 4: Cobertura (Coverage) y Mejores Prácticas
+## 📊 Cobertura y Mejores Prácticas
 No se trata solo de escribir tests, sino de escribir los tests correctos.
-- **Estrategias de Cobertura**: Aprende a interpretar los reportes de coverage y a enfocarte en lo que importa (lógica de negocio y caminos críticos).
-- **Mejores Prácticas**: Escribe tests que sean descriptivos, independientes y robustos.
+- **Cobertura**: Enfócate en lógica de negocio y caminos críticos, no en 100% de líneas
+- **Tests descriptivos**: El nombre del test debe explicar qué se prueba y qué se espera
+- **Tests independientes**: Cada test debe poder ejecutarse solo, sin depender de otros
 
 ---
 ---
