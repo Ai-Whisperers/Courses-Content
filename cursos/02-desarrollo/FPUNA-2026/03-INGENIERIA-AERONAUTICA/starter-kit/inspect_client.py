@@ -1,7 +1,8 @@
+import os
 from onshape_client.client import Client
 
-ACCESS_KEY = "on_GPf29Gh8h91RsCl4N8Pwv"
-SECRET_KEY = "tmhRrJgn2Np3hYvqYMGK2Az8TeCWu4jXWdqCh2vq90OEhzzd"
+ACCESS_KEY = os.environ.get("ONSHAPE_ACCESS_KEY", "your_access_key_here")
+SECRET_KEY = os.environ.get("ONSHAPE_SECRET_KEY", "your_secret_key_here")
 BASE_URL = "https://cad.onshape.com"
 
 try:
