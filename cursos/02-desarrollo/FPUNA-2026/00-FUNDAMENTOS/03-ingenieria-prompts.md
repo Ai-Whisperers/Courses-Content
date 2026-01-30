@@ -48,6 +48,8 @@ graph LR
 4. **Ignorar el Formato**: No especificar si quieres JSON, Markdown o un archivo específico.
 5. **Sin Contexto**: Omitir para quién es el código o dónde se ejecutará.
 
+> **⚠️ Importante**: Además de estos errores de prompting, existen limitaciones inherentes de la IA que debes conocer (alucinaciones, sesgos, restricciones de contexto). Estos temas se abordan en detalle en los tracks especializados, especialmente en `01-DESARROLLO-SOFTWARE/starter-kit/COMMON-MISTAKES.md`.
+
 ## Ideas de Practica
 1. **Conversor de Moneda**: Prompt para un sistema que convierta Gs a USD con validación de API.
 2. **Gestor de Tareas**: Crear un CRUD básico en Python con persistencia en JSON.

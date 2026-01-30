@@ -97,6 +97,8 @@ rules:
 3. **Rules ignoradas**: Sé más específico en la regla o inclúyela directamente en el prompt si es crítica.
 4. **Error de JSON**: Usa herramientas como JSONLint para asegurar que no falten comas o llaves.
 
+> **📚 Nota**: Temas avanzados como *limitaciones de la IA*, *consideraciones de seguridad*, y *prácticas de debugging* se cubren en profundidad en los tracks especializados. En particular, el Track 01 (Desarrollo de Software) incluye guías completas en su `starter-kit/COMMON-MISTAKES.md` y `starter-kit/VERIFICATION-CHECKLIST.md`.
+
 ## Quiz
 1. **¿Cuáles son los 4 pilares de configuración?**
    <details><summary>Ver respuesta</summary>MCPs, Skills, Hooks y Rules.</details>
