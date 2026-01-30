@@ -1,43 +1,95 @@
-# Claude Code Setup - FPUNA
+# Claude FPUNA Configuration
+# Configuración académica optimizada para estudiantes FPUNA
 
-![Claude Code](https://img.shields.io/badge/Claude_Code-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white)
-![FPUNA](https://img.shields.io/badge/Universidad-FPUNA-brightgreen)
-![75% Coverage](https://img.shields.io/badge/Test_Coverage-75%25+-brightgreen)
-
-Complete Claude Code configuration optimized for FPUNA students with Paraguayan and MERCOSUR intelligence.
-
-## 🚀 4-Minute Setup
-
+## 🚀 Quick Start (4 minutos)
 ```bash
-# Copy entire folder to your project
-cp -r claude/ ~/my-ai-project/
+# Copiar configuración
+cp -r claude/ ~/fpuna-claude-setup/
+cp -r claude/.claude/ ~/
 
-# Start Claude Code
-cd ~/my-ai-project
-claude
+# Instalar dependencias
+cd ~/fpuna-claude-setup/
+npm install
+npm run setup-fpuna
+
+# Verificar configuración
+claude --check-config
 ```
 
-## 📁 Structure
+## 🎯 Características Académicas
 
+### Cobertura de Tests (75% mínimo)
+```typescript
+// Automatic test generation con estándares FPUNA
+test_coverage: {
+  minimum: 75,
+  academic_focus: true,
+  parrot_style: "TDD académico",
+  cultural_context: "Paraguay/MERCOSUR"
+}
+```
+
+### Inteligencia Cultural
+```yaml
+cultural_intelligence:
+  - pynn_feeds: "Red neuronal Paraguaya integrada"
+  - mercosur_data: "Información comercial regional"
+  - iva_compliance: "Computaciones tributarias MERCOSUR"
+  - regional_economics: "Indicadores económicos Paraguay"
+```
+
+### MCP Servers Académicos
+- **GitHub**: Gestión de proyectos estudiantes, PRs, issues
+- **Filesystem**: Indexación bases de código académico
+- **Playwright**: Testing plataformas e-learning, verificación UX
+
+## 📚 Estructura de Carpeta
 ```
 claude/
-├── .claude/                 # Claude configuration
-│   ├── agents/             # MERCOSUR specialist agents
-│   │   ├── c-level/        # CEO/CTO advisors
-│   │   └── compliance/     # Paraguayan regulatory agents
-│   ├── commands/           # Slash commands
-│   └── skills/            # Skill templates
-├── claude-best-configurations.md
-├── claude-beginner-configs-guide.md
-├── claude-community-research-2026.md
-├── claude-mcp-server-student-guide.md
-├── claude-multi-agent-architectures.md
-└── claude-vs-gemini-comparison-2026.md
+├── .claude/                 # Configuración core
+│   ├── CLAUDE.md           # Instrucciones principales
+│   ├── hooks/              # Automatizaciones académicas
+│   ├── mcp/                # Model Context Protocol servers
+│   └── skills/             # Especializaciones FPUNA
+├── proyectos/               # Templates por especialidad
+├── tests/                   # Suites de testing académico
+└── docs/                    # Documentación en español
 ```
 
-## 🇵🇾 Paraguayan Intelligence
+## 🧠 Configuración Cultural
 
-- PyNN financial feed integration
-- IVA compliance automation
-- MERCOSUR trade analysis agents
-- Paraguayan academic standards enforcement
+### Context MERCOSUR
+```markdown
+- Integración automática datos PyNN
+- Cálculos IVA con tasas locales
+- Contexto comercial regional
+- Pronósticos económicos Paraguay
+```
+
+### Estándares Académicos
+```yaml
+academic_standards:
+  test_requirements: "75% mínimo coverage"
+  documentation: "español + inglés técnico"
+  code_quality: "FPUNA engineering standards"
+  cultural_sensitivity: "Paraguayan context aware"
+```
+
+## ⚡ Performance Optimization
+- Context utilization monitoring (<80%)
+- Periodic automatic compaction
+- Memory-efficient tool usage
+- Fast startup para sesiones académicas
+
+## 🔧 Hooks Académicos
+- **Cost monitoring**: Alertas para presupuesto estudiante
+- **Performance tracking**: Métricas académicas por sesión
+- **Cultural enhancement**: Automatización contexto Paraguayo
+- **Quality enforcement**: Estándares FPUNA obligatorios
+
+## 📋 Setup Checklist
+- [ ] CLAUDE.md copiado a ~/.claude/
+- [ ] Hooks MCP configurados
+- [ ] Skills FPUNA instaladas
+- [ ] Contexto cultural cargado
+- [ ] Tests configurados (75% target)
