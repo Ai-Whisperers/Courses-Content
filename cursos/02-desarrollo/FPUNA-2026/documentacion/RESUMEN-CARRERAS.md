@@ -9,7 +9,7 @@
 ## Program Architecture
 
 ### Week 1: Universal Foundation (8 hours)
-**Module 00-FUNDAMENTOS-PRINCIPALES** - All students together
+**Module 00-FUNDAMENTOS** - All students together
 
 **Content**:
 1. AI Stack Installation (OpenCode + OMO)
@@ -694,7 +694,7 @@ All tracks reuse from `SHARED/`:
 
 ## Quick Navigation
 
-- [Core Foundation](./00-FUNDAMENTOS-PRINCIPALES/README.md)
+- [Core Foundation](./00-FUNDAMENTOS/README.md)
 - [Track 07 - QA Automation](./07-QA-AUTOMATION/README.md) ✅
 - [Track 08 - Web Development](./08-WEB-DEVELOPMENT/README.md) ✅
 - [Instructor Guide](./INSTRUCTOR-GUIDE.md) (next)

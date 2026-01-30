@@ -9,7 +9,7 @@ Domina los fundamentos avanzados del desarrollo de software moderno: arquitectur
 
 **Duración**: Semana 2 (20 horas totales)  
 **Modalidad**: Hands-on con proyectos reales  
-**Prerrequisitos**: Módulos 00-FUNDAMENTOS-PRINCIPALES (Semana 1) completados
+**Prerrequisitos**: Módulos 00-FUNDAMENTOS (Semana 1) completados
 
 ---
 

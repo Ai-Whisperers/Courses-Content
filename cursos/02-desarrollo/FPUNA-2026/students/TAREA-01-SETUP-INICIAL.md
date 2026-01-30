@@ -154,4 +154,4 @@ No instalaste Node.js o no reiniciaste la terminal.
 
 ---
 
-**Siguiente paso**: Ve al [Módulo 00 - Fundamentos](../00-FUNDAMENTOS-PRINCIPALES/README.md).
+**Siguiente paso**: Ve al [Módulo 00 - Fundamentos](../00-FUNDAMENTOS/README.md).

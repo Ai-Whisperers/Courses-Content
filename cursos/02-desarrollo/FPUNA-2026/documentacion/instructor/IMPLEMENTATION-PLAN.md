@@ -50,13 +50,13 @@ Instead of separate courses with duplicated content, we have:
 
 1. **Directory Structure**
    - Created FPUNA-2026/ root
-   - Created 00-FUNDAMENTOS-PRINCIPALES/
+   - Created 00-FUNDAMENTOS/
    - Created SHARED/components/
    - Created module subdirectories
 
 2. **Main Documentation**
    - README.md (program overview)
-   - 00-FUNDAMENTOS-PRINCIPALES/README.md (week 1 guide)
+   - 00-FUNDAMENTOS/README.md (week 1 guide)
    - This implementation plan
 
 ### 🚧 In Progress
@@ -83,7 +83,7 @@ Instead of separate courses with duplicated content, we have:
    - 02-ELECTRONICA-AUTOMATIZACION/ ✅
    - 03-INGENIERIA-AERONAUTICA/ ✅
    - 04-MARKETING-NEGOCIOS-TURISMO/ ✅ (merged Marketing + Hospitalidad)
-   - 05-INVESTIGACION-ACADEMIA/ ✅
+   - 05-INVESTIGACION/ ✅
 
 6. **Daily Instructor Scripts**
    - dias/ folder with 6 day plans
@@ -113,7 +113,7 @@ Tasks:
 
 **Deliverables**:
 - Complete SHARED/ components
-- Complete 00-FUNDAMENTOS-PRINCIPALES/
+- Complete 00-FUNDAMENTOS/
 - Track template
 
 ### Phase 2: Adapt Existing Tracks (Week 3)
@@ -152,7 +152,7 @@ Tasks:
 ### Phase 4: Medium-Priority Tracks (Week 6) ✅ COMPLETE
 
 **Track 3: Research & Academia** ✅
-- 05-INVESTIGACION-ACADEMIA/ complete
+- 05-INVESTIGACION/ complete
 
 **Track 4: Marketing, Business & Tourism** ✅
 - 04-MARKETING-NEGOCIOS-TURISMO/ complete
@@ -209,7 +209,7 @@ component-name/
 
 ### For Core Foundation Modules
 
-**Location**: `00-FUNDAMENTOS-PRINCIPALES/modules/[##-module-name]/`
+**Location**: `00-FUNDAMENTOS/modules/[##-module-name]/`
 
 **Structure**:
 ```

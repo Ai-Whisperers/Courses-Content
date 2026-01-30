@@ -11,18 +11,18 @@
 
 | Track | Módulos | proyecto-final | starter-kit | Estado |
 |-------|---------|----------------|-------------|--------|
-| 00-FUNDAMENTOS-PRINCIPALES | 6/6 | ✅ | ⚠️ usa recursos compartidos | ✅ Listo |
+| 00-FUNDAMENTOS | 6/6 | ✅ | ⚠️ usa recursos compartidos | ✅ Listo |
 | 01-DESARROLLO-SOFTWARE | 5/5 + 2 especializaciones | ✅ | ✅ | ✅ Listo |
 | 02-ELECTRONICA-AUTOMATIZACION | 5/5 | ✅ + escalonado | ✅ | ✅ Listo |
 | 03-INGENIERIA-AERONAUTICA | 5/5 | ✅ | ✅ | ✅ Listo |
 | 04-MARKETING-NEGOCIOS-TURISMO | 8/8 | ✅ | ✅ | ✅ Listo |
-| 05-INVESTIGACION-ACADEMIA | 5/5 | ✅ | ✅ | ✅ Listo |
+| 05-INVESTIGACION | 5/5 | ✅ | ✅ | ✅ Listo |
 
 ---
 
 ## Detalle por Track
 
-### 00-FUNDAMENTOS-PRINCIPALES (Semana 1 - Universal)
+### 00-FUNDAMENTOS (Semana 1 - Universal)
 
 **Duración**: 20 horas
 **Contenido**: Introducción a herramientas IA para todos los estudiantes
@@ -136,7 +136,7 @@
 
 ---
 
-### 05-INVESTIGACION-ACADEMIA (Track 5)
+### 05-INVESTIGACION (Track 5)
 
 **Duración**: 20 horas
 **Contenido**: Revisión literaria, metodología, análisis, redacción, presentación

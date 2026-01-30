@@ -11,12 +11,12 @@
 
 | Track | Status | Modules | Notes |
 |-------|--------|---------|-------|
-| **00-FUNDAMENTOS-PRINCIPALES** | ✅ Complete | 6 + proyecto-final | Universal foundation |
+| **00-FUNDAMENTOS** | ✅ Complete | 6 + proyecto-final | Universal foundation |
 | **01-DESARROLLO-SOFTWARE** | ✅ Complete | 5 + proyecto-final | Software development |
 | **02-ELECTRONICA-AUTOMATIZACION** | ✅ Complete | 5 + proyecto-final | Electronics & automation |
 | **03-INGENIERIA-AERONAUTICA** | ✅ Complete | 5 + proyecto-final | Aeronautical engineering |
 | **04-MARKETING-NEGOCIOS-TURISMO** | ✅ Complete | 8 + proyecto-final | Marketing + Hospitality (merged) |
-| **05-INVESTIGACION-ACADEMIA** | ✅ Complete | 5 + proyecto-final | Research & academia |
+| **05-INVESTIGACION** | ✅ Complete | 5 + proyecto-final | Research & academia |
 
 ### Track Structure Changes (January 2026)
 - **Merged**: 04-MARKETING-COMUNICACION + 06-HOSPITALIDAD-TURISMO → 04-MARKETING-NEGOCIOS-TURISMO

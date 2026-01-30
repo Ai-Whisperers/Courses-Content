@@ -123,7 +123,7 @@ Al completar Core Foundation, elige tu Track (Semana 2):
 - **02-ELECTRONICA-AUTOMATIZACION**: Circuitos, IoT, firmware
 - **03-INGENIERIA-AERONAUTICA**: CAD, aerodinamica, UAV
 - **04-MARKETING-NEGOCIOS-TURISMO**: Marketing digital, contenido, hospitalidad
-- **05-INVESTIGACION-ACADEMIA**: Metodologia, redaccion academica
+- **05-INVESTIGACION**: Metodologia, redaccion academica
 
 ---
 

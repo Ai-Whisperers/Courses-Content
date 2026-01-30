@@ -57,21 +57,21 @@ Todos los estudiantes completan el **Núcleo Común** de marketing digital, y lu
 - Prompts para diferentes formatos
 - Adaptación de tono y audiencia
 - Calendarios de contenido
-- [Ir al módulo →](./01-creacion-contenido-ia.md)
+- [Ir al módulo →](./modules/01-nucleo-comun/01-creacion-contenido-ia.md)
 
 #### Módulo 02: Marketing Basado en Datos (4h)
 - Google Analytics 4
 - Métricas clave (KPIs)
 - Dashboards y reportes
 - A/B testing básico
-- [Ir al módulo →](./02-marketing-datos.md)
+- [Ir al módulo →](./modules/02-data-strategy/analytics-basics.md)
 
 #### Módulo 03: Automatización de Redes Sociales (4h)
 - Herramientas de scheduling
 - Workflows de engagement
 - Chatbots para redes
 - Social listening
-- [Ir al módulo →](./03-redes-sociales-automatizacion.md)
+- [Ir al módulo →](./modules/01-nucleo-comun/03-redes-sociales-automatizacion.md)
 
 ---
 
@@ -82,14 +82,14 @@ Todos los estudiantes completan el **Núcleo Común** de marketing digital, y lu
 - Canva + AI features
 - Edición de video automatizada
 - Brand kits y consistencia
-- [Ir al módulo →](./04a-diseno-herramientas-ia.md)
+- [Ir al módulo →](./specializations/marketing-digital/04a-diseno-herramientas-ia.md)
 
 #### Módulo 05A: Gestión de Campañas (4h)
 - Planificación de campañas integrales
 - Meta Ads fundamentals
 - Google Ads básico
 - Medición y optimización de ROI
-- [Ir al módulo →](./05a-gestion-campanas.md)
+- [Ir al módulo →](./specializations/marketing-digital/05a-gestion-campanas.md)
 
 ---
 
@@ -100,21 +100,21 @@ Todos los estudiantes completan el **Núcleo Común** de marketing digital, y lu
 - Gestión de quejas con IA
 - WhatsApp Business automatizado
 - Personalización de experiencias
-- [Ir al módulo →](./04b-servicio-cliente-chatbots.md)
+- [Ir al módulo →](./specializations/hospitality-management/04b-servicio-cliente-chatbots.md)
 
 #### Módulo 05B: Revenue Management (4h)
 - Forecasting de demanda
 - Pricing dinámico
 - Análisis competitivo
 - Estrategias de upselling
-- [Ir al módulo →](./05b-revenue-management.md)
+- [Ir al módulo →](./specializations/hospitality-management/05b-revenue-management.md)
 
 #### Módulo 06B: Operaciones Hoteleras con IA (4h)
 - Automatización de housekeeping
 - Mantenimiento predictivo
 - Gestión de inventarios
 - Workflows operativos
-- [Ir al módulo →](./06b-operaciones-hoteleras.md)
+- [Ir al módulo →](./specializations/hospitality-management/06b-operaciones-hoteleras.md)
 
 ---
 
@@ -264,7 +264,7 @@ Ver detalles en [proyecto-final/](./proyecto-final/)
 
 ## 🚀 ¡Empezar!
 
-**Siguiente paso:** [Módulo 01: Creación de Contenido con IA](./01-creacion-contenido-ia.md)
+**Siguiente paso:** [Módulo 01: Creación de Contenido con IA](./modules/01-nucleo-comun/01-creacion-contenido-ia.md)
 
 ---
 

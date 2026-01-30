@@ -98,7 +98,7 @@ En este programa de 2 semanas aprenderás a:
 ```
 FPUNA-2026/
 │
-├── 📂 00-FUNDAMENTOS-PRINCIPALES/     ← Empieza aquí (Semana 1)
+├── 📂 00-FUNDAMENTOS/     ← Empieza aquí (Semana 1)
 │   ├── 01-ai-stack-setup/
 │   ├── 02-configuration-mastery/
 │   ├── 03-prompt-engineering/
@@ -816,7 +816,7 @@ R: Puedes pedir extensión de 1 semana para entregar. Habla con el instructor.
 
 **Ahora ve a**:
 
-➡️ **[00-FUNDAMENTOS-PRINCIPALES/01-ai-stack-setup.md](./00-FUNDAMENTOS-PRINCIPALES/01-ai-stack-setup.md)**
+➡️ **[00-FUNDAMENTOS/01-ai-stack-setup.md](./00-FUNDAMENTOS/01-ai-stack-setup.md)**
 
 ### Recordatorios Finales
 

@@ -98,7 +98,7 @@ _components/
 ## New File Structure
 
 ```
-00-FUNDAMENTOS-PRINCIPALES/
+00-FUNDAMENTOS/
 ├── README.md                    # Syllabus + prerequisites + support (150 lines)
 ├── 01-configuracion-stack-ia.md # Installation guide (400 lines)
 ├── 02-maestria-configuracion.md # MCPs, Skills, Hooks, Rules (600 lines)

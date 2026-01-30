@@ -195,7 +195,7 @@ ssh -T git@github.com
 #### Lecturas Obligatorias (30 min)
 
 📄 **"What is OpenCode?"** (nuestro documento)
-- Lee: `00-FUNDAMENTOS-PRINCIPALES/01-configuracion-stack-ia.md` (secciones 1-3)
+- Lee: `00-FUNDAMENTOS/01-configuracion-stack-ia.md` (secciones 1-3)
 - **Ubicación**: Se enviará por email
 
 📄 **"FPUNA Course Overview"**  

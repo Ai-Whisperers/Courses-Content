@@ -9,7 +9,7 @@ Domina el desarrollo web moderno full-stack con Next.js 14, React, TypeScript, y
 
 **Duración**: Semana 2 (20 horas totales)  
 **Modalidad**: Hands-on con proyectos reales  
-**Prerrequisitos**: Módulos 00-FUNDAMENTOS-PRINCIPALES (Semana 1) completados
+**Prerrequisitos**: Módulos 00-FUNDAMENTOS (Semana 1) completados
 
 ---
 

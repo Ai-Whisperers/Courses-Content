@@ -154,7 +154,7 @@ claude "Hola, ¿puedes ayudarme a verificar que estás funcionando?"
 
 Oh My OpenCode es una extensión que añade agentes especializados y funcionalidades avanzadas.
 
-Ver: [Guía de Instalación de OMO](../../00-FUNDAMENTOS-PRINCIPALES/modules/01-ai-stack-setup/README.md#instalación-de-omo)
+Ver: [Guía de Instalación de OMO](../../00-FUNDAMENTOS/modules/01-ai-stack-setup/README.md#instalación-de-omo)
 
 ### Configurar Editor de Código
 

@@ -192,7 +192,7 @@ claude "Crea una función en JavaScript que sume dos números"
 claude "Crea una calculadora simple en Node.js"
 ```
 
-**Tu primer proyecto completo**: Ver [Módulo 01 - AI Stack Setup](../../00-FUNDAMENTOS-PRINCIPALES/modules/01-ai-stack-setup/README.md)
+**Tu primer proyecto completo**: Ver [Módulo 01 - AI Stack Setup](../../00-FUNDAMENTOS/modules/01-ai-stack-setup/README.md)
 
 ---
 
@@ -706,8 +706,8 @@ claude "Crea una función en Python que calcule el área de un círculo. Comenta
 - Stack Overflow (tag: claude-ai)
 
 **Cursos FPUNA**:
-- Módulo 03: [Ingeniería de Prompts](../../00-FUNDAMENTOS-PRINCIPALES/03-ingenieria-prompts.md)
-- Módulo 06: [Patrones de Trabajo](../../00-FUNDAMENTOS-PRINCIPALES/06-patrones-flujo-trabajo.md)
+- Módulo 03: [Ingeniería de Prompts](../../00-FUNDAMENTOS/03-ingenieria-prompts.md)
+- Módulo 06: [Patrones de Trabajo](../../00-FUNDAMENTOS/06-patrones-flujo-trabajo.md)
 
 **YouTube** (canales recomendados):
 - "AI Coding Tutorials"

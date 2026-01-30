@@ -26,7 +26,7 @@ Este programa modular enseña a estudiantes de diversas disciplinas a utilizar h
 
 ## Arquitectura del Curso
 
-### 00-FUNDAMENTOS-PRINCIPALES (Universal)
+### 00-FUNDAMENTOS (Universal)
 
 **Duración**: 8 horas  
 **Para**: TODOS los estudiantes
@@ -76,7 +76,7 @@ Estructura modular con especializaciones:
 - **Especialización A** (8h): Marketing General - Diseño y Campañas
 - **Especialización B** (12h): Hospitalidad y Turismo - Revenue, Operaciones
 
-#### 05-INVESTIGACION-ACADEMIA
+#### 05-INVESTIGACION
 
 Para: Investigadores, estudiantes de posgrado
 Módulos: 5 módulos + herramientas de investigación
@@ -117,7 +117,7 @@ Módulos: 5 módulos + herramientas de investigación
 
 **Semana 1**:
 
-1. Ir a [`00-FUNDAMENTOS-PRINCIPALES`](./00-FUNDAMENTOS-PRINCIPALES/README.md)
+1. Ir a [`00-FUNDAMENTOS`](./00-FUNDAMENTOS/README.md)
 2. Completar módulos 01-06 en orden
 3. Verificar que OpenCode funciona correctamente
 
@@ -131,7 +131,7 @@ Módulos: 5 módulos + herramientas de investigación
 
 **Preparación**:
 
-1. Revisar [`00-FUNDAMENTOS-PRINCIPALES`](./00-FUNDAMENTOS-PRINCIPALES/README.md)
+1. Revisar [`00-FUNDAMENTOS`](./00-FUNDAMENTOS/README.md)
 2. Familiarizarse con [`SHARED/components`](./COMPARTIDO/components/)
 3. Revisar el track específico que enseñarás
 
@@ -162,7 +162,7 @@ Módulos: 5 módulos + herramientas de investigación
 ```
 FPUNA-2026/
 ├── README.md                          # Este archivo
-├── 00-FUNDAMENTOS-PRINCIPALES/                # Universal (todos)
+├── 00-FUNDAMENTOS/                # Universal (todos)
 │   ├── modules/                       # 6 módulos
 │   └── shared-resources/              # Recursos del core
 ├── SHARED/                            # Componentes reutilizables
@@ -178,7 +178,7 @@ FPUNA-2026/
 ├── 02-ELECTRONICA-AUTOMATIZACION/     # Track 2: Electronics & Automation
 ├── 03-INGENIERIA-AERONAUTICA/         # Track 3: Aeronautical Engineering
 ├── 04-MARKETING-NEGOCIOS-TURISMO/     # Track 4: Marketing, Business & Tourism
-└── 05-INVESTIGACION-ACADEMIA/         # Track 5: Research & Academia
+└── 05-INVESTIGACION/         # Track 5: Research & Academia
 ```
 
 ---

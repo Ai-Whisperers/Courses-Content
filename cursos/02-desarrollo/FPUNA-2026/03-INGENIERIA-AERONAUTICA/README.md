@@ -9,7 +9,7 @@ Domina ingeniería aeronáutica moderna con IA: CAD 3D, aerodinámica computacio
 
 **Duración**: Semana 2 (20 horas totales)  
 **Modalidad**: Diseño y simulación intensiva  
-**Prerrequisitos**: Módulos 00-FUNDAMENTOS-PRINCIPALES (Semana 1) completados
+**Prerrequisitos**: Módulos 00-FUNDAMENTOS (Semana 1) completados
 
 ---
 
