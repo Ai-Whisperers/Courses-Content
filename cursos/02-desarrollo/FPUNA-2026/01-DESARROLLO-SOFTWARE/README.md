@@ -431,5 +431,21 @@ Desde Semana 1 ya tienes:
 
 ---
 
-*Track 01 - Software Development with AI - FPUNA Verano 2026*  
+---
+
+## Recursos Compartidos (COMPARTIDO)
+
+Este track utiliza recursos del directorio compartido de FPUNA:
+
+| Recurso | Descripción | Link |
+|---------|-------------|------|
+| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../COMPARTIDO/instalacion-opencode/guide.md) |
+| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../COMPARTIDO/configuracion-mcp/README.md) |
+| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../COMPARTIDO/sistema-skills/README.md) |
+| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../COMPARTIDO/plantillas-proyecto/README.md) |
+| **Hooks y Reglas** | Automatización con git hooks | [Ver guía](../COMPARTIDO/hooks-reglas/README.md) |
+
+---
+
+*Track 01 - Software Development with AI - FPUNA Verano 2026*
 *Última actualización: Enero 2026*

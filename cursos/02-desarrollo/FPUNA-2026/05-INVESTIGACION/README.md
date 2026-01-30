@@ -170,4 +170,19 @@ Complete research project:
 
 ---
 
+---
+
+## Recursos Compartidos (COMPARTIDO)
+
+Este track utiliza recursos del directorio compartido de FPUNA:
+
+| Recurso | Descripción | Link |
+|---------|-------------|------|
+| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../COMPARTIDO/instalacion-opencode/guide.md) |
+| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../COMPARTIDO/configuracion-mcp/README.md) |
+| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../COMPARTIDO/sistema-skills/README.md) |
+| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../COMPARTIDO/plantillas-proyecto/README.md) |
+
+---
+
 *Track 05 - Research & Academia - FPUNA 2026*
