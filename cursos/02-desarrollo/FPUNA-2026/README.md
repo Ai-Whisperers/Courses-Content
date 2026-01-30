@@ -1,6 +1,6 @@
 # FPUNA Verano 2026 - Programa de Desarrollo Aumentado con IA
 
-**Status:** 🟡 In Development (~90% Complete) | ⚠️ Not Yet Student Tested | 📦 6 Tracks | 🎯 Target: Q2 2026
+**Status:** 🟡 In Development (~95% Complete) | ⚠️ Post-Refactor Cleanup | 📦 6 Tracks | 🎯 Target: Q2 2026
 
 ---
 
@@ -15,11 +15,11 @@
 
 ## Descripción del Programa
 
-Este programa modular enseña a estudiantes de diversas disciplinas a utilizar herramientas de IA (OpenCode, Oh My OpenCode) para acelerar su trabajo académico y profesional.
+Este programa modular enseña a estudiantes de diversas disciplinas a utilizar herramientas de IA para acelerar su trabajo académico y profesional.
 
 **Estructura del Programa**:
 
-1. **Semana 1**: Fundamentos Universales (todos los estudiantes juntos)
+1. **Semana 1**: Fundamentos Universales (todos los estudiantes juntos) - [`00-FUNDAMENTOS`](./00-FUNDAMENTOS/README.md)
 2. **Semana 2**: Especialización por carrera (tracks específicos)
 
 ---
@@ -28,180 +28,58 @@ Este programa modular enseña a estudiantes de diversas disciplinas a utilizar h
 
 ### 00-FUNDAMENTOS (Universal)
 
-**Duración**: 8 horas  
-**Para**: TODOS los estudiantes
+**Para**: TODOS los estudiantes. Cubre desde la instalación hasta ingeniería de contexto avanzada.
 
-Módulos:
+### RECURSOS GLOBALES
 
-- 01: Instalación del Stack de IA
-- 02: Dominio de Configuración
-- 03: Ingeniería de Prompts
-- 04: Ingeniería de Contexto
-- 05: Proyecto en Vivo (1-Shot Demo)
-- 06: Patrones de Trabajo
+A partir de 2026, los componentes compartidos se han centralizado en el núcleo del repositorio para mayor eficiencia:
 
-**Al completar**: Todos los estudiantes tendrán OpenCode + OMO configurado y funcional
-
-### SHARED (Componentes Reutilizables)
-
-Recursos compartidos entre todos los tracks:
-
-- Guías de instalación
-- Plantillas de configuración
-- Bibliotecas de prompts
-- Ejercicios y quizzes comunes
+- **[Kits de Inicio IA](../../../../_compartido/00-KITS-DE-INICIO-IA/)**: Configuración en un solo paso.
+- **[Guías Técnicas](../../../../_compartido/04-utilidades-ia/)**: MCPs, Skills y configuración avanzada.
+- **[Estándares de Calidad](../../../../_compartido/02-estandares-y-calidad/)**: Reglas de linting y testing.
 
 ### Tracks Especializados
 
-#### 01-DESARROLLO-SOFTWARE
-
-Para: Ingeniería Informática, Desarrollo de Software  
-Módulos: 5 módulos especializados
-
-#### 02-ELECTRONICA-AUTOMATIZACION
-
-Para: Ingeniería Electrónica, Mecatrónica  
-Módulos: 5 módulos + MCPs especializados (AutoCAD, KiCad)
-
-#### 03-INGENIERIA-AERONAUTICA
-
-Para: Ingeniería Aeronáutica  
-Módulos: 5 módulos + MCPs especializados (CATIA, ANSYS)
-
-#### 04-MARKETING-NEGOCIOS-TURISMO
-
-Para: Marketing, Comunicación, Hotelería, Turismo
-Estructura modular con especializaciones:
-- **Núcleo Común** (12h): Contenido, Datos, Redes Sociales
-- **Especialización A** (8h): Marketing General - Diseño y Campañas
-- **Especialización B** (12h): Hospitalidad y Turismo - Revenue, Operaciones
-
-#### 05-INVESTIGACION
-
-Para: Investigadores, estudiantes de posgrado
-Módulos: 5 módulos + herramientas de investigación
+1.  **[01-DESARROLLO-SOFTWARE](./01-DESARROLLO-SOFTWARE/README.md)** (Informática, Software)
+2.  **[02-ELECTRONICA-AUTOMATIZACION](./02-ELECTRONICA-AUTOMATIZACION/README.md)** (Electrónica, Mecatrónica)
+3.  **[03-INGENIERIA-AERONAUTICA](./03-INGENIERIA-AERONAUTICA/README.md)** (Aeronáutica)
+4.  **[04-MARKETING-NEGOCIOS-TURISMO](./04-MARKETING-NEGOCIOS-TURISMO/README.md)** (Marketing, Turismo)
+5.  **[05-INVESTIGACION-ACADEMICA](./05-INVESTIGACION-ACADEMICA/README.md)** (Posgrado, Investigadores)
 
 ---
 
-## Principios de Diseño
+## Gestión del Curso
 
-### 1. Sin Duplicación
+### 👨‍🏫 Para Instructores
 
-- Contenido compartido vive en `/COMPARTIDO/components/`
-- Tracks referencian, no copian
-- Actualizar una vez beneficia a todos
+Todo el material de planificación, guías diarias y recursos para el docente se encuentran en:
 
-### 2. Modularidad
+- **[Carpeta de Docentes](./docentes/)**
+- [Guía del Instructor](./docentes/INSTRUCTOR-README.md)
 
-- Cada módulo es independiente
-- Referencias claras entre módulos
-- Fácil de actualizar y mantener
+### 📈 Estado y Documentación
 
-### 3. Reutilización
-
-- Componentes compartidos
-- Ejercicios adaptables
-- Plantillas configurables
-
-### 4. Escalabilidad
-
-- Agregar nuevos tracks es simple
-- Agregar módulos a tracks existentes es fácil
-- Mantener calidad consistente
+- [Reporte de Status](./documentacion/STATUS.md)
+- [Guía de Estilo de Diagramas](../../../../_compartido/02-estandares-y-calidad/DIAGRAM-STYLE-GUIDE.md)
 
 ---
 
-## Cómo Usar Este Repositorio
-
-### Para Estudiantes
-
-**Semana 1**:
-
-1. Ir a [`00-FUNDAMENTOS`](./00-FUNDAMENTOS/README.md)
-2. Completar módulos 01-06 en orden
-3. Verificar que OpenCode funciona correctamente
-
-**Semana 2**:
-
-1. Elegir tu track según tu carrera
-2. Completar módulos especializados
-3. Realizar proyecto final del track
-
-### Para Instructores
-
-**Preparación**:
-
-1. Revisar [`00-FUNDAMENTOS`](./00-FUNDAMENTOS/README.md)
-2. Familiarizarse con [`SHARED/components`](./COMPARTIDO/components/)
-3. Revisar el track específico que enseñarás
-
-**Durante el Curso**:
-
-- Semana 1: Enseñar Core Foundation a todos
-- Semana 2: Dividir por tracks, enseñar especialización
-
-### Para Mantenedores
-
-**Actualizar Contenido Compartido**:
-
-1. Editar en `/COMPARTIDO/components/`
-2. Verificar que todos los tracks se beneficien
-3. Probar enlaces desde diferentes tracks
-
-**Agregar Nuevo Track**:
-
-1. Copiar estructura de track existente
-2. Referenciar componentes de `/COMPARTIDO/`
-3. Agregar módulos especializados
-4. Documentar MCPs específicos
-
----
-
-## Estructura de Archivos
+## Estructura de Archivos (Simplificada)
 
 ```
 FPUNA-2026/
-├── README.md                          # Este archivo
-├── 00-FUNDAMENTOS/                # Universal (todos)
-│   ├── modules/                       # 6 módulos
-│   └── shared-resources/              # Recursos del core
-├── SHARED/                            # Componentes reutilizables
-│   ├── components/                    # Guías compartidas
-│   ├── exercises/                     # Ejercicios comunes
-│   └── quizzes/                       # Evaluaciones
-├── instructor/                        # Guías para docentes
-├── students/                          # Guías para estudiantes
-├── planning/                          # Planes de trabajo
-├── reports/                           # Reportes de avance
-├── documentacion/                     # Documentación general
-├── 01-DESARROLLO-SOFTWARE/            # Track 1: Software Development
-├── 02-ELECTRONICA-AUTOMATIZACION/     # Track 2: Electronics & Automation
-├── 03-INGENIERIA-AERONAUTICA/         # Track 3: Aeronautical Engineering
-├── 04-MARKETING-NEGOCIOS-TURISMO/     # Track 4: Marketing, Business & Tourism
-└── 05-INVESTIGACION/         # Track 5: Research & Academia
+├── 00-FUNDAMENTOS/           # Universal
+├── 01-05 Tracks/              # Especializaciones
+├── docentes/                  # Planificación y Guías (NUEVO)
+├── documentacion/             # Status y Reportes
+└── students/                  # Recursos específicos para alumnos
 ```
 
 ---
 
 ## Soporte
 
-**Preguntas Generales**: cursos-verano@fpuna.edu.py  
 **Soporte Técnico**: soporte-ia@fpuna.edu.py  
-**Slack Workspace**: fpuna-verano-2026.slack.com
-
----
-
-## Contribuir
-
-Para agregar contenido o corregir errores:
-
-1. Identificar si es contenido compartido o específico de track
-2. Editar archivo correspondiente
-3. Probar que los enlaces funcionen
-4. Enviar pull request
-
----
-
-## Licencia
+**Slack Workspace**: [fpuna-verano-2026.slack.com](https://fpuna-verano-2026.slack.com)
 
 © 2026 FPUNA - Material educativo para uso interno

@@ -83,7 +83,7 @@ Instead of separate courses with duplicated content, we have:
    - 02-ELECTRONICA-AUTOMATIZACION/ ✅
    - 03-INGENIERIA-AERONAUTICA/ ✅
    - 04-MARKETING-NEGOCIOS-TURISMO/ ✅ (merged Marketing + Hospitalidad)
-   - 05-INVESTIGACION/ ✅
+   - 05-INVESTIGACION-ACADEMICA/ ✅
 
 6. **Daily Instructor Scripts**
    - dias/ folder with 6 day plans
@@ -152,7 +152,7 @@ Tasks:
 ### Phase 4: Medium-Priority Tracks (Week 6) ✅ COMPLETE
 
 **Track 3: Research & Academia** ✅
-- 05-INVESTIGACION/ complete
+- 05-INVESTIGACION-ACADEMICA/ complete
 
 **Track 4: Marketing, Business & Tourism** ✅
 - 04-MARKETING-NEGOCIOS-TURISMO/ complete

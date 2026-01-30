@@ -417,18 +417,18 @@ Este track utiliza recursos del directorio compartido de FPUNA:
 
 | Recurso | Descripción | Link |
 |---------|-------------|------|
-| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../COMPARTIDO/instalacion-opencode/guide.md) |
-| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../COMPARTIDO/configuracion-mcp/README.md) |
-| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../COMPARTIDO/sistema-skills/README.md) |
-| **Seguridad en Ingeniería** | Framework de seguridad y límites de IA | [Ver guía](../COMPARTIDO/seguridad-ingenieria/README.md) |
-| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../COMPARTIDO/plantillas-proyecto/README.md) |
-| **Hooks y Reglas** | Automatización con git hooks | [Ver guía](../COMPARTIDO/hooks-reglas/README.md) |
+| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../../../../_compartido/04-utilidades-ia/configuracion-inicial/guide.md) |
+| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../../../../_compartido/04-utilidades-ia/guias-mcp/README.md) |
+| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../../../../_compartido/04-utilidades-ia/sistema-skills/README.md) |
+| **Seguridad en Ingeniería** | Framework de seguridad y límites de IA | [Ver guía](../../../../_compartido/02-estandares-y-calidad/seguridad-ingenieria/README.md) |
+| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../../../../_compartido/03-plantillas-de-contexto/README.md) |
+| **Hooks y Reglas** | Automatización con git hooks | [Ver guía](../../../../_compartido/04-utilidades-ia/hooks-reglas/README.md) |
 
 ### Antes de Empezar
 
 1. Completar [00-FUNDAMENTOS](../00-FUNDAMENTOS/README.md)
-2. Instalar OpenCode siguiendo [guía de instalación](../COMPARTIDO/instalacion-opencode/guide.md)
-3. Revisar [seguridad en hardware](../COMPARTIDO/seguridad-ingenieria/seguridad-hardware.md)
+2. Instalar OpenCode siguiendo [guía de instalación](../../../../_compartido/04-utilidades-ia/configuracion-inicial/guide.md)
+3. Revisar [seguridad en hardware](../../../../_compartido/02-estandares-y-calidad/seguridad-ingenieria/seguridad-hardware.md)
 
 ---
 
