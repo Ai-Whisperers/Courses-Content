@@ -1,79 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Grocery Paraguay</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pro | FPUNA 2026</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <h1>🛒 Catálogo Grocery Paraguay</h1>
-    <p class="header__subtitulo">Productos frescos para tu negocio</p>
-  </header>
+    <div class="glass-container">
+        <header>
+            <h1>Calculadora Pro</h1>
+            <p>Módulo 05 Demo | Lead Architect Workflow</p>
+        </header>
 
-  <main class="main">
-    <!-- Filtros -->
-    <section class="filtros">
-      <div class="filtros__grupo">
-        <label for="filtro-categoria">Categoría:</label>
-        <select id="filtro-categoria">
-          <option value="todas">Todas las categorías</option>
-          <!-- Se llenará con JavaScript -->
-        </select>
-      </div>
+        <main class="calc-card">
+            <div class="display-container">
+                <div id="prev-operation" class="prev-op"></div>
+                <div id="main-display" class="main-display">0</div>
+            </div>
 
-      <div class="filtros__grupo">
-        <label for="filtro-busqueda">Buscar:</label>
-        <input type="text" id="filtro-busqueda" placeholder="Nombre del producto...">
-      </div>
+            <div class="calculator-grid">
+                <!-- Row 1 -->
+                <button class="btn btn-action" onclick="calcUI.clear()">AC</button>
+                <button class="btn btn-action" onclick="calcUI.toggleSign()">+/-</button>
+                <button class="btn btn-action" onclick="calcUI.setOperator('%')">%</button>
+                <button class="btn btn-operator" onclick="calcUI.setOperator('/')">÷</button>
 
-      <div class="filtros__grupo filtros__grupo--checkbox">
-        <input type="checkbox" id="filtro-imagen">
-        <label for="filtro-imagen">Solo con imagen</label>
-      </div>
+                <!-- Row 2 -->
+                <button class="btn" onclick="calcUI.appendNumber('7')">7</button>
+                <button class="btn" onclick="calcUI.appendNumber('8')">8</button>
+                <button class="btn" onclick="calcUI.appendNumber('9')">9</button>
+                <button class="btn btn-operator" onclick="calcUI.setOperator('*')">×</button>
 
-      <div class="filtros__grupo">
-        <label for="filtro-orden">Ordenar:</label>
-        <select id="filtro-orden">
-          <option value="az">A - Z</option>
-          <option value="za">Z - A</option>
-        </select>
-      </div>
+                <!-- Row 3 -->
+                <button class="btn" onclick="calcUI.appendNumber('4')">4</button>
+                <button class="btn" onclick="calcUI.appendNumber('5')">5</button>
+                <button class="btn" onclick="calcUI.appendNumber('6')">6</button>
+                <button class="btn btn-operator" onclick="calcUI.setOperator('-')">−</button>
 
-      <button id="btn-limpiar" class="btn btn--secundario">Limpiar filtros</button>
-      
-      <button id="btn-vista" class="btn btn--icono" title="Cambiar vista">
-        <span id="icono-vista">▦</span>
-      </button>
-    </section>
+                <!-- Row 4 -->
+                <button class="btn" onclick="calcUI.appendNumber('1')">1</button>
+                <button class="btn" onclick="calcUI.appendNumber('2')">2</button>
+                <button class="btn" onclick="calcUI.appendNumber('3')">3</button>
+                <button class="btn btn-operator" onclick="calcUI.setOperator('+')">+</button>
 
-    <!-- Contador -->
-    <div class="contador" id="contador">
-      Mostrando <strong id="contador-actual">0</strong> de <strong id="contador-total">0</strong> productos
+                <!-- Row 5 -->
+                <button class="btn btn-zero" onclick="calcUI.appendNumber('0')">0</button>
+                <button class="btn" onclick="calcUI.appendNumber('.')">.</button>
+                <button class="btn btn-equal" onclick="calcUI.calculate()">=</button>
+            </div>
+        </main>
+
+        <section class="history-section">
+            <div class="history-header">
+                <h3>Historial</h3>
+                <button class="btn-text" onclick="calcUI.clearHistory()">Limpiar</button>
+            </div>
+            <ul id="history-list" class="history-list">
+                <!-- Injected via JS -->
+            </ul>
+        </section>
     </div>
 
-    <!-- Grid de productos -->
-    <section class="productos" id="productos-grid">
-      <!-- Se llenará con JavaScript -->
-    </section>
-
-    <!-- Estado vacío -->
-    <div class="estado-vacio" id="estado-vacio" style="display: none;">
-      <span class="estado-vacio__icono">🔍</span>
-      <p class="estado-vacio__mensaje">No se encontraron productos</p>
-      <p class="estado-vacio__sugerencia">Intenta con otros filtros</p>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Demo FPUNA 2026 - Datos: <a href="https://github.com/IvanWeissVanDerPol/grocery" target="_blank">grocery</a></p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+    <!-- Scripts -->
+    <script src="src/calculator.js"></script>
+    <script src="src/ui.js"></script>
 </body>
 </html>

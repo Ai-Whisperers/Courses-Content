@@ -1,0 +1,441 @@
+# =============================================================================
+# 📚 DOCUMENTATION RULES - REGLAS DE DOCUMENTACIÓN
+# Basado en: Google Documentation, Microsoft Docs, README best practices
+# Proyecto: FPUNA AI Education - Lead Architect Documentation Standards
+# =============================================================================
+
+meta:
+  version: "1.0.0"
+  last_updated: "2025-01-30"
+  maintainer: "FPUNA AI Education Team"
+  scope: ["documentation", "technical-writing", "communication"]
+
+# =============================================================================
+# 📖 PRINCIPIOS DE DOCUMENTACIÓN
+# =============================================================================
+
+principles:
+  # Documentation as code
+  docs_as_code:
+    description: "Documentación versionada junto al código"
+    practices:
+      - "Docs en el mismo repo que el código"
+      - "Review de docs en PRs"
+      - "CI/CD para docs (build, test, deploy)"
+      - "Markdown como formato principal"
+  
+  # Audience-aware
+  audience:
+    levels:
+      - name: "Quick Start"
+        audience: "Nuevos usuarios"
+        goal: "Up and running in 5 minutos"
+        
+      - name: "User Guide"
+        audience: "Usuarios regulares"
+        goal: "Uso efectivo del sistema"
+        
+      - name: "Developer Guide"
+        audience: "Desarrolladores"
+        goal: "Contribuir al proyecto"
+        
+      - name: "API Reference"
+        audience: "Integradores"
+        goal: "Integración técnica"
+        
+      - name: "Architecture"
+        audience: "Arquitectos, leads"
+        goal: "Entender diseño y decisiones"
+  
+  # Living documentation
+  living_docs:
+    rules:
+      - "Mantener actualizada con el código"
+      - "Eliminar docs obsoletas"
+      - "Versionar docs con releases"
+      - "Automatizar donde sea posible"
+
+# =============================================================================
+# 📄 ARCHIVOS REQUERIDOS
+# =============================================================================
+
+required_files:
+  # README.md - La cara del proyecto
+  readme:
+    required: true
+    location: "root"
+    sections:
+      - name: "Title & Badges"
+        content: ["Project name", "Build status", "Coverage", "License"]
+        
+      - name: "Description"
+        content: ["What it does", "Why it exists", "Key features"]
+        length: "2-3 párrafos"
+        
+      - name: "Quick Start"
+        content: ["Installation", "Basic usage"]
+        goal: "Usuario funcional en 5 minutos"
+        
+      - name: "Installation"
+        content: ["Requirements", "Setup steps", "Configuration"]
+        
+      - name: "Usage"
+        content: ["Common examples", "Basic workflows"]
+        
+      - name: "Features"
+        content: ["List with brief descriptions"]
+        
+      - name: "Documentation"
+        content: ["Links to full docs", "API reference"]
+        
+      - name: "Contributing"
+        content: ["How to contribute", "Link to CONTRIBUTING.md"]
+        
+      - name: "License"
+        content: ["License name", "Link to LICENSE"]
+        
+      - name: "Acknowledgments"
+        content: ["Credits", "Related projects"]
+        optional: true
+    
+    quality_checklist:
+      - "[ ] Clear, concise title"
+      - "[ ] Compelling description"
+      - "[ ] Quick start works copy-paste"
+      - "[ ] All badges functional"
+      - "[ ] Installation steps tested"
+      - "[ ] Screenshots if aplicable"
+      - "[ ] Table of contents (si largo)"
+      
+  # LICENSE
+  license:
+    required: true
+    options: ["MIT", "Apache-2.0", "GPL-3.0", "BSD-3-Clause"]
+    education: "MIT o Apache-2.0 preferidos"
+    location: "root/LICENSE"
+    
+  # CONTRIBUTING.md
+  contributing:
+    required_for: "Proyectos open source"
+    sections:
+      - "Cómo reportar bugs"
+      - "Cómo sugerir features"
+      - "Setup de desarrollo"
+      - "Style guide"
+      - "Pull request process"
+      - "Code of conduct reference"
+      
+  # CODE_OF_CONDUCT.md
+  code_of_conduct:
+    required_for: "Proyectos con múltiples contribuidores"
+    standard: "Contributor Covenant"
+    
+  # SECURITY.md
+  security:
+    required: true
+    content:
+      - "Supported versions"
+      - "How to report vulnerabilities"
+      - "Security update policy"
+      - "Known vulnerabilities"
+      
+  # CHANGELOG.md
+  changelog:
+    required: true
+    format: "Keep a Changelog"
+    sections:
+      - "Added"
+      - "Changed"
+      - "Deprecated"
+      - "Removed"
+      - "Fixed"
+      - "Security"
+    version_format: "## [1.0.0] - YYYY-MM-DD"
+
+# =============================================================================
+# 🎯 DOCUMENTACIÓN TÉCNICA
+# =============================================================================
+
+technical_docs:
+  # API Documentation
+  api_docs:
+    standard: "OpenAPI/Swagger"
+    location: "docs/api/"
+    required:
+      - "Authentication"
+      - "Endpoints list"
+      - "Request/response schemas"
+      - "Error codes"
+      - "Rate limiting"
+      - "Examples (curl, Python, JS)"
+    
+    auto_generation:
+      tool: "FastAPI native or openapi-generator"
+      from: "Code annotations"
+      ci: "Regenerate on API changes"
+    
+    maintenance:
+      - "Version with API"
+      - "Deprecate with lead time"
+      - "Migration guides for breaking changes"
+  
+  # Architecture Decision Records (ADRs)
+  adrs:
+    location: "docs/architecture/decisions/"
+    naming: "NNNN-title-with-dashes.md"
+    template: |
+      # Title
+      
+      ## Status
+      - Proposed / Accepted / Deprecated / Superseded by ADR-XXXX
+      
+      ## Context
+      What is the issue we're seeing?
+      
+      ## Decision
+      What is the change we're proposing or have agreed to implement?
+      
+      ## Consequences
+      What becomes easier or more difficult to do?
+      
+      ## Alternatives Considered
+      - Alternative 1: Why rejected
+      - Alternative 2: Why rejected
+      
+      ## References
+      - Links to relevant resources
+    
+    when_to_write:
+      - "Cambio arquitectural significativo"
+      - "Nueva dependencia principal"
+      - "Cambio de approach técnico"
+      - "Selección de tecnología"
+  
+  # Architecture Diagrams
+  diagrams:
+    tool: "Mermaid (preferred), PlantUML, Draw.io"
+    location: "docs/architecture/diagrams/"
+    types:
+      - "System context (C4 Level 1)"
+      - "Container (C4 Level 2)"
+      - "Component (C4 Level 3)"
+      - "Database schema"
+      - "Deployment"
+      - "Sequence flows"
+    
+    maintenance: "Update when architecture changes"
+  
+  # Developer Guide
+  developer_guide:
+    location: "docs/development/"
+    sections:
+      - "Getting started"
+      - "Project structure"
+      - "Development workflow"
+      - "Testing"
+      - "Debugging"
+      - "Common tasks"
+      - "Troubleshooting"
+
+# =============================================================================
+# 📝 ESTILO DE ESCRITURA
+# =============================================================================
+
+writing_style:
+  # Language
+  language:
+    primary: "Español (para FPUNA)"
+    technical: "Inglés aceptado para términos técnicos"
+    consistency: "Mantener idioma por documento"
+  
+  # Tone
+  tone:
+    professional: true
+    friendly: true
+    concise: true
+    no_jargon: "Explicar términos técnicos"
+    
+  # Structure
+  structure:
+    headings: "Title Case for headers"
+    lists: "Use bullets for unordered, numbers for sequential"
+    paragraphs: "3-5 líneas máximo"
+    sentences: "25 palabras máximo por oración"
+    
+  # Formatting
+  formatting:
+    code_blocks: "Syntax highlighting obligatorio"
+    inline_code: "Para nombres de variables, funciones, archivos"
+    bold: "Para énfasis importante"
+    italics: "Para términos nuevos o nombres de proyectos"
+    tables: "Para datos estructurados"
+    
+  # Code examples
+  code_examples:
+    complete: "Ejemplos deben funcionar copy-paste"
+    tested: "Todos los ejemplos testeados"
+    progressive: "Simple → Avanzado"
+    commented: "Explicar qué y por qué"
+    real_world: "Ejemplos prácticos, no foo/bar"
+
+# =============================================================================
+# 🔗 DOCUMENTACIÓN DE CÓDIGO
+# =============================================================================
+
+code_documentation:
+  # Docstrings
+  docstrings:
+    required_for:
+      - "Módulos públicos"
+      - "Clases públicas"
+      - "Funciones/métodos públicos"
+    
+    style: "Google (adaptado)"
+    
+    format_function: |
+      """Breve descripción de una línea.
+      
+      Descripción más larga si es necesaria. Explicar el propósito
+      y contexto de uso.
+      
+      Args:
+          param1: Descripción del parámetro
+          param2: Descripción del parámetro
+          
+      Returns:
+          Descripción del valor retornado
+          
+      Raises:
+          ErrorType: Cuándo se lanza
+          
+      Examples:
+          >>> funcion_ejemplo(1, 2)
+          3
+      """
+    
+    format_class: |
+      """Breve descripción de la clase.
+      
+      Descripción más detallada del propósito y uso.
+      
+      Attributes:
+          attr1: Descripción
+          attr2: Descripción
+          
+      Examples:
+          >>> obj = MiClase(param=1)
+          >>> obj.metodo()
+      """
+  
+  # Comments
+  comments:
+    when_to_use:
+      - "Explicar POR QUÉ, no QUÉ"
+      - "Documentar workarounds"
+      - "Referenciar issues externos"
+      - "Explicar decisiones no obvias"
+    
+    when_not_to_use:
+      - "Para decir lo obvio"
+      - "Como excusa por código confuso"
+      - "Código comentado (usar git)"
+    
+    todo_format: "TODO(autor): descripción #issue"
+    example: "TODO(maria): Optimizar query cuando tengamos índices #123"
+  
+  # Type hints
+  type_hints:
+    required: true
+    public_api: "Obligatorio"
+    internal: "Recomendado"
+    return_types: "Siempre"
+
+# =============================================================================
+# 🎓 DOCUMENTACIÓN EDUCATIVA (FPUNA)
+# =============================================================================
+
+educational_docs:
+  # Para cursos
+  course_materials:
+    structure:
+      - "README.md del curso"
+      - "syllabus.md - Programa completo"
+      - "semanas/ - Material semanal"
+      - "proyectos/ - Enunciados y rúbricas"
+      - "recursos/ - Lecturas adicionales"
+    
+    learning_objectives:
+      format: "Al finalizar, el estudiante será capaz de..."
+      measurable: true
+      per_module: true
+    
+    content_quality:
+      - "Ejemplos ejecutables"
+      - "Ejercicios progresivos"
+      - "Soluciones disponibles (para docentes)"
+      - "Recursos de apoyo"
+      - "Contexto paraguayo cuando aplique"
+  
+  # Para estudiantes
+  student_facing:
+    clarity: "Explicar términos técnicos"
+    examples: "Muchos ejemplos prácticos"
+    progression: "De simple a complejo"
+    support: "Enlaces a recursos de ayuda"
+
+# =============================================================================
+# 🚀 GENERACIÓN Y DESPLIEGUE
+# =============================================================================
+
+documentation_build:
+  # Tools
+  tools:
+    static_site: ["MkDocs", "Docusaurus", "GitBook"]
+    api_docs: ["Swagger UI", "ReDoc", "FastAPI docs"]
+    diagramming: ["Mermaid", "PlantUML"]
+    
+  # CI/CD integration
+  cicd:
+    triggers:
+      - "Cambios en docs/"
+      - "Nuevo release"
+      - "Cambios en código documentado"
+    
+    checks:
+      - "Links rotos (htmlproofer)"
+      - "Markdown linting"
+      - "Code syntax in examples"
+      - "Spell checking"
+    
+    deployment:
+      - "Staging on PR"
+      - "Production on merge to main"
+      - "Versioned docs"
+
+# =============================================================================
+# ✅ CHECKLISTS DE DOCUMENTACIÓN
+# =============================================================================
+
+checklists:
+  new_feature:
+    - "[ ] User-facing docs updated"
+    - "[ ] API docs updated"
+    - "[ ] Examples added"
+    - "[ ] Changelog updated"
+    - "[ ] ADR written (si aplica)"
+    - "[ ] README updated (si visible)"
+    
+  before_release:
+    - "[ ] All docs reviewed"
+    - "[ ] Links verified"
+    - "[ ] Screenshots updated"
+    - "[ ] Version numbers correct"
+    - "[ ] Changelog complete"
+    - "[ ] Migration guide (si breaking changes)"
+    
+  code_review_docs:
+    - "[ ] Docstrings present"
+    - "[ ] Complex logic commented"
+    - "[ ] API changes documented"
+    - "[ ] Examples work"
+    - "[ ] Clear and concise"

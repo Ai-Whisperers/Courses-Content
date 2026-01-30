@@ -228,8 +228,48 @@
     ]
   },
   "enabledMcpjsonServers": [
+    "filesystem",
     "playwright",
-    "document-analyzer"
+    "document-analyzer",
+    "duckduckgo-search",
+    "brave-search",
+    "context7",
+    "postgresql",
+    "qdrant",
+    "redis",
+    "sqlite",
+    "github",
+    "git",
+    "sequential-thinking",
+    "jupyter",
+    "fetch",
+    "notion",
+    "slack",
+    "time",
+    "memory",
+    "puppeteer"
   ],
-  "enableAllProjectMcpServers": true
+  "enableAllProjectMcpServers": true,
+  "mcpServerConfigFiles": [
+    ".claude/mcp/filesystem-server.json",
+    ".claude/mcp/playwright-server.json",
+    ".claude/mcp/document-analyzer.json",
+    ".claude/mcp/duckduckgo-search.json",
+    ".claude/mcp/brave-search.json",
+    ".claude/mcp/context7-docs.json",
+    ".claude/mcp/postgresql-server.json",
+    ".claude/mcp/qdrant-server.json",
+    ".claude/mcp/redis-server.json",
+    ".claude/mcp/sqlite-server.json",
+    ".claude/mcp/github-advanced.json",
+    ".claude/mcp/git-server.json",
+    ".claude/mcp/sequential-thinking.json",
+    ".claude/mcp/jupyter-server.json",
+    ".claude/mcp/fetch-server.json",
+    ".claude/mcp/notion-server.json",
+    ".claude/mcp/slack-server.json",
+    ".claude/mcp/time-server.json",
+    ".claude/mcp/memory-server.json",
+    ".claude/mcp/puppeteer-server.json"
+  ]
 }

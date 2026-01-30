@@ -1,115 +1,119 @@
-# Modulo 04: Ingenieria de Contexto
+# Módulo 04: Ingeniería de Contexto con OpenCode
 
-## Objetivo
-Crear archivos de contexto que permitan a OpenCode entender tu proyecto automaticamente, eliminando la necesidad de repetir instrucciones en cada prompt.
+## El Arte de la Memoria Sistémica
 
-## Configuracion Global vs Proyecto
+**Objetivo**: Transformar tu código en un ecosistema que se explica a sí mismo. Aprenderás por qué el contexto es el combustible real de la IA y cómo construir una "Memoria Maestra" que elimine el 90% de las alucinaciones y errores lógicos.
 
-| Ambito | Ubicacion | Proposito |
-|--------|-----------|-----------|
-| **Global** | `~/.opencode/` | Configuracion para TODOS tus proyectos |
-| **Proyecto** | `./` (raiz del proyecto) | Configuracion especifica de UN proyecto |
+---
 
-La configuracion de proyecto **sobrescribe** la global cuando hay conflictos.
+## ¿Por qué es Vital la Ingeniería de Contexto?
 
-## Archivo .opencode
+Sin un contexto sólido, incluso el modelo más avanzado (como Gemini 1.5 Pro o Claude 3.5) operará en un vacío informativo. Esto provoca tres problemas críticos:
 
-El archivo `.opencode` en la raiz del proyecto define configuracion tecnica:
+1.  **Amnesia Estructural**: La IA sugiere soluciones que rompen tu arquitectura actual porque no sabe que existe.
+2.  **Inconsistencia de Estilo**: Un archivo usa `camelCase`, el otro `snake_case`, y la IA mezcla ambos.
+3.  **Alucinaciones Técnicas**: Al no conocer tus dependencias reales, la IA inventa librerías o métodos que no tienes instalados.
 
-```yaml
-# .opencode
-model: claude-3-opus
-temperature: 0.3
-context_files:
-  - CLAUDE.md
-  - README.md
-ignore:
-  - node_modules/
-  - .git/
-  - "*.log"
-```
+> **La Regla de Oro**: La inteligencia de la IA es directamente proporcional a la calidad del contexto que le proporcionas. Una IA con buen contexto es un **Socio Senior**; sin contexto, es un **Becario entusiasta pero peligroso**.
 
-## Archivo CLAUDE.md (Principal)
+---
 
-Este es el archivo mas importante. OpenCode lo lee automaticamente al iniciar sesion en tu proyecto.
+## El Ecosistema de Memoria en OpenCode
 
-### Template Completo
+OpenCode utiliza un sistema de capas para absorber la realidad de tu proyecto:
+
+| Nivel de Contexto | Ubicación Técnica         | Impacto en el Razonamiento                                            |
+| :---------------- | :------------------------ | :-------------------------------------------------------------------- |
+| **Global**        | `~/.opencode/config.json` | Define la "personalidad" base y el lenguaje del agente.               |
+| **Técnico**       | `.opencode` (Config)      | Controla el "Hardware Mental" (modelo, temperatura, archivos a leer). |
+| **Operativo**     | `CLAUDE.md`               | Es la "Constitución" del proyecto: reglas, comandos y estándares.     |
+
+---
+
+## Estrategias para un Contexto Elite
+
+Para que OpenCode trabaje al nivel de un Lead Architect, aplica estas estrategias:
+
+### 1. La Constitución del Proyecto (`CLAUDE.md`)
+
+No permitas que la IA "adivine" cómo quieres el código. Documéntalo. Un buen `CLAUDE.md` ahorra horas de correcciones.
+
+### 2. El Indexado Selectivo (`.opencode`)
+
+Usa el campo `context_files` para obligar a OpenCode a leer siempre los archivos de definición de tipos (`.ts`, `.d.ts`) o esquemas de base de datos. Si la IA conoce tus tipos, no cometerá errores de sintaxis.
+
+### 3. Nomenclatura como Documentación
+
+Si tus carpetas se llaman `src`, `tests`, `docs`, OpenCode ya sabe qué esperar. El **Contexto Implícito** (buena estructura) es tan poderoso como el explícito.
+
+---
+
+## Delegación: Generar tu Memoria Maestra
+
+Usa este Prompt Maestro para que OpenCode analice tu trabajo actual y se auto-imponga reglas de calidad.
+
+> **Prompt Maestro de OpenCode:**
+> "OpenCode, actúa como un **Systems Architect**. Realiza un escaneo profundo de este repositorio y detecta:
+>
+> 1. Patrones de diseño predominantes.
+> 2. Reglas de nomenclatura y estilo.
+> 3. Flujos de ejecución (build, test, deploy).
+>
+> Con esta información, redacta un `CLAUDE.md` exhaustivo que sirva como tu 'Memoria de Trabajo'. Debe ser lo suficientemente detallado para que cualquier otra IA que entre al proyecto sepa exactamente cómo comportarse para mantener la excelencia técnica. No hagas lo mínimo: incluye una sección de 'ANTIPATRONES' prohibidos en este repo."
+
+---
+
+## Master Template para CLAUDE.md (Elite)
+
+Este es el estándar que exigimos en los proyectos de FPUNA:
 
 ```markdown
-# Proyecto: [Nombre del Proyecto]
+# Memoria de Trabajo: [Nombre del Proyecto]
 
-## Descripcion
-[Breve descripcion de que hace el proyecto]
+## 🎯 Visión y Propósito
 
-## Stack Tecnologico
-- **Lenguaje**: [Python/JavaScript/etc.]
-- **Framework**: [Si aplica]
-- **Base de Datos**: [Si aplica]
+[Explica el 'PARA QUÉ' del proyecto. Ayuda a la IA a tomar decisiones de negocio.]
 
-## Estructura del Proyecto
-\`\`\`
-proyecto/
-├── src/           # Codigo fuente
-├── tests/         # Tests
-├── docs/          # Documentacion
-└── README.md
-\`\`\`
+## 🛠️ Stack Tecnológico
 
-## Convenciones de Codigo
-- Estilo: [PEP8/StandardJS/etc.]
-- Variables: [espanol/ingles]
-- Comentarios: [espanol/ingles]
+- **Runtime**: [Node v20, Python 3.11, etc.]
+- **Core**: [React, FastAPI, Express]
+- **Storage**: [PostgreSQL con Prisma, Redis]
 
-## Comandos Frecuentes
-\`\`\`bash
-npm install    # Instalar dependencias
-npm run dev    # Desarrollo
-npm test       # Tests
-\`\`\`
+## 🏗️ Guía de Arquitectura
 
-## Reglas para la IA
+[Describe cómo se conectan las piezas. Ej: Arquitectura Hexagonal, MVC, etc.]
 
-### HACER:
-- Seguir convenciones establecidas
-- Escribir tests para codigo nuevo
-- Documentar funciones publicas
+- `src/domain`: Lógica pura de negocio.
+- `src/infra`: Implementaciones de DB y APIs externas.
 
-### NO HACER:
-- Modificar archivos de config sin preguntar
-- Instalar dependencias sin explicar
-- Exponer credenciales
+## 📜 Reglas de Oro (HACER / EVITAR)
+
+- ✅ USAR: Typescript estricto y validación con Zod.
+- ✅ ESCRIBIR: Comentarios en JSDoc para funciones públicas.
+- ❌ EVITAR: El uso de 'any' y lógica de DB en los controladores.
+
+## 🚀 Comandos Críticos
+
+- `npm run dev`: Inicia el entorno de desarrollo.
+- `npm test`: Ejecuta la suite de Jest.
+- `opencode status`: Verifica la salud del agente IA.
 ```
 
-## Verificacion
+---
 
-Prueba que tu contexto funciona:
+## Verificación de Integridad
+
+Una vez que tu contexto esté listo, desafía a OpenCode:
 
 ```bash
-cd mi-proyecto
-opencode "Describe la estructura de este proyecto"
+opencode "Analiza nuestro archivo de autenticación. ¿Cumple con las 'Reglas de Oro' definidas en nuestro CLAUDE.md? Si no, propón la refactorización necesaria."
 ```
 
-Si OpenCode describe correctamente tu proyecto sin que le expliques nada, el contexto esta funcionando.
+Si la IA detecta infracciones basándose en tu documentación, **has logrado Ingeniería de Contexto de nivel profesional.**
 
-## Quiz
+---
 
-1. **¿Cual es la diferencia entre configuracion global y de proyecto?**
-   <details>
-   <summary>Ver respuesta</summary>
-   Global (~/.opencode/) aplica a todos los proyectos. Proyecto (./) aplica solo al proyecto actual y sobrescribe la global.
-   </details>
+## Próximo Paso: El Desafío Final
 
-2. **¿Que archivo lee OpenCode automaticamente al entrar a un proyecto?**
-   <details>
-   <summary>Ver respuesta</summary>
-   CLAUDE.md en la raiz del proyecto.
-   </details>
-
-3. **¿Por que es importante definir "NO HACER" en CLAUDE.md?**
-   <details>
-   <summary>Ver respuesta</summary>
-   Para prevenir acciones no deseadas como modificar configs, instalar dependencias innecesarias o exponer datos sensibles.
-   </details>
-
-## Siguiente Modulo
-[Modulo 05: Proyecto en Vivo](./05-proyecto-en-vivo.md)
+[Módulo 05: Proyecto en Vivo](./05-proyecto-en-vivo.md)

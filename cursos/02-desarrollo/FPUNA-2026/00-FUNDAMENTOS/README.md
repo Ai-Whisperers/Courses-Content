@@ -108,11 +108,11 @@ Este track utiliza recursos del directorio compartido:
 
 | Recurso | Ubicacion | Descripcion |
 |---------|-----------|-------------|
-| **Instalacion OpenCode** | `COMPARTIDO/instalacion-opencode/` | Guias por SO (Windows/Mac/Linux) + FAQ |
-| **Configuracion MCP** | `COMPARTIDO/configuracion-mcp/` | Setup de MCPs |
-| **Sistema de Skills** | `COMPARTIDO/sistema-skills/` | Como crear y usar skills |
-| **Hooks y Reglas** | `COMPARTIDO/hooks-reglas/` | Best practices |
-| **Plantillas Proyecto** | `COMPARTIDO/plantillas-proyecto/` | Templates basico y completo |
+| **Instalacion OpenCode** | `../../../../_compartido/04-utilidades-ia/configuracion-inicial/` | Guias por SO (Windows/Mac/Linux) + FAQ |
+| **Configuracion MCP** | `../../../../_compartido/04-utilidades-ia/guias-mcp/` | Setup de MCPs |
+| **Sistema de Skills** | `../../../../_compartido/04-utilidades-ia/sistema-skills/` | Como crear y usar skills |
+| **Hooks y Reglas** | `../../../../_compartido/04-utilidades-ia/hooks-reglas/` | Best practices |
+| **Plantillas Proyecto** | `../../../../_compartido/03-plantillas-de-contexto/` | Templates basico y completo |
 
 ---
 

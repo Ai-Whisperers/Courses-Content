@@ -1,100 +1,80 @@
-# Modulo 05: Proyecto en Vivo
+# Módulo 05: Proyecto en Vivo (Calculadora Pro)
 
-## Objetivo
-Observar al instructor crear una aplicacion completa desde cero usando OpenCode, aplicando todos los conceptos de los modulos anteriores en un workflow real.
+## Objetivo: El Workflow del Maestro
 
-> **Demo Completo**: Revisa el ejemplo terminado en [`./live-demo-proyecto/`](./live-demo-proyecto/) - incluye el codigo fuente, todos los prompts usados, y documentacion para replicar el proceso.
+**Objetivo**: Observar en tiempo real cómo un **Lead Architect** utiliza **OpenCode** para construir una herramienta funcional desde cero, aplicando delegación estratégica, ingeniería de contexto y refinamiento iterativo.
 
-## El Proyecto: Catalogo de Productos Grocery
+---
 
-Una aplicacion web de catalogo de productos usando datos reales del repositorio [grocery](https://github.com/IvanWeissVanDerPol/grocery).
+## El Proyecto: Calculadora Pro (Elite Edition)
 
-### Caracteristicas
-- Grid/Lista de productos con imagenes
-- Filtros por categoria, busqueda de texto, productos con imagen
-- Ordenamiento alfabetico (A-Z / Z-A)
-- Toggle vista grid/lista con persistencia en LocalStorage
-- Contador de productos y estado vacio
+Construiremos una calculadora que no solo sume y reste, sino que demuestre una arquitectura de software impecable y una interfaz de usuario digna de una startup de Silicon Valley.
 
-## Fases del Demo
+### Características de Elite
+
+- **Motor Matemático Robusto**: Operaciones básicas y avanzadas con manejo de precisión decimal.
+- **Historial Dinámico**: Registro persistente de operaciones previas con capacidad de recuperación.
+- **Interfaz Premium**: Diseño minimalista, uso de gradientes y micro-interacciones fluidas.
+- **QA Automatizado**: La IA generará y ejecutará sus propios tests unitarios para garantizar "cero errores".
+- **Diseño Responsive**: Adaptación perfecta a cualquier tamaño de pantalla.
+
+---
+
+## Fases del Workflow Autónomo
 
 ```mermaid
 graph LR
-    A[Setup] --> B[Contexto]
-    B --> C[HTML]
-    C --> D[JavaScript]
-    D --> E[CSS]
-    E --> F[Testing]
-    F --> G[Refinamiento]
+    A[Setup & Contexto] --> B[Arquitectura de Datos]
+    B --> C[Core de Lógica]
+    C --> D[Interfaz Premium]
+    D --> E[QA Automatizado]
+    E --> F[Refinamiento Maestro]
 ```
 
-### Fase 1: Setup (5 min)
-- Crear carpeta del proyecto
-- Crear CLAUDE.md con especificaciones del catalogo
+### Fase 1: Constitución (5 min)
 
-### Fase 2: Datos (5 min)
-- Extraer productos del repositorio grocery a JSON
-- Crear data.js con array de productos
+- Creación del repo y `.opencode`.
+- **Delegación**: Prompt Maestro para generar el `CLAUDE.md` basado en los requerimientos de la Calculadora Pro.
 
-### Fase 3: Estructura HTML (10 min)
-- Header con titulo
-- Seccion de filtros (categoria, busqueda, checkbox, ordenamiento)
-- Grid de productos
-- Footer con creditos
+### Fase 2: El Cerebro (10 min)
 
-### Fase 4: Estilos CSS (15 min)
-- Variables CSS para colores y espaciado
-- Layout responsive con Grid
-- Cards de producto con hover effects
-- Vista grid y lista
+- Implementación de la lógica modular (separación de la lógica de procesamiento y visualización).
+- **Lead Architect Style**: Estructura de código limpia y extensible.
 
-### Fase 5: Logica JavaScript (15 min)
-- Funciones de filtrado y ordenamiento
-- Renderizado dinamico de productos
-- Event listeners para controles
-- Persistencia de preferencias
+### Fase 3: La Piel (15 min)
 
-### Fase 6: Testing (5 min)
-- Probar todos los filtros
-- Verificar responsive design
-- Documentar prompts usados
+- Estructura HTML semántica y CSS moderno (Variables, Flexbox/Grid).
+- Aplicación de estilos de alta gama (Modo Oscuro/Claro automático).
 
-## Que Observar (Checklist)
+### Fase 4: Blindaje Técnico y QA (10 min)
 
-Durante el demo, presta atencion a:
+- **Suite de Tests**: Creación de pruebas unitarias automáticas hechas por la IA.
+- **Auto-Corrección**: El agente prueba su propio código y corrige fallos de lógica inmediatamente.
 
-- [ ] Como el instructor estructura los prompts (marco CERO)
-- [ ] Como usa CLAUDE.md para dar contexto
-- [ ] Como divide tareas grandes en pasos pequenos
-- [ ] Como reacciona cuando algo no funciona
-- [ ] Como itera y refina el codigo
-- [ ] Como documenta al final
+### Fase 5: Testing Live y Refinamiento (5 min)
 
-## Preguntas para Reflexionar
+- **Prueba en Vivo**: Ejecución de la app y refinamiento estético final.
+- _"OpenCode, haz que los botones tengan una animación de pulsación más orgánica y revisa el contraste."_
 
-1. ¿Cuantas iteraciones fueron necesarias para cada feature?
-2. ¿Que prompts funcionaron mejor y por que?
-3. ¿Como hubiera sido diferente sin los archivos de contexto?
+---
 
-## Quiz
+## El Checklist del Observador
 
-1. **¿Por que es importante observar el proceso completo y no solo el resultado?**
-   <details>
-   <summary>Ver respuesta</summary>
-   Porque el valor esta en aprender el workflow: como estructurar prompts, manejar errores, e iterar. El resultado final es secundario.
-   </details>
+Durante el demo, no mires el código, mira la **estrategia**:
 
-2. **¿Que hacer cuando OpenCode genera codigo que no funciona?**
-   <details>
-   <summary>Ver respuesta</summary>
-   Identificar el error especifico, describir el problema en un nuevo prompt, y pedir correccion. No empezar de cero.
-   </details>
+- [ ] **Observa el Nivel de Delegación**: ¿El instructor pide "botones" o pide "un sistema de captura de datos"?
+- [ ] **Uso de la Memoria**: ¿Cómo utiliza el agente el `CLAUDE.md` para no perder el rumbo?
+- [ ] **Resolución de Conflictos**: Cuando hay un bug, ¿cómo se lo comunica a la IA para que ella lo resuelva?
+- [ ] **Iteración de Excelencia**: ¿En qué momento el instructor dice "esto no es lo suficientemente pro, mejóralo"?
 
-3. **¿Por que se divide el proyecto en fases?**
-   <details>
-   <summary>Ver respuesta</summary>
-   Para reducir complejidad, verificar cada parte antes de continuar, y facilitar debugging si algo falla.
-   </details>
+---
 
-## Siguiente Modulo
-[Modulo 06: Patrones de Flujo de Trabajo](./06-patrones-flujo-trabajo.md)
+## El Resultado Esperado
+
+Al finalizar este demo, verás que el código es una **consecuencia** de una buena comunicación. No hemos escrito una sola línea manual; hemos **orquestado** la creación de una aplicación profesional.
+
+---
+
+## Siguiente Fase: Patrones de Dominio
+
+[Módulo 06: Patrones de Flujo de Trabajo](./06-patrones-flujo-trabajo.md)

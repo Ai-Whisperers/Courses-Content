@@ -40,8 +40,8 @@ cursos/02-desarrollo/FPUNA-2026/04-MARKETING-NEGOCIOS-TURISMO/
 ```bash
 # Entorno de marketing IA
 npm install oh-my-opencode @modelcontextprotocol/server-playwright
-cp ../../_compartido/04-utilidades-ia/.aiignore ./
-cp ../../_compartido/01-configuracion-herramientas/claude/.claude/MKT .claude/
+cp ../../../../_compartido/04-utilidades-ia/.aiignore ./
+cp ../../../../_compartido/01-configuracion-herramientas/claude/.claude/MKT .claude/
 
 # Configuración local Paraguay
 export TZ="America/Asuncion"

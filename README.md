@@ -1,68 +1,86 @@
-# AI Whisperers - Contenido de Cursos
+# FPUNA AI Education Repository
+# Configuraciones específicas para estudiantes FPUNA
 
-Cursos de formación profesional para el desarrollo aumentado por IA.
-
----
-
-## Cursos
-
-| Curso                                                                                  | Estado         | Descripción                          |
-| -------------------------------------------------------------------------------------- | -------------- | ------------------------------------ |
-| [QA Automation with AI](./cursos/01-produccion/QA-Automation-with-AI/)                 | **Producción** | 12 módulos, completo con ejercicios  |
-| [FPUNA 2026](./cursos/02-desarrollo/FPUNA-2026/)                                       | Desarrollo     | Programa universitario para Paraguay |
-| [Prompt Engineering Masterclass](./cursos/03-beta/Prompt-Engineering-Masterclass/)     | Beta           | 6 módulos sobre prompting efectivo   |
-| [Building AI-Powered Applications](./cursos/03-beta/Building-AI-Powered-Applications/) | Beta           | Desarrollo de apps Full-stack con IA |
-| [AI Tools for Productivity](./cursos/03-beta/AI-Tools-for-Productivity/)               | Beta           | Flujos de trabajo productivos con IA |
-
-**Producción** = Listo para estudiantes | **Beta** = Necesita pruebas | **Desarrollo** = Trabajo activo
-
----
-
-## Inicio Rápido
-
-**¿Nuevo aquí?** Mira [GETTING-STARTED.md](./GETTING-STARTED.md) para instrucciones de configuración.
-
-**Estudiantes**: Empiecen con [QA Automation with AI](./cursos/01-produccion/QA-Automation-with-AI/) - está listo para producción.
-
-**Instructores**: Cada curso tiene un README con el resumen del plan de estudios y notas para instructores.
-
-**Guía de Talleres**: Para materiales de apoyo y guías de clase, consulta los [Talleres de Verano](./cursos/talleres/verano-2026/).
-
----
+## Proveedores de IA Soportados
+- **claude/**: Claude 3.5 Sonnet - Configuración principal académica
+- **cursor/**: Cursor IDE con configuraciones FPUNA
+- **copilot/**: GitHub Copilot - Configuraciones GitHub
+- **gemini/**: Google Gemini - Configuraciones alternativas
+- **windsurf/**: Windsurf IDE - Configuración nueva
+- **shared/**: Recursos compartidos entre proveedores
 
 ## Estructura del Repositorio
+Cada carpeta de proveedor contiene configuración standalone que puede ser copiada individualmente (setup en ~4 minutos).
 
+## Inteligencia Cultural Paraguaya
+- Integración PyNN (red neuronal Paraguaya)
+- Consideraciones IVA MERCOSUR
+- Contexto regional de comercio y desarrollo
+- Recursos educativos adaptados a realidad paraguaya
+
+## Estándares Académicos
+- Cobertura de tests: 75% mínimo
+- Conventional commits adaptados a academia
+- Documentación en español/paraguayo
+- Integración con plataformas educativas locales
+
+## Comandos Rápidos
+
+### Para estudiantes nuevos
+```bash
+# Copiar configuración completa para proveedor preferido
+cp -r claude/ ~/mi-carpeta-fpuna/
+cp -r claude/.claude/ ~/  # Hooks MCP importantes
+
+# Ejecutar setup
+cd ~/mi-carpeta-fpuna/
+./setup-fpuna.sh
 ```
-cursos/
-├── 01-produccion/           # Listo para estudiantes
-│   └── QA-Automation-with-AI/
-├── 02-desarrollo/           # Trabajo activo
-│   └── FPUNA-2026/
-├── 03-beta/                 # Necesita pruebas
-│   ├── Prompt-Engineering-Masterclass/
-│   ├── Building-AI-Powered-Applications/
-│   └── AI-Tools-for-Productivity/
-└── talleres/                # Talleres y Workshops
-    └── verano-2026/
 
-_compartido/                 # Configs y plantillas compartidas
-scripts/                     # Utilidad de chequeo de links
+### Para docentes/instructores
+```bash
+# Verificar estado del repositorio
+./check-repository-status.sh
+
+# Actualizar todas las configuraciones
+./update-all-providers.sh
 ```
 
----
+## Configuración por Proveedor
 
-## Estado
+### Claude (Recomendado)
+```yaml
+academic_standards:
+  test_coverage: 75%
+  documentation: spanish
+  cultural_context: paraguay
+  
+mcp_servers:
+  - github
+  - filesystem
+  - playwright
+  
+intelligence_sources:
+  - pynn_feeds
+  - mercosur_trade_data
+  - regional_economic_forecasts
+```
 
-Ver [STATUS.md](./STATUS.md) para detalles de completitud.
+### Cursor
+```yaml
+integrations:
+  - github
+  - linear
+  - slack
+  
+academic_focus:
+  - test_driven_development
+  - documentation_first
+  - pair_programming
+```
 
----
-
-## Contribuir
-
-Ver [CONTRIBUTING.md](./CONTRIBUTING.md).
-
----
-
-## Licencia
-
-MIT - Ver [LICENSE](./LICENSE)
+### Shared Resources
+- MCP servers comunes
+- .aiignore patterns
+- Estándares de calidad
+- Discursos regionales para prompting
