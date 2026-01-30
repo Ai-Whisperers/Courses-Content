@@ -1,152 +1,152 @@
-# Module 03: Test Architecture & Organization
+# Módulo 03: Arquitectura de Pruebas y Organización
 
-## Overview
+## Resumen General
 
-Building scalable, maintainable test automation frameworks requires solid architectural foundations. This module teaches you how to design and implement professional test architectures using proven patterns like Page Object Model, custom fixtures, and reusable utilities.
+Construir frameworks de automatización de pruebas escalables y mantenibles requiere bases arquitectónicas sólidas. Este módulo te enseña a diseñar e implementar arquitecturas de pruebas profesionales usando patrones probados como Page Object Model, fixtures personalizadas y utilidades reutilizables.
 
-**Duration**: 4 hours  
-**Level**: Intermediate  
-**Prerequisites**: Modules 01 and 02 completed
-
----
-
-## Learning Objectives
-
-By the end of this module, you will be able to:
-
-1. Implement Page Object Model (POM) pattern for web testing
-2. Create custom fixtures and helper functions for reusability
-3. Design effective test data management strategies
-4. Configure multi-environment test execution
-5. Organize test files and directories for scalability
-6. Apply SOLID principles to test automation code
+**Duración**: 4 horas  
+**Nivel**: Intermedio  
+**Prerrequisitos**: Módulos 01 y 02 completados
 
 ---
 
-## Why Test Architecture Matters
+## Objetivos de Aprendizaje
 
-### Poor Architecture Problems
+Al finalizar este módulo, serás capaz de:
+
+1. Implementar el patrón Page Object Model (POM) para pruebas web
+2. Crear fixtures personalizadas y funciones helper para reutilización
+3. Diseñar estrategias efectivas de gestión de datos de prueba
+4. Configurar ejecución de pruebas en múltiples ambientes
+5. Organizar archivos y directorios de pruebas para escalabilidad
+6. Aplicar principios SOLID al código de automatización de pruebas
+
+---
+
+## Por Qué Importa la Arquitectura de Pruebas
+
+### Problemas de Mala Arquitectura
 
 ```
-❌ Duplicated code across tests
-❌ Hard to maintain when UI changes
-❌ Brittle tests that break easily
-❌ Slow test execution
-❌ Difficult to onboard new team members
-❌ No clear structure or conventions
+❌ Código duplicado entre pruebas
+❌ Difícil de mantener cuando cambia la UI
+❌ Pruebas frágiles que se rompen fácilmente
+❌ Ejecución lenta de pruebas
+❌ Difícil incorporar nuevos miembros al equipo
+❌ Sin estructura o convenciones claras
 ```
 
-### Good Architecture Benefits
+### Beneficios de Buena Arquitectura
 
 ```
-✅ DRY (Don't Repeat Yourself) code
-✅ Changes in one place affect all tests
-✅ Resilient tests that adapt to changes
-✅ Fast, parallelizable execution
-✅ Easy onboarding with clear patterns
-✅ Professional, production-ready codebase
+✅ Código DRY (Don't Repeat Yourself - No te repitas)
+✅ Cambios en un lugar afectan todas las pruebas
+✅ Pruebas resilientes que se adaptan a cambios
+✅ Ejecución rápida y paralelizable
+✅ Fácil incorporación con patrones claros
+✅ Código base profesional y listo para producción
 ```
 
-### Real-World Impact
+### Impacto en el Mundo Real
 
-| Metric | Poor Architecture | Good Architecture |
-|--------|-------------------|-------------------|
-| **Test Maintenance Time** | 40% of QA time | 10% of QA time |
-| **New Test Creation** | 2-4 hours | 30 minutes |
-| **UI Change Impact** | 50+ files to update | 1-2 files to update |
-| **Onboarding Time** | 2-3 weeks | 3-5 days |
-| **Test Stability** | 60-70% pass rate | 95%+ pass rate |
-
----
-
-## Module Structure
-
-This module is divided into 5 comprehensive sections:
-
-### [01 - Page Object Model](./tutorials/01_Page_Object_Model.md)
-**Duration**: 60 minutes
-
-Learn the industry-standard pattern for organizing UI test code:
-- What is Page Object Model and why use it
-- Implementing Page Objects in Playwright
-- Component Object pattern for reusable UI elements
-- Advanced POM patterns (inheritance, composition)
-- Real-world examples from e-commerce applications
-
-**Key Concepts**: Encapsulation, separation of concerns, reusability
+| Métrica | Mala Arquitectura | Buena Arquitectura |
+|---------|-------------------|-------------------|
+| **Tiempo de Mantenimiento de Pruebas** | 40% del tiempo de QA | 10% del tiempo de QA |
+| **Creación de Nueva Prueba** | 2-4 horas | 30 minutos |
+| **Impacto de Cambio en UI** | 50+ archivos por actualizar | 1-2 archivos por actualizar |
+| **Tiempo de Incorporación** | 2-3 semanas | 3-5 días |
+| **Estabilidad de Pruebas** | 60-70% tasa de éxito | 95%+ tasa de éxito |
 
 ---
 
-### [02 - Custom Fixtures and Helpers](./tutorials/02_Custom_Fixtures_Helpers.md)
-**Duration**: 45 minutes
+## Estructura del Módulo
 
-Master Playwright's fixture system and create powerful test utilities:
-- Understanding Playwright fixtures
-- Creating custom fixtures for authentication, data, and more
-- Test helper functions and utilities
-- Fixture composition and dependencies
-- Scoping and lifecycle management
+Este módulo está dividido en 5 secciones completas:
 
-**Key Concepts**: DRY principle, test setup/teardown, shared context
+### [01 - Page Object Model](./tutorials/01-modelo-objeto-pagina.md)
+**Duración**: 60 minutos
 
-**📖 Tutorial**: [02_Custom_Fixtures_Helpers.md](./tutorials/02_Custom_Fixtures_Helpers.md)  
-**🤖 OpenCode Prompt**: [01_CustomFixtures_Prompt.md](./examples/01_CustomFixtures_Prompt.md)
+Aprende el patrón estándar de la industria para organizar código de pruebas UI:
+- Qué es Page Object Model y por qué usarlo
+- Implementando Page Objects en Playwright
+- Patrón Component Object para elementos UI reutilizables
+- Patrones avanzados de POM (herencia, composición)
+- Ejemplos del mundo real de aplicaciones e-commerce
 
----
-
-### [03 - Test Data Management](./tutorials/03_Test_Data_Management.md)
-**Duration**: 45 minutes
-
-Design strategies for managing test data effectively:
-- Test data generation vs. static fixtures
-- Database seeding and cleanup
-- Factory pattern for test data
-- Faker.js integration for realistic data
-- Data isolation between tests
-
-**Key Concepts**: Test independence, data factories, seeding strategies
-
-**📖 Tutorial**: [03_Test_Data_Management.md](./tutorials/03_Test_Data_Management.md)  
-**🤖 OpenCode Prompt**: [02_TestDataGeneration_Prompt.md](./examples/02_TestDataGeneration_Prompt.md)
+**Conceptos Clave**: Encapsulación, separación de responsabilidades, reusabilidad
 
 ---
 
-### [04 - Multi-Environment Configuration](./tutorials/04_Multi_Environment_Config.md)
-**Duration**: 45 minutes
+### [02 - Fixtures y Helpers Personalizados](./tutorials/02-fixtures-personalizadas.md)
+**Duración**: 45 minutos
 
-Configure tests to run across different environments:
-- Environment-specific configurations
-- Managing credentials and secrets
-- Dynamic base URL and API endpoints
-- Feature flags and conditional testing
-- Local vs. CI vs. production environments
+Domina el sistema de fixtures de Playwright y crea utilidades de prueba poderosas:
+- Entendiendo los fixtures de Playwright
+- Creando fixtures personalizadas para autenticación, datos y más
+- Funciones helper y utilidades de prueba
+- Composición de fixtures y dependencias
+- Manejo de alcance y ciclo de vida
 
-**Key Concepts**: Environment abstraction, configuration management, security
+**Conceptos Clave**: Principio DRY, setup/teardown de pruebas, contexto compartido
 
-**📖 Tutorial**: [04_Multi_Environment_Config.md](./tutorials/04_Multi_Environment_Config.md)  
-**🤖 OpenCode Prompt**: [03_EnvironmentConfig_Prompt.md](./examples/03_EnvironmentConfig_Prompt.md)
-
----
-
-### [05 - Parallelization & Performance](./tutorials/05_Parallelization_Performance.md)
-**Duration**: 45 minutes
-
-Optimize test execution speed with parallelization:
-- Understanding test parallelization in Playwright
-- Worker configuration and management
-- Test isolation and data independence
-- Sharding strategies for CI/CD
-- Performance optimization techniques
-
-**Key Concepts**: Concurrency, performance, scalability
+**📖 Tutorial**: [02-fixtures-personalizadas.md](./tutorials/02-fixtures-personalizadas.md)  
+**🤖 Prompt de OpenCode**: [01-prompt-fixtures.md](./examples/01-prompt-fixtures.md)
 
 ---
 
-## What You'll Build
+### [03 - Gestión de Datos de Prueba](./tutorials/03-gestion-datos-prueba.md)
+**Duración**: 45 minutos
 
-Throughout this module, you'll build a **production-ready test framework** for an e-commerce application with:
+Diseña estrategias para gestionar datos de prueba efectivamente:
+- Generación de datos de prueba vs. fixtures estáticos
+- Seeding y limpieza de base de datos
+- Patrón Factory para datos de prueba
+- Integración de Faker.js para datos realistas
+- Aislamiento de datos entre pruebas
 
-### Project Structure
+**Conceptos Clave**: Independencia de pruebas, data factories, estrategias de seeding
+
+**📖 Tutorial**: [03-gestion-datos-prueba.md](./tutorials/03-gestion-datos-prueba.md)  
+**🤖 Prompt de OpenCode**: [02-prompt-generacion-datos.md](./examples/02-prompt-generacion-datos.md)
+
+---
+
+### [04 - Configuración Multi-Ambiente](./tutorials/04-configuracion-multi-ambiente.md)
+**Duración**: 45 minutos
+
+Configura pruebas para ejecutarse en diferentes ambientes:
+- Configuraciones específicas por ambiente
+- Gestión de credenciales y secretos
+- URL base y endpoints de API dinámicos
+- Feature flags y pruebas condicionales
+- Ambientes local vs. CI vs. producción
+
+**Conceptos Clave**: Abstracción de ambiente, gestión de configuración, seguridad
+
+**📖 Tutorial**: [04-configuracion-multi-ambiente.md](./tutorials/04-configuracion-multi-ambiente.md)  
+**🤖 Prompt de OpenCode**: [03-prompt-configuracion-ambiente.md](./examples/03-prompt-configuracion-ambiente.md)
+
+---
+
+### [05 - Paralelización y Performance](./tutorials/05-paralelizacion.md)
+**Duración**: 45 minutos
+
+Optimiza la velocidad de ejecución de pruebas con paralelización:
+- Entendiendo paralelización de pruebas en Playwright
+- Configuración y manejo de workers
+- Aislamiento de pruebas e independencia de datos
+- Estrategias de sharding para CI/CD
+- Técnicas de optimización de performance
+
+**Conceptos Clave**: Concurrencia, performance, escalabilidad
+
+---
+
+## Lo Que Construirás
+
+A lo largo de este módulo, construirás un **framework de pruebas listo para producción** para una aplicación e-commerce con:
+
+### Estructura del Proyecto
 ```
 e-commerce-tests/
 ├── tests/
@@ -183,169 +183,169 @@ e-commerce-tests/
 └── README.md
 ```
 
-### Features
-- ✅ Page Object Model for all pages
-- ✅ Component Objects for reusable UI elements
-- ✅ Custom fixtures for auth and data
-- ✅ Data factories for test data generation
-- ✅ Multi-environment support (local, staging, production)
-- ✅ Comprehensive test organization
-- ✅ TypeScript throughout
-- ✅ 100+ tests demonstrating patterns
+### Características
+- ✅ Page Object Model para todas las páginas
+- ✅ Component Objects para elementos UI reutilizables
+- ✅ Fixtures personalizadas para auth y datos
+- ✅ Data factories para generación de datos de prueba
+- ✅ Soporte multi-ambiente (local, staging, producción)
+- ✅ Organización completa de pruebas
+- ✅ TypeScript en todo el proyecto
+- ✅ 100+ pruebas demostrando patrones
 
 ---
 
-## Prerequisites Check
+## Verificación de Prerrequisitos
 
-Before starting, ensure you have:
+Antes de comenzar, asegúrate de tener:
 
-### Knowledge Prerequisites
-- ✅ Completed Module 01 (Playwright Advanced)
-- ✅ Completed Module 02 (API Testing)
-- ✅ Basic understanding of TypeScript/JavaScript
-- ✅ Familiarity with async/await patterns
+### Prerrequisitos de Conocimiento
+- ✅ Módulo 01 completado (Playwright Avanzado)
+- ✅ Módulo 02 completado (API Testing)
+- ✅ Comprensión básica de TypeScript/JavaScript
+- ✅ Familiaridad con patrones async/await
 
-### Technical Prerequisites
-- ✅ Node.js v18+ installed
-- ✅ Playwright installed and configured
-- ✅ VS Code or similar editor
-- ✅ Git for version control
+### Prerrequisitos Técnicos
+- ✅ Node.js v18+ instalado
+- ✅ Playwright instalado y configurado
+- ✅ VS Code o editor similar
+- ✅ Git para control de versiones
 
-### Verify Your Setup
+### Verifica Tu Setup
 
-Run these commands to verify:
+Ejecuta estos comandos para verificar:
 
 ```bash
-# Check Node.js version
-node --version  # Should be v18 or higher
+# Verificar versión de Node.js
+node --version  # Debe ser v18 o superior
 
-# Check Playwright installation
+# Verificar instalación de Playwright
 npx playwright --version
 
-# Create new test project
+# Crear nuevo proyecto de pruebas
 npm init playwright@latest test-architecture-demo
 
-# Run sample test
+# Ejecutar prueba de ejemplo
 cd test-architecture-demo
 npx playwright test
 ```
 
 ---
 
-## Learning Approach
+## Enfoque de Aprendizaje
 
-This module uses a **build-along methodology**:
+Este módulo usa una **metodología de construcción conjunta**:
 
-1. **Learn**: Read concepts and patterns
-2. **See**: Review complete code examples
-3. **Build**: Implement the pattern yourself
-4. **Practice**: Complete exercises
-5. **Reflect**: Answer quiz questions
+1. **Aprende**: Lee conceptos y patrones
+2. **Observa**: Revisa ejemplos de código completos
+3. **Construye**: Implementa el patrón tú mismo
+4. **Practica**: Completa los ejercicios
+5. **Reflexiona**: Responde las preguntas del quiz
 
-### Recommended Pace
+### Ritmo Recomendado
 
-| Section | Reading | Coding | Total |
+| Sección | Lectura | Código | Total |
 |---------|---------|--------|-------|
-| Section 01 | 20 min | 40 min | 60 min |
-| Section 02 | 15 min | 30 min | 45 min |
-| Section 03 | 15 min | 30 min | 45 min |
-| Section 04 | 15 min | 30 min | 45 min |
-| Section 05 | 15 min | 30 min | 45 min |
+| Sección 01 | 20 min | 40 min | 60 min |
+| Sección 02 | 15 min | 30 min | 45 min |
+| Sección 03 | 15 min | 30 min | 45 min |
+| Sección 04 | 15 min | 30 min | 45 min |
+| Sección 05 | 15 min | 30 min | 45 min |
 | **Total** | **80 min** | **160 min** | **240 min (4h)** |
 
 ---
 
-## Key Takeaways
+## Aprendizajes Clave
 
-After completing this module, you'll understand:
+Después de completar este módulo, entenderás:
 
-### Design Patterns
-- **Page Object Model**: Industry-standard UI test organization
-- **Component Objects**: Reusable UI element abstractions
-- **Factory Pattern**: Dynamic test data generation
-- **Fixture Pattern**: Shared test context and setup
+### Patrones de Diseño
+- **Page Object Model**: Organización estándar de la industria para pruebas UI
+- **Component Objects**: Abstracciones reutilizables de elementos UI
+- **Factory Pattern**: Generación dinámica de datos de prueba
+- **Fixture Pattern**: Contexto compartido y setup de pruebas
 
-### Best Practices
-- **DRY Principle**: Don't repeat yourself
-- **Single Responsibility**: One class, one purpose
-- **Separation of Concerns**: Test logic vs. page logic
-- **Configuration Management**: Environment-specific settings
+### Mejores Prácticas
+- **Principio DRY**: No te repitas (Don't Repeat Yourself)
+- **Responsabilidad Única**: Una clase, un propósito
+- **Separación de Responsabilidades**: Lógica de prueba vs. lógica de página
+- **Gestión de Configuración**: Settings específicos por ambiente
 
-### Professional Skills
-- **Code Organization**: Scalable directory structures
-- **Documentation**: Clear READMEs and code comments
-- **Maintainability**: Easy to update and extend
-- **Team Collaboration**: Shared conventions and patterns
-
----
-
-## Real-World Applications
-
-These patterns are used by:
-
-### Companies
-- **Google**: Extensive use of Page Objects in Angular testing
-- **Microsoft**: Playwright's own test suite uses these patterns
-- **Netflix**: Custom fixtures for complex test scenarios
-- **Amazon**: Data factories for product testing
-
-### Open Source Projects
-- **Playwright documentation examples**: Shows POM pattern
-- **Testing Library**: Component-based testing approach
-- **Cypress Real-World App**: Full architecture example
-
-### Your Career
-- **Required for Senior QA roles**: Architecture knowledge is essential
-- **Interview Questions**: Expect questions about POM and patterns
-- **Portfolio Projects**: Demonstrate professional test organization
-- **Team Leadership**: Guide junior QAs in best practices
+### Habilidades Profesionales
+- **Organización de Código**: Estructuras de directorios escalables
+- **Documentación**: READMEs claros y comentarios de código
+- **Mantenibilidad**: Fácil de actualizar y extender
+- **Colaboración en Equipo**: Convenciones y patrones compartidos
 
 ---
 
-## Success Metrics
+## Aplicaciones del Mundo Real
 
-You'll know you've mastered this module when you can:
+Estos patrones son usados por:
 
-- [ ] Explain the benefits of Page Object Model to a colleague
-- [ ] Implement a Page Object from scratch in under 15 minutes
-- [ ] Create custom fixtures for complex test scenarios
-- [ ] Design a test data strategy for a new project
-- [ ] Configure multi-environment test execution
-- [ ] Organize a test project with 50+ test files
-- [ ] Review test code and identify architectural issues
-- [ ] Refactor brittle tests using these patterns
+### Empresas
+- **Google**: Uso extensivo de Page Objects en testing de Angular
+- **Microsoft**: El propio test suite de Playwright usa estos patrones
+- **Netflix**: Fixtures personalizadas para escenarios de prueba complejos
+- **Amazon**: Data factories para testing de productos
+
+### Proyectos Open Source
+- **Ejemplos de documentación de Playwright**: Muestra el patrón POM
+- **Testing Library**: Enfoque de testing basado en componentes
+- **Cypress Real-World App**: Ejemplo completo de arquitectura
+
+### Tu Carrera
+- **Requerido para roles Senior de QA**: Conocimiento de arquitectura es esencial
+- **Preguntas de Entrevista**: Espera preguntas sobre POM y patrones
+- **Proyectos de Portfolio**: Demuestra organización profesional de pruebas
+- **Liderazgo de Equipo**: Guía a QAs junior en mejores prácticas
 
 ---
 
-## Additional Resources
+## Métricas de Éxito
 
-### Official Documentation
+Sabrás que has dominado este módulo cuando puedas:
+
+- [ ] Explicar los beneficios de Page Object Model a un colega
+- [ ] Implementar un Page Object desde cero en menos de 15 minutos
+- [ ] Crear fixtures personalizadas para escenarios de prueba complejos
+- [ ] Diseñar una estrategia de datos de prueba para un nuevo proyecto
+- [ ] Configurar ejecución de pruebas en múltiples ambientes
+- [ ] Organizar un proyecto de pruebas con 50+ archivos de prueba
+- [ ] Revisar código de pruebas e identificar problemas arquitectónicos
+- [ ] Refactorizar pruebas frágiles usando estos patrones
+
+---
+
+## Recursos Adicionales
+
+### Documentación Oficial
 - [Playwright Best Practices](https://playwright.dev/documentacion/best-practices)
 - [Playwright Fixtures Guide](https://playwright.dev/documentacion/test-fixtures)
 - [Playwright Page Object Models](https://playwright.dev/documentacion/pom)
 
-### Community Resources
+### Recursos de la Comunidad
 - [Playwright GitHub Discussions](https://github.com/microsoft/playwright/discussions)
 - [Awesome Playwright](https://github.com/mxschmitt/awesome-playwright)
 
-### Books & Articles
+### Libros y Artículos
 - "Growing Object-Oriented Software, Guided by Tests" - Freeman & Pryce
 - "xUnit Test Patterns" - Gerard Meszaros
-- Martin Fowler's articles on testing patterns
+- Artículos de Martin Fowler sobre patrones de testing
 
 ---
 
-## Getting Started
+## Empezando
 
-Ready to build professional test architectures? Let's begin!
+¿Listo para construir arquitecturas de pruebas profesionales? ¡Comencemos!
 
-**👉 Start with [Section 01: Page Object Model](./content/01-page-object-model.md)**
-
----
+**👉 Comienza con [Sección 01: Page Object Model](./tutorials/01-modelo-objeto-pagina.md)**
 
 ---
 
-## 🏗️ Section 1: Page Object Model (POM) Deep Dive
+---
+
+## 🏗️ Sección 1: Page Object Model (POM) en Profundidad
 
 ### Concepto: Encapsulación de la UI
 
@@ -734,7 +734,7 @@ OUTPUT: GradesPage.ts completo"
 
 ---
 
-## 🔧 Section 2: Fixtures y Helpers
+## 🔧 Sección 2: Fixtures y Helpers
 
 ### Concepto: Compartir Setup entre Tests
 
@@ -975,7 +975,7 @@ test('calcular calificación final correctamente', async () => {
 
 ---
 
-## 📊 Section 3: Test Data Management
+## 📊 Sección 3: Gestión de Datos de Prueba
 
 ### Factory Pattern para Test Data
 
@@ -1151,7 +1151,7 @@ test('inscribirse a materia disponible', async ({ page }) => {
 
 ---
 
-## 🌍 Section 4: Multi-Environment Configuration
+## 🌍 Sección 4: Configuración Multi-Ambiente
 
 ### Environment Config Pattern
 
@@ -1241,9 +1241,9 @@ TEST_ENV=production npx playwright test --grep @smoke
 
 ---
 
-## 📁 Section 5: Test Organization Patterns
+## 📁 Sección 5: Patrones de Organización de Pruebas
 
-### Recommended Directory Structure
+### Estructura de Directorios Recomendada
 
 ```
 qa-automation-framework/
@@ -1335,9 +1335,9 @@ npx playwright test --grep "^.*@smoke.*@regression.*$"
 
 ---
 
-## 🎯 Real-World Example: E-Commerce FPUNA Store
+## 🎯 Ejemplo del Mundo Real: E-Commerce FPUNA Store
 
-### Complete Implementation
+### Implementación Completa
 
 ```typescript
 // pages/ProductsPage.ts
@@ -1429,13 +1429,13 @@ test.describe('FPUNA Store - Gestión de Productos @e2e', () => {
 
 ---
 
-## Navigation
+## Navegación
 
-- [← Back to Track README](../../README.md)
-- [→ Start Section 01: Page Object Model](./content/01-page-object-model.md)
-- [📝 Module Exercise](./EXERCISE.md)
+- [← Volver al README del Track](../../README.md)
+- [→ Comenzar Sección 01: Page Object Model](./tutorials/01-modelo-objeto-pagina.md)
+- [📝 Ejercicio del Módulo](./EXERCISE.md)
 
 ---
 
-*Module 03 - Test Architecture & Organization*  
-*FPUNA Summer 2026 - QA Automation Track*
+*Módulo 03 - Arquitectura de Pruebas y Organización*  
+*FPUNA Verano 2026 - Track de Automatización QA*
