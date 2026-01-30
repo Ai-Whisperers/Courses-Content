@@ -1,286 +1,181 @@
-# 📱 Track 04: Marketing, Negocios y Turismo con IA
+# Marketing con IA - Solo Prompts, Resultados Reales
 
-## FPUNA Verano 2026
-
-**Modalidad:** Práctico con herramientas profesionales
-**Idioma:** Español
-**Prerrequisitos:** Track 00 - Fundamentos Principales completado
+**FPUNA Verano 2026 | Track 04: Marketing, Negocios y Turismo**
 
 ---
 
-## Descripción
+## ⚠️ PRIMER PASO OBLIGATORIO: Módulo 00
 
-Track flexible que combina marketing digital con especialización en negocios o turismo y hospitalidad. Elige tu camino según tu carrera e intereses.
+**NO SALTES ESTE PASO.** Antes de tocar cualquier otro módulo, debes completar el Módulo 00. Sin contexto bien configurado, los prompts no funcionan.
 
-Todos los estudiantes completan el **Núcleo Común** de marketing digital, y luego eligen una **Especialización**:
-- **Especialización A:** Marketing General y Campañas
-- **Especialización B:** Hospitalidad y Turismo
+[→ Ir al Módulo 00 ahora](./modules/00-ingesta-contexto-validacion.md)
 
 ---
 
-## 🎯 Rutas de Aprendizaje
+## ¿Qué es esto?
+
+**Cero teoría. 100% prompts listos para copiar y pegar.**
+
+9 módulos prácticos que te llevan de la idea al resultado en 30-50 minutos cada uno. No necesitas saber programar. No necesitas conocimientos previos de marketing digital. Solo necesitas copiar, pegar y adaptar.
+
+**Metodología: Contexto → Prompt → Resultado → Usar**
+
+---
+
+## Cómo funciona (3 pasos)
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    NÚCLEO COMÚN (12 horas)                      │
-│  01-Creación Contenido │ 02-Marketing Datos │ 03-Redes Sociales │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-              ┌───────────────┴───────────────┐
-              ▼                               ▼
-┌─────────────────────────┐     ┌─────────────────────────────────┐
-│  ESPECIALIZACIÓN A      │     │  ESPECIALIZACIÓN B              │
-│  Marketing General (8h) │     │  Hospitalidad y Turismo (12h)   │
-├─────────────────────────┤     ├─────────────────────────────────┤
-│ 04a-Diseño con IA       │     │ 04b-Servicio al Cliente         │
-│ 05a-Gestión Campañas    │     │ 05b-Revenue Management          │
-└─────────────────────────┘     │ 06b-Operaciones Hoteleras       │
-                                └─────────────────────────────────┘
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  1. CONTEXT     │────▶│  2. PROMPT      │────▶│  3. RESULT      │
+│  Ingesta datos  │     │  Copia y pega   │     │  Material listo │
+│  de tu negocio  │     │  prompts        │     │  para usar      │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-### Duración por Ruta
-
-| Ruta | Módulos | Horas | Ideal para |
-|------|---------|-------|------------|
-| **Marketing General** | Núcleo + Esp. A | 20h | Comunicación, Publicidad, Negocios |
-| **Hospitalidad y Turismo** | Núcleo + Esp. B | 24h | Hotelería, Turismo, Gastronomía |
-| **Completo** | Todos los módulos | 32h | Emprendedores, Gerentes |
+1. **Ingesta contexto** (Módulo 00): Alimenta la IA con información de tu negocio, mercado y objetivos
+2. **Ejecuta prompts** (Módulos 01-08): Copia prompts probados, obtén resultados inmediatos
+3. **Usa los resultados**: Contenido, campañas, análisis y estrategias listos para implementar
 
 ---
 
-## 📚 Módulos
+## Los 9 Módulos
 
-### NÚCLEO COMÚN (Todos los estudiantes)
+Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
-#### Módulo 01: Creación de Contenido con IA (4h)
-- Fundamentos de copywriting
-- Prompts para diferentes formatos
-- Adaptación de tono y audiencia
-- Calendarios de contenido
-- [Ir al módulo →](./modules/01-nucleo-comun/01-creacion-contenido-ia.md)
+| Módulo | Tema | Tiempo | Qué obtienes |
+|--------|------|--------|--------------|
+| **[00](./modules/00-ingesta-contexto-validacion.md)** | **Ingesta de Contexto y Validación** | 45 min | Perfil de negocio completo, validación de datos |
+| **[01](./modules/01-crear-contenido-30-dias.md)** | Crear 30 días de Contenido en 30 min | 30 min | Calendario editorial completo con 30+ piezas |
+| **[02](./modules/02-campanas-publicitarias.md)** | Campañas Publicitarias con Meta Ads | 50 min | Estructura de campaña, audiencias, creativos, presupuesto |
+| **[03](./modules/03-atencion-cliente-automatizada.md)** | Atención al Cliente Automatizada | 45 min | Chatbot WhatsApp, respuestas automáticas, FAQs |
+| **[04](./modules/04-turismo-paquetes-experiencias.md)** | Turismo: Paquetes y Experiencias | 50 min | Descripción de tours, itinerarios, pricing |
+| **[05](./modules/05-analisis-competencia-mercado.md)** | Análisis de Competencia y Mercado | 40 min | Matriz competitiva, oportunidades detectadas |
+| **[06](./modules/06-copywriting-ventas.md)** | Copywriting para Ventas | 40 min | Textos persuasivos, emails, descripciones de producto |
+| **[07](./modules/07-hotelaria-revenue-management.md)** | Hotelaría y Revenue Management | 50 min | Estrategia de precios, forecasting, upselling |
+| **[08](./modules/08-estrategia-planificacion-anual.md)** | Estrategia y Planificación Anual | 60 min | Plan de marketing anual completo |
 
-#### Módulo 02: Marketing Basado en Datos (4h)
-- Google Analytics 4
-- Métricas clave (KPIs)
-- Dashboards y reportes
-- A/B testing básico
-- [Ir al módulo →](./modules/02-data-strategy/analytics-basics.md)
-
-#### Módulo 03: Automatización de Redes Sociales (4h)
-- Herramientas de scheduling
-- Workflows de engagement
-- Chatbots para redes
-- Social listening
-- [Ir al módulo →](./modules/01-nucleo-comun/03-redes-sociales-automatizacion.md)
+**Tiempo total:** 6-7 horas de trabajo concentrado.
 
 ---
 
-### ESPECIALIZACIÓN A: Marketing General
+## ¿Qué vas a obtener?
 
-#### Módulo 04A: Herramientas de Diseño con IA (4h)
-- Generación de imágenes con Midjourney/DALL-E
-- Canva + AI features
-- Edición de video automatizada
-- Brand kits y consistencia
-- [Ir al módulo →](./specializations/marketing-digital/04a-diseno-herramientas-ia.md)
+**Resultados tangibles que puedes usar hoy:**
 
-#### Módulo 05A: Gestión de Campañas (4h)
-- Planificación de campañas integrales
-- Meta Ads fundamentals
-- Google Ads básico
-- Medición y optimización de ROI
-- [Ir al módulo →](./specializations/marketing-digital/05a-gestion-campanas.md)
+### Marketing Digital
+- Calendario de 30 días de contenido para redes sociales
+- Campaña de Meta Ads completa (audiencias, creativos, copy, presupuesto)
+- Sistema de atención al cliente automatizado vía WhatsApp
+- Copy persuasivo para emails, landing pages y anuncios
+- Análisis de competidores con oportunidades identificadas
 
----
+### Turismo y Hotelería
+- Descripciones de paquetes turísticos optimizadas para ventas
+- Itinerarios detallados con valor agregado
+- Estrategia de revenue management con pricing dinámico
+- Plan de marketing anual específico para temporada alta/baja
 
-### ESPECIALIZACIÓN B: Hospitalidad y Turismo
-
-#### Módulo 04B: Servicio al Cliente y Chatbots (4h)
-- Implementación de chatbots 24/7
-- Gestión de quejas con IA
-- WhatsApp Business automatizado
-- Personalización de experiencias
-- [Ir al módulo →](./specializations/hospitality-management/04b-servicio-cliente-chatbots.md)
-
-#### Módulo 05B: Revenue Management (4h)
-- Forecasting de demanda
-- Pricing dinámico
-- Análisis competitivo
-- Estrategias de upselling
-- [Ir al módulo →](./specializations/hospitality-management/05b-revenue-management.md)
-
-#### Módulo 06B: Operaciones Hoteleras con IA (4h)
-- Automatización de housekeeping
-- Mantenimiento predictivo
-- Gestión de inventarios
-- Workflows operativos
-- [Ir al módulo →](./specializations/hospitality-management/06b-operaciones-hoteleras.md)
+### Negocios Locales
+- Perfil completo de cliente ideal para Paraguay/MERCOSUR
+- Análisis de mercado local con datos relevantes
+- Materiales adaptados al contexto cultural y económico
 
 ---
 
-## 🎓 Proyectos Finales
+## ¿Para quién es esto?
 
-Elige según tu especialización:
+✅ **Emprendedores** que necesitan marketing profesional sin presupuesto de agencia
 
-### Opción A: Campaña de Marketing Digital
-Para estudiantes de Marketing General.
+✅ **Community managers** que quieren producir más en menos tiempo
 
-Desarrollar una campaña integral que incluya:
-- Brief creativo (objetivos, audiencia, presupuesto)
-- 10 piezas de contenido para redes sociales
-- 5 creatividades visuales
-- Estructura de campaña publicitaria
-- Dashboard de seguimiento
+✅ **Gerentes de hoteles/tour operadores** buscando automatizar atención al cliente
 
-### Opción B: Plan de Transformación Turística
-Para estudiantes de Hospitalidad y Turismo.
+✅ **Estudiantes de marketing** que quieren skills prácticos, no teoría
 
-Desarrollar una propuesta integral que incluya:
-- Sistema de servicio al cliente con IA
-- Estrategia de revenue management
-- Plan de marketing turístico
-- Optimización de operaciones
+✅ **Dueños de negocios locales** en Paraguay que quieren crecer con IA
 
-Ver detalles en [proyecto-final/](./proyecto-final/)
+❌ **No es para:** Gente que busca certificaciones teóricas o cursos largos sin aplicación inmediata.
 
 ---
 
-## 🛠️ Herramientas
+## Contexto Paraguay / MERCOSUR
 
-### Núcleo Común
-| Herramienta | Uso |
-|-------------|-----|
-| Claude/ChatGPT | Generación de contenido |
-| Google Analytics 4 | Métricas y análisis |
-| Meta Business Suite | Redes sociales |
-| Buffer/Hootsuite | Scheduling |
+**Todo el contenido está pensado para el mercado paraguayo:**
 
-### Especialización A (Marketing)
-| Herramienta | Uso |
-|-------------|-----|
-| Canva | Diseño gráfico |
-| Midjourney/DALL-E | Generación de imágenes |
-| Meta Ads Manager | Publicidad Facebook/Instagram |
-| Google Ads | Search y Display |
-
-### Especialización B (Turismo)
-| Herramienta | Uso |
-|-------------|-----|
-| WhatsApp Business | Comunicación con huéspedes |
-| Chatbot builders | Atención automatizada |
-| Revenue tools | Pricing dinámico |
-| Google Business Profile | SEO local y reviews |
+- Prompts adaptados al español paraguayo y expresiones locales
+- Consideraciones de IVA MERCOSUR en precios y campañas
+- Ejemplos de negocios locales (comercios en Mercado 4, hoteles en Encarnación, agencias en Asunción)
+- Oportunidades de mercado: turismo de eventos (CONMEBOL), eco-turismo (Chaco, Pantanal), turismo cultural (Misiones Jesuíticas)
+- Referencias a herramientas accesibles en Paraguay (WhatsApp Business, Meta Ads, Google Business Profile)
 
 ---
 
-## 🇵🇾 Contexto Paraguay
+## Requisitos
 
-### Oportunidades de Mercado
-
-**Marketing Digital:**
-- Agencias digitales: crecimiento 40% anual
-- E-commerce en expansión
-- Empresas en transformación digital
-
-**Turismo y Hospitalidad:**
-- Eco-turismo: Chaco, Pantanal, reservas naturales
-- Cultural: Misiones Jesuíticas (UNESCO)
-- Eventos: CONMEBOL, Expo Mariano
-- Mercado regional: Argentina (45%), Brasil (25%)
-
-### Salidas Profesionales
-
-| Puesto | Salario Estimado | Especialización |
-|--------|------------------|-----------------|
-| Community Manager | ₲3-5M/mes | A |
-| Social Media Manager | ₲5-8M/mes | A |
-| Digital Marketing Specialist | ₲8-15M/mes | A |
-| Coordinador de Revenue | ₲8-12M/mes | B |
-| Gerente de Operaciones Hotel | ₲12-20M/mes | B |
-| Director de Hotel | ₲15-30M/mes | B |
+- Una computadora con internet
+- Cuenta gratuita de Claude (claude.ai) o ChatGPT
+- Información básica de tu negocio (nombre, productos/servicios, ubicación)
+- **0 código. 0 habilidades técnicas. 0 conocimientos previos de marketing.**
 
 ---
 
-## 📊 Evaluación
+## 🚀 Empezar Ahora
 
-| Componente | Peso |
-|------------|------|
-| Ejercicios de módulos | 30% |
-| Proyecto Final (Capstone) | 50% |
-| Participación activa | 10% |
-| Creatividad e innovación | 10% |
+**Paso 1 (Obligatorio):** Configura tu contexto
 
-**Mínimo para aprobar:** 60%
+```
+[  INICIAR MÓDULO 00  ]
+```
 
----
-
-## 📅 Cronogramas Sugeridos
-
-### Ruta A: Marketing General (5 días)
-
-| Día | Módulo | Horas |
-|-----|--------|-------|
-| Lunes | 01: Creación de Contenido | 4h |
-| Martes | 02: Marketing Basado en Datos | 4h |
-| Miércoles | 03: Automatización Redes | 4h |
-| Jueves | 04A: Diseño con IA | 4h |
-| Viernes | 05A: Gestión de Campañas | 4h |
-
-### Ruta B: Hospitalidad y Turismo (6 días)
-
-| Día | Módulo | Horas |
-|-----|--------|-------|
-| Lunes | 01: Creación de Contenido | 4h |
-| Martes | 02: Marketing Basado en Datos | 4h |
-| Miércoles | 03: Automatización Redes | 4h |
-| Jueves | 04B: Servicio al Cliente | 4h |
-| Viernes | 05B: Revenue Management | 4h |
-| Sábado | 06B: Operaciones Hoteleras | 4h |
+👉 **[→ Módulo 00: Ingesta de Contexto](./modules/00-ingesta-contexto-validacion.md)**
 
 ---
 
-## 💡 Consejos para el Éxito
+## Estructura de cada módulo
 
-✅ **Hacer:**
-- Practicar con cuentas reales (personales o de prueba)
-- Guardar todos los prompts que funcionan bien
-- Analizar casos de éxito de tu industria
-- Crear un portfolio con los ejercicios
+Cada archivo de módulo sigue este formato:
 
-❌ **Evitar:**
-- Copiar contenido sin adaptar al contexto local
-- Ignorar métricas y feedback
-- Publicar sin revisar calidad
-- Depender 100% de la IA sin criterio propio
+```markdown
+## Objetivo
+Qué vas a lograr en este módulo
+
+## Contexto necesario
+Datos que necesitas tener a mano
+
+## Prompts (copia y pega)
+### Prompt 1: [Nombre descriptivo]
+```
+[Prompt listo para copiar y pegar en Claude/ChatGPT]
+```
+**Tiempo estimado:** X minutos
+**Output esperado:** [Descripción del resultado]
+
+### Prompt 2: ...
+
+## Ejemplo real
+Resultado de ejemplo aplicado a un negocio paraguayo
+
+## Siguiente paso
+Link al siguiente módulo
+```
 
 ---
 
-## 📞 Contacto
+## Recursos adicionales
+
+| Recurso | Descripción | Link |
+|---------|-------------|------|
+| **Kit de Inicio IA** | Configuración rápida de herramientas | [Ver guía](../../../../_compartido/00-KITS-DE-INICIO-IA/) |
+| **Plantillas de prompts** | Prompts reutilizables para marketing | [Ver plantillas](../../../../_compartido/03-plantillas-de-contexto/) |
+| **Validación de resultados** | Cómo verificar que tus outputs son buenos | [Ver estándares](../../../../_compartido/02-estandares-y-calidad/) |
+
+---
+
+## Dónde pedir ayuda
 
 - **Slack:** #marketing-turismo-2026
 - **Email:** marketing-instructor@fpuna.edu.py
 
 ---
 
-## 🚀 ¡Empezar!
-
-**Siguiente paso:** [Módulo 01: Creación de Contenido con IA](./modules/01-nucleo-comun/01-creacion-contenido-ia.md)
-
----
-
----
-
-## Recursos Compartidos (COMPARTIDO)
-
-Este track utiliza recursos del directorio compartido de FPUNA:
-
-| Recurso | Descripción | Link |
-|---------|-------------|------|
-| **Instalación OpenCode** | Guías de instalación por plataforma | [Ver guía](../../../../_compartido/04-utilidades-ia/configuracion-inicial/guide.md) |
-| **Configuración MCPs** | Cómo configurar Model Context Protocol | [Ver guía](../../../../_compartido/04-utilidades-ia/guias-mcp/README.md) |
-| **Sistema de Skills** | Automatización con skills reutilizables | [Ver guía](../../../../_compartido/04-utilidades-ia/sistema-skills/README.md) |
-| **Plantillas de Proyecto** | Templates para iniciar proyectos | [Ver plantillas](../../../../_compartido/03-plantillas-de-contexto/README.md) |
-
----
-
-*Track 04 - Marketing, Negocios y Turismo | FPUNA Verano 2026 | AI Whisperers*
+*Track 04 - Marketing con IA | FPUNA Verano 2026 | Zero teoría, 100% resultados*
