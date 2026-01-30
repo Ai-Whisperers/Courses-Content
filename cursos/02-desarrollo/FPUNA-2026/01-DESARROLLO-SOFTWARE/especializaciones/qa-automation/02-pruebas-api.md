@@ -940,6 +940,7 @@ test.describe('API Mocking', () => {
 ## 🎯 Ejercicio Práctico: API de E-commerce FPUNA
 
 ### Objetivo
+
 Crear suite completa de tests para API REST de un sistema de órdenes.
 
 ### Endpoints a Testear

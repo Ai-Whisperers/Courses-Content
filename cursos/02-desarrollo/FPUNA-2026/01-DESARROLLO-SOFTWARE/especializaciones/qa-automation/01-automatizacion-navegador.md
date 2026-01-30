@@ -162,7 +162,7 @@ test('aplica descuento del 50% a todos los productos', async ({ page }) => {
 
 ### ¿Qué es Visual Regression?
 
-Detectar cambios visuales no intencionales en la UI.
+Detectar cambios visuales no intencionales en tu aplicación.
 
 **Ejemplo**:
 - Un CSS mal aplicado cambia el color del botón "Comprar"

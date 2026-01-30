@@ -7,25 +7,30 @@
 # Proyecto: [NOMBRE DE TU APLICACIÓN]
 
 ## Descripción
+
 [Aplicación web/móvil/API que hace X para usuarios Y]
 
 ## Stack Tecnológico
 
 ### Frontend (si aplica)
+
 - **Framework:** [React/Vue/Angular/Next.js]
 - **Estilos:** [Tailwind/CSS Modules/Styled Components]
 - **Estado:** [Redux/Zustand/Context API]
 
 ### Backend
+
 - **Runtime:** [Node.js/Python/Go]
 - **Framework:** [Express/FastAPI/Gin]
 - **ORM:** [Sequelize/Prisma/SQLAlchemy]
 
 ### Base de Datos
+
 - **Principal:** [PostgreSQL/MySQL/MongoDB]
 - **Cache:** [Redis] (si aplica)
 
 ### Infraestructura
+
 - **Hosting:** [Vercel/Railway/AWS]
 - **CI/CD:** [GitHub Actions]
 - **Containers:** [Docker] (si aplica)
@@ -56,6 +61,7 @@ proyecto/
 ## Convenciones de Código
 
 ### Nombres
+
 - **Archivos:** kebab-case (`user-controller.js`)
 - **Clases:** PascalCase (`UserService`)
 - **Funciones:** camelCase (`getUserById`)
@@ -63,16 +69,18 @@ proyecto/
 - **Variables:** camelCase (`userData`)
 
 ### Estilo
+
 - ESLint + Prettier configurados
 - Máximo 100 caracteres por línea
 - Imports ordenados (externos, internos, relativos)
 - No usar `var`, solo `const` y `let`
 
 ### Patrones
-- Repository pattern para acceso a datos
-- Service layer para lógica de negocio
-- DTOs para transferencia de datos
-- Dependency injection donde sea posible
+
+- **Ports & Adapters (Mandatorio)**: El Dominio es soberano.
+- **Repository Pattern**: Para abstracción de persistencia.
+- **Dependency Injection**: Inyectar adaptadores en los servicios.
+- **S.O.L.I.D.**: Aplicación estricta en cada componente.
 
 ## Comandos
 
@@ -103,6 +111,7 @@ npm start                # Iniciar en producción
 ## Reglas para la IA
 
 ### HACER:
+
 - Seguir el patrón existente de controladores/servicios/repositorios
 - Usar TypeScript si el proyecto lo usa
 - Agregar validación de inputs (Joi/Zod/class-validator)
@@ -113,6 +122,7 @@ npm start                # Iniciar en producción
 - Documentar endpoints nuevos
 
 ### NO HACER:
+
 - No hacer queries SQL directas, usar el ORM
 - No hardcodear valores, usar .env
 - No exponer errores internos al cliente
@@ -123,18 +133,19 @@ npm start                # Iniciar en producción
 
 ## Endpoints Existentes
 
-| Método | Ruta | Descripción | Auth |
-|--------|------|-------------|------|
-| POST | /api/auth/login | Login | No |
-| POST | /api/auth/register | Registro | No |
-| GET | /api/users | Listar usuarios | Admin |
-| GET | /api/users/:id | Obtener usuario | User |
-| PUT | /api/users/:id | Actualizar usuario | Owner |
-| DELETE | /api/users/:id | Eliminar usuario | Admin |
+| Método | Ruta               | Descripción        | Auth  |
+| ------ | ------------------ | ------------------ | ----- |
+| POST   | /api/auth/login    | Login              | No    |
+| POST   | /api/auth/register | Registro           | No    |
+| GET    | /api/users         | Listar usuarios    | Admin |
+| GET    | /api/users/:id     | Obtener usuario    | User  |
+| PUT    | /api/users/:id     | Actualizar usuario | Owner |
+| DELETE | /api/users/:id     | Eliminar usuario   | Admin |
 
 ## Modelos de Datos
 
 ### User
+
 ```typescript
 {
   id: UUID,
@@ -170,9 +181,11 @@ MAIL_API_KEY=xxx
 ## Decisiones de Arquitectura
 
 ### ¿Por qué [decisión]?
+
 [Explicación breve de decisiones técnicas importantes]
 
 ### Pendientes / Tech Debt
+
 - [ ] Implementar rate limiting
 - [ ] Agregar caching con Redis
 - [ ] Mejorar logging
@@ -184,4 +197,4 @@ MAIL_API_KEY=xxx
 
 ---
 
-*CLAUDE.md para Desarrollo de Software - FPUNA 2026*
+_CLAUDE.md para Software Development (Ports & Adapters) - FPUNA 2026_
