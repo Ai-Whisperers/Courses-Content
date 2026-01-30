@@ -6,7 +6,9 @@
 
 ## ⚠️ PRIMER PASO OBLIGATORIO: Módulo 00
 
-**NO SALTES ESTE PASO.** Antes de tocar cualquier otro módulo, debes completar el Módulo 00. Sin contexto bien configurado, los prompts no funcionan.
+**NO SALTES ESTE PASO.** Antes de tocar cualquier otro módulo, debes completar el Módulo 00. Sin contexto estructurado en carpetas, los prompts no funcionan al máximo.
+
+El Módulo 00 ahora incluye **FASE DE INVESTIGACIÓN**: Analizamos la presencia digital del negocio (web, redes, reviews) y creamos **18 archivos organizados en 6 carpetas** - no un solo archivo gigante, sino un sistema profesional tipo agencia donde puedes actualizar secciones individuales sin regenerar todo.
 
 [→ Ir al Módulo 00 ahora](./modules/00-ingesta-contexto-validacion.md)
 
@@ -16,25 +18,29 @@
 
 **Cero teoría. 100% prompts listos para copiar y pegar.**
 
-9 módulos prácticos que te llevan de la idea al resultado en 30-50 minutos cada uno. No necesitas saber programar. No necesitas conocimientos previos de marketing digital. Solo necesitas copiar, pegar y adaptar.
+9 módulos prácticos que te llevan de la investigación al resultado. No necesitas saber programar. No necesitas conocimientos previos de marketing digital. Solo necesitas investigar la presencia digital del negocio, organizar el contexto en carpetas, y ejecutar prompts probados.
 
-**Metodología: Contexto → Prompt → Resultado → Usar**
+**Metodología: Research → Contexto Estructurado → Prompt → Resultado → Usar**
+
+> 💡 **Lo nuevo**: Investigamos primero (web, redes, reviews), luego organizamos 18 archivos en 6 carpetas - sistema profesional tipo agencia donde actualizás secciones individuales sin regenerar todo.
 
 ---
 
-## Cómo funciona (3 pasos)
+## Cómo funciona (4 pasos)
 
 ```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  1. CONTEXT     │────▶│  2. PROMPT      │────▶│  3. RESULT      │
-│  Ingesta datos  │     │  Copia y pega   │     │  Material listo │
-│  de tu negocio  │     │  prompts        │     │  para usar      │
-└─────────────────┘     └─────────────────┘     └─────────────────┘
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│ 1. RESEARCH     │────▶│ 2. STRUCTURED   │────▶│  3. PROMPT      │────▶│  4. RESULT      │
+│ Investiga web,  │     │ CONTEXT         │     │  Copia y pega   │     │  Material listo │
+│ redes, reviews  │     │ 18 files en 6   │     │  prompts        │     │  para usar      │
+│ del negocio     │     │ carpetas        │     │                 │     │                 │
+└─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-1. **Ingesta contexto** (Módulo 00): Alimenta la IA con información de tu negocio, mercado y objetivos
-2. **Ejecuta prompts** (Módulos 01-08): Copia prompts probados, obtén resultados inmediatos
-3. **Usa los resultados**: Contenido, campañas, análisis y estrategias listos para implementar
+1. **Research** (Módulo 00): Investigamos la presencia digital del negocio (sitio web, redes sociales, Google Reviews, competidores)
+2. **Contexto Estructurado** (Módulo 00): Creamos 18 archivos organizados en 6 carpetas - sistema profesional tipo agencia donde actualizás secciones individuales sin regenerar todo
+3. **Ejecuta prompts** (Módulos 01-08): Copia prompts probados, obtén resultados inmediatos
+4. **Usa los resultados**: Contenido, campañas, análisis y estrategias listos para implementar
 
 ---
 
@@ -44,7 +50,7 @@ Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
 | Módulo | Tema | Tiempo | Qué obtienes |
 |--------|------|--------|--------------|
-| **[00](./modules/00-ingesta-contexto-validacion.md)** | **Ingesta de Contexto y Validación** | 45 min | Perfil de negocio completo, validación de datos |
+| **[00](./modules/00-ingesta-contexto-validacion.md)** | **Research + Contexto Organizado** | 60 min | Investigación digital + 18 archivos en 6 carpetas organizadas |
 | **[01](./modules/01-crear-contenido-30-dias.md)** | Crear 30 días de Contenido en 30 min | 30 min | Calendario editorial completo con 30+ piezas |
 | **[02](./modules/02-campanas-publicitarias.md)** | Campañas Publicitarias con Meta Ads | 50 min | Estructura de campaña, audiencias, creativos, presupuesto |
 | **[03](./modules/03-atencion-cliente-automatizada.md)** | Atención al Cliente Automatizada | 45 min | Chatbot WhatsApp, respuestas automáticas, FAQs |
@@ -121,13 +127,19 @@ Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
 ## 🚀 Empezar Ahora
 
-**Paso 1 (Obligatorio):** Configura tu contexto
+**Paso 1 (Obligatorio):** Investigá y organizá tu contexto
+
+El Módulo 00 ahora incluye:
+- 🔍 **Fase de Investigación**: Análisis de web, redes y reviews del negocio
+- 📁 **18 archivos organizados en 6 carpetas**: Sistema profesional tipo agencia
+- 🔄 **Actualización modular**: Editá secciones individuales sin regenerar todo
+- ✅ **Validación integrada**: Verificación de calidad en cada archivo
 
 ```
 [  INICIAR MÓDULO 00  ]
 ```
 
-👉 **[→ Módulo 00: Ingesta de Contexto](./modules/00-ingesta-contexto-validacion.md)**
+👉 **[→ Módulo 00: Research + Contexto Organizado](./modules/00-ingesta-contexto-validacion.md)**
 
 ---
 
