@@ -1,22 +1,23 @@
 # FPUNA 2026 - Estado del Curso
 
-**Última actualización**: 28 de enero, 2026
-**Estado general**: En Desarrollo (~90%)
-**Archivos**: 273 markdown
+**Última actualización**: 30 de enero, 2026
+**Estado general**: Producción (~95%)
+**Archivos totales**: 501 (430 markdown + 44 Python + otros)
 **Audiencia**: Universidad Nacional de Asunción, Paraguay
 
 ---
 
 ## Resumen por Track
 
-| Track | Módulos | proyecto-final | starter-kit | Estado |
-|-------|---------|----------------|-------------|--------|
-| 00-FUNDAMENTOS | 6/6 | ✅ | ⚠️ usa recursos compartidos | ✅ Listo |
-| 01-DESARROLLO-SOFTWARE | 5/5 + 2 especializaciones | ✅ | ✅ | ✅ Listo |
-| 02-ELECTRONICA-AUTOMATIZACION | 5/5 | ✅ + escalonado | ✅ | ✅ Listo |
-| 03-INGENIERIA-AERONAUTICA | 5/5 | ✅ | ✅ | ✅ Listo |
-| 04-MARKETING-NEGOCIOS-TURISMO | 8/8 | ✅ | ✅ | ✅ Listo |
-| 05-INVESTIGACION | 5/5 | ✅ | ✅ | ✅ Listo |
+| Track | Módulos | Lecciones | Tutoriales | Ejercicios | proyecto-final | starter-kit | Estado |
+|-------|---------|-----------|------------|------------|----------------|-------------|--------|
+| 00-FUNDAMENTOS | 6/6 | 6 | 0 | 0 | ✅ | COMPARTIDO | ✅ Listo |
+| 01-DESARROLLO-SOFTWARE | 5/5 + 2 espec. | 15 | 34 | 3 | ✅ | ✅ | ✅ Listo |
+| 02-ELECTRONICA | 5/5 | 5 | 0 | 5 | ✅ escalonado | ✅ | ✅ Listo |
+| 03-AERONAUTICA | 5/5 | 5 | 12 | 3 | ✅ | ✅ | ✅ Listo |
+| 04-MARKETING | 8/8 | 8 | 0 | 6 | ✅ | ✅ | ✅ Listo |
+| 05-INVESTIGACION | 5/5 | 5 | 0 | 3 | ✅ | ✅ | ✅ Listo |
+| **TOTAL** | **34+10** | **44** | **46** | **20** | **6** | **5+1** | ✅ |
 
 ---
 
@@ -42,7 +43,7 @@
 - `_templates/CLAUDE-template.md` - Template de contexto ✅
 - `proyecto-final/` - README + rubrica ✅
 
-**Nota**: No tiene `starter-kit/` dedicado. Usa `COMPARTIDO/` y `_templates/`.
+**Nota**: Usa recursos de `COMPARTIDO/` (documentado en README).
 
 ---
 
@@ -53,15 +54,15 @@
 
 | Módulo | Archivo | Estado |
 |--------|---------|--------|
-| 01 | `01-arquitectura-sistemas.md` | ✅ |
-| 02 | `02-patrones-diseno.md` | ✅ |
-| 03 | `03-pruebas-automatizadas.md` | ✅ |
-| 04 | `04-codigo-limpio.md` | ✅ |
-| 05 | `05-diseno-sistemas.md` | ✅ |
+| 01 | `modules/01-arquitectura-software/` | ✅ |
+| 02 | `modules/02-patrones-diseno/` | ✅ |
+| 03 | `modules/03-pruebas-tdd/` | ✅ |
+| 04 | `modules/04-codigo-limpio/` | ✅ |
+| 05 | `modules/05-diseno-sistemas/` | ✅ |
 
 **Especializaciones** (5 módulos cada una):
-- `qa-automation/` ✅
-- `web-development/` ✅
+- `especializaciones/qa-automation/` ✅ (25 tutoriales, 15 ejemplos)
+- `especializaciones/web-development/` ✅
 
 **starter-kit/**: ✅ Completo (examples/, exercises/)
 
@@ -80,19 +81,17 @@
 | 04 | `04-automatizacion-industrial.md` | ✅ |
 | 05 | `05-iot-visualizacion-datos.md` | ✅ |
 
-**proyecto-final/**:
-- `README.md` - Capstone original ✅
-- `rubrica.md` - Rúbrica original ✅
-- `PROYECTOS-ESCALONADOS.md` - Sistema de proyectos por nivel ✅ (NUEVO)
-- `rubrica-escalonada.md` - Rúbricas ajustadas por tier ✅ (NUEVO)
+**proyecto-final/** (Sistema Escalonado):
+- `README.md` - Landing page → proyectos escalonados ✅
+- `PROYECTOS-ESCALONADOS.md` - 14 proyectos (P1-P4, I1-I5, A1-A5) ✅
+- `rubrica-escalonada.md` - Rúbricas por nivel ✅
+- `PROYECTO-UNIVERSAL-EMBEBIDOS.md` - Especificación A5 ✅
 
 **starter-kit/**:
 - Archivos estándar ✅
 - `SAFETY-WARNINGS.md` ✅
-- `USO-IA-ELECTRONICA.md` - Framework GREEN/YELLOW/RED ✅ (NUEVO)
-- `20-IDEAS.md` - Actualizado con mapeo a tiers ✅ (ACTUALIZADO)
-
-**Nota**: Tiene versión revisada (`README-REVISED.md`) con curriculum simplificado.
+- `USO-IA-ELECTRONICA.md` - Framework GREEN/YELLOW/RED ✅
+- `20-IDEAS.md` - Mapeo a tiers ✅
 
 ---
 
@@ -101,36 +100,43 @@
 **Duración**: 20 horas + 30 horas capstone
 **Contenido**: CAD, aerodinámica, estructuras, propulsión, diseño UAV
 
-| Módulo | Archivo | Estado |
-|--------|---------|--------|
-| 01 | `01-fundamentos-cad-aeronautico.md` | ✅ |
-| 02 | `02-aerodinamica-computacional.md` | ✅ |
-| 03 | `03-analisis-estructural.md` | ✅ |
-| 04 | `04-sistemas-propulsion.md` | ✅ |
-| 05 | `05-diseno-integrado-uav.md` | ✅ |
+| Módulo | Directorio | Estado |
+|--------|------------|--------|
+| 01 | `modules/01-cad-with-ai/` | ✅ |
+| 02 | `modules/02-aerodynamics-cfd/` | ✅ |
+| 03 | `modules/03-structures-materials/` | ✅ |
+| 04 | `modules/04-propulsion-systems/` | ✅ |
+| 05 | `modules/05-aircraft-design/` | ✅ |
 
-**starter-kit/**: ✅ Completo + `SAFETY-WARNINGS.md`
+**Recursos especiales**:
+- `fusion360-mcp-server/` - MCP custom para Fusion 360 (44 archivos Python)
+- `solutions/` - 12 implementaciones de referencia
+- `recursos/opencode-prompts/` - Prompts organizados por módulo
+
+**starter-kit/**: ✅ Completo + `SAFETY-WARNINGS.md` + scripts verificación
 
 ---
 
-### 04-MARKETING-NEGOCIOS-TURISMO (Track 4 - FUSIONADO)
+### 04-MARKETING-NEGOCIOS-TURISMO (Track 4)
 
 **Duración**: 20-32 horas (modular)
 **Contenido**: Marketing digital, contenido, analytics, hospitalidad
 
-| Módulo | Archivo | Estado |
-|--------|---------|--------|
-| 01 | `01-creacion-contenido.md` | ✅ |
-| 02 | `02-copywriting.md` | ✅ |
-| 03 | `03-analytics-datos.md` | ✅ |
-| 04a | `04a-marketing-general.md` | ✅ |
-| 04b | `04b-hospitalidad-turismo.md` | ✅ |
-| 05 | `05-social-media.md` | ✅ |
-| 06 | `06-campanas-pagas.md` | ✅ |
-| 07 | `07-estrategia-marca.md` | ✅ |
-| 08 | `08-casos-locales.md` | ✅ |
+| Módulo | Ubicación | Estado |
+|--------|-----------|--------|
+| 01 | `modules/01-nucleo-comun/01-creacion-contenido-ia.md` | ✅ |
+| 02 | `modules/02-data-strategy/` | ✅ |
+| 03 | `modules/01-nucleo-comun/03-redes-sociales-automatizacion.md` | ✅ |
+| 04a | `specializations/marketing-digital/04a-diseno-herramientas-ia.md` | ✅ |
+| 04b | `specializations/hospitality-management/04b-servicio-cliente-chatbots.md` | ✅ |
+| 05a | `specializations/marketing-digital/05a-gestion-campanas.md` | ✅ |
+| 05b | `specializations/hospitality-management/05b-revenue-management.md` | ✅ |
+| 06b | `specializations/hospitality-management/06b-operaciones-hoteleras.md` | ✅ |
 
-**Nota**: Fusionado de 04-MARKETING + 06-HOSPITALIDAD (Jan 27, 2026)
+**Especializaciones**:
+- `specializations/marketing-digital/` ✅
+- `specializations/hospitality-management/` ✅
+- `specializations/sustainable-tourism/` ✅
 
 **starter-kit/**: ✅ Completo
 
@@ -147,7 +153,7 @@
 | 02 | `02-metodologia-investigacion.md` | ✅ |
 | 03 | `03-analisis-datos.md` | ✅ |
 | 04 | `04-redaccion-academica.md` | ✅ |
-| 05 | `05-presentacion-defensa.md` | ✅ |
+| 05 | `05-presentacion-publicacion.md` | ✅ |
 
 **starter-kit/**: ✅ Completo
 
@@ -164,6 +170,9 @@
 | `sistema-skills/` | Crear/usar skills | ✅ |
 | `hooks-reglas/` | Best practices | ✅ |
 | `plantillas-proyecto/` | Templates básico y completo | ✅ |
+| `seguridad-ingenieria/` | Framework seguridad + límites IA | ✅ NUEVO |
+
+**Todos los tracks referencian COMPARTIDO en sus READMEs**: ✅ 6/6
 
 ### dias/ (Material del Instructor)
 
@@ -180,32 +189,11 @@
 
 ### documentacion/
 
-- `reference/EXTERNAL-LINKS-VERIFIED.md` - 33 links verificados (Jan 15, 2026) ✅
+- `reference/EXTERNAL-LINKS-VERIFIED.md` - 33 links verificados ✅
 - `reference/GLOSSARY.md` - Glosario de términos ✅
 - `instructor/ASSESSMENT-FRAMEWORK.md` ✅
 - `instructor/IMPLEMENTATION-PLAN.md` ✅
 - `EXPANSION-ROADMAP.md` ✅
-
----
-
-## Soluciones y Ejemplos Existentes
-
-**Total**: 28 archivos de soluciones
-
-### Por starter-kit/examples/ (12 archivos)
-- 01-DESARROLLO: 2 (debugging, tests)
-- 02-ELECTRONICA: 2 (riego, datasheet)
-- 03-AERONAUTICA: 2 (reynolds, sizing)
-- 04-MARKETING: 4 (copy, contenido, paquete, reseñas)
-- 05-INVESTIGACION: 2 (ficha, marco teórico)
-
-### Por dias/ejercicios-resueltos/ (16 archivos)
-- dia-01: 4 archivos
-- dia-02: 3 archivos
-- dia-03: 2 archivos
-- dia-04: 2 archivos
-- dia-05: 2 archivos
-- dia-06: 2 archivos + mentimeter
 
 ---
 
@@ -214,10 +202,7 @@
 ### Alta Prioridad
 - [ ] Validación por instructores de cada track
 - [ ] Testing con estudiantes piloto
-
-### Media Prioridad
-- [ ] Documentar en 00-FUNDAMENTOS que usa recursos de COMPARTIDO
-- [ ] Decidir si reemplazar archivos originales con versiones revisadas en 02-ELECTRONICA
+- [ ] Rotar API keys de Onshape (expuestas en historial git)
 
 ### Baja Prioridad
 - [ ] Video walkthroughs para instalación
@@ -227,16 +212,28 @@
 
 ## Cambios Recientes
 
+### 30 de enero, 2026
+- ✅ Eliminados 3 archivos OLD_README.md redundantes
+- ✅ Actualizado STATUS.md con conteo real de archivos
+- ✅ Agregadas referencias a COMPARTIDO en todos los tracks (6/6)
+- ✅ Creado COMPARTIDO/seguridad-ingenieria/ (4 archivos)
+- ✅ Removidas API keys expuestas de código Python y JSON
+- ✅ Corregidos links rotos por renombrado de tracks (17 archivos)
+- ✅ Corregidos 9 links rotos en Track 04 Marketing
+
+### 29 de enero, 2026
+- ✅ Renombrado 00-FUNDAMENTOS-PRINCIPALES → 00-FUNDAMENTOS
+- ✅ Renombrado 05-INVESTIGACION-ACADEMIA → 05-INVESTIGACION
+- ✅ Consolidado proyecto-final de Electrónica a sistema escalonado
+
 ### 28 de enero, 2026
 - ✅ Creado sistema de proyectos escalonados para Electrónica (3 tiers)
 - ✅ Creado framework de uso de IA (GREEN/YELLOW/RED)
-- ✅ Actualizado 20-IDEAS.md con mapeo a tiers
 - ✅ Creado este archivo STATUS.md
 
 ### 27 de enero, 2026
 - ✅ Fusionado Marketing + Hospitalidad → Marketing-Negocios-Turismo
 - ✅ Creado proyecto-final para 00-FUNDAMENTOS
-- ✅ Actualizado documentación y cross-references
 
 ---
 
@@ -244,10 +241,15 @@
 
 | Métrica | Valor |
 |---------|-------|
-| Total archivos .md | 273 |
+| Total archivos | 501 |
+| Archivos .md | 430 |
+| Archivos Python | 44 |
 | Tracks especializados | 5 |
-| Módulos totales | 34 |
-| Ejercicios resueltos | 28 |
+| Lecciones/módulos | 44 |
+| Tutoriales | 46 |
+| Ejercicios | 20 |
+| Ejemplos | 89 |
+| Proyectos finales | 6 |
 | Links externos verificados | 33 |
 
 ---
