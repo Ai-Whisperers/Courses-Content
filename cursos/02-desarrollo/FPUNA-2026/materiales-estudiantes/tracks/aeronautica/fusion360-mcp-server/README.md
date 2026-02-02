@@ -1,71 +1,71 @@
-# Fusion 360 MCP Server
+# Servidor MCP para Fusion 360
 
-A Model Context Protocol (MCP) server that interfaces between Cline and Autodesk Fusion 360. This server exposes Fusion 360 toolbar-level commands as callable tools that map directly to Fusion's API.
+Un servidor de Protocolo de Contexto de Modelo (MCP) que actúa como interfaz entre Cline y Autodesk Fusion 360. Este servidor expone comandos de nivel de barra de herramientas de Fusion 360 como herramientas invocables que se mapean directamente a la API de Fusion.
 
-## 🧠 Overview
+## 🧠 Descripción General
 
-This project allows Cline to:
-- Parse natural language prompts (e.g., "Make a box with rounded corners")
-- Resolve them into Fusion tool actions (e.g., CreateSketch → DrawRectangle → Extrude → Fillet)
-- Call those tools through this MCP server
-- Return Python scripts that can be executed in Fusion 360
+Este proyecto permite que Cline pueda:
+- Analizar prompts en lenguaje natural (ej., "Hacer una caja con esquinas redondeadas")
+- Resolverlos en acciones de herramientas de Fusion (ej., CreateSketch → DrawRectangle → Extrude → Fillet)
+- Llamar a esas herramientas a través de este servidor MCP
+- Retornar scripts de Python que se pueden ejecutar en Fusion 360
 
-## 🛠️ Installation
+## 🛠️ Instalación
 
-### Prerequisites
+### Prerrequisitos
 
-- Python 3.9 or higher
+- Python 3.9 o superior
 - Autodesk Fusion 360
 
-### Setup
+### Configuración
 
-1. Clone this repository:
+1. Clonar este repositorio:
    ```bash
    git clone https://github.com/yourusername/fusion360-mcp-server.git
    cd fusion360-mcp-server
    ```
 
-2. Install dependencies:
+2. Instalar dependencias:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 🚀 Usage
+## 🚀 Uso
 
-### Running the HTTP Server
+### Ejecutar el Servidor HTTP
 
 ```bash
 cd src
 python main.py
 ```
 
-This will start the FastAPI server at `http://127.0.0.1:8000`.
+Esto iniciará el servidor FastAPI en `http://127.0.0.1:8000`.
 
-### Running as an MCP Server
+### Ejecutar como Servidor MCP
 
 ```bash
 cd src
 python main.py --mcp
 ```
 
-This will start the server in MCP mode, reading from stdin and writing to stdout.
+Esto iniciará el servidor en modo MCP, leyendo de stdin y escribiendo a stdout.
 
-### API Endpoints
+### Endpoints de la API
 
-- `GET /`: Check if the server is running
-- `GET /tools`: List all available tools
-- `POST /call_tool`: Call a single tool and generate a script
-- `POST /call_tools`: Call multiple tools in sequence and generate a script
+- `GET /`: Verificar si el servidor está ejecutándose
+- `GET /tools`: Listar todas las herramientas disponibles
+- `POST /call_tool`: Llamar a una sola herramienta y generar un script
+- `POST /call_tools`: Llamar a múltiples herramientas en secuencia y generar un script
 
-### Example API Calls
+### Ejemplos de Llamadas a la API
 
-#### List Tools
+#### Listar Herramientas
 
 ```bash
 curl -X GET http://127.0.0.1:8000/tools
 ```
 
-#### Call a Single Tool
+#### Llamar a una Sola Herramienta
 
 ```bash
 curl -X POST http://127.0.0.1:8000/call_tool \
@@ -78,7 +78,7 @@ curl -X POST http://127.0.0.1:8000/call_tool \
   }'
 ```
 
-#### Call Multiple Tools
+#### Llamar a Múltiples Herramientas
 
 ```bash
 curl -X POST http://127.0.0.1:8000/call_tools \
@@ -108,36 +108,36 @@ curl -X POST http://127.0.0.1:8000/call_tools \
   }'
 ```
 
-## 📦 Available Tools
+## 📦 Herramientas Disponibles
 
-The server currently supports the following Fusion 360 tools:
+El servidor actualmente soporta las siguientes herramientas de Fusion 360:
 
-### Create
-- **CreateSketch**: Creates a new sketch on a specified plane
-- **DrawRectangle**: Draws a rectangle in the active sketch
-- **DrawCircle**: Draws a circle in the active sketch
-- **Extrude**: Extrudes a profile into a 3D body
-- **Revolve**: Revolves a profile around an axis
+### Crear
+- **CreateSketch**: Crea un nuevo sketch en un plano especificado
+- **DrawRectangle**: Dibuja un rectángulo en el sketch activo
+- **DrawCircle**: Dibuja un círculo en el sketch activo
+- **Extrude**: Extruye un perfil en un cuerpo 3D
+- **Revolve**: Revoluciona un perfil alrededor de un eje
 
-### Modify
-- **Fillet**: Adds a fillet to selected edges
-- **Chamfer**: Adds a chamfer to selected edges
-- **Shell**: Hollows out a solid body with a specified wall thickness
-- **Combine**: Combines two bodies using boolean operations
+### Modificar
+- **Fillet**: Agrega un filete a los bordes seleccionados
+- **Chamfer**: Agrega un chaflán a los bordes seleccionados
+- **Shell**: Ahueca un cuerpo sólido con un espesor de pared especificado
+- **Combine**: Combina dos cuerpos usando operaciones booleanas
 
-### Export
-- **ExportBody**: Exports a body to a file
+### Exportar
+- **ExportBody**: Exporta un cuerpo a un archivo
 
-## 🔌 MCP Integration
+## 🔌 Integración MCP
 
-To use this server with Cline, add it to your MCP settings configuration file:
+Para usar este servidor con Cline, agrégalo a tu archivo de configuración de MCP:
 
 ```json
 {
   "mcpServers": {
     "fusion360": {
       "command": "python",
-      "args": ["/path/to/fusion360-mcp-server/src/main.py", "--mcp"],
+      "args": ["/ruta/al/fusion360-mcp-server/src/main.py", "--mcp"],
       "env": {},
       "disabled": false,
       "autoApprove": []
@@ -146,33 +146,33 @@ To use this server with Cline, add it to your MCP settings configuration file:
 }
 ```
 
-## 🧩 Tool Registry
+## 🧩 Registro de Herramientas
 
-Tools are defined in `src/tool_registry.json`. Each tool has:
-- **name**: The name of the tool
-- **description**: What the tool does
-- **parameters**: The parameters the tool accepts
-- **docs**: Link to relevant Fusion API documentation
+Las herramientas están definidas en `src/tool_registry.json`. Cada herramienta tiene:
+- **name**: El nombre de la herramienta
+- **description**: Qué hace la herramienta
+- **parameters**: Los parámetros que acepta la herramienta
+- **docs**: Enlace a la documentación relevante de la API de Fusion
 
-Example tool definition:
+Ejemplo de definición de herramienta:
 
 ```json
 {
   "name": "Extrude",
-  "description": "Extrudes a profile into a 3D body.",
+  "description": "Extruye un perfil en un cuerpo 3D.",
   "parameters": {
     "profile_index": {
       "type": "integer",
-      "description": "Index of the profile to extrude.",
+      "description": "Índice del perfil a extruir.",
       "default": 0
     },
     "height": {
       "type": "number",
-      "description": "Height of the extrusion in mm."
+      "description": "Altura de la extrusión en mm."
     },
     "operation": {
       "type": "string",
-      "description": "The operation type (e.g., 'new', 'join', 'cut', 'intersect').",
+      "description": "El tipo de operación (ej., 'new', 'join', 'cut', 'intersect').",
       "default": "new"
     }
   },
@@ -180,11 +180,11 @@ Example tool definition:
 }
 ```
 
-## 📝 Script Generation
+## 📝 Generación de Scripts
 
-The server generates Fusion 360 Python scripts based on the tool calls. These scripts can be executed in Fusion 360's Script Editor.
+El servidor genera scripts de Python para Fusion 360 basados en las llamadas a herramientas. Estos scripts se pueden ejecutar en el Editor de Scripts de Fusion 360.
 
-Example generated script:
+Ejemplo de script generado:
 
 ```python
 import adsk.core, adsk.fusion, traceback
@@ -195,57 +195,57 @@ def run(context):
         app = adsk.core.Application.get()
         ui = app.userInterface
         design = app.activeProduct
-        
-        # Get the active component in the design
+
+        # Obtener el componente activo en el diseño
         component = design.rootComponent
-        
-        # Create a new sketch on the xy plane
+
+        # Crear un nuevo sketch en el plano xy
         sketches = component.sketches
         xyPlane = component.xYConstructionPlane
         sketch = sketches.add(xyPlane)
-        
-        # Draw a rectangle
+
+        # Dibujar un rectángulo
         rectangle = sketch.sketchCurves.sketchLines.addTwoPointRectangle(
             adsk.core.Point3D.create(0, 0, 0),
             adsk.core.Point3D.create(10, 10, 0)
         )
-        
-        # Extrude the profile
+
+        # Extruir el perfil
         prof = sketch.profiles.item(0)
         extrudes = component.features.extrudeFeatures
         extInput = extrudes.createInput(prof, adsk.fusion.FeatureOperations.NewBodyFeatureOperation)
         distance = adsk.core.ValueInput.createByReal(5)
         extInput.setDistanceExtent(False, distance)
         extrude = extrudes.add(extInput)
-        
-        ui.messageBox('Operation completed successfully')
+
+        ui.messageBox('Operación completada exitosamente')
     except:
         if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
 ```
 
-## 🧪 Extending the Server
+## 🧪 Extender el Servidor
 
-### Adding New Tools
+### Agregar Nuevas Herramientas
 
-1. Add a new tool definition to `src/tool_registry.json`
-2. Add a script template to `SCRIPT_TEMPLATES` in `src/script_generator.py`
-3. Add parameter processing logic to `_process_parameters` in `src/script_generator.py`
+1. Agregar una nueva definición de herramienta a `src/tool_registry.json`
+2. Agregar una plantilla de script a `SCRIPT_TEMPLATES` en `src/script_generator.py`
+3. Agregar lógica de procesamiento de parámetros a `_process_parameters` en `src/script_generator.py`
 
-## 📚 Documentation Links
+## 📚 Enlaces de Documentación
 
-- [Fusion 360 API Docs](https://help.autodesk.com/view/fusion360/ENU/)
-- [Python API Class Reference](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-4190E5AD-BE6F-4682-A6D1-67D944D3DD58)
-- [Feature API](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-22D93F54-B84E-4C0B-97D3-CAEA7D2BAFFE)
-- [Sketch API](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-2533FC11-8BD3-4B3A-B52C-F8B470DC4065)
+- [Documentación de la API de Fusion 360](https://help.autodesk.com/view/fusion360/ENU/)
+- [Referencia de Clases de la API de Python](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-4190E5AD-BE6F-4682-A6D1-67D944D3DD58)
+- [API de Features](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-22D93F54-B84E-4C0B-97D3-CAEA7D2BAFFE)
+- [API de Sketch](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-2533FC11-8BD3-4B3A-B52C-F8B470DC4065)
 
-## 🔄 Future Enhancements
+## 🔄 Mejoras Futuras
 
-- Session state tracking for context-aware operations
-- Dynamic tool registration
-- Automation via socket or file polling
-- More Fusion commands
+- Seguimiento de estado de sesión para operaciones con contexto
+- Registro dinámico de herramientas
+- Automatización vía socket o polling de archivos
+- Más comandos de Fusion
 
-## 📄 License
+## 📄 Licencia
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para detalles.

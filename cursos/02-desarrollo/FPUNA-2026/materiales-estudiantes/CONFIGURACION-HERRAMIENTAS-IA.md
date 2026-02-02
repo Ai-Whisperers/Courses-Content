@@ -1,94 +1,94 @@
-# FPUNA 2026 - AI Tools Setup Guide
-## OpenCode + Oh My OpenCode (OMO) Configuration
+# FPUNA 2026 - Guía de Configuración de Herramientas de IA
+## OpenCode + Oh My OpenCode (OMO) - Configuración
 
-**Program**: AI-Augmented Development - Summer 2026  
-**Purpose**: Complete setup guide for AI development environment  
-**Time**: 2-3 hours (Week 1, Day 1-2)
-
----
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [OpenCode Installation](#opencode-installation)
-3. [Oh My OpenCode (OMO) Setup](#oh-my-opencode-omo-setup)
-4. [Configuration](#configuration)
-5. [Verification](#verification)
-6. [Troubleshooting](#troubleshooting)
-7. [Track-Specific Setup](#track-specific-setup)
+**Programa**: Desarrollo Aumentado con IA - Verano 2026
+**Propósito**: Guía completa de configuración del entorno de desarrollo con IA
+**Tiempo**: 2-3 horas (Semana 1, Día 1-2)
 
 ---
 
-## Prerequisites
+## Tabla de Contenidos
 
-### System Requirements
+1. [Prerrequisitos](#prerrequisitos)
+2. [Instalación de OpenCode](#instalación-de-opencode)
+3. [Configuración de Oh My OpenCode (OMO)](#configuración-de-oh-my-opencode-omo)
+4. [Configuración](#configuración)
+5. [Verificación](#verificación)
+6. [Solución de Problemas](#solución-de-problemas)
+7. [Configuración Específica por Track](#configuración-específica-por-track)
 
-**Operating System**:
+---
+
+## Prerrequisitos
+
+### Requisitos del Sistema
+
+**Sistema Operativo**:
 - ✅ Windows 10/11 (64-bit)
-- ✅ macOS 11+ (Big Sur or newer)
+- ✅ macOS 11+ (Big Sur o posterior)
 - ✅ Linux (Ubuntu 20.04+, Fedora 35+)
 
-**Hardware Minimum**:
-- **RAM**: 8 GB (16 GB recommended)
-- **Storage**: 10 GB free space
-- **Processor**: Intel i5 / AMD Ryzen 5 or better
-- **Internet**: Stable connection (for AI API calls)
+**Hardware Mínimo**:
+- **RAM**: 8 GB (16 GB recomendado)
+- **Almacenamiento**: 10 GB de espacio libre
+- **Procesador**: Intel i5 / AMD Ryzen 5 o superior
+- **Internet**: Conexión estable (para llamadas a API de IA)
 
 ---
 
-### Required Software
+### Software Requerido
 
-Install BEFORE OpenCode:
+Instalar ANTES de OpenCode:
 
-#### 1. Node.js (Required)
+#### 1. Node.js (Requerido)
 
-**Version**: 18.x or newer
+**Versión**: 18.x o posterior
 
 **Windows**:
 ```bash
-# Download installer from nodejs.org
-# Run installer, use default settings
-# Restart terminal after install
+# Descargar instalador desde nodejs.org
+# Ejecutar instalador, usar configuración predeterminada
+# Reiniciar terminal después de instalar
 ```
 
 **macOS**:
 ```bash
-# Using Homebrew
+# Usando Homebrew
 brew install node@18
 
-# Verify
-node --version  # Should show v18.x.x
-npm --version   # Should show 9.x.x
+# Verificar
+node --version  # Debe mostrar v18.x.x
+npm --version   # Debe mostrar 9.x.x
 ```
 
 **Linux (Ubuntu/Debian)**:
 ```bash
-# Using NodeSource
+# Usando NodeSource
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-# Verify
+# Verificar
 node --version
 npm --version
 ```
 
 ---
 
-#### 2. Git (Required)
+#### 2. Git (Requerido)
 
 **Windows**:
 ```bash
-# Download from git-scm.com
-# Install with default settings
-# Select "Git from command line and also from 3rd-party software"
+# Descargar desde git-scm.com
+# Instalar con configuración predeterminada
+# Seleccionar "Git from command line and also from 3rd-party software"
 ```
 
 **macOS**:
 ```bash
-# Using Homebrew
+# Usando Homebrew
 brew install git
 
-# Or install Xcode Command Line Tools
+# O instalar Xcode Command Line Tools
 xcode-select --install
 ```
 
@@ -98,156 +98,156 @@ sudo apt-get install git  # Ubuntu/Debian
 sudo dnf install git      # Fedora
 ```
 
-**Verify**:
+**Verificar**:
 ```bash
 git --version
 ```
 
 ---
 
-#### 3. VS Code (Recommended)
+#### 3. VS Code (Recomendado)
 
-**All Platforms**:
-- Download from [code.visualstudio.com](https://code.visualstudio.com/)
-- Install with default settings
-- Launch VS Code to verify
+**Todas las Plataformas**:
+- Descargar desde [code.visualstudio.com](https://code.visualstudio.com/)
+- Instalar con configuración predeterminada
+- Abrir VS Code para verificar
 
-**Extensions to Install** (do this later):
-- OpenCode extension
+**Extensiones a Instalar** (hacerlo después):
+- Extensión OpenCode
 - GitLens
 - Prettier
 - ESLint/TSLint
 
 ---
 
-## OpenCode Installation
+## Instalación de OpenCode
 
-### Step 1: Download OpenCode
+### Paso 1: Descargar OpenCode
 
-**Option A: Official Website** (Recommended)
+**Opción A: Sitio Web Oficial** (Recomendado)
 ```
-Visit: https://opencode.dev
-Download for your OS
+Visitar: https://opencode.dev
+Descargar para tu sistema operativo
 ```
 
-**Option B: NPM** (Alternative)
+**Opción B: NPM** (Alternativa)
 ```bash
 npm install -g @opencode/cli
 ```
 
 ---
 
-### Step 2: Install OpenCode
+### Paso 2: Instalar OpenCode
 
 **Windows**:
-1. Run `OpenCode-Setup.exe`
-2. Follow installer wizard
-3. Select "Add to PATH"
-4. Complete installation
-5. Restart terminal
+1. Ejecutar `OpenCode-Setup.exe`
+2. Seguir el asistente de instalación
+3. Seleccionar "Agregar al PATH"
+4. Completar la instalación
+5. Reiniciar terminal
 
 **macOS**:
 ```bash
-# If downloaded .dmg
-# Drag OpenCode to Applications
+# Si descargaste .dmg
+# Arrastra OpenCode a Aplicaciones
 
-# If using Homebrew
+# Si usas Homebrew
 brew install --cask opencode
 ```
 
 **Linux**:
 ```bash
-# Download .deb or .rpm
+# Descargar .deb o .rpm
 sudo dpkg -i opencode_*.deb  # Ubuntu/Debian
 sudo rpm -i opencode_*.rpm   # Fedora
 
-# Or use snap
+# O usar snap
 sudo snap install opencode
 ```
 
 ---
 
-### Step 3: Verify OpenCode Installation
+### Paso 3: Verificar Instalación de OpenCode
 
 ```bash
-# Check version
+# Verificar versión
 opencode --version
 
-# Should show: OpenCode v1.x.x
+# Debe mostrar: OpenCode v1.x.x
 ```
 
-**If command not found**:
-- Restart terminal
-- Check PATH environment variable
-- Reinstall with "Add to PATH" selected
+**Si dice "comando no encontrado"**:
+- Reiniciar terminal
+- Verificar variable de entorno PATH
+- Reinstalar con "Agregar al PATH" seleccionado
 
 ---
 
-### Step 4: OpenCode First Run
+### Paso 4: Primera Ejecución de OpenCode
 
 ```bash
-# Initialize OpenCode
+# Inicializar OpenCode
 opencode init
 
-# Login (or create account)
+# Iniciar sesión (o crear cuenta)
 opencode login
 
-# Test
+# Probar
 opencode test
 ```
 
-**Expected Output**:
+**Salida Esperada**:
 ```
-✓ OpenCode initialized successfully
-✓ Logged in as: your-email@fpuna.edu.py
-✓ Connection test passed
+✓ OpenCode inicializado exitosamente
+✓ Sesión iniciada como: tu-email@fpuna.edu.py
+✓ Prueba de conexión exitosa
 ```
 
 ---
 
-## Oh My OpenCode (OMO) Setup
+## Configuración de Oh My OpenCode (OMO)
 
-### What is OMO?
+### ¿Qué es OMO?
 
-**Oh My OpenCode** is an enhancement layer that adds:
-- **MCPs** (Model Context Providers) - Connect to external tools
-- **Skills** - Pre-built capabilities
-- **Hooks** - Automation triggers
-- **Rules** - Project-specific guidelines
+**Oh My OpenCode** es una capa de mejora que añade:
+- **MCPs** (Proveedores de Contexto de Modelo) - Conectar a herramientas externas
+- **Skills** - Capacidades preconstruidas
+- **Hooks** - Disparadores de automatización
+- **Rules** - Reglas específicas del proyecto
 
 ---
 
-### Step 1: Install OMO
+### Paso 1: Instalar OMO
 
 ```bash
-# Install OMO globally
+# Instalar OMO globalmente
 npm install -g oh-my-opencode
 
-# Verify installation
+# Verificar instalación
 omo --version
 
-# Should show: Oh My OpenCode v2.x.x
+# Debe mostrar: Oh My OpenCode v2.x.x
 ```
 
 ---
 
-### Step 2: Initialize OMO
+### Paso 2: Inicializar OMO
 
 ```bash
-# In your working directory
+# En tu directorio de trabajo
 mkdir fpuna-2026
 cd fpuna-2026
 
-# Initialize OMO
+# Inicializar OMO
 omo init
 
-# Follow prompts:
-# - Project name: fpuna-2026
-# - Type: Educational
+# Seguir los prompts:
+# - Nombre del proyecto: fpuna-2026
+# - Tipo: Educational
 # - Framework: Multi-track
 ```
 
-**This creates**:
+**Esto crea**:
 ```
 fpuna-2026/
 ├── .omo/
@@ -261,27 +261,27 @@ fpuna-2026/
 
 ---
 
-### Step 3: Install Core MCPs
+### Paso 3: Instalar MCPs Básicos
 
-**MCPs = Model Context Providers** (connect to tools)
+**MCPs = Proveedores de Contexto de Modelo** (conectan a herramientas)
 
 ```bash
-# Filesystem MCP (access files)
+# MCP de Sistema de archivos (acceso a archivos)
 omo mcp install filesystem
 
-# Git MCP (version control)
+# MCP de Git (control de versiones)
 omo mcp install git
 
-# Web MCP (fetch web content)
+# MCP Web (obtener contenido web)
 omo mcp install web
 
-# Verify
+# Verificar
 omo mcp list
 ```
 
-**Expected Output**:
+**Salida Esperada**:
 ```
-Installed MCPs:
+MCPs Instalados:
 ✓ filesystem v1.2.0
 ✓ git v1.1.0
 ✓ web v1.0.5
@@ -289,31 +289,31 @@ Installed MCPs:
 
 ---
 
-### Step 4: Install Universal Skills
+### Paso 4: Instalar Skills Universales
 
-**Skills = Pre-built capabilities**
+**Skills = Capacidades preconstruidas**
 
 ```bash
-# Code generation skill
+# Skill de generación de código
 omo skill install code-gen
 
-# Debugging skill
+# Skill de depuración
 omo skill install debug
 
-# Documentation skill
+# Skill de documentación
 omo skill install docs
 
-# Verify
+# Verificar
 omo skill list
 ```
 
 ---
 
-## Configuration
+## Configuración
 
-### OpenCode Configuration
+### Configuración de OpenCode
 
-**Edit**: `~/.opencode/config.json`
+**Editar**: `~/.opencode/config.json`
 
 ```json
 {
@@ -337,9 +337,9 @@ omo skill list
 
 ---
 
-### OMO Configuration
+### Configuración de OMO
 
-**Edit**: `fpuna-2026/.omo/config.json`
+**Editar**: `fpuna-2026/.omo/config.json`
 
 ```json
 {
@@ -370,76 +370,76 @@ omo skill list
 
 ---
 
-## Verification
+## Verificación
 
-### Complete Verification Checklist
+### Lista de Verificación Completa
 
-Run these commands to verify everything works:
+Ejecuta estos comandos para verificar que todo funciona:
 
 ```bash
-# 1. Check Node.js
+# 1. Verificar Node.js
 node --version
 npm --version
 
-# 2. Check Git
+# 2. Verificar Git
 git --version
 
-# 3. Check OpenCode
+# 3. Verificar OpenCode
 opencode --version
 opencode test
 
-# 4. Check OMO
+# 4. Verificar OMO
 omo --version
 omo status
 
-# 5. Check MCPs
+# 5. Verificar MCPs
 omo mcp list
 
-# 6. Check Skills
+# 6. Verificar Skills
 omo skill list
 
-# 7. Test end-to-end
-omo generate "Create a simple Hello World function in TypeScript"
+# 7. Prueba de extremo a extremo
+omo generate "Crea una función simple de Hola Mundo en TypeScript"
 ```
 
-**All checks should pass** ✅
+**Todas las verificaciones deben pasar** ✅
 
 ---
 
-### Test Project
+### Proyecto de Prueba
 
-Create a test to verify everything works:
+Crea una prueba para verificar que todo funciona:
 
 ```bash
-# Create test directory
+# Crear directorio de prueba
 mkdir test-opencode
 cd test-opencode
 
-# Initialize
+# Inicializar
 omo init --quick
 
-# Generate test code
-omo generate "Create a TypeScript function that adds two numbers"
+# Generar código de prueba
+omo generate "Crea una función TypeScript que sume dos números"
 
-# Verify file was created
+# Verificar que se creó el archivo
 ls *.ts
 ```
 
-**Expected**: `add.ts` file created with working code
+**Esperado**: archivo `add.ts` creado con código funcional
 
 ---
 
-## Troubleshooting
+## Solución de Problemas
 
-### Common Issues
+### Problemas Comunes
 
-#### Issue 1: "opencode: command not found"
+#### Problema 1: "opencode: comando no encontrado"
 
-**Solution**:
+**Solución**:
 ```bash
 # Windows
-# Add to PATH: C:\Program Files\OpenCode\bin
-# Restart terminal
+# Agregar al PATH: C:\Program Files\OpenCode\bin
+# Reiniciar terminal
 
 # macOS/Linux
 echo 'export PATH="$PATH:/usr/local/bin/opencode"' >> ~/.bashrc
@@ -448,175 +448,175 @@ source ~/.bashrc
 
 ---
 
-#### Issue 2: "omo: command not found"
+#### Problema 2: "omo: comando no encontrado"
 
-**Solution**:
+**Solución**:
 ```bash
-# Check global npm path
+# Verificar ruta global de npm
 npm config get prefix
 
-# Should be in PATH
-# If not, add it:
+# Debe estar en el PATH
+# Si no, agregarlo:
 export PATH="$PATH:$(npm config get prefix)/bin"
 
-# Reinstall OMO
+# Reinstalar OMO
 npm install -g oh-my-opencode
 ```
 
 ---
 
-#### Issue 3: "Permission denied" (macOS/Linux)
+#### Problema 3: "Permission denied" (macOS/Linux)
 
-**Solution**:
+**Solución**:
 ```bash
-# Fix npm permissions
+# Arreglar permisos de npm
 sudo chown -R $(whoami) ~/.npm
 sudo chown -R $(whoami) /usr/local/lib/node_modules
 
-# Or use NVM (recommended)
+# O usar NVM (recomendado)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 nvm install 18
 ```
 
 ---
 
-#### Issue 4: OpenCode "Connection failed"
+#### Problema 4: OpenCode "Conexión fallida"
 
-**Causes**:
-- No internet connection
-- Firewall blocking
-- API key invalid
+**Causas**:
+- Sin conexión a internet
+- Firewall bloqueando
+- Clave API inválida
 
-**Solution**:
+**Solución**:
 ```bash
-# Test internet
+# Probar internet
 ping google.com
 
-# Check firewall
-# Allow OpenCode through Windows Firewall or macOS Firewall
+# Verificar firewall
+# Permitir OpenCode a través del Firewall de Windows o macOS
 
-# Re-login
+# Re-iniciar sesión
 opencode logout
 opencode login
 ```
 
 ---
 
-#### Issue 5: OMO MCPs not working
+#### Problema 5: MCPs de OMO no funcionan
 
-**Solution**:
+**Solución**:
 ```bash
-# Reinstall MCPs
+# Reinstalar MCPs
 omo mcp uninstall --all
 omo mcp install filesystem git web
 
-# Verify
+# Verificar
 omo mcp test filesystem
 ```
 
 ---
 
-### Getting Help
+### Obtener Ayuda
 
-**If stuck**:
-1. Check [OpenCode Docs](https://docs.opencode.dev)
-2. Check [OMO Documentation](https://docs.omo.dev)
-3. Ask in Slack: `#tech-support`
+**Si estás atascado**:
+1. Revisa [Documentación de OpenCode](https://docs.opencode.dev)
+2. Revisa [Documentación de OMO](https://docs.omo.dev)
+3. Pregunta en Slack: `#soporte-tecnico`
 4. Email: `soporte-ia@fpuna.edu.py`
 
-**Include in help request**:
-- Operating system
-- Error message (full text)
-- Commands you ran
-- Screenshots
+**Incluir en solicitud de ayuda**:
+- Sistema operativo
+- Mensaje de error (texto completo)
+- Comandos que ejecutaste
+- Capturas de pantalla
 
 ---
 
-## Track-Specific Setup
+## Configuración Específica por Track
 
-### Track 07: QA Automation
+### Track 07: Automatización QA
 
-**Additional MCPs**:
+**MCPs Adicionales**:
 ```bash
 omo mcp install playwright
 omo mcp install test-runner
 ```
 
-**Additional Skills**:
+**Skills Adicionales**:
 ```bash
 omo skill install qa/test-generation
 omo skill install qa/page-object
 omo skill install qa/api-testing
 ```
 
-**Verify**:
+**Verificar**:
 ```bash
-# Check Playwright
+# Verificar Playwright
 npx playwright --version
 
-# Should show: Version 1.x.x
+# Debe mostrar: Version 1.x.x
 ```
 
 ---
 
-### Track 08: Web Development
+### Track 08: Desarrollo Web
 
-**Additional MCPs**:
+**MCPs Adicionales**:
 ```bash
 omo mcp install nextjs
 omo mcp install prisma
 omo mcp install vercel
 ```
 
-**Additional Skills**:
+**Skills Adicionales**:
 ```bash
 omo skill install web/component-gen
 omo skill install web/api-routes
 omo skill install web/database-schema
 ```
 
-**Verify**:
+**Verificar**:
 ```bash
-# Check Next.js
+# Verificar Next.js
 npx next --version
 
-# Check Prisma
+# Verificar Prisma
 npx prisma --version
 ```
 
 ---
 
-### Other Tracks (When Available)
+### Otros Tracks (Cuando Estén Disponibles)
 
-**Track 01 (Software Dev)**:
-- Docker MCP
-- Kubernetes MCP
-- Cloud provider MCPs
+**Track 01 (Desarrollo de Software)**:
+- MCP de Docker
+- MCP de Kubernetes
+- MCPs de proveedores cloud
 
-**Track 02 (Electronics)**:
-- KiCad MCP
-- Arduino MCP
-- PlatformIO MCP
+**Track 02 (Electrónica)**:
+- MCP de KiCad
+- MCP de Arduino
+- MCP de PlatformIO
 
-*Details provided when tracks are created*
-
----
-
-## VS Code Integration
-
-### Install OpenCode Extension
-
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X)
-3. Search "OpenCode"
-4. Click Install
-5. Reload VS Code
+*Detalles proporcionados cuando los tracks estén creados*
 
 ---
 
-### VS Code Settings
+## Integración con VS Code
 
-**Settings** (`Ctrl + ,`):
+### Instalar Extensión de OpenCode
+
+1. Abrir VS Code
+2. Ir a Extensiones (Ctrl+Shift+X)
+3. Buscar "OpenCode"
+4. Hacer clic en Instalar
+5. Recargar VS Code
+
+---
+
+### Configuración de VS Code
+
+**Configuración** (`Ctrl + ,`):
 
 ```json
 {
@@ -624,10 +624,10 @@ npx prisma --version
   "opencode.inlineCompletions": true,
   "opencode.autoSave": true,
   "opencode.language": "es",
-  
+
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  
+
   "git.autofetch": true,
   "git.confirmSync": false
 }
@@ -635,90 +635,90 @@ npx prisma --version
 
 ---
 
-### Keyboard Shortcuts
+### Atajos de Teclado
 
-**OpenCode in VS Code**:
-- `Ctrl + Shift + Space` - Open OpenCode prompt
-- `Ctrl + Shift + G` - Generate code
-- `Ctrl + Shift + E` - Explain code
-- `Ctrl + Shift + R` - Refactor code
-- `Ctrl + Shift + T` - Generate tests
+**OpenCode en VS Code**:
+- `Ctrl + Shift + Space` - Abrir prompt de OpenCode
+- `Ctrl + Shift + G` - Generar código
+- `Ctrl + Shift + E` - Explicar código
+- `Ctrl + Shift + R` - Refactorizar código
+- `Ctrl + Shift + T` - Generar pruebas
 
-**Customize**: File → Preferences → Keyboard Shortcuts
-
----
-
-## Best Practices
-
-### Do's ✅
-
-- **Keep tools updated**: `omo update`, `npm update -g`
-- **Use version control**: Commit often with meaningful messages
-- **Validate AI outputs**: Don't blindly trust generated code
-- **Save your work**: Auto-save + manual commits
-- **Use skills**: Don't reinvent the wheel
-
-### Don'ts ❌
-
-- **Don't commit secrets**: Use `.env` files, add to `.gitignore`
-- **Don't skip setup**: Proper configuration prevents issues
-- **Don't ignore errors**: Fix them early
-- **Don't work without backups**: Git is your friend
-- **Don't use outdated tools**: Update regularly
+**Personalizar**: Archivo → Preferencias → Atajos de teclado
 
 ---
 
-## Maintenance
+## Mejores Prácticas
 
-### Weekly Maintenance
+### Qué Hacer ✅
+
+- **Mantén las herramientas actualizadas**: `omo update`, `npm update -g`
+- **Usa control de versiones**: Haz commits frecuentes con mensajes significativos
+- **Valida las salidas de la IA**: No confíes ciegamente en el código generado
+- **Guarda tu trabajo**: Auto-guardado + commits manuales
+- **Usa skills**: No reinventes la rueda
+
+### Qué NO Hacer ❌
+
+- **No hagas commit de secretos**: Usa archivos `.env`, agrégalos a `.gitignore`
+- **No te saltes la configuración**: Una configuración correcta previene problemas
+- **No ignores errores**: Arréglalios temprano
+- **No trabajes sin backups**: Git es tu amigo
+- **No uses herramientas desactualizadas**: Actualiza regularmente
+
+---
+
+## Mantenimiento
+
+### Mantenimiento Semanal
 
 ```bash
-# Update OpenCode
+# Actualizar OpenCode
 opencode update
 
-# Update OMO
+# Actualizar OMO
 npm update -g oh-my-opencode
 
-# Update MCPs
+# Actualizar MCPs
 omo mcp update --all
 
-# Update Skills
+# Actualizar Skills
 omo skill update --all
 ```
 
 ---
 
-### Monthly Maintenance
+### Mantenimiento Mensual
 
 ```bash
-# Update Node.js (check latest LTS)
+# Actualizar Node.js (verificar último LTS)
 nvm install --lts
 nvm use --lts
 
-# Update npm
+# Actualizar npm
 npm install -g npm@latest
 
-# Clean npm cache
+# Limpiar caché de npm
 npm cache clean --force
 
-# Verify everything
+# Verificar todo
 opencode test
 omo status
 ```
 
 ---
 
-## Security Best Practices
+## Prácticas de Seguridad
 
-### Protect Your API Keys
+### Protege Tus Claves API
 
-**Never commit**:
-- API keys
-- Authentication tokens
-- Database passwords
-- `.env` files
+**Nunca hagas commit de**:
+- Claves API
+- Tokens de autenticación
+- Contraseñas de bases de datos
+- Archivos `.env`
 
-**Always use**:
+**Siempre usa**:
 ```bash
 # .gitignore
 .env
@@ -730,81 +730,80 @@ secrets/
 
 ---
 
-### Secure Configuration
+### Configuración Segura
 
 ```bash
-# Set restrictive permissions
+# Establecer permisos restrictivos
 chmod 600 ~/.opencode/config.json
 chmod 600 ~/.omo/config.json
 
-# Don't share configurations
-# (May contain sensitive data)
+# No compartas configuraciones
+# (Pueden contener datos sensibles)
 ```
 
 ---
 
-## FAQs
+## Preguntas Frecuentes
 
-### Q: Do I need to pay for OpenCode?
+### P: ¿Necesito pagar por OpenCode?
 
-**A**: FPUNA students get free access during the program. After program, free tier available with limits.
+**R**: Los estudiantes de FPUNA obtienen acceso gratuito durante el programa. Después del programa, hay un nivel gratuito disponible con límites.
 
-### Q: Can I use this on multiple computers?
+### P: ¿Puedo usar esto en múltiples computadoras?
 
-**A**: Yes, login on each device with same account. Settings sync automatically.
+**R**: Sí, inicia sesión en cada dispositivo con la misma cuenta. La configuración se sincroniza automáticamente.
 
-### Q: What if my internet goes down?
+### P: ¿Qué pasa si se cae mi internet?
 
-**A**: Some offline features available, but AI generation requires internet.
+**R**: Algunas funciones offline están disponibles, pero la generación con IA requiere internet.
 
-### Q: Can I use different AI models?
+### P: ¿Puedo usar diferentes modelos de IA?
 
-**A**: Yes, configure in `config.json`. Options: Claude, GPT-4, etc.
+**R**: Sí, configúralo en `config.json`. Opciones: Claude, GPT-4, etc.
 
-### Q: Is my code sent to AI servers?
+### P: ¿Mi código se envía a servidores de IA?
 
-**A**: Yes, for generation. Don't include sensitive data in prompts. Review OpenCode privacy policy.
-
----
-
-## Next Steps
-
-After setup is complete:
-
-1. ✅ **Verify everything works** (run all tests)
-2. ✅ **Complete Week 1 Day 3** (Prompt Engineering)
-3. ✅ **Practice generating code** (build confidence)
-4. ✅ **Join Slack** (get help if needed)
-5. ✅ **Prepare for Week 2** (choose your track)
+**R**: Sí, para la generación. No incluyas datos sensibles en los prompts. Revisa la política de privacidad de OpenCode.
 
 ---
 
-## Additional Resources
+## Siguientes Pasos
 
-**Documentation**:
-- [OpenCode Official Docs](https://docs.opencode.dev)
-- [OMO Documentation](https://docs.omo.dev)
-- [VS Code Docs](https://code.visualstudio.com/docs)
+Después de que la configuración esté completa:
 
-**Video Tutorials**:
+1. ✅ **Verifica que todo funciona** (ejecuta todas las pruebas)
+2. ✅ **Completa Semana 1 Día 3** (Ingeniería de Prompts)
+3. ✅ **Practica generando código** (desarrolla confianza)
+4. ✅ **Únete a Slack** (obtén ayuda si la necesitas)
+5. ✅ **Prepárate para Semana 2** (elige tu track)
+
+---
+
+## Recursos Adicionales
+
+**Documentación**:
+- [Documentación Oficial de OpenCode](https://docs.opencode.dev)
+- [Documentación de OMO](https://docs.omo.dev)
+- [Documentación de VS Code](https://code.visualstudio.com/docs)
+
+**Tutoriales en Video**:
 - [Guía Completa de Videos](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md) - Tutoriales para todas las herramientas
-- [Claude Code Setup](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#claude-code) - Instalación paso a paso
-- [VS Code Configuration](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#vs-code) - Editor recomendado
-- [Git & GitHub Basics](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#git--github) - Control de versiones
+- [Configuración de Claude Code](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#claude-code) - Instalación paso a paso
+- [Configuración de VS Code](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#vs-code) - Editor recomendado
+- [Git y GitHub Básico](../../../../_compartido/04-utilidades-ia/configuracion-inicial/VIDEO-TUTORIALS.md#git--github) - Control de versiones
 
-**Community**:
-- Slack: `#tech-support`, `#opencode-help`
-- Discord: OpenCode Community
+**Comunidad**:
+- Slack: `#soporte-tecnico`, `#ayuda-opencode`
+- Discord: Comunidad OpenCode
 - GitHub: OpenCode Issues
 
 ---
 
-**Last Updated**: January 15, 2026  
-**Version**: 1.0  
-**Next Review**: After Summer 2026 Cohort 1
+**Última Actualización**: Enero 2026
+**Versión**: 1.0
+**Próxima Revisión**: Después del Cohorte 1 de Verano 2026
 
 ---
 
-*FPUNA Summer 2026 - AI Tools Setup*  
-*Empowering Development with AI*
-
+*FPUNA Verano 2026 - Configuración de Herramientas de IA*
+*Potenciando el Desarrollo con IA*
