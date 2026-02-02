@@ -64,7 +64,9 @@ Indícale a OpenCode con qué "cerebro" (proveedor) trabajarás. Para este curso
 2. Configúralo en tu terminal:
 
 ```bash
-opencode configure --provider gemini --apiKey TU_CLAVE_AQUI
+opencode
+
+/connect
 ```
 
 ---
