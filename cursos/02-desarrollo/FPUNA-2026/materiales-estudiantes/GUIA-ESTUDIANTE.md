@@ -613,10 +613,11 @@ No funciona, ayuda!!!
 
 **Solución**:
 1. Verifica que tienes Node.js 18+: `node --version`
-2. Visita https://opencode.ai/ para instrucciones actualizadas
-3. Intenta: `curl -fsSL https://opencode.ai/install | bash` (macOS/Linux)
-4. O usa npm: `npm install -g opencode`
-5. Si falla, comparte el error completo en `#troubleshooting`
+2. Usa el comando recomendado: `npm install -g opencode-ai@latest`
+3. Si falla por permisos: `sudo npm install -g opencode-ai@latest` (Mac/Linux)
+4. En Windows: abre PowerShell como Administrador
+5. Para abrir OpenCode después de instalar, escribe: `opencode`
+6. Si sigue fallando, visita https://opencode.ai/ o pregunta en `#troubleshooting`
 
 #### "No puedo acceder a las APIs de IA"
 
@@ -666,15 +667,14 @@ No funciona, ayuda!!!
 ```markdown
 - [ ] OpenCode instalado globalmente
       Sitio oficial: https://opencode.ai/
-      macOS/Linux: `curl -fsSL https://opencode.ai/install | bash`
-      NPM: `npm install -g opencode`
-      Homebrew: `brew install opencode`
+      Comando recomendado: `npm install -g opencode-ai@latest`
+      Alternativa macOS/Linux: `curl -fsSL https://opencode.ai/install | bash`
 
 - [ ] Verificar instalación
       Ejecutar: `opencode --version`
 
-- [ ] Iniciar OpenCode
-      Ejecutar: `opencode`
+- [ ] Abrir OpenCode
+      Simplemente escribe: `opencode` en tu terminal
 ```
 
 #### Opcional (Mejora la Experiencia)

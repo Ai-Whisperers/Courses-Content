@@ -139,14 +139,14 @@ OpenCode es un agente de IA de código abierto que te ayuda a escribir código d
 
 ### Paso 1: Instalar OpenCode
 
-**Opción A: Script de Instalación** (Recomendado para macOS/Linux)
+**Opción A: NPM (RECOMENDADO)** - Todas las plataformas
 ```bash
-curl -fsSL https://opencode.ai/install | bash
+npm install -g opencode-ai@latest
 ```
 
-**Opción B: NPM** (Todas las plataformas)
+**Opción B: Script de Instalación** (macOS/Linux)
 ```bash
-npm install -g opencode
+curl -fsSL https://opencode.ai/install | bash
 ```
 
 **Opción C: Homebrew** (macOS)
@@ -158,6 +158,8 @@ brew install opencode
 ```bash
 pacman -S opencode
 ```
+
+> **Nota**: Si `npm install -g opencode` no funciona, usa `npm install -g opencode-ai@latest` que es el paquete oficial actualizado.
 
 ---
 
@@ -179,11 +181,19 @@ opencode --version
 
 ### Paso 3: Primera Ejecución
 
-```bash
-# Iniciar OpenCode
-opencode
+Para abrir OpenCode, simplemente escribe en tu terminal:
 
-# Esto abrirá el agente en tu terminal
+```bash
+opencode
+```
+
+¡Eso es todo! OpenCode se abrirá en modo interactivo en tu terminal.
+
+**Comandos útiles**:
+```bash
+opencode              # Iniciar OpenCode (modo interactivo)
+opencode --help       # Ver todas las opciones disponibles
+opencode --version    # Ver la versión instalada
 ```
 
 **Configurar proveedor de IA**:
@@ -191,12 +201,57 @@ opencode
 - Puedes usar tu cuenta de GitHub Copilot o ChatGPT Plus
 - También puedes configurar APIs directamente
 
-**Comandos útiles**:
+---
+
+### Solución de Problemas de Instalación
+
+#### Error: "npm install -g opencode" no funciona
+
+**Solución**: Usa el paquete oficial actualizado:
 ```bash
-opencode --help          # Ver ayuda
-opencode config          # Configurar preferencias
-opencode                 # Iniciar sesión interactiva
+npm install -g opencode-ai@latest
 ```
+
+#### Error: "opencode: command not found" después de instalar
+
+**Posibles causas y soluciones**:
+
+1. **Terminal no actualizada**: Cierra y vuelve a abrir tu terminal
+2. **PATH no configurado**: El directorio de npm global no está en tu PATH
+   - Windows: Reinicia PowerShell o CMD
+   - macOS/Linux: Ejecuta `source ~/.bashrc` o `source ~/.zshrc`
+3. **Instalación como usuario vs global**:
+   ```bash
+   # Verifica dónde se instaló
+   npm list -g opencode-ai
+   ```
+
+#### Error: "EACCES permission denied" (macOS/Linux)
+
+**Solución A** - Usar sudo:
+```bash
+sudo npm install -g opencode-ai@latest
+```
+
+**Solución B** - Configurar npm para no requerir sudo:
+```bash
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+npm install -g opencode-ai@latest
+```
+
+#### Error: "execution policy" en Windows
+
+**Solución**: Abre PowerShell como Administrador y ejecuta:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+#### Error: "npm not found"
+
+**Solución**: Node.js no está instalado. Descárgalo desde [nodejs.org](https://nodejs.org/) (versión LTS recomendada)
 
 ---
 

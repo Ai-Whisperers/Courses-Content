@@ -163,15 +163,18 @@ Después de instalar VS Code, instalar estas extensiones:
 #### Instalación
 
 ```bash
-# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
-curl -fsSL https://opencode.ai/install | bash
+# Opción A: NPM (RECOMENDADO para todas las plataformas)
+npm install -g opencode-ai@latest
 
-# Opción B: NPM (todas las plataformas)
-npm install -g opencode
+# Opción B: Script de instalación (macOS/Linux)
+curl -fsSL https://opencode.ai/install | bash
 
 # Opción C: Homebrew (macOS)
 brew install opencode
 ```
+
+> **Nota**: Si `npm install -g opencode` no funciona, usa `opencode-ai@latest`
+> Para abrir OpenCode, simplemente escribe `opencode` en tu terminal.
 
 #### Configurar API Key
 

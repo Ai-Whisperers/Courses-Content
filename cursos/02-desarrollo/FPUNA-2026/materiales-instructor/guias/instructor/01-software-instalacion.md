@@ -94,11 +94,11 @@ OpenCode es un agente de IA de código abierto con 95,000+ estrellas en GitHub. 
 **Instalación (elegir una opción):**
 
 ```bash
-# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
-curl -fsSL https://opencode.ai/install | bash
+# Opción A: NPM (RECOMENDADO para todas las plataformas)
+npm install -g opencode-ai@latest
 
-# Opción B: NPM (todas las plataformas)
-npm install -g opencode
+# Opción B: Script de instalación (macOS/Linux)
+curl -fsSL https://opencode.ai/install | bash
 
 # Opción C: Homebrew (macOS)
 brew install opencode
@@ -106,6 +106,8 @@ brew install opencode
 # Opción D: Pacman (Arch Linux)
 pacman -S opencode
 ```
+
+> **Nota**: Si `npm install -g opencode` no funciona, usa `opencode-ai@latest`
 
 **Verificar instalación:**
 ```bash
@@ -116,6 +118,7 @@ opencode --version
 ```bash
 opencode
 ```
+Simplemente escribe `opencode` en tu terminal para abrirlo.
 
 **Configurar proveedor de IA (opcional):**
 - OpenCode soporta GitHub Copilot y ChatGPT Plus/Pro directamente

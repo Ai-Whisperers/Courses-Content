@@ -37,15 +37,17 @@ OpenCode es tu interfaz principal con la IA. Es el asistente que ejecutará tus 
 Elige una de las siguientes opciones:
 
 ```bash
-# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
-curl -fsSL https://opencode.ai/install | bash
+# Opción A: NPM (RECOMENDADO para todas las plataformas)
+npm install -g opencode-ai@latest
 
-# Opción B: NPM (todas las plataformas)
-npm install -g opencode
+# Opción B: Script de instalación (macOS/Linux)
+curl -fsSL https://opencode.ai/install | bash
 
 # Opción C: Homebrew (macOS)
 brew install opencode
 ```
+
+> **Nota**: Si `npm install -g opencode` no funciona, usa `opencode-ai@latest`
 
 ### Paso 2: Activación
 
