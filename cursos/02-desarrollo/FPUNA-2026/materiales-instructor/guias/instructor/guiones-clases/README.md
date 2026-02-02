@@ -97,7 +97,6 @@
 ## Recursos Relacionados
 
 - [Setup por Dia](../../dias/)
-- [Mentimeter](../../dias/dia-01-fundamentos/mentimeter.md)
 - [Instructor Guide](../INSTRUCTOR-GUIDE.md)
 
 ---

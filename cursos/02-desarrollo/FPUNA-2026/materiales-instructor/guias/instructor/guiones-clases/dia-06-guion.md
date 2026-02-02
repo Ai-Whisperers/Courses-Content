@@ -17,7 +17,7 @@
 - [ ] Zotero funcionando con biblioteca de ejemplo
 - [ ] Python con pandas, scipy instalados
 - [ ] Dataset de ejemplo cargado
-- [ ] Mentimeter de FEEDBACK FINAL listo
+- [ ] Formulario de FEEDBACK FINAL listo
 - [ ] Certificados preparados (si aplica)
 - [ ] Lista de recursos para compartir
 
@@ -247,17 +247,15 @@ Dia 6: Investigacion - papers, datos, redaccion
 HABILIDAD CENTRAL: Escribir prompts efectivos
 ```
 
-### 1:35 - 1:55 | MENTIMETER FEEDBACK FINAL
+### 1:35 - 1:55 | FEEDBACK FINAL
 
 **DECIR:**
-> "Ahora lo mas importante: su feedback. Abran menti.com con el codigo [CODIGO]"
+> "Ahora lo mas importante: su feedback. Completen el formulario de evaluacion."
 
 **EJECUTAR:**
-- 7 preguntas del Mentimeter de feedback final
-- Dar tiempo suficiente (especialmente pregunta 3 testimonial)
-- Mostrar resultados en pantalla
-
-**VER:** [mentimeter.md](../../dias/dia-06-investigacion/mentimeter.md)
+- Distribuir formulario de feedback (Google Forms o impreso)
+- Dar tiempo suficiente para completar
+- Recoger testimonios voluntarios verbalmente
 
 ### 1:55 - 2:00 | Cierre y Despedida
 
@@ -289,7 +287,7 @@ SIGAN PRACTICANDO:
 
 ### Inmediatamente despues:
 
-1. **Exportar Mentimeter** a Excel
+1. **Exportar feedback** a Excel
 2. **Calcular metricas**:
    - % satisfaccion (pregunta 1)
    - Dia mas valorado (pregunta 2)

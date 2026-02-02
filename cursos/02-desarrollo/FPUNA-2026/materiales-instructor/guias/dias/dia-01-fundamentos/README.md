@@ -37,7 +37,7 @@ Ver: [SETUP-DIA-01.md](./SETUP-DIA-01.md) para instrucciones completas.
 ### Módulo 1: Bienvenida + Onboarding (15 min)
 - Presentación del instructor
 - Expectativas del taller
-- **Mentimeter**: Encuesta de onboarding
+- Ronda de presentaciones de participantes
 - Verificar que todos tienen setup completo
 
 ### Módulo 2: ¿Qué es la IA Generativa? (15 min)
@@ -82,7 +82,6 @@ Ver: [SETUP-DIA-01.md](./SETUP-DIA-01.md) para instrucciones completas.
 ## Materiales para el Instructor
 
 - [Guión de Clase](../../instructor/guiones-clases/dia-01-guion.md)
-- [Mentimeter Onboarding](./mentimeter.md)
 - [Ejercicios Resueltos](./ejercicios-resueltos/)
 
 ---

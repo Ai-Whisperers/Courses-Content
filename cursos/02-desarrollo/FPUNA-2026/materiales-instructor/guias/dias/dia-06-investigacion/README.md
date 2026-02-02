@@ -74,7 +74,7 @@ Ver: [SETUP-DIA-06.md](./SETUP-DIA-06.md) para instrucciones completas.
 
 ### Módulo 7: Cierre + Feedback Final (15 min)
 - Resumen del taller completo
-- **Mentimeter**: Encuesta de feedback
+- Encuesta de feedback (formulario)
 - Recursos para continuar aprendiendo
 - Certificados y próximos pasos
 

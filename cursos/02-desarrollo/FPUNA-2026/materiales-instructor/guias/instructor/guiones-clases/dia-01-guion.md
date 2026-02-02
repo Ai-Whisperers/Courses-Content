@@ -17,7 +17,7 @@
 - [ ] Proyector/pantalla funcionando
 - [ ] Internet estable (probar con speedtest)
 - [ ] Tu Claude/OpenCode funcionando
-- [ ] Mentimeter listo con codigo
+- [ ] Formulario de feedback listo
 - [ ] Agua/cafe disponible
 - [ ] Lista de asistencia preparada
 
@@ -25,7 +25,7 @@
 
 - Musica de fondo suave (opcional)
 - Pantalla mostrando: "Bienvenidos - FPUNA Verano 2026"
-- Link de Mentimeter visible
+- Slides de bienvenida visibles
 
 ---
 
@@ -40,19 +40,15 @@
 - Presentarte brevemente (30 seg max)
 - Mencionar tu experiencia con IA
 
-### 0:05 - 0:15 | Mentimeter Onboarding
+### 0:05 - 0:15 | Presentaciones del Grupo
 
 **DECIR:**
-> "Antes de empezar, quiero conocerlos. Abran menti.com y pongan el codigo [CODIGO]"
+> "Antes de empezar, quiero conocerlos. Cada uno diga su nombre, carrera, y que espera aprender esta semana."
 
-**MOSTRAR:**
-- Codigo Mentimeter en pantalla grande
-- Esperar que todos entren (1-2 min)
-
-**EJECUTAR:**
-- Preguntas de Mentimeter (ver mentimeter.md)
-- Mostrar resultados en tiempo real
-- Comentar brevemente los resultados
+**HACER:**
+- Ronda rapida de presentaciones (30 seg por persona)
+- Anotar expectativas comunes en la pizarra
+- Identificar niveles de experiencia del grupo
 
 ---
 

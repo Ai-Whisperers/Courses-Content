@@ -50,7 +50,7 @@
 
 ### Formato Consistente por Día
 ```
-[15 min] Bienvenida + Mentimeter (solo Día 1 y 6)
+[15 min] Bienvenida + Onboarding (solo Día 1 y 6)
 [15 min] Módulo 1: Teoría/Concepto
 [15 min] Módulo 2: Demo en vivo
 [10 min] Break
