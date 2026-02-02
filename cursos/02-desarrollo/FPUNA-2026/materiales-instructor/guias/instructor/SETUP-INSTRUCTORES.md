@@ -42,13 +42,17 @@ claude --version
 
 ### Requisitos Adicionales
 ```bash
-# Oh My OpenCode (opcional pero recomendado)
-npm install -g oh-my-opencode
+# OpenCode (sitio oficial: https://opencode.ai/)
+# macOS/Linux:
+curl -fsSL https://opencode.ai/install | bash
+
+# O con npm:
+npm install -g opencode
 ```
 
 ### Verificación
 ```bash
-claude "Hola, verifica que estás funcionando"
+opencode --version
 ```
 
 ### Demo para Estudiantes

@@ -85,28 +85,42 @@ code --install-extension ms-vscode.vscode-typescript-next
 
 ---
 
-### 1.4 Claude Code / OpenCode (IA)
+### 1.4 OpenCode (Agente de IA para Programación)
 
-**Opción A: Claude Code (Oficial de Anthropic)**
-```bash
-npm install -g @anthropic-ai/claude-code
-```
+**Sitio Oficial:** https://opencode.ai/
 
-**Opción B: OpenCode (Alternativa open-source)**
+OpenCode es un agente de IA de código abierto con 95,000+ estrellas en GitHub. Soporta 75+ proveedores de LLM (Claude, GPT, Gemini, modelos locales).
+
+**Instalación (elegir una opción):**
+
 ```bash
-npm install -g @anthropics/opencode
-# o
-npm install -g oh-my-opencode
+# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
+curl -fsSL https://opencode.ai/install | bash
+
+# Opción B: NPM (todas las plataformas)
+npm install -g opencode
+
+# Opción C: Homebrew (macOS)
+brew install opencode
+
+# Opción D: Pacman (Arch Linux)
+pacman -S opencode
 ```
 
 **Verificar instalación:**
 ```bash
-claude --version
-# o
 opencode --version
 ```
 
-**Configurar API Key:**
+**Iniciar OpenCode:**
+```bash
+opencode
+```
+
+**Configurar proveedor de IA (opcional):**
+- OpenCode soporta GitHub Copilot y ChatGPT Plus/Pro directamente
+- También puedes configurar API keys manualmente:
+
 ```bash
 # Windows (PowerShell)
 $env:ANTHROPIC_API_KEY = "sk-ant-xxxxx"
