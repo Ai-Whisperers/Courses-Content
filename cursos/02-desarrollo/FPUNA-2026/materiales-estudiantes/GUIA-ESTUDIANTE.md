@@ -28,7 +28,7 @@ Esta guía te ayudará a navegar exitosamente el programa, aprovechar al máximo
 
 ### ¿Qué aprenderás?
 
-En este programa de 2 semanas aprenderás a:
+En este programa de **6 días (2 horas por día)** aprenderás a:
 
 ✅ **Configurar y usar herramientas de IA** como OpenCode y Oh My OpenCode  
 ✅ **Acelerar tu trabajo académico** con asistentes de IA especializados  
@@ -55,37 +55,33 @@ En este programa de 2 semanas aprenderás a:
 
 ## 📚 Estructura del Programa
 
-### Semana 1: Fundamentos Universales (8 horas)
+**Duración total**: 6 días, 2 horas por día (12 horas total)
+
+### Día 1: Fundamentos (2 horas)
 
 **Para**: TODOS los estudiantes (todas las carreras juntas)
 
-| Día | Módulo | Tema | Duración |
-|-----|--------|------|----------|
-| **Lunes** | Core-01 | Instalación del Stack de IA | 1.5 horas |
-| **Lunes** | Core-02 | Dominio de Configuración | 1.5 horas |
-| **Martes** | Core-03 | Ingeniería de Prompts | 1.5 horas |
-| **Martes** | Core-04 | Ingeniería de Contexto | 1.5 horas |
-| **Miércoles** | Core-05 | Proyecto en Vivo (Demo 1-Shot) | 1 hora |
-| **Miércoles** | Core-06 | Patrones de Trabajo | 1 hora |
+| Contenido | Descripción |
+|-----------|-------------|
+| Instalación del Stack de IA | Node.js + OpenCode + Gemini API |
+| Primera interacción con IA | Prompt Maestro para configurar OMO |
+| Ingeniería de Prompts básica | Cómo escribir buenos prompts |
 
-**Objetivo**: Al terminar la Semana 1, tendrás OpenCode completamente configurado y sabrás usarlo para proyectos básicos.
+**Objetivo**: Tener OpenCode funcionando y saber usarlo para tareas básicas.
 
-### Semana 2: Especialización por Carrera (10 horas)
+### Días 2-6: Especialización por Carrera (2 horas por día)
 
 **Para**: Grupos separados por track/carrera
 
 #### Tracks Disponibles
 
-| Track | Para quién | Módulos | Herramientas Especiales |
-|-------|------------|---------|------------------------|
-| **Web Development** | Desarrollo Web Full-Stack | 5 | Next.js, Prisma, Tailwind |
-| **Ingeniería Aeronáutica** | Estudiantes de Aeronáutica | 5 | CATIA V5, ANSYS Fluent |
-| **Desarrollo de Software** | Ingeniería Informática | 5 | Git, Docker, APIs |
-| **QA Automation** | Testing y Calidad | 1 | Playwright, API Testing |
-| **Marketing y Comunicación** | Marketing Digital | 1 | Analytics, Social Media |
-| **Investigación Académica** | Investigadores, Posgrado | 1 | Papers, Research Tools |
-| **Electrónica y Automatización** | Ing. Electrónica, Mecatrónica | 5 | AutoCAD, KiCad |
-| **Hospitalidad y Turismo** | Hotelería y Turismo | 4 | CRM, Booking Systems |
+| Track | Para quién | Herramientas |
+|-------|------------|--------------|
+| **Electrónica** | Ing. Electrónica, Mecatrónica | KiCad, Arduino, PlatformIO |
+| **Aeronáutica** | Ing. Aeronáutica | Fusion 360, XFoil, CFD |
+| **Desarrollo de Software** | Ing. Informática | Git, Docker, APIs |
+| **Marketing** | Marketing, Comunicación | Analytics, Social Media |
+| **Investigación** | Investigadores, Posgrado | Zotero, Papers, Datos |
 
 **Objetivo**: Aplicar las herramientas de IA a problemas reales de tu carrera.
 
@@ -240,10 +236,8 @@ graph TD
 ```
 
 **Timeline**:
-- **Días 1-3**: Core Foundation (módulos 01-06)
-- **Día 4**: Transición a Track + Módulo 1 del Track
-- **Días 5-8**: Módulos 2-5 del Track
-- **Días 9-10**: Proyecto Final + Presentación
+- **Día 1**: Fundamentos (todos juntos)
+- **Días 2-6**: Especialización por track (2 horas/día)
 
 ### Ruta Acelerada (Para estudiantes con experiencia previa)
 

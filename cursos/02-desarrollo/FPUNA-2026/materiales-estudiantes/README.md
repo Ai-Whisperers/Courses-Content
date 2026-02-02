@@ -12,17 +12,15 @@ Esta carpeta contiene **todo lo que necesitas** para completar el curso exitosam
 
 Antes de la primera clase, instala las herramientas:
 
-**[setup/](./setup/)** - Guias de instalacion de OpenCode
+**[CONFIGURACION-HERRAMIENTAS-IA.md](./CONFIGURACION-HERRAMIENTAS-IA.md)** - Guia de instalacion
 
-Tiempo estimado: **45-60 minutos**
+Tiempo estimado: **30 minutos**
 
-### Paso 2: Fundamentos (Semana 1)
+### Paso 2: Fundamentos (Dia 1)
 
-Todos los estudiantes completan estos modulos juntos:
+Todos los estudiantes completan juntos los fundamentos de IA.
 
-**[fundamentos/](./fundamentos/)** - Modulos basicos de IA
-
-### Paso 3: Elige tu Track (Semana 2)
+### Paso 3: Elige tu Track (Dias 2-6)
 
 Segun tu carrera, elige un track especializado:
 
@@ -39,15 +37,17 @@ Segun tu carrera, elige un track especializado:
 ## Estructura del Curso
 
 ```
-Semana 1 (Todos juntos)
-├── Dia 1: Fundamentos + Setup
-├── Dia 2-3: Ingenieria de Prompts y Contexto
-└── Dia 4: Proyecto practico
+6 dias, 2 horas por dia (12 horas total)
 
-Semana 2 (Por track)
-├── Dia 5: Modulos especializados
-├── Dia 6: Proyecto final
-└── Presentacion y cierre
+Dia 1: Fundamentos (todos juntos)
+└── Setup + Primeros pasos con IA
+
+Dias 2-6: Especializacion (por track)
+├── Dia 2: Electronica
+├── Dia 3: Aeronautica
+├── Dia 4: Desarrollo de Software
+├── Dia 5: Marketing
+└── Dia 6: Investigacion + Cierre
 ```
 
 ---

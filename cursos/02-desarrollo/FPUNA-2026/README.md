@@ -2,7 +2,7 @@
 
 **Universidad**: Facultad Politecnica - Universidad Nacional de Asuncion (FPUNA)
 **Periodo**: Verano 2026
-**Duracion**: 2 semanas intensivas (6 clases de 2 horas)
+**Duracion**: 6 clases de 2 horas (12 horas total)
 
 ---
 
@@ -17,14 +17,14 @@
 
 ## Descripcion del Programa
 
-Este programa ensena a estudiantes de diversas disciplinas a utilizar herramientas de IA (OpenCode, Claude) para acelerar su trabajo academico y profesional.
+Este programa ensena a estudiantes de diversas disciplinas a utilizar herramientas de IA (OpenCode, Gemini) para acelerar su trabajo academico y profesional.
 
 ### Estructura
 
-| Semana | Contenido | Audiencia |
-|--------|-----------|-----------|
-| **Semana 1** | Fundamentos de IA | Todos juntos |
-| **Semana 2** | Especializacion por carrera | Por tracks |
+| Dia | Contenido | Audiencia |
+|-----|-----------|-----------|
+| **Dia 1** | Fundamentos de IA | Todos juntos |
+| **Dias 2-6** | Especializacion por carrera | Por tracks |
 
 ---
 
@@ -32,13 +32,13 @@ Este programa ensena a estudiantes de diversas disciplinas a utilizar herramient
 
 ### Paso 1: Instalacion (ANTES de clase)
 
-Ve a **[materiales-estudiantes/setup/](./materiales-estudiantes/setup/)** e instala OpenCode.
+Ve a **[CONFIGURACION-HERRAMIENTAS-IA.md](./materiales-estudiantes/CONFIGURACION-HERRAMIENTAS-IA.md)** e instala OpenCode.
 
-### Paso 2: Fundamentos (Semana 1)
+### Paso 2: Fundamentos (Dia 1)
 
-Completa los modulos en **[materiales-estudiantes/fundamentos/](./materiales-estudiantes/fundamentos/)**
+Todos los estudiantes completan juntos los fundamentos.
 
-### Paso 3: Tu Track (Semana 2)
+### Paso 3: Tu Track (Dias 2-6)
 
 Elige segun tu carrera:
 
@@ -68,9 +68,9 @@ FPUNA-2026/
 ├── README.md                      # Este archivo
 │
 ├── materiales-estudiantes/        # TODO para estudiantes
-│   ├── setup/                     # Instalacion de OpenCode
-│   ├── fundamentos/               # Modulos basicos (Semana 1)
-│   ├── tracks/                    # Especializaciones (Semana 2)
+│   ├── CONFIGURACION-HERRAMIENTAS-IA.md  # Setup de OpenCode
+│   ├── fundamentos/               # Modulos basicos (Dia 1)
+│   ├── tracks/                    # Especializaciones (Dias 2-6)
 │   │   ├── desarrollo-software/
 │   │   ├── electronica/
 │   │   ├── aeronautica/
