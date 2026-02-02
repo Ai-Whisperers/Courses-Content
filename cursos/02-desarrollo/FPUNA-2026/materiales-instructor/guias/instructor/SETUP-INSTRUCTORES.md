@@ -43,17 +43,23 @@ claude --version
 ### Requisitos Adicionales
 ```bash
 # OpenCode (sitio oficial: https://opencode.ai/)
-# macOS/Linux:
-curl -fsSL https://opencode.ai/install | bash
+# RECOMENDADO para todas las plataformas:
+npm install -g opencode-ai@latest
 
-# O con npm:
-npm install -g opencode
+# Alternativa macOS/Linux:
+curl -fsSL https://opencode.ai/install | bash
 ```
 
 ### Verificación
 ```bash
 opencode --version
 ```
+
+### Abrir OpenCode
+```bash
+opencode
+```
+Simplemente escribe `opencode` en tu terminal.
 
 ### Demo para Estudiantes
 Ver: `demos/00-fundamentos/demo-basico.md`

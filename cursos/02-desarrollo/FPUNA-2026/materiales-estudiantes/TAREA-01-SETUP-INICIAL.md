@@ -71,10 +71,11 @@ PASO 3: INSTALACIÓN DE OPENCODE
 
 Sitio oficial: https://opencode.ai/
 
-1. **macOS/Linux**: Ejecuta `curl -fsSL https://opencode.ai/install | bash`
-2. **Alternativa (npm)**: Ejecuta `npm install -g opencode`
-3. Si falla por permisos, dame el comando alternativo (ej: `sudo` o ejecutar como Admin).
+1. **Todas las plataformas (RECOMENDADO)**: Ejecuta `npm install -g opencode-ai@latest`
+2. **macOS/Linux (alternativa)**: Ejecuta `curl -fsSL https://opencode.ai/install | bash`
+3. Si falla por permisos, usa `sudo npm install -g opencode-ai@latest` (Mac/Linux) o ejecuta como Admin (Windows).
 4. Verifica la instalación: `opencode --version`
+5. Para abrir OpenCode, simplemente escribe: `opencode`
 
 PASO 4: SETUP DEL WORKSPACE
 
@@ -147,8 +148,8 @@ Esto es seguridad de Windows.
 
 No tienes permisos para instalar en carpetas del sistema.
 
-- **Solución A**: Usa el script de instalación oficial: `curl -fsSL https://opencode.ai/install | bash`
-- **Solución B**: Usa `sudo` antes del comando npm: `sudo npm install -g opencode`
+- **Solución A**: Usa el paquete oficial: `sudo npm install -g opencode-ai@latest`
+- **Solución B**: Usa el script de instalación: `curl -fsSL https://opencode.ai/install | bash`
 
 ### 3. "npm command not found"
 
