@@ -67,11 +67,14 @@ PASO 2: VERIFICACIÓN BASE
 2. Verifica **Git**: (`git --version`). Si no está, dame el comando para instalarlo.
 3. Verifica permisos de escritura en carpetas globales de npm.
 
-PASO 3: INSTALACIÓN DE OMO (Oh My OpenCode)
+PASO 3: INSTALACIÓN DE OPENCODE
 
-1. Intenta ejecutar: `npm install -g oh-my-opencode`
-2. Si falla por permisos, dame el comando alternativo (ej: `sudo` o ejecutar como Admin).
-3. Verifica la instalación: `omo --version`
+Sitio oficial: https://opencode.ai/
+
+1. **macOS/Linux**: Ejecuta `curl -fsSL https://opencode.ai/install | bash`
+2. **Alternativa (npm)**: Ejecuta `npm install -g opencode`
+3. Si falla por permisos, dame el comando alternativo (ej: `sudo` o ejecutar como Admin).
+4. Verifica la instalación: `opencode --version`
 
 PASO 4: SETUP DEL WORKSPACE
 
@@ -144,7 +147,8 @@ Esto es seguridad de Windows.
 
 No tienes permisos para instalar en carpetas del sistema.
 
-- **Solución**: Usa `sudo` antes del comando, por ejemplo: `sudo npm install -g oh-my-opencode`
+- **Solución A**: Usa el script de instalación oficial: `curl -fsSL https://opencode.ai/install | bash`
+- **Solución B**: Usa `sudo` antes del comando npm: `sudo npm install -g opencode`
 
 ### 3. "npm command not found"
 

@@ -602,7 +602,7 @@ No funciona, ayuda!!!
 
 | Herramienta | Documentación Oficial |
 |-------------|----------------------|
-| **OpenCode** | [docs.opencode.com](https://docs.opencode.com) |
+| **OpenCode** | [opencode.ai](https://opencode.ai/) |
 | **Node.js** | [nodejs.org/docs](https://nodejs.org/docs) |
 | **Git** | [git-scm.com/doc](https://git-scm.com/doc) |
 | **VS Code** | [code.visualstudio.com/docs](https://code.visualstudio.com/docs) |
@@ -613,9 +613,10 @@ No funciona, ayuda!!!
 
 **Solución**:
 1. Verifica que tienes Node.js 18+: `node --version`
-2. Limpia cache de npm: `npm cache clean --force`
-3. Reinstala: `npm install -g opencode`
-4. Si falla, comparte el error completo en `#troubleshooting`
+2. Visita https://opencode.ai/ para instrucciones actualizadas
+3. Intenta: `curl -fsSL https://opencode.ai/install | bash` (macOS/Linux)
+4. O usa npm: `npm install -g opencode`
+5. Si falla, comparte el error completo en `#troubleshooting`
 
 #### "No puedo acceder a las APIs de IA"
 
@@ -664,13 +665,16 @@ No funciona, ayuda!!!
 
 ```markdown
 - [ ] OpenCode instalado globalmente
-      Ejecutar: `npm install -g opencode`
+      Sitio oficial: https://opencode.ai/
+      macOS/Linux: `curl -fsSL https://opencode.ai/install | bash`
+      NPM: `npm install -g opencode`
+      Homebrew: `brew install opencode`
 
-- [ ] Extensión de VS Code instalada
-      Buscar "OpenCode" en VS Code Extensions
+- [ ] Verificar instalación
+      Ejecutar: `opencode --version`
 
-- [ ] Configuración inicial ejecutada
-      Ejecutar: `opencode init`
+- [ ] Iniciar OpenCode
+      Ejecutar: `opencode`
 ```
 
 #### Opcional (Mejora la Experiencia)

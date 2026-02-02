@@ -122,85 +122,80 @@ git --version
 
 ## Instalación de OpenCode
 
-### Paso 1: Descargar OpenCode
+### Acerca de OpenCode
 
-**Opción A: Sitio Web Oficial** (Recomendado)
-```
-Visitar: https://opencode.dev
-Descargar para tu sistema operativo
-```
+OpenCode es un agente de IA de código abierto que te ayuda a escribir código desde la terminal, IDE o escritorio. Cuenta con más de 95,000 estrellas en GitHub y es utilizado por 2.5 millones de desarrolladores.
 
-**Opción B: NPM** (Alternativa)
+**Sitio Oficial**: [https://opencode.ai/](https://opencode.ai/)
+
+**Características**:
+- Compatible con 75+ proveedores de LLM (Claude, GPT, Gemini, modelos locales)
+- Funciona en terminal, escritorio (Windows, macOS, Linux) y extensiones IDE
+- Integración con GitHub Copilot y ChatGPT Plus/Pro
+- Sesiones múltiples en paralelo
+- Privacidad: no almacena tu código
+
+---
+
+### Paso 1: Instalar OpenCode
+
+**Opción A: Script de Instalación** (Recomendado para macOS/Linux)
 ```bash
-npm install -g @opencode/cli
+curl -fsSL https://opencode.ai/install | bash
+```
+
+**Opción B: NPM** (Todas las plataformas)
+```bash
+npm install -g opencode
+```
+
+**Opción C: Homebrew** (macOS)
+```bash
+brew install opencode
+```
+
+**Opción D: Pacman** (Arch Linux)
+```bash
+pacman -S opencode
 ```
 
 ---
 
-### Paso 2: Instalar OpenCode
-
-**Windows**:
-1. Ejecutar `OpenCode-Setup.exe`
-2. Seguir el asistente de instalación
-3. Seleccionar "Agregar al PATH"
-4. Completar la instalación
-5. Reiniciar terminal
-
-**macOS**:
-```bash
-# Si descargaste .dmg
-# Arrastra OpenCode a Aplicaciones
-
-# Si usas Homebrew
-brew install --cask opencode
-```
-
-**Linux**:
-```bash
-# Descargar .deb o .rpm
-sudo dpkg -i opencode_*.deb  # Ubuntu/Debian
-sudo rpm -i opencode_*.rpm   # Fedora
-
-# O usar snap
-sudo snap install opencode
-```
-
----
-
-### Paso 3: Verificar Instalación de OpenCode
+### Paso 2: Verificar Instalación
 
 ```bash
 # Verificar versión
 opencode --version
 
-# Debe mostrar: OpenCode v1.x.x
+# Debe mostrar la versión instalada
 ```
 
 **Si dice "comando no encontrado"**:
-- Reiniciar terminal
-- Verificar variable de entorno PATH
-- Reinstalar con "Agregar al PATH" seleccionado
+- Reiniciar la terminal
+- Verificar que Node.js esté instalado correctamente
+- En Windows, abrir una nueva ventana de PowerShell/CMD
 
 ---
 
-### Paso 4: Primera Ejecución de OpenCode
+### Paso 3: Primera Ejecución
 
 ```bash
-# Inicializar OpenCode
-opencode init
+# Iniciar OpenCode
+opencode
 
-# Iniciar sesión (o crear cuenta)
-opencode login
-
-# Probar
-opencode test
+# Esto abrirá el agente en tu terminal
 ```
 
-**Salida Esperada**:
-```
-✓ OpenCode inicializado exitosamente
-✓ Sesión iniciada como: tu-email@fpuna.edu.py
-✓ Prueba de conexión exitosa
+**Configurar proveedor de IA**:
+- OpenCode soporta múltiples proveedores (Claude, GPT, Gemini, etc.)
+- Puedes usar tu cuenta de GitHub Copilot o ChatGPT Plus
+- También puedes configurar APIs directamente
+
+**Comandos útiles**:
+```bash
+opencode --help          # Ver ayuda
+opencode config          # Configurar preferencias
+opencode                 # Iniciar sesión interactiva
 ```
 
 ---

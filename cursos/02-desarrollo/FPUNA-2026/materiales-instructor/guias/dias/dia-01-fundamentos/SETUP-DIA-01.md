@@ -154,17 +154,23 @@ Después de instalar VS Code, instalar estas extensiones:
 
 ---
 
-### 2.5 Claude Code / OpenCode (Obligatorio)
+### 2.5 OpenCode (Obligatorio)
 
-**¿Qué es?** Interfaz de línea de comandos para trabajar con Claude.
+**¿Qué es?** Agente de IA de código abierto para trabajar desde la terminal, IDE o escritorio.
+
+**Sitio Oficial:** https://opencode.ai/
 
 #### Instalación
-```bash
-# Instalar globalmente con npm
-npm install -g @anthropic-ai/claude-code
 
-# O si usas OpenCode:
+```bash
+# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
+curl -fsSL https://opencode.ai/install | bash
+
+# Opción B: NPM (todas las plataformas)
 npm install -g opencode
+
+# Opción C: Homebrew (macOS)
+brew install opencode
 ```
 
 #### Configurar API Key
@@ -189,8 +195,6 @@ source ~/.bashrc  # o source ~/.zshrc
 
 #### Verificar Instalación
 ```bash
-claude --version
-# o
 opencode --version
 
 # Probar conexión

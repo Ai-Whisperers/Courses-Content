@@ -30,12 +30,21 @@ node --version # v18 o superior requerido
 
 OpenCode es tu interfaz principal con la IA. Es el asistente que ejecutará tus órdenes desde la terminal.
 
-### Paso 1: Instalación Manual
+**Sitio Oficial:** https://opencode.ai/
 
-Este es el componente final que instalaremos a mano:
+### Paso 1: Instalación
+
+Elige una de las siguientes opciones:
 
 ```bash
+# Opción A: Script de instalación (macOS/Linux) - RECOMENDADO
+curl -fsSL https://opencode.ai/install | bash
+
+# Opción B: NPM (todas las plataformas)
 npm install -g opencode
+
+# Opción C: Homebrew (macOS)
+brew install opencode
 ```
 
 ### Paso 2: Activación
