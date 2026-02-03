@@ -1,40 +1,32 @@
-# ✍️ Module 4: Academic Writing with AI
+# ✍️ Módulo 4: Redacción Académica con IA
 
-**Duration**: 4 hours  
-**Level**: Intermediate-Advanced  
-**Format**: 100% AI-Driven
+**Duración**: 4 horas
+**Nivel**: Intermedio-Avanzado
+**Formato**: 100% Impulsado por IA
 
-## 🎯 Learning Objectives
+## 🎯 Objetivos de Aprendizaje
 
-By completing this module, you will be able to:
+Al completar este módulo, serás capaz de:
 
-- [ ] Generate complete academic papers using AI assistance
-- [ ] Format citations and references automatically with AI
-- [ ] Structure papers in IMRaD format via AI
-- [ ] Write with academic style using AI guidance
-- [ ] Edit and refine manuscripts with AI feedback
+- [ ] Generar papers académicos completos usando asistencia de IA
+- [ ] Formatear citas y referencias automáticamente con IA
+- [ ] Estructurar papers en formato IMRaD vía IA
+- [ ] Escribir con estilo académico usando guía de IA
+- [ ] Editar y refinar manuscritos con feedback de IA
 
-## 🛠️ Required Tools (100% Free)
+## 🛠️ Herramientas Requeridas (100% Gratuitas)
 
-- **OpenCode** with Oh My OpenCode MCPs
-- **Claude/GPT-4** for writing assistance
-- **Markdown reader** for document visualization
-- **Export tools** (PDF conversion)
-
-## ❌ Tools NOT Needed
-
-- ❌ LaTeX/Overleaf templates
-- ❌ Zotero/Mendeley for citations
-- ❌ Grammarly/ProWritingAid
-- ❌ Manual formatting tools
-
+- **OpenCode** con Oh My OpenCode MCPs
+- **Claude/GPT-4** para asistencia de escritura
+- **Lector de Markdown** para visualización de documentos
+- **Herramientas de exportación** (conversión a PDF)
 ---
 
-## 📖 Core Content
+## 📖 Contenido Principal
 
-### Part 1: AI-Powered Paper Structure Generation
+### Parte 1: Generación de Estructura de Paper Impulsada por IA
 
-#### IMRaD Structure with AI
+#### Estructura IMRaD con IA
 
 ```bash
 opencode "Genera paper completo en formato IMRaD:
@@ -50,41 +42,41 @@ RESULTADOS A INCLUIR:
 
 ESTRUCTURA COMPLETA:
 1. **Abstract** (250 palabras)
-   - Background + Methods + Results + Conclusion
-   - Keywords (5-7 términos)
+   - Antecedentes + Métodos + Resultados + Conclusión
+   - Palabras clave (5-7 términos)
 
-2. **Introduction** (800-1000 palabras)
+2. **Introducción** (800-1000 palabras)
    - Contexto general del problema
    - Revisión de literatura concisa
-   - Gap identificado claramente
+   - Brecha identificada claramente
    - Objetivos e hipótesis
 
-3. **Methods** (1000-1200 palabras)
+3. **Métodos** (1000-1200 palabras)
    - Diseño experimental detallado
    - Participantes y muestreo
    - Instrumentos de medición
    - Procedimiento exacto
    - Análisis estadístico
 
-4. **Results** (800-1000 palabras)
+4. **Resultados** (800-1000 palabras)
    - Estadística descriptiva
-   - Resultados de tests inferenciales
+   - Resultados de pruebas inferenciales
    - Tablas y figuras
    - Solo hechos, sin interpretación
 
-5. **Discussion** (1000-1200 palabras)
+5. **Discusión** (1000-1200 palabras)
    - Interpretación de resultados
    - Comparación con literatura
    - Implicaciones prácticas
    - Limitaciones del estudio
    - Futuras investigaciones
 
-6. **Conclusion** (300-400 palabras)
+6. **Conclusión** (300-400 palabras)
    - Resumen de hallazgos principales
    - Contribución del estudio
    - Implicaciones clave
 
-7. **References**
+7. **Referencias**
    - Todas las citas en formato correcto
    - Consistencia completa
 
@@ -92,10 +84,10 @@ REQUISITOS:
 - Total: 5000-6000 palabras
 - Lenguaje académico formal
 - Citas automáticas y consistentes
-- Formato publication-ready"
+- Formato listo para publicación"
 ```
 
-#### Automatic Citation Formatting with AI
+#### Formato Automático de Citas con IA
 
 ```bash
 opencode "Genera sistema de citas automático:
@@ -105,7 +97,7 @@ REFERENCIAS BASE:
 
 FORMATOS REQUERIDOS:
 1. **APA 7th Edition**
-2. **IEEE Style**
+2. **Estilo IEEE**
 3. **MLA 9th Edition**
 4. **Chicago Author-Date**
 
@@ -130,12 +122,12 @@ OUTPUT:
 - Verificación de consistencia"
 ```
 
-### Part 2: AI-Powered Content Generation
+### Parte 2: Generación de Contenido Impulsada por IA
 
-#### Introduction Writing with AI
+#### Escritura de Introducción con IA
 
 ```bash
-opencode "Escribe sección de Introduction académica:
+opencode "Escribe sección de Introducción académica:
 
 CONTEXTO DE INVESTIGACIÓN:
 - Área: IA en educación superior
@@ -154,7 +146,7 @@ ESTRUCTURA DE INTRODUCCIÓN:
    - Hallazgos principales de literatura
    - Consenso y controversias
 
-3. **Párrafo 3: Gap específico** (150-200 palabras)
+3. **Párrafo 3: Brecha específica** (150-200 palabras)
    - Lo que NO se sabe
    - Limitación de estudios previos
    - Necesidad de nueva investigación
@@ -168,30 +160,30 @@ REQUISITOS:
 - Conectores lógicos entre párrafos
 - Citas apropiadas integradas
 - Lenguaje académico formal
-- Transición suave a Methods
+- Transición suave a Métodos
 
 OUTPUT:
 - Introducción completa (650-850 palabras)
 - Citas integradas correctamente
 - Flujo lógico coherente
-- Preparada para peer review"
+- Preparada para revisión por pares"
 ```
 
-#### Methods Section with AI
+#### Sección de Métodos con IA
 
 ```bash
-opencode "Escribe sección de Methods detallada y replicable:
+opencode "Escribe sección de Métodos detallada y replicable:
 
 PROTOCOLO DE INVESTIGACIÓN:
 @attach research_protocol.md
 @attach measurement_instrument.md
 
-ESTRUCTURA DE METHODS:
+ESTRUCTURA DE MÉTODOS:
 1. **Diseño Experimental** (200 palabras)
    - Tipo de diseño (cuasi-experimental)
    - Grupos y asignación
    - Control de variables
-   - Timeline del estudio
+   - Cronograma del estudio
 
 2. **Participantes** (250 palabras)
    - Características demográficas
@@ -200,7 +192,7 @@ ESTRUCTURA DE METHODS:
    - Consentimiento informado
 
 3. **Instrumentos** (300 palabras)
-   - Test de comprensión conceptual
+   - Prueba de comprensión conceptual
    - Encuesta de uso de IA
    - Validación y confiabilidad
    - Procedimientos de calificación
@@ -212,8 +204,8 @@ ESTRUCTURA DE METHODS:
    - Control de condición experimental
 
 5. **Análisis de Datos** (250 palabras)
-   - Software utilizado (AI analysis)
-   - Tests estadísticos específicos
+   - Software utilizado (Análisis IA)
+   - Pruebas estadísticas específicas
    - Nivel de significancia
    - Manejo de datos faltantes
 
@@ -224,14 +216,14 @@ REQUISITOS:
 - Precisión en cantidades y procedimientos
 
 OUTPUT:
-- Methods completa (1300 palabras)
+- Métodos completo (1300 palabras)
 - Detalles replicables
 - Formato académico estándar"
 ```
 
-### Part 3: AI-Powered Academic Style
+### Parte 3: Estilo Académico Impulsado por IA
 
-#### Style Enhancement with AI
+#### Mejora de Estilo con IA
 
 ```bash
 opencode "Mejora estilo académico de este texto:
@@ -271,7 +263,7 @@ OUTPUT:
 - Versión final pulida"
 ```
 
-#### Terminology Standardization with AI
+#### Estandarización de Terminología con IA
 
 ```bash
 opencode "Estandariza terminología técnica en manuscrito:
@@ -285,7 +277,7 @@ TERMINOLOGÍA A ESTANDARIZAR:
 - Comprensión conceptual / aprendizaje profundo
 - Experimental / cuasi-experimental
 - Significativo / estadísticamente significativo
-- Effect size / tamaño del efecto
+- Tamaño del efecto / effect size
 
 CRITERIOS:
 - Uso consistente en todo el documento
@@ -300,12 +292,12 @@ OUTPUT:
 - Verificación de aplicación correcta"
 ```
 
-### Part 4: AI-Powered Editing and Refinement
+### Parte 4: Edición y Refinamiento Impulsado por IA
 
-#### Peer Review Simulation with AI
+#### Simulación de Revisión por Pares (Peer Review) con IA
 
 ```bash
-opencode "Simula peer review de este paper:
+opencode "Simula revisión por pares de este paper:
 
 MANUSCRITO:
 @attach complete_paper.md
@@ -338,11 +330,11 @@ OUTPUT:
 - Evaluación detallada por sección
 - Puntuación en cada criterio
 - Comentarios específicos de mejora
-- Recomendación (Accept/Minor/Major/Reject)
+- Recomendación (Aceptar/Menor/Mayor/Rechazar)
 - Lista de correcciones necesarias"
 ```
 
-#### Response to Reviewers with AI
+#### Respuesta a Revisores con IA
 
 ```bash
 opencode "Genera respuesta profesional a revisores:
@@ -380,18 +372,18 @@ OUTPUT:
 - Respuesta completa a revisores
 - Lista de cambios en manuscrito
 - Versión revisada del paper
-- Timeline de implementación"
+- Cronograma de implementación"
 ```
 
-### Part 5: AI-Powered Publication Preparation
+### Parte 5: Preparación para Publicación Impulsada por IA
 
-#### Journal Formatting with AI
+#### Formato de Journal con IA
 
 ```bash
 opencode "Formatea paper para journal específico:
 
 TARGET JOURNAL:
-[Nombre del journal y guidelines]
+[Nombre del journal y pautas]
 
 MANUSCRITO ACTUAL:
 @attach formatted_paper.md
@@ -411,10 +403,10 @@ AUTOMATIZACIÓN REQUERIDA:
    - Encabezados
 
 2. **Estructura específica**
-   - Abstract/Keywords
+   - Abstract/Palabras clave
    - Secciones requeridas
    - Declaraciones (conflictos, ética)
-   - Acknowledgments
+   - Agradecimientos
 
 3. **Figuras y tablas**
    - Numeración consecutiva
@@ -426,49 +418,49 @@ AUTOMATIZACIÓN REQUERIDA:
    - Formato exacto del journal
    - DOIs incluidos
    - Orden apropiado
-   - Hyperlinks cuando requerido
+   - Hipervínculos cuando requerido
 
 OUTPUT:
 - Paper completamente formateado
 - Checklist de cumplimiento
 - Lista de ajustes realizados
-- Ready for submission"
+- Listo para envío"
 ```
 
-#### Submission Package with AI
+#### Paquete de Envío (Submission Package) con IA
 
 ```bash
-opencode "Genera package completo para submission:
+opencode "Genera paquete completo para envío:
 
 PAPER FINAL:
 @attach final_manuscript.pdf
-JOURNAL: [Target journal with guidelines]
+JOURNAL: [Journal objetivo con pautas]
 
 DOCUMENTOS REQUERIDOS:
-1. **Cover Letter**
+1. **Carta de Presentación (Cover Letter)**
    - Contexto del estudio
    - Contribución principal
    - Adecuación al journal
    - Declaraciones necesarias
 
-2. **Title Page**
+2. **Página de Título (Title Page)**
    - Título completo
    - Autores con afiliaciones
    - Información de contacto
    - ORCID IDs
 
-3. **Abstract y Keywords**
+3. **Abstract y Palabras Clave**
    - Formato específico del journal
-   - Word count correcto
-   - Keywords apropiadas
+   - Conteo de palabras correcto
+   - Palabras clave apropiadas
 
-4. **Declarations**
+4. **Declaraciones**
    - Conflictos de interés
    - Financiamiento
    - Aprobación ética
    - Disponibilidad de datos
 
-5. **Supplementary Materials**
+5. **Materiales Suplementarios**
    - Dataset si aplica
    - Código de análisis
    - Instrumentos adicionales
@@ -477,44 +469,44 @@ DOCUMENTOS REQUERIDOS:
 OUTPUT:
 - Todos los documentos generados
 - Formato PDF o según requerimiento
-- Checklist de submission
+- Checklist de envío
 - Instrucciones paso a paso"
 ```
 
 ---
 
-## 🛠️ Practical Exercises
+## 🛠️ Ejercicios Prácticos
 
-### Exercise 1: Complete Paper Generation (120 minutes)
+### Ejercicio 1: Generación de Paper Completo (120 minutos)
 
-**Task**: Generate a complete academic paper using AI assistance.
+**Tarea**: Generar un paper académico completo usando asistencia de IA.
 
-**Steps**:
-1. Structure paper in IMRaD format with AI
-2. Generate each section systematically
-3. Create automatic citation system
-4. Refine academic style with AI feedback
-5. Format for target journal
-6. Create submission package
+**Pasos**:
+1. Estructura el paper en formato IMRaD con IA
+2. Genera cada sección sistemáticamente
+3. Crea sistema de citas automático
+4. Refina estilo académico con feedback de IA
+5. Formatea para journal objetivo
+6. Crea paquete de envío
 
-**Expected Output**:
+**Output Esperado**:
 - `complete_paper.md`
 - `references_formatted.md`
 - `submission_package.pdf`
 - `cover_letter.md`
 
-### Exercise 2: Peer Review Response (90 minutes)
+### Ejercicio 2: Respuesta a Revisión por Pares (90 minutos)
 
-**Task**: Create professional response to reviewer comments.
+**Tarea**: Crear respuesta profesional a comentarios de revisores.
 
-**Steps**:
-1. Simulate peer review with AI
-2. Analyze reviewer feedback
-3. Generate point-by-point responses
-4. Implement suggested changes
-5. Prepare revised manuscript
+**Pasos**:
+1. Simula revisión por pares con IA
+2. Analiza feedback de revisores
+3. Genera respuestas punto por punto
+4. Implementa cambios sugeridos
+5. Prepara manuscrito revisado
 
-**Expected Output**:
+**Output Esperado**:
 - `review_simulation.md`
 - `response_to_reviewers.md`
 - `revised_manuscript.md`
@@ -522,134 +514,134 @@ OUTPUT:
 
 ---
 
-## ✅ Module Assessment
+## ✅ Evaluación del Módulo
 
-### Academic Writing Project (100 points)
+### Proyecto de Escritura Académica (100 puntos)
 
-**Deliverables**:
-1. **Complete Paper** (40 points)
-   - IMRaD structure correct
-   - Academic writing quality
-   - Length and formatting appropriate
+**Entregables**:
+1. **Paper Completo** (40 puntos)
+   - Estructura IMRaD correcta
+   - Calidad de escritura académica
+   - Longitud y formato apropiados
 
-2. **Citation System** (20 points)
-   - Automatic formatting
-   - Consistency verified
-   - Complete references
+2. **Sistema de Citas** (20 puntos)
+   - Formato automático
+   - Consistencia verificada
+   - Referencias completas
 
-3. **Style and Clarity** (25 points)
-   - Academic terminology
-   - Logical flow
-   - Professional presentation
+3. **Estilo y Claridad** (25 puntos)
+   - Terminología académica
+   - Flujo lógico
+   - Presentación profesional
 
-4. **Submission Package** (15 points)
-   - Journal formatting
-   - Complete documentation
-   - Professional quality
+4. **Paquete de Envío** (15 puntos)
+   - Formato de journal
+   - Documentación completa
+   - Calidad profesional
 
-**Passing Grade**: 70/100 points
-
----
-
-## 🔄 Cross-References
-
-**Uses outputs from**: Module 3: Data Analysis  
-**Prerequisite for**: Module 5: Presentation & Publication  
-**Next Step**: Create presentation based on your paper
+**Nota de Aprobación**: 70/100 puntos
 
 ---
 
-## 💡 AI Tips for Success
+## 🔄 Referencias Cruzadas
 
-### Paper Generation Prompts
+**Usa outputs de**: Módulo 3: Análisis de Datos
+**Prerrequisito para**: Módulo 5: Presentación y Publicación
+**Siguiente Paso**: Crear presentación basada en tu paper
+
+---
+
+## 💡 Consejos de IA para el Éxito
+
+### Prompts para Generación de Paper
 ```
-opencode "Generate [section] paper section:
-TOPIC: [research topic]
-CONTENT: [background material]
-STRUCTURE: [IMRaD requirements]
-STYLE: [academic formal]
-CITATIONS: [automatic integration]"
+opencode "Genera sección [sección] del paper:
+TEMA: [tema de investigación]
+CONTENIDO: [material de fondo]
+ESTRUCTURA: [requisitos IMRaD]
+ESTILO: [académico formal]
+CITAS: [integración automática]"
 ```
 
-### Citation Management
+### Gestión de Citas
 ```
-opencode "Format bibliography in [style] format:
-REFERENCES: @attach refs.md
-CITATIONS: [in-text integration]
-REQUIREMENTS: [consistency checks]"
+opencode "Formatea bibliografía en formato [estilo]:
+REFERENCIAS: @attach refs.md
+CITAS: [integración en texto]
+REQUISITOS: [verificaciones de consistencia]"
 ```
 
-### Style Enhancement
+### Mejora de Estilo
 ```
-opencode "Improve academic style of @attach text:
-FOCUS: [clarity/precision/formality]
-CONTEXT: [research field]
-OUTPUT: [revised version + comments]"
+opencode "Mejora estilo académico de @attach text:
+ENFOQUE: [claridad/precisión/formalidad]
+CONTEXTO: [campo de investigación]
+OUTPUT: [versión revisada + comentarios]"
 ```
 
 ---
 
-## ⚠️ Common Pitfalls to Avoid
+## ⚠️ Errores Comunes a Evitar
 
-- **Inconsistent citation style** → Use AI for automatic formatting
-- **Informal language** → Apply AI style enhancement
-- **Missing structure** → Follow IMRaD with AI guidance
-- **Poor transition** → Request AI to improve flow
-- **Incomplete references** → Use AI for completeness check
+- **Estilo de cita inconsistente** → Usa IA para formateo automático
+- **Lenguaje informal** → Aplica mejora de estilo con IA
+- **Estructura faltante** → Sigue IMRaD con guía de IA
+- **Mala transición** → Solicita a la IA mejorar el flujo
+- **Referencias incompletas** → Usa IA para verificación de completitud
 
 ---
 
-## 🤝 Getting Help
+## 🤝 Obteniendo Ayuda
 
 - **Slack**: #research-ai-writing
-- **Office Hours**: Friday 18:00-20:00
+- **Horas de Oficina**: Viernes 18:00-20:00
 - **Email**: writing-support@fpuna.edu.py
 
 ---
 
-## 📁 Resources
+## 📁 Recursos
 
-### Essential AI Prompts
+### Prompts Esenciales de IA
 ```bash
-# Paper structure
-opencode "Generate IMRaD structure paper on [topic] with results @attach data.md"
+# Estructura del paper
+opencode "Genera estructura IMRaD para paper sobre [tema] con resultados @attach data.md"
 
-# Citation formatting
-opencode "Convert references to [APA/IEEE] format: @attach bibliography.md"
+# Formato de citas
+opencode "Convierte referencias a formato [APA/IEEE]: @attach bibliography.md"
 
-# Style improvement
-opencode "Enhance academic writing style of @attach manuscript.md"
+# Mejora de estilo
+opencode "Mejora estilo de escritura académica de @attach manuscript.md"
 
-# Journal formatting
-opencode "Format paper for [journal] following guidelines @attach requirements.md"
+# Formato de journal
+opencode "Formatea paper para [journal] siguiendo pautas @attach requirements.md"
 ```
 
-### Quick Reference Commands
+### Comandos de Referencia Rápida
 ```bash
-# Abstract generation
-opencode "Write 250-word abstract for study on [topic] with findings @attach results.md"
+# Generación de Abstract
+opencode "Escribe abstract de 250 palabras para estudio sobre [tema] con hallazgos @attach results.md"
 
-# Introduction writing
-opencode "Create introduction for research on [topic] with gap @attach literature.md"
+# Escritura de Introducción
+opencode "Crea introducción para investigación sobre [tema] con brecha @attach literature.md"
 
-# Review response
-opencode "Generate response to reviewer comments: @attach reviews.md with manuscript @attach paper.md"
+# Respuesta a revisión
+opencode "Genera respuesta a comentarios de revisor: @attach reviews.md con manuscrito @attach paper.md"
 ```
 
 ---
 
-## 🎯 Module Completion Checklist
+## 🎯 Lista de Verificación del Módulo
 
-- [ ] Complete paper generated in IMRaD format
-- [ ] Automatic citation system implemented
-- [ ] Academic style enhanced and refined
-- [ ] Paper formatted for target journal
-- [ ] Submission package prepared
-- [ ] Peer review response created
-- [ ] Assessment submitted (70+ points)
+- [ ] Paper completo generado en formato IMRaD
+- [ ] Sistema de citas automático implementado
+- [ ] Estilo académico mejorado y refinado
+- [ ] Paper formateado para journal objetivo
+- [ ] Paquete de envío preparado
+- [ ] Respuesta a revisión por pares creada
+- [ ] Evaluación enviada (70+ puntos)
 
-**🚀 Ready for Module 5: Presentation & Publication with AI!**
+**🚀 ¡Listo para el Módulo 5: Presentación y Publicación con IA!**
 
 ---
 
-*Module 4 - Academic Writing with AI - FPUNA 2026*
+*Módulo 4 - Redacción Académica con IA - FPUNA 2026*

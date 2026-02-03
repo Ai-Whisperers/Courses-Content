@@ -1,8 +1,8 @@
 # 🎤 Módulo 5: Presentación y Publicación con IA
 
-**Duración**: 4 horas  
-**Nivel**: Avanzado  
-**Formato**: 100% IA-Driven
+**Duración**: 4 horas
+**Nivel**: Avanzado
+**Formato**: 100% Impulsado por IA
 
 ## 🎯 Objetivos de Aprendizaje
 
@@ -11,7 +11,7 @@ Al completar este módulo, podrás:
 - [ ] Crear presentaciones científicas efectivas usando IA
 - [ ] Generar materiales de conferencia con asistencia de IA
 - [ ] Navegar el proceso de revisión por pares con IA
-- [ ] Preparar paquetes de submission a journals automáticamente
+- [ ] Preparar paquetes de envío a revistas automáticamente
 - [ ] Construir presencia académica digital usando IA
 
 ## 🛠️ Herramientas Requeridas (100% Gratuitas)
@@ -19,14 +19,8 @@ Al completar este módulo, podrás:
 - **OpenCode** con Oh My OpenCode MCPs
 - **Claude/GPT-4** para generación de contenido
 - **Visor Markdown** para visualización de presentaciones
-- **Herramientas de conversión** (PDF, slides)
+- **Herramientas de conversión** (PDF, diapositivas)
 
-## ❌ Herramientas NO Necesarias
-
-- ❌ PowerPoint/Canva templates fijos
-- ❌ LaTeX para presentaciones
-- ❌ Proceso manual de submission
-- ❌ Gestión tradicional de referencias
 
 ---
 
@@ -39,7 +33,7 @@ Al completar este módulo, podrás:
 ```bash
 opencode "Genera presentación completa para conferencia:
 
-TOPIC DE INVESTIGACIÓN:
+TEMA DE INVESTIGACIÓN:
 [Tu tema y resultados principales]
 
 AUDIENCIA Y CONFERENCIA:
@@ -49,59 +43,59 @@ AUDIENCIA Y CONFERENCIA:
 - Idioma: Español
 
 ESTRUCTURA COMPLETA:
-1. **Título y Autores** (1 slide)
+1. **Título y Autores** (1 diapositiva)
    - Título claro y conciso
    - Nombres completos de autores
    - Afiliación FPUNA
    - Logo institucional
 
-2. **Contexto y Problema** (2 slides)
+2. **Contexto y Problema** (2 diapositivas)
    - Importancia del tema
-   - Gap en literatura
+   - Brecha en literatura
    - Relevancia práctica
 
-3. **Objetivos e Hipótesis** (1 slide)
+3. **Objetivos e Hipótesis** (1 diapositiva)
    - Pregunta principal
    - Objetivos específicos
    - Hipótesis tentativas
 
-4. **Metodología** (2 slides)
+4. **Metodología** (2 diapositivas)
    - Diseño experimental
    - Participantes
    - Procedimiento clave
    - Análisis estadístico
 
-5. **Resultados Principales** (3 slides)
+5. **Resultados Principales** (3 diapositivas)
    - Hallazgo principal destacado
    - Visualización clave
    - Significancia estadística
-   - Effect size
+   - Tamaño del efecto
 
-6. **Discusión** (2 slides)
+6. **Discusión** (2 diapositivas)
    - Interpretación de resultados
    - Comparación con literatura
    - Implicaciones prácticas
 
-7. **Conclusiones** (1 slide)
+7. **Conclusiones** (1 diapositiva)
    - Resumen de contribución
    - Limitaciones principales
    - Futuras investigaciones
 
-8. **Q&A Preparation** (1 slide)
+8. **Preparación de Preguntas y Respuestas** (1 diapositiva)
    - Preguntas anticipadas
    - Respuestas breves
 
 REQUISITOS:
-- Total: 13 slides
-- Máximo 1 minuto por slide
+- Total: 13 diapositivas
+- Máximo 1 minuto por diapositiva
 - Contenido visual > texto
 - Diseño profesional consistente
 
 OUTPUT:
 - Contenido completo en Markdown
-- Script de presentación
+- Guion de presentación
 - Guía de diseño visual
-- Tips para Q&A"
+- Consejos para la sesión de preguntas"
 ```
 
 #### Contenido Visual con IA
@@ -114,46 +108,46 @@ RESULTADOS DE INVESTIGACIÓN:
 @attach visualizations.md
 
 TIPOS DE VISUALES REQUERIDOS:
-1. **Slide de Título Impactante**
+1. **Diapositiva de Título Impactante**
    - Diseño profesional
    - Información clara
    - Identidad visual FPUNA
 
-2. **Slide de Problema/GAP**
+2. **Diapositiva de Problema/BRECHA**
    - Visual del problema
    - Estadística impactante
    - Pregunta de investigación
 
-3. **Slide de Metodología**
+3. **Diapositiva de Metodología**
    - Diagrama de flujo del diseño
-   - Timeline del estudio
+   - Línea de tiempo del estudio
    - Visual de participantes
 
-4. **Slide de Resultados Principal**
+4. **Diapositiva de Resultados Principal**
    - Gráfico principal destacado
    - Estadística clave grande
    - Indicador de significancia
 
-5. **Slide de Impacto**
+5. **Diapositiva de Impacto**
    - Infografía simple
    - Conclusiones clave
-   - Call-to-action
+   - Llamada a la acción
 
 REQUISITOS DE DISEÑO:
-- Alto contraste WCAG AAA
+- Alto contraste (WCAG AAA)
 - Fuentes legibles (24pt+)
 - Consistencia de colores
-- Sin elementos decorativos
+- Sin elementos decorativos innecesarios
 
 OUTPUT:
-- Diseño para cada slide
+- Diseño para cada diapositiva
 - Contenido visual optimizado
 - Guía de implementación"
 ```
 
 ### Parte 2: Manejo de Conferencias con IA
 
-#### Preparación de Q&A con IA
+#### Preparación de Preguntas y Respuestas (Q&A) con IA
 
 ```bash
 opencode "Prepara respuestas para preguntas en conferencia:
@@ -169,7 +163,7 @@ PREGUNTAS ANTICIPADAS:
    - ¿Por qué este tamaño muestral?
 
 2. **Sobre Resultados**
-   - ¿Cómo interpretan este effect size?
+   - ¿Cómo interpretan este tamaño del efecto?
    - ¿Por qué no significativo en X?
    - ¿Generalizable a otros contextos?
 
@@ -192,14 +186,14 @@ ESTRUCTURA DE RESPUESTAS:
 OUTPUT:
 - Banco de 15+ preguntas y respuestas
 - Estrategia de manejo
-- Tips para nervios
-- Backup materials"
+- Consejos para nervios
+- Materiales de respaldo"
 ```
 
-#### Networking con IA
+#### Contactos y Redes (Networking) con IA
 
 ```bash
-opencode "Genera estrategia de networking para conferencia:
+opencode "Genera estrategia de contactos para conferencia:
 
 PERFIL ACADÉMICO:
 - Nombre: [Tu nombre]
@@ -207,10 +201,10 @@ PERFIL ACADÉMICO:
 - Intereses: [Tus temas]
 - Buscando: [Colaboraciones/opciones]
 
-ESTRATEGIA DE NETWORKING:
+ESTRATEGIA DE CONTACTOS:
 1. **Antes de la Conferencia**
-   - Identificar speakers clave
-   - Preparar pitch personal
+   - Identificar oradores clave
+   - Preparar discurso de presentación
    - Investigar asistentes relevantes
    - Agenda de contactos
 
@@ -221,29 +215,29 @@ ESTRATEGIA DE NETWORKING:
    - Seguimiento inmediato
 
 3. **Después de la Conferencia**
-   - Emails personalizados
+   - Correos personalizados
    - Conexiones en redes académicas
    - Propuestas de colaboración
    - Mantenimiento de relaciones
 
 MATERIALES A GENERAR:
-- Pitch personal (30 segundos)
-- Template de email post-conferencia
+- Discurso de presentación (30 segundos)
+- Plantilla de correo post-conferencia
 - Preguntas sugeridas para sesiones
-- Perfil para networking apps
+- Perfil para aplicaciones de contactos
 
 OUTPUT:
 - Estrategia completa documentada
 - Materiales listos para usar
-- Timeline de implementación"
+- Cronograma de implementación"
 ```
 
 ### Parte 3: Proceso de Publicación con IA
 
-#### Selección de Journal con IA
+#### Selección de Revista con IA
 
 ```bash
-opencode "Analiza y recomienda journals apropiados:
+opencode "Analiza y recomienda revistas apropiadas:
 
 INFORMACIÓN DEL MANUSCRITO:
 @attach final_paper.md
@@ -251,65 +245,65 @@ INFORMACIÓN DEL MANUSCRITO:
 
 CRITERIOS DE EVALUACIÓN:
 1. **Alineación temática**
-   - Scope del journal
+   - Alcance de la revista
    - Temas publicados recientemente
    - Audiencia objetivo
 
 2. **Factores de Impacto**
-   - JCR/SJR rankings
+   - Rankings JCR/SJR
    - Tasa de aceptación
    - Tiempo de revisión
-   - Costo APC
+   - Costo de publicación (APC)
 
 3. **Factores Prácticos**
-   - Open Access vs suscripción
-   - Idioma del journal
-   - Proceso de submission
-   - Reputación en campo
+   - Acceso Abierto vs suscripción
+   - Idioma de la revista
+   - Proceso de envío
+   - Reputación en el campo
 
 ANÁLISIS REQUERIDO:
-- Top 5 journals recomendados
-- Justificación para cada uno
+- Top 5 revistas recomendadas
+- Justificación para cada una
 - Probabilidad de aceptación estimada
-- Timeline de publicación esperado
+- Cronograma de publicación esperado
 
 OUTPUT:
-- Tabla comparativa de journals
+- Tabla comparativa de revistas
 - Recomendación principal con justificación
-- Estrategia de submission
-- Timeline del proceso"
+- Estrategia de envío
+- Cronograma del proceso"
 ```
 
-#### Cover Letter con IA
+#### Carta de Presentación (Cover Letter) con IA
 
 ```bash
-opencode "Genera cover letter profesional para journal:
+opencode "Genera carta de presentación profesional para revista:
 
-TARGET JOURNAL:
-[Nombre del journal seleccionado]
+REVISTA OBJETIVO:
+[Nombre de la revista seleccionada]
 
 MANUSCRITO:
 @attach final_paper.md
 @attach abstract.md
 
-ESTRUCTURA DE COVER LETTER:
+ESTRUCTURA DE CARTA:
 1. **Encabezado Formal**
    - Fecha y destinatario
    - Información de contacto
-   - Referencia del manuscript
+   - Referencia del manuscrito
 
 2. **Párrafo 1: Presentación**
-   - Título del manuscript
+   - Título del manuscrito
    - Autores y afiliación
-   - Tipo de submission
+   - Tipo de envío
 
 3. **Párrafo 2: Contribución Principal**
-   - Gap abordado
+   - Brecha abordada
    - Contribución única
-   - Relevancia para el journal
+   - Relevancia para la revista
 
-4. **Párrafo 3: Adecuación al Journal**
-   - Por qué este journal
+4. **Párrafo 3: Adecuación a la Revista**
+   - Por qué esta revista
    - Artículos relacionados publicados
    - Audiencia apropiada
 
@@ -321,13 +315,13 @@ ESTRUCTURA DE COVER LETTER:
 
 6. **Cierre Profesional**
    - Agradecimiento
-   - Disponibilidad para revisions
+   - Disponibilidad para revisiones
    - Información de contacto
 
 OUTPUT:
-- Cover letter completa y personalizada
+- Carta de presentación completa y personalizada
 - Formato profesional
-- Checklist de elementos incluidos"
+- Lista de verificación de elementos incluidos"
 ```
 
 ### Parte 4: Respuesta a Revisores con IA
@@ -369,13 +363,13 @@ ESTRATEGIA DE RESPUESTA:
 - Comentarios mayores vs menores
 - Tiempo estimado para correcciones
 - Posibilidad de implementación
-- Impacto en conclusions
+- Impacto en conclusiones
 
 OUTPUT:
 - Tabla de comentarios categorizados
 - Estrategia de respuesta
-- Timeline de implementación
-- Recomendación final (accept/reject)"
+- Cronograma de implementación
+- Recomendación final (aceptar/rechazar)"
 ```
 
 #### Respuesta Punto por Punto con IA
@@ -389,9 +383,9 @@ COMENTARIOS CLASIFICADOS:
 ESTRUCTURA DE RESPUESTA:
 **RESPUESTA A REVISORES Y EDITOR**
 
-Manuscrito: [Número de manuscript]
+Manuscrito: [Número de manuscrito]
 Título: [Título del paper]
-Journal: [Nombre del journal]
+Revista: [Nombre de la revista]
 
 Estimados Revisores y Editor,
 
@@ -406,7 +400,7 @@ Agradecemos profundamente los comentarios constructivos que han mejorado signifi
 **RESPUESTA:** Agradecemos esta observación. [Explicación detallada]
 - **Acción realizada:** [Cambios específicos hechos]
 - **Justificación:** [Por qué se hicieron estos cambios]
-- **Ubicación:** [Página/línea en manuscript revisado]
+- **Ubicación:** [Página/línea en manuscrito revisado]
 
 [Continuar con todos los comentarios]
 
@@ -420,7 +414,7 @@ Agradecemos profundamente los comentarios constructivos que han mejorado signifi
 ---
 
 **CONCLUSIÓN:**
-Nuevamente, gracias por su tiempo y expertise. Confiamos que estas revisiones han fortalecido sustancialmente el manuscrito.
+Nuevamente, gracias por su tiempo y experiencia. Confiamos que estas revisiones han fortalecido sustancialmente el manuscrito.
 
 Atentamente,
 [Nombres completos con afiliaciones]
@@ -435,7 +429,7 @@ OUTPUT:
 - Respuesta completa a revisores
 - Cambios documentados
 - Versión revisada del paper
-- Checklist de submission"
+- Lista de verificación de envío"
 ```
 
 ### Parte 5: Presencia Académica Digital con IA
@@ -443,7 +437,7 @@ OUTPUT:
 #### Perfil Académico con IA
 
 ```bash
-opcodel "Crea perfil académico profesional completo:
+opencode "Crea perfil académico profesional completo:
 
 INFORMACIÓN PERSONAL:
 - Nombre: [Tu nombre completo]
@@ -453,7 +447,7 @@ INFORMACIÓN PERSONAL:
 
 ELEMENTOS DEL PERFIL:
 1. **Biografía Académica** (150 palabras)
-   - Background educativo
+   - Antecedentes educativos
    - Experiencia investigativa
    - Intereses principales
    - Objetivos futuros
@@ -462,23 +456,23 @@ ELEMENTOS DEL PERFIL:
    - Artículos completos
    - Conferencias presentadas
    - Capítulos de libro
-   - Working papers
+   - Documentos de trabajo (Working papers)
 
 3. **Intereses de Investigación**
-   - Keywords específicas
+   - Palabras clave específicas
    - Proyectos actuales
    - Colaboraciones buscadas
    - Métodos preferidos
 
 4. **Información de Contacto**
-   - Email profesional
+   - Correo profesional
    - Perfiles académicos
    - Redes sociales académicas
-   - Website personal
+   - Sitio web personal
 
-PLATFORMS A CONFIGURAR:
-- ORCID ID
-- Google Scholar Profile
+PLATAFORMAS A CONFIGURAR:
+- ID ORCID
+- Perfil de Google Scholar
 - ResearchGate
 - LinkedIn académico
 - GitHub (si aplica)
@@ -486,8 +480,8 @@ PLATFORMS A CONFIGURAR:
 OUTPUT:
 - Biografía completa en español e inglés
 - Lista de publicaciones formateada
-- Keywords para indexing
-- Templates para diferentes platforms"
+- Palabras clave para indexación
+- Plantillas para diferentes plataformas"
 ```
 
 #### Estrategia de Colaboración con IA
@@ -502,7 +496,7 @@ OBJETIVOS DE COLABORACIÓN:
 - Publicaciones conjuntas
 - Proyectos de investigación
 - Presentaciones en conferencias
-- Propuestas de funding
+- Propuestas de financiamiento
 
 ESTRATEGIA DE COLABORACIÓN:
 1. **Identificación de Colaboradores**
@@ -511,8 +505,8 @@ ESTRATEGIA DE COLABORACIÓN:
    - Perfiles institucionales relevantes
    - Redes de contacto existentes
 
-2. **Approaching Estratégico**
-   - Emails personalizados
+2. **Acercamiento Estratégico**
+   - Correos personalizados
    - Propuestas específicas
    - Contribución clara
    - Beneficios mutuos
@@ -525,15 +519,15 @@ ESTRATEGIA DE COLABORACIÓN:
 
 4. **Expansión de Red**
    - Asistencia a conferencias
-   - Participación en workshops
+   - Participación en talleres
    - Revisión de papers
    - Mentoría activa
 
 MATERIALES A GENERAR:
-- Template de email de colaboración
+- Plantilla de correo de colaboración
 - Propuesta de proyecto conjunta
 - Plan de comunicación
-- Timeline de networking
+- Cronograma de contactos
 
 OUTPUT:
 - Estrategia documentada completa
@@ -552,33 +546,33 @@ OUTPUT:
 **Pasos**:
 1. Generar estructura de presentación con IA
 2. Crear contenido visual profesional
-3. Preparar banco de Q&A
-4. Desarrollar estrategia de networking
+3. Preparar banco de Preguntas y Respuestas
+4. Desarrollar estrategia de contactos (networking)
 5. Crear materiales complementarios
 
 **Entregable Esperado**:
 - `presentacion_completa.md`
 - `contenido_visual.md`
-- `qa_preparacion.md`
-- `networking_strategy.md`
+- `preparacion_preguntas_respuestas.md`
+- `estrategia_contactos.md`
 
-### Ejercicio 2: Submission a Journal (90 minutos)
+### Ejercicio 2: Envío a Revista (90 minutos)
 
-**Tarea**: Preparar paquete completo de submission usando IA.
+**Tarea**: Preparar paquete completo de envío usando IA.
 
 **Pasos**:
-1. Analizar y seleccionar journal apropiado
-2. Generar cover letter personalizada
+1. Analizar y seleccionar revista apropiada
+2. Generar carta de presentación personalizada
 3. Preparar respuesta a revisores simulada
 4. Crear perfil académico mejorado
-5. Organizar paquete de submission
+5. Organizar paquete de envío
 
 **Entregable Esperado**:
-- `journal_analysis.md`
-- `cover_letter.md`
-- `reviewer_response.md`
-- `academic_profile.md`
-- `submission_package.md`
+- `analisis_revista.md`
+- `carta_presentacion.md`
+- `respuesta_revisores.md`
+- `perfil_academico.md`
+- `paquete_envio.md`
 
 ---
 
@@ -590,12 +584,12 @@ OUTPUT:
 1. **Presentación de Conferencia** (35 puntos)
    - Estructura apropiada
    - Contenido visual efectivo
-   - Q&A preparation completa
-   - Estrategia de networking
+   - Preparación de PyR completa
+   - Estrategia de contactos
 
-2. **Paquete de Submission** (35 puntos)
-   - Journal selection justificada
-   - Cover letter profesional
+2. **Paquete de Envío** (35 puntos)
+   - Selección de revista justificada
+   - Carta de presentación profesional
    - Formato correcto
    - Materiales completos
 
@@ -603,11 +597,11 @@ OUTPUT:
    - Profesional y respetuosa
    - Punto por punto completa
    - Cambios documentados
-   - Timeline realista
+   - Cronograma realista
 
 4. **Perfil Académico** (10 puntos)
    - Completo y profesional
-   - Diversas platforms configuradas
+   - Diversas plataformas configuradas
    - Biografía bien escrita
    - Estrategia de colaboración
 
@@ -617,29 +611,29 @@ OUTPUT:
 
 ## 🔄 Referencias Cruzadas
 
-**Usa outputs de**: Módulo 4: Escritura Académica  
-**Prerrequisito para**: Proyecto Final Capstone  
+**Usa outputs de**: Módulo 4: Redacción Académica
+**Prerrequisito para**: Proyecto Final Capstone
 **Siguiente Paso**: Aplicar todo en proyecto de investigación completo
 
 ---
 
-## 💡 Tips de Éxito con IA
+## 💡 Consejos de Éxito con IA
 
 ### Generación de Presentaciones
 ```
-opencode "Genera presentación sobre [topic]:
+opencode "Genera presentación sobre [tema]:
 AUDIENCIA: [tipo de audiencia]
 DURACIÓN: [minutos disponibles]
 ESTRUCTURA: [requerimientos específicos]
 VISUALES: [tipo de contenido visual]"
 ```
 
-### Preparación de Submission
+### Preparación de Envío
 ```
-opencode "Prepara submission para [journal]:
+opencode "Prepara envío para [revista]:
 MANUSCRITO: @attach paper.pdf
-REQUISITOS: [guidelines específicas]
-TIPO: [regular/special issue]"
+REQUISITOS: [pautas específicas]
+TIPO: [regular/número especial]"
 ```
 
 ### Respuesta a Revisores
@@ -655,8 +649,8 @@ ESTRATEGIA: [constructiva/profesional]"
 ## ⚠️ Errores Comunes a Evitar
 
 - **Presentación sobrecargada** → Usa IA para simplificar contenido
-- **Mala preparación de Q&A** -> Anticipa preguntas con IA
-- **Journal inapropiado** -> Analiza con IA antes de submitir
+- **Mala preparación de PyR** -> Anticipa preguntas con IA
+- **Revista inapropiada** -> Analiza con IA antes de enviar
 - **Respuesta defensiva** -> Usa IA para tono profesional
 - **Perfil académico incompleto** -> Genera con IA contenido completo
 
@@ -665,7 +659,7 @@ ESTRATEGIA: [constructiva/profesional]"
 ## 🤝 Obtener Ayuda
 
 - **Slack**: #research-ai-presentation
-- **Office Hours**: Sábado 18:00-20:00
+- **Horas de Oficina**: Sábado 18:00-20:00
 - **Email**: presentation-support@fpuna.edu.py
 
 ---
@@ -675,43 +669,43 @@ ESTRATEGIA: [constructiva/profesional]"
 ### Prompts Esenciales de IA
 ```bash
 # Presentación
-opencode "Genera presentación de conferencia sobre [topic] con resultados @attach data.md"
+opencode "Genera presentación de conferencia sobre [tema] con resultados @attach data.md"
 
-# Cover letter
-opencode "Escribe cover letter para [journal] sobre manuscript @attach abstract.md"
+# Carta de presentación
+opencode "Escribe carta de presentación para [revista] sobre manuscrito @attach abstract.md"
 
 # Respuesta a revisores
 opencode "Crea respuesta profesional a: @attach reviewer_comments.md"
 
 # Perfil académico
-opencode "Genera perfil académico completo para [field] con intereses @attach topics.md"
+opencode "Genera perfil académico completo para [campo] con intereses @attach topics.md"
 ```
 
 ### Comandos de Referencia Rápida
 ```bash
 # Estructura de presentación
-opencode "Crea estructura de presentación 15 minutos para audiencia [tipo] sobre [topic]"
+opencode "Crea estructura de presentación 15 minutos para audiencia [tipo] sobre [tema]"
 
-# Selección de journal
-opencode "Analiza journals apropiados para paper sobre [topic] con datos @attach metrics.md"
+# Selección de revista
+opencode "Analiza revistas apropiadas para paper sobre [tema] con datos @attach metrics.md"
 
-# Networking strategy
-opencode "Diseña estrategia de networking para conferencia en [field] con perfil @attach bio.md"
+# Estrategia de contactos
+opencode "Diseña estrategia de contactos para conferencia en [campo] con perfil @attach bio.md"
 ```
 
 ---
 
-## 🎯 Checklist de Compleción del Módulo
+## 🎯 Lista de Verificación del Módulo
 
 - [ ] Presentación completa generada con IA
 - [ ] Contenido visual profesional creado
-- [ ] Preparación de Q&A completada
-- [ ] Estrategia de networking desarrollada
-- [ ] Journal apropiado seleccionado con IA
-- [ ] Cover letter profesional generada
+- [ ] Preparación de PyR completada
+- [ ] Estrategia de contactos desarrollada
+- [ ] Revista apropiada seleccionada con IA
+- [ ] Carta de presentación profesional generada
 - [ ] Respuesta a revisores preparada
 - [ ] Perfil académico completo creado
-- [ ] Paquete de submission organizado
+- [ ] Paquete de envío organizado
 - [ ] Evaluación entregada (70+ puntos)
 
 **🚀 ¡Listo para el Proyecto Final Capstone!**

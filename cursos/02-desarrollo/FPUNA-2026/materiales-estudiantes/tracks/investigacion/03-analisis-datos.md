@@ -1,40 +1,33 @@
-# 📊 Module 3: Data Analysis with AI
+# 📊 Módulo 3: Análisis de Datos con IA
 
-**Duration**: 4 hours  
-**Level**: Intermediate-Advanced  
-**Format**: 100% AI-Driven
+**Duración**: 4 horas
+**Nivel**: Intermedio-Avanzado
+**Formato**: 100% Impulsado por IA
 
-## 🎯 Learning Objectives
+## 🎯 Objetivos de Aprendizaje
 
-By completing this module, you will be able to:
+Al completar este módulo, serás capaz de:
 
-- [ ] Analyze data using AI statistical interpretation
-- [ ] Generate publication-quality visualizations via AI
-- [ ] Verify statistical assumptions with AI assistance
-- [ ] Create reproducible analysis in Markdown
-- [ ] Report results in academic formats
+- [ ] Analizar datos usando interpretación estadística de IA
+- [ ] Generar visualizaciones de calidad de publicación vía IA
+- [ ] Verificar supuestos estadísticos con asistencia de IA
+- [ ] Crear análisis reproducible en Markdown
+- [ ] Reportar resultados en formatos académicos
 
-## 🛠️ Required Tools (100% Free)
+## 🛠️ Herramientas Requeridas (100% Gratuitas)
 
-- **OpenCode** with Oh My OpenCode MCPs
-- **Claude/GPT-4** for statistical analysis
-- **Markdown reader** for data visualization
-- **CSV/Excel files** for data storage
-
-## ❌ Tools NOT Needed
-
-- ❌ SPSS, Stata, SAS
-- ❌ Python/R programming
-- ❌ Jupyter Notebooks
-- ❌ Statistical software licenses
+- **OpenCode** con Oh My OpenCode MCPs
+- **Claude/GPT-4** para análisis estadístico
+- **Lector de Markdown** para visualización de datos
+- **Archivos CSV/Excel** para almacenamiento de datos
 
 ---
 
-## 📖 Core Content
+## 📖 Contenido Principal
 
-### Part 1: AI-Powered Statistical Analysis
+### Parte 1: Análisis Estadístico Impulsado por IA
 
-#### Descriptive Statistics with AI
+#### Estadística Descriptiva con IA
 
 ```bash
 opencode "Realiza análisis estadístico descriptivo completo:
@@ -65,7 +58,7 @@ OUTPUT FORMATO:
 - Comparación inicial entre grupos"
 ```
 
-#### Inferential Statistics with AI
+#### Estadística Inferencial con IA
 
 ```bash
 opencode "Realiza análisis inferencial apropiado:
@@ -102,9 +95,9 @@ OUTPUT:
 - Tabla APA-style de resultados"
 ```
 
-### Part 2: AI-Powered Data Visualization
+### Parte 2: Visualización de Datos Impulsada por IA
 
-#### Publication-Ready Graphs with AI
+#### Gráficos Listos para Publicación con IA
 
 ```bash
 opencode "Crea visualizaciones profesionales para resultados:
@@ -121,12 +114,12 @@ GRÁFICOS REQUERIDOS:
 5. Violin plot con puntos individuales
 
 REQUISITOS DE DISEÑO:
-- Alto contraste (WCAG AAA compliant)
+- Alto contraste (conforme a WCAG AAA)
 - Accesibilidad para daltonismo
-- Tamaño publication-ready (300 DPI)
+- Tamaño listo para publicación (300 DPI)
 - Leyendas claras y completas
 - Títulos informativos
-- Formato academic standard
+- Estándar académico
 
 OUTPUT:
 - Código para cada gráfico (Markdown + descripción)
@@ -135,7 +128,7 @@ OUTPUT:
 - Sugerencias para publicación"
 ```
 
-#### Statistical Significance Visualization with AI
+#### Visualización de Significancia Estadística con IA
 
 ```bash
 opencode "Visualiza significancia estadística y effect sizes:
@@ -144,11 +137,11 @@ RESULTADOS:
 @attach statistical_analysis.md
 
 ELEMENTOS A VISUALIZAR:
-1. Forest plot de effect sizes
-2. P-valueheatmap
-3. Confidence intervals comparativos
-4. Power analysis visualization
-5. Sample size impact on significance
+1. Forest plot de tamaños del efecto
+2. Mapa de calor (Heatmap) de valores P
+3. Intervalos de confianza comparativos
+4. Visualización de análisis de potencia
+5. Impacto del tamaño de muestra en la significancia
 
 REQUISITOS:
 - Claridad en significancia estadística
@@ -163,9 +156,9 @@ OUTPUT:
 - Recomendaciones para presentación"
 ```
 
-### Part 3: AI-Powered Reproducible Analysis
+### Parte 3: Análisis Reproducible Impulsado por IA
 
-#### Markdown Analysis Workflow with AI
+#### Flujo de Trabajo de Análisis en Markdown con IA
 
 ```bash
 opencode "Crea workflow de análisis reproducible en Markdown:
@@ -173,7 +166,7 @@ opencode "Crea workflow de análisis reproducible en Markdown:
 DATOS:
 @attach raw_data.csv
 
-ESTRUCTURA REQUIRIDA:
+ESTRUCTURA REQUERIDA:
 ```markdown
 # Análisis de Datos - Estudio IA en Educación
 
@@ -193,7 +186,7 @@ ESTRUCTURA REQUIRIDA:
 [Test estadístico principal con justificación]
 
 ## 6. Visualizaciones Finales
-[Gráficos publication-ready]
+[Gráficos listos para publicación]
 
 ## 7. Resultados Principales
 [Resumen en formato APA]
@@ -215,7 +208,7 @@ OUTPUT:
 - Reproducibilidad garantizada"
 ```
 
-#### Data Quality Assessment with AI
+#### Evaluación de Calidad de Datos con IA
 
 ```bash
 opencode "Evalúa calidad de datos para análisis:
@@ -236,7 +229,7 @@ ACCIONES CORRECTIVAS:
 - Corrección de inconsistencias
 - Normalización de formatos
 
-REPORT REQUERIDO:
+REPORTE REQUERIDO:
 - Diagnóstico de calidad detallado
 - Recomendaciones específicas
 - Código para corrección
@@ -249,9 +242,9 @@ OUTPUT:
 - Justificación de decisiones"
 ```
 
-### Part 4: AI-Powered Advanced Analysis
+### Parte 4: Análisis Avanzado Impulsado por IA
 
-#### Multiple Comparisons with AI
+#### Comparaciones Múltiples con IA
 
 ```bash
 opencode "Realiza análisis de comparaciones múltiples:
@@ -283,7 +276,7 @@ OUTPUT:
 - Interpretación de patrones"
 ```
 
-#### Regression Analysis with AI
+#### Análisis de Regresión con IA
 
 ```bash
 opencode "Realiza análisis de regresión múltiple:
@@ -308,9 +301,9 @@ ANÁLISIS REQUERIDO:
    - Diagnóstico de influencia (Cook's distance)
 
 3. Validación cruzada:
-   - Train-test split
-   - Performance en datos nuevos
-   - Overfitting assessment
+   - División entrenamiento-prueba
+   - Desempeño en datos nuevos
+   - Evaluación de sobreajuste (overfitting)
 
 OUTPUT:
 - Tabla de coeficientes con interpretación
@@ -319,9 +312,9 @@ OUTPUT:
 - Visualizaciones diagnósticas"
 ```
 
-### Part 5: AI-Powered Reporting
+### Parte 5: Reporte Impulsado por IA
 
-#### APA-Style Results with AI
+#### Resultados Estilo APA con IA
 
 ```bash
 opencode "Formatea resultados en estilo APA 7:
@@ -330,11 +323,11 @@ RESULTADOS ESTADÍSTICOS:
 @attach statistical_output.md
 
 SECCIONES A FORMATEAR:
-1. Descriptive Statistics
-2. Assumption Testing
-3. Main Inferential Analysis
-4. Effect Sizes
-5. Supplementary Analyses
+1. Estadísticas Descriptivas
+2. Verificación de Supuestos
+3. Análisis Inferencial Principal
+4. Tamaños del Efecto
+5. Análisis Suplementarios
 
 REQUISITOS APA 7:
 - Formato de estadísticas (M, SD, t, p, d, η²)
@@ -344,13 +337,13 @@ REQUISITOS APA 7:
 - Tablas formateadas correctamente
 
 OUTPUT:
-- Texto completo ready para paper
-- Tablas APA-style
-- Figuras con captions apropiados
-- Consistency checks completos"
+- Texto completo listo para paper
+- Tablas estilo APA
+- Figuras con leyendas apropiadas
+- Verificaciones de consistencia completas"
 ```
 
-#### Statistical Interpretation with AI
+#### Interpretación Estadística con IA
 
 ```bash
 opencode "Interpreta resultados estadísticos en contexto:
@@ -365,7 +358,7 @@ CONTEXTO DE ESTUDIO:
 - Implicaciones prácticas para políticas
 
 INTERPRETACIÓN REQUERIDA:
-1. Significado práctico de effect sizes
+1. Significado práctico de tamaños del efecto
 2. Implicaciones para el aprendizaje
 3. Relevancia para políticas educativas
 4. Comparación con literatura existente
@@ -380,39 +373,39 @@ OUTPUT:
 
 ---
 
-## 🛠️ Practical Exercises
+## 🛠️ Ejercicios Prácticos
 
-### Exercise 1: Complete Data Analysis (120 minutes)
+### Ejercicio 1: Análisis de Datos Completo (120 minutos)
 
-**Task**: Analyze experimental data using only AI tools.
+**Tarea**: Analizar datos experimentales usando solo herramientas de IA.
 
-**Steps**:
-1. Assess data quality with AI
-2. Conduct descriptive analysis
-3. Verify statistical assumptions
-4. Perform appropriate inferential tests
-5. Create publication-ready visualizations
-6. Generate APA-style results
+**Pasos**:
+1. Evalúa calidad de datos con IA
+2. Realiza análisis descriptivo
+3. Verifica supuestos estadísticos
+4. Realiza pruebas inferenciales apropiadas
+5. Crea visualizaciones listas para publicación
+6. Genera resultados estilo APA
 
-**Expected Output**:
+**Output Esperado**:
 - `data_quality_report.md`
 - `descriptive_analysis.md`
 - `inferential_analysis.md`
 - `visualizations.md`
 - `apa_results.md`
 
-### Exercise 2: Advanced Statistical Modeling (90 minutes)
+### Ejercicio 2: Modelado Estadístico Avanzado (90 minutos)
 
-**Task**: Conduct advanced analysis with AI assistance.
+**Tarea**: Realizar análisis avanzado con asistencia de IA.
 
-**Steps**:
-1. Perform multiple comparisons analysis
-2. Build regression model
-3. Diagnose model assumptions
-4. Validate model performance
-5. Interpret results in context
+**Pasos**:
+1. Realiza análisis de comparaciones múltiples
+2. Construye modelo de regresión
+3. Diagnostica supuestos del modelo
+4. Valida desempeño del modelo
+5. Interpreta resultados en contexto
 
-**Expected Output**:
+**Output Esperado**:
 - `advanced_analysis.md`
 - `model_diagnostics.md`
 - `interpretation_report.md`
@@ -420,133 +413,133 @@ OUTPUT:
 
 ---
 
-## ✅ Module Assessment
+## ✅ Evaluación del Módulo
 
-### Data Analysis Project (100 points)
+### Proyecto de Análisis de Datos (100 puntos)
 
-**Deliverables**:
-1. **Data Quality Report** (20 points)
-   - Completeness assessment
-   - Cleaning procedures
-   - Documentation
+**Entregables**:
+1. **Reporte de Calidad de Datos** (20 puntos)
+   - Evaluación de completitud
+   - Procedimientos de limpieza
+   - Documentación
 
-2. **Statistical Analysis** (30 points)
-   - Appropriate tests selected
-   - Assumptions verified
-   - Results correctly interpreted
+2. **Análisis Estadístico** (30 puntos)
+   - Tests apropiados seleccionados
+   - Supuestos verificados
+   - Resultados correctamente interpretados
 
-3. **Visualizations** (25 points)
-   - Publication-ready quality
-   - Accessibility compliant
-   - Properly labeled
+3. **Visualizaciones** (25 puntos)
+   - Calidad lista para publicación
+   - Cumplimiento de accesibilidad
+   - Etiquetado adecuado
 
-4. **APA Reporting** (25 points)
-   - Proper formatting
-   - Complete reporting
-   - Contextual interpretation
+4. **Reporte APA** (25 puntos)
+   - Formato adecuado
+   - Reporte completo
+   - Interpretación contextual
 
-**Passing Grade**: 70/100 points
-
----
-
-## 🔄 Cross-References
-
-**Uses outputs from**: Module 2: Research Methodology  
-**Prerequisite for**: Module 4: Academic Writing with AI  
-**Next Step**: Write results section using your analysis
+**Nota de Aprobación**: 70/100 puntos
 
 ---
 
-## 💡 AI Tips for Success
+## 🔄 Referencias Cruzadas
 
-### Data Analysis Prompts
+**Usa outputs de**: Módulo 2: Metodología de Investigación
+**Prerrequisito para**: Módulo 4: Escritura Académica con IA
+**Siguiente Paso**: Escribir sección de resultados usando tu análisis
+
+---
+
+## 💡 Consejos de IA para el Éxito
+
+### Prompts de Análisis de Datos
 ```
-opencode "Analyze dataset @attach data.csv for:
-VARIABLES: [list variables]
-ANALYSIS TYPE: [descriptive/inferential/advanced]
-OUTPUT FORMAT: [tables/visualizations/APA]
-CONTEXT: [research background]"
+opencode "Analiza dataset @attach data.csv para:
+VARIABLES: [lista de variables]
+TIPO DE ANÁLISIS: [descriptivo/inferencial/avanzado]
+FORMATO OUTPUT: [tablas/visualizaciones/APA]
+CONTEXTO: [fondo de investigación]"
 ```
 
-### Statistical Testing
+### Pruebas Estadísticas
 ```
-opencode "Test hypothesis using [statistical test]:
-DATA: @attach dataset.csv
-HYPOTHESIS: [H0 and Ha]
-ASSUMPTIONS: [check requirements]
-SIGNIFICANCE: [alpha level]"
+opencode "Prueba hipótesis usando [test estadístico]:
+DATOS: @attach dataset.csv
+HIPÓTESIS: [H0 y Ha]
+SUPUESTOS: [verificar requisitos]
+SIGNIFICANCIA: [nivel alfa]"
 ```
 
-### Visualization
+### Visualización
 ```
-opencode "Create [graph type] for data:
-DATA: @attach results.md
-STYLE: [publication-ready/accessible]
-FORMAT: [Markdown description]
-REQUIREMENTS: [size/contrast/labels]"
+opencode "Crea [tipo de gráfico] para datos:
+DATOS: @attach results.md
+ESTILO: [listo para publicación/accesible]
+FORMATO: [descripción Markdown]
+REQUISITOS: [tamaño/contraste/etiquetas]"
 ```
 
 ---
 
-## ⚠️ Common Pitfalls to Avoid
+## ⚠️ Errores Comunes a Evitar
 
-- **Ignoring assumptions** → Always use AI to verify statistical assumptions
-- **Wrong test selection** → Let AI recommend appropriate tests
-- **Poor visualization** → Request accessibility-compliant graphics
-- **Incomplete reporting** → Use AI for APA-style formatting
-- **Over-interpreting** → Ask AI for practical significance assessment
+- **Ignorar supuestos** → Siempre usa IA para verificar supuestos estadísticos
+- **Selección de test incorrecta** → Deja que la IA recomiende tests apropiados
+- **Mala visualización** → Solicita gráficos que cumplan con accesibilidad
+- **Reporte incompleto** → Usa IA para formato estilo APA
+- **Sobreinterpretar** → Pide a la IA evaluación de significancia práctica
 
 ---
 
-## 🤝 Getting Help
+## 🤝 Obteniendo Ayuda
 
 - **Slack**: #research-ai-analysis
-- **Office Hours**: Thursday 18:00-20:00
+- **Horas de Oficina**: Jueves 18:00-20:00
 - **Email**: analysis-support@fpuna.edu.py
 
 ---
 
-## 📁 Resources
+## 📁 Recursos
 
-### Essential AI Prompts
+### Prompts Esenciales de IA
 ```bash
-# Descriptive analysis
-opencode "Generate descriptive statistics for @attach data.csv with proper interpretation"
+# Análisis descriptivo
+opencode "Genera estadísticas descriptivas para @attach data.csv con interpretación adecuada"
 
-# Assumption testing
-opencode "Check statistical assumptions for [test] on dataset @attach data.csv"
+# Verificación de supuestos
+opencode "Verifica supuestos estadísticos para [test] en dataset @attach data.csv"
 
-# APA formatting
-opencode "Convert statistical results to APA 7 format: @attach results.md"
+# Formato APA
+opencode "Convierte resultados estadísticos a formato APA 7: @attach results.md"
 ```
 
-### Quick Reference Commands
+### Comandos de Referencia Rápida
 ```bash
-# Data quality
-opencode "Assess data quality of @attach dataset.csv"
+# Calidad de datos
+opencode "Evalúa calidad de datos de @attach dataset.csv"
 
-# Visualization
-opencode "Create publication-ready graphs for @attach analysis_results.md"
+# Visualización
+opencode "Crea gráficos listos para publicación para @attach analysis_results.md"
 
-# Interpretation
-opencode "Interpret statistical significance for educational context: @attach results.md"
+# Interpretación
+opencode "Interpreta significancia estadística para contexto educativo: @attach results.md"
 ```
 
 ---
 
-## 🎯 Module Completion Checklist
+## 🎯 Lista de Verificación del Módulo
 
-- [ ] Data quality assessment completed
-- [ ] Descriptive statistics generated
-- [ ] Statistical assumptions verified
-- [ ] Inferential analysis performed
-- [ ] Visualizations created and accessible
-- [ ] APA-style results formatted
-- [ ] Interpretation provided in context
-- [ ] Assessment submitted (70+ points)
+- [ ] Evaluación de calidad de datos completada
+- [ ] Estadísticas descriptivas generadas
+- [ ] Supuestos estadísticos verificados
+- [ ] Análisis inferencial realizado
+- [ ] Visualizaciones creadas y accesibles
+- [ ] Resultados estilo APA formateados
+- [ ] Interpretación provista en contexto
+- [ ] Evaluación enviada (70+ puntos)
 
-**🚀 Ready for Module 4: Academic Writing with AI!**
+**🚀 ¡Listo para el Módulo 4: Escritura Académica con IA!**
 
 ---
 
-*Module 3 - Data Analysis with AI - FPUNA 2026*
+*Módulo 3 - Análisis de Datos con IA - FPUNA 2026*

@@ -1,8 +1,8 @@
-# 🤖 Prompts - Investigación y Academia
+# 🤖 Prompts (Instrucciones) - Investigación y Academia
 
 ## FPUNA Verano 2026
 
-Colección de prompts para investigación académica con Claude/ChatGPT.
+Colección de prompts (instrucciones) para investigación académica con Claude/ChatGPT.
 
 ---
 
@@ -18,18 +18,18 @@ Bases de datos disponibles: [LISTA]
 Período de tiempo: [AÑOS]
 
 Genera:
-1. Términos de búsqueda (keywords, sinónimos)
+1. Términos de búsqueda (palabras clave, sinónimos)
 2. Operadores booleanos optimizados
-3. Query específico por base de datos
+3. Consulta específica por base de datos
 4. Criterios de inclusión/exclusión sugeridos
 5. Número estimado de resultados a esperar
 ```
 
-### Síntesis de Paper
+### Síntesis de Artículo
 ```
-Resume el siguiente paper académico:
+Resume el siguiente artículo académico:
 
-[PEGAR ABSTRACT O SECCIONES CLAVE]
+[PEGAR RESUMEN O SECCIONES CLAVE]
 
 Proporciona:
 1. Objetivo principal del estudio
@@ -40,7 +40,7 @@ Proporciona:
 6. ¿Cómo se relaciona con [MI TEMA DE INVESTIGACIÓN]?
 ```
 
-### Identificar Gaps
+### Identificar Brechas
 ```
 Basándote en estos resúmenes de literatura sobre [TEMA]:
 
@@ -49,7 +49,7 @@ Basándote en estos resúmenes de literatura sobre [TEMA]:
 Identifica:
 1. Temas bien cubiertos
 2. Inconsistencias o contradicciones entre estudios
-3. Gaps o áreas no exploradas
+3. Brechas o áreas no exploradas
 4. Metodologías dominantes y alternativas no usadas
 5. Poblaciones/contextos no estudiados
 6. Preguntas de investigación potenciales
@@ -146,7 +146,7 @@ Genera un plan de análisis que incluya:
 ```
 Ayúdame a interpretar estos resultados estadísticos:
 
-[PEGAR OUTPUT ESTADÍSTICO]
+[PEGAR SALIDA ESTADÍSTICA]
 
 Contexto del estudio: [BREVE DESCRIPCIÓN]
 Hipótesis: [HIPÓTESIS]
@@ -185,14 +185,14 @@ Sugiere:
 
 ### Estructura de Sección
 ```
-Ayúdame a estructurar la sección de [INTRODUCCIÓN/MÉTODOS/RESULTADOS/DISCUSIÓN] para mi paper sobre:
+Ayúdame a estructurar la sección de [INTRODUCCIÓN/MÉTODOS/RESULTADOS/DISCUSIÓN] para mi artículo sobre:
 
 Tema: [DESCRIBIR]
 Revista objetivo: [NOMBRE/TIPO]
 Extensión aproximada: [PALABRAS]
 
 Genera:
-1. Outline detallado (párrafos y puntos clave)
+1. Esquema detallado (párrafos y puntos clave)
 2. Transiciones entre subsecciones
 3. Información que debe incluirse
 4. Información que debe evitarse
@@ -218,9 +218,9 @@ Proporciona:
 3. Sugerencias adicionales
 ```
 
-### Abstract
+### Resumen (Abstract)
 ```
-Escribe un abstract para este paper:
+Escribe un resumen (abstract) para este artículo:
 
 Título: [TÍTULO]
 Objetivo: [OBJETIVO]
@@ -231,7 +231,7 @@ Conclusión: [IMPLICACIONES]
 Requisitos:
 - Límite de palabras: [150-300]
 - Estilo: [estructurado/narrativo]
-- Keywords sugeridas: [5-7]
+- Palabras clave sugeridas: [5-7]
 
 Genera 2 versiones para elegir.
 ```
@@ -260,16 +260,16 @@ Proporciona:
 ```
 Ayúdame a estructurar una presentación de [MINUTOS] sobre:
 
-Tema: [TÍTULO DEL PAPER/TESIS]
+Tema: [TÍTULO DEL ARTÍCULO/TESIS]
 Audiencia: [conferencia/defensa/clase]
 Hallazgos principales: [LISTA]
 
 Genera:
-1. Estructura de slides (título + contenido clave)
-2. Puntos de habla por slide
+1. Estructura de diapositivas (título + contenido clave)
+2. Puntos de habla por diapositiva
 3. Visualizaciones sugeridas
 4. Posibles preguntas de la audiencia
-5. Tips para esa audiencia específica
+5. Consejos para esa audiencia específica
 ```
 
 ### Responder Preguntas
@@ -285,7 +285,7 @@ Genera:
 1. 10 preguntas probables y respuestas sugeridas
 2. Preguntas difíciles sobre metodología
 3. Cómo responder "no sé" profesionalmente
-4. Cómo deflectar a trabajo futuro
+4. Cómo derivar a trabajo futuro
 ```
 
 ---
@@ -294,36 +294,36 @@ Genera:
 
 ### Selección de Revista
 ```
-Ayúdame a seleccionar revistas para enviar mi paper:
+Ayúdame a seleccionar revistas para enviar mi artículo:
 
 Tema: [DESCRIBIR]
 Campo: [DISCIPLINA]
 Tipo de estudio: [cuantitativo/cualitativo/mixto]
-Novedad: [incremental/significativo/breakthrough]
+Novedad: [incremental/significativo/avance]
 Prisa: [alta/media/baja]
-Open access: [requerido/preferido/no importa]
+Acceso abierto: [requerido/preferido/no importa]
 
 Considerando:
-1. Impact factor deseado
+1. Factor de impacto deseado
 2. Tiempo de revisión típico
 3. Tasa de aceptación
 4. Costo de publicación
 
-Sugiere 5 revistas rankeadas con justificación.
+Sugiere 5 revistas clasificadas con justificación.
 ```
 
-### Cover Letter
+### Carta de Presentación (Cover Letter)
 ```
-Escribe una cover letter para enviar mi paper a [REVISTA]:
+Escribe una carta de presentación para enviar mi artículo a [REVISTA]:
 
-Título del paper: [TÍTULO]
+Título del artículo: [TÍTULO]
 Resumen del estudio: [2-3 oraciones]
 Contribución principal: [DESCRIBIR]
 Por qué esta revista: [RAZÓN]
 
 Incluye:
 1. Saludo apropiado
-2. Descripción concisa del paper
+2. Descripción concisa del artículo
 3. Relevancia para la revista
 4. Declaración de originalidad
 5. Información de contacto
@@ -366,7 +366,7 @@ Evalúa:
 3. Protección de datos personales
 4. Posibles daños y beneficios
 5. Consideraciones especiales (poblaciones vulnerables)
-6. Checklist de ética para mi campo
+6. Lista de verificación de ética para mi campo
 ```
 
 ---

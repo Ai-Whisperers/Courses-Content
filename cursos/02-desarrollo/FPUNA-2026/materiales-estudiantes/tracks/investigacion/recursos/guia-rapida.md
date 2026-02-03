@@ -4,33 +4,33 @@
 
 ---
 
-## Estructura de Paper Científico (IMRaD)
+## Estructura de Artículo Científico (IMRaD)
 
 ### Secciones Principales
 ```
-1. Title
-2. Abstract (150-300 palabras)
-3. Keywords (5-7)
-4. Introduction
+1. Título (Title)
+2. Resumen (Abstract) (150-300 palabras)
+3. Palabras Clave (Keywords) (5-7)
+4. Introducción (Introduction)
    - Contexto del problema
-   - Gap en la literatura
+   - Brecha en la literatura
    - Objetivos/hipótesis
-5. Methodology
+5. Metodología (Methodology)
    - Diseño del estudio
    - Participantes/muestra
    - Instrumentos
    - Procedimiento
    - Análisis de datos
-6. Results
+6. Resultados (Results)
    - Hallazgos sin interpretación
    - Tablas y figuras
-7. Discussion
+7. Discusión (Discussion)
    - Interpretación de resultados
    - Comparación con literatura
    - Limitaciones
    - Implicaciones
-8. Conclusion
-9. References
+8. Conclusión (Conclusion)
+9. Referencias (References)
 ```
 
 ---
@@ -44,24 +44,24 @@
 | **Meta-análisis** | Combinar resultados | Estadística, cuantitativa |
 | **Scoping** | Mapear área | Amplia, exploratoria |
 
-### PRISMA Flow Diagram
+### Diagrama de Flujo PRISMA
 ```
 Identificación
     │
     ▼
-Records identificados (n=X)
+Registros identificados (n=X)
     │
     ▼
 Duplicados removidos (n=X)
     │
     ▼
-Screening
+Selección (Screening)
     │
     ▼
-Records screened (n=X)
+Registros evaluados (n=X)
     ├── Excluidos (n=X)
     ▼
-Full-text assessed (n=X)
+Texto completo evaluado (n=X)
     ├── Excluidos con razón (n=X)
     ▼
 Incluidos en síntesis (n=X)
@@ -78,7 +78,7 @@ Incluidos en síntesis (n=X)
 | OR | Cualquier término | "AI" OR "artificial intelligence" |
 | NOT | Excluir término | "python" NOT "snake" |
 | " " | Frase exacta | "deep learning" |
-| * | Wildcard | comput* (computer, computing...) |
+| * | Comodín (Wildcard) | comput* (computer, computing...) |
 | ( ) | Agrupar | (AI OR ML) AND healthcare |
 
 ### Por Base de Datos
@@ -93,17 +93,17 @@ Incluidos en síntesis (n=X)
 ### Impacto de Revistas
 | Métrica | Descripción | Consideraciones |
 |---------|-------------|-----------------|
-| Impact Factor | Citas promedio 2 años | Solo Clarivate |
+| Factor de Impacto | Citas promedio 2 años | Solo Clarivate |
 | CiteScore | Citas promedio 4 años | Scopus |
 | SJR | Prestigio ponderado | Scopus |
-| H-index revista | h papers con h citas | Varía por campo |
+| Índice-h revista | h artículos con h citas | Varía por campo |
 
 ### Impacto de Investigador
 | Métrica | Fórmula | Interpretación |
 |---------|---------|----------------|
-| H-index | h papers con ≥h citas | Productividad + impacto |
-| i10-index | Papers con ≥10 citas | Google Scholar |
-| Citations | Total de citas | Impacto bruto |
+| Índice-h | h artículos con ≥h citas | Productividad + impacto |
+| Índice-i10 | Artículos con ≥10 citas | Google Scholar |
+| Citas | Total de citas | Impacto bruto |
 
 ---
 
@@ -120,13 +120,13 @@ Desv. Est. (σ) = √[Σ(x-x̄)² / n]
 ### Pruebas Comunes
 | Prueba | Uso | Condiciones |
 |--------|-----|-------------|
-| t-test | Comparar 2 medias | Normal, independiente |
+| Prueba t | Comparar 2 medias | Normal, independiente |
 | ANOVA | Comparar >2 medias | Normal, homogeneidad |
 | Chi-cuadrado | Asociación categóricas | Frecuencias esperadas >5 |
 | Pearson r | Correlación | Lineal, normal |
 | Spearman ρ | Correlación | Ordinal, no lineal |
 
-### P-value Interpretación
+### Interpretación Valor-p (P-value)
 ```
 p < 0.001  → Muy significativo (***)
 p < 0.01   → Muy significativo (**)
@@ -137,7 +137,7 @@ p ≥ 0.05   → No significativo (ns)
 ### Tamaño de Efecto
 | Medida | Pequeño | Mediano | Grande |
 |--------|---------|---------|--------|
-| Cohen's d | 0.2 | 0.5 | 0.8 |
+| d de Cohen | 0.2 | 0.5 | 0.8 |
 | r | 0.1 | 0.3 | 0.5 |
 | η² | 0.01 | 0.06 | 0.14 |
 
@@ -150,8 +150,8 @@ p ≥ 0.05   → No significativo (ns)
 |--------|-------|------------------|
 | APA 7 | Ciencias sociales | (Smith, 2023) |
 | IEEE | Ingeniería | [1] |
-| Vancouver | Medicina | (1) o superscript¹ |
-| Chicago | Humanidades | Footnotes |
+| Vancouver | Medicina | (1) o superíndice¹ |
+| Chicago | Humanidades | Notas al pie |
 | Harvard | General | (Smith 2023) |
 
 ### APA 7 - Ejemplos Rápidos
@@ -190,7 +190,7 @@ Nombre del sitio. URL
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 
-\title{Título del Paper}
+\title{Título del Artículo}
 \author{Nombre del Autor}
 \date{\today}
 
@@ -223,8 +223,8 @@ Texto...
 
 % Listas
 \begin{itemize}
-  \item Item 1
-  \item Item 2
+  \item Ítem 1
+  \item Ítem 2
 \end{itemize}
 
 \begin{enumerate}
@@ -233,8 +233,8 @@ Texto...
 \end{enumerate}
 
 % Ecuaciones
-$E = mc^2$ % inline
-$$E = mc^2$$ % display
+$E = mc^2$ % en línea
+$$E = mc^2$$ % bloque
 
 % Figuras
 \begin{figure}[h]
@@ -265,11 +265,11 @@ Ver Figura \ref{fig:etiqueta}
 
 ---
 
-## Zotero Atajos
+## Atajos de Zotero
 
 | Atajo | Función |
 |-------|---------|
-| Ctrl+Shift+S | Guardar a Zotero (browser) |
+| Ctrl+Shift+S | Guardar a Zotero (navegador) |
 | Ctrl+Alt+A | Insertar cita (Word) |
 | Ctrl+Alt+B | Insertar bibliografía |
 | Ctrl+Shift+E | Editar cita |
@@ -313,27 +313,27 @@ stats.chi2_contingency(tabla)
 
 ---
 
-## Checklist de Paper
+## Lista de Verificación de Artículo
 
 ### Antes de Enviar
-- [ ] Abstract completo y autónomo
-- [ ] Keywords relevantes
+- [ ] Resumen completo y autónomo
+- [ ] Palabras clave relevantes
 - [ ] Introducción termina con objetivos claros
 - [ ] Metodología replicable
 - [ ] Resultados con estadísticas completas
 - [ ] Discusión conecta con literatura
 - [ ] Limitaciones mencionadas
 - [ ] Referencias en formato correcto
-- [ ] Figuras/tablas con captions
+- [ ] Figuras/tablas con leyendas
 - [ ] Verificado por co-autores
-- [ ] Guidelines de la revista seguidas
+- [ ] Pautas de la revista seguidas
 - [ ] Conflictos de interés declarados
 
 ---
 
 ## Ética en Investigación
 
-### Principios (Belmont Report)
+### Principios (Informe Belmont)
 1. **Respeto a las personas:** Consentimiento informado
 2. **Beneficencia:** Maximizar beneficios, minimizar daños
 3. **Justicia:** Distribución equitativa
@@ -343,7 +343,7 @@ stats.chi2_contingency(tabla)
 - Fabricación de datos
 - Falsificación de resultados
 - Publicación duplicada
-- Authorship inapropiado
+- Autoría inapropiada
 - Conflictos de interés no declarados
 
 ---

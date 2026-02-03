@@ -1,55 +1,55 @@
-# 🎯 Proyecto Final Capstone: Investigación Completa con IA
+# 🎯 Proyecto Final: Investigación Completa con IA
 
-**Duración**: 20 horas extra-clase  
-**Peso**: 50% de calificación final  
-**Formato**: 100% IA-Driven
+**Duración**: 20 horas extra-clase
+**Peso**: 50% de calificación final
+**Formato**: 100% Impulsado por IA
 
 ## 🎯 Descripción del Proyecto
 
-Completar un proyecto de investigación completo desde literature review hasta paper publicable y presentación de conferencia, utilizando únicamente herramientas de IA y MCPs.
+Completar un proyecto de investigación completo desde la revisión de literatura hasta el artículo publicable y la presentación de conferencia, utilizando únicamente herramientas de IA y MCPs.
 
 ## 📋 Requisitos del Proyecto
 
 ### 1. Búsqueda y Revisión de Literatura
-- Búsqueda sistemática con prompts IA (3+ databases)
-- 30+ papers analizados y seleccionados
-- Identificación clara de gaps de investigación
+- Búsqueda sistemática con prompts de IA (3+ bases de datos)
+- 30+ artículos analizados y seleccionados
+- Identificación clara de brechas de investigación
 - Síntesis temática automatizada
 
 ### 2. Diseño Metodológico con IA
-- Preguntas de investigación formadas con FINER framework
+- Preguntas de investigación formadas con el marco FINER
 - Hipótesis comprobables (3+)
 - Diseño experimental apropiado
-- Power analysis automatizado con IA
+- Análisis de potencia automatizado con IA
 
 ### 3. Análisis de Datos con IA
 - Datos reales o simulados
 - Tamaño muestral justificado
 - Análisis estadístico completo mediante IA
-- Visualizaciones publication-ready generadas con IA
+- Visualizaciones listas para publicación generadas con IA
 
-### 4. Paper Académico Completo
+### 4. Artículo Académico Completo
 **Estructura Requerida**:
-- Título y Abstract (200 palabras)
-- Introduction (800-1000 palabras)
-- Literature Review (1500 palabras)
-- Methods (1200 palabras)
-- Results (1200 palabras)
-- Discussion (1500 palabras)
-- Conclusion (400 palabras)
-- References (20+ citas)
+- Título y Resumen (200 palabras)
+- Introducción (800-1000 palabras)
+- Revisión de Literatura (1500 palabras)
+- Métodos (1200 palabras)
+- Resultados (1200 palabras)
+- Discusión (1500 palabras)
+- Conclusión (400 palabras)
+- Referencias (20+ citas)
 
 **Total**: 6000-7000 palabras
 
 ### 5. Presentación de Conferencia
-- Slides de contenido (12-15 slides)
+- Diapositivas de contenido (12-15 diapositivas)
 - Video de presentación (12-15 minutos)
-- Preparación de Q&A con IA
-- Estrategia de networking
+- Preparación de Preguntas y Respuestas con IA
+- Estrategia de contactos (networking)
 
 ### 6. Materiales Complementarios
-- Dataset (si aplica)
-- Código de análisis con IA prompts
+- Conjunto de datos (si aplica)
+- Código de análisis con prompts de IA
 - Figuras adicionales
 - Documentos éticos simulados
 
@@ -59,21 +59,21 @@ Completar un proyecto de investigación completo desde literature review hasta p
 
 ### Ciencias de la Computación
 - IA en educación superior
-- Machine learning en aprendizaje
-- NLP para español académico
-- Computer vision en contexto educativo
+- Aprendizaje automático en el aprendizaje
+- PNL para español académico
+- Visión por computadora en contexto educativo
 
 ### Ingeniería
 - Sistemas IoT educativos
 - Energías renovables en universidades
 - Optimización de manufactura
-- Smart cities y campus inteligentes
+- Ciudades inteligentes y campus inteligentes
 
 ### Educación
 - Tecnología mejorando el aprendizaje
 - Juegos educativos digitales
 - Métodos de evaluación innovadores
-- Educación online híbrida
+- Educación en línea híbrida
 
 ### Interdisciplinario
 - Interacción humano-computadora
@@ -85,18 +85,18 @@ Completar un proyecto de investigación completo desde literature review hasta p
 
 ---
 
-## 📅 Timeline del Proyecto
+## 📅 Cronograma del Proyecto
 
 | Semana | Actividad | Entregable |
 |---------|-----------|-------------|
 | **Semana 1** | Revisión de literatura con IA | Documento de síntesis |
 | **Semana 2** | Diseño metodológico con IA | Protocolo completo |
-| **Semana 3** | Análisis de datos con IA | Dataset y resultados |
-| **Semana 4** | Escritura del paper con IA | Borrador completo |
-| **Semana 5** | Presentación y submission | Paquete completo |
+| **Semana 3** | Análisis de datos con IA | Conjunto de datos y resultados |
+| **Semana 4** | Escritura del artículo con IA | Borrador completo |
+| **Semana 5** | Presentación y envío | Paquete completo |
 | **Semana 6** | Refinamiento final | Versión final |
 
-**Deadline**: 6 semanas desde inicio del track
+**Fecha Límite**: 6 semanas desde inicio del track
 
 ---
 
@@ -105,33 +105,33 @@ Completar un proyecto de investigación completo desde literature review hasta p
 ```
 proyecto-investigacion-[nombre]/
 ├── README.md
-├── literature-review/
+├── literature-review/ (revision-literatura)
 │   ├── search_results.md
 │   ├── synthesis.md
 │   ├── gaps_identified.md
 │   └── references.md
-├── methodology/
+├── methodology/ (metodologia)
 │   ├── research_questions.md
 │   ├── protocol.md
 │   ├── ethics_checklist.md
 │   └── instruments.md
-├── data/
+├── data/ (datos)
 │   ├── dataset.md (descripción)
 │   ├── analysis.md (resultados IA)
 │   └── visualizations.md
-├── paper/
+├── paper/ (articulo)
 │   ├── full_paper.md
 │   ├── abstract.md
 │   └── references_formatted.md
-├── presentation/
+├── presentation/ (presentacion)
 │   ├── slides_content.md
 │   ├── qa_preparation.md
 │   └── networking_strategy.md
-├── submission/
+├── submission/ (envio)
 │   ├── journal_analysis.md
 │   ├── cover_letter.md
 │   └── response_to_reviewers.md
-└── supplementary/
+└── supplementary/ (suplementario)
     ├── ethics_documents.md
     ├── data_dictionary.md
     └── additional_materials.md
@@ -142,42 +142,42 @@ proyecto-investigacion-[nombre]/
 ## 🎯 Entregables Detallados
 
 ### 1. Documento de Revisión de Literatura
-- Estrategia de búsqueda con prompts IA
+- Estrategia de búsqueda con prompts de IA
 - Análisis temático automático
-- Identificación de 3-5 gaps claros
+- Identificación de 3-5 brechas claras
 - Referencias en formato consistente
 - **Formato**: Markdown, 3000 palabras
 
 ### 2. Protocolo de Investigación
 - Preguntas e hipótesis con FINER
 - Diseño experimental detallado
-- Power analysis automatizada
+- Análisis de potencia automatizado
 - Instrumentos validados con IA
 - **Formato**: Markdown, 2000 palabras
 
 ### 3. Análisis de Datos
-- Dataset con descripción completa
+- Conjunto de datos con descripción completa
 - Resultados de análisis con IA
-- Visualizaciones publication-ready
-- Código de prompts IA utilizados
+- Visualizaciones listas para publicación
+- Código de prompts de IA utilizados
 - **Formato**: Markdown + descripciones
 
-### 4. Paper Académico Completo
+### 4. Artículo Académico Completo
 - Contenido en formato IMRaD
 - Citas automáticas con IA
 - Referencias formateadas automáticamente
-- Listo para submission
+- Listo para envío
 - **Formato**: Markdown + PDF compilado
 
 ### 5. Presentación de Conferencia
 - Contenido completo para 15 minutos
-- Slides con diseño profesional
-- Preparación completa de Q&A
-- Estrategia de networking académico
+- Diapositivas con diseño profesional
+- Preparación completa de Preguntas y Respuestas
+- Estrategia de contactos académicos
 - **Formato**: Markdown + guías
 
 ### 6. Materiales Complementarios
-- Checklist ético simulado
+- Lista de verificación ética simulada
 - Diccionario de datos
 - Figuras adicionales
 - Plan de publicación
@@ -189,13 +189,13 @@ proyecto-investigacion-[nombre]/
 
 | Criterio | Peso | Descripción |
 |-----------|-------|-------------|
-| **Revisión de Literatura** | 15% | Búsqueda sistemática, gaps claros, síntesis |
-| **Metodología** | 15% | Diseño riguroso, IA-powered, ética |
+| **Revisión de Literatura** | 15% | Búsqueda sistemática, brechas claras, síntesis |
+| **Metodología** | 15% | Diseño riguroso, impulsado por IA, ética |
 | **Análisis de Datos** | 15% | Análisis completo con IA, visualizaciones |
-| **Escritura del Paper** | 25% | Estructura IMRaD, calidad académica, IA-generated |
-| **Presentación** | 15% | Contenido claro, profesional, Q&A preparation |
+| **Escritura del Artículo** | 25% | Estructura IMRaD, calidad académica, generado por IA |
+| **Presentación** | 15% | Contenido claro, profesional, preparación de PyR |
 | **Originalidad** | 5% | Contribución única y creativa con IA |
-| **Reproducibilidad** | 10% | Prompts IA documentados, proceso replicable |
+| **Reproducibilidad** | 10% | Prompts de IA documentados, proceso replicable |
 
 **Total**: 100 puntos
 
@@ -203,27 +203,27 @@ proyecto-investigacion-[nombre]/
 
 ## 🚀 Ruta de Publicación
 
-### Después del Capstone
+### Después del Proyecto Final
 
 **Opciones Inmediatas**:
-1. **Submit a Conferencias** (con revisiones IA)
+1. **Enviar a Conferencias** (con revisiones de IA)
    - CLEI (Congreso Latinoamericano de Informática)
    - IBERAMIA (Congreso Iberoamericano de IA)
    - Congreso Paraguayo de Computación
 
-2. **Submit a Journals** (con expansión IA)
+2. **Enviar a Revistas** (con expansión de IA)
    - Revista FPUNA (acceso abierto)
-   - IEEE Access (high impact)
+   - IEEE Access (alto impacto)
    - PLOS ONE (interdisciplinario)
 
-3. **Post como Preprint**
+3. **Publicar como Preprint**
    - arXiv.org
    - ResearchGate
    - Repositorio institucional FPUNA
 
 4. **Usar para Aplicaciones**
    - Programas de Maestría/Doctorado
-   - Propuestas de funding CONACYT
+   - Propuestas de financiamiento CONACYT
    - Aplicaciones laborales
 
 ---
@@ -240,45 +240,45 @@ proyecto-investigacion-[nombre]/
 ### ❌ Herramientas Prohibidas
 - Zotero, Mendeley, EndNote
 - SPSS, Excel, Stata, R, Python
-- PowerPoint, Canva templates
-- LaTeX manual, Overleaf templates
+- Plantillas de PowerPoint, Canva
+- LaTeX manual, plantillas Overleaf
 - Software tradicional de análisis
 
 ---
 
-## 💡 Prompts IA Esenciales para Proyecto
+## 💡 Prompts de IA Esenciales para Proyecto
 
 ### Búsqueda de Literatura
 ```bash
-opencode "Búsqueda sistemática sobre [topic]:
-DATABASES: [IEEE, ACM, arXiv, Google Scholar]
-CRITERIOS: [últimos 5 años, experimental, open access]
-OUTPUT: [Markdown con 30+ papers]
-ANÁLISIS: [tendencias y gaps]"
+opencode "Búsqueda sistemática sobre [tema]:
+BASES DE DATOS: [IEEE, ACM, arXiv, Google Scholar]
+CRITERIOS: [últimos 5 años, experimental, acceso abierto]
+OUTPUT: [Markdown con 30+ artículos]
+ANÁLISIS: [tendencias y brechas]"
 ```
 
 ### Diseño Metodológico
 ```bash
 opencode "Diseña estudio experimental:
-PREGUNTA: [research question]
-POBLACIÓN: [FPUNA estudiantes]
+PREGUNTA: [pregunta de investigación]
+POBLACIÓN: [estudiantes FPUNA]
 DURACIÓN: [4-6 semanas]
-RESTRICCIONES: [recursos limitados context PY]"
+RESTRICCIONES: [recursos limitados contexto PY]"
 ```
 
 ### Análisis de Datos
 ```bash
 opencode "Análisis estadístico completo:
 DATOS: @attach dataset.md
-VARIABLES: [independent, dependent, covariates]
-ANÁLISIS: [descriptive + inferential]
+VARIABLES: [independiente, dependiente, covariables]
+ANÁLISIS: [descriptivo + inferencial]
 OUTPUT: [tablas + visualizaciones]"
 ```
 
-### Escritura de Paper
+### Escritura de Artículo
 ```bash
-opencode "Genera paper completo estilo IMRaD:
-TOPIC: [investigation topic]
+opencode "Genera artículo completo estilo IMRaD:
+TEMA: [tema de investigación]
 RESULTADOS: @attach analysis.md
 LITERATURA: @attach review.md
 FORMATO: [IEEE/APA/IEEE]"
@@ -287,60 +287,60 @@ FORMATO: [IEEE/APA/IEEE]"
 ### Presentación
 ```bash
 opencode "Crea presentación conferencia:
-TOPIC: [research topic]
+TEMA: [tema de investigación]
 AUDIENCIA: [investigadores educación]
 DURACIÓN: [15 minutos]
-VISUALES: [publication-ready]"
+VISUALES: [listo para publicación]"
 ```
 
 ---
 
-## 🎯 Checklist de Entrega Final
+## 🎯 Lista de Verificación de Entrega Final
 
 ### 📚 Revisión de Literatura
 - [ ] Búsqueda sistemática con IA completada
-- [ ] 30+ papers analizados y seleccionados
-- [ ] 3-5 gaps claramente identificados
+- [ ] 30+ artículos analizados y seleccionados
+- [ ] 3-5 brechas claramente identificadas
 - [ ] Síntesis temática completa
 - [ ] Referencias en formato consistente
 
 ### 🔬 Metodología
 - [ ] Preguntas de investigación formuladas
-- [ ] FINER framework aplicado
+- [ ] Marco FINER aplicado
 - [ ] Diseño experimental detallado
-- [ ] Power analysis completada con IA
+- [ ] Análisis de potencia completado con IA
 - [ ] Instrumentos validados
 
 ### 📊 Análisis de Datos
-- [ ] Dataset descrito y preparado
+- [ ] Conjunto de datos descrito y preparado
 - [ ] Análisis estadístico completo con IA
-- [ ] Visualizaciones publication-ready
-- [ ] Prompts IA documentados
+- [ ] Visualizaciones listas para publicación
+- [ ] Prompts de IA documentados
 - [ ] Resultados interpretables
 
-### ✍️ Paper Académico
+### ✍️ Artículo Académico
 - [ ] Estructura IMRaD completa
 - [ ] 6000-7000 palabras totales
 - [ ] Citas automáticas consistentes
-- [ ] Formato publication-ready
+- [ ] Formato listo para publicación
 - [ ] Original y contributivo
 
 ### 🎤 Presentación
 - [ ] Contenido para 15 minutos
-- [ ] 12-15 slides profesionales
-- [ ] Q&A preparation completa
-- [ ] Estrategia de networking académico
+- [ ] 12-15 diapositivas profesionales
+- [ ] Preparación de PyR completa
+- [ ] Estrategia de contactos académicos
 - [ ] Guía de implementación
 
-### 📦 Submission
-- [ ] Journal apropiado seleccionado
-- [ ] Cover letter personalizada con IA
+### 📦 Envío
+- [ ] Revista apropiada seleccionada
+- [ ] Carta de presentación personalizada con IA
 - [ ] Respuesta a revisores preparada
 - [ ] Paquete completo organizado
-- [ ] Timeline de publication
+- [ ] Cronograma de publicación
 
 ### 🔧 Reproducibilidad
-- [ ] Todos los prompts IA documentados
+- [ ] Todos los prompts de IA documentados
 - [ ] Proceso replicable claro
 - [ ] Materiales complementarios completos
 - [ ] Repositorio bien organizado
@@ -352,25 +352,25 @@ VISUALES: [publication-ready]"
 
 ### Canales de Soporte
 - **Slack**: #research-capstone-2026
-- **Office Hours**: Lunes a Viernes 18:00-20:00
+- **Horas de Oficina**: Lunes a Viernes 18:00-20:00
 - **Email**: capstone-support@fpuna.edu.py
 - **Mentoría**: Sesiones individuales disponibles
 
 ### Recursos Adicionales
-- **Base de conocimiento de prompts IA**
+- **Base de conocimiento de prompts de IA**
 - **Ejemplos de proyectos exitosos**
-- **Templates de documentación**
-- **Guías de publication**
+- **Plantillas de documentación**
+- **Guías de publicación**
 
 ---
 
 ## 🏆 Evaluación Final
 
 ### Proceso de Evaluación
-1. **Submission Inicial** (Semana 6)
-2. **Review por Pares** (Semana 7)
+1. **Envío Inicial** (Semana 6)
+2. **Revisión por Pares** (Semana 7)
 3. **Presentación Final** (Semana 8)
-4. **Feedback Individual** (Semana 9)
+4. **Retroalimentación Individual** (Semana 9)
 
 ### Criterios de Excelencia
 - **Innovación en uso de IA** (10% extra)
@@ -382,15 +382,15 @@ VISUALES: [publication-ready]"
 
 ## 🌟 Impacto Esperado
 
-Al completar este capstone, tendrás:
+Al completar este proyecto final, tendrás:
 
-✅ **Competencia 100% IA-driven** en investigación académica  
-✅ **Paper publicable** listo para submission  
-✅ **Presentación profesional** para conferencias  
-✅ **Portafolio completo** para aplicaciones académicas  
-✅ **Skills transferibles** a cualquier campo de investigación  
-✅ **Red académica** inicial establecida  
-✅ **Base sólida** para estudios de posgrado  
+✅ **Competencia 100% impulsada por IA** en investigación académica
+✅ **Artículo publicable** listo para envío
+✅ **Presentación profesional** para conferencias
+✅ **Portafolio completo** para aplicaciones académicas
+✅ **Habilidades transferibles** a cualquier campo de investigación
+✅ **Red académica** inicial establecida
+✅ **Base sólida** para estudios de posgrado
 
 ---
 
@@ -412,4 +412,4 @@ Demuestra que puedes:
 
 ---
 
-*Proyecto Final Capstone - Track de Investigación con IA - FPUNA 2026*
+*Proyecto Final - Track de Investigación con IA - FPUNA 2026*

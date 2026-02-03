@@ -1,44 +1,37 @@
-# 🔬 Module 2: Research Methodology with AI
+# 🔬 Módulo 2: Metodología de Investigación con IA
 
-**Duration**: 4 hours  
-**Level**: Intermediate  
-**Format**: 100% AI-Driven
+**Duración**: 4 horas
+**Nivel**: Intermedio
+**Formato**: 100% Impulsado por IA
 
-## 🎯 Learning Objectives
+## 🎯 Objetivos de Aprendizaje
 
-By completing this module, you will be able to:
+Al completar este módulo, serás capaz de:
 
-- [ ] Formulate research questions using AI assistance
-- [ ] Design experimental studies with AI guidance
-- [ ] Conduct power analysis using AI calculations
-- [ ] Validate research instruments with AI
-- [ ] Create ethical protocols via AI
+- [ ] Formular preguntas de investigación usando asistencia de IA
+- [ ] Diseñar estudios experimentales con guía de IA
+- [ ] Realizar análisis de potencia (power analysis) usando cálculos de IA
+- [ ] Validar instrumentos de investigación con IA
+- [ ] Crear protocolos éticos vía IA
 
-## 🛠️ Required Tools (100% Free)
+## 🛠️ Herramientas Requeridas (100% Gratuitas)
 
-- **OpenCode** with Oh My OpenCode MCPs
-- **Claude/GPT-4** for methodology design
-- **Markdown reader** for protocol documentation
-
-## ❌ Tools NOT Needed
-
-- ❌ G*Power, SampleSize calculators
-- ❌ SPSS, Stata, statistical software
-- ❌ Template libraries
-- ❌ Manual methodology guides
+- **OpenCode** con Oh My OpenCode MCPs
+- **Claude/GPT-4** para diseño de metodología
+- **Lector de Markdown** para documentación de protocolo
 
 ---
 
-## 📖 Core Content
+## 📖 Contenido Principal
 
-### Part 1: AI-Powered Research Question Formulation
+### Parte 1: Formulación de Preguntas de Investigación Impulsada por IA
 
-#### FINER Framework with AI
+#### Framework FINER con IA
 
 ```bash
 opencode "Aplica framework FINER para formular preguntas de investigación:
 
-CONTEXT INICIAL:
+CONTEXTO INICIAL:
 - Área: Educación superior en FPUNA
 - Tema: Uso de IA en aprendizaje de programación
 - Interés: Efectos en comprensión conceptual
@@ -57,7 +50,7 @@ OUTPUT:
 - Sub-preguntas secundarias si aplica"
 ```
 
-#### Research Gap Connection
+#### Conexión con Brechas de Investigación
 
 ```bash
 opencode "Conecta gaps de literatura con preguntas de investigación:
@@ -82,12 +75,12 @@ CRITERIOS DE BUENA PREGUNTA:
 OUTPUT:
 - Tabla con Gap → Pregunta → Hipótesis → Diseño
 - Justificación de cada elección
-- Viabilidad assessment"
+- Evaluación de viabilidad"
 ```
 
-### Part 2: AI-Powered Experimental Design
+### Parte 2: Diseño Experimental Impulsado por IA
 
-#### Design Selection with AI
+#### Selección de Diseño con IA
 
 ```bash
 opencode "Diseña estudio experimental apropiado:
@@ -95,7 +88,7 @@ opencode "Diseña estudio experimental apropiado:
 PREGUNTA DE INVESTIGACIÓN:
 [Pregunta seleccionada del análisis anterior]
 
-CONTEXT DE ESTUDIO:
+CONTEXTO DE ESTUDIO:
 - Población: Estudiantes universitarios FPUNA
 - Ambiente: Educación presencial con tecnología
 - Recursos: Limitados (contexto paraguayo)
@@ -104,8 +97,8 @@ CONTEXT DE ESTUDIO:
 DISEÑOS POSIBLES:
 - Experimental verdadero (randomized controlled trial)
 - Cuasi-experimental (grupos intactos)
-- Pre-post single group
-- Cross-over design
+- Pre-post un solo grupo
+- Diseño cross-over
 - Longitudinal
 
 ANÁLISIS REQUERIDO:
@@ -122,7 +115,7 @@ OUTPUT:
 - Consideraciones éticas y prácticas"
 ```
 
-#### Sampling Strategy with AI
+#### Estrategia de Muestreo con IA
 
 ```bash
 opencode "Diseña estrategia de muestreo para estudio:
@@ -145,7 +138,7 @@ REQUERIMIENTOS DE MUESTREO:
 
 CÁLCULOS REQUERIDOS:
 - Tamaño muestral por grupo
-- Power analysis (effect size esperado)
+- Power analysis (tamaño del efecto esperado)
 - Nivel de confianza
 - Margen de error
 - Ajuste por deserción
@@ -155,12 +148,12 @@ OUTPUT:
 - Justificación estadística
 - Procedimiento paso a paso
 - Formularios de reclutamiento
-- Timeline de implementación"
+- Cronograma de implementación"
 ```
 
-### Part 3: AI-Powered Power Analysis
+### Parte 3: Análisis de Potencia Impulsado por IA
 
-#### Sample Size Calculation with AI
+#### Cálculo de Tamaño Muestral con IA
 
 ```bash
 opencode "Calcula tamaño muestral usando power analysis:
@@ -179,7 +172,7 @@ MÉTODOS DE CÁLCULO:
 4. Consideraciones de contexto paraguayo
 
 ANÁLISIS ADICIONAL:
-- Diferentes escenarios de effect size
+- Diferentes escenarios de tamaño del efecto
 - Impacto de reducir power a 0.70
 - Costo-beneficio de tamaños muestrales
 - Ajuste por deserción esperada (20%)
@@ -191,7 +184,7 @@ OUTPUT:
 - Fórmulas para replicación"
 ```
 
-#### Effect Size Estimation with AI
+#### Estimación de Tamaño del Efecto con IA
 
 ```bash
 opencode "Estima effect size esperado para cálculo de muestra:
@@ -220,9 +213,9 @@ OUTPUT:
 - Impacto en tamaño muestral requerido"
 ```
 
-### Part 4: AI-Powered Instrument Development
+### Parte 4: Desarrollo de Instrumentos Impulsado por IA
 
-#### Instrument Design with AI
+#### Diseño de Instrumentos con IA
 
 ```bash
 opencode "Diseña instrumento de medición válido:
@@ -232,14 +225,14 @@ Comprensión conceptual de programación
 
 CARACTERÍSTICAS REQUERIDAS:
 - 15-20 preguntas
-- Mix de formatos (multiple choice, corto, coding)
+- Mezcla de formatos (opción múltiple, corto, código)
 - Validez de contenido
 - Confiabilidad interna > 0.8
 - Tiempo de aplicación: 45 minutos
 
 DIMENSIONES:
 1. Conceptos básicos (variables, tipos)
-2. Estructuras de control (loops, condicionales)
+2. Estructuras de control (bucles, condicionales)
 3. Funciones y modularidad
 4. Estructuras de datos
 5. Resolución de problemas
@@ -257,7 +250,7 @@ OUTPUT:
 - Protocolo de aplicación"
 ```
 
-#### Validation with AI
+#### Validación con IA
 
 ```bash
 opencode "Valida instrumento de medición:
@@ -270,7 +263,7 @@ ANÁLISIS DE VALIDEZ:
 2. Validez de constructo
 3. Validez de criterio
 4. Análisis de ítems
-5. Confiabilidad (Cronbach's alpha)
+5. Confiabilidad (Alfa de Cronbach)
 
 PROCEDIMIENTO DE VALIDACIÓN:
 - Revisión por 3 expertos
@@ -279,7 +272,7 @@ PROCEDIMIENTO DE VALIDACIÓN:
 - Ajustes necesarios
 
 CÁLCULOS ESTADÍSTICOS:
-- Alpha de Cronbach por dimensión
+- Alfa de Cronbach por dimensión
 - Correlación ítem-total
 - Análisis factorial exploratorio
 - Dificultad y discriminación
@@ -291,9 +284,9 @@ OUTPUT:
 - Guía de interpretación"
 ```
 
-### Part 5: AI-Powered Ethics Protocol
+### Parte 5: Protocolo Ético Impulsado por IA
 
-#### Ethics Assessment with AI
+#### Evaluación Ética con IA
 
 ```bash
 opencode "Evalúa consideraciones éticas del estudio:
@@ -330,39 +323,39 @@ OUTPUT:
 
 ---
 
-## 🛠️ Practical Exercises
+## 🛠️ Ejercicios Prácticos
 
-### Exercise 1: Complete Research Design (120 minutes)
+### Ejercicio 1: Diseño de Investigación Completo (120 minutos)
 
-**Task**: Design a complete experimental study using AI assistance.
+**Tarea**: Diseñar un estudio experimental completo usando asistencia de IA.
 
-**Steps**:
-1. Use AI to formulate research questions based on literature gaps
-2. Apply FINER framework for validation
-3. Design experimental methodology with AI guidance
-4. Calculate sample size using AI power analysis
-5. Design measurement instruments
-6. Create ethics protocol
+**Pasos**:
+1. Usa IA para formular preguntas de investigación basadas en brechas de literatura
+2. Aplica el framework FINER para validación
+3. Diseña metodología experimental con guía de IA
+4. Calcula tamaño de muestra usando análisis de potencia con IA
+5. Diseña instrumentos de medición
+6. Crea protocolo ético
 
-**Expected Output**:
+**Output Esperado**:
 - `research_questions.md`
 - `experimental_design.md`
 - `power_analysis.md`
 - `measurement_instrument.md`
 - `ethics_protocol.md`
 
-### Exercise 2: Instrument Validation (90 minutes)
+### Ejercicio 2: Validación de Instrumentos (90 minutos)
 
-**Task**: Validate a measurement instrument using AI.
+**Tarea**: Validar un instrumento de medición usando IA.
 
-**Steps**:
-1. Design initial instrument with AI
-2. Conduct content validity assessment via AI
-3. Pilot test simulation
-4. Analyze reliability using AI calculations
-5. Create final validated instrument
+**Pasos**:
+1. Diseña instrumento inicial con IA
+2. Realiza evaluación de validez de contenido vía IA
+3. Simulación de prueba piloto
+4. Analiza confiabilidad usando cálculos de IA
+5. Crea instrumento validado final
 
-**Expected Output**:
+**Output Esperado**:
 - `initial_instrument.md`
 - `validation_report.md`
 - `final_instrument.md`
@@ -370,135 +363,135 @@ OUTPUT:
 
 ---
 
-## ✅ Module Assessment
+## ✅ Evaluación del Módulo
 
-### Research Protocol Project (100 points)
+### Proyecto de Protocolo de Investigación (100 puntos)
 
-**Deliverables**:
-1. **Research Questions & Design** (25 points)
-   - FINER framework applied
-   - Gap connection clear
-   - Design justified
+**Entregables**:
+1. **Preguntas de Investigación y Diseño** (25 puntos)
+   - Framework FINER aplicado
+   - Conexión con brechas clara
+   - Diseño justificado
 
-2. **Sample Size & Power Analysis** (25 points)
-   - Calculations shown
-   - Justification provided
-   - Multiple scenarios considered
+2. **Tamaño de Muestra y Análisis de Potencia** (25 puntos)
+   - Cálculos mostrados
+   - Justificación provista
+   - Múltiples escenarios considerados
 
-3. **Measurement Instrument** (25 points)
-   - Validity evidence
-   - Reliability assessment
-   - Clear scoring guide
+3. **Instrumento de Medición** (25 puntos)
+   - Evidencia de validez
+   - Evaluación de confiabilidad
+   - Guía de calificación clara
 
-4. **Ethics Protocol** (25 points)
-   - Comprehensive risk assessment
-   - Consent forms included
-   - Privacy protection plan
+4. **Protocolo Ético** (25 puntos)
+   - Evaluación de riesgos completa
+   - Formularios de consentimiento incluidos
+   - Plan de protección de privacidad
 
-**Passing Grade**: 70/100 points
-
----
-
-## 🔄 Cross-References
-
-**Prerequisite for**: Module 3: Data Analysis with AI  
-**Uses outputs from**: Module 1: Literature Review gaps  
-**Next Step**: Collect and analyze data using your designed protocol
+**Nota de Aprobación**: 70/100 puntos
 
 ---
 
-## 💡 AI Tips for Success
+## 🔄 Referencias Cruzadas
 
-### Research Design Prompts
+**Prerrequisito para**: Módulo 3: Análisis de Datos con IA
+**Usa outputs de**: Módulo 1: Brechas de Revisión de Literatura
+**Siguiente Paso**: Recolectar y analizar datos usando tu protocolo diseñado
+
+---
+
+## 💡 Consejos de IA para el Éxito
+
+### Prompts de Diseño de Investigación
 ```
-opencode "Design [study type] to investigate [research question]:
-CONTEXT: [background information]
-CONSTRAINTS: [limitations/resources]
-OUTPUT: [specific format needed]
-REQUIREMENTS: [ethical/practical considerations]"
+opencode "Diseña [tipo de estudio] para investigar [pregunta de investigación]:
+CONTEXTO: [info de fondo]
+RESTRICCIONES: [limitaciones/recursos]
+OUTPUT: [formato específico necesario]
+REQUISITOS: [consideraciones éticas/prácticas]"
 ```
 
-### Instrument Validation
+### Validación de Instrumentos
 ```
-opencode "Validate this measurement instrument:
+opencode "Valida este instrumento de medición:
 @attach instrument.md
-CRITERIA: [validity, reliability standards]
-CONTEXT: [population, administration]
-OUTPUT: [validation report format]"
+CRITERIOS: [estándares de validez, confiabilidad]
+CONTEXTO: [población, administración]
+OUTPUT: [formato de reporte de validación]"
 ```
 
-### Power Analysis
+### Análisis de Potencia
 ```
-opencode "Calculate sample size for [test type]:
-EFFECT SIZE: [expected magnitude]
-POWER: [desired statistical power]
-ALPHA: [significance level]
-CONTEXT: [population characteristics]"
+opencode "Calcula tamaño de muestra para [tipo de test]:
+TAMAÑO DEL EFECTO: [magnitud esperada]
+POTENCIA: [poder estadístico deseado]
+ALFA: [nivel de significancia]
+CONTEXTO: [características de la población]"
 ```
 
 ---
 
-## ⚠️ Common Pitfalls to Avoid
+## ⚠️ Errores Comunes a Evitar
 
-- **Overly broad research questions** → Use AI to refine specificity
-- **Insufficient sample size** → Always conduct power analysis
-- **Unvalidated instruments** → Use AI for validity assessment
-- **Ethics considerations ignored** → AI can identify ethical issues
-- **Context ignored** → Ask AI to adapt to Paraguayan context
+- **Preguntas de investigación demasiado amplias** → Usa IA para refinar especificidad
+- **Tamaño de muestra insuficiente** → Siempre realiza análisis de potencia
+- **Instrumentos no validados** → Usa IA para evaluación de validez
+- **Consideraciones éticas ignoradas** → IA puede identificar problemas éticos
+- **Contexto ignorado** → Pide a la IA adaptar al contexto paraguayo
 
 ---
 
-## 🤝 Getting Help
+## 🤝 Obteniendo Ayuda
 
 - **Slack**: #research-ai-methodology
-- **Office Hours**: Wednesday 18:00-20:00
+- **Horas de Oficina**: Miércoles 18:00-20:00
 - **Email**: methodology-support@fpuna.edu.py
 
 ---
 
-## 📁 Resources
+## 📁 Recursos
 
-### Essential AI Prompts
+### Prompts Esenciales de IA
 ```bash
-# Research questions
-opencode "Apply FINER framework to these research ideas: @attach ideas.md"
+# Preguntas de investigación
+opencode "Aplica framework FINER a estas ideas de investigación: @attach ideas.md"
 
-# Experimental design
-opencode "Design experimental study for: [research question] with constraints: [limitations]"
+# Diseño experimental
+opencode "Diseña estudio experimental para: [pregunta de investigación] con restricciones: [limitaciones]"
 
-# Power analysis
-opencode "Calculate sample size for effect size [d] with power [0.8] and alpha [0.05]"
+# Análisis de potencia
+opencode "Calcula tamaño de muestra para tamaño del efecto [d] con potencia [0.8] y alfa [0.05]"
 
-# Instrument validation
-opencode "Assess validity and reliability of: @attach instrument.md"
+# Validación de instrumentos
+opencode "Evalúa validez y confiabilidad de: @attach instrument.md"
 ```
 
-### Quick Reference Commands
+### Comandos de Referencia Rápida
 ```bash
-# FINER framework
-opencode "Evaluate research question using FINER: [question]"
+# Framework FINER
+opencode "Evalúa pregunta de investigación usando FINER: [pregunta]"
 
-# Sampling strategy
-opencode "Design sampling strategy for population: [description] size: [N]"
+# Estrategia de muestreo
+opencode "Diseña estrategia de muestreo para población: [descripción] tamaño: [N]"
 
-# Ethics assessment
-opencode "Evaluate ethical considerations for study: @attach protocol.md"
+# Evaluación ética
+opencode "Evalúa consideraciones éticas para estudio: @attach protocol.md"
 ```
 
 ---
 
-## 🎯 Module Completion Checklist
+## 🎯 Lista de Verificación del Módulo
 
-- [ ] Research questions formulated and validated with FINER
-- [ ] Experimental design completed and justified
-- [ ] Sample size calculated with power analysis
-- [ ] Measurement instrument designed and validated
-- [ ] Ethics protocol created and approved
-- [ ] All documentation in Markdown format
-- [ ] Assessment submitted (70+ points)
+- [ ] Preguntas de investigación formuladas y validadas con FINER
+- [ ] Diseño experimental completado y justificado
+- [ ] Tamaño de muestra calculado con análisis de potencia
+- [ ] Instrumento de medición diseñado y validado
+- [ ] Protocolo ético creado y aprobado
+- [ ] Toda la documentación en formato Markdown
+- [ ] Evaluación enviada (70+ puntos)
 
-**🚀 Ready for Module 3: Data Analysis with AI!**
+**🚀 ¡Listo para el Módulo 3: Análisis de Datos con IA!**
 
 ---
 
-*Module 2 - Research Methodology with AI - FPUNA 2026*
+*Módulo 2 - Metodología de Investigación con IA - FPUNA 2026*

@@ -1,39 +1,32 @@
-# 📚 Module 1: Literature Review with AI
+# 📚 Módulo 1: Revisión de Literatura con IA
 
-**Duration**: 4 hours  
-**Level**: Beginner-Intermediate  
-**Format**: 100% AI-Driven
+**Duración**: 4 horas
+**Nivel**: Principiante-Intermedio
+**Formato**: 100% Impulsado por IA
 
-## 🎯 Learning Objectives
+## 🎯 Objetivos de Aprendizaje
 
-By completing this module, you will be able to:
+Al completar este módulo, serás capaz de:
 
-- [ ] Conduct systematic literature searches using AI prompts
-- [ ] Analyze and synthesize academic papers with OpenCode MCPs
-- [ ] Identify research gaps using AI-powered analysis
-- [ ] Create literature reviews in Markdown format
-- [ ] Generate citation networks automatically
+- [ ] Realizar búsquedas sistemáticas de literatura usando prompts de IA
+- [ ] Analizar y sintetizar artículos académicos con OpenCode MCPs
+- [ ] Identificar brechas de investigación usando análisis impulsado por IA
+- [ ] Crear revisiones de literatura en formato Markdown
+- [ ] Generar redes de citas automáticamente
 
-## 🛠️ Required Tools (100% Free)
+## 🛠️ Herramientas Requeridas (100% Gratuitas)
 
-- **OpenCode** with Oh My OpenCode MCPs
-- **Claude/GPT-4** for analysis
-- **Markdown reader** for visualization
-
-## ❌ Tools NOT Needed
-
-- ❌ Zotero, Mendeley, EndNote
-- ❌ Connected Papers, Research Rabbit
-- ❌ Reference managers
-- ❌ Manual literature organization
+- **OpenCode** con Oh My OpenCode MCPs
+- **Claude/GPT-4** para análisis
+- **Lector de Markdown** para visualización
 
 ---
 
-## 📖 Core Content
+## 📖 Contenido Principal
 
-### Part 1: AI-Powered Literature Discovery
+### Parte 1: Descubrimiento de Literatura Impulsado por IA
 
-#### Systematic Search with AI
+#### Búsqueda Sistemática con IA
 
 ```bash
 opencode "Realiza búsqueda sistemática de literatura académica sobre:
@@ -46,7 +39,7 @@ TÉRMINOS DE BÚSQUEDA:
 
 CRITERIOS DE INCLUSIÓN:
 - Últimos 5 años (2019-2024)
-- Revisión sistemática优先
+- Revisión sistemática (prioridad)
 - Estudios experimentales
 - Contexto América Latina
 - Acceso abierto
@@ -66,7 +59,7 @@ BUSCAR EN:
 - SciELO
 ```
 
-#### Citation Network Analysis with AI
+#### Análisis de Red de Citas con IA
 
 ```bash
 opencode "Analiza red de citas de estos papers:
@@ -93,9 +86,9 @@ OUTPUT:
 - Sugerencias para futura investigación"
 ```
 
-### Part 2: AI-Powered Paper Analysis
+### Parte 2: Análisis de Papers Impulsado por IA
 
-#### Paper Synthesis with AI
+#### Síntesis de Papers con IA
 
 ```bash
 opencode "Sintetiza estos 20 papers académicos:
@@ -108,7 +101,7 @@ SÍNTESIS REQUERIDA:
 2. Frameworks teóricos dominantes
 3. Contexto geográfico (foco Paraguay/LatAm)
 4. Limitaciones comunes en estudios
-5. Áreas争议 o desacuerdo
+5. Áreas de controversia o desacuerdo
 
 CLASIFICACIÓN:
 - Por enfoque metodológico
@@ -123,7 +116,7 @@ OUTPUT:
 - Sugerencias de investigación futura"
 ```
 
-#### Research Gap Identification with AI
+#### Identificación de Brechas de Investigación con IA
 
 ```bash
 opencode "Identifica gaps de investigación específicos:
@@ -153,9 +146,9 @@ OUTPUT:
 - Sugerencia de diseño metodológico"
 ```
 
-### Part 3: AI-Powered Literature Organization
+### Parte 3: Organización de Literatura Impulsada por IA
 
-#### Markdown-Based Reference System
+#### Sistema de Referencias Basado en Markdown
 
 ```bash
 opencode "Organiza bibliografía en Markdown académico:
@@ -187,179 +180,179 @@ ESTRUCTURA REQUERIDA:
 [Todas las referencias en formato académico estándar]
 
 REQUISITOS:
-- Consistente academic formatting
+- Formato académico consistente
 - DOI incluido cuando disponible
 - Autores completos
 - Año, journal, volumen, páginas
-- Keywords para búsqueda
+- Palabras clave para búsqueda
 
 OUTPUT:
 - Archivo .md organizado
 - Índice temático
 - Referencias completas
-- Sistema de búsqueda por keywords"
+- Sistema de búsqueda por palabras clave"
 ```
 
 ---
 
-## 🛠️ Practical Exercises
+## 🛠️ Ejercicios Prácticos
 
-### Exercise 1: Complete Literature Review (90 minutes)
+### Ejercicio 1: Revisión de Literatura Completa (90 minutos)
 
-**Task**: Create a complete literature review using only AI tools.
+**Tarea**: Crear una revisión de literatura completa usando solo herramientas de IA.
 
-**Steps**:
-1. Use OpenCode to search for 20+ papers on your topic
-2. Ask AI to analyze and synthesize findings
-3. Identify 3 research gaps
-4. Create structured Markdown bibliography
-5. Generate 1500-word literature review
+**Pasos**:
+1. Usa OpenCode para buscar 20+ papers sobre tu tema
+2. Pide a la IA que analice y sintetice los hallazgos
+3. Identifica 3 brechas de investigación
+4. Crea una bibliografía estructurada en Markdown
+5. Genera una revisión de literatura de 1500 palabras
 
-**Expected Output**:
+**Output Esperado**:
 - `literature_search_results.md`
-- `paper_synthesis.md` 
+- `paper_synthesis.md`
 - `research_gaps.md`
 - `final_literature_review.md`
 
-### Exercise 2: Citation Network Analysis (60 minutes)
+### Ejercicio 2: Análisis de Red de Citas (60 minutos)
 
-**Task**: Map citation relationships using AI.
+**Tarea**: Mapear relaciones de citas usando IA.
 
-**Steps**:
-1. Input your paper collection to AI
-2. Request citation network analysis
-3. Generate Markdown visualization
-4. Identify influential papers and gaps
-5. Create research timeline
+**Pasos**:
+1. Ingresa tu colección de papers a la IA
+2. Solicita análisis de red de citas
+3. Genera visualización en Markdown
+4. Identifica papers influyentes y brechas
+5. Crea línea de tiempo de investigación
 
-**Expected Output**:
+**Output Esperado**:
 - `citation_network.md`
 - `influential_papers.md`
 - `research_timeline.md`
 
 ---
 
-## ✅ Module Assessment
+## ✅ Evaluación del Módulo
 
-### Literature Review Project (100 points)
+### Proyecto de Revisión de Literatura (100 puntos)
 
-**Deliverables**:
-1. **Systematic Search Results** (20 points)
-   - 25+ relevant papers
-   - Proper Markdown formatting
-   - Complete citations
+**Entregables**:
+1. **Resultados de Búsqueda Sistemática** (20 puntos)
+   - 25+ papers relevantes
+   - Formato Markdown adecuado
+   - Citas completas
 
-2. **Synthesis Analysis** (30 points)
-   - Thematic classification
-   - Trend identification
-   - Methodological patterns
+2. **Análisis de Síntesis** (30 puntos)
+   - Clasificación temática
+   - Identificación de tendencias
+   - Patrones metodológicos
 
-3. **Gap Analysis** (25 points)
-   - 3-5 justified gaps
-   - Feasibility assessment
-   - Contribution potential
+3. **Análisis de Brechas** (25 puntos)
+   - 3-5 brechas justificadas
+   - Evaluación de viabilidad
+   - Potencial de contribución
 
-4. **Final Review Document** (25 points)
-   - 1500-2000 words
-   - Academic structure
-   - Markdown formatting
+4. **Documento de Revisión Final** (25 puntos)
+   - 1500-2000 palabras
+   - Estructura académica
+   - Formato Markdown
 
-**Passing Grade**: 70/100 points
-
----
-
-## 🔄 Cross-References
-
-**Prerequisite for**: Module 2: Research Methodology  
-**Related Skills**: AI prompt engineering, academic synthesis  
-**Next Step**: Use identified gaps to formulate research questions
+**Nota de Aprobación**: 70/100 puntos
 
 ---
 
-## 💡 AI Tips for Success
+## 🔄 Referencias Cruzadas
 
-### Effective Prompt Structure
+**Prerrequisito para**: Módulo 2: Metodología de Investigación
+**Habilidades Relacionadas**: Ingeniería de prompts IA, síntesis académica
+**Siguiente Paso**: Usar brechas identificadas para formular preguntas de investigación
+
+---
+
+## 💡 Consejos de IA para el Éxito
+
+### Estructura de Prompt Efectiva
 ```
-opencode "Analyze [content] for [purpose]:
-CONTEXT: [background info]
-TASK: [specific analysis needed]
-OUTPUT FORMAT: [desired structure]
-REQUIREMENTS: [specific constraints]"
+opencode "Analiza [contenido] para [propósito]:
+CONTEXTO: [info de fondo]
+TAREA: [análisis específico necesario]
+FORMATO OUTPUT: [estructura deseada]
+REQUISITOS: [restricciones específicas]"
 ```
 
-### Iterative Refinement
-1. Start broad search terms
-2. Refine based on results
-3. Use AI to identify additional keywords
-4. Cross-reference findings
-5. Validate gaps with multiple AI queries
+### Refinamiento Iterativo
+1. Comienza con términos de búsqueda amplios
+2. Refina basado en resultados
+3. Usa IA para identificar palabras clave adicionales
+4. Cruza hallazgos
+5. Valida brechas con múltiples consultas de IA
 
-### Quality Assurance
-- Ask AI to verify paper quality
-- Request methodology assessment
-- Check for recent developments
-- Validate gap feasibility
-
----
-
-## ⚠️ Common Pitfalls to Avoid
-
-- **Overly broad search terms** → Be specific in your prompts
-- **Not enough papers** → Request additional searches with different keywords
-- **Poor organization** → Use AI to structure your bibliography
-- **Missing DOI information** → Ask AI to locate missing DOIs
-- **Inconsistent formatting** → Use AI for standardization
+### Aseguramiento de Calidad
+- Pide a la IA verificar la calidad del paper
+- Solicita evaluación de metodología
+- Verifica desarrollos recientes
+- Valida viabilidad de la brecha
 
 ---
 
-## 🤝 Getting Help
+## ⚠️ Errores Comunes a Evitar
+
+- **Términos de búsqueda demasiado amplios** → Sé específico en tus prompts
+- **No suficientes papers** → Solicita búsquedas adicionales con diferentes palabras clave
+- **Mala organización** → Usa IA para estructurar tu bibliografía
+- **Información de DOI faltante** → Pide a la IA localizar DOIs faltantes
+- **Formato inconsistente** → Usa IA para estandarización
+
+---
+
+## 🤝 Obteniendo Ayuda
 
 - **Slack**: #research-ai-literature
-- **Office Hours**: Tuesday 18:00-20:00
+- **Horas de Oficina**: Martes 18:00-20:00
 - **Email**: literature-support@fpuna.edu.py
 
 ---
 
-## 📁 Resources
+## 📁 Recursos
 
-### Essential AI Prompts
+### Prompts Esenciales de IA
 ```bash
-# Literature search
-opencode "Find systematic reviews on [topic] published [year range] with [methodology]"
+# Búsqueda de literatura
+opencode "Encuentra revisiones sistemáticas sobre [tema] publicadas [rango de años] con [metodología]"
 
-# Paper analysis  
-opencode "Analyze methodology and findings of this paper: @attach paper.pdf"
+# Análisis de paper
+opencode "Analiza metodología y hallazgos de este paper: @attach paper.pdf"
 
-# Gap identification
-opencode "Identify research gaps in this literature review: @attach review.md"
+# Identificación de brechas
+opencode "Identifica brechas de investigación en esta revisión de literatura: @attach review.md"
 ```
 
-### Quick Reference Commands
+### Comandos de Referencia Rápida
 ```bash
-# Search arXiv
-opencode "Search arXiv for recent papers on [topic]"
+# Buscar en arXiv
+opencode "Busca en arXiv papers recientes sobre [tema]"
 
-# Generate citations
-opencode "Format these references in academic style: @attach refs.md"
+# Generar citas
+opencode "Formatea estas referencias en estilo académico: @attach refs.md"
 
-# Create bibliography
-opencode "Organize these papers by theme and year: @attach papers.md"
+# Crear bibliografía
+opencode "Organiza estos papers por tema y año: @attach papers.md"
 ```
 
 ---
 
-## 🎯 Module Completion Checklist
+## 🎯 Lista de Verificación del Módulo
 
-- [ ] Literature search completed with 25+ papers
-- [ ] Paper synthesis analysis generated
-- [ ] Research gaps identified and justified
-- [ ] Bibliography organized in Markdown
-- [ ] Final literature review written (1500+ words)
-- [ ] All outputs properly formatted
-- [ ] Assessment submitted (70+ points)
+- [ ] Búsqueda de literatura completada con 25+ papers
+- [ ] Análisis de síntesis de papers generado
+- [ ] Brechas de investigación identificadas y justificadas
+- [ ] Bibliografía organizada en Markdown
+- [ ] Revisión de literatura final escrita (1500+ palabras)
+- [ ] Todos los outputs formateados adecuadamente
+- [ ] Evaluación enviada (70+ puntos)
 
-**🚀 Ready for Module 2: Research Methodology with AI!**
+**🚀 ¡Listo para el Módulo 2: Metodología de Investigación con IA!**
 
 ---
 
-*Module 1 - Literature Review with AI - FPUNA 2026*
+*Módulo 1 - Revisión de Literatura con IA - FPUNA 2026*
