@@ -10,6 +10,15 @@ Completar un proyecto de investigación completo desde la revisión de literatur
 
 ## 📋 Requisitos del Proyecto
 
+## 🤖 El Rol de la IA en tu Proyecto Final
+
+En este proyecto integrador, la IA deja de ser una herramienta puntual para convertirse en tu socio de investigación integral. A lo largo del proyecto, la IA:
+
+1.  **Orquesta el Flujo de Trabajo**: Mantiene la coherencia entre tu pregunta de investigación, tus métodos y tus resultados, asegurando que el hilo conductor no se pierda.
+2.  **Garantiza la Calidad**: Verifica constantemente la validez de tus fuentes, la corrección de tus análisis y la claridad de tu escritura.
+3.  **Acelera la Iteración**: Te permite probar múltiples hipótesis y diseños en el tiempo que normalmente tomaría hacer uno solo, fomentando la exploración creativa.
+4.  **Documenta para la Reproducibilidad**: Genera automáticamente la documentación técnica necesaria para que tu estudio pueda ser replicado por otros científicos.
+
 ### 1. Búsqueda y Revisión de Literatura
 - Búsqueda sistemática con prompts de IA (3+ bases de datos)
 - 30+ artículos analizados y seleccionados
@@ -141,47 +150,11 @@ proyecto-investigacion-[nombre]/
 
 ## 🎯 Entregables Detallados
 
-### 1. Documento de Revisión de Literatura
-- Estrategia de búsqueda con prompts de IA
-- Análisis temático automático
-- Identificación de 3-5 brechas claras
-- Referencias en formato consistente
-- **Formato**: Markdown, 3000 palabras
+> [!TIP]
+> **[👉 Ver Entregables del Proyecto Final](./starter-kit/exercises/modulo-06-proyecto.md)**
+>
+> Los detalles de los entregables para este proyecto se han movido a un archivo dedicado para facilitar su seguimiento.
 
-### 2. Protocolo de Investigación
-- Preguntas e hipótesis con FINER
-- Diseño experimental detallado
-- Análisis de potencia automatizado
-- Instrumentos validados con IA
-- **Formato**: Markdown, 2000 palabras
-
-### 3. Análisis de Datos
-- Conjunto de datos con descripción completa
-- Resultados de análisis con IA
-- Visualizaciones listas para publicación
-- Código de prompts de IA utilizados
-- **Formato**: Markdown + descripciones
-
-### 4. Artículo Académico Completo
-- Contenido en formato IMRaD
-- Citas automáticas con IA
-- Referencias formateadas automáticamente
-- Listo para envío
-- **Formato**: Markdown + PDF compilado
-
-### 5. Presentación de Conferencia
-- Contenido completo para 15 minutos
-- Diapositivas con diseño profesional
-- Preparación completa de Preguntas y Respuestas
-- Estrategia de contactos académicos
-- **Formato**: Markdown + guías
-
-### 6. Materiales Complementarios
-- Lista de verificación ética simulada
-- Diccionario de datos
-- Figuras adicionales
-- Plan de publicación
-- **Formato**: Markdown
 
 ---
 
@@ -198,6 +171,8 @@ proyecto-investigacion-[nombre]/
 | **Reproducibilidad** | 10% | Prompts de IA documentados, proceso replicable |
 
 **Total**: 100 puntos
+
+---
 
 ---
 
@@ -243,124 +218,6 @@ proyecto-investigacion-[nombre]/
 - Plantillas de PowerPoint, Canva
 - LaTeX manual, plantillas Overleaf
 - Software tradicional de análisis
-
----
-
-## 💡 Prompts de IA Esenciales para Proyecto
-
-### Búsqueda de Literatura
-```bash
-opencode "Búsqueda sistemática sobre [tema]:
-BASES DE DATOS: [IEEE, ACM, arXiv, Google Scholar]
-CRITERIOS: [últimos 5 años, experimental, acceso abierto]
-OUTPUT: [Markdown con 30+ artículos]
-ANÁLISIS: [tendencias y brechas]"
-```
-
-### Diseño Metodológico
-```bash
-opencode "Diseña estudio experimental:
-PREGUNTA: [pregunta de investigación]
-POBLACIÓN: [estudiantes FPUNA]
-DURACIÓN: [4-6 semanas]
-RESTRICCIONES: [recursos limitados contexto PY]"
-```
-
-### Análisis de Datos
-```bash
-opencode "Análisis estadístico completo:
-DATOS: @attach dataset.md
-VARIABLES: [independiente, dependiente, covariables]
-ANÁLISIS: [descriptivo + inferencial]
-OUTPUT: [tablas + visualizaciones]"
-```
-
-### Escritura de Artículo
-```bash
-opencode "Genera artículo completo estilo IMRaD:
-TEMA: [tema de investigación]
-RESULTADOS: @attach analysis.md
-LITERATURA: @attach review.md
-FORMATO: [IEEE/APA/IEEE]"
-```
-
-### Presentación
-```bash
-opencode "Crea presentación conferencia:
-TEMA: [tema de investigación]
-AUDIENCIA: [investigadores educación]
-DURACIÓN: [15 minutos]
-VISUALES: [listo para publicación]"
-```
-
----
-
-## 🎯 Lista de Verificación de Entrega Final
-
-### 📚 Revisión de Literatura
-- [ ] Búsqueda sistemática con IA completada
-- [ ] 30+ artículos analizados y seleccionados
-- [ ] 3-5 brechas claramente identificadas
-- [ ] Síntesis temática completa
-- [ ] Referencias en formato consistente
-
-### 🔬 Metodología
-- [ ] Preguntas de investigación formuladas
-- [ ] Marco FINER aplicado
-- [ ] Diseño experimental detallado
-- [ ] Análisis de potencia completado con IA
-- [ ] Instrumentos validados
-
-### 📊 Análisis de Datos
-- [ ] Conjunto de datos descrito y preparado
-- [ ] Análisis estadístico completo con IA
-- [ ] Visualizaciones listas para publicación
-- [ ] Prompts de IA documentados
-- [ ] Resultados interpretables
-
-### ✍️ Artículo Académico
-- [ ] Estructura IMRaD completa
-- [ ] 6000-7000 palabras totales
-- [ ] Citas automáticas consistentes
-- [ ] Formato listo para publicación
-- [ ] Original y contributivo
-
-### 🎤 Presentación
-- [ ] Contenido para 15 minutos
-- [ ] 12-15 diapositivas profesionales
-- [ ] Preparación de PyR completa
-- [ ] Estrategia de contactos académicos
-- [ ] Guía de implementación
-
-### 📦 Envío
-- [ ] Revista apropiada seleccionada
-- [ ] Carta de presentación personalizada con IA
-- [ ] Respuesta a revisores preparada
-- [ ] Paquete completo organizado
-- [ ] Cronograma de publicación
-
-### 🔧 Reproducibilidad
-- [ ] Todos los prompts de IA documentados
-- [ ] Proceso replicable claro
-- [ ] Materiales complementarios completos
-- [ ] Repositorio bien organizado
-- [ ] README explicativo
-
----
-
-## 🤝 Soporte y Ayuda
-
-### Canales de Soporte
-- **Slack**: #research-capstone-2026
-- **Horas de Oficina**: Lunes a Viernes 18:00-20:00
-- **Email**: capstone-support@fpuna.edu.py
-- **Mentoría**: Sesiones individuales disponibles
-
-### Recursos Adicionales
-- **Base de conocimiento de prompts de IA**
-- **Ejemplos de proyectos exitosos**
-- **Plantillas de documentación**
-- **Guías de publicación**
 
 ---
 
