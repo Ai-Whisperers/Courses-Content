@@ -185,7 +185,6 @@ ESTRUCTURA REQUERIDA:
 
 # Referencias Completas
 [Todas las referencias en formato académico estándar]
-```
 
 REQUISITOS:
 - Consistente academic formatting
