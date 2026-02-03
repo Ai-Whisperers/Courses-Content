@@ -1,0 +1,229 @@
+# AI Whisperers Courses - Git Ignore File
+
+# ============================================
+# Node.js / JavaScript / TypeScript
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+dist/
+build/
+*.tsbuildinfo
+.eslintcache
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ============================================
+# Testing & Coverage
+# ============================================
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+test-results.xml
+junit.xml
+*.lcov
+
+# ============================================
+# Playwright
+# ============================================
+playwright/.auth/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# OS Files
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+.Spotlight-V100
+.Trashes
+
+# ============================================
+# IDE / Editors
+# ============================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+.vs/
+.cursor/
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# ============================================
+# Certificates & Keys
+# ============================================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+.temp/
+
+# ============================================
+# Session & Cache
+# ============================================
+sessions/
+.cache/
+screenshots/
+downloads/
+exports/
+
+# ============================================
+# Documentation Builds
+# ============================================
+docs/_build/
+site/
+
+# ============================================
+# Course-Specific
+# ============================================
+# Student work (should not be committed to main repo)
+student-submissions/
+my-solutions/
+personal-notes/
+
+# Large files (videos, images should be linked, not embedded)
+*.mp4
+*.avi
+*.mov
+*.mkv
+# Exception for small images/diagrams (uncomment if needed)
+# !docs/images/*.png
+# !docs/images/*.jpg
+
+# ============================================
+# AI Tool Specific
+# ============================================
+# Claude Code / Cursor sessions (if you want to exclude)
+# .claude/
+# .cursor/
+
+# ============================================
+# Build & Dependencies (Large Folders)
+# ============================================
+# Exclude node_modules from example projects
+**/node_modules/
+**/venv/
+**/.venv/
+
+# ============================================
+# Archives
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Security
+# ============================================
+secrets/
+.secrets/
+credentials/
+*.credentials
+
+# ============================================
+# External Reference Repositories
+# ============================================
+# Cloned repos for analysis (too large to commit)
+external-repos/
+github-references/repos/
+
+# ============================================
+# Additional Tool Caches
+# ============================================
+.ruff_cache/
+.specstory/
+
+# ============================================
+# Local Configurations (Never Commit)
+# ============================================
+*.local.md
+*.local.json
+**/CLAUDE.local.md
+**/.claude/*.local.*
+
+# ============================================
+# Test Reports in Reference Repos
+# ============================================
+**/newman/*.html
+**/test-reports/
+
+# ============================================
+# Misc
+# ============================================
+.terraform/
+*.terraform.lock.hcl
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
