@@ -1,967 +1,655 @@
-# ✍️ Redacción Académica con IA
+# ✍️ Module 4: Academic Writing with AI
 
-**Duración:** 4 horas  
-**Nivel:** Intermedio-Avanzado  
-**Track:** Investigación y Academia
+**Duration**: 4 hours  
+**Level**: Intermediate-Advanced  
+**Format**: 100% AI-Driven
 
-## ¿Qué Vas a Lograr?
+## 🎯 Learning Objectives
 
-Al completar este módulo, vas a poder:
+By completing this module, you will be able to:
 
-- [ ] Estructurar papers científicos según formato IMRaD (Intro, Methods, Results, Discussion)
-- [ ] Escribir con claridad, precisión y estilo académico profesional
-- [ ] Gestionar citas y referencias con Zotero + LaTeX/Word
-- [ ] Usar IA (Claude, ChatGPT) para mejorar escritura sin perder autenticidad
-- [ ] Aplicar normas APA 7 o IEEE correctamente
-- [ ] Revisar y editar iterativamente hasta calidad publication-ready
+- [ ] Generate complete academic papers using AI assistance
+- [ ] Format citations and references automatically with AI
+- [ ] Structure papers in IMRaD format via AI
+- [ ] Write with academic style using AI guidance
+- [ ] Edit and refine manuscripts with AI feedback
 
----
+## 🛠️ Required Tools (100% Free)
 
-## La Analogía del Arquitecto de Palabras
+- **OpenCode** with Oh My OpenCode MCPs
+- **Claude/GPT-4** for writing assistance
+- **Markdown reader** for document visualization
+- **Export tools** (PDF conversion)
 
-Escribir un paper científico es como construir un edificio:
+## ❌ Tools NOT Needed
 
-- **Fundamentos (Intro)**: Establece el terreno, el problema, por qué importa
-- **Planos (Methods)**: Diseño detallado, replicable por otros
-- **Construcción (Results)**: Qué construiste, evidencia objetiva
-- **Inspección (Discussion)**: Qué significa, limitaciones, futuro
-
-La IA es tu asistente de arquitectura que sugiere frases, mejora claridad, verifica gramática. Pero VOS sos el arquitecto que diseña la estructura, argumenta las decisiones, y firma el plano con tu nombre.
-
----
-
-## Parte 1: Estructura IMRaD
-
-### 1.1 El Formato IMRaD
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-flowchart TD
-    A[Paper Científico] --> B[I - Introduction]
-    A --> C[M - Methods]
-    A --> D[R - Results]
-    A --> E[D - Discussion]
-    
-    B --> B1[Contexto<br/>Gap<br/>Objetivo]
-    C --> C1[Diseño<br/>Muestra<br/>Instrumentos<br/>Análisis]
-    D --> D1[Hallazgos<br/>Tablas/Figuras<br/>Estadística]
-    E --> E1[Interpretación<br/>Limitaciones<br/>Conclusiones]
-    
-    style B fill:#0d47a1
-    style C fill:#e65100
-    style D fill:#1b5e20
-    style E fill:#4a148c
-```
-
-**Orden de Escritura Recomendado**:
-
-1. ✅ **Methods** (primero - más fácil, es descriptivo)
-2. ✅ **Results** (segundo - reportar hallazgos objetivamente)
-3. ✅ **Discussion** (tercero - interpretar resultados)
-4. ✅ **Introduction** (cuarto - ahora sabes qué hallaste)
-5. ✅ **Abstract** (último - resume todo)
-
-### 1.2 Introducción: Estructura de Embudo
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-graph TD
-    A[AMPLIO<br/>Contexto general<br/>Por qué el tema importa] --> B[MÁS ESPECÍFICO<br/>Estado del arte<br/>Qué se sabe]
-    B --> C[GAP<br/>Qué NO se sabe<br/>Problema identificado]
-    C --> D[TU ESTUDIO<br/>Objetivo/Hipótesis<br/>Contribución esperada]
-    
-    style A fill:#E3F2FD
-    style B fill:#BBDEFB
-    style C fill:#64B5F6
-    style D fill:#1976D2
-```
-
-**Ejemplo de Introducción (Estructura por Párrafo)**:
-
-```markdown
-**Párrafo 1: Contexto General**
-La inteligencia artificial (IA) generativa está transformando la educación 
-superior globalmente (UNESCO, 2023). Herramientas como ChatGPT permiten a 
-estudiantes acceder a asistencia personalizada 24/7, generando tanto entusiasmo 
-como preocupación entre educadores (Cotton et al., 2024). En América Latina, 
-la adopción de estas tecnologías ha sido rápida pero desigual, con limitada 
-evidencia sobre su impacto real en el aprendizaje (García & Silva, 2024).
-
-**Párrafo 2: Estado del Arte**
-Investigaciones en contextos estadounidenses y europeos han documentado efectos 
-mixtos de IA en educación. Algunos estudios reportan mejoras en eficiencia 
-(Smith, 2023; Jones & Lee, 2024), mientras otros identifican riesgos de 
-dependencia excesiva y comprensión superficial (Brown et al., 2023). Sin embargo, 
-estos hallazgos se basan predominantemente en universidades con alta infraestructura 
-tecnológica y estudiantes con exposición previa a IA.
-
-**Párrafo 3: Gap Identificado**
-A pesar del creciente uso de IA en universidades paraguayas, existe escasa 
-evidencia empírica sobre cómo estas herramientas afectan el aprendizaje conceptual 
-profundo, especialmente en disciplinas STEM como programación (Benítez, 2024). 
-La literatura actual carece de estudios experimentales en contextos de recursos 
-limitados como Paraguay, donde estudiantes enfrentan barreras lingüísticas 
-(dominio del inglés) y acceso irregular a internet.
-
-**Párrafo 4: Objetivos del Estudio**
-El presente estudio aborda este gap mediante un diseño cuasi-experimental que 
-compara la comprensión conceptual de programación entre estudiantes que usan 
-ChatGPT (n=42) y aquellos que emplean métodos tradicionales (n=42) en la 
-Facultad Politécnica de la Universidad Nacional de Asunción (FPUNA). 
-Específicamente, investigamos: (1) ¿El uso guiado de ChatGPT mejora la 
-comprensión conceptual?, y (2) ¿Existen diferencias en dependencia percibida 
-entre grupos? Hipotetizamos que el grupo experimental mostrará mayor comprensión, 
-pero también mayor dependencia de la herramienta.
-```
-
-### 1.3 Métodos: El Mapa de Replicación
-
-**Regla de Oro**: Otro investigador debería poder replicar tu estudio exactamente leyendo solo esta sección.
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-mindmap
-  root((Métodos))
-    Participantes
-      N total y por grupo
-      Criterios inclusión/exclusión
-      Demografía M SD rango
-      Método de reclutamiento
-      Tasa de respuesta/retención
-    Diseño
-      Tipo experimental cuasi no-experimental
-      Variables IV DV covariables
-      Asignación a grupos
-      Timeline
-    Instrumentos
-      Nombre y autor
-      Qué mide ítems
-      Escala de medición
-      Confiabilidad α
-      Validez evidencia
-    Procedimiento
-      Paso a paso cronológico
-      Duración cada fase
-      Quién administró
-      Condiciones estandarizadas
-    Análisis de Datos
-      Software versión
-      Tests estadísticos
-      Nivel α
-      Manejo datos faltantes
-```
-
-**Ejemplo de Subsección: Instrumentos**:
-
-```markdown
-### Instrumentos
-
-**Test de Comprensión Conceptual de Programación (TCCP).** 
-Desarrollado para este estudio, el TCCP consiste en 15 preguntas abiertas 
-que evalúan comprensión profunda versus superficial de conceptos fundamentales 
-de Python (variables, bucles, funciones, estructuras de datos). Cada pregunta 
-fue evaluada con una rúbrica de 4 niveles (0 = no responde, 1 = superficial, 
-2 = parcial, 3 = profundo), resultando en un puntaje máximo de 45 puntos. 
-En un estudio piloto con 15 estudiantes, el TCCP demostró consistencia interna 
-aceptable (α de Cronbach = 0.81) y correlación moderada con calificaciones 
-finales del curso (r = 0.58, p < 0.05).
-
-**Encuesta de Uso y Percepción de IA (EUPIA).** 
-Adaptada de la AI Literacy Scale (Wang et al., 2023), la EUPIA mide frecuencia 
-de uso (ítems 1-4), tipo de prompts utilizados (ítems 5-8), y dependencia 
-percibida (ítems 9-12) en escala Likert de 1 (totalmente en desacuerdo) a 5 
-(totalmente de acuerdo). Wang et al. reportaron α = 0.87 en muestra universitaria 
-china; en nuestro piloto paraguayo, α = 0.79.
-```
-
-### 1.4 Resultados: Solo los Hechos
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-flowchart LR
-    A[Resultados] --> B[Descriptivos<br/>M, SD, rangos]
-    B --> C[Verificación<br/>Supuestos]
-    C --> D[Test Principal<br/>Estadística inferencial]
-    D --> E[Análisis<br/>Secundarios]
-    
-    Note1[SIN interpretación<br/>Guardar para Discussion]
-    
-    style A fill:#1b5e20
-```
-
-**Qué INCLUIR en Resultados**:
-✅ Estadística descriptiva (M, SD)  
-✅ Resultados de tests estadísticos (t, p, d)  
-✅ Tablas y figuras con datos  
-✅ Mencionar si supuestos se cumplieron
-
-**Qué NO incluir**:
-❌ Interpretación de por qué  
-❌ Comparación con literatura  
-❌ Implicaciones prácticas  
-❌ Limitaciones
-
-**Ejemplo**:
-
-```markdown
-### Análisis Preliminar
-
-La Tabla 1 presenta estadística descriptiva por grupo. El grupo experimental 
-(M = 54.2, SD = 8.3) obtuvo puntuaciones ligeramente superiores al grupo 
-control (M = 50.1, SD = 9.1) en el post-test. El test de Shapiro-Wilk indicó 
-que las distribuciones no violaban el supuesto de normalidad (experimental: 
-W = 0.97, p = 0.32; control: W = 0.96, p = 0.18). El test de Levene confirmó 
-homogeneidad de varianzas (F(1, 82) = 1.23, p = 0.27).
-
-### Comparación entre Grupos
-
-Un ANCOVA con comprensión pre-test como covariable reveló un efecto significativo 
-del grupo, F(1, 81) = 6.42, p = 0.013, η² parcial = 0.073. El grupo experimental 
-mostró comprensión conceptual significativamente mayor que el control, ajustando 
-por conocimiento previo. El tamaño del efecto fue pequeño-mediano según criterios 
-de Cohen (1988).
-
-[Insertar Figura 1: Box plot comparativo aquí]
-```
-
-### 1.5 Discusión: Interpretar y Contextualizar
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-graph TD
-    A[Discusión] --> B[Resumen Hallazgos<br/>1 párrafo]
-    B --> C[Interpretación<br/>¿Por qué estos resultados?]
-    C --> D[Comparación con Literatura<br/>¿Consistente o contradictorio?]
-    D --> E[Limitaciones<br/>Honestidad sobre debilidades]
-    E --> F[Implicaciones Prácticas<br/>¿Qué hacer con esto?]
-    F --> G[Direcciones Futuras<br/>¿Qué investigar próximo?]
-    G --> H[Conclusión<br/>1 párrafo final fuerte]
-    
-    style A fill:#4a148c
-```
-
-**Ejemplo de Limitaciones (Crítico para Credibilidad)**:
-
-```markdown
-### Limitaciones
-
-Este estudio presenta varias limitaciones que deben considerarse al interpretar 
-los hallazgos. Primero, el diseño cuasi-experimental con grupos no equivalentes 
-limita la inferencia causal; aunque ANCOVA ajustó por comprensión pre-test, 
-otras variables no medidas (motivación, habilidades metacognitivas) podrían 
-confundir los resultados. Segundo, la muestra de conveniencia de una sola 
-universidad (FPUNA) limita la generalización a otras instituciones paraguayas 
-con diferentes perfiles estudiantiles o infraestructura tecnológica. Tercero, 
-el corto período de intervención (4 semanas) no permite evaluar efectos a 
-largo plazo del uso de IA en retención de conocimiento. Cuarto, la medición 
-de comprensión conceptual mediante test escrito puede no capturar plenamente 
-la habilidad de aplicar conocimiento en contextos de programación auténticos. 
-Finalmente, el uso auto-reportado de ChatGPT podría estar sujeto a sesgo de 
-deseabilidad social, aunque la recolección de logs de uso mitigó parcialmente 
-esta limitación.
-```
+- ❌ LaTeX/Overleaf templates
+- ❌ Zotero/Mendeley for citations
+- ❌ Grammarly/ProWritingAid
+- ❌ Manual formatting tools
 
 ---
 
-## Parte 2: Estilo de Escritura Académica
+## 📖 Core Content
 
-### 2.1 Características de Escritura Científica
+### Part 1: AI-Powered Paper Structure Generation
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-mindmap
-  root((Escritura<br/>Científica))
-    Claridad
-      Oraciones cortas 15-20 palabras
-      Una idea por oración
-      Evitar ambigüedad
-      Definir términos técnicos
-    Precisión
-      Números exactos no aproximados
-      Terminología específica
-      Evitar exageraciones
-      Verbos precisos
-    Objetividad
-      Tercera persona o primera plural
-      Voz pasiva cuando apropiado
-      Evitar lenguaje emotivo
-      Basarse en evidencia
-    Concisión
-      Eliminar redundancia
-      Evitar palabras innecesarias
-      Usar voz activa preferiblemente
-      Párrafos focalizados
-```
+#### IMRaD Structure with AI
 
-**Transformación de Escritura Informal a Formal**:
+```bash
+opencode "Genera paper completo en formato IMRaD:
 
-| ❌ Informal/Débil | ✅ Formal/Fuerte |
-|-------------------|------------------|
-| Los estudiantes mejoraron bastante | Los estudiantes mejoraron significativamente (M = 54.2 vs 50.1, p = 0.013) |
-| Muchos estudios han mostrado que... | Múltiples revisiones sistemáticas (n = 15 estudios) reportan... (García et al., 2024) |
-| Creemos que esto pasa porque... | Estos hallazgos sugieren que... debido a [mecanismo explicado] |
-| Es obvio que... | La evidencia indica que... |
-| Todos saben que... | Investigaciones previas documentan consistentemente que... |
+TÍTULO: [Tu título de investigación]
+AUTORES: [Nombres de autores]
+AFILIACIÓN: Facultad Politécnica, Universidad Nacional de Asunción
 
-### 2.2 Voz Activa vs Pasiva
+RESULTADOS A INCLUIR:
+@attach statistical_results.md
+@attach methodology.md
+@attach literature_review.md
 
-**Cuándo Usar Cada Una**:
+ESTRUCTURA COMPLETA:
+1. **Abstract** (250 palabras)
+   - Background + Methods + Results + Conclusion
+   - Keywords (5-7 términos)
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-graph LR
-    A{¿Qué enfatizar?} --> B[Acción/Agente<br/>VOZ ACTIVA]
-    A --> C[Objeto/Procedimiento<br/>VOZ PASIVA]
-    
-    B --> B1["Los investigadores<br/>analizaron los datos<br/>con SPSS 28"]
-    C --> C1["Los datos fueron<br/>analizados con SPSS 28"]
-    
-    style B1 fill:#1b5e20
-    style C1 fill:#0d47a1
-```
+2. **Introduction** (800-1000 palabras)
+   - Contexto general del problema
+   - Revisión de literatura concisa
+   - Gap identificado claramente
+   - Objetivos e hipótesis
 
-**Ejemplos Contextuales**:
+3. **Methods** (1000-1200 palabras)
+   - Diseño experimental detallado
+   - Participantes y muestreo
+   - Instrumentos de medición
+   - Procedimiento exacto
+   - Análisis estadístico
 
-- ✅ **Activa (preferida en general)**: "Analizamos los datos usando ANCOVA"
-- ✅ **Pasiva (apropiada en Métodos)**: "Los participantes fueron asignados aleatoriamente"
-- ❌ **Pasiva excesiva**: "Los datos fueron recolectados, fueron analizados, y fueron interpretados"
+4. **Results** (800-1000 palabras)
+   - Estadística descriptiva
+   - Resultados de tests inferenciales
+   - Tablas y figuras
+   - Solo hechos, sin interpretación
 
-### 2.3 Conectores y Flujo Lógico
+5. **Discussion** (1000-1200 palabras)
+   - Interpretación de resultados
+   - Comparación con literatura
+   - Implicaciones prácticas
+   - Limitaciones del estudio
+   - Futuras investigaciones
 
-**Párrafo Cohesivo vs Desconectado**:
+6. **Conclusion** (300-400 palabras)
+   - Resumen de hallazgos principales
+   - Contribución del estudio
+   - Implicaciones clave
 
-❌ **Desconectado**:
-```
-ChatGPT es popular en universidades. Los estudiantes lo usan para programación.
-Algunos profesores están preocupados. Hay poca evidencia sobre sus efectos.
-Este estudio investiga el impacto de ChatGPT.
-```
-
-✅ **Cohesivo**:
-```
-Aunque ChatGPT se ha vuelto popular en universidades, especialmente para 
-asistencia en programación, los profesores expresan preocupación debido a 
-la escasa evidencia sobre sus efectos en el aprendizaje profundo. Por lo tanto, 
-este estudio investiga el impacto de ChatGPT en la comprensión conceptual.
-```
-
-**Conectores Útiles por Función**:
-
-| Función | Conectores |
-|---------|-----------|
-| **Adición** | además, asimismo, igualmente, de igual manera |
-| **Contraste** | sin embargo, no obstante, por el contrario, aunque, a pesar de |
-| **Causa-Efecto** | por lo tanto, en consecuencia, como resultado, debido a |
-| **Secuencia** | primero, segundo, luego, finalmente, subsecuentemente |
-| **Ejemplificación** | por ejemplo, específicamente, en particular, tal como |
-| **Énfasis** | de hecho, ciertamente, cabe destacar, es importante notar |
-
----
-
-## Parte 3: Gestión de Citas y Referencias
-
-### 3.1 Formatos de Citación
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-graph TD
-    A[Formato de<br/>Citación] --> B[APA 7<br/>Ciencias Sociales]
-    A --> C[IEEE<br/>Ingeniería]
-    A --> D[Vancouver<br/>Medicina]
-    A --> E[Chicago<br/>Humanidades]
-    
-    B --> B1[Autor año<br/>García 2024]
-    C --> C1[Números [1]]
-    D --> D1[Números 1]
-    E --> E1[Notas al pie]
-    
-    style B fill:#4CAF50
-    style C fill:#2196F3
-```
-
-### 3.2 Citación en Texto (APA 7)
-
-**Reglas Básicas**:
-
-| Situación | Formato | Ejemplo |
-|-----------|---------|---------|
-| **1 autor** | (Apellido, Año) | (García, 2024) |
-| **2 autores** | (Apellido1 & Apellido2, Año) | (Smith & Jones, 2023) |
-| **3+ autores** | (Primer Apellido et al., Año) | (Brown et al., 2024) |
-| **Cita textual <40 palabras** | "Texto" (Autor, Año, p. X) | "La IA transforma educación" (García, 2024, p. 45) |
-| **Cita textual >40 palabras** | Bloque indentado sin comillas | [Párrafo separado indentado] |
-| **Múltiples fuentes** | (Autor1, Año1; Autor2, Año2) | (García, 2024; Smith, 2023) |
-
-**Ejemplo de Cita Textual Larga**:
-
-```markdown
-Como señalan Brown et al. (2023):
-
-    El uso de IA generativa en educación superior presenta una paradoja: 
-    mientras ofrece acceso democratizado a asistencia personalizada, 
-    simultáneamente corre el riesgo de profundizar brechas digitales 
-    entre estudiantes con diferentes niveles de alfabetización tecnológica 
-    y metacognitiva. Esta tensión requiere investigación empírica situada 
-    en contextos diversos más allá de universidades de élite. (p. 342)
-
-Esta paradoja es particularmente relevante en Paraguay, donde...
-```
-
-### 3.3 Lista de Referencias (APA 7)
-
-**Ejemplos por Tipo de Fuente**:
-
-**Artículo de Revista**:
-```
-García, M., Silva, J., & Rodríguez, A. (2024). Impacto de IA generativa en 
-    aprendizaje de programación: Estudio experimental en universidades 
-    latinoamericanas. Revista de Educación Superior, 45(2), 123-145. 
-    https://doi.org/10.1234/res.2024.45.2.123
-```
-
-**Libro**:
-```
-Smith, J. R. (2023). Artificial intelligence in education: Promises and perils 
-    (2nd ed.). MIT Press.
-```
-
-**Capítulo de Libro**:
-```
-Brown, L., Johnson, K., & Lee, M. (2024). Generative AI and conceptual learning. 
-    In P. Wilson (Ed.), Educational technology handbook (pp. 340-365). Springer.
-```
-
-**Tesis/Disertación**:
-```
-Benítez, C. (2024). Adopción de herramientas de IA en FPUNA: Percepciones 
-    docentes y estudiantiles [Tesis de Maestría, Universidad Nacional de 
-    Asunción]. Repositorio Institucional FPUNA. 
-    http://repositorio.fpuna.edu.py/123456
-```
-
-**Página Web**:
-```
-UNESCO. (2023, Septiembre 7). Guidance for generative AI in education and 
-    research. https://www.unesco.org/en/digital-education/ai-future-learning
-```
-
-### 3.4 Workflow con Zotero
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-sequenceDiagram
-    participant B as Navegador
-    participant Z as Zotero
-    participant W as Word/LaTeX
-    
-    B->>Z: Click Zotero Connector<br/>Captura metadata + PDF
-    Z->>Z: Organizar en colección<br/>Verificar metadata
-    Z->>W: Insertar cita<br/>(Zotero plugin)
-    W->>W: Escribir párrafo
-    W->>Z: Solicitar cita
-    Z->>W: Insertar (García, 2024)
-    W->>Z: Generar bibliografía<br/>automáticamente
-    Z->>W: Lista de Referencias<br/>ordenada alfabéticamente
-    
-    Note over B,W: Workflow 100% automatizado
-```
-
-**Insertar Citas en Word con Zotero**:
-
-1. Escribir párrafo que requiere cita
-2. Posicionar cursor donde va la cita
-3. Click en pestaña Zotero → "Add/Edit Citation"
-4. Buscar paper (por autor o título)
-5. Enter - cita insertada automáticamente
-6. Al final del documento: "Add/Edit Bibliography" → Referencias completas
-
----
-
-## Parte 4: Uso de IA para Mejorar Escritura
-
-### 4.1 Workflow de Escritura con IA
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-flowchart TD
-    A[Borrador Inicial<br/>TU escritura] --> B[Revisión con IA<br/>Claude/ChatGPT]
-    
-    B --> C{Tipo de ayuda}
-    
-    C --> D[Claridad<br/>Simplificar oraciones complejas]
-    C --> E[Gramática<br/>Corregir errores]
-    C --> F[Flujo<br/>Mejorar conectores]
-    C --> G[Concisión<br/>Eliminar redundancia]
-    
-    D --> H[Revisar Sugerencias<br/>CRÍTICAMENTE]
-    E --> H
-    F --> H
-    G --> H
-    
-    H --> I{¿Mantiene<br/>tu voz?}
-    I -->|Sí| J[Aceptar cambio]
-    I -->|No| K[Rechazar o<br/>modificar]
-    
-    J --> L[Versión Mejorada]
-    K --> L
-    
-    L --> M[Repetir hasta<br/>satisfacción]
-    
-    style A fill:#b71c1c
-    style L fill:#1b5e20
-```
-
-### 4.2 Prompts Efectivos para Revisar Escritura
-
-**Prompt 1: Mejorar Claridad**:
-
-```markdown
-Soy investigador escribiendo paper científico sobre IA en educación.
-Revisa este párrafo de mi Introducción y sugiere mejoras SOLO en claridad:
-
-[PEGAR PÁRRAFO]
+7. **References**
+   - Todas las citas en formato correcto
+   - Consistencia completa
 
 REQUISITOS:
-- Mantener mi voz académica
-- Simplificar oraciones >25 palabras
-- Eliminar ambigüedad
-- NO cambiar significado
-- NO agregar contenido nuevo
+- Total: 5000-6000 palabras
+- Lenguaje académico formal
+- Citas automáticas y consistentes
+- Formato publication-ready"
+```
+
+#### Automatic Citation Formatting with AI
+
+```bash
+opencode "Genera sistema de citas automático:
+
+REFERENCIAS BASE:
+@attach bibliography.md
+
+FORMATOS REQUERIDOS:
+1. **APA 7th Edition**
+2. **IEEE Style**
+3. **MLA 9th Edition**
+4. **Chicago Author-Date**
+
+CITACIONES EN TEXTO:
+- Convertir referencias a citas automáticas
+- Sistema numerado [1], [2], [3]
+- Sistema autor-año (Smith, 2023)
+- Manejo de múltiples autores (Smith et al., 2023)
+- Cita directa con página (Smith, 2023, p. 45)
+
+REQUISITOS DE CONSISTENCIA:
+- Todas las citas en texto tienen referencia
+- Todas las referencias están citadas
+- Orden alfabético o numérico consistente
+- DOI incluido cuando disponible
+- Formato de journal estandarizado
 
 OUTPUT:
-- Versión revisada
-- Explicación de cada cambio significativo
+- Texto con citas insertadas automáticamente
+- Lista de referencias completa en cada formato
+- Guía de conversión entre formatos
+- Verificación de consistencia"
 ```
 
-**Prompt 2: Verificar Coherencia entre Secciones**:
+### Part 2: AI-Powered Content Generation
 
-```markdown
-Verifica coherencia entre mi Introducción y Discusión:
+#### Introduction Writing with AI
 
-INTRODUCCIÓN (último párrafo - objetivos):
-[PEGAR]
+```bash
+opencode "Escribe sección de Introduction académica:
 
-DISCUSIÓN (primer párrafo - resumen hallazgos):
-[PEGAR]
+CONTEXTO DE INVESTIGACIÓN:
+- Área: IA en educación superior
+- Problema: Impacto en comprensión conceptual
+- Setting: FPUNA, Paraguay
+- Literatura: @attach literature_synthesis.md
 
-ANALIZA:
-1. ¿La Discusión responde los objetivos planteados?
-2. ¿Hay objetivos no abordados?
-3. ¿Hay hallazgos discutidos que no se mencionaron en objetivos?
-4. ¿El tono y terminología son consistentes?
+ESTRUCTURA DE INTRODUCCIÓN:
+1. **Párrafo 1: Contexto amplio** (150-200 palabras)
+   - Importancia del tema a nivel global
+   - Tendencias recientes en el campo
+   - Relevancia para educación
 
-SUGIERE ajustes para alinear ambas secciones.
+2. **Párrafo 2: Estado del arte** (200-250 palabras)
+   - Lo que se sabe hasta ahora
+   - Hallazgos principales de literatura
+   - Consenso y controversias
+
+3. **Párrafo 3: Gap específico** (150-200 palabras)
+   - Lo que NO se sabe
+   - Limitación de estudios previos
+   - Necesidad de nueva investigación
+
+4. **Párrafo 4: Objetivos e hipótesis** (150-200 palabras)
+   - Pregunta de investigación principal
+   - Objetivos específicos
+   - Hipótesis tentativas
+
+REQUISITOS:
+- Conectores lógicos entre párrafos
+- Citas apropiadas integradas
+- Lenguaje académico formal
+- Transición suave a Methods
+
+OUTPUT:
+- Introducción completa (650-850 palabras)
+- Citas integradas correctamente
+- Flujo lógico coherente
+- Preparada para peer review"
 ```
 
-**Prompt 3: Reducir Longitud (Journal con límite de palabras)**:
+#### Methods Section with AI
 
-```markdown
-Este párrafo tiene 250 palabras pero necesito reducirlo a máximo 150
-sin perder información crítica:
+```bash
+opencode "Escribe sección de Methods detallada y replicable:
 
-[PEGAR PÁRRAFO]
+PROTOCOLO DE INVESTIGACIÓN:
+@attach research_protocol.md
+@attach measurement_instrument.md
 
-Identifica:
-1. Redundancias a eliminar
-2. Frases verbosas a compactar
-3. Detalles secundarios a remover
+ESTRUCTURA DE METHODS:
+1. **Diseño Experimental** (200 palabras)
+   - Tipo de diseño (cuasi-experimental)
+   - Grupos y asignación
+   - Control de variables
+   - Timeline del estudio
 
-Provee versión condensada que mantenga todos los puntos clave.
+2. **Participantes** (250 palabras)
+   - Características demográficas
+   - Criterios de inclusión/exclusión
+   - Procedimiento de reclutamiento
+   - Consentimiento informado
+
+3. **Instrumentos** (300 palabras)
+   - Test de comprensión conceptual
+   - Encuesta de uso de IA
+   - Validación y confiabilidad
+   - Procedimientos de calificación
+
+4. **Procedimiento** (300 palabras)
+   - Paso a paso cronológico
+   - Duración de cada fase
+   - Instrucciones a participantes
+   - Control de condición experimental
+
+5. **Análisis de Datos** (250 palabras)
+   - Software utilizado (AI analysis)
+   - Tests estadísticos específicos
+   - Nivel de significancia
+   - Manejo de datos faltantes
+
+REQUISITOS:
+- Suficiente detalle para replicación
+- Voz pasiva donde apropiado
+- Tiempo verbal pasado
+- Precisión en cantidades y procedimientos
+
+OUTPUT:
+- Methods completa (1300 palabras)
+- Detalles replicables
+- Formato académico estándar"
 ```
 
-### 4.3 Uso Ético de IA en Escritura Académica
+### Part 3: AI-Powered Academic Style
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-mindmap
-  root((Uso Ético<br/>de IA))
-    PERMITIDO
-      Revisar gramática
-      Mejorar claridad
-      Sugerir sinónimos
-      Verificar coherencia
-      Traducir borradores
-    ZONA GRIS
-      Generar estructura outline
-      Parafrasear literatura
-      Expandir ideas existentes
-      Nota: Requiere transparencia
-    PROHIBIDO
-      Generar datos falsos
-      Escribir secciones completas
-      Fabricar citas
-      No declarar uso de IA
+#### Style Enhancement with AI
+
+```bash
+opencode "Mejora estilo académico de este texto:
+
+TEXTO ORIGINAL:
+@attach draft_content.md
+
+CRITERIOS DE MEJORA:
+1. **Claridad y Precisión**
+   - Eliminar ambigüedad
+   - Usar terminología específica
+   - Definir términos técnicos
+   - Evitar redundancia
+
+2. **Formalidad Académica**
+   - Tercera persona o voz pasiva
+   - Evitar contracciones
+   - Lenguaje objetivo e impersonal
+   - Terminología científica
+
+3. **Estructura Lógica**
+   - Conectores apropiados
+   - Párrafos focalizados
+   - Transiciones suaves
+   - Coherencia argumental
+
+4. **Consistencia**
+   - Terminología consistente
+   - Formato de números y unidades
+   - Tiempos verbales apropiados
+   - Citas uniformes
+
+OUTPUT:
+- Versión mejorada del texto
+- Comentarios explicando cambios
+- Justificación de cada modificación
+- Versión final pulida"
 ```
 
-**Declaración de Uso de IA (Ejemplo para Paper)**:
+#### Terminology Standardization with AI
 
-```markdown
-**Declaración de IA Generativa**
+```bash
+opencode "Estandariza terminología técnica en manuscrito:
 
-ChatGPT (GPT-4, OpenAI) fue utilizado para revisar gramática y claridad 
-en borradores de las secciones de Introducción y Discusión. Ningún contenido 
-sustantivo fue generado por IA; todas las ideas, argumentos, análisis e 
-interpretaciones son originales de los autores. El uso de IA se limitó a 
-asistencia de edición similar a software de corrección gramatical avanzado.
+TEXTO COMPLETO:
+@attach full_manuscript.md
+
+TERMINOLOGÍA A ESTANDARIZAR:
+- Inteligencia Artificial / IA
+- ChatGPT / GPT-4
+- Comprensión conceptual / aprendizaje profundo
+- Experimental / cuasi-experimental
+- Significativo / estadísticamente significativo
+- Effect size / tamaño del efecto
+
+CRITERIOS:
+- Uso consistente en todo el documento
+- Definición en primera mención
+- Abreviaturas apropiadas
+- Formato en español/literatura
+
+OUTPUT:
+- Glosario de términos estandarizados
+- Versión del manuscrito con terminología unificada
+- Guía de consistencia para escritura futura
+- Verificación de aplicación correcta"
+```
+
+### Part 4: AI-Powered Editing and Refinement
+
+#### Peer Review Simulation with AI
+
+```bash
+opencode "Simula peer review de este paper:
+
+MANUSCRITO:
+@attach complete_paper.md
+
+CRITERIOS DE EVALUACIÓN:
+1. **Originalidad y Contribución** (25 puntos)
+   - Novedad del enfoque
+   - Contribución al campo
+   - Relevancia teórica/práctica
+
+2. **Metodología** (25 puntos)
+   - Diseño apropiado
+   - Replicabilidad
+   - Control de sesgos
+   - Análisis correcto
+
+3. **Resultados y Análisis** (25 puntos)
+   - Presentación clara
+   - Análisis estadístico correcto
+   - Interpretación apropiada
+   - Uso correcto de tablas/figuras
+
+4. **Escritura y Formato** (25 puntos)
+   - Claridad y organización
+   - Estilo académico
+   - Citas y referencias
+   - Formato del journal
+
+OUTPUT:
+- Evaluación detallada por sección
+- Puntuación en cada criterio
+- Comentarios específicos de mejora
+- Recomendación (Accept/Minor/Major/Reject)
+- Lista de correcciones necesarias"
+```
+
+#### Response to Reviewers with AI
+
+```bash
+opencode "Genera respuesta profesional a revisores:
+
+COMENTARIOS DE REVISORES:
+@attach reviewer_comments.md
+
+ESTRUCTURA DE RESPUESTA:
+1. **Introducción Agradecida** (1 párrafo)
+   - Agradecimiento por tiempo y comentarios
+   - Reconocimiento de contribución a mejoras
+
+2. **Respuestas Punto por Punto**
+   - Cada comentario del revisor
+   - Respuesta respetuosa y profesional
+   - Cambios realizados en el manuscrito
+   - Justificación cuando no se acepta sugerencia
+
+3. **Resumen de Cambios Principales**
+   - Modificaciones sustanciales
+   - Mejoras en estructura o análisis
+   - Fortalecimiento de argumentos
+
+4. **Conclusión y Agradecimiento**
+   - Compromiso con calidad final
+   - Agradecimiento final
+
+ESTILO REQUERIDO:
+- Profesional y respetuoso
+- Constructivo y no defensivo
+- Claro y conciso
+- Basado en evidencia
+
+OUTPUT:
+- Respuesta completa a revisores
+- Lista de cambios en manuscrito
+- Versión revisada del paper
+- Timeline de implementación"
+```
+
+### Part 5: AI-Powered Publication Preparation
+
+#### Journal Formatting with AI
+
+```bash
+opencode "Formatea paper para journal específico:
+
+TARGET JOURNAL:
+[Nombre del journal y guidelines]
+
+MANUSCRITO ACTUAL:
+@attach formatted_paper.md
+
+REQUISITOS DEL JOURNAL:
+- Formato específico (IEEE, APA, etc.)
+- Límite de palabras
+- Estructura requerida
+- Estilo de figuras/tablas
+- Información de autores
+
+AUTOMATIZACIÓN REQUERIDA:
+1. **Formateo de texto**
+   - Márgenes y fuente
+   - Espaciado y sangría
+   - Numeración de páginas
+   - Encabezados
+
+2. **Estructura específica**
+   - Abstract/Keywords
+   - Secciones requeridas
+   - Declaraciones (conflictos, ética)
+   - Acknowledgments
+
+3. **Figuras y tablas**
+   - Numeración consecutiva
+   - Títulos y leyendas
+   - Resolución y formato
+   - Posición en texto
+
+4. **Referencias**
+   - Formato exacto del journal
+   - DOIs incluidos
+   - Orden apropiado
+   - Hyperlinks cuando requerido
+
+OUTPUT:
+- Paper completamente formateado
+- Checklist de cumplimiento
+- Lista de ajustes realizados
+- Ready for submission"
+```
+
+#### Submission Package with AI
+
+```bash
+opencode "Genera package completo para submission:
+
+PAPER FINAL:
+@attach final_manuscript.pdf
+JOURNAL: [Target journal with guidelines]
+
+DOCUMENTOS REQUERIDOS:
+1. **Cover Letter**
+   - Contexto del estudio
+   - Contribución principal
+   - Adecuación al journal
+   - Declaraciones necesarias
+
+2. **Title Page**
+   - Título completo
+   - Autores con afiliaciones
+   - Información de contacto
+   - ORCID IDs
+
+3. **Abstract y Keywords**
+   - Formato específico del journal
+   - Word count correcto
+   - Keywords apropiadas
+
+4. **Declarations**
+   - Conflictos de interés
+   - Financiamiento
+   - Aprobación ética
+   - Disponibilidad de datos
+
+5. **Supplementary Materials**
+   - Dataset si aplica
+   - Código de análisis
+   - Instrumentos adicionales
+   - Información extendida
+
+OUTPUT:
+- Todos los documentos generados
+- Formato PDF o según requerimiento
+- Checklist de submission
+- Instrucciones paso a paso"
 ```
 
 ---
 
-## Parte 5: Herramientas Digitales para Escritura
+## 🛠️ Practical Exercises
 
-### 5.1 LaTeX vs Word
+### Exercise 1: Complete Paper Generation (120 minutes)
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-graph TD
-    A{¿Qué herramienta<br/>usar?} --> B{¿Campo?}
-    
-    B -->|STEM<br/>Ecuaciones complejas| C[LaTeX<br/>Overleaf]
-    B -->|Ciencias Sociales<br/>Humanidades| D[Word<br/>+ Zotero]
-    
-    C --> C1[Ventajas:<br/>Formato profesional<br/>Ecuaciones perfectas<br/>Referencias automáticas]
-    C --> C2[Desventajas:<br/>Curva aprendizaje<br/>Colaboración limitada]
-    
-    D --> D1[Ventajas:<br/>Familiar<br/>Track changes<br/>Comentarios]
-    D --> D2[Desventajas:<br/>Formato inconsistente<br/>Problemas con figuras grandes]
-    
-    style C fill:#4CAF50
-    style D fill:#2196F3
-```
+**Task**: Generate a complete academic paper using AI assistance.
 
-### 5.2 Overleaf para Papers Científicos
+**Steps**:
+1. Structure paper in IMRaD format with AI
+2. Generate each section systematically
+3. Create automatic citation system
+4. Refine academic style with AI feedback
+5. Format for target journal
+6. Create submission package
 
-**Template APA 7 en Overleaf**:
+**Expected Output**:
+- `complete_paper.md`
+- `references_formatted.md`
+- `submission_package.pdf`
+- `cover_letter.md`
 
-```latex
-\documentclass[man,12pt]{apa7}
+### Exercise 2: Peer Review Response (90 minutes)
 
-\usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{csquotes}
-\usepackage{graphicx}
+**Task**: Create professional response to reviewer comments.
 
-\title{Impacto del Uso de ChatGPT en la Comprensión Conceptual de Programación: 
-       Estudio Cuasi-Experimental en FPUNA}
-\shorttitle{IA y Comprensión Conceptual}
-\author{Juan Pérez\textsuperscript{1}, María González\textsuperscript{1}}
-\affiliation{
-  \textsuperscript{1}Facultad Politécnica, Universidad Nacional de Asunción
-}
-\authornote{
-  Correspondencia: juan.perez@fpuna.edu.py
-}
+**Steps**:
+1. Simulate peer review with AI
+2. Analyze reviewer feedback
+3. Generate point-by-point responses
+4. Implement suggested changes
+5. Prepare revised manuscript
 
-\abstract{
-El presente estudio investiga el impacto del uso guiado de ChatGPT en la 
-comprensión conceptual de programación mediante un diseño cuasi-experimental 
-con 84 estudiantes de primer año de Ingeniería Informática en FPUNA. Los 
-participantes fueron asignados a grupo experimental (n=42, uso de ChatGPT) 
-o control (n=42, métodos tradicionales) durante 4 semanas. Un ANCOVA reveló 
-que el grupo experimental obtuvo puntuaciones significativamente superiores 
-en comprensión conceptual (M=54.2, SD=8.3) comparado con el control (M=50.1, 
-SD=9.1), F(1,81)=6.42, p=0.013, η²=0.073. Se discuten implicaciones para 
-integración responsable de IA en educación superior paraguaya.
-}
-
-\keywords{inteligencia artificial, ChatGPT, comprensión conceptual, programación, 
-          educación superior, Paraguay}
-
-\begin{document}
-\maketitle
-
-\section{Introducción}
-La inteligencia artificial (IA) generativa está transformando...
-
-% [Resto del paper]
-
-\printbibliography
-
-\end{document}
-```
-
-**Compilar y Descargar PDF**:
-1. Crear proyecto en Overleaf.com
-2. Pegar código LaTeX
-3. Click "Recompile" → PDF generado automáticamente
-4. Download PDF para someter a journal
-
-### 5.3 Grammarly y Herramientas de Corrección
-
-**Workflow de Revisión en Capas**:
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
-flowchart LR
-    A[Borrador] --> B[Zotero<br/>Citas correctas]
-    B --> C[Grammarly<br/>Gramática básica]
-    C --> D[Claude/ChatGPT<br/>Claridad y flujo]
-    D --> E[Revisor Humano<br/>Colega o tutor]
-    E --> F[Versión Final]
-    
-    style F fill:#4CAF50
-```
+**Expected Output**:
+- `review_simulation.md`
+- `response_to_reviewers.md`
+- `revised_manuscript.md`
+- `changes_summary.md`
 
 ---
 
-## Ejercicios Prácticos
+## ✅ Module Assessment
 
-### Ejercicio 1: Escribir Introducción Completa (90 min)
+### Academic Writing Project (100 points)
 
-**Tema**: [Tu tema de investigación real o simulado]
+**Deliverables**:
+1. **Complete Paper** (40 points)
+   - IMRaD structure correct
+   - Academic writing quality
+   - Length and formatting appropriate
 
-**Estructura Requerida**:
-1. Párrafo 1: Contexto general (100-150 palabras)
-2. Párrafo 2: Estado del arte (150-200 palabras, mínimo 5 citas)
-3. Párrafo 3: Gap identificado (100-150 palabras)
-4. Párrafo 4: Objetivos e hipótesis (100-150 palabras)
+2. **Citation System** (20 points)
+   - Automatic formatting
+   - Consistency verified
+   - Complete references
 
-**Requisitos**:
-- Total: 500-650 palabras
-- Al menos 8 referencias
-- Formato APA 7 correcto
-- Flujo lógico con conectores
+3. **Style and Clarity** (25 points)
+   - Academic terminology
+   - Logical flow
+   - Professional presentation
 
-**Usar OpenCode para**:
-- Buscar literatura relevante
-- Sugerir estructura de párrafos
-- Revisar claridad final
+4. **Submission Package** (15 points)
+   - Journal formatting
+   - Complete documentation
+   - Professional quality
 
-**Entregable**:
-- Introducción completa en Word/LaTeX
-- Lista de referencias
-- Versión antes y después de revisión con IA
+**Passing Grade**: 70/100 points
 
 ---
 
-### Ejercicio 2: Transformar Resultados en Tablas/Figuras (60 min)
+## 🔄 Cross-References
 
-**Datos**: Usar resultados del Ejercicio de Módulo 3 (análisis estadístico)
+**Uses outputs from**: Module 3: Data Analysis  
+**Prerequisite for**: Module 5: Presentation & Publication  
+**Next Step**: Create presentation based on your paper
 
-**Tareas**:
-1. Crear Tabla 1: Estadística descriptiva por grupo
-2. Crear Figura 1: Box plot comparativo
-3. Escribir párrafo de resultados que:
-   - Hace referencia a Tabla 1 y Figura 1
-   - Reporta test estadístico en formato APA
-   - NO interpreta (solo reporta hechos)
+---
 
-**Formato de Tabla (APA 7)**:
+## 💡 AI Tips for Success
 
+### Paper Generation Prompts
 ```
-Tabla 1
-Estadística Descriptiva de Comprensión Conceptual por Grupo
+opencode "Generate [section] paper section:
+TOPIC: [research topic]
+CONTENT: [background material]
+STRUCTURE: [IMRaD requirements]
+STYLE: [academic formal]
+CITATIONS: [automatic integration]"
+```
 
-Grupo           n    M      SD    Mín   Máx   Rango
---------------------------------------------------
-Control        42   50.1   9.1   32    60    28
-Experimental   42   54.2   8.3   36    60    24
---------------------------------------------------
+### Citation Management
+```
+opencode "Format bibliography in [style] format:
+REFERENCES: @attach refs.md
+CITATIONS: [in-text integration]
+REQUIREMENTS: [consistency checks]"
+```
 
-Nota. M = Media, SD = Desviación Estándar. Puntuaciones 
-máximas = 60. Comprensión medida con Test de Comprensión 
-Conceptual de Programación (TCCP).
+### Style Enhancement
+```
+opencode "Improve academic style of @attach text:
+FOCUS: [clarity/precision/formality]
+CONTEXT: [research field]
+OUTPUT: [revised version + comments]"
 ```
 
 ---
 
-### Ejercicio 3: Peer Review Simulado (90 min)
+## ⚠️ Common Pitfalls to Avoid
 
-**Intercambiar borradores con compañero**.
-
-**Revisar usando esta rúbrica**:
-
-| Criterio | Puntos | Comentarios |
-|----------|--------|-------------|
-| **Estructura IMRaD clara** | _/10 | |
-| **Introducción: Gap bien identificado** | _/10 | |
-| **Métodos: Replicable** | _/10 | |
-| **Resultados: Solo hechos, no interpretación** | _/10 | |
-| **Discusión: Limitaciones honestas** | _/10 | |
-| **Referencias: Formato APA correcto** | _/10 | |
-| **Claridad de escritura** | _/10 | |
-| **Flujo lógico** | _/10 | |
-| **Figuras/Tablas: Profesionales** | _/10 | |
-| **Originalidad y contribución** | _/10 | |
-| **TOTAL** | _/100 | |
-
-**Proveer**:
-- Comentarios específicos en cada sección
-- Al menos 3 fortalezas
-- Al menos 3 áreas de mejora
-- Recomendación: Aceptar / Revisar Minor / Revisar Major / Rechazar
+- **Inconsistent citation style** → Use AI for automatic formatting
+- **Informal language** → Apply AI style enhancement
+- **Missing structure** → Follow IMRaD with AI guidance
+- **Poor transition** → Request AI to improve flow
+- **Incomplete references** → Use AI for completeness check
 
 ---
 
-## Checklist de Paper Publication-Ready
+## 🤝 Getting Help
 
-### ✅ Contenido
-
-- [ ] Título: Conciso (<15 palabras), descriptivo, incluye variables clave
-- [ ] Abstract: 150-250 palabras, estructura IMRaD comprimida
-- [ ] Keywords: 4-6 términos relevantes para indexación
-- [ ] Introducción: Gap claro, objetivos/hipótesis explícitos
-- [ ] Métodos: Suficientemente detallados para replicar
-- [ ] Resultados: Reportan hallazgos objetivamente sin interpretación
-- [ ] Discusión: Interpreta, compara con literatura, reconoce limitaciones
-- [ ] Conclusión: Fuerte, concisa, no introduce info nueva
-
-### ✅ Referencias
-
-- [ ] Todas las citas en texto tienen referencia completa
-- [ ] Todas las referencias fueron citadas en texto
-- [ ] Formato consistente (APA 7 o IEEE)
-- [ ] Referencias ordenadas alfabéticamente (APA) o numéricamente (IEEE)
-- [ ] DOIs incluidos cuando disponibles
-- [ ] URLs activos verificados
-
-### ✅ Formato
-
-- [ ] Márgenes: 2.54 cm (1 pulgada) todos los lados
-- [ ] Fuente: Times New Roman 12pt (APA) o equivalente
-- [ ] Interlineado: Doble espacio (APA) o según journal
-- [ ] Páginas numeradas
-- [ ] Encabezado con título corto (running head)
-- [ ] Tablas y figuras numeradas consecutivamente
-- [ ] Leyendas de figuras descriptivas
-
-### ✅ Figuras y Tablas
-
-- [ ] Cada figura/tabla tiene número y título
-- [ ] Referenciadas en texto antes de aparecer
-- [ ] Legibles en blanco y negro (si journal lo requiere)
-- [ ] Alta resolución (mínimo 300 DPI para figuras)
-- [ ] Tablas en formato editable (no imagen)
-- [ ] Notas explicativas incluidas si necesario
-
-### ✅ Ética y Transparencia
-
-- [ ] Aprobación de comité de ética mencionada
-- [ ] Conflictos de interés declarados
-- [ ] Financiamiento reconocido
-- [ ] Uso de IA declarado (si aplica)
-- [ ] Datos disponibles o justificación de restricción
-- [ ] Consentimiento informado obtenido
+- **Slack**: #research-ai-writing
+- **Office Hours**: Friday 18:00-20:00
+- **Email**: writing-support@fpuna.edu.py
 
 ---
 
-## Recursos Esenciales
+## 📁 Resources
 
-### Software de Escritura
+### Essential AI Prompts
+```bash
+# Paper structure
+opencode "Generate IMRaD structure paper on [topic] with results @attach data.md"
 
-| Herramienta | Propósito | Costo | URL |
-|-------------|-----------|-------|-----|
-| **Overleaf** | LaTeX online, colaborativo | Gratis básico | overleaf.com |
-| **Zotero** | Gestión referencias | Gratis | zotero.org |
-| **Grammarly** | Corrección gramática (inglés) | Freemium | grammarly.com |
-| **Hemingway Editor** | Simplificar escritura | Gratis web | hemingwayapp.com |
-| **Google Docs** | Escritura colaborativa | Gratis | docs.google.com |
+# Citation formatting
+opencode "Convert references to [APA/IEEE] format: @attach bibliography.md"
 
-### Guías de Estilo
+# Style improvement
+opencode "Enhance academic writing style of @attach manuscript.md"
 
-**APA 7**:
-- Manual oficial: apastyle.apa.org
-- Tutorial: owl.purdue.edu/owl/research_and_citation/apa_style/
-- Generador de citas: zbib.org
+# Journal formatting
+opencode "Format paper for [journal] following guidelines @attach requirements.md"
+```
 
-**IEEE**:
-- Author tools: ieeeauthorcenter.ieee.org
-- Citation guide: ieee.org/publications/rights/
+### Quick Reference Commands
+```bash
+# Abstract generation
+opencode "Write 250-word abstract for study on [topic] with findings @attach results.md"
 
-### Templates LaTeX
+# Introduction writing
+opencode "Create introduction for research on [topic] with gap @attach literature.md"
 
-**Overleaf Gallery**:
-- APA 7: overleaf.com/latex/templates/apa7-style-manuscript-template/
-- IEEE: overleaf.com/latex/templates/ieee-journal-paper-template/
-- Tesis FPUNA: [Contactar biblioteca para template oficial]
-
----
-
-## Contexto Paraguay: Publicación Académica
-
-### Revistas Paraguayas que Aceptan Papers
-
-**Multidisciplinarias**:
-- **Revista FPUNA** (indexada en Latindex)
-  - Requisitos: APA 7, revisión por pares
-  - Tiempos: 4-6 meses revisión
-  - OA: Sí, sin costo publicación
-
-**Especializadas**:
-- **Memorias del Instituto de Investigaciones en Ciencias de la Salud**
-- **Población y Desarrollo** (UNA)
-- **Revista Paraguaya de Reumatología**
-
-**Acceso Abierto Latinoamericano**:
-- **SciELO Paraguay**: scielo.org.py
-- **Redalyc**: redalyc.org
-
-### Soporte de Escritura en FPUNA
-
-**Biblioteca Central**:
-- Talleres de redacción científica (semestrales)
-- Asistencia con Zotero/Mendeley
-- Revisión de formato de referencias
-
-**Instituto de Investigaciones**:
-- Asesoría en escritura de proyectos/papers
-- Email: investigacion@fpuna.edu.py
+# Review response
+opencode "Generate response to reviewer comments: @attach reviews.md with manuscript @attach paper.md"
+```
 
 ---
 
-## 📺 Recommended YouTube Resources
+## 🎯 Module Completion Checklist
 
-**Visualiza estos videos para escribir papers académicos de calidad profesional**:
+- [ ] Complete paper generated in IMRaD format
+- [ ] Automatic citation system implemented
+- [ ] Academic style enhanced and refined
+- [ ] Paper formatted for target journal
+- [ ] Submission package prepared
+- [ ] Peer review response created
+- [ ] Assessment submitted (70+ points)
 
-### 🔗 Video 1: Academic Paper Structure - IMRaD Format Mastery
-- **Título**: Estructura de Papers Académicos - Formato IMRaD Profesional
-- **Canal**: Caitlin Aktinson & Dr. Suchitra Mathyssen
-- **Duración**: 125 minutos
-- **Contenido**: Introducción (gap identification), Métodos (reproducibilidad), Resultados (objetividad), Discusión (impacto), Abstract efectivo
-- **Link**: https://www.youtube.com/watch?v=6t7C1yG_9h8
-- **Por qué verlo**: La estructura IMRaD es ESTÁNDAR global - escribir mal IMRaD = rechazo automático de journal
-
-### 🔗 Video 2: Academic Writing with AI - ChatGPT, Grammarly & Enhancing Your Voice
-- **Título**: Escritura Académica Asistida por IA - Herramientas Modernas 2024
-- **Canal**: The Productive Academic
-- **Duración**: 110 minutos
-- **Contenido**: ChatGPT para draft inicial, Grammarly para gramática, Hemingway para claridad, mantener voz académica, ética en uso de IA
-- **Link**: https://www.youtube.com/watch?v=oQfLhpjDaMs
-- **Por qué verlo**: IA acelera escritura 50-70% pero requiere CRITERIO - aprende cuándo es apropiado delegar vs escribir vos
-
-### 🔗 Video 3: LaTeX & Professional Paper Formatting - Publication-Ready Documents
-- **Título**: LaTeX y Formato Profesional - Documentos Listos para Publicación
-- **Canal**: Dr. Edith Cowan / Overleaf
-- **Duración**: 115 minutos
-- **Contenido**: Introducción LaTeX, plantillas de papers, ecuaciones, tablas, figuras, bibliografía automática, compilación en Overleaf
-- **Link**: https://www.youtube.com/watch?v=VTH5xj60XLIM
-- **Por qué verlo**: LaTeX es OBLIGATORIO en ciencias duras (Math, Physics, CS) - papers en Word NO se aceptan en los mejores journals
+**🚀 Ready for Module 5: Presentation & Publication with AI!**
 
 ---
 
-## Próximos Pasos
-
-Una vez que domines redacción académica:
-
-**Módulo 5: Presentación y Publicación** → Someter tu paper, presentar en conferencias
-
----
-
-## Reflexión Final
-
-**Escribir NO es talento innato - es HABILIDAD que se desarrolla con práctica.**
-
-Cada draft es mejor que el anterior. La IA puede acelerar la revisión, pero VOS sos el autor que:
-
-✅ Piensa las ideas originales  
-✅ Interpreta los resultados con contexto  
-✅ Argumenta la contribución  
-✅ Se responsabiliza del contenido
-
-**La IA es tu editor asistente, NO tu co-autor.**
-
----
-
-**¿Preguntas?** Consulta con tu instructor o en Slack #research-academia-2026
-
-**Próximo módulo:** [05 - Presentación y Publicación](./05-presentacion-publicacion.md)
+*Module 4 - Academic Writing with AI - FPUNA 2026*
