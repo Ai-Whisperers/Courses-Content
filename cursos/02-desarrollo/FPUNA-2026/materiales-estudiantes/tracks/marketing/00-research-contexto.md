@@ -1,12 +1,12 @@
-# 🎯 Módulo 00: Research + Contexto Organizado
+# 🎯 Módulo 00: Autoanálisis + Contexto Organizado
 
 ## 🚨 OBLIGATORIO: Hacer esto PRIMERO antes de cualquier módulo
 
-Este módulo establece la **Fuente de Verdad** de tu proyecto. Investiga, recopila y organiza toda la información del negocio en una estructura de archivos clara.
+Este módulo establece la **Fuente de Verdad** de tu perfil profesional. Analiza, recopila y organiza toda tu información profesional en una estructura de archivos clara.
 
 **Tiempo total:** 30-45 minutos  
-**Resultado:** Carpeta `contexto/` con toda la información organizada  
-**Herramienta:** OpenCode + Navegador web
+**Resultado:** Carpeta `contexto/` con toda tu información profesional organizada  
+**Herramienta:** OpenCode + Autoreflexión profesional
 
 ---
 
@@ -15,185 +15,210 @@ Este módulo establece la **Fuente de Verdad** de tu proyecto. Investiga, recopi
 Al terminar este módulo tendrás esta estructura:
 
 ```
-proyecto-marketing/
+perfil-profesional/
 └── contexto/
     ├── 01-identidad/
-    │   ├── marca.md
+    │   ├── perfil-profesional.md
     │   ├── mision-vision.md
     │   ├── valores.md
     │   └── propuesta-valor.md
-    ├── 02-audiencia/
-    │   ├── cliente-ideal.md
-    │   ├── segmentos.md
-    │   └── journey.md
-    ├── 03-producto/
-    │   ├── servicios.md
-    │   ├── precios.md
-    │   └── diferenciadores.md
-    ├── 04-mercado/
-    │   ├── competencia.md
+    ├── 02-experiencia/
+    │   ├── experiencia-laboral.md
+    │   ├── educacion-formal.md
+    │   ├── habilidades.md
+    │   └── logros.md
+    ├── 03-mercado/
+    │   ├── industria.md
     │   ├── tendencias.md
     │   └── oportunidades.md
-    ├── 05-digital/
-    │   ├── redes-sociales.md
-    │   ├── web.md
-    │   └── analisis.md
-    └── 06-mensajes/
-        ├── tono-voz.md
+    ├── 04-diferenciadores/
+    │   ├── fortalezas.md
+    │   ├── proyectos-destacados.md
+    │   └── testimonios.md
+    ├── 05-objetivos/
+    │   ├── carrera.md
+    │   ├── metas-corto-plazo.md
+    │   └── metas-largo-plazo.md
+    └── 06-comunicacion/
+        ├── tono-profesional.md
         ├── palabras-clave.md
         └── mensajes-clave.md
 ```
 
 ---
 
-## FASE 1: Research Digital (10-15 minutos)
+## FASE 1: Autoanálisis Profesional (10-15 minutos)
 
-### ¿Qué buscar?
+### ¿Qué analizar?
 
-Si el negocio YA TIENE presencia digital (redes, web, etc.), investiga antes de preguntar.
+Analiza tu perfil profesional actual (CV, LinkedIn, experiencia, proyectos) antes de crear tu estrategia.
 
-### Prompt 1: Análisis de Redes Sociales
+### Prompt 1: Análisis de Perfil Profesional Actual
 
-**¿Cuándo usar?** Cuando el cliente tiene Instagram/Facebook activos.
+**¿Cuándo usar?** Cuando tienes un CV actual, LinkedIn, o alguna experiencia laboral.
 
 #### 📝 Prompt:
 ```
-Voy a darte información de las redes sociales de un negocio. Analízalas y extrae insights clave.
+Voy a darte información de mi perfil profesional actual. Analízala y extrae insights clave.
 
 DATOS DE ENTRADA:
-- Instagram: @[USUARIO] ([LINK])
-- Facebook: [NOMBRE] ([LINK])
-- Otras redes: [LISTA]
+- CV actual: [adjuntar o describir]
+- LinkedIn: [URL si tiene]
+- Experiencia laboral: [resumir]
+- Educación: [resumir]
 
 ANALIZA Y EXTRAÉ:
 
-1. **Identidad Visual**
-   - Paleta de colores dominante
-   - Estilo fotográfico (profesional, amateur, lifestyle)
-   - Consistencia visual (sí/no)
+1. **Identidad Profesional Actual**
+   - Áreas de especialidad
+   - Nivel de experiencia (junior/mid/senior)
+   - Industrias donde trabajaste
+   - Consistencia en la narrativa
 
-2. **Tono de Voz Actual**
+2. **Tono de Voz Profesional**
    - Formal vs Casual
-   - Uso de emojis (mucho/poco/nada)
-   - Jerga específica que usan
-   - Tipo de humor (si aplica)
+   - Técnico vs Generalista
+   - Lenguaje que usas para describirte
+   - Como presentas tus logros
 
-3. **Contenido que Publican**
-   - Categorías de posts (producto, lifestyle, educativo, etc.)
-   - Frecuencia de publicación
-   - Engagement (alto/medio/bajo basado en likes/comentarios)
+3. **Experiencia Documentada**
+   - Categorías de experiencia (técnica, gestión, etc.)
+   - Evolución profesional
+   - Gaps temporales
+   - Cambios de industria
 
-4. **Mensajes Recurrentes**
-   - Frases que repiten
-   - Hashtags que usan siempre
-   - Temas principales
+4. **Logros y Resultados**
+   - Métricas cuantificables
+   - Impacto documentado
+   - Reconocimientos
+   - Proyectos destacados
 
 5. **Gaps o Problemas**
-   - Inconsistencias
-   - Falta de claridad
-   - Oportunidades de mejora
+   - Experiencia no documentada
+   - Logros sin cuantificar
+   - Falta de claridad en propuesta de valor
+   - Inconsistencias en la narrativa
 
-6. **Lo que Hacen Bien**
-   - Fortalezas identificadas
+6. **Lo que Haces Bien**
+   - Fortalezas profesionales identificadas
+   - Experiencia sólida
 
 FORMATO: Lista clara y concisa por punto.
 ```
 
-#### 📋 Lista de Verificación - Research:
+#### 📋 Lista de Verificación - Autoanálisis:
 Antes de ejecutar, revisa:
-- [ ] Instagram del negocio (últimos 12 posts)
-- [ ] Facebook (últimas 10 publicaciones)
-- [ ] Google My Business (reseñas, fotos)
-- [ ] Web (si existe - homepage, about, servicios)
-- [ ] Competidores (2-3 similares en la zona)
+- [ ] Tu CV actual (última versión)
+- [ ] Perfil LinkedIn (si tienes)
+- [ ] Lista de empleos anteriores con fechas
+- [ ] Educación formal (títulos, certificaciones)
+- [ ] Proyectos destacados o logros importantes
+- [ ] Habilidades técnicas y blandas
+- [ ] Objetivos de carrera (a corto y largo plazo)
 
 ---
 
-### Prompt 2: Análisis de Web + SEO
+### Prompt 2: Análisis de Habilidades y Competencias
 
-**¿Cuándo usar?** Si tienen sitio web.
+**¿Cuándo usar?** Si quieres identificar y documentar tus habilidades profesionales.
 
 #### 📝 Prompt:
 ```
-Analiza esta información del sitio web del cliente:
+Analiza mi información profesional actual y extrae mis competencias:
 
-URL: [LINK_WEB]
+DATOS DE ENTRADA:
+- Experiencia laboral: [listar empleos]
+- Educación: [listar estudios]
+- Proyectos: [describir proyectos importantes]
+- Tecnologías/herramientas: [listar]
 
-SECCIONES ANALIZADAS:
-- Home: [DESCRIPCIÓN]
-- About/Nosotros: [DESCRIPCIÓN]
-- Servicios/Productos: [DESCRIPCIÓN]
-- Contacto: [INFO]
+EXTRAÉ Y CLASIFICA:
 
-EXTRAÉ:
+1. **Habilidades Técnicas (Hard Skills)**
+   - Tecnologías dominadas
+   - Herramientas/software
+   - Metodologías
+   - Lenguajes de programación (si aplica)
+   - Nivel de dominio (básico/medio/avanzado/experto)
 
-1. **Propuesta de Valor Actual**
-   - ¿Qué prometen?
-   - ¿Es claro?
+2. **Habilidades Blandas (Soft Skills)**
+   - Comunicación
+   - Liderazgo
+   - Trabajo en equipo
+   - Resolución de problemas
+   - Adaptabilidad
 
-2. **Palabras Clave que Usan**
-   - Términos repetidos
-   - Jerga de la industria
+3. **Competencias Transferibles**
+   - Habilidades aplicables en múltiples industrias
+   - Gestión de proyectos
+   - Análisis de datos
+   - Planificación estratégica
 
-3. **Identidad de Marca en Web**
-   - Personalidad reflejada
-   - Profesionalismo (alto/medio/bajo)
+4. **Certificaciones y Formación**
+   - Cursos completados
+   - Certificaciones vigentes
+   - Conocimientos especializados
 
-4. **Call to Actions (CTAs)**
-   - Qué piden a los visitantes
-   - Fuerza del CTA (claro/ambiguo)
+5. **Gaps Identificados**
+   - Habilidades que faltan en tu mercado objetivo
+   - Certificaciones que necesitarías
+   - Áreas de mejora
 
-5. **Gaps en la Web**
-   - Info que falta
-   - Secciones confusas
-   - Oportunidades de mejora
+6. **Fortalezas Diferenciadoras**
+   - Combinaciones únicas de habilidades
+   - Experiencia especializada
 
-6. **Fortalezas**
-   - Lo que hacen bien online
+FORMATO: Tabla clara con categorías y niveles.
 ```
 
 ---
 
-### Prompt 3: Análisis de Competencia
+### Prompt 3: Análisis de Mercado Laboral y Posicionamiento
 
-**¿Cuándo usar?** Siempre - busca 2-3 competidores similares.
+**¿Cuándo usar?** Siempre - busca 2-3 perfiles profesionales similares a tu objetivo.
 
 #### 📝 Prompt:
 ```
-Compara a este negocio con sus competidores:
+Compara mi perfil profesional con otros profesionales en mi campo:
 
-NEGOCIO CLIENTE:
-- Nombre: [NOMBRE]
-- Redes: @[USUARIO]
-- Web: [LINK]
+MI PERFIL:
+- Cargo/posición actual: [DESCRIPCIÓN]
+- Experiencia: [AÑOS]
+- Industria: [INDUSTRIA]
+- Habilidades clave: [LISTA]
 
-COMPETIDOR 1: [NOMBRE]
-- Redes: @[USUARIO]
+PERFIL REFERENCIA 1: [Profesional similar]
+- Cargo: [POSICIÓN]
+- Experiencia: [AÑOS]
 - Fortalezas: [LISTA]
-- Debilidades: [LISTA]
+- Debilidades observadas: [LISTA]
 
-COMPETIDOR 2: [NOMBRE]
-- Redes: @[USUARIO]
+PERFIL REFERENCIA 2: [Profesional similar]
+- Cargo: [POSICIÓN]
+- Experiencia: [AÑOS]
 - Fortalezas: [LISTA]
-- Debilidades: [LISTA]
+- Debilidades observadas: [LISTA]
 
 ANÁLISIS COMPARATIVO:
 
-1. **Posicionamiento**
-   - ¿Cómo se diferencian?
-   - Nicho de cada uno
+1. **Posicionamiento Profesional**
+   - ¿Cómo me diferencio?
+   - Nicho especializado de cada uno
 
-2. **Estrategia de Contenido**
-   - Qué tipo de contenido publica cada uno
-   - Cuál tiene mejor engagement
+2. **Estrategia de Carrera**
+   - Trayectoria profesional de cada uno
+   - Movilidad entre industrias/roles
 
 3. **Oportunidades Detectadas**
-   - Qué no están haciendo los competidores
-   - Espacio en el mercado
+   - Qué habilidades demandan en el mercado
+   - Gaps que puedo cubrir
+   - Posiciones que puedo alcanzar
 
-4. **Ventaja Competitiva del Cliente**
-   - Qué puede destacar vs ellos
-   - Propuesta única
+4. **Mi Ventaja Competitiva**
+   - Qué me hace único vs ellos
+   - Propuesta de valor profesional
+
+FORMATO: Análisis comparativo claro.
 ```
 
 ---
@@ -202,123 +227,131 @@ ANÁLISIS COMPARATIVO:
 
 Ahora complementa la investigación con información directa del cliente.
 
-### Prompt 4: Formulario de Contexto Base
+### Prompt 4: Formulario de Contexto Profesional Base
 
 #### 📝 Prompt:
 ```
-Basándome en la investigación previa, voy a completar información adicional del negocio. 
+Basándome en el análisis previo, voy a completar información adicional de mi perfil profesional. 
 
 INVESTIGACIÓN PREVIA (resumen):
 [PÉGAR RESUMEN DE LOS 3 PROMPTS ANTERIORES]
 
-INFORMACIÓN ADICIONAL DEL CLIENTE:
+INFORMACIÓN PROFESIONAL ADICIONAL:
 
-**Datos Básicos:**
+**Datos Personales:**
 - Nombre completo: [NOMBRE]
-- Año de fundación: [AÑO]
-- Ubicación exacta: [DIRECCIÓN]
-- Horarios: [HORARIO]
-- Teléfono/WhatsApp: [NUMERO]
-- Email: [EMAIL]
+- Ubicación: [CIUDAD/PAÍS]
+- Email profesional: [EMAIL]
+- LinkedIn: [URL]
+- Portafolio/web: [URL]
 
-**El Negocio:**
-- Qué venden exactamente: [DESCRIPCIÓN DETALLADA]
-- Precios: [RANGO O LISTA]
-- Materiales/origen: [SI APLICA]
-- Certificaciones: [LISTA]
+**Mi Trayectoria:**
+- Años de experiencia total: [NÚMERO]
+- Industrias donde trabajé: [LISTA]
+- Evolución de roles: [DESCRIPCIÓN]
+- Logros más importantes: [LISTA]
 
-**El Dueño/Equipo:**
-- Nombre del fundador/equipo: [NOMBRES]
-- Historia personal: [BREVE HISTORIA]
-- Por qué empezaron: [MOTIVACIÓN]
+**Educación:**
+- Títulos universitarios: [LISTA]
+- Certificaciones relevantes: [LISTA]
+- Cursos especializados: [LISTA]
+- Formación continua: [DESCRIPCIÓN]
 
-**Clientes:**
-- Quiénes compran: [DESCRIPCIÓN]
-- Por qué compran: [MOTIVACIÓN]
-- Feedback común: [COMENTARIOS]
+**Proyectos Destacados:**
+- Proyecto 1: [DESCRIPCIÓN + IMPACTO]
+- Proyecto 2: [DESCRIPCIÓN + IMPACTO]
+- Proyecto 3: [DESCRIPCIÓN + IMPACTO]
 
 **Contexto Paraguay:**
-- Origen de materias primas: [LOCAL/NACIONAL/IMPORTADO]
-- Mano de obra: [PARAGUAYA/OTRA]
-- Conexión con comunidad: [CÓMO PARTICIPAN]
+- Experiencia local/internacional: [DESCRIPCIÓN]
+- Conexión con mercado PY/MERCOSUR: [DESCRIPCIÓN]
+- Idiomas: [LISTA CON NIVEL]
 
-**Objetivos:**
-- Qué quieren lograr este año: [METAS]
-- Problemas actuales: [DESAFÍOS]
-- Presupuesto aproximado: [RANGO]
+**Objetivos Profesionales:**
+- Posición objetivo: [CARGO/INDUSTRIA]
+- Metas a 1 año: [LISTA]
+- Metas a 5 años: [LISTA]
+- Salario esperado: [RANGO]
 
 PROCESA ESTO Y:
-1. Identifica GAPS (info que falta o es vaga)
+1. Identifica GAPS en tu perfil (info que falta)
 2. Haz preguntas específicas para completar
-3. Valida la consistencia de toda la info
+3. Valida la consistencia de toda tu información profesional
 ```
 
 ---
 
-## FASE 3: Generación de Archivos de Contexto (10-15 minutos)
+## FASE 3: Generación de Archivos de Contexto Profesional (10-15 minutos)
 
 Ahora generarás los archivos individuales en la estructura de carpetas.
 
-### Prompt 5: Generar Archivos de Identidad
+### Prompt 5: Generar Archivos de Identidad Profesional
 
 #### 📝 Prompt:
 ```
-Basándote en toda la información recopilada (research + contexto), genera estos archivos:
+Basándote en toda la información recopilada (análisis + contexto), genera estos archivos:
 
-## Archivo: contexto/01-identidad/marca.md
+## Archivo: contexto/01-identidad/perfil-profesional.md
 
 ```markdown
-# Identidad de Marca
+# Perfil Profesional
 
-## Nombre
-[Nombre completo y significado]
+## Nombre Completo
+[Nombre profesional y cómo prefieres ser presentado]
 
-## Tagline
-[Frase corta que la define]
+## Tagline Profesional
+[Frase corta que te define profesionalmente]
 
-## Personalidad
-- Adjetivo 1: [Ej: Artesanal]
-- Adjetivo 2: [Ej: Moderno]
-- Adjetivo 3: [Ej: Cálido]
-- Adjetivo 4: [Ej: Profesional]
-- Adjetivo 5: [Ej: Sostenible]
+## Personalidad Profesional
+- Adjetivo 1: [Ej: Analítico]
+- Adjetivo 2: [Ej: Innovador]
+- Adjetivo 3: [Ej: Colaborativo]
+- Adjetivo 4: [Ej: Estratégico]
+- Adjetivo 5: [Ej: Orientado a resultados]
 
-## Historia
-[Historia del origen en 1 párrafo]
+## Resumen Profesional
+[Tu historia profesional en 1 párrafo]
 
-## Significado del Nombre
-[Por qué eligieron ese nombre]
+## Proposición de Valor
+[Qué te hace único como profesional]
+
+## Palabras Clave Profesionales
+- [Palabra 1]
+- [Palabra 2]
+- [Palabra 3]
+- [Palabra 4]
+- [Palabra 5]
 ```
 
 ## Archivo: contexto/01-identidad/propuesta-valor.md
 
 ```markdown
-# Propuesta de Valor
+# Propuesta de Valor Profesional
 
-## Para Quién
-[Cliente ideal específico]
+## Para Qué Empleadores
+[Tipo de empresas/roles donde aportas más valor]
 
-## El Problema
-[Qué problema resuelven]
+## Qué Problemas Resuelves
+[Problemas específicos que sabes resolver]
 
-## La Solución
-[Cómo lo resuelven]
+## Cómo Los Resuelves
+[Tu metodología y enfoque único]
 
 ## Diferencia Clave
-[Por qué elegirlos vs competencia]
+[Por qué elegirte a ti vs otros profesionales]
 
 ## Frase de Propuesta
-[1 oración impactante]
+[1 oración que resume tu valor profesional]
 ```
 
 ## Archivo: contexto/01-identidad/valores.md
 
 ```markdown
-# Valores de Marca
+# Valores Profesionales
 
 1. **[VALOR 1]**
-   - Significado: [Qué significa para ellos]
-   - Se ve en: [Cómo se demuestra]
+   - Significado: [Qué significa para tu trabajo]
+   - Se ve en: [Cómo se demuestra en tu trabajo]
 
 2. **[VALOR 2]**
    - Significado: [Qué significa]
@@ -330,16 +363,16 @@ Basándote en toda la información recopilada (research + contexto), genera esto
 ## Archivo: contexto/01-identidad/mision-vision.md
 
 ```markdown
-# Misión y Visión
+# Misión y Visión Profesional
 
 ## Misión (Presente)
-[Qué hacen hoy y para quién]
+[Qué haces hoy y para qué tipo de organizaciones]
 
 ## Visión (Futuro)
-[Adónde quieren llegar en 5 años]
+[Adónde quieres llegar en 5 años]
 
 ## Propósito (Por qué)
-[Por qué existen más allá del dinero]
+[Por qué haces lo que haces más allá del dinero]
 ```
 
 GENERA estos 4 archivos completos.
@@ -347,86 +380,124 @@ GENERA estos 4 archivos completos.
 
 ---
 
-### Prompt 6: Generar Archivos de Audiencia
+### Prompt 6: Generar Archivos de Experiencia
 
 #### 📝 Prompt:
 ```
-Genera los archivos de audiencia:
+Genera los archivos de experiencia profesional:
 
-## Archivo: contexto/02-audiencia/cliente-ideal.md
-
-```markdown
-# Cliente Ideal (Avatar)
-
-## Demografía
-- Edad: [RANGO]
-- Género: [PREDOMINANTE]
-- Ubicación: [ZONA]
-- Ingresos: [RANGO]
-- Ocupación: [TIPO]
-
-## Psicografía
-- Intereses: [LISTA]
-- Valores: [LISTA]
-- Miedos: [LISTA]
-- Deseos: [LISTA]
-
-## Comportamiento
-- Dónde busca info: [CANALES]
-- Cómo decide: [PROCESO]
-- Qué lo detiene: [OBJECIONES]
-
-## Frases que Dice
-- "[Frase típica 1]"
-- "[Frase típica 2]"
-- "[Frase típica 3]"
-```
-
-## Archivo: contexto/02-audiencia/segmentos.md
+## Archivo: contexto/02-experiencia/experiencia-laboral.md
 
 ```markdown
-# Segmentos de Audiencia
+# Experiencia Laboral
 
-## Segmento 1: [NOMBRE]
-- Descripción: [Quiénes son]
-- Porcentaje: [% del total]
-- Necesidades: [Qué buscan]
-- Mensaje clave: [Qué decirles]
+## Experiencia Actual
+**[Cargo]** - [Empresa]
+- Período: [Fecha inicio] - Presente
+- Ubicación: [Ciudad, País]
+- Responsabilidades clave:
+  • [Responsabilidad 1]
+  • [Responsibilidad 2]
+  • [Responsabilidad 3]
+- Logros cuantificables:
+  • [Logro 1 con métrica]
+  • [Logro 2 con métrica]
+  • [Logro 3 con métrica]
 
-## Segmento 2: [NOMBRE]
-[Repetir estructura]
+## Experiencias Anteriores
+**[Cargo]** - [Empresa]
+- Período: [Fecha inicio] - [Fecha fin]
+- Ubicación: [Ciudad, País]
+- Responsabilidades clave:
+  • [Responsabilidad 1]
+  • [Responsibilidad 2]
+- Logros principales:
+  • [Logro 1]
+  • [Logro 2]
 
-## Segmento 3: [NOMBRE]
-[Repetir estructura]
+[Repetir para empleos anteriores]
 ```
 
-## Archivo: contexto/02-audiencia/journey.md
+## Archivo: contexto/02-experiencia/educacion-formal.md
 
 ```markdown
-# Customer Journey
+# Educación y Formación
 
-## Etapa 1: Conciencia
-- Dónde nos encuentran: [CANALES]
-- Qué piensan: [PENSAMIENTOS]
-- Qué necesitan: [INFORMACIÓN]
+## Educación Formal
+**[Título]** - [Institución]
+- Período: [Año] - [Año]
+- Ubicación: [Ciudad, País]
+- Distinciones: [Menciones/honores]
 
-## Etapa 2: Consideración
-- Qué comparan: [ALTERNATIVAS]
-- Qué preguntan: [DUDAS]
-- Qué los convence: [FACTORES]
+## Certificaciones Profesionales
+1. **[Nombre Certificación]** - [Institución] - [Año]
+2. **[Nombre Certificación]** - [Institución] - [Año]
 
-## Etapa 3: Decisión
-- Trigger de compra: [QUÉ LOS EMPUJA]
-- Objeciones: [QUÉ LOS FRENA]
-- Cómo cerrar: [QUÉ ACCIÓN TOMAN]
+## Cursos y Talleres
+- **[Nombre Curso]** - [Plataforma/Institución] - [Año]
+- **[Nombre Curso]** - [Plataforma/Institución] - [Año]
 
-## Etapa 4: Post-compra
-- Qué esperan: [EXPECTATIVAS]
-- Cómo fidelizar: [NEXT STEPS]
-- Cómo obtener referidos: [RECOMMENDACIONES]
+## Formación Continua
+[Cursos, talleres, congresos, etc.]
 ```
 
-GENERA estos 3 archivos.
+## Archivo: contexto/02-experiencia/habilidades.md
+
+```markdown
+# Habilidades y Competencias
+
+## Habilidades Técnicas (Hard Skills)
+- **[Habilidad 1]**: [Nivel - Básico/Medio/Avanzado/Experto]
+- **[Habilidad 2]**: [Nivel]
+- **[Habilidad 3]**: [Nivel]
+
+## Habilidades Blandas (Soft Skills)
+- **[Skill 1]**: [Breve descripción de cómo la aplicas]
+- **[Skill 2]**: [Breve descripción]
+- **[Skill 3]**: [Breve descripción]
+
+## Herramientas y Tecnologías
+- **[Herramienta 1]**: [Nivel de dominio]
+- **[Herramienta 2]**: [Nivel de dominio]
+- **[Herramienta 3]**: [Nivel de dominio]
+
+## Idiomas
+- **[Idioma 1]**: [Nivel - B1/B2/C1/C2]
+- **[Idioma 2]**: [Nivel]
+```
+
+## Archivo: contexto/02-experiencia/logros.md
+
+```markdown
+# Logros y Proyectos Destacados
+
+## Logros Cuantificables
+1. **[Logro 1]**
+   - Métrica: [Número específico]
+   - Impacto: [Descripción del impacto]
+   - Fecha: [Año/mes]
+
+2. **[Logro 2]**
+   - Métrica: [Número específico]
+   - Impacto: [Descripción del impacto]
+   - Fecha: [Año/mes]
+
+## Proyectos Destacados
+1. **[Nombre Proyecto 1]**
+   - Rol: [Tu rol en el proyecto]
+   - Descripción: [Qué hiciste]
+   - Resultado: [Qué se logró]
+
+2. **[Nombre Proyecto 2]**
+   - Rol: [Tu rol en el proyecto]
+   - Descripción: [Qué hiciste]
+   - Resultado: [Qué se logró]
+
+## Reconocimientos y Premios
+- **[Premio/Reconocimiento]** - [Institución] - [Año]
+```
+
+GENERA estos 4 archivos.
 ```
 
 ---
@@ -780,25 +851,25 @@ GENERA estos 3 archivos.
 
 ### Tu Misión:
 
-1. **Elige un negocio** (real o ficticio de Paraguay)
+1. **Analiza tu perfil profesional** actual
 2. **Crea la carpeta** `contexto/` en tu proyecto
-3. **Ejecuta los 10 prompts** en orden:
-   - Prompts 1-3: Research (si tienen presencia digital)
-   - Prompt 4: Ingesta base
-   - Prompts 5-10: Generación de archivos
+3. **Ejecuta los prompts** en orden:
+   - Prompts 1-3: Autoanálisis profesional
+   - Prompt 4: Contexto profesional base
+   - Prompts 5-10: Generación de archivos de marca personal
 
 4. **Guarda cada resultado** en el archivo correspondiente
 
-### Ejemplo Práctico: "Helados Artesanales Ñande" (ficticio, Asunción)
+### Ejemplo Práctico: "Ana García - Desarrolladora Web" (ficticio, Asunción)
 
-**Research rápido:**
-- Instagram: @heladosnande (ficticio)
-- 15K seguidores
-- Postean 3x semana
-- Colores: Amarillo, Verde, Café
-- Tono: Divertido, Familiar, Paraguayo
+**Análisis rápido:**
+- 3 años de experiencia como desarrolladora frontend
+- Trabajó en 2 startups locales
+- Certificaciones en React y AWS
+- Proyecto voluntario: sitio web para ONG local
+- Objetivo: Posición senior en empresa internacional remota
 
-**Generar los 18 archivos de contexto** con esta información base.
+**Generar los 18 archivos de contexto profesional** con esta información base.
 
 ---
 
@@ -806,28 +877,29 @@ GENERA estos 3 archivos.
 
 Tu carpeta `contexto/` debe contener:
 - [ ] 01-identidad/
-  - [ ] marca.md
+  - [ ] perfil-profesional.md
   - [ ] mision-vision.md
   - [ ] valores.md
   - [ ] propuesta-valor.md
-- [ ] 02-audiencia/
-  - [ ] cliente-ideal.md
-  - [ ] segmentos.md
-  - [ ] journey.md
-- [ ] 03-producto/
-  - [ ] servicios.md
-  - [ ] precios.md
-  - [ ] diferenciadores.md
-- [ ] 04-mercado/
-  - [ ] competencia.md
+- [ ] 02-experiencia/
+  - [ ] experiencia-laboral.md
+  - [ ] educacion-formal.md
+  - [ ] habilidades.md
+  - [ ] logros.md
+- [ ] 03-mercado/
+  - [ ] industria.md
   - [ ] tendencias.md
   - [ ] oportunidades.md
-- [ ] 05-digital/
-  - [ ] redes-sociales.md
-  - [ ] web.md
-  - [ ] analisis.md
-- [ ] 06-mensajes/
-  - [ ] tono-voz.md
+- [ ] 04-diferenciadores/
+  - [ ] fortalezas.md
+  - [ ] proyectos-destacados.md
+  - [ ] testimonios.md
+- [ ] 05-objetivos/
+  - [ ] carrera.md
+  - [ ] metas-corto-plazo.md
+  - [ ] metas-largo-plazo.md
+- [ ] 06-comunicacion/
+  - [ ] tono-profesional.md
   - [ ] palabras-clave.md
   - [ ] mensajes-clave.md
 
@@ -837,10 +909,10 @@ Tu carpeta `contexto/` debe contener:
 
 ## 📋 Cómo Usar Esta Estructura en los Próximos Módulos
 
-Al inicio de CADA módulo (01-08), ejecuta este prompt:
+Al inicio de CADA módulo (01-04), ejecuta este prompt:
 
 ```
-Leeré el contexto completo del proyecto. Dame un momento para procesarlo.
+Leeré el contexto completo de mi perfil profesional. Dame un momento para procesarlo.
 
 [Copiar y pegar el CONTENIDO COMPLETO de todos los archivos de la carpeta contexto/]
 
@@ -849,13 +921,13 @@ Leeré el contexto completo del proyecto. Dame un momento para procesarlo.
 CONTEXT CARGADO ✅
 
 Ahora comprendo:
-- Quién es la marca
-- A quién le venden
-- Qué los diferencia
-- Cómo se comunican
-- Su presencia digital actual
+- Quién soy profesionalmente
+- Mi experiencia y habilidades
+- Mis logros y diferenciadores
+- Mis objetivos de carrera
+- Mi propuesta de valor
 
-Estoy listo para crear [acción del módulo actual] consistente con esta identidad.
+Estoy listo para crear [acción del módulo actual] consistente con mi marca personal.
 ```
 
 **Ventaja:** En lugar de un archivo largo y difuso, tienes información segmentada y fácil de actualizar.
@@ -864,20 +936,18 @@ Estoy listo para crear [acción del módulo actual] consistente con esta identid
 
 ## 🚀 Ventajas de esta Estructura
 
-1. **Modular:** Actualiza solo lo que cambia
-2. **Clara:** Cada archivo tiene un propósito específico
-3. **Escalable:** Agrega más archivos si es necesario
-4. **Profesional:** Estructura de agencia de marketing
-5. **Reutilizable:** Usa en cualquier proyecto futuro
-
----
+1. **Modular:** Actualiza solo lo que cambia en tu carrera
+2. **Clara:** Cada archivo tiene un propósito profesional específico
+3. **Escalable:** Agrega más habilidades y logros con el tiempo
+4. **Profesional:** Estructura de marca personal
+5. **Reutilizable:** Usa para cualquier aplicación laboral o proyecto
 
 ## Siguiente Paso
 
-Con tu carpeta `contexto/` completa, ve al **Módulo 01: Crear Contenido**.
+Con tu carpeta `contexto/` completa, ve al **Módulo 01: Optimización de CV y Experiencia**.
 
-En el Módulo 01, usa el prompt de "Cargar Contexto" mostrado arriba antes de ejecutar los prompts de contenido.
+En el Módulo 01, usa el prompt de "Cargar Contexto" mostrado arriba antes de ejecutar los prompts de optimización.
 
 ---
 
-*Módulo 00 - Research + Contexto Organizado | FPUNA 2026 | AI Whisperers*
+*Módulo 00 - Autoanálisis + Contexto Organizado | FPUNA 2026 | Marketing Profesional con IA*

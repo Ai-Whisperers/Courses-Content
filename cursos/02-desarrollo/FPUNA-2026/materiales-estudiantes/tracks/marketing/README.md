@@ -1,28 +1,12 @@
-# Marketing con IA - Solo Prompts, Resultados Reales
+# Marketing Personal con IA - Marketá tu Carrera
 
-**FPUNA Verano 2026 | Track 04: Marketing, Negocios y Turismo**
+**FPUNA Verano 2026 | Track 04: Marketing Personal y Desarrollo Profesional**
 
 ---
 
 ## ⚠️ PRIMER PASO OBLIGATORIO: Módulo 00
 
-**NO SALTES ESTE PASO.** Antes de tocar cualquier otro módulo, debes completar el Módulo 00. Sin contexto estructurado en carpetas, los prompts no funcionan al máximo.
-
-El Módulo 00 ahora incluye **FASE DE INVESTIGACIÓN**: Analizamos la presencia digital del negocio (web, redes, reviews) y creamos **18 archivos organizados en 6 carpetas** - no un solo archivo gigante, sino un sistema profesional tipo agencia donde puedes actualizar secciones individuales sin regenerar todo.
-
-[→ Ir al Módulo 00 ahora](./modules/00-ingesta-contexto-validacion.md)
-
----
-
-## ¿Qué es esto?
-
-**Cero teoría. 100% prompts listos para copiar y pegar.**
-
-9 módulos prácticos que te llevan de la investigación al resultado. No necesitas saber programar. No necesitas conocimientos previos de marketing digital. Solo necesitas investigar la presencia digital del negocio, organizar el contexto en carpetas, y ejecutar prompts probados.
-
-**Metodología: Research → Contexto Estructurado → Prompt → Resultado → Usar**
-
-> 💡 **Lo nuevo**: Investigamos primero (web, redes, reviews), luego organizamos 18 archivos en 6 carpetas - sistema profesional tipo agencia donde actualizás secciones individuales sin regenerar todo.
+**NO SALTES ESTE PASO.** Antes de tocar cualquier otro módulo
 
 ---
 
@@ -30,37 +14,33 @@ El Módulo 00 ahora incluye **FASE DE INVESTIGACIÓN**: Analizamos la presencia 
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│ 1. RESEARCH     │────▶│ 2. STRUCTURED   │────▶│  3. PROMPT      │────▶│  4. RESULT      │
-│ Investiga web,  │     │ CONTEXT         │     │  Copia y pega   │     │  Material listo │
-│ redes, reviews  │     │ 18 files en 6   │     │  prompts        │     │  para usar      │
-│ del negocio     │     │ carpetas        │     │                 │     │                 │
+│ 1. AUTOANÁLISIS │────▶│ 2. STRUCTURED   │────▶│  3. PROMPT      │────▶│  4. RESULT      │
+│ Analiza tu     │     │ CONTEXT         │     │  Copia y pega   │     │  Material listo │
+│ experiencia,    │     │ 18 files en 6   │     │  prompts        │     │  para tu carrera │
+│ habilidades     │     │ carpetas        │     │                 │     │                 │
 └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-1. **Research** (Módulo 00): Investigamos la presencia digital del negocio (sitio web, redes sociales, Google Reviews, competidores)
-2. **Contexto Estructurado** (Módulo 00): Creamos 18 archivos organizados en 6 carpetas - sistema profesional tipo agencia donde actualizás secciones individuales sin regenerar todo
-3. **Ejecuta prompts** (Módulos 01-08): Copia prompts probados, obtén resultados inmediatos
-4. **Usa los resultados**: Contenido, campañas, análisis y estrategias listos para implementar
+1. **Autoanálisis** (Módulo 00): Analizamos tu perfil profesional (experiencia, habilidades, logros, objetivos de carrera)
+2. **Contexto Estructurado** (Módulo 00): Creamos 18 archivos organizados en 6 carpetas - sistema profesional de marca personal donde actualizás secciones individuales sin regenerar todo
+3. **Ejecuta prompts** (Módulos 01-04): Copia prompts probados, obtené resultados inmediatos para tu desarrollo profesional
+4. **Usa los resultados**: CV optimizado, perfil profesional, portafolio web, estrategia de carrera lista para aplicar
 
 ---
 
-## Los 9 Módulos
+## Los 5 Módulos
 
 Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
 | Módulo | Tema | Tiempo | Qué obtienes |
 |--------|------|--------|--------------|
-| **[00](./modules/00-ingesta-contexto-validacion.md)** | **Research + Contexto Organizado** | 60 min | Investigación digital + 18 archivos en 6 carpetas organizadas |
-| **[01](./modules/01-crear-contenido-30-dias.md)** | Crear 30 días de Contenido en 30 min | 30 min | Calendario editorial completo con 30+ piezas |
-| **[02](./modules/02-campanas-publicitarias.md)** | Campañas Publicitarias con Meta Ads | 50 min | Estructura de campaña, audiencias, creativos, presupuesto |
-| **[03](./modules/03-atencion-cliente-automatizada.md)** | Atención al Cliente Automatizada | 45 min | Chatbot WhatsApp, respuestas automáticas, FAQs |
-| **[04](./modules/04-turismo-paquetes-experiencias.md)** | Turismo: Paquetes y Experiencias | 50 min | Descripción de tours, itinerarios, pricing |
-| **[05](./modules/05-analisis-competencia-mercado.md)** | Análisis de Competencia y Mercado | 40 min | Matriz competitiva, oportunidades detectadas |
-| **[06](./modules/06-copywriting-ventas.md)** | Copywriting para Ventas | 40 min | Textos persuasivos, emails, descripciones de producto |
-| **[07](./modules/07-hotelaria-revenue-management.md)** | Hotelaría y Revenue Management | 50 min | Estrategia de precios, forecasting, upselling |
-| **[08](./modules/08-estrategia-planificacion-anual.md)** | Estrategia y Planificación Anual | 60 min | Plan de marketing anual completo |
+| **[00](./00-research-contexto.md)** | **Autoanálisis + Contexto Organizado** | 60 min | Análisis profesional + 18 archivos en 6 carpetas organizadas |
+| **[01](./01-optimizacion-cv.md)** | Optimización de CV y Traducción de Experiencia | 45 min | CV profesional optimizado con experiencia bien documentada |
+| **[02](./02-marca-personal-storytelling.md)** | Marca Personal y Storytelling Profesional | 40 min | Narrativa profesional coherente y diferenciadora |
+| **[03](./03-presencia-profesional.md)** | LinkedIn y Presencia Profesional Digital | 50 min | Perfil optimizado y estrategia de networking profesional |
+| **[04](./04-folyo-cv-webpage.md)** | **DEMO Folyo: CV como Página Web** | 60 min | **Tu propio CV webpage interactivo con Folyo** |
 
-**Tiempo total:** 6-7 horas de trabajo concentrado.
+**Tiempo total:** 4-5 horas de trabajo concentrado.
 
 ---
 
@@ -68,51 +48,56 @@ Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
 **Resultados tangibles que puedes usar hoy:**
 
-### Marketing Digital
-- Calendario de 30 días de contenido para redes sociales
-- Campaña de Meta Ads completa (audiencias, creativos, copy, presupuesto)
-- Sistema de atención al cliente automatizado vía WhatsApp
-- Copy persuasivo para emails, landing pages y anuncios
-- Análisis de competidores con oportunidades identificadas
+### Desarrollo Profesional
+- CV profesional optimizado y bien estructurado
+- Experiencia traducida en logros cuantificables
+- Perfil LinkedIn completo y estratégico
+- Portafolio digital profesional (CV webpage con Folyo)
+- Estrategia de networking y búsqueda laboral
 
-### Turismo y Hotelería
-- Descripciones de paquetes turísticos optimizadas para ventas
-- Itinerarios detallados con valor agregado
-- Estrategia de revenue management con pricing dinámico
-- Plan de marketing anual específico para temporada alta/baja
+### Marca Personal
+- Narrativa profesional coherente y memorable
+- Propuesta de valor única y diferenciadora
+- Presencia digital profesional consistente
+- Historial de logros documentado y presentable
+- Contenido para redes profesionales
 
-### Negocios Locales
-- Perfil completo de cliente ideal para Paraguay/MERCOSUR
-- Análisis de mercado local con datos relevantes
-- Materiales adaptados al contexto cultural y económico
+### Herramientas Prácticas
+- Templates para documentos profesionales
+- Prompts para adaptar tu experiencia a cualquier oportunidad
+- Estrategias de entrevista y networking
+- Sistema de organización profesional permanente
+- Acceso anticipado a Folyo - transforma tu CV en webpage
 
 ---
 
 ## ¿Para quién es esto?
 
-✅ **Emprendedores** que necesitan marketing profesional sin presupuesto de agencia
+✅ **Estudiantes universitarios** que buscan sus primeras oportunidades profesionales
 
-✅ **Community managers** que quieren producir más en menos tiempo
+✅ **Profesionales en transición** que quieren reposicionarse en el mercado
 
-✅ **Gerentes de hoteles/tour operadores** buscando automatizar atención al cliente
+✅ **Graduados recientes** que necesitan destacar su experiencia académica
 
-✅ **Estudiantes de marketing** que quieren skills prácticos, no teoría
+✅ **Profesionales con experiencia** que quieren optimizar su carrera
 
-✅ **Dueños de negocios locales** en Paraguay que quieren crecer con IA
+✅ **Desarrolladores y técnicos** que quieren mejorar su comunicación profesional
 
-❌ **No es para:** Gente que busca certificaciones teóricas o cursos largos sin aplicación inmediata.
+✅ **Cualquier persona** que quiera controlar cómo son percibidos profesionalmente
+
+❌ **No es para:** Gente que busca certificaciones teóricas sin aplicación inmediata a su carrera.
 
 ---
 
 ## Contexto Paraguay / MERCOSUR
 
-**Todo el contenido está pensado para el mercado paraguayo:**
+**Todo el contenido está pensado para el mercado laboral paraguayo:**
 
-- Prompts adaptados al español paraguayo y expresiones locales
-- Consideraciones de IVA MERCOSUR en precios y campañas
-- Ejemplos de negocios locales (comercios en Mercado 4, hoteles en Encarnación, agencias en Asunción)
-- Oportunidades de mercado: turismo de eventos (CONMEBOL), eco-turismo (Chaco, Pantanal), turismo cultural (Misiones Jesuíticas)
-- Referencias a herramientas accesibles en Paraguay (WhatsApp Business, Meta Ads, Google Business Profile)
+- Prompts adaptados al español paraguayo y expresiones profesionales locales
+- Consideraciones del mercado laboral paraguayo y MERCOSUR
+- Ejemplos de perfiles profesionales de diferentes industrias locales (IT, banca, manufactura, servicios)
+- Oportunidades: mercado remoto para talento paraguayo, empresas multinacionales, startups locales
+- Referencias a herramientas profesionales accesibles en Paraguay (LinkedIn, portafolios digitales, networking profesional)
 
 ---
 
@@ -120,26 +105,26 @@ Cada módulo incluye prompts probados, ejemplos reales y tiempo estimado.
 
 - Una computadora con internet
 - Cuenta gratuita de Claude (claude.ai) o ChatGPT
-- Información básica de tu negocio (nombre, productos/servicios, ubicación)
-- **0 código. 0 habilidades técnicas. 0 conocimientos previos de marketing.**
+- Tu información profesional actual (CV, experiencia laboral, estudios)
+- **0 código. 0 habilidades técnicas. 0 conocimientos previos de marketing personal.**
 
 ---
 
 ## 🚀 Empezar Ahora
 
-**Paso 1 (Obligatorio):** Investigá y organizá tu contexto
+**Paso 1 (Obligatorio):** Analizá y organizá tu perfil profesional
 
 El Módulo 00 ahora incluye:
-- 🔍 **Fase de Investigación**: Análisis de web, redes y reviews del negocio
-- 📁 **18 archivos organizados en 6 carpetas**: Sistema profesional tipo agencia
+- 🔍 **Fase de Autoanálisis**: Análisis de tu experiencia, habilidades y objetivos profesionales
+- 📁 **18 archivos organizados en 6 carpetas**: Sistema profesional de marca personal
 - 🔄 **Actualización modular**: Editá secciones individuales sin regenerar todo
-- ✅ **Validación integrada**: Verificación de calidad en cada archivo
+- ✅ **Validación integrada**: Verificación de coherencia profesional en cada archivo
 
 ```
 [  INICIAR MÓDULO 00  ]
 ```
 
-👉 **[→ Módulo 00: Research + Contexto Organizado](./modules/00-ingesta-contexto-validacion.md)**
+👉 **[→ Módulo 00: Autoanálisis + Contexto Organizado](./00-research-contexto.md)**
 
 ---
 
@@ -190,4 +175,4 @@ Link al siguiente módulo
 
 ---
 
-*Track 04 - Marketing con IA | FPUNA Verano 2026 | Zero teoría, 100% resultados*
+*Track 04 - Marketing Personal con IA | FPUNA Verano 2026 | Zero teoría, 100% resultados profesionales*
